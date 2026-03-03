@@ -1,0 +1,12 @@
+# BED file for C5 (hg18) - LiftOver format
+# Source: C:\Users\BornLoser\Desktop\Assignment\Thesis\idbase\C5base\c5pub.html
+# Chrom: chr9  BLAST: qstart=1 qend=99921 sstart=122853357 send=122753437
+chr9	122852290	122852291	C0001_Allele_1_g.1067C>T_c.67C>T_p.Q19X	0	-
+chr9	122852290	122852291	C0002_Allele_1_g.1067C>T_c.67C>T_p.Q19X	0	-
+chr9	122827678	122827679	C0007_Allele_1_and_2_g.25679C>T_c.892C>T_r.892c>u_p.Gln298X	0	-
+chr9	122827678	122827679	C0008_Allele_1_and_2_g.25679C>T_c.892C>T_r.892c>u_p.Gln298X	0	-
+chr9	122825503	122825504	C0005_p.Lys372Arg	0	-
+chr9	122819460	122819462	C0006_Allele_2_g.45296T>C_c.2536T>C_r.2536u>c_p.Tyr846His	0	-
+chr9	122808061	122808062	C0006_Allele_2_g.45296T>C_c.2536T>C_r.2536u>c_p.Tyr846His	0	-
+chr9	122764847	122764848	C0003_Allele_1_g.88510C>T_c.4438C>T_p.R1476X	0	-
+chr9	122764847	122764848	C0004_Allele_1_g.88510C>T_c.4438C>T_p.R1476X	0	-

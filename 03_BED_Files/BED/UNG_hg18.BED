@@ -1,0 +1,8 @@
+# BED file for UNG (hg18) - LiftOver format
+# Source: C:\Users\BornLoser\Desktop\Assignment\Thesis\idbase\UNGbase\ungpub.html
+# Chrom: chr12  BLAST: qstart=1 qend=15384 sstart=108018798 send=108034181
+chr12	108020748	108020749	U0004_Allele_1_g.1952C>T_c.262C>T_r.262c>u_p.Arg88Cys	0	+
+chr12	108021428	108021429	U0001_Ile190fsX37	0	+
+chr12	108025061	108025063	U0001_Ile190fsX37	0	+
+chr12	108021463	108021465	U0003_r.427_428delau_p.Ile143fsX17	0	+
+chr12	108025749	108025750	U0002_Allele_1_and_2_g.6953T>C_c.752T>C_r.752u>c_p.Phe251Ser	0	+

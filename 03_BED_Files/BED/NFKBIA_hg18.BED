@@ -1,0 +1,5 @@
+# BED file for NFKBIA (hg18) - LiftOver format
+# Source: C:\Users\BornLoser\Desktop\Assignment\Thesis\idbase\NFKBIAbase\nfkbiapub.html
+# Chrom: chr14  BLAST: qstart=1 qend=5228 sstart=34944695 send=34939468
+chr14	34943506	34943507	N0001_g.1189G>T_c.95G>T_r.95g>u_p.Ser32Ile	0	-
+chr14	34943561	34943562	N0002_g.1134G>T_c.40G>T_r.40g>u_p.Glu14X	0	-

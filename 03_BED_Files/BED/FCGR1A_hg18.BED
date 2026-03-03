@@ -1,0 +1,7 @@
+# BED file for FCGR1A (hg18) - LiftOver format
+# Source: C:\Users\BornLoser\Desktop\Assignment\Thesis\idbase\FCGR1Abase\fcgr1apub.html
+# Chrom: chr1  BLAST: qstart=1 qend=13080 sstart=148019912 send=148032991
+chr1	148022403	148022404	F0001_Allele_1_and_2_g.2493C>T_c.274C>T_r.274c>u_p.Arg92X	0	+
+chr1	148022403	148022404	F0002_Allele_1_and_2_g.2493C>T_c.274C>T_r.274c>u_p.Arg92X	0	+
+chr1	148022403	148022404	F0003_Allele_1_and_2_g.2493C>T_c.274C>T_r.274c>u_p.Arg92X	0	+
+chr1	148022403	148022404	F0004_Allele_1_and_2_g.2493C>T_c.274C>T_r.274c>u_p.Arg92X	0	+

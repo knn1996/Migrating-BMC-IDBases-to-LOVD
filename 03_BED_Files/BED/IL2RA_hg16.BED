@@ -1,0 +1,6 @@
+# BED file for IL2RA (hg16) - LiftOver format
+# Source: C:\Users\BornLoser\Desktop\Assignment\Thesis\idbase\IL2RAbase\il2rapub.html
+# Chrom: chr10  BLAST: qstart=1 qend=52783 sstart=6109294 send=6056512
+chr10	6071994	6071998	I0001_r.61_64delgcag_p.Ala21fsX26	0	-
+chr10	6070278	6070279	I0002_Allele_2_g.43863dupA_c.692dupA_r.692dupa_p.Thr232fsX38	0	-
+chr10	6065430	6065431	I0002_Allele_2_g.43863dupA_c.692dupA_r.692dupa_p.Thr232fsX38	0	-

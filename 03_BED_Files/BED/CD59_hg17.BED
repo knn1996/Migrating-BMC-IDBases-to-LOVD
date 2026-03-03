@@ -1,0 +1,4 @@
+# BED file for CD59 (hg17) - LiftOver format
+# Source: C:\Users\BornLoser\Desktop\Assignment\Thesis\idbase\CD59base\cd59pub.html
+# Chrom: chr11  BLAST: qstart=1 qend=35467 sstart=33715600 send=33680134
+chr11	33695537	33695538	C0001_p.Val42fsX37	0	-
