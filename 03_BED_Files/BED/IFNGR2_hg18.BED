@@ -1,0 +1,12 @@
+# BED file for IFNGR2 (hg18) - LiftOver format
+# Source: C:\Users\BornLoser\Desktop\Assignment\Thesis\idbase\IFNGR2base\ifngr2pub.html
+# Chrom: chr21  BLAST: qstart=1 qend=36619 sstart=33696072 send=33732690
+chr21	33715837	33715838	I0009_r.382_387dup_p.130	0	+
+chr21	33715727	33715729	I0001_r.278_279delag_p.Glu93fsX2	0	+
+chr21	33715789	33715790	I0002_Allele_1_and_2_g.19719C>T_c.340C>T_r.340c>u_p.Arg114Cys	0	+
+chr21	33721150	33721151	I0006_Allele_1_and_2_g.25080C>A_c.503C>A_r.503c>a_p.Thr168Asn	0	+
+chr21	33721150	33721151	I0007_Allele_1_and_2_g.25080C>A_c.503C>A_r.503c>a_p.Thr168Asn	0	+
+chr21	33721150	33721151	I0008_Allele_1_and_2_g.25080C>A_c.503C>A_r.503c>a_p.Thr168Asn	0	+
+chr21	33726454	33726481	I0005_r.663_689deluaacaucuuuagagucgggcauuuaag_p.Ser221del	0	+
+chr21	33726959	33726960	I0003_p.Gly264fsX8	0	+
+chr21	33726959	33726960	I0004_p.Gly264fsX8	0	+

@@ -1,0 +1,4 @@
+# BED file for RAC2 (hg18) - LiftOver format
+# Source: C:\Users\BornLoser\Desktop\Assignment\Thesis\idbase\RAC2base\rac2pub.html
+# Chrom: chr22  BLAST: qstart=1 qend=21000 sstart=35971255 send=35950256
+chr22	35958842	35958843	R0001_Allele_1_and_2_g.12413G>A_c.169G>A_r.169g>a_p.Asp57Asn	0	-

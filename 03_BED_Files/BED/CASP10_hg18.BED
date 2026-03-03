@@ -1,0 +1,5 @@
+# BED file for CASP10 (hg18) - LiftOver format
+# Source: C:\Users\BornLoser\Desktop\Assignment\Thesis\idbase\CASP10base\casp10pub.html
+# Chrom: chr2  BLAST: qstart=1 qend=38912 sstart=201755137 send=201794048
+chr2	201781081	201781082	C0001_Allele_1_g.25946C>T_c.871C>T_p.L242F	0	+
+chr2	201782342	201782343	C0002_Allele_1_and_2_g.27207G>A_c.1246G>A_p.V367I	0	+

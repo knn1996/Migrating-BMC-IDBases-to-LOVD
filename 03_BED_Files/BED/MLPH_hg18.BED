@@ -1,0 +1,4 @@
+# BED file for MLPH (hg18) - LiftOver format
+# Source: C:\Users\BornLoser\Desktop\Assignment\Thesis\idbase\MLPHbase\mlphpub.html
+# Chrom: chr2  BLAST: qstart=1 qend=68707 sstart=238059669 send=238128375
+chr2	238066910	238066911	M0001_Allele_1_and_2_g.7243C>T_c.103C>T_r.103c>u_p.Arg35Trp	0	+
