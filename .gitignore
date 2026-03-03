@@ -220,3 +220,31 @@ copy_report.csv
 
 # Input data files
 *.xlsx
+
+# Large reference genome files
+01_Reference_Genomes/
+*.fa
+
+# IDBases source database (third-party content)
+02_Source_Database/idbase/
+
+# BLAST index files
+*.ndb
+*.nhr
+*.nin
+*.njs
+*.not
+*.nsq
+*.ntf
+*.nto
+
+# Downloaded sequence data
+*.embl
+*.fasta
+
+# Log and summary outputs
+*.log
+*_log.txt
+*_summary.csv
+process_log.txt
+download_log.txt
