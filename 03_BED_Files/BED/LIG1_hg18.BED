@@ -1,0 +1,5 @@
+# BED file for LIG1 (hg18) — LiftOver format
+# Source: C:\Users\BornLoser\Desktop\Assignment\Thesis\04_Mutation_Processing\Scripts\..\Output\all_mutations.tsv
+# Chrom: chr5_random  |  BLAST: qstart=39147 qend=39190 sstart=121916 send=121959
+chr5_random	121061	121062	L0001_Allele_1_g.38293G>A_c.1696G>A_r.1696g>a_p.Glu566Lys_Allele_2_g.50060C>T_c.2311C>T_r.2311c>u_p.Arg771Trp	0	+
+chr5_random	132828	132829	L0001_Allele_1_g.38293G>A_c.1696G>A_r.1696g>a_p.Glu566Lys_Allele_2_g.50060C>T_c.2311C>T_r.2311c>u_p.Arg771Trp	0	+

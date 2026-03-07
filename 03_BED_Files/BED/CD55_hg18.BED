@@ -1,12 +1,21 @@
-# BED file for CD55 (hg18) - LiftOver format
-# Source: C:\Users\BornLoser\Desktop\Assignment\Thesis\idbase\CD55base\cd55pub.html
-# Chrom: chr1  BLAST: qstart=1 qend=40982 sstart=205560488 send=205601469
-chr1	205562509	205562510	D0005_Allele_1_and_2_g.2023G>A_c.261G>A_r.261g>a_p.Trp87X	0	+
-chr1	205562509	205562510	D0007_Allele_1_and_2_g.2023G>A_c.261G>A_r.261g>a_p.Trp87X	0	+
-chr1	205565618	205565619	D0009_Allele_1_and_2_g.5132C>T_c.508C>T_r.508c>u_p.Arg170X	0	+
-chr1	205566736	205566737	D0001_Allele_1_and_2_g.6250C>T_c.596C>T_r.596c>u_p.Ser199Leu	0	+
-chr1	205566736	205566737	D0002_Allele_1_and_2_g.6250C>T_c.596C>T_r.596c>u_p.Ser199Leu	0	+
-chr1	205566736	205566737	D0003_Allele_1_and_2_g.6250C>T_c.596C>T_r.596c>u_p.Ser199Leu	0	+
-chr1	205566736	205566737	D0004_Allele_1_and_2_g.6250C>T_c.596C>T_r.596c>u_p.Ser199Leu	0	+
-chr1	205566736	205566737	D0008_Allele_1_and_2_g.6250C>T_c.596C>T_r.596c>u_p.Ser199Leu	0	+
-chr1	205562511	205562512	D0006_Allele_1_and_2_g.2025C>A_c.263C>A_r.263c>a_	0	+
+# BED file for CD55 (hg18) — LiftOver format
+# Source: C:\Users\BornLoser\Desktop\Assignment\Thesis\04_Mutation_Processing\Scripts\..\Output\all_mutations.tsv
+# Chrom: chr22  |  BLAST: qstart=26988 qend=27032 sstart=21317631 send=21317675
+chr22	21292665	21292666	D0005_Allele_1_and_2_g.2023G>A_c.261G>A_r.261g>a_p.Trp87X	0	+
+chr22	21292665	21292666	D0005_Allele_1_and_2_g.2023G>A_c.261G>A_r.261g>a_p.Trp87X	0	+
+chr22	21292665	21292666	D0007_Allele_1_and_2_g.2023G>A_c.261G>A_r.261g>a_p.Trp87X	0	+
+chr22	21292665	21292666	D0007_Allele_1_and_2_g.2023G>A_c.261G>A_r.261g>a_p.Trp87X	0	+
+chr22	21295774	21295775	D0009_Allele_1_and_2_g.5132C>T_c.508C>T_r.508c>u_p.Arg170X	0	+
+chr22	21295774	21295775	D0009_Allele_1_and_2_g.5132C>T_c.508C>T_r.508c>u_p.Arg170X	0	+
+chr22	21296892	21296893	D0001_Allele_1_and_2_g.6250C>T_c.596C>T_r.596c>u_p.Ser199Leu	0	+
+chr22	21296892	21296893	D0001_Allele_1_and_2_g.6250C>T_c.596C>T_r.596c>u_p.Ser199Leu	0	+
+chr22	21296892	21296893	D0002_Allele_1_and_2_g.6250C>T_c.596C>T_r.596c>u_p.Ser199Leu	0	+
+chr22	21296892	21296893	D0002_Allele_1_and_2_g.6250C>T_c.596C>T_r.596c>u_p.Ser199Leu	0	+
+chr22	21296892	21296893	D0003_Allele_1_and_2_g.6250C>T_c.596C>T_r.596c>u_p.Ser199Leu	0	+
+chr22	21296892	21296893	D0003_Allele_1_and_2_g.6250C>T_c.596C>T_r.596c>u_p.Ser199Leu	0	+
+chr22	21296892	21296893	D0004_Allele_1_and_2_g.6250C>T_c.596C>T_r.596c>u_p.Ser199Leu	0	+
+chr22	21296892	21296893	D0004_Allele_1_and_2_g.6250C>T_c.596C>T_r.596c>u_p.Ser199Leu	0	+
+chr22	21296892	21296893	D0008_Allele_1_and_2_g.6250C>T_c.596C>T_r.596c>u_p.Ser199Leu	0	+
+chr22	21296892	21296893	D0008_Allele_1_and_2_g.6250C>T_c.596C>T_r.596c>u_p.Ser199Leu	0	+
+chr22	21292667	21292668	D0006_Allele_1_and_2_g.2025C>A_c.263C>A_r.263c>a_	0	+
+chr22	21292667	21292668	D0006_Allele_1_and_2_g.2025C>A_c.263C>A_r.263c>a_	0	+

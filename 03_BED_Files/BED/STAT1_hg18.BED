@@ -1,12 +1,16 @@
-# BED file for STAT1 (hg18) - LiftOver format
-# Source: C:\Users\BornLoser\Desktop\Assignment\Thesis\idbase\STAT1base\stat1pub.html
-# Chrom: chr2  BLAST: qstart=1 qend=46539 sstart=191587659 send=191541121
-chr2	191564277	191564278	S0005_Allele_1_g.23382G>C_c.958G>C_r.958g>c_p.Glu320Gln	0	-
-chr2	191564277	191564278	S0006_Allele_1_g.23382G>C_c.958G>C_r.958g>c_p.Glu320Gln	0	-
-chr2	191556669	191556670	S0007_p.Gln463His	0	-
-chr2	191551938	191551940	S0003_r.1760_1761delag_p.Glu587fsX18	0	-
-chr2	191551900	191551901	S0004_p.Leu600Pro	0	-
-chr2	191548831	191548832	S0008_p.Pro696Ser	0	-
-chr2	191548831	191548832	S0009_p.Pro696Ser	0	-
-chr2	191548800	191548801	S0001_Allele_1_g.38859T>C_c.2313T>C_p.L706S	0	-
-chr2	191548800	191548801	S0002_Allele_1_g.38859T>C_c.2313T>C_p.L706S	0	-
+# BED file for STAT1 (hg18) — LiftOver format
+# Source: C:\Users\BornLoser\Desktop\Assignment\Thesis\04_Mutation_Processing\Scripts\..\Output\all_mutations.tsv
+# Chrom: chr16  |  BLAST: qstart=26022 qend=26064 sstart=66100290 send=66100332
+chr16	66097649	66097650	S0005_Allele_1_g.23382G>C_c.958G>C_r.958g>c_p.Glu320Gln	0	+
+chr16	66097649	66097650	S0006_Allele_1_g.23382G>C_c.958G>C_r.958g>c_p.Glu320Gln	0	+
+chr16	66105257	66105258	S0007_Allele_1_g.30990G>T_c.1389G>T_r.1389g>u_p.Gln463His	0	+
+chr16	66109987	66109989	S0003_Allele_1_and_2_g.35720_35721delAG_c.1760_1761delAG_r.1760_1761delag_p.Glu587fsX18	0	+
+chr16	66109987	66109989	S0003_Allele_1_and_2_g.35720_35721delAG_c.1760_1761delAG_r.1760_1761delag_p.Glu587fsX18	0	+
+chr16	66110026	66110027	S0004_Allele_1_and_2_g.35759T>C_c.1799T>C_r.1799u>c_p.Leu600Pro	0	+
+chr16	66110026	66110027	S0004_Allele_1_and_2_g.35759T>C_c.1799T>C_r.1799u>c_p.Leu600Pro	0	+
+chr16	66113095	66113096	S0008_Allele_1_and_2_g.38828C>T_c.2086C>T_r.2086c>u_p.Pro696Ser	0	+
+chr16	66113095	66113096	S0008_Allele_1_and_2_g.38828C>T_c.2086C>T_r.2086c>u_p.Pro696Ser	0	+
+chr16	66113095	66113096	S0009_Allele_1_and_2_g.38828C>T_c.2086C>T_r.2086c>u_p.Pro696Ser	0	+
+chr16	66113095	66113096	S0009_Allele_1_and_2_g.38828C>T_c.2086C>T_r.2086c>u_p.Pro696Ser	0	+
+chr16	66113126	66113127	S0001_Allele_1_g.38859T>C_c.2313T>C_p.L706S	0	+
+chr16	66113126	66113127	S0002_Allele_1_g.38859T>C_c.2313T>C_p.L706S	0	+

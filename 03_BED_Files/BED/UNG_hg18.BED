@@ -1,8 +1,10 @@
-# BED file for UNG (hg18) - LiftOver format
-# Source: C:\Users\BornLoser\Desktop\Assignment\Thesis\idbase\UNGbase\ungpub.html
-# Chrom: chr12  BLAST: qstart=1 qend=15384 sstart=108018798 send=108034181
-chr12	108020748	108020749	U0004_Allele_1_g.1952C>T_c.262C>T_r.262c>u_p.Arg88Cys	0	+
-chr12	108021428	108021429	U0001_Ile190fsX37	0	+
-chr12	108025061	108025063	U0001_Ile190fsX37	0	+
-chr12	108021463	108021465	U0003_r.427_428delau_p.Ile143fsX17	0	+
-chr12	108025749	108025750	U0002_Allele_1_and_2_g.6953T>C_c.752T>C_r.752u>c_p.Phe251Ser	0	+
+# BED file for UNG (hg18) — LiftOver format
+# Source: C:\Users\BornLoser\Desktop\Assignment\Thesis\04_Mutation_Processing\Scripts\..\Output\all_mutations.tsv
+# Chrom: chr13  |  BLAST: qstart=11163 qend=11205 sstart=22881716 send=22881758
+chr13	22872504	22872505	U0004_Allele_1_g.1952C>T_c.262C>T_r.262c>u_p.Arg88Cys	0	+
+chr13	22873184	22873185	U0001_Allele_1_g.2632delC_c.392delC_r.392delc_p.Pro131fsX13_Allele_2_g.6265_6266delTA_c.569_570delTA_r.569_570delua_Ile190fsX37	0	+
+chr13	22876817	22876819	U0001_Allele_1_g.2632delC_c.392delC_r.392delc_p.Pro131fsX13_Allele_2_g.6265_6266delTA_c.569_570delTA_r.569_570delua_Ile190fsX37	0	+
+chr13	22873219	22873221	U0003_Allele_1_and_2_g.2667_2668delAT_c.427_428delAT_r.427_428delau_p.Ile143fsX17	0	+
+chr13	22873219	22873221	U0003_Allele_1_and_2_g.2667_2668delAT_c.427_428delAT_r.427_428delau_p.Ile143fsX17	0	+
+chr13	22877505	22877506	U0002_Allele_1_and_2_g.6953T>C_c.752T>C_r.752u>c_p.Phe251Ser	0	+
+chr13	22877505	22877506	U0002_Allele_1_and_2_g.6953T>C_c.752T>C_r.752u>c_p.Phe251Ser	0	+
