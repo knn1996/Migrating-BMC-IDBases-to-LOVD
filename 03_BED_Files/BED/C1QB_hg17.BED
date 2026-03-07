@@ -1,8 +1,0 @@
-# BED file for C1QB (hg17) - LiftOver format
-# Source: C:\Users\BornLoser\Desktop\Assignment\Thesis\idbase\C1QBbase\c1qbpub.html
-# Chrom: chr1  BLAST: qstart=1 qend=10388 sstart=22724046 send=22734433
-chr1	22731379	22731380	C0002_Allele_1_and_2_g.7335G>A_c.125G>A_r.125g>a_p.Gly42Asp	0	+
-chr1	22731379	22731380	C0003_Allele_1_and_2_g.7335G>A_c.125G>A_r.125g>a_p.Gly42Asp	0	+
-chr1	22731379	22731380	C0004_Allele_1_and_2_g.7335G>A_c.125G>A_r.125g>a_p.Gly42Asp	0	+
-chr1	22732951	22732952	C0001_Allele_1_and_2_g.8907C>T_c.529C>T_r.529c>u_p.Arg177X	0	+
-chr1	22733152	22733153	C0007_Allele_1_and_2_g.9108G>A_c.730G>A_r.730g>a_p.Gly244Arg	0	+

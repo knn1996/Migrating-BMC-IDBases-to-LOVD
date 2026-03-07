@@ -1,0 +1,25 @@
+# BED file for AP3B1 (hg18) — LiftOver format
+# Source: C:\Users\BornLoser\Desktop\Assignment\Thesis\04_Mutation_Processing\Scripts\..\Output\all_mutations.tsv
+# Chrom: chr13_random  |  BLAST: qstart=256128 qend=256174 sstart=84859 send=84813
+chr13_random	312882	312886	A0010_Allele_1_and_2_g.28101_28104delAGAG_c.153_156delAGAG_r.153_156delagag_p.Glu52fsX11	0	-
+chr13_random	312882	312886	A0010_Allele_1_and_2_g.28101_28104delAGAG_c.153_156delAGAG_r.153_156delagag_p.Glu52fsX11	0	-
+chr13_random	226859	226860	A0007_Allele_1_and_2_g.114127A>T_c.904A>T_r.904a>u_p.Arg302X	0	-
+chr13_random	226859	226860	A0007_Allele_1_and_2_g.114127A>T_c.904A>T_r.904a>u_p.Arg302X	0	-
+chr13_random	221129	221131	A0008_Allele_1_g.119856_119857delinsTATCAATATC_c.1063_1064delinsTATCAATATC_r.1063_1064delinsuaucaauauc_p.Gln355fsX6_Allele_2_g.166503dupA_c.1789dupA_r.1789dupa_p.Ile597fsX12	0	-
+chr13_random	174482	174483	A0008_Allele_1_g.119856_119857delinsTATCAATATC_c.1063_1064delinsTATCAATATC_r.1063_1064delinsuaucaauauc_p.Gln355fsX6_Allele_2_g.166503dupA_c.1789dupA_r.1789dupa_p.Ile597fsX12	0	-
+chr13_random	221129	221131	A0009_Allele_1_g.119856_119857delinsTATCAATATC_c.1063_1064delinsTATCAATATC_r.1063_1064delinsuaucaauauc_p.Gln355fsX6_Allele_2_g.166503dupA_c.1789dupA_r.1789dupa_p.Ile597fsX12	0	-
+chr13_random	174482	174483	A0009_Allele_1_g.119856_119857delinsTATCAATATC_c.1063_1064delinsTATCAATATC_r.1063_1064delinsuaucaauauc_p.Gln355fsX6_Allele_2_g.166503dupA_c.1789dupA_r.1789dupa_p.Ile597fsX12	0	-
+chr13_random	220879	220942	A0001_Allele_1_g.120045_120107del_c.1166_1228del_r.1166_1228del_p.Lys389del_Allele_2_g.166453T>G_c.1739T>G_r.1739u>g_p.Leu580Arg	0	-
+chr13_random	174533	174534	A0001_Allele_1_g.120045_120107del_c.1166_1228del_r.1166_1228del_p.Lys389del_Allele_2_g.166453T>G_c.1739T>G_r.1739u>g_p.Leu580Arg	0	-
+chr13_random	220879	220942	A0002_Allele_1_g.120045_120107del_c.1166_1228del_r.1166_1228del_p.Lys389del_Allele_2_g.166453T>G_c.1739T>G_r.1739u>g_p.Leu580Arg	0	-
+chr13_random	174533	174534	A0002_Allele_1_g.120045_120107del_c.1166_1228del_r.1166_1228del_p.Lys389del_Allele_2_g.166453T>G_c.1739T>G_r.1739u>g_p.Leu580Arg	0	-
+chr13_random	186582	186583	A0003_Allele_1_g.154404C>T_c.1525C>T_r.1525c>u_p.Arg509X_Allele_2_g.179444G>T_c.1975G>T_r.1975g>u_p.Glu659X	0	-
+chr13_random	161542	161543	A0003_Allele_1_g.154404C>T_c.1525C>T_r.1525c>u_p.Arg509X_Allele_2_g.179444G>T_c.1975G>T_r.1975g>u_p.Glu659X	0	-
+chr13_random	201566	201567	A0004_Allele_1_g.IVS146T>C_c.14736T>C_r.14736u>c_Allele_2_g.154498dupG_c.1619dupG_r.1619dupg_p.Ala541fsX25	0	-
+chr13_random	186487	186488	A0004_Allele_1_g.IVS146T>C_c.14736T>C_r.14736u>c_Allele_2_g.154498dupG_c.1619dupG_r.1619dupg_p.Ala541fsX25	0	-
+chr13_random	160120	160745	A0011_Allele_1_and_2_g.180242_180866del_c.2077696_2078-883del_r.2077696_2078-883del	0	-
+chr13_random	160120	160745	A0011_Allele_1_and_2_g.180242_180866del_c.2077696_2078-883del_r.2077696_2078-883del	0	-
+chr13_random	185536	193708	A0005_Allele_1_and_2_g.147279..155450del_	0	-
+chr13_random	185536	193708	A0005_Allele_1_and_2_g.147279..155450del_	0	-
+chr13_random	185536	193708	A0006_Allele_1_and_2_g.147279..155450del_	0	-
+chr13_random	185536	193708	A0006_Allele_1_and_2_g.147279..155450del_	0	-

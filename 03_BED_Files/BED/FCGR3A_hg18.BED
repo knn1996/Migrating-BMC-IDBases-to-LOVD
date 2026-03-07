@@ -1,6 +1,9 @@
-# BED file for FCGR3A (hg18) - LiftOver format
-# Source: C:\Users\BornLoser\Desktop\Assignment\Thesis\idbase\FCGR3Abase\fcgr3apub.html
-# Chrom: chr1  BLAST: qstart=1 qend=10003 sstart=159787173 send=159777171
-chr1	159784956	159784957	F0001_Allele_1_and_2_g.2217T>A_c.197T>A_r.197u>a_p.Leu66His	0	-
-chr1	159784956	159784957	F0002_Allele_1_and_2_g.2217T>A_c.197T>A_r.197u>a_p.Leu66His	0	-
-chr1	159784956	159784957	F0003_Allele_1_and_2_g.2217T>A_c.197T>A_r.197u>a_p.Leu66His	0	-
+# BED file for FCGR3A (hg18) — LiftOver format
+# Source: C:\Users\BornLoser\Desktop\Assignment\Thesis\04_Mutation_Processing\Scripts\..\Output\all_mutations.tsv
+# Chrom: chr18  |  BLAST: qstart=3957 qend=3998 sstart=17816580 send=17816539
+chr18	17818319	17818320	F0001_Allele_1_and_2_g.2217T>A_c.197T>A_r.197u>a_p.Leu66His	0	-
+chr18	17818319	17818320	F0001_Allele_1_and_2_g.2217T>A_c.197T>A_r.197u>a_p.Leu66His	0	-
+chr18	17818319	17818320	F0002_Allele_1_and_2_g.2217T>A_c.197T>A_r.197u>a_p.Leu66His	0	-
+chr18	17818319	17818320	F0002_Allele_1_and_2_g.2217T>A_c.197T>A_r.197u>a_p.Leu66His	0	-
+chr18	17818319	17818320	F0003_Allele_1_and_2_g.2217T>A_c.197T>A_r.197u>a_p.Leu66His	0	-
+chr18	17818319	17818320	F0003_Allele_1_and_2_g.2217T>A_c.197T>A_r.197u>a_p.Leu66His	0	-

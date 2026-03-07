@@ -1,4 +1,4 @@
-# BED file for LRRC8A (hg18) - LiftOver format
-# Source: C:\Users\BornLoser\Desktop\Assignment\Thesis\idbase\LRRC8Abase\lrrc8apub.html
-# Chrom: chr9  BLAST: qstart=1 qend=12872 sstart=130708265 send=130721136
-chr9	130710610	130721136	L0001	0	+
+# BED file for LRRC8A (hg18) — LiftOver format
+# Source: C:\Users\BornLoser\Desktop\Assignment\Thesis\04_Mutation_Processing\Scripts\..\Output\all_mutations.tsv
+# Chrom: chr22  |  BLAST: qstart=9397 qend=9451 sstart=49077078 send=49077024
+chr22	49073602	49084128	L0001	0	-

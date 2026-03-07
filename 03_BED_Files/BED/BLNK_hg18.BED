@@ -1,0 +1,5 @@
+# BED file for BLNK (hg18) — LiftOver format
+# Source: C:\Users\BornLoser\Desktop\Assignment\Thesis\04_Mutation_Processing\Scripts\..\Output\all_mutations.tsv
+# Chrom: chrY  |  BLAST: qstart=81760 qend=81803 sstart=10324660 send=10324617
+chrY	10396220	10396221	B0001_Allele_1_and_2_g.IVS13A>T	0	-
+chrY	10396220	10396221	B0001_Allele_1_and_2_g.IVS13A>T	0	-

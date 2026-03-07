@@ -1,0 +1,14 @@
+# BED file for PTPRC (hg18) — LiftOver format
+# Source: C:\Users\BornLoser\Desktop\Assignment\Thesis\04_Mutation_Processing\Scripts\..\Output\all_mutations.tsv
+# Chrom: chr6_qbl_hap2  |  BLAST: qstart=57795 qend=57840 sstart=1959902 send=1959857
+chr6_qbl_hap2	1959021	1959022	P0003_Allele_1_g.58675C>A_c.153C>A_r.153c>a_p.His51Gln	0	-
+chr6_qbl_hap2	1959003	1959004	P0004_Allele_1_g.58693C>G_c.171C>G_r.171c>g_p.Pro57Pro	0	-
+chr6_qbl_hap2	1959003	1959004	P0005_Allele_1_g.58693C>G_c.171C>G_r.171c>g_p.Pro57Pro	0	-
+chr6_qbl_hap2	1959003	1959004	P0006_Allele_1_g.58693C>G_c.171C>G_r.171c>g_p.Pro57Pro	0	-
+chr6_qbl_hap2	1959003	1959004	P0007_Allele_1_g.58693C>G_c.171C>G_r.171c>g_p.Pro57Pro_Allele_2_g.58693C>G_c.171C>G_r.171c>g_p.Pro57Pro	0	-
+chr6_qbl_hap2	1959003	1959004	P0007_Allele_1_g.58693C>G_c.171C>G_r.171c>g_p.Pro57Pro_Allele_2_g.58693C>G_c.171C>G_r.171c>g_p.Pro57Pro	0	-
+chr6_qbl_hap2	1959003	1959004	P0008_Allele_1_g.58693C>G_c.171C>G_r.171c>g_p.Pro57Pro	0	-
+chr6_qbl_hap2	1959003	1959004	P0009_Allele_1_g.58693C>G_c.171C>G_r.171c>g_p.Pro57Pro	0	-
+chr6_qbl_hap2	1946045	1946051	P0002_Allele_1_and_2_g.71646_71651delATGAGT_c.1082_1087delATGAGT_r.1082_1087delaugagu_p.His361del	0	-
+chr6_qbl_hap2	1946045	1946051	P0002_Allele_1_and_2_g.71646_71651delATGAGT_c.1082_1087delATGAGT_r.1082_1087delaugagu_p.His361del	0	-
+chr6_qbl_hap2	1938950	1938951	P0001_Allele_1_g.IVS131G>A_c.14441G>A_r.14441g>a_	0	-

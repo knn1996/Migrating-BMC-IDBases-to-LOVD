@@ -248,3 +248,26 @@ copy_report.csv
 *_summary.csv
 process_log.txt
 download_log.txt
+
+# Per-gene EMBL working directories (large downloaded data, not for VCS)
+04_Mutation_Processing/Mutation Extraction and Matching/*/
+
+# Misc scratch files
+blast-first-hits-review.html
+blast-first-hits.skill
+protein_only_variants.csv
+04_Mutation_Processing/Output/debug.txt
+04_Mutation_Processing/Output/uniprot_all_bases.csv
+04_Mutation_Processing/Output/uniprot_data.csv
+04_Mutation_Processing/Output/uniprot_link.csv
+04_Mutation_Processing/Mutation Extraction and Matching/Mutation_extraction.ipynb
+
+# Claude worktree (internal tool artifact)
+.claude/
+
+# Large reproducible HPC outputs - not for VCS
+04_Mutation_Processing/BLAST_Results/
+04_Mutation_Processing/DNA sequences/
+04_Mutation_Processing/Logs/
+04_Mutation_Processing/Mutalyzer/
+EOF

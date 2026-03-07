@@ -1,4 +1,0 @@
-# BED file for LRRC8A (hg17) - LiftOver format
-# Source: C:\Users\BornLoser\Desktop\Assignment\Thesis\idbase\LRRC8Abase\lrrc8apub.html
-# Chrom: chr9  BLAST: qstart=1 qend=12872 sstart=128747998 send=128760869
-chr9	128750343	128760869	L0001	0	+
