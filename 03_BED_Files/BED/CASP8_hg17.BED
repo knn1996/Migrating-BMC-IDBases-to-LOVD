@@ -1,5 +1,0 @@
-# BED file for CASP8 (hg17) - LiftOver format
-# Source: C:\Users\BornLoser\Desktop\Assignment\Thesis\idbase\CASP8base\casp8pub.html
-# Chrom: chr2  BLAST: qstart=1 qend=28747 sstart=201949212 send=201977958
-chr2	201969001	201969002	C0001_Allele_1_and_2_g.19791C>T_c.1033C>T_p.R248W	0	+
-chr2	201969001	201969002	C0002_Allele_1_and_2_g.19791C>T_c.1033C>T_p.R248W	0	+

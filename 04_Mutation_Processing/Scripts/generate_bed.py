@@ -1,202 +1,251 @@
 ﻿"""
 generate_bed.py
 ===============
-Generates LiftOver-ready BED files from idbase *pub.html mutation databases.
+Generates LiftOver-ready BED files from all_mutations.tsv.
 
-For each *base folder in idbase/:
-  - Parses DNA mutation positions from Feature dna /loc lines
+For each gene in all_mutations.tsv:
+  - Reads DNA mutation positions (pos_start, pos_end) directly from the TSV
   - Maps IDRefSeq positions to hg16/17/18 chromosomal coordinates via
-    100%-identity BLAST hits in First hits.csv
-  - Writes GENE_hgXX.BED files ready for UCSC LiftOver
+    100%-identity BLAST hits across all *_vs_hg*.txt files in BASE_DIR
+  - Writes GENE_hgXX.BED files into BED_DIR, ready for UCSC LiftOver
 
-Usage:  python generate_bed.py
+Usage:
+    python generate_bed.py
 """
 
-import os, re, csv
+import csv
+import glob
+import os
+import re
 from collections import defaultdict
+from typing import Optional
 
-# ── Configuration ──────────────────────────────────────────────────────────────
-THESIS_DIR = r"C:\Users\BornLoser\Desktop\Assignment\Thesis"
-IDBASE_DIR = os.path.join(THESIS_DIR, "02_Source_Database", "idbase")
-BED_DIR    = os.path.join(THESIS_DIR, "03_BED_Files", "BED")
-CSV_PATH   = os.path.join(THESIS_DIR, "04_Mutation_Processing", "Output", "First hits.csv")
+# -- Configuration --------------------------------------------------------------
 
-# Special gene-name aliases in First hits.csv
-ALIASES = {
-    "LRRC8A":  ["LRRC8_DNA", "LRRC8A_DNA"],
-    "IL12RB1": ["IL12RB_DNA"],
-}
+_SCRIPT_DIR = os.path.dirname(os.path.abspath(__file__))
+BASE_DIR    = os.path.join(_SCRIPT_DIR, "..", "BLAST_Results", "source1")
+TSV_PATH    = os.path.join(_SCRIPT_DIR, "..", "Output", "all_mutations.tsv")
+BED_DIR     = os.path.join(_SCRIPT_DIR, "..", "BED", "hg38")
 
-RE_STRIP = re.compile(r"<[^>]+>")
-RE_LOC   = re.compile(r"/loc:\s+IDRefSeq:\s+\w+:\s*(\d+)(?:\.\.(\d+))?", re.IGNORECASE)
+# Gene-name aliases: maps gene symbol -> list of alternative keys in the BLAST files.
+ALIASES = {}
 
-# ── Helpers ────────────────────────────────────────────────────────────────────
-def load_blast_map(path):
-    """Return {QSEQID_UPPER: [{"hg","chrom","qstart","qend","sstart","send"}]}
-    for rows with pident == 100."""
-    blast_map = defaultdict(list)
-    skipped = 0
-    with open(path, newline="", encoding="utf-8") as f:
-        for row in csv.DictReader(f):
-            try:
-                if float(row["pident"]) != 100.0:
-                    skipped += 1; continue
-            except (ValueError, KeyError):
-                continue
-            fname = row["file"].upper()
-            hg = "hg16" if "HG16" in fname else "hg17" if "HG17" in fname else "hg18"
-            blast_map[row["qseqid"].strip().upper()].append({
-                "hg": hg, "chrom": row["sseqid"].strip(),
-                "qstart": int(row["qstart"]), "qend": int(row["qend"]),
-                "sstart": int(row["sstart"]), "send":  int(row["send"]),
-            })
-    print(f"[BLAST] {len(blast_map)} genes at 100% identity ({skipped} partial skipped)")
+# -- Helpers --------------------------------------------------------------------
+
+def load_blast_map(base_dir):
+    """
+    Glob all *_vs_hg*.txt files in base_dir, load each one, and merge
+    results into a single blast_map.
+
+    Per-build deduplication
+    -----------------------
+    Pass 1 - exact-duplicate removal:
+        Rows sharing the same (hg, chrom, sstart, send) are collapsed to one.
+        These arise when a BLAST file contains the same alignment twice
+        (e.g. forward/reverse tie-breaking artefacts).
+
+    Pass 2 - best-hit-per-build selection:
+        Of all remaining 100%-identity hits for a given (gene, hg) pair,
+        only the one with the longest query alignment (qend - qstart) is kept.
+        This eliminates spurious hits against pseudogenes, paralogs and
+        repeat regions. The longest match is the true full-length locus.
+
+    Returns dict keyed by GENE_KEY_UPPER; each gene has at most one entry per build.
+    """
+    pattern   = os.path.join(base_dir, "*_vs_hg*.txt")
+    txt_files = sorted(glob.glob(pattern))
+
+    if not txt_files:
+        raise FileNotFoundError(f"No *_vs_hg*.txt files found in {base_dir}")
+
+    blast_map  = defaultdict(list)
+    total_skip = 0
+
+    for path in txt_files:
+        fname    = os.path.basename(path)
+        hg_match = re.search(r"(hg\d+)", fname, re.IGNORECASE)
+        hg       = hg_match.group(1).lower() if hg_match else "hg_unknown"
+        gene_key = fname.split("_vs_")[0].upper()
+
+        skipped = 0
+        with open(path, encoding="utf-8") as fh:
+            for line in fh:
+                line = line.strip()
+                if not line or line.startswith("#"):
+                    continue
+                cols = line.split("\t")
+                if len(cols) < 10:
+                    continue
+                try:
+                    if float(cols[2]) != 100.0:
+                        skipped += 1
+                        continue
+                except ValueError:
+                    continue
+
+                blast_map[gene_key].append({
+                    "hg":     hg,
+                    "chrom":  cols[1].strip(),
+                    "qstart": int(cols[6]),
+                    "qend":   int(cols[7]),
+                    "sstart": int(cols[8]),
+                    "send":   int(cols[9]),
+                })
+
+        total_skip += skipped
+        print(f"  [BLAST] {fname}  ->  gene={gene_key}  build={hg}"
+              f"  ({skipped} partial-identity rows skipped)")
+
+    # Pass 1: remove exact duplicates (same genomic span)
+    for key in blast_map:
+        seen    = set()
+        deduped = []
+        for e in blast_map[key]:
+            sig = (e["hg"], e["chrom"], e["sstart"], e["send"])
+            if sig not in seen:
+                seen.add(sig)
+                deduped.append(e)
+        n_before = len(blast_map[key])
+        blast_map[key] = deduped
+        if len(deduped) < n_before:
+            print(f"  [DEDUP] {key}: {n_before} -> {len(deduped)} entries"
+                  f" after exact-duplicate removal")
+
+    # Pass 2: keep only the best hit per (gene, build)
+    # Best = longest query alignment, which identifies the true full-length locus.
+    for key in blast_map:
+        best_by_hg = {}
+        for e in blast_map[key]:
+            hg      = e["hg"]
+            aln_len = e["qend"] - e["qstart"]
+            if hg not in best_by_hg or aln_len > (best_by_hg[hg]["qend"] - best_by_hg[hg]["qstart"]):
+                best_by_hg[hg] = e
+        n_before = len(blast_map[key])
+        blast_map[key] = list(best_by_hg.values())
+        if len(blast_map[key]) < n_before:
+            kept = {e["hg"]: f"{e['chrom']}:{e['sstart']}-{e['send']}" for e in blast_map[key]}
+            print(f"  [BEST]  {key}: {n_before} -> {len(blast_map[key])} entries"
+                  f" after best-hit-per-build selection  |  kept: {kept}")
+
+    print(f"[BLAST] {len(txt_files)} file(s) loaded  |  "
+          f"{len(blast_map)} unique genes  |  "
+          f"{total_skip} partial-identity rows skipped total")
     return blast_map
 
 
+def load_mutations(tsv_path):
+    """
+    Read all_mutations.tsv and group mutations by gene.
+    Expected columns: gene, accession, sysname, pos_start, pos_end, feat_name, allele_num
+    """
+    mutations = defaultdict(list)
+    with open(tsv_path, newline="", encoding="utf-8") as fh:
+        reader = csv.DictReader(fh, delimiter="\t")
+        for row in reader:
+            gene = row["gene"].strip().upper()
+            mutations[gene].append({
+                "accession": row["accession"].strip(),
+                "sysname":   row["sysname"].strip(),
+                "pos_start": int(row["pos_start"]),
+                "pos_end":   int(row["pos_end"]),
+            })
+    print(f"[TSV] {tsv_path} loaded  |  "
+          f"{sum(len(v) for v in mutations.values())} mutations across "
+          f"{len(mutations)} genes")
+    return mutations
+
+
 def blast_key(gene, blast_map):
-    """Try standard naming conventions; return matching key or None."""
-    for c in [f"{gene}_DNA", gene] + ALIASES.get(gene, []):
-        if c.upper() in blast_map:
-            return c.upper()
+    """Return the blast_map key for gene, or None."""
+    candidates = [f"{gene}_DNA", gene] + ALIASES.get(gene, [])
+    for candidate in candidates:
+        if candidate.upper() in blast_map:
+            return candidate.upper()
     return None
 
 
 def idref_to_genomic(pos, entry):
-    """Convert 1-based IDRefSeq position to chromosomal coordinate."""
-    offset = pos - entry["qstart"]
-    return entry["sstart"] + offset if entry["sstart"] <= entry["send"] \
-           else entry["sstart"] - offset
-
-
-def parse_mutations(pub_html_path):
-    """Parse all Feature dna /loc positions from a pub.html file.
-    Returns [{"accession","sysname","pos_start","pos_end"}].
-    - HTML tags stripped before parsing.
-    - All alleles per entry captured (in_dna not reset after /loc).
-    - Fallback sysname from /name + coords when no Systematic name exists.
-    - Duplicate (accession, pos_start, pos_end) rows deduplicated.
     """
-    lines = RE_STRIP.sub("", open(pub_html_path, encoding="utf-8",
-                                  errors="replace").read()).splitlines()
-    mutations, seen = [], set()
-    acc = sys_name = feat_name = ""
-    in_dna = False
-
-    for line in lines:
-        s = line.strip()
-        if s.startswith("Accession"):
-            m = re.match(r"Accession\s+(\S+)", s)
-            if m:
-                acc, sys_name, feat_name, in_dna = m.group(1), "", "", False
-        elif s.startswith("Systematic name"):
-            m = re.match(r"Systematic name\s+(.+)", s)
-            if m:
-                sys_name = m.group(1).strip()
-        elif re.match(r"Feature\s+dna;", s):
-            in_dna, feat_name = True, ""
-        elif re.match(r"Feature\s+(rna|aa);", s):
-            in_dna = False
-        elif in_dna:
-            m = re.match(r"/name:\s+(\S+)", s)
-            if m:
-                feat_name = m.group(1)
-            m = RE_LOC.search(s)
-            if m:
-                p1 = int(m.group(1))
-                p2 = int(m.group(2)) if m.group(2) else p1
-                if sys_name:
-                    name = sys_name
-                elif feat_name:
-                    coord = f"{p1}..{p2}" if p2 != p1 else str(p1)
-                    name = f"g.{coord}{feat_name}"
-                else:
-                    name = ""
-                key = (acc, p1, p2)
-                if key not in seen:
-                    seen.add(key)
-                    mutations.append({"accession": acc, "sysname": name,
-                                      "pos_start": p1, "pos_end": p2})
-                # in_dna intentionally NOT reset -- captures all alleles
-    return mutations
+    Convert a 1-based IDRefSeq position to a chromosomal coordinate via
+    linear extrapolation from the BLAST alignment endpoints.
+    """
+    offset = pos - entry["qstart"]
+    if entry["sstart"] <= entry["send"]:
+        return entry["sstart"] + offset   # forward strand
+    return entry["sstart"] - offset       # reverse strand
 
 
 def make_bed_name(accession, sysname):
+    """Build a BED-safe name field from accession + sysname."""
     safe = re.sub(r"[,\s;]+", "_", sysname)
     safe = re.sub(r"[^A-Za-z0-9_.>\-]", "", safe)
     return f"{accession}_{safe}" if safe else accession
 
 
-def write_bed(gene, hg, entry, mutations, pub_path):
-    """Write BED file; return number of lines written."""
+def write_bed(gene, hg, entry, mutations, source_path):
+    """
+    Write a BED file for one gene / genome-build combination.
+    BED coordinates are 0-based half-open (UCSC convention).
+    SNVs (pos_start == pos_end) are written as exactly 1 bp wide.
+    Returns number of data lines written.
+    """
     strand = "+" if entry["sstart"] <= entry["send"] else "-"
-    header = [
-        f"# BED file for {gene} ({hg}) - LiftOver format",
-        f"# Source: {pub_path}",
-        f"# Chrom: {entry['chrom']}  BLAST: qstart={entry['qstart']} "
-        f"qend={entry['qend']} sstart={entry['sstart']} send={entry['send']}",
+
+    header_lines = [
+        f"# BED file for {gene} ({hg}) -- LiftOver format",
+        f"# Source: {source_path}",
+        f"# Chrom: {entry['chrom']}  |  BLAST: "
+        f"qstart={entry['qstart']} qend={entry['qend']} "
+        f"sstart={entry['sstart']} send={entry['send']}",
     ]
+
     bed_lines = []
     for mut in mutations:
-        # Linear extrapolation beyond qend is valid -- no OOB filter applied.
         g1 = idref_to_genomic(mut["pos_start"], entry)
         g2 = idref_to_genomic(mut["pos_end"],   entry)
-        cs = min(g1, g2) - 1          # 0-based start
-        ce = max(g1, g2)              # half-open end
+        cs = min(g1, g2) - 1
+        ce = max(g1, g2)
         if mut["pos_start"] == mut["pos_end"]:
-            ce = cs + 1               # SNV: exactly 1 bp
-        bed_lines.append(
-            f"{entry['chrom']}\t{cs}\t{ce}\t"
-            f"{make_bed_name(mut['accession'], mut['sysname'])}\t0\t{strand}"
-        )
-    with open(os.path.join(BED_DIR, f"{gene}_{hg}.BED"), "w", encoding="utf-8") as f:
-        f.write("\n".join(header + bed_lines) + "\n")
+            ce = cs + 1
+
+        name = make_bed_name(mut["accession"], mut["sysname"])
+        bed_lines.append(f"{entry['chrom']}\t{cs}\t{ce}\t{name}\t0\t{strand}")
+
+    out_path = os.path.join(BED_DIR, f"{gene}_{hg}.BED")
+    with open(out_path, "w", encoding="utf-8") as fh:
+        fh.write("\n".join(header_lines + bed_lines) + "\n")
+
     return len(bed_lines)
 
 
-# ── Main ───────────────────────────────────────────────────────────────────────
+# -- Main -----------------------------------------------------------------------
+
 def main():
     os.makedirs(BED_DIR, exist_ok=True)
-    blast_map = load_blast_map(CSV_PATH)
 
-    folders = sorted(
-        d for d in os.listdir(IDBASE_DIR)
-        if os.path.isdir(os.path.join(IDBASE_DIR, d))
-        and d.lower().endswith("base")
-        and d.lower() != "immunomebase"
-    )
+    blast_map = load_blast_map(BASE_DIR)
+    mutations = load_mutations(TSV_PATH)
 
     total_files = total_muts = 0
     skipped = []
 
-    for folder in folders:
-        gene = re.sub(r"base$", "", folder, flags=re.IGNORECASE)
-        folder_path = os.path.join(IDBASE_DIR, folder)
-
-        pub = next((f for f in os.listdir(folder_path)
-                    if f.lower().endswith("pub.html")), None)
-        if not pub:
-            skipped.append((gene, "no pub.html")); continue
-
+    for gene, gene_mutations in sorted(mutations.items()):
         key = blast_key(gene, blast_map)
         if not key:
-            skipped.append((gene, "no 100% BLAST match")); continue
-
-        mutations = parse_mutations(os.path.join(folder_path, pub))
-        if not mutations:
-            skipped.append((gene, "no DNA mutations")); continue
+            skipped.append((gene, "no 100% BLAST match"))
+            continue
 
         for entry in blast_map[key]:
-            n = write_bed(gene, entry["hg"], entry, mutations,
-                          os.path.join(folder_path, pub))
-            print(f"  WROTE {gene}_{entry['hg']}.BED  ({n} mutations)")
+            n = write_bed(gene, entry["hg"], entry, gene_mutations, TSV_PATH)
+            print(f"  WROTE  {gene}_{entry['hg']}.BED  ({n} mutations)")
             total_files += 1
             total_muts  += n
 
-    print(f"\nBED files: {total_files}  |  Total entries: {total_muts}"
-          f"  |  Skipped genes: {len(skipped)}")
-    for g, reason in skipped:
-        print(f"  SKIP {g}: {reason}")
+    print(f"\nBED files written : {total_files}")
+    print(f"Total entries     : {total_muts}")
+    print(f"Skipped genes     : {len(skipped)}")
+    for gene, reason in skipped:
+        print(f"  SKIP  {gene}: {reason}")
 
 
 if __name__ == "__main__":

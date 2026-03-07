@@ -1,0 +1,18 @@
+# BED file for RFX5 (hg18) — LiftOver format
+# Source: C:\Users\BornLoser\Desktop\Assignment\Thesis\04_Mutation_Processing\Scripts\..\Output\all_mutations.tsv
+# Chrom: chr17_random  |  BLAST: qstart=39447 qend=39490 sstart=1657860 send=1657817
+chr17_random	1665138	1665139	R0007_Allele_1_and_2_g.32168G>A_c.607G>A_p.R149Q	0	-
+chr17_random	1665138	1665139	R0007_Allele_1_and_2_g.32168G>A_c.607G>A_p.R149Q	0	-
+chr17_random	1665138	1665139	R0008_Allele_1_and_2_g.32168G>A_c.607G>A_p.R149Q	0	-
+chr17_random	1665138	1665139	R0008_Allele_1_and_2_g.32168G>A_c.607G>A_p.R149Q	0	-
+chr17_random	1663851	1663852	R0001_Allele_1_and_2_g.33455C>T_c.1041C>T_p.R294X	0	-
+chr17_random	1663851	1663852	R0001_Allele_1_and_2_g.33455C>T_c.1041C>T_p.R294X	0	-
+chr17_random	1663770	1663771	R0005_Allele_1_and_2_g.33536C>T_c.1122C>T_p.Q321X	0	-
+chr17_random	1663770	1663771	R0005_Allele_1_and_2_g.33536C>T_c.1122C>T_p.Q321X	0	-
+chr17_random	1666894	1666895	R0003_Allele_1_and_2_g.IVS25G>A	0	-
+chr17_random	1666894	1666895	R0003_Allele_1_and_2_g.IVS25G>A	0	-
+chr17_random	1666894	1666895	R0004_Allele_1_and_2_g.IVS25G>A	0	-
+chr17_random	1666894	1666895	R0004_Allele_1_and_2_g.IVS25G>A	0	-
+chr17_random	1665883	1665884	R0006_Allele_1_and_2_g.IVS3-1G>A	0	-
+chr17_random	1665883	1665884	R0006_Allele_1_and_2_g.IVS3-1G>A	0	-
+chr17_random	1665542	1665543	R0002_Allele_1_g.IVS4-1G>A	0	-

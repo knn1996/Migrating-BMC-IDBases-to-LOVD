@@ -1,8 +1,0 @@
-# BED file for GFI1 (hg17) - LiftOver format
-# Source: C:\Users\BornLoser\Desktop\Assignment\Thesis\idbase\GFI1base\gfi1pub.html
-# Chrom: chr1  BLAST: qstart=1 qend=14119 sstart=92665460 send=92651342
-chr1	92660958	92660959	G0005_g.4502G>A_c.107G>A_r.107g>a_p.Ser36Asn	0	-
-chr1	92653730	92653731	G0001_g.11730A>G_c.1145A>G_r.1145a>g_p.Asn382Ser	0	-
-chr1	92653730	92653731	G0002_g.11730A>G_c.1145A>G_r.1145a>g_p.Asn382Ser	0	-
-chr1	92653730	92653731	G0003_g.11730A>G_c.1145A>G_r.1145a>g_p.Asn382Ser	0	-
-chr1	92653667	92653668	G0004_g.11793A>G_c.1208A>G_r.1208a>g_p.Lys403Arg	0	-

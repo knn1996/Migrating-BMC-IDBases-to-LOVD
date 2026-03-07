@@ -1,0 +1,11 @@
+# BED file for STAT5B (hg18) — LiftOver format
+# Source: C:\Users\BornLoser\Desktop\Assignment\Thesis\04_Mutation_Processing\Scripts\..\Output\all_mutations.tsv
+# Chrom: chr1_random  |  BLAST: qstart=63647 qend=63698 sstart=1508417 send=1508366
+chr1_random	1518077	1518078	S0004_Allele_1_and_2_g.53986C>T_c.454C>T_r.454c>u_p.Arg152X	0	-
+chr1_random	1518077	1518078	S0004_Allele_1_and_2_g.53986C>T_c.454C>T_r.454c>u_p.Arg152X	0	-
+chr1_random	1512816	1512817	S0003_Allele_1_and_2_g.59246dupC_c.1102dupC_r.1102dupc_p.Gln368fsX8	0	-
+chr1_random	1512816	1512817	S0003_Allele_1_and_2_g.59246dupC_c.1102dupC_r.1102dupc_p.Gln368fsX8	0	-
+chr1_random	1512041	1512042	S0002_Allele_1_and_2_g.60021dupG_c.1191dupG_r.1191dupg_p.Asn398fsX15	0	-
+chr1_random	1512041	1512042	S0002_Allele_1_and_2_g.60021dupG_c.1191dupG_r.1191dupg_p.Asn398fsX15	0	-
+chr1_random	1504788	1504789	S0001_Allele_1_and_2_g.67275G>C_c.1888G>C_r.1888g>c_p.Ala630Pro	0	-
+chr1_random	1504788	1504789	S0001_Allele_1_and_2_g.67275G>C_c.1888G>C_r.1888g>c_p.Ala630Pro	0	-
