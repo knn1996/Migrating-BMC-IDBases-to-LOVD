@@ -1,0 +1,6 @@
+# BED file for IL2RA (hg18) — LiftOver format
+# BLAST: chr10  qstart=1 qend=52783  sstart=6145294 send=6092512
+chr10	6107994	6107998	I0001_Allele_1_g.37297_37300delGCAG_c.61_64delGCAG_r.61_64delgcag_p.Ala21fsX26	0	-
+chr10	6107994	6107998	I0001_Allele_2_g.37297_37300delGCAG_c.61_64delGCAG_r.61_64delgcag_p.Ala21fsX26	0	-
+chr10	6106278	6106279	I0002_Allele_1_g.39016C>T_c.301C>T_r.301c>u_p.Gln101X	0	-
+chr10	6101430	6101431	I0002_Allele_2_g.43863dupA_c.692dupA_r.692dupa_p.Thr232fsX38	0	-

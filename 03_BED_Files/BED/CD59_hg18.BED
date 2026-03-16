@@ -1,5 +1,0 @@
-# BED file for CD59 (hg18) — LiftOver format
-# Source: C:\Users\BornLoser\Desktop\Assignment\Thesis\04_Mutation_Processing\Scripts\..\Output\all_mutations.tsv
-# Chrom: chr22  |  BLAST: qstart=4931 qend=4975 sstart=27172739 send=27172695
-chr22	27157606	27157607	C0001_Allele_1_and_2_g.20063delC_c.123delC_r.123delc_p.Val42fsX37	0	-
-chr22	27157606	27157607	C0001_Allele_1_and_2_g.20063delC_c.123delC_r.123delc_p.Val42fsX37	0	-

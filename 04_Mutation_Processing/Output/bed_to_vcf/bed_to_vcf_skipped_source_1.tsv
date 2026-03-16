@@ -1,0 +1,14 @@
+file	gene	hg_source	chrom	pos	name	reason
+ADA_hg38_18.BED	ADA	hg18	chr20	44647058	A0022	accession-only
+ADA_hg38_18.BED	ADA	hg18	chr20	44647058	A0022	accession-only
+ADA_hg38_18.BED	ADA	hg18	chr20	44647058	A0023	accession-only
+ADA_hg38_18.BED	ADA	hg18	chr20	44647058	A0023	accession-only
+CD40L_hg38_18.BED	CD40L	hg18	chrX	136648321	C0219_g.1127_1128ins_c.72_73ins291_r.72_73ins_p.Met25fsX60	unparseable — review manually
+CD40L_hg38_18.BED	CD40L	hg18	chrX	136659039	C0200	accession-only
+CD40L_hg38_18.BED	CD40L	hg18	chrX	136659039	C0201	accession-only
+CD40L_hg38_18.BED	CD40L	hg18	chrX	136659039	C0202	accession-only
+CD40L_hg38_18.BED	CD40L	hg18	chrX	136648058	C0218	accession-only
+CYBA_hg38_18.BED	CYBA	hg18	chr16	88648118	H0038	accession-only
+CYBA_hg38_18.BED	CYBA	hg18	chr16	88648118	H0038	accession-only
+CYBB_hg38_18.BED	CYBB	hg18	chrX	37796059	A1415_g.16991_16992ins_c.591_592ins41_r.591_592ins41_p.Arg198fsX30	unparseable — review manually
+LRRC8A_hg38_18.BED	LRRC8A	hg18	chr9	128908511	L0001	accession-only

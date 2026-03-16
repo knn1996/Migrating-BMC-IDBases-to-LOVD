@@ -1,0 +1,4 @@
+# BED file for NFKBIA (hg18) — LiftOver format
+# BLAST: chr14  qstart=1 qend=10228  sstart=34948695 send=34938468
+chr14	34947506	34947507	N0001_g.1189G>T_c.95G>T_r.95g>u_p.Ser32Ile	0	-
+chr14	34947561	34947562	N0002_g.1134G>T_c.40G>T_r.40g>u_p.Glu14X	0	-

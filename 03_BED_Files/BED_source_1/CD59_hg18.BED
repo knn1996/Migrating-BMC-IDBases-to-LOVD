@@ -1,0 +1,4 @@
+# BED file for CD59 (hg18) — LiftOver format
+# BLAST: chr11  qstart=1 qend=35467  sstart=33715600 send=33680134
+chr11	33695537	33695538	C0001_Allele_1_g.20063delC_c.123delC_r.123delc_p.Val42fsX37	0	-
+chr11	33695537	33695538	C0001_Allele_2_g.20063delC_c.123delC_r.123delc_p.Val42fsX37	0	-

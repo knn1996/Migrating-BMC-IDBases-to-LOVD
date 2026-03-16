@@ -1,0 +1,4 @@
+# BED file for CD79B (hg18) — LiftOver format
+# BLAST: chr17  qstart=1 qend=10607  sstart=59368436 send=59357830
+chr17	59365886	59365887	C0001_Allele_1_g.2550G>A_c.412G>A_r.412g>a_p.Gly138Ser	0	-
+chr17	59365886	59365887	C0001_Allele_2_g.2550G>A_c.412G>A_r.412g>a_p.Gly138Ser	0	-
