@@ -1,0 +1,4 @@
+# BED file for IGLL1 (hg18) — LiftOver format
+# BLAST: chr22  qstart=1 qend=14184  sstart=22257495 send=22243312
+chr22	22257237	22257238	G0001_Allele_1_g.258C>T_c.182C>T_p.Q22X	0	-
+chr22	22250591	22250592	G0001_Allele_2_g.6904C>T_c.543C>T_p.P142L	0	-

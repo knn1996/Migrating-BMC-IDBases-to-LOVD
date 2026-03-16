@@ -1,0 +1,1 @@
+C:\Users\BornLoser\AppData\Roaming\Claude\Claude Extensions\ant.dir.cursortouch.windows-mcp\.venv\Scripts\python.exe: can't open file 'C:\\Users\\BornLoser\\Desktop\\Assignment\\Thesis\\06_Writing\\Data': [Errno 2] No such file or directory

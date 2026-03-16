@@ -1,0 +1,5 @@
+# BED file for FASLG (hg18) — LiftOver format
+# BLAST: chr1  qstart=1 qend=14829  sstart=170889808 send=170904636
+chr1	170973198	170973282	T0001_Allele_1_g.83392_83475del_c.629_712del_p.M158_T186del	0	+
+chr1	170973466	170973467	T0002_Allele_1_g.83660C>A_c.740C>A_r.740c>a_p.Ala247Glu	0	+
+chr1	170973466	170973467	T0002_Allele_2_g.83660C>A_c.740C>A_r.740c>a_p.Ala247Glu	0	+

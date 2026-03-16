@@ -1,0 +1,7 @@
+# BED file for CEBPE (hg18) — LiftOver format
+# BLAST: chr14  qstart=1 qend=8960  sstart=22663314 send=22654355
+chr14	22661247	22661252	C0001_Allele_1_g.2063_2067delTGACC_c.249_253delTGACC_r.249_253delugacc_p.Asp84fsX118	0	-
+chr14	22661247	22661252	C0001_Allele_2_g.2063_2067delTGACC_c.249_253delTGACC_r.249_253delugacc_p.Asp84fsX118	0	-
+chr14	22660990	22660991	C0002_Allele_1_g.2323dupA_c.509dupA_r.509dupa_p.Ala171fsX33	0	-
+chr14	22660990	22660991	C0002_Allele_2_g.2323dupA_c.509dupA_r.509dupa_p.Ala171fsX33	0	-
+chr14	22660089	22660090	C0003_Allele_1_g.3225T>C_c.653T>C_r.653u>c_p.Val218Ala	0	-

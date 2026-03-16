@@ -1,0 +1,4 @@
+# BED file for MLPH (hg18) — LiftOver format
+# BLAST: chr2  qstart=1 qend=73708  sstart=238055669 send=238129376
+chr2	238062910	238062911	M0001_Allele_1_g.7243C>T_c.103C>T_r.103c>u_p.Arg35Trp	0	+
+chr2	238062910	238062911	M0001_Allele_2_g.7243C>T_c.103C>T_r.103c>u_p.Arg35Trp	0	+

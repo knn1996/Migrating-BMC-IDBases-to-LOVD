@@ -1,5 +1,0 @@
-# BED file for MLPH (hg18) — LiftOver format
-# Source: C:\Users\BornLoser\Desktop\Assignment\Thesis\04_Mutation_Processing\Scripts\..\Output\all_mutations.tsv
-# Chrom: chr13  |  BLAST: qstart=47310 qend=47353 sstart=50995146 send=50995189
-chr13	50955078	50955079	M0001_Allele_1_and_2_g.7243C>T_c.103C>T_r.103c>u_p.Arg35Trp	0	+
-chr13	50955078	50955079	M0001_Allele_1_and_2_g.7243C>T_c.103C>T_r.103c>u_p.Arg35Trp	0	+

@@ -1,0 +1,3 @@
+# BED file for LRRC8A (hg18) — LiftOver format
+# BLAST: chr9  qstart=1 qend=12872  sstart=130708265 send=130721136
+chr9	130710610	130721136	L0001	0	+

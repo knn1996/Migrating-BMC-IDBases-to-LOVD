@@ -1,0 +1,4 @@
+# BED file for RNF168 (hg18) — LiftOver format
+# BLAST: chr3  qstart=1 qend=41986  sstart=197720036 send=197678051
+chr3	197702883	197702884	R0001_Allele_1_g.17152_17153insG_c.397_398insG_r.397_398insg_p.Ala133fsX11	0	-
+chr3	197687533	197687537	R0001_Allele_2_g.32500_32503delACAA_c.1323_1326delACAA_r.1323_1326delacaa_p.Gln442fsX45	0	-

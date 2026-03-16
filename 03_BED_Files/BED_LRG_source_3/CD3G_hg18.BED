@@ -1,0 +1,4 @@
+# BED file for CD3G (hg18) — LiftOver format
+# BLAST: chr11  qstart=1 qend=16439  sstart=117715269 send=117731707
+chr11	117721750	117721751	A0004_Allele_1_g.6483A>T_c.205A>T_r.205a>u_p.Lys69X	0	+
+chr11	117721750	117721751	A0004_Allele_2_g.6483A>T_c.205A>T_r.205a>u_p.Lys69X	0	+

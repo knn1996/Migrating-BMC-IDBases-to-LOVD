@@ -1,0 +1,610 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>bed_to_vcf — Skipped Variants Analysis</title>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;600&family=IBM+Plex+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --bg:       #0d1117;
+    --surface:  #161b22;
+    --border:   #21262d;
+    --accent:   #f78166;
+    --green:    #3fb950;
+    --yellow:   #d29922;
+    --blue:     #58a6ff;
+    --purple:   #bc8cff;
+    --teal:     #39d353;
+    --muted:    #8b949e;
+    --text:     #e6edf3;
+    --mono:     'IBM Plex Mono', monospace;
+    --sans:     'IBM Plex Sans', sans-serif;
+  }
+
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+
+  body {
+    background: var(--bg);
+    color: var(--text);
+    font-family: var(--sans);
+    font-size: 14px;
+    line-height: 1.6;
+    min-height: 100vh;
+    padding: 32px 24px 64px;
+  }
+
+  /* ── Header ── */
+  header {
+    border-left: 3px solid var(--accent);
+    padding-left: 16px;
+    margin-bottom: 40px;
+    animation: fadeDown 0.5s ease both;
+  }
+  header h1 {
+    font-family: var(--mono);
+    font-size: 22px;
+    font-weight: 600;
+    color: var(--text);
+    letter-spacing: -0.5px;
+  }
+  header p {
+    color: var(--muted);
+    font-size: 13px;
+    margin-top: 4px;
+  }
+  header .file-tag {
+    display: inline-block;
+    font-family: var(--mono);
+    font-size: 11px;
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 4px;
+    padding: 2px 8px;
+    color: var(--blue);
+    margin-top: 8px;
+  }
+
+  /* ── Stat cards ── */
+  .stats-row {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+    gap: 12px;
+    margin-bottom: 36px;
+  }
+  .stat-card {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    padding: 18px 20px;
+    animation: fadeUp 0.5s ease both;
+  }
+  .stat-card:nth-child(1) { animation-delay: 0.05s; border-top: 2px solid var(--accent); }
+  .stat-card:nth-child(2) { animation-delay: 0.10s; border-top: 2px solid var(--green); }
+  .stat-card:nth-child(3) { animation-delay: 0.15s; border-top: 2px solid var(--yellow); }
+  .stat-card:nth-child(4) { animation-delay: 0.20s; border-top: 2px solid var(--purple); }
+  .stat-card .label {
+    font-size: 11px;
+    text-transform: uppercase;
+    letter-spacing: 0.8px;
+    color: var(--muted);
+    margin-bottom: 6px;
+  }
+  .stat-card .value {
+    font-family: var(--mono);
+    font-size: 28px;
+    font-weight: 600;
+    line-height: 1;
+  }
+  .stat-card:nth-child(1) .value { color: var(--accent); }
+  .stat-card:nth-child(2) .value { color: var(--green); }
+  .stat-card:nth-child(3) .value { color: var(--yellow); }
+  .stat-card:nth-child(4) .value { color: var(--purple); }
+  .stat-card .sub {
+    font-size: 11px;
+    color: var(--muted);
+    margin-top: 4px;
+  }
+
+  /* ── Section layout ── */
+  .grid-2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 16px;
+    margin-bottom: 16px;
+  }
+  .grid-full { margin-bottom: 16px; }
+
+  .panel {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    padding: 20px 24px;
+    animation: fadeUp 0.5s ease both;
+  }
+  .panel-title {
+    font-family: var(--mono);
+    font-size: 12px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: var(--muted);
+    margin-bottom: 18px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid var(--border);
+  }
+
+  /* ── Horizontal bar chart ── */
+  .bar-list { display: flex; flex-direction: column; gap: 10px; }
+  .bar-item { display: flex; flex-direction: column; gap: 4px; }
+  .bar-meta { display: flex; justify-content: space-between; align-items: baseline; }
+  .bar-name {
+    font-family: var(--mono);
+    font-size: 12px;
+    color: var(--text);
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 70%;
+  }
+  .bar-count {
+    font-family: var(--mono);
+    font-size: 12px;
+    color: var(--muted);
+    white-space: nowrap;
+  }
+  .bar-track {
+    height: 6px;
+    background: var(--border);
+    border-radius: 3px;
+    overflow: hidden;
+  }
+  .bar-fill {
+    height: 100%;
+    border-radius: 3px;
+    transition: width 0.8s cubic-bezier(0.16,1,0.3,1);
+    animation: growBar 0.9s cubic-bezier(0.16,1,0.3,1) both;
+  }
+  @keyframes growBar {
+    from { width: 0 !important; }
+  }
+
+  /* ── Reason breakdown (donut-style pill bars) ── */
+  .reason-list { display: flex; flex-direction: column; gap: 12px; }
+  .reason-row { display: flex; align-items: center; gap: 12px; }
+  .reason-dot {
+    width: 10px; height: 10px;
+    border-radius: 50%;
+    flex-shrink: 0;
+  }
+  .reason-label {
+    font-size: 13px;
+    color: var(--text);
+    flex: 1;
+  }
+  .reason-count {
+    font-family: var(--mono);
+    font-size: 12px;
+    color: var(--muted);
+    min-width: 40px;
+    text-align: right;
+  }
+  .reason-pct {
+    font-family: var(--mono);
+    font-size: 11px;
+    color: var(--muted);
+    min-width: 38px;
+    text-align: right;
+  }
+  .reason-track {
+    width: 100px;
+    height: 5px;
+    background: var(--border);
+    border-radius: 3px;
+    overflow: hidden;
+  }
+  .reason-fill {
+    height: 100%;
+    border-radius: 3px;
+    animation: growBar 0.9s cubic-bezier(0.16,1,0.3,1) both;
+  }
+
+  /* ── Stacked pass/skip bars per gene ── */
+  .stack-list { display: flex; flex-direction: column; gap: 8px; }
+  .stack-item { display: flex; align-items: center; gap: 10px; }
+  .stack-gene {
+    font-family: var(--mono);
+    font-size: 11px;
+    color: var(--text);
+    width: 80px;
+    flex-shrink: 0;
+    text-align: right;
+  }
+  .stack-track {
+    flex: 1;
+    height: 14px;
+    border-radius: 3px;
+    overflow: hidden;
+    display: flex;
+  }
+  .stack-pass {
+    background: var(--green);
+    height: 100%;
+    transition: width 0.8s ease;
+    animation: growBar 0.9s cubic-bezier(0.16,1,0.3,1) both;
+  }
+  .stack-skip {
+    background: var(--accent);
+    height: 100%;
+    transition: width 0.8s ease;
+    animation: growBar 0.9s cubic-bezier(0.16,1,0.3,1) both;
+  }
+  .stack-totals {
+    font-family: var(--mono);
+    font-size: 10px;
+    color: var(--muted);
+    white-space: nowrap;
+    min-width: 90px;
+  }
+
+  /* ── Recommendation box ── */
+  .rec-box {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    padding: 24px 28px;
+    animation: fadeUp 0.5s ease 0.3s both;
+  }
+  .rec-box .panel-title { color: var(--yellow); }
+  .rec-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 16px; }
+  .rec-card {
+    border: 1px solid var(--border);
+    border-radius: 6px;
+    padding: 14px 16px;
+  }
+  .rec-card-title {
+    font-family: var(--mono);
+    font-size: 12px;
+    font-weight: 600;
+    margin-bottom: 8px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+  .tag {
+    display: inline-block;
+    font-family: var(--mono);
+    font-size: 10px;
+    border-radius: 3px;
+    padding: 1px 6px;
+    font-weight: 600;
+  }
+  .tag-p    { background: rgba(188,140,255,0.15); color: var(--purple); border: 1px solid rgba(188,140,255,0.3); }
+  .tag-r    { background: rgba(88,166,255,0.12);  color: var(--blue);   border: 1px solid rgba(88,166,255,0.3); }
+  .tag-ivs  { background: rgba(242,167,0,0.12);   color: var(--yellow); border: 1px solid rgba(242,167,0,0.3); }
+  .tag-comp { background: rgba(247,129,102,0.12); color: var(--accent); border: 1px solid rgba(247,129,102,0.3); }
+  .tag-none { background: rgba(139,148,158,0.12); color: var(--muted);  border: 1px solid rgba(139,148,158,0.3); }
+  .rec-card p { font-size: 12px; color: var(--muted); line-height: 1.6; }
+  .rec-card code {
+    font-family: var(--mono);
+    font-size: 11px;
+    background: var(--bg);
+    padding: 1px 5px;
+    border-radius: 3px;
+    color: var(--blue);
+  }
+
+  /* Legend */
+  .legend { display: flex; gap: 16px; margin-bottom: 12px; }
+  .legend-item { display: flex; align-items: center; gap: 6px; font-size: 11px; color: var(--muted); }
+  .legend-dot { width: 10px; height: 10px; border-radius: 2px; }
+
+  /* Animations */
+  @keyframes fadeDown {
+    from { opacity: 0; transform: translateY(-10px); }
+    to   { opacity: 1; transform: translateY(0); }
+  }
+  @keyframes fadeUp {
+    from { opacity: 0; transform: translateY(12px); }
+    to   { opacity: 1; transform: translateY(0); }
+  }
+
+  @media (max-width: 700px) {
+    .grid-2 { grid-template-columns: 1fr; }
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <h1>bed_to_vcf — Skipped Variants Report</h1>
+  <p>All 2,140 skipped rows share a single root cause: the variant name carries no parseable REF/ALT sequence.</p>
+  <span class="file-tag">bed_to_vcf_skipped.tsv</span>
+  <span class="file-tag" style="color:var(--green); margin-left:6px;">all_variants_hg38.vcf</span>
+</header>
+
+<!-- ── Stat cards ── -->
+<div class="stats-row">
+  <div class="stat-card">
+    <div class="label">Skipped</div>
+    <div class="value">2,140</div>
+    <div class="sub">all same reason</div>
+  </div>
+  <div class="stat-card">
+    <div class="label">Passed (VCF)</div>
+    <div class="value">1,191</div>
+    <div class="sub">wrote to VCF</div>
+  </div>
+  <div class="stat-card">
+    <div class="label">Skip rate</div>
+    <div class="value">64%</div>
+    <div class="sub">of 3,331 total</div>
+  </div>
+  <div class="stat-card">
+    <div class="label">Genes affected</div>
+    <div class="value">27</div>
+    <div class="sub">out of ~56 BED genes</div>
+  </div>
+</div>
+
+<!-- ── Row 1: reason breakdown + gene skip counts ── -->
+<div class="grid-2">
+
+  <!-- Reason breakdown -->
+  <div class="panel" style="animation-delay:0.1s">
+    <div class="panel-title">Skip reason breakdown — by name pattern</div>
+    <div class="reason-list">
+
+      <div class="reason-row">
+        <div class="reason-dot" style="background:var(--purple)"></div>
+        <div class="reason-label">p. only — protein notation, no DNA coords</div>
+        <div class="reason-count">1,175</div>
+        <div class="reason-pct">54.9%</div>
+        <div class="reason-track"><div class="reason-fill" style="width:100%;background:var(--purple)"></div></div>
+      </div>
+
+      <div class="reason-row">
+        <div class="reason-dot" style="background:var(--blue)"></div>
+        <div class="reason-label">r. only — RNA-level notation</div>
+        <div class="reason-count">674</div>
+        <div class="reason-pct">31.5%</div>
+        <div class="reason-track"><div class="reason-fill" style="width:57%;background:var(--blue)"></div></div>
+      </div>
+
+      <div class="reason-row">
+        <div class="reason-dot" style="background:var(--yellow)"></div>
+        <div class="reason-label">g.IVS / splicing notation</div>
+        <div class="reason-count">141</div>
+        <div class="reason-pct">6.6%</div>
+        <div class="reason-track"><div class="reason-fill" style="width:12%;background:var(--yellow)"></div></div>
+      </div>
+
+      <div class="reason-row">
+        <div class="reason-dot" style="background:var(--accent)"></div>
+        <div class="reason-label">Compound / multi-AA protein change</div>
+        <div class="reason-count">93</div>
+        <div class="reason-pct">4.3%</div>
+        <div class="reason-track"><div class="reason-fill" style="width:8%;background:var(--accent)"></div></div>
+      </div>
+
+      <div class="reason-row">
+        <div class="reason-dot" style="background:var(--muted)"></div>
+        <div class="reason-label">No sysname — accession only</div>
+        <div class="reason-count">33</div>
+        <div class="reason-pct">1.5%</div>
+        <div class="reason-track"><div class="reason-fill" style="width:3%;background:var(--muted)"></div></div>
+      </div>
+
+      <div class="reason-row">
+        <div class="reason-dot" style="background:var(--teal)"></div>
+        <div class="reason-label">c. complex / intronic offset</div>
+        <div class="reason-count">24</div>
+        <div class="reason-pct">1.1%</div>
+        <div class="reason-track"><div class="reason-fill" style="width:2%;background:var(--teal)"></div></div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- Top genes skipped -->
+  <div class="panel" style="animation-delay:0.15s">
+    <div class="panel-title">Top genes by skipped count</div>
+    <div class="bar-list">
+      <!-- max = 405 (CYBB) -->
+      <div class="bar-item">
+        <div class="bar-meta"><span class="bar-name">CYBB</span><span class="bar-count">405</span></div>
+        <div class="bar-track"><div class="bar-fill" style="width:100%;background:var(--accent)"></div></div>
+      </div>
+      <div class="bar-item">
+        <div class="bar-meta"><span class="bar-name">SPINK5</span><span class="bar-count">231</span></div>
+        <div class="bar-track"><div class="bar-fill" style="width:57%;background:var(--accent)"></div></div>
+      </div>
+      <div class="bar-item">
+        <div class="bar-meta"><span class="bar-name">RAG1</span><span class="bar-count">201</span></div>
+        <div class="bar-track"><div class="bar-fill" style="width:50%;background:var(--yellow)"></div></div>
+      </div>
+      <div class="bar-item">
+        <div class="bar-meta"><span class="bar-name">CYBA</span><span class="bar-count">195</span></div>
+        <div class="bar-track"><div class="bar-fill" style="width:48%;background:var(--yellow)"></div></div>
+      </div>
+      <div class="bar-item">
+        <div class="bar-meta"><span class="bar-name">CTSC</span><span class="bar-count">180</span></div>
+        <div class="bar-track"><div class="bar-fill" style="width:44%;background:var(--yellow)"></div></div>
+      </div>
+      <div class="bar-item">
+        <div class="bar-meta"><span class="bar-name">UNC13D</span><span class="bar-count">144</span></div>
+        <div class="bar-track"><div class="bar-fill" style="width:36%;background:var(--blue)"></div></div>
+      </div>
+      <div class="bar-item">
+        <div class="bar-meta"><span class="bar-name">RFXANK</span><span class="bar-count">120</span></div>
+        <div class="bar-track"><div class="bar-fill" style="width:30%;background:var(--blue)"></div></div>
+      </div>
+      <div class="bar-item">
+        <div class="bar-meta"><span class="bar-name">IL12RB1</span><span class="bar-count">84</span></div>
+        <div class="bar-track"><div class="bar-fill" style="width:21%;background:var(--blue)"></div></div>
+      </div>
+      <div class="bar-item">
+        <div class="bar-meta"><span class="bar-name">SMARCAL1</span><span class="bar-count">81</span></div>
+        <div class="bar-track"><div class="bar-fill" style="width:20%;background:var(--purple)"></div></div>
+      </div>
+      <div class="bar-item">
+        <div class="bar-meta"><span class="bar-name">STX11</span><span class="bar-count">78</span></div>
+        <div class="bar-track"><div class="bar-fill" style="width:19%;background:var(--purple)"></div></div>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+<!-- ── Row 2: stacked pass/skip per gene ── -->
+<div class="panel grid-full" style="animation-delay:0.2s">
+  <div class="panel-title">Pass vs Skip per gene — all genes with skips</div>
+
+  <div class="legend">
+    <div class="legend-item"><div class="legend-dot" style="background:var(--green)"></div>Passed to VCF</div>
+    <div class="legend-item"><div class="legend-dot" style="background:var(--accent)"></div>Skipped</div>
+  </div>
+
+  <div class="stack-list">
+    <!-- pass / skip / total — computed from shell output above -->
+    <!-- format: gene, pass, skip -->
+    <script>
+    const geneData = [
+      ["CYBB",      464, 405],
+      ["SPINK5",     44, 231],
+      ["RAG1",       43, 201],
+      ["CYBA",       39, 195],
+      ["CTSC",       62, 180],
+      ["UNC13D",     47, 144],
+      ["RFXANK",     10, 120],
+      ["IL12RB1",    21,  84],
+      ["SMARCAL1",   34,  81],
+      ["STX11",       2,  78],
+      ["RAG2",       14,  69],
+      ["CD40L",     127,  66],
+      ["LIG4",        4,  60],
+      ["IRAK4",       7,  45],
+      ["ADA",        77,  33],
+      ["IFNGR2",      3,  30],
+      ["STAT1",       2,  27],
+      ["MRE11A",      6,  18],
+      ["TNFRSF13B",   9,  18],
+      ["SBDS",       35,  15],
+      ["UNG",         2,  12],
+      ["CD59",        0,   6],
+      ["C5",          5,   6],
+      ["IL2RA",       2,   6],
+      ["TAZ",        43,   4],
+      ["LRRC8A",      0,   3],
+      ["DKC1",        6,   3],
+    ];
+    const maxTotal = Math.max(...geneData.map(r => r[1]+r[2]));
+    const list = document.querySelector(".stack-list");
+    geneData.forEach(([gene, pass, skip]) => {
+      const total = pass + skip;
+      const skipPct  = (skip  / maxTotal * 100).toFixed(1);
+      const passPct  = (pass  / maxTotal * 100).toFixed(1);
+      const skipRate = (skip  / total   * 100).toFixed(0);
+      const item = document.createElement("div");
+      item.className = "stack-item";
+      item.innerHTML = `
+        <div class="stack-gene">${gene}</div>
+        <div class="stack-track">
+          <div class="stack-pass" style="width:${passPct}%"></div>
+          <div class="stack-skip" style="width:${skipPct}%"></div>
+        </div>
+        <div class="stack-totals">✓${pass} &nbsp;✗${skip} &nbsp;<span style="color:var(--accent)">${skipRate}% skip</span></div>
+      `;
+      list.appendChild(item);
+    });
+    </script>
+  </div>
+</div>
+
+<!-- ── Row 3: Recommendations ── -->
+<div class="rec-box">
+  <div class="panel-title">How to tackle this — recovery strategies by pattern</div>
+  <div class="rec-grid">
+
+    <div class="rec-card" style="border-color:rgba(188,140,255,0.25)">
+      <div class="rec-card-title">
+        <span class="tag tag-p">p. only</span>
+        1,175 rows — 54.9%
+      </div>
+      <p>
+        These entries have <em>only</em> a protein description (e.g. <code>p.Arg56fsX157</code>)
+        in the sysname field — no DNA or RNA coordinates.
+        The BED coordinate already places them on the genome; the name just cannot be parsed into REF/ALT.
+        <br><br>
+        <strong>Fix:</strong> write these as <em>coordinate-only</em> BED entries (no REF/ALT),
+        then use the Mutalyzer <code>/position_convert</code> endpoint with the genomic position and
+        the gene's NM_ transcript to obtain a c. notation. The p. in the name can be used as a cross-check label.
+      </p>
+    </div>
+
+    <div class="rec-card" style="border-color:rgba(88,166,255,0.25)">
+      <div class="rec-card-title">
+        <span class="tag tag-r">r. only</span>
+        674 rows — 31.5%
+      </div>
+      <p>
+        RNA-level notations (e.g. <code>r.584_587delagug</code>) describe changes at the transcript
+        but carry no genomic position. The BED coordinate is already the genomic anchor.
+        <br><br>
+        <strong>Fix:</strong> strip the RNA description from the name, treat the BED coordinate as
+        a genomic deletion/insertion of the given length, emit a VCF row with <code>REF=N</code>
+        and ALT derived from the operation type (<code>del</code> → <code>.</code>, <code>ins</code> → sequence).
+        Then let Mutalyzer normalise.
+      </p>
+    </div>
+
+    <div class="rec-card" style="border-color:rgba(242,167,0,0.25)">
+      <div class="rec-card-title">
+        <span class="tag tag-ivs">g.IVS / splicing</span>
+        141 rows — 6.6%
+      </div>
+      <p>
+        Legacy intronic notation (e.g. <code>g.IVS3-2A>G</code>) that predates HGVS c. intronic
+        offsets. The BED liftover has already placed these on hg38 using the BLAST hit.
+        <br><br>
+        <strong>Fix:</strong> The BED position is reliable — emit it as a plain SNV or indel VCF row
+        anchored to the genomic coordinate, and let Mutalyzer's <code>/normalize</code> convert it to
+        a proper <code>c.-2A>G</code> intronic c. notation.
+      </p>
+    </div>
+
+    <div class="rec-card" style="border-color:rgba(247,129,102,0.25)">
+      <div class="rec-card-title">
+        <span class="tag tag-comp">Compound p.</span>
+        93 rows — 4.3%
+      </div>
+      <p>
+        Multi-substitution protein changes (e.g. <code>p.Ala3Val_Thr9Ile_Arg278His</code>) represent
+        haplotypes — multiple variants on one allele. Each sub-change maps to a different position.
+        <br><br>
+        <strong>Fix:</strong> split on <code>_</code>, resolve each amino-acid substitution
+        individually against the transcript using Mutalyzer <code>/back_translate</code>,
+        and emit one VCF row per sub-variant.
+      </p>
+    </div>
+
+    <div class="rec-card" style="border-color:rgba(139,148,158,0.25)">
+      <div class="rec-card-title">
+        <span class="tag tag-none">No sysname</span>
+        33 rows — 1.5%
+      </div>
+      <p>
+        Entries where the pub.html had no Systematic name at all — the BED name is just an accession
+        like <code>L0001</code>. Without any mutation description, the REF/ALT cannot be inferred.
+        <br><br>
+        <strong>Fix:</strong> look up each accession in the original pub.html source file
+        and retrieve the mutation description manually, or flag these for MV review.
+        Only 33 rows — manual curation is feasible.
+      </p>
+    </div>
+
+  </div>
+</div>
+
+</body>
+</html>

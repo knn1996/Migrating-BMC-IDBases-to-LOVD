@@ -1,9 +1,0 @@
-# BED file for C2 (hg16) — LiftOver format
-# Source: C:\Users\BornLoser\Desktop\Assignment\Thesis\04_Mutation_Processing\Scripts\..\Output\all_mutations.tsv
-# Chrom: chrY  |  BLAST: qstart=10674 qend=10716 sstart=558265 send=558307
-chrY	549741	549742	C0001_Allele_1_g.2151G>A_c.428G>A_p.C131Y_Allele_2_g.9059G>C_c.990G>C_p.E318D	0	+
-chrY	556649	556650	C0001_Allele_1_g.2151G>A_c.428G>A_p.C131Y_Allele_2_g.9059G>C_c.990G>C_p.E318D	0	+
-chrY	554916	554944	C0002_Allele_1_g.7326_7353del_c.877_904del_p.V281fsX282_Allele_2_g.16300G>A_c.1426G>A_p.G464R	0	+
-chrY	563890	563891	C0002_Allele_1_g.7326_7353del_c.877_904del_p.V281fsX282_Allele_2_g.16300G>A_c.1426G>A_p.G464R	0	+
-chrY	554916	554944	C0003_Allele_1_g.7326_7353del_c.877_904del_p.V281fsX282_Allele_2_g.16300G>A_c.1426G>A_p.G464R	0	+
-chrY	563890	563891	C0003_Allele_1_g.7326_7353del_c.877_904del_p.V281fsX282_Allele_2_g.16300G>A_c.1426G>A_p.G464R	0	+

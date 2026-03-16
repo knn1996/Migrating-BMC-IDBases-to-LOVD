@@ -1,8 +1,0 @@
-# BED file for GFI1 (hg18) — LiftOver format
-# Source: C:\Users\BornLoser\Desktop\Assignment\Thesis\04_Mutation_Processing\Scripts\..\Output\all_mutations.tsv
-# Chrom: chr22  |  BLAST: qstart=8266 qend=8309 sstart=16353336 send=16353379
-chr22	16349571	16349572	G0005_g.4502G>A_c.107G>A_r.107g>a_p.Ser36Asn	0	+
-chr22	16356799	16356800	G0001_g.11730A>G_c.1145A>G_r.1145a>g_p.Asn382Ser	0	+
-chr22	16356799	16356800	G0002_g.11730A>G_c.1145A>G_r.1145a>g_p.Asn382Ser	0	+
-chr22	16356799	16356800	G0003_g.11730A>G_c.1145A>G_r.1145a>g_p.Asn382Ser	0	+
-chr22	16356862	16356863	G0004_g.11793A>G_c.1208A>G_r.1208a>g_p.Lys403Arg	0	+

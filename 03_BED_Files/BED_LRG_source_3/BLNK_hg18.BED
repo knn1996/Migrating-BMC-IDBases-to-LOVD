@@ -1,0 +1,4 @@
+# BED file for BLNK (hg18) — LiftOver format
+# BLAST: chr10  qstart=1 qend=99872  sstart=98031316 send=97931445
+chr10	98021117	98021118	B0001_Allele_1_g.IVS13A>T	0	-
+chr10	98021117	98021118	B0001_Allele_2_g.IVS13A>T	0	-

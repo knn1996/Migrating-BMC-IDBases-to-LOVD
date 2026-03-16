@@ -1,0 +1,6 @@
+# BED file for CD79A (hg18) — LiftOver format
+# BLAST: chr19  qstart=1 qend=11250  sstart=47068030 send=47079279
+chr19	47070952	47070953	C0001_Allele_1_g.IVS2-2A>G_c.380-2A>G_r.380-2a>g_	0	+
+chr19	47070952	47070953	C0001_Allele_2_g.IVS2-2A>G_c.380-2A>G_r.380-2a>g_	0	+
+chr19	47070713	47070714	C0002_Allele_1_g.IVS21G>A_c.3791G>A_r.3791g>a_	0	+
+chr19	47070713	47070714	C0002_Allele_2_g.IVS21G>A_c.3791G>A_r.3791g>a_	0	+

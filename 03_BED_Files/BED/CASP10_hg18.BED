@@ -1,7 +1,0 @@
-# BED file for CASP10 (hg18) — LiftOver format
-# Source: C:\Users\BornLoser\Desktop\Assignment\Thesis\04_Mutation_Processing\Scripts\..\Output\all_mutations.tsv
-# Chrom: chrY  |  BLAST: qstart=23312 qend=23354 sstart=9151746 send=9151788
-chrY	9154379	9154380	C0001_Allele_1_g.25946C>T_c.871C>T_p.L242F	0	+
-chrY	9154379	9154380	C0001_Allele_1_g.25946C>T_c.871C>T_p.L242F	0	+
-chrY	9155640	9155641	C0002_Allele_1_and_2_g.27207G>A_c.1246G>A_p.V367I	0	+
-chrY	9155640	9155641	C0002_Allele_1_and_2_g.27207G>A_c.1246G>A_p.V367I	0	+

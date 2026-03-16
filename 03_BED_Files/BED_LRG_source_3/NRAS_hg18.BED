@@ -1,0 +1,3 @@
+# BED file for NRAS (hg18) — LiftOver format
+# BLAST: chr1  qstart=1 qend=19438  sstart=115066038 send=115046601
+chr1	115025247	115025248	N0003_g.40791G>A_c.38G>A_r.38g>a_p.Gly13Asp	0	-

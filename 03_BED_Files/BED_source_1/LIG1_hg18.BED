@@ -1,0 +1,4 @@
+# BED file for LIG1 (hg18) — LiftOver format
+# BLAST: chr19  qstart=1 qend=56858  sstart=53366372 send=53309515
+chr19	53328079	53328080	L0001_Allele_1_g.38293G>A_c.1696G>A_r.1696g>a_p.Glu566Lys	0	-
+chr19	53316312	53316313	L0001_Allele_2_g.50060C>T_c.2311C>T_r.2311c>u_p.Arg771Trp	0	-

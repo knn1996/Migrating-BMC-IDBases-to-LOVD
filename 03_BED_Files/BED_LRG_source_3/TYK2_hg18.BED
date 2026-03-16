@@ -1,0 +1,4 @@
+# BED file for TYK2 (hg18) — LiftOver format
+# BLAST: chr19  qstart=1 qend=37049  sstart=10357248 send=10320200
+chr19	10346218	10346222	T0001_Allele_1_g.11027_11030delGCTT_c.209_212delGCTT_r.209_212delgcuu_p.Cys70fsX20	0	-
+chr19	10346218	10346222	T0001_Allele_2_g.11027_11030delGCTT_c.209_212delGCTT_r.209_212delgcuu_p.Cys70fsX20	0	-
