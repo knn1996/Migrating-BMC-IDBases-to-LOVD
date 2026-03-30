@@ -1,0 +1,14 @@
+file	gene	hg_source	chrom	pos	name	reason
+AIRE_hg38_18.BED	AIRE	hg18	chr21	44285629	A0104_Allele_2_g.4749_4750ins_c.170_171ins_p.R15fsX19	unparseable — review manually
+AIRE_hg38_18.BED	AIRE	hg18	chr21	44285629	A0106_Allele_2_g.4749_4750ins_c.170_171ins_p.R15fsX19	unparseable — review manually
+AIRE_hg38_18.BED	AIRE	hg18	chr21	44293385	A0081_Allele_2_g._c._p.A432fsX503	unparseable — review manually
+CYBA_hg38_18.BED	CYBA	hg18	chr16	88650185	H0038	accession-only
+CYBA_hg38_18.BED	CYBA	hg18	chr16	88650185	H0038	accession-only
+CYBB_hg38_18.BED	CYBB	hg18	chrX	37792012	A1415_g.16991_16992ins_c.591_592ins41_r.591_592ins41_p.Arg198fsX30	unparseable — review manually
+FOXP3_hg38_18.BED	FOXP3	hg18	chrX	49188151	F0013_g._c._r._p.Phe373Ala	unparseable — review manually
+FOXP3_hg38_18.BED	FOXP3	hg18	chrX	49186917	F0012	accession-only
+SERPING1_hg38_18.BED	SERPING1	hg18	chr11	57596432	S0170_g.IVS33>T_c.5503>T_r.5503>u_	unparseable — review manually
+SERPING1_hg38_18.BED	SERPING1	hg18	chr11	57593633	S0048_Allele_1_g.c.r.	unparseable — review manually
+SERPING1_hg38_18.BED	SERPING1	hg18	chr11	57593633	S0048_Allele_2_g.c.r.	unparseable — review manually
+SERPING1_hg38_18.BED	SERPING1	hg18	chr11	57596928	S0251	accession-only
+SERPING1_hg38_18.BED	SERPING1	hg18	chr11	57596768	S0253	accession-only

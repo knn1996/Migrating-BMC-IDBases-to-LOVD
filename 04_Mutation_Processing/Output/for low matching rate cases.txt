@@ -1,0 +1,3 @@
+for low matching rate cases:
+test complement strand
+check +-1 position 

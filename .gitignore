@@ -265,6 +265,13 @@ protein_only_variants.csv
 # Claude worktree (internal tool artifact)
 .claude/
 
+# Large reference sequence files
+02_Source_Database/MANE.GRCh38.v1.5.refseq_rna.fna
+02_Source_Database/Transvar/
+
+# Writing and documentation (local only)
+06_Writing/
+
 # Large reproducible HPC outputs - not for VCS
 04_Mutation_Processing/BLAST_Results/
 04_Mutation_Processing/DNA sequences/

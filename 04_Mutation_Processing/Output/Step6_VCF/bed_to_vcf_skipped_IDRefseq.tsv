@@ -1,0 +1,5 @@
+file	gene	hg_source	chrom	pos	name	reason
+C3_hg38_18.BED	C3	hg38	chr19	6718640	C0004_g.	unparseable — review manually
+CD40L_hg38_18.BED	CD40L	hg38	chrX	136648320	C0219_g.1127_1128ins	unparseable — review manually
+CYBB_hg38_18.BED	CYBB	hg38	chrX	37796058	A1415_g.16991_16992ins	unparseable — review manually
+ITGB2_hg38_18.BED	ITGB2	hg38	chr21	44891809	A0132_g.29894-_30081del	unparseable — review manually

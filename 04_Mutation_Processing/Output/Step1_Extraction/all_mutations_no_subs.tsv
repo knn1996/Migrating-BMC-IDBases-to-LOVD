@@ -1,0 +1,60 @@
+gene	accession	sysname	pos_start	pos_end	feat_name	allele_num	is_sequence_in_feature
+AIRE	A0162	Allele 1: g.IVS5-7CTC>, c.653-7CTC>; Allele 2: g.8473C>T, c.769C>T, r.769c>u, p.Arg257X	8350	8352	deletion	1	None
+AIRE	A0162	Allele 1: g.IVS5-7CTC>, c.653-7CTC>; Allele 2: g.8473C>T, c.769C>T, r.769c>u, p.Arg257X	8473	8473	point	2	None
+AIRE	A0174	Allele 1: g.IVS1+1G>C; g.IVS1+5G>, c.132+1G>C; c.132+5G>,; r.132+1g>c; r.132+5g>; Allele 2: g.8473C>T, c.769C>T, r.769c>u, p.Arg257X	4839	4839	point	1	None
+AIRE	A0174	Allele 1: g.IVS1+1G>C; g.IVS1+5G>, c.132+1G>C; c.132+5G>,; r.132+1g>c; r.132+5g>; Allele 2: g.8473C>T, c.769C>T, r.769c>u, p.Arg257X	4843	4843	deletion	1	None
+AIRE	A0174	Allele 1: g.IVS1+1G>C; g.IVS1+5G>, c.132+1G>C; c.132+5G>,; r.132+1g>c; r.132+5g>; Allele 2: g.8473C>T, c.769C>T, r.769c>u, p.Arg257X	8473	8473	point	2	None
+AIRE	A0211	Allele 1 and 2: g.IVS1+1G>C; g.IVS1+5G>, c.132+1G>C;; c.132+5G>, r.132+1g>c; r.132+5g>	4843	4843	deletion	1	None
+AIRE	A0211	Allele 1 and 2: g.IVS1+1G>C; g.IVS1+5G>, c.132+1G>C;; c.132+5G>, r.132+1g>c; r.132+5g>	4843	4843	deletion	2	None
+CD40L	C0194	g.IVS1-5AATAGATAG>, c.157-5AATAGATAG>, r.157-5aauagauag>,	3068	3076	deletion	0	-aatagatag
+CD40L	C0195	g.IVS1-4ATAGATAG>, c.157-4ATAGATAG>, r.157-4auagauag>,	3069	3076	deletion	0	-atagatag
+CD40L	C0166	g.IVS3+1G>, c.346+1G>, r.346+1g>,	7238	7238	point	0	None
+CD40L	C0123	g.IVS4-1G>	11845	11845	deletion	0	None
+LYST	C0040	Allele 1: g.206889>, c.13242+1>, r.13242+1>; Allele 2: g.206889>, c.13242+1>, r.13242+1>	206889	206889	point	1	None
+LYST	C0040	Allele 1: g.206889>, c.13242+1>, r.13242+1>; Allele 2: g.206889>, c.13242+1>, r.13242+1>	206889	206889	point	2	None
+RFXANK	R0004	Allele 1 and 2: g.IVS5-25GGTATTGCCCGCCTCCTCCTGCCAGG>	6210	6235	deletion	1	-ggtattgccc gcctcctcct gccagg
+RFXANK	R0004	Allele 1 and 2: g.IVS5-25GGTATTGCCCGCCTCCTCCTGCCAGG>	6210	6235	deletion	2	-ggtattgccc gcctcctcct gccagg
+RFXANK	R0005	Allele 1 and 2: g.IVS5-25GGTATTGCCCGCCTCCTCCTGCCAGG>	6210	6235	deletion	1	-ggtattgccc gcctcctcct gccagg
+RFXANK	R0005	Allele 1 and 2: g.IVS5-25GGTATTGCCCGCCTCCTCCTGCCAGG>	6210	6235	deletion	2	-ggtattgccc gcctcctcct gccagg
+RFXANK	R0006	Allele 1 and 2: g.IVS5-25GGTATTGCCCGCCTCCTCCTGCCAGG>	6210	6235	deletion	1	-ggtattgccc gcctcctcct gccagg
+RFXANK	R0006	Allele 1 and 2: g.IVS5-25GGTATTGCCCGCCTCCTCCTGCCAGG>	6210	6235	deletion	2	-ggtattgccc gcctcctcct gccagg
+RFXANK	R0007	Allele 1 and 2: g.IVS5-25GGTATTGCCCGCCTCCTCCTGCCAGG>	6210	6235	deletion	1	-ggtattgccc gcctcctcct gccagg
+RFXANK	R0007	Allele 1 and 2: g.IVS5-25GGTATTGCCCGCCTCCTCCTGCCAGG>	6210	6235	deletion	2	-ggtattgccc gcctcctcct gccagg
+RFXANK	R0008	Allele 1 and 2: g.IVS5-25GGTATTGCCCGCCTCCTCCTGCCAGG>	6210	6235	deletion	1	-ggtattgccc gcctcctcct gccagg
+RFXANK	R0008	Allele 1 and 2: g.IVS5-25GGTATTGCCCGCCTCCTCCTGCCAGG>	6210	6235	deletion	2	-ggtattgccc gcctcctcct gccagg
+RFXANK	R0009	Allele 1 and 2: g.IVS5-25GGTATTGCCCGCCTCCTCCTGCCAGG>	6210	6235	deletion	1	-ggtattgccc gcctcctcct gccagg
+RFXANK	R0009	Allele 1 and 2: g.IVS5-25GGTATTGCCCGCCTCCTCCTGCCAGG>	6210	6235	deletion	2	-ggtattgccc gcctcctcct gccagg
+RFXANK	R0010	Allele 1 and 2: g.IVS5-25GGTATTGCCCGCCTCCTCCTGCCAGG>	6210	6235	deletion	1	-ggtattgccc gcctcctcct gccagg
+RFXANK	R0010	Allele 1 and 2: g.IVS5-25GGTATTGCCCGCCTCCTCCTGCCAGG>	6210	6235	deletion	2	-ggtattgccc gcctcctcct gccagg
+RFXANK	R0011	Allele 1 and 2: g.IVS5-25GGTATTGCCCGCCTCCTCCTGCCAGG>	6210	6235	deletion	1	-ggtattgccc gcctcctcct gccagg
+RFXANK	R0011	Allele 1 and 2: g.IVS5-25GGTATTGCCCGCCTCCTCCTGCCAGG>	6210	6235	deletion	2	-ggtattgccc gcctcctcct gccagg
+RFXANK	R0012	Allele 1 and 2: g.IVS5-25GGTATTGCCCGCCTCCTCCTGCCAGG>	6210	6235	deletion	1	-ggtattgccc gcctcctcct gccagg
+RFXANK	R0012	Allele 1 and 2: g.IVS5-25GGTATTGCCCGCCTCCTCCTGCCAGG>	6210	6235	deletion	2	-ggtattgccc gcctcctcct gccagg
+RFXANK	R0013	Allele 1: g.IVS5-25GGTATTGCCCGCCTCCTCCTGCCAGG>	6210	6235	deletion	1	-ggtattgccc gcctcctcct gccagg
+RFXANK	R0014	Allele 1 and 2: g.IVS5-25GGTATTGCCCGCCTCCTCCTGCCAGG>	6210	6235	deletion	1	-ggtattgccc gcctcctcct gccagg
+RFXANK	R0014	Allele 1 and 2: g.IVS5-25GGTATTGCCCGCCTCCTCCTGCCAGG>	6210	6235	deletion	2	-ggtattgccc gcctcctcct gccagg
+RFXANK	R0015	Allele 1 and 2: g.IVS5-25GGTATTGCCCGCCTCCTCCTGCCAGG>	6210	6235	deletion	1	-ggtattgccc gcctcctcct gccagg
+RFXANK	R0015	Allele 1 and 2: g.IVS5-25GGTATTGCCCGCCTCCTCCTGCCAGG>	6210	6235	deletion	2	-ggtattgccc gcctcctcct gccagg
+RFXANK	R0016	Allele 1 and 2: g.IVS5-25GGTATTGCCCGCCTCCTCCTGCCAGG>	6210	6235	deletion	1	-ggtattgccc gcctcctcct gccagg
+RFXANK	R0016	Allele 1 and 2: g.IVS5-25GGTATTGCCCGCCTCCTCCTGCCAGG>	6210	6235	deletion	2	-ggtattgccc gcctcctcct gccagg
+RFXANK	R0017	Allele 1 and 2: g.IVS5-25GGTATTGCCCGCCTCCTCCTGCCAGG>	6210	6235	deletion	1	-ggtattgccc gcctcctcct gccagg
+RFXANK	R0017	Allele 1 and 2: g.IVS5-25GGTATTGCCCGCCTCCTCCTGCCAGG>	6210	6235	deletion	2	-ggtattgccc gcctcctcct gccagg
+RFXANK	R0018	Allele 1 and 2: g.IVS5-25GGTATTGCCCGCCTCCTCCTGCCAGG>	6210	6235	deletion	1	-ggtattgccc gcctcctcct gccagg
+RFXANK	R0018	Allele 1 and 2: g.IVS5-25GGTATTGCCCGCCTCCTCCTGCCAGG>	6210	6235	deletion	2	-ggtattgccc gcctcctcct gccagg
+RFXANK	R0019	Allele 1 and 2: g.IVS5-25GGTATTGCCCGCCTCCTCCTGCCAGG>	6210	6235	deletion	1	-ggtattgccc gcctcctcct gccagg
+RFXANK	R0019	Allele 1 and 2: g.IVS5-25GGTATTGCCCGCCTCCTCCTGCCAGG>	6210	6235	deletion	2	-ggtattgccc gcctcctcct gccagg
+RFXANK	R0020	Allele 1: g.IVS5-25GGTATTGCCCGCCTCCTCCTGCCAGG>	6210	6235	deletion	1	-ggtattgccc gcctcctcct gccagg
+RFXANK	R0021	Allele 1 and 2: g.IVS5-25GGTATTGCCCGCCTCCTCCTGCCAGG>	6210	6235	deletion	1	-ggtattgccc gcctcctcct gccagg
+RFXANK	R0021	Allele 1 and 2: g.IVS5-25GGTATTGCCCGCCTCCTCCTGCCAGG>	6210	6235	deletion	2	-ggtattgccc gcctcctcct gccagg
+RFXANK	R0022	Allele 1 and 2: g.IVS5-25GGTATTGCCCGCCTCCTCCTGCCAGG>	6210	6235	deletion	1	-ggtattgccc gcctcctcct gccagg
+RFXANK	R0022	Allele 1 and 2: g.IVS5-25GGTATTGCCCGCCTCCTCCTGCCAGG>	6210	6235	deletion	2	-ggtattgccc gcctcctcct gccagg
+RFXANK	R0025	Allele 1 and 2: g.IVS5-25GGTATTGCCCGCCTCCTCCTGCCAGG>	6210	6235	deletion	1	-ggtattgccc gcctcctcct gccagg
+RFXANK	R0025	Allele 1 and 2: g.IVS5-25GGTATTGCCCGCCTCCTCCTGCCAGG>	6210	6235	deletion	2	-ggtattgccc gcctcctcct gccagg
+SERPING1	S0109	g.IVS2-2A>, c.52-2A>, r.52-2a>,	3376	3376	deletion	0	None
+SERPING1	S0221	g.IVS3-2A>, c.551-2A>, r.551-2a>,	5531	5531	deletion	0	None
+SERPING1	S0041	g.IVS6-12CTTATTTTCTAGGTGGGGCAGCTGCAGC>,; c.1030-12CTTATTTTCTAGGTGGGGCAGCTGCAGC>,; r.1030-12cuuauuuucuagguggggcagcugcagc>,	15201	15228	deletion	0	-cttattttct aggtggggca gctgcagc
+SERPING1	S0245	g.IVS7+2T>, c.1249+2T>, r.1249+2u>,	15434	15434	deletion	0	None
+SMARCAL1	S0007	Allele 1: g.IVS4-2A>G, c.1097-2A>G, r.1097-2a>g,; Allele 2: g.IVS6+1GT>, c.1334+1GT>, r.1334+1gu>,	9927	9927	point	1	None
+SMARCAL1	S0007	Allele 1: g.IVS4-2A>G, c.1097-2A>G, r.1097-2a>g,; Allele 2: g.IVS6+1GT>, c.1334+1GT>, r.1334+1gu>,	15079	15080	deletion	2	None
+SMARCAL1	S0020	Allele 1 and 2: g.9978_9979delAA; g.IVS5+1GT>,; c.1146_1147delAA; c.1147+1GT>,; r.1146_1147delaa; r.1147+1gu>,	9978	9981	deletion	1	-aagt
+SMARCAL1	S0020	Allele 1 and 2: g.9978_9979delAA; g.IVS5+1GT>,; c.1146_1147delAA; c.1147+1GT>,; r.1146_1147delaa; r.1147+1gu>,	9978	9981	deletion	2	-aagt
