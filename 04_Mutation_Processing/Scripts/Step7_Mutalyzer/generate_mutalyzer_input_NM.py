@@ -14,12 +14,16 @@ SOURCE_DIRS = {
     "IDRefseq": r"C:\Users\BornLoser\Desktop\Assignment\Thesis\04_Mutation_Processing\DNA sequences\IDRefseq_NM",
 }
 
-OFFSET_CSVS = {
-    "MANE":     r"C:\Users\BornLoser\Desktop\Assignment\Thesis\04_Mutation_Processing\Output\Step2_RefCheck\lrg_offset_results_NM_MANE.csv",
-    "IDRefseq": r"C:\Users\BornLoser\Desktop\Assignment\Thesis\04_Mutation_Processing\Output\Step2_RefCheck\lrg_offset_results_NM.csv",
+SOURCE_NG_DIRS = {
+    "MANE":     r"C:\Users\BornLoser\Desktop\Assignment\Thesis\04_Mutation_Processing\DNA sequences\Mane_Select_NG",
+    "IDRefseq": None,
 }
 
-MATCH_THRESHOLD = 0.9
+EXCLUDE_GENES = {"BTK", "SH2"}
+
+CODING_OFFSET = {"ADA": -95}
+
+NM_ONLY_GENES = {"ORAI1"}
 
 os.makedirs(r"C:\Users\BornLoser\Desktop\Assignment\Thesis\04_Mutation_Processing\Output\Step7_Mutalyzer", exist_ok=True)
 
@@ -35,23 +39,10 @@ CHR_TO_NC = {
 }
 
 
-def load_valid_genes(offset_csv):
-    valid = set()
-    with open(offset_csv, encoding="utf-8") as f:
-        for row in csv.DictReader(f):
-            try:
-                matched = int(row["matched"])
-                total   = int(row["total"])
-                pct     = float(row["match_pct"])
-            except (ValueError, KeyError):
-                continue
-            if pct >= MATCH_THRESHOLD or (total - matched) <= 2:
-                valid.add(row["gene"].strip().upper())
-    return valid
-
-
-def build_nm_index(directory):
+def build_acc_index(directory):
     index = {}
+    if not directory:
+        return index
     for p in Path(directory).iterdir():
         if p.suffix.lower() not in (".fasta", ".fa"):
             continue
@@ -77,6 +68,23 @@ def build_bed_index(bed_dir):
                     index[gene] = {"chrom": parts[0], "strand": parts[5]}
                     break
     return index
+
+
+def apply_coding_offset(c_notation, offset):
+    if not c_notation.startswith("c."):
+        return c_notation
+
+    def repl(m):
+        sign = m.group("sign")
+        if sign in ("-", "*"):
+            return m.group(0)
+        new = int(m.group("num")) + offset
+        if new <= 0:
+            new -= 1
+        return f"{new}{m.group('intron') or ''}"
+
+    pattern = re.compile(r"(?P<sign>[-*]?)(?P<num>\d+)(?P<intron>[+-]\d+)?")
+    return "c." + pattern.sub(repl, c_notation[2:])
 
 
 def parse_c_notation(notation):
@@ -112,19 +120,25 @@ def main():
                         help="NM FASTA source: MANE (Mane_Select_NM) or IDRefseq (IDRefseq_NM)")
     args = parser.parse_args()
 
-    fasta_dir   = SOURCE_DIRS[args.source]
-    out_tsv     = OUT_TSV_TEMPLATE.format(source=args.source)
-    log_tsv     = LOG_TSV_TEMPLATE.format(source=args.source)
-    valid_genes = load_valid_genes(OFFSET_CSVS[args.source])
+    fasta_dir = SOURCE_DIRS[args.source]
+    ng_dir    = SOURCE_NG_DIRS.get(args.source)
+    out_tsv   = OUT_TSV_TEMPLATE.format(source=args.source)
+    log_tsv   = LOG_TSV_TEMPLATE.format(source=args.source)
+
+    nm_index  = build_acc_index(fasta_dir)
+    ng_index  = build_acc_index(ng_dir)
+    bed_index = build_bed_index(BED_DIR)
+
+    apply_offsets = CODING_OFFSET if args.source == "MANE" else {}
 
     print(f"Source      : {args.source} -> {fasta_dir}")
-    print(f"Valid genes : {len(valid_genes)} (match_pct >= {MATCH_THRESHOLD} or total-matched <= 2)")
-
-    nm_index  = build_nm_index(fasta_dir)
-    bed_index = build_bed_index(BED_DIR)
+    print(f"Scope       : {len(nm_index)} genes with an NM FASTA, minus excluded {sorted(EXCLUDE_GENES)}")
+    print(f"NG reference: {len(ng_index)} genes ({ng_dir})")
+    print(f"Coding offset corrections applied: {apply_offsets}")
 
     out_rows     = []
     skipped_rows = []
+    n_offset_applied = 0
 
     with open(ALL_MUTATIONS_TSV, encoding="utf-8") as f:
         for row in csv.DictReader(f, delimiter="\t"):
@@ -139,8 +153,8 @@ def main():
                 skipped_rows.append({"gene": gene, "accession": accession,
                                      "notation": notation, "reason": reason})
 
-            if gene not in valid_genes:
-                skip("below match threshold"); continue
+            if gene in EXCLUDE_GENES:
+                skip("out of scope"); continue
             if gene not in nm_index:
                 skip("no NM fasta found"); continue
 
@@ -148,12 +162,25 @@ def main():
             if c_notation is None:
                 skip("unparseable c. notation"); continue
 
-            bed_info   = bed_index.get(gene, {})
-            chrom      = bed_info.get("chrom", "")
-            strand     = bed_info.get("strand", "") or "+"
-            nc_acc     = CHR_TO_NC.get(chrom, "")
-            nm_acc     = nm_index[gene]
-            hgvs_input = f"{nc_acc}({nm_acc}):{c_notation}" if nc_acc else f"{nm_acc}:{c_notation}"
+            if gene in apply_offsets:
+                c_notation = apply_coding_offset(c_notation, apply_offsets[gene])
+                n_offset_applied += 1
+
+            bed_info = bed_index.get(gene, {})
+            chrom    = bed_info.get("chrom", "")
+            strand   = bed_info.get("strand", "") or "+"
+            nc_acc   = CHR_TO_NC.get(chrom, "")
+            nm_acc   = nm_index[gene]
+            ng_acc   = ng_index.get(gene, "")
+
+            if gene in NM_ONLY_GENES:
+                hgvs_input = f"{nm_acc}:{c_notation}"
+            elif nc_acc:
+                hgvs_input = f"{nc_acc}({nm_acc}):{c_notation}"
+            elif ng_acc:
+                hgvs_input = f"{ng_acc}({nm_acc}):{c_notation}"
+            else:
+                hgvs_input = f"{nm_acc}:{c_notation}"
 
             out_rows.append({
                 "gene":       gene,
@@ -183,10 +210,13 @@ def main():
         writer.writeheader()
         writer.writerows(skipped_rows)
 
-    no_nc = sum(1 for r in out_rows if not r["chrom"])
+    via_nc = sum(1 for r in out_rows if r["chrom"])
+    via_ng = sum(1 for r in out_rows if not r["chrom"] and ng_index.get(r["gene"]) and r["gene"] not in NM_ONLY_GENES)
+    via_nm = len(out_rows) - via_nc - via_ng
     print(f"Written : {len(out_rows)} rows  -> {out_tsv}")
     print(f"Skipped : {len(skipped_rows)} rows  -> {log_tsv}")
-    print(f"No NC_/chrom (NM-only fallback): {no_nc} rows")
+    print(f"Offset-corrected rows: {n_offset_applied}")
+    print(f"  reference used: NC_(NM_)={via_nc}  NG_(NM_)={via_ng}  NM_only={via_nm}")
 
 
 if __name__ == "__main__":

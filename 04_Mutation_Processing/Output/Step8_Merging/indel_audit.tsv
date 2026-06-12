@@ -1,0 +1,274 @@
+_gene	_dedup_key	_variant_class	VariantOnGenome/DNA	VariantOnTranscript/DNA	VariantOnTranscript/RNA	VariantOnTranscript/Protein	length_change_bp	protein_state	flag	_source_track	_mane_select	_patient_count
+AIRE	NC_000021.9(NM_000383.4):c.540del	deletion	NC_000021.9:g.44288346del	c.540del			1.0	empty	deletion_protein_empty	NG_IDRefseq	MANE Select	1
+AIRE	NC_000021.9(NM_000383.4):c.653-6_653-4del	deletion	NC_000021.9:g.44289651_44289653del	c.653-6_653-4del			1.0	empty	deletion_protein_empty	NG_IDRefseq	MANE Select	1
+AIRE	NC_000021.9(NM_000383.4):c.132+1G>C	substitution	NC_000021.9:g.44286139G>C	c.132+1G>C			0.0	empty	substitution_protein_empty	NG_IDRefseq	MANE Select	1
+AK2	NC_000001.11(NM_013411.5):c.498+1G>A	substitution	NC_000001.11(NM_001625.4):c.498+1G>A	c.498+1G>A			0.0	empty	substitution_protein_empty	NM_MANE	MANE Select	1
+AP3B1	NC_000005.10(NM_001271769.2):c.1020+1_1020+63del	deletion	NC_000005.10:g.78175565_78175627del	c.1020+1_1020+63del			1.0	empty	deletion_protein_empty	NG_IDRefseq		2
+AP3B1	NC_000005.10(NM_001271769.2):c.1326+6T>C	substitution	NC_000005.10:g.78156252A>G	c.1326+6T>C			0.0	empty	substitution_protein_empty	NG_IDRefseq		1
+AP3B1	NC_000005.10(NM_001271769.2):c.1930+696_1931-883del	deletion	NC_000005.10(NM_003664.5):c.2077+696_2078-883del	c.1930+696_1931-883del	r.(=)	p.(=)	2.0	wildtype	deletion_protein_wildtype	NM_MANE	MANE Select	1
+BLM	NC_000015.10(NM_001287246.2):c.557_559del	deletion	NC_000015.10(NM_000057.4):c.557_559del	c.557_559del	r.(557_559del)	p.(Ser186Ter)	3.0	frameshift_or_stop	deletion_expected_inframe_got_frameshift	NM_MANE	MANE Select	8
+BLM	NC_000015.10(NM_001287246.2):c.98+1G>T	substitution	NC_000015.10:g.90747491G>T	c.98+1G>T			0.0	empty	substitution_protein_empty	NG_IDRefseq		1
+BLM	NC_000015.10(NM_001287246.2):c.1882+5G>A	substitution	NC_000015.10(NM_000057.4):c.1882+5G>A	c.1882+5G>A			0.0	empty	substitution_protein_empty	NM_MANE	MANE Select	1
+BLM	NC_000015.10(NM_001287246.2):c.1088-2A>G	substitution	NC_000015.10(NM_000057.4):c.1088-2A>G	c.1088-2A>G			0.0	empty	substitution_protein_empty	NM_MANE	MANE Select	1
+BLM	NC_000015.10(NM_001287246.2):c.3210+3A>T	substitution	NC_000015.10(NM_000057.4):c.3210+3A>T	c.3210+3A>T			0.0	empty	substitution_protein_empty	NM_MANE	MANE Select	1
+BLM	NC_000015.10(NM_001287246.2):c.2074+1G>T	substitution	NC_000015.10(NM_000057.4):c.2074+1G>T	c.2074+1G>T			0.0	empty	substitution_protein_empty	NM_MANE	MANE Select	1
+BLM	NC_000015.10(NM_001287246.2):c.1220+3A>G	substitution	NC_000015.10(NM_000057.4):c.1220+3A>G	c.1220+3A>G			0.0	empty	substitution_protein_empty	NM_MANE	MANE Select	1
+BLM	NC_000015.10(NM_001287246.2):c.3558+1G>A	substitution	NC_000015.10(NM_000057.4):c.3558+1G>A	c.3558+1G>A			0.0	empty	substitution_protein_empty	NM_MANE	MANE Select	1
+BLM	NC_000015.10(NM_001287246.2):c.2193+2T>G	substitution	NC_000015.10(NM_000057.4):c.2193+2T>G	c.2193+2T>G			0.0	empty	substitution_protein_empty	NM_MANE	MANE Select	1
+BLM	NC_000015.10(NM_001287246.2):c.2406+2T>G	substitution	NC_000015.10(NM_000057.4):c.2406+2T>G	c.2406+2T>G			0.0	empty	substitution_protein_empty	NM_MANE	MANE Select	1
+C1QA	NC_000001.11:g.22634470C>T	substitution	NC_000001.11:g.22634470C>T					empty	substitution_protein_empty	NG_IDRefseq		7
+C1QA	NC_000001.11:g.22634496G>A	substitution	NC_000001.11:g.22634496G>A					empty	substitution_protein_empty	NG_IDRefseq		1
+C1QA	NC_000001.11:g.22632952del	deletion	NC_000001.11:g.22632952del					empty	deletion_length_unparseable	NG_IDRefseq		1
+C1QC	NC_000001.11:g.22640281G>A	substitution	NC_000001.11:g.22640281G>A					empty	substitution_protein_empty	NG_IDRefseq		1
+C1QC	NC_000001.11:g.22643416del	deletion	NC_000001.11:g.22643416del					empty	deletion_length_unparseable	NG_IDRefseq		1
+C1QC	NC_000001.11:g.22643408C>T	substitution	NC_000001.11:g.22643408C>T					empty	substitution_protein_empty	NG_IDRefseq		2
+C1QC	NC_000001.11:g.22643429G>A	substitution	NC_000001.11:g.22643429G>A					empty	substitution_protein_empty	NG_IDRefseq		1
+C2	NC_000006.12(NM_001282457.2):c.-63-3787_-63-3760del	deletion	NC_000006.12:g.31929823_31929850del	c.-63-3787_-63-3760del	r.(=)	p.(=)	1.0	wildtype	deletion_protein_wildtype	NG_IDRefseq		2
+C3	NC_000019.10(NM_000064.3):c.2354+2_2416del	deletion	NC_000019.10(NM_000064.4):c.2354+2_2416del	c.2354+2_2416del			63.0	empty	deletion_protein_empty	NM_MANE	MANE Select	1
+C3	NC_000019.10(NM_000064.4):c.2296_2354+2del	deletion	NC_000019.10:g.6702471_6702531del	c.2296_2354+2del			59.0	empty	deletion_protein_empty	NG_IDRefseq	MANE Select	1
+C6	NC_000005.10(XM_047417689.1):c.170+6564del	deletion	NC_000005.10:g.41196524del	c.170+6564del	r.(=)	p.(=)	1.0	wildtype	deletion_protein_wildtype	NG_IDRefseq		2
+C6	NC_000005.10(XM_047417689.1):c.7+19944del	deletion	NC_000005.10:g.41241251del	c.7+19944del	r.(=)	p.(=)	1.0	wildtype	deletion_protein_wildtype	NG_IDRefseq		1
+C6	NC_000005.10(XM_047417689.1):c.8-11016del	deletion	NC_000005.10:g.41214266del	c.8-11016del	r.(=)	p.(=)	1.0	wildtype	deletion_protein_wildtype	NG_IDRefseq		3
+C6	NC_000005.10(XM_047417689.1):c.8-16018del	deletion	NC_000005.10:g.41219268del	c.8-16018del	r.(=)	p.(=)	1.0	wildtype	deletion_protein_wildtype	NG_IDRefseq		4
+C8B	NC_000001.11(NM_000066.4):c.250-203del	deletion	NC_000001.11:g.56957114del	c.250-203del	r.(=)	p.(=)	1.0	wildtype	deletion_protein_wildtype	NG_IDRefseq	MANE Select	2
+CD19	NC_000016.10(NM_001178098.2):c.88+101dup	duplication	NC_000016.10:g.28932189dup	c.88+101dup	r.(=)	p.(=)	1.0	wildtype	duplication_protein_wildtype	NG_IDRefseq		1
+CD19	NC_000016.10(NM_001178098.2):c.835+135_835+136del	deletion	NC_000016.10:g.28933644_28933645del	c.835+135_835+136del	r.(=)	p.(=)	1.0	wildtype	deletion_protein_wildtype	NG_IDRefseq		3
+CD19	NC_000016.10(NM_001178098.2):c.947-1G>T	substitution	NC_000016.10(NM_001770.6):c.947-1G>T	c.947-1G>T			0.0	empty	substitution_protein_empty	NM_MANE	MANE Select	1
+CD247	NC_000001.11(NM_000734.4):c.300+1515_300+1516insC	insertion	NC_000001.11:g.167437054_167437055insG	c.300+1515_300+1516insC	r.(=)	p.(=)	1.0	wildtype	insertion_protein_wildtype	NG_IDRefseq		1
+CD3D	NC_000011.10(NM_001040651.2):c.275-414A>G	substitution	NC_000011.10(NM_000732.6):c.275-2A>G	c.275-414A>G			0.0	empty	substitution_protein_empty	NM_MANE	MANE Select	2
+CD3E	NC_000011.10(NM_000733.4):c.85+82_85+83del	deletion	NC_000011.10:g.118308523_118308524del	c.85+82_85+83del	r.(=)	p.(=)	1.0	wildtype	deletion_protein_wildtype	NG_IDRefseq	MANE Select	1
+CD40L	NC_000023.11(NM_000074.3):c.158_161del	deletion	NC_000023.11:g.136650267_136650270del	c.158_161del			4.0	empty	deletion_protein_empty	NG_IDRefseq	MANE Select	6
+CD40L	NC_000023.11(NM_000074.3):c.409+1del	deletion	NC_000023.11:g.136656419del	c.409+1del			1.0	empty	deletion_protein_empty	NG_IDRefseq	MANE Select	3
+CD40L	NC_000023.11(NM_000074.3):c.381_382A[4]	repeat	NC_000023.11:g.136656390_136656391A[4]	c.381_382A[4]	r.(381_382delinsaaaa)	p.(Ser128LysfsTer22)		frameshift_or_stop	repeat_manual_review_required	NG_IDRefseq	MANE Select	1
+CD55	NC_000001.11:g.207319435G>A	substitution	NC_000001.11:g.207319435G>A					empty	substitution_protein_empty	NG_IDRefseq		2
+CD59	NC_000011.10(NM_203330.2):c.67+964del	deletion	NC_000011.10:g.33721415del	c.67+964del	r.(=)	p.(=)	1.0	wildtype	deletion_protein_wildtype	NG_IDRefseq		1
+CD79B	NC_000017.11:g.63934794C>T	substitution	NC_000017.11:g.63934794C>T					empty	substitution_protein_empty	NG_IDRefseq		1
+CD8A	NC_000002.12:g.86812337C>T	substitution	NC_000002.12:g.86812337C>T					empty	substitution_protein_empty	NG_IDRefseq		4
+CEBPE	NC_000014.9:g.23121820_23121824del	deletion	NC_000014.9:g.23121820_23121824del					empty	deletion_length_unparseable	NG_IDRefseq		1
+CEBPE	NC_000014.9:g.23121563dup	duplication	NC_000014.9:g.23121563dup					empty	duplication_length_unparseable	NG_IDRefseq		1
+CFI	NC_000004.12(NM_001375282.1):c.1513+5G>T	substitution	NC_000004.12(NM_000204.5):c.1534+5G>T	c.1513+5G>T			0.0	empty	substitution_protein_empty	NM_MANE	MANE Select	1
+CIITA	NC_000016.10(XM_011522485.3):c.3446+1422_3446+1433del	deletion	NC_000016.10:g.10919948_10919959del	c.3446+1422_3446+1433del	r.(=)	p.(=)	1.0	wildtype	deletion_protein_wildtype	NG_IDRefseq		1
+CIITA	NC_000016.10(XM_011522485.3):c.3186-2306_3186-2226del	deletion	NC_000016.10:g.10913264_10913344del	c.3186-2306_3186-2226del	r.(=)	p.(=)	1.0	wildtype	deletion_protein_wildtype	NG_IDRefseq		1
+CTSC	NC_000011.10(NM_001114173.3):c.*17058G>A	substitution	NC_000011.10(NM_001814.6):c.486-1G>A	c.*17058G>A			0.0	empty	substitution_protein_empty	NM_MANE	MANE Select	9
+CTSC	NC_000011.10(NM_001114173.3):c.*32026del	deletion	NC_000011.10(NM_001814.6):c.1047del	c.*32026del	r.(1047del)	p.(Gly350ValfsTer10)		frameshift_or_stop	deletion_length_unparseable	NM_MANE	MANE Select	1
+CTSC	NC_000011.10(NM_001114173.3):c.*32007_*32008del	deletion	NC_000011.10(NM_001814.6):c.1028_1029del	c.*32007_*32008del	r.(1028_1029del)	p.(Ser343Ter)		frameshift_or_stop	deletion_length_unparseable	NM_MANE	MANE Select	1
+CTSC	NC_000011.10(NM_001114173.3):c.*32268del	deletion	NC_000011.10(NM_001814.6):c.1289del	c.*32268del	r.(1289del)	p.(Gly430AlafsTer24)		frameshift_or_stop	deletion_length_unparseable	NM_MANE	MANE Select	2
+CTSC	NC_000011.10(NM_001114173.3):c.*17195dup	duplication	NC_000011.10(NM_001814.6):c.622dup	c.*17195dup	r.(621delinscc)	p.(His208ProfsTer16)		frameshift_or_stop	duplication_length_unparseable	NM_MANE	MANE Select	1
+CTSC	NC_000011.10(NM_001114173.3):c.*31964_*31970del	deletion	NC_000011.10(NM_001814.6):c.985_991del	c.*31964_*31970del	r.(985_991del)	p.(Ser329AlafsTer3)		frameshift_or_stop	deletion_length_unparseable	NM_MANE	MANE Select	1
+CTSC	NC_000011.10(NM_001114173.3):c.*32120del	deletion	NC_000011.10(NM_001814.6):c.1141del	c.*32120del	r.(1141del)	p.(Leu381SerfsTer13)		frameshift_or_stop	deletion_length_unparseable	NM_MANE	MANE Select	3
+CTSC	NC_000011.10(NM_001114173.3):c.*17139_*17145del	deletion	NC_000011.10(NM_001814.6):c.566_572del	c.*17139_*17145del	r.(566_572del)	p.(Thr189ArgfsTer11)		frameshift_or_stop	deletion_length_unparseable	NM_MANE	MANE Select	2
+CTSC	NC_000011.10(NM_001114173.3):c.*13822G>A	substitution	NC_000011.10(NM_001814.6):c.319-1G>A	c.*13822G>A			0.0	empty	substitution_protein_empty	NM_MANE	MANE Select	4
+CTSC	NC_000011.10(NM_001114173.3):c.*32192_*32194del	deletion	NC_000011.10(NM_001814.6):c.1213_1215del	c.*32192_*32194del	r.(1213_1215del)	p.(His405del)		inframe_indel	deletion_length_unparseable	NM_MANE	MANE Select	3
+CTSC	NC_000011.10(NM_001114173.3):c.*17202_*17203del	deletion	NC_000011.10(NM_001814.6):c.629_630del	c.*17202_*17203del	r.(629_630del)	p.(Arg210GlnfsTer13)		frameshift_or_stop	deletion_length_unparseable	NM_MANE	MANE Select	1
+CTSC	NC_000011.10(NM_001114173.3):c.*13940del	deletion	NC_000011.10(NM_001814.6):c.436del	c.*13940del	r.(436del)	p.(Ser146LeufsTer8)		frameshift_or_stop	deletion_length_unparseable	NM_MANE	MANE Select	1
+CYBA	NC_000016.10(XM_011522905.4):c.369+1G>C	substitution	NC_000016.10(NM_000101.4):c.369+1G>C	c.369+1G>C			0.0	empty	substitution_protein_empty	NM_MANE	MANE Select	1
+CYBA	NC_000016.10(XM_011522905.4):c.287+1G>A	substitution	NC_000016.10(NM_000101.4):c.287+1G>A	c.287+1G>A			0.0	empty	substitution_protein_empty	NM_MANE	MANE Select	2
+CYBA	NC_000016.10(XM_011522905.4):c.203+1G>T	substitution	NC_000016.10(NM_000101.4):c.203+1G>T	c.203+1G>T			0.0	empty	substitution_protein_empty	NM_MANE	MANE Select	1
+CYBA	NC_000016.10(XM_011522905.4):c.58+4_58+7del	deletion	NC_000016.10(NM_000101.4):c.58+4_58+7del	c.58+4_58+7del			1.0	empty	deletion_protein_empty	NM_MANE	MANE Select	5
+CYBA	NC_000016.10(XM_011522905.4):c.*1697_*1709del	deletion	NC_000016.10(NM_000101.4):c.472_484del	c.*1697_*1709del	r.(472_484del)	p.(Pro160AlafsTer27)		frameshift_or_stop	deletion_length_unparseable	NM_MANE	MANE Select	1
+CYBA	NC_000016.10(XM_011522905.4):c.*1610_*1613del	deletion	NC_000016.10(NM_000101.4):c.385_388del	c.*1610_*1613del	r.(385_388del)	p.(Glu129SerfsTer61)		frameshift_or_stop	deletion_length_unparseable	NM_MANE	MANE Select	2
+CYBA	NC_000016.10(XM_011522905.4):c.*1796_*1829del	deletion	NC_000016.10(NM_000101.4):c.571_*16del	c.*1796_*1829del	r.(571_*16del)	p.(Thr191_Val195delinsProSerArgGlnValHisProProAlaIleAsnAlaAlaLysProGly)		inframe_indel	deletion_length_unparseable	NM_MANE	MANE Select	1
+CYBA	NC_000016.10(NM_000101.4):c.571_*16del	deletion	NC_000016.10:g.88643339_88643372del	c.571_*16del	r.(571_*16del)	p.(Thr191_Val195delinsProSerArgGlnValHisProProAlaIleAsnAlaAlaLysProGly)		inframe_indel	deletion_length_unparseable	NG_IDRefseq	MANE Select	1
+CYBA	NC_000016.10(XM_011522905.4):c.287+1G>T	substitution	NC_000016.10(NM_000101.4):c.287+1G>T	c.287+1G>T			0.0	empty	substitution_protein_empty	NM_MANE	MANE Select	1
+CYBA	NC_000016.10(XM_011522905.4):c.*1633del	deletion	NC_000016.10(NM_000101.4):c.408del	c.*1633del	r.(408del)	p.(Lys137SerfsTer54)		frameshift_or_stop	deletion_length_unparseable	NM_MANE	MANE Select	1
+CYBA	NC_000016.10(XM_011522905.4):c.*1624del	deletion	NC_000016.10(NM_000101.4):c.399del	c.*1624del	r.(399del)	p.(Ile134SerfsTer57)		frameshift_or_stop	deletion_length_unparseable	NM_MANE	MANE Select	1
+CYBA	NC_000016.10(XM_011522905.4):c.204-2A>G	substitution	NC_000016.10(NM_000101.4):c.204-2A>G	c.204-2A>G			0.0	empty	substitution_protein_empty	NM_MANE	MANE Select	1
+CYBA	NC_000016.10(XM_011522905.4):c.*1596_*1599del	deletion	NC_000016.10(NM_000101.4):c.371_374del	c.*1596_*1599del	r.(371_374del)	p.(Ala124ValfsTer66)		frameshift_or_stop	deletion_length_unparseable	NM_MANE	MANE Select	1
+CYBB	NC_000023.11(XM_047441855.1):c.-3652G>A	substitution	NC_000023.11(NM_000397.4):c.45+5G>A	c.-3652G>A			0.0	empty	substitution_protein_empty	NM_MANE	MANE Select	2
+CYBB	NC_000023.11(XM_047441855.1):c.498+2T>A	substitution	NC_000023.11(NM_000397.4):c.804+2T>A	c.498+2T>A			0.0	empty	substitution_protein_empty	NM_MANE	MANE Select	1
+CYBB	NC_000023.11(XM_047441855.1):c.177+3A>T	substitution	NC_000023.11(NM_000397.4):c.483+3A>T	c.177+3A>T			0.0	empty	substitution_protein_empty	NM_MANE	MANE Select	1
+CYBB	NC_000023.11(XM_047441855.1):c.-179+5G>A	substitution	NC_000023.11(NM_000397.4):c.252+5G>A	c.-179+5G>A			0.0	empty	substitution_protein_empty	NM_MANE	MANE Select	10
+CYBB	NC_000023.11(XM_047441855.1):c.368+4_368+7del	deletion	NC_000023.11(NM_000397.4):c.674+4_674+7del	c.368+4_368+7del			1.0	empty	deletion_protein_empty	NM_MANE	MANE Select	6
+CYBB	NC_000023.11(XM_047441855.1):c.1156-2A>G	substitution	NC_000023.11(NM_000397.4):c.1462-2A>G	c.1156-2A>G			0.0	empty	substitution_protein_empty	NM_MANE	MANE Select	3
+CYBB	NC_000023.11(XM_047441855.1):c.-291A>G	substitution	NC_000023.11(NM_000397.4):c.142-2A>G	c.-291A>G			0.0	empty	substitution_protein_empty	NM_MANE	MANE Select	1
+CYBB	NC_000023.11(XM_047441855.1):c.177+1G>T	substitution	NC_000023.11(NM_000397.4):c.483+1G>T	c.177+1G>T			0.0	empty	substitution_protein_empty	NM_MANE	MANE Select	6
+CYBB	NC_000023.11(XM_047441855.1):c.-1595G>A	substitution	NC_000023.11(NM_000397.4):c.141+1G>A	c.-1595G>A			0.0	empty	substitution_protein_empty	NM_MANE	MANE Select	5
+CYBB	NC_000023.11(XM_047441855.1):c.-3651T>C	substitution	NC_000023.11(NM_000397.4):c.45+6T>C	c.-3651T>C			0.0	empty	substitution_protein_empty	NM_MANE	MANE Select	2
+CYBB	NC_000023.11(XM_047441855.1):c.-1595G>T	substitution	NC_000023.11(NM_000397.4):c.141+1G>T	c.-1595G>T			0.0	empty	substitution_protein_empty	NM_MANE	MANE Select	5
+CYBB	NC_000023.11(XM_047441855.1):c.177+5G>A	substitution	NC_000023.11(NM_000397.4):c.483+5G>A	c.177+5G>A			0.0	empty	substitution_protein_empty	NM_MANE	MANE Select	3
+CYBB	NC_000023.11(XM_047441855.1):c.-179+5G>C	substitution	NC_000023.11(NM_000397.4):c.252+5G>C	c.-179+5G>C			0.0	empty	substitution_protein_empty	NM_MANE	MANE Select	1
+CYBB	NC_000023.11(XM_047441855.1):c.177+2T>C	substitution	NC_000023.11(NM_000397.4):c.483+2T>C	c.177+2T>C			0.0	empty	substitution_protein_empty	NM_MANE	MANE Select	1
+CYBB	NC_000023.11(XM_047441855.1):c.-1595del	deletion	NC_000023.11(NM_000397.4):c.141+1del	c.-1595del			1.0	empty	deletion_protein_empty	NM_MANE	MANE Select	1
+CYBB	NC_000023.11(XM_047441855.1):c.-3656G>C	substitution	NC_000023.11(NM_000397.4):c.45+1G>C	c.-3656G>C			0.0	empty	substitution_protein_empty	NM_MANE	MANE Select	3
+CYBB	NC_000023.11(XM_047441855.1):c.-1692G>A	substitution	NC_000023.11(NM_000397.4):c.46-1G>A	c.-1692G>A			0.0	empty	substitution_protein_empty	NM_MANE	MANE Select	2
+CYBB	NC_000023.11(XM_047441855.1):c.-1591_-1590del	deletion	NC_000023.11(NM_000397.4):c.141+5_141+6del	c.-1591_-1590del			2.0	empty	deletion_protein_empty	NM_MANE	MANE Select	1
+CYBB	NC_000023.11(XM_047441855.1):c.32-2A>C	substitution	NC_000023.11(NM_000397.4):c.338-2A>C	c.32-2A>C			0.0	empty	substitution_protein_empty	NM_MANE	MANE Select	1
+CYBB	NC_000023.11(XM_047441855.1):c.368+5G>A	substitution	NC_000023.11(NM_000397.4):c.674+5G>A	c.368+5G>A			0.0	empty	substitution_protein_empty	NM_MANE	MANE Select	1
+CYBB	NC_000023.11(XM_047441855.1):c.498+2T>C	substitution	NC_000023.11(NM_000397.4):c.804+2T>C	c.498+2T>C			0.0	empty	substitution_protein_empty	NM_MANE	MANE Select	5
+CYBB	NC_000023.11(XM_047441855.1):c.499-2A>C	substitution	NC_000023.11(NM_000397.4):c.805-2A>C	c.499-2A>C			0.0	empty	substitution_protein_empty	NM_MANE	MANE Select	1
+CYBB	NC_000023.11(XM_047441855.1):c.591+1G>T	substitution	NC_000023.11(NM_000397.4):c.897+1G>T	c.591+1G>T			0.0	empty	substitution_protein_empty	NM_MANE	MANE Select	4
+CYBB	NC_000023.11(XM_047441855.1):c.1155+1G>A	substitution	NC_000023.11(NM_000397.4):c.1461+1G>A	c.1155+1G>A			0.0	empty	substitution_protein_empty	NM_MANE	MANE Select	2
+CYBB	NC_000023.11(XM_047441855.1):c.399_401T[5]	repeat	NC_000023.11(NM_000397.4):c.705_707T[5]	c.399_401T[5]	r.(705_707delinsuuuuu)	p.(Leu236PhefsTer7)		frameshift_or_stop	repeat_manual_review_required	NM_MANE	MANE Select	1
+CYBB	NC_000023.11(XM_047441855.1):c.-1693A>G	substitution	NC_000023.11(NM_000397.4):c.46-2A>G	c.-1693A>G			0.0	empty	substitution_protein_empty	NM_MANE	MANE Select	4
+CYBB	NC_000023.11(XM_047441855.1):c.-1594T>G	substitution	NC_000023.11(NM_000397.4):c.141+2T>G	c.-1594T>G			0.0	empty	substitution_protein_empty	NM_MANE	MANE Select	3
+CYBB	NC_000023.11(XM_047441855.1):c.-1594T>C	substitution	NC_000023.11(NM_000397.4):c.141+2T>C	c.-1594T>C			0.0	empty	substitution_protein_empty	NM_MANE	MANE Select	3
+CYBB	NC_000023.11(XM_047441855.1):c.-179+1G>T	substitution	NC_000023.11(NM_000397.4):c.252+1G>T	c.-179+1G>T			0.0	empty	substitution_protein_empty	NM_MANE	MANE Select	1
+CYBB	NC_000023.11(XM_047441855.1):c.-179+1G>A	substitution	NC_000023.11(NM_000397.4):c.252+1G>A	c.-179+1G>A			0.0	empty	substitution_protein_empty	NM_MANE	MANE Select	3
+CYBB	NC_000023.11(XM_047441855.1):c.32-1G>A	substitution	NC_000023.11(NM_000397.4):c.338-1G>A	c.32-1G>A			0.0	empty	substitution_protein_empty	NM_MANE	MANE Select	2
+CYBB	NC_000023.11(XM_047441855.1):c.177+1G>A	substitution	NC_000023.11(NM_000397.4):c.483+1G>A	c.177+1G>A			0.0	empty	substitution_protein_empty	NM_MANE	MANE Select	3
+CYBB	NC_000023.11(XM_047441855.1):c.368+6T>A	substitution	NC_000023.11(NM_000397.4):c.674+6T>A	c.368+6T>A			0.0	empty	substitution_protein_empty	NM_MANE	MANE Select	1
+CYBB	NC_000023.11(XM_047441855.1):c.368+5G>C	substitution	NC_000023.11(NM_000397.4):c.674+5G>C	c.368+5G>C			0.0	empty	substitution_protein_empty	NM_MANE	MANE Select	7
+CYBB	NC_000023.11(XM_047441855.1):c.499-2A>G	substitution	NC_000023.11(NM_000397.4):c.805-2A>G	c.499-2A>G			0.0	empty	substitution_protein_empty	NM_MANE	MANE Select	1
+CYBB	NC_000023.11(XM_047441855.1):c.499-1G>A	substitution	NC_000023.11(NM_000397.4):c.805-1G>A	c.499-1G>A			0.0	empty	substitution_protein_empty	NM_MANE	MANE Select	2
+CYBB	NC_000023.11(XM_047441855.1):c.498+1G>A	substitution	NC_000023.11(NM_000397.4):c.804+1G>A	c.498+1G>A			0.0	empty	substitution_protein_empty	NM_MANE	MANE Select	2
+CYBB	NC_000023.11(XM_047441855.1):c.498+1G>T	substitution	NC_000023.11(NM_000397.4):c.804+1G>T	c.498+1G>T			0.0	empty	substitution_protein_empty	NM_MANE	MANE Select	3
+CYBB	NC_000023.11(XM_047441855.1):c.591+1G>A	substitution	NC_000023.11(NM_000397.4):c.897+1G>A	c.591+1G>A			0.0	empty	substitution_protein_empty	NM_MANE	MANE Select	2
+CYBB	NC_000023.11(XM_047441855.1):c.845+5G>A	substitution	NC_000023.11(NM_000397.4):c.1151+5G>A	c.845+5G>A			0.0	empty	substitution_protein_empty	NM_MANE	MANE Select	2
+CYBB	NC_000023.11(XM_047441855.1):c.1008+1G>A	substitution	NC_000023.11(NM_000397.4):c.1314+1G>A	c.1008+1G>A			0.0	empty	substitution_protein_empty	NM_MANE	MANE Select	2
+CYBB	NC_000023.11(XM_047441855.1):c.1008+2T>A	substitution	NC_000023.11(NM_000397.4):c.1314+2T>A	c.1008+2T>A			0.0	empty	substitution_protein_empty	NM_MANE	MANE Select	1
+CYBB	NC_000023.11(XM_047441855.1):c.1008+1G>T	substitution	NC_000023.11(NM_000397.4):c.1314+1G>T	c.1008+1G>T			0.0	empty	substitution_protein_empty	NM_MANE	MANE Select	1
+CYBB	NC_000023.11(XM_047441855.1):c.1155+1G>T	substitution	NC_000023.11(NM_000397.4):c.1461+1G>T	c.1155+1G>T			0.0	empty	substitution_protein_empty	NM_MANE	MANE Select	4
+CYBB	NC_000023.11(XM_047441855.1):c.1156-1G>A	substitution	NC_000023.11(NM_000397.4):c.1462-1G>A	c.1156-1G>A			0.0	empty	substitution_protein_empty	NM_MANE	MANE Select	1
+CYBB	NC_000023.11(XM_047441855.1):c.1281-2A>G	substitution	NC_000023.11(NM_000397.4):c.1587-2A>G	c.1281-2A>G			0.0	empty	substitution_protein_empty	NM_MANE	MANE Select	4
+CYBB	NC_000023.11(XM_047441855.1):c.846-2A>G	substitution	NC_000023.11(NM_000397.4):c.1152-2A>G	c.846-2A>G			0.0	empty	substitution_protein_empty	NM_MANE	MANE Select	1
+CYBB	NC_000023.11(XM_047441855.1):c.-3656G>A	substitution	NC_000023.11(NM_000397.4):c.45+1G>A	c.-3656G>A			0.0	empty	substitution_protein_empty	NM_MANE	MANE Select	1
+CYBB	NC_000023.11(XM_047441855.1):c.-1692G>T	substitution	NC_000023.11(NM_000397.4):c.46-1G>T	c.-1692G>T			0.0	empty	substitution_protein_empty	NM_MANE	MANE Select	1
+CYBB	NC_000023.11(XM_047441855.1):c.31+1G>C	substitution	NC_000023.11(NM_000397.4):c.337+1G>C	c.31+1G>C			0.0	empty	substitution_protein_empty	NM_MANE	MANE Select	1
+CYBB	NC_000023.11(XM_047441855.1):c.-1591G>T	substitution	NC_000023.11(NM_000397.4):c.141+5G>T	c.-1591G>T			0.0	empty	substitution_protein_empty	NM_MANE	MANE Select	2
+CYBB	NC_000023.11(XM_047441855.1):c.-290G>A	substitution	NC_000023.11(NM_000397.4):c.142-1G>A	c.-290G>A			0.0	empty	substitution_protein_empty	NM_MANE	MANE Select	1
+CYBB	NC_000023.11(XM_047441855.1):c.[981del;984del]	deletion	NC_000023.11(NM_000397.4):c.[1287del;1290del]	c.[981del;984del]	r.([1287del;1290del])	p.?		wildtype	deletion_length_unparseable	NM_MANE	MANE Select	1
+CYBB	NC_000023.11(XM_047441855.1):c.-1692G>C	substitution	NC_000023.11(NM_000397.4):c.46-1G>C	c.-1692G>C			0.0	empty	substitution_protein_empty	NM_MANE	MANE Select	1
+CYBB	NC_000023.11(XM_047441855.1):c.-54-1G>A	substitution	NC_000023.11(NM_000397.4):c.253-1G>A	c.-54-1G>A			0.0	empty	substitution_protein_empty	NM_MANE	MANE Select	2
+CYBB	NC_000023.11(XM_047441855.1):c.-3656G>T	substitution	NC_000023.11(NM_000397.4):c.45+1G>T	c.-3656G>T			0.0	empty	substitution_protein_empty	NM_MANE	MANE Select	1
+CYBB	NC_000023.11(XM_047441855.1):c.-3656del	deletion	NC_000023.11(NM_000397.4):c.45+1del	c.-3656del			1.0	empty	deletion_protein_empty	NM_MANE	MANE Select	1
+CYBB	NC_000023.11(XM_047441855.1):c.-3652_-3650del	deletion	NC_000023.11(NM_000397.4):c.45+5_45+7del	c.-3652_-3650del			3.0	empty	deletion_protein_empty	NM_MANE	MANE Select	1
+CYBB	NC_000023.11(XM_047441855.1):c.-1705_-1702delinsGAA	delins	NC_000023.11(NM_000397.4):c.46-14_46-11delinsGAA	c.-1705_-1702delinsGAA	r.(=)	p.(=)	1.0	wildtype	delins_protein_wildtype	NM_MANE	MANE Select	1
+CYBB	NC_000023.11(XM_047441855.1):c.-1647_-1645delinsGGT	delins	NC_000023.11(NM_000397.4):c.90_92delinsGGT	c.-1647_-1645delinsGGT	r.(90_92delinsggu)	p.(Tyr30Ter)	0.0	frameshift_or_stop	delins_expected_inframe_got_frameshift	NM_MANE	MANE Select	1
+CYBB	NC_000023.11(NM_000397.4):c.90_92del	deletion	NC_000023.11:g.37782132_37782134del	c.90_92del	r.(90_92del)	p.(Tyr30Ter)	3.0	frameshift_or_stop	deletion_expected_inframe_got_frameshift	NG_IDRefseq	MANE Select	1
+CYBB	NC_000023.11(XM_047441855.1):c.-1591G>A	substitution	NC_000023.11(NM_000397.4):c.141+5G>A	c.-1591G>A			0.0	empty	substitution_protein_empty	NM_MANE	MANE Select	2
+CYBB	NC_000023.11(XM_047441855.1):c.-301delinsACCTCTTCTAG	delins	NC_000023.11(NM_000397.4):c.142-12delinsACCTCTTCTAG	c.-301delinsACCTCTTCTAG	r.(=)	p.(=)	10.0	wildtype	delins_protein_wildtype	NM_MANE	MANE Select	1
+CYBB	NC_000023.11(XM_047441855.1):c.-291A>T	substitution	NC_000023.11(NM_000397.4):c.142-2A>T	c.-291A>T			0.0	empty	substitution_protein_empty	NM_MANE	MANE Select	1
+CYBB	NC_000023.11(XM_047441855.1):c.-290G>C	substitution	NC_000023.11(NM_000397.4):c.142-1G>C	c.-290G>C			0.0	empty	substitution_protein_empty	NM_MANE	MANE Select	2
+CYBB	NC_000023.11(XM_047441855.1):c.-179+1G>C	substitution	NC_000023.11(NM_000397.4):c.252+1G>C	c.-179+1G>C			0.0	empty	substitution_protein_empty	NM_MANE	MANE Select	1
+CYBB	NC_000023.11(XM_047441855.1):c.-179+2T>C	substitution	NC_000023.11(NM_000397.4):c.252+2T>C	c.-179+2T>C			0.0	empty	substitution_protein_empty	NM_MANE	MANE Select	1
+CYBB	NC_000023.11(XM_047441855.1):c.-179+2dup	duplication	NC_000023.11(NM_000397.4):c.252+2dup	c.-179+2dup			1.0	empty	duplication_protein_empty	NM_MANE	MANE Select	2
+CYBB	NC_000023.11(XM_047441855.1):c.-54-3A>G	substitution	NC_000023.11(NM_000397.4):c.253-3A>G	c.-54-3A>G			0.0	empty	substitution_protein_empty	NM_MANE	MANE Select	2
+CYBB	NC_000023.11(XM_047441855.1):c.-54-1G>T	substitution	NC_000023.11(NM_000397.4):c.253-1G>T	c.-54-1G>T			0.0	empty	substitution_protein_empty	NM_MANE	MANE Select	1
+CYBB	NC_000023.11(XM_047441855.1):c.31+1G>A	substitution	NC_000023.11(NM_000397.4):c.337+1G>A	c.31+1G>A			0.0	empty	substitution_protein_empty	NM_MANE	MANE Select	2
+CYBB	NC_000023.11(XM_047441855.1):c.31+1G>T	substitution	NC_000023.11(NM_000397.4):c.337+1G>T	c.31+1G>T			0.0	empty	substitution_protein_empty	NM_MANE	MANE Select	1
+CYBB	NC_000023.11(XM_047441855.1):c.31+2dup	duplication	NC_000023.11(NM_000397.4):c.337+2dup	c.31+2dup			1.0	empty	duplication_protein_empty	NM_MANE	MANE Select	1
+CYBB	NC_000023.11(XM_047441855.1):c.31+5dup	duplication	NC_000023.11(NM_000397.4):c.337+5dup	c.31+5dup			1.0	empty	duplication_protein_empty	NM_MANE	MANE Select	1
+CYBB	NC_000023.11(XM_047441855.1):c.32-2A>G	substitution	NC_000023.11(NM_000397.4):c.338-2A>G	c.32-2A>G			0.0	empty	substitution_protein_empty	NM_MANE	MANE Select	1
+CYBB	NC_000023.11(XM_047441855.1):c.178-3C>A	substitution	NC_000023.11(NM_000397.4):c.484-3C>A	c.178-3C>A			0.0	empty	substitution_protein_empty	NM_MANE	MANE Select	2
+CYBB	NC_000023.11(XM_047441855.1):c.178-2A>T	substitution	NC_000023.11(NM_000397.4):c.484-2A>T	c.178-2A>T			0.0	empty	substitution_protein_empty	NM_MANE	MANE Select	1
+CYBB	NC_000023.11(XM_047441855.1):c.[300del;302A>G]	deletion	NC_000023.11(NM_000397.4):c.[606del;608A>G]	c.[300del;302A>G]	r.([606del;608a>g])	p.?		wildtype	deletion_length_unparseable	NM_MANE	MANE Select	1
+CYBB	NC_000023.11(XM_047441855.1):c.368+1G>T	substitution	NC_000023.11(NM_000397.4):c.674+1G>T	c.368+1G>T			0.0	empty	substitution_protein_empty	NM_MANE	MANE Select	1
+CYBB	NC_000023.11(XM_047441855.1):c.368+1G>A	substitution	NC_000023.11(NM_000397.4):c.674+1G>A	c.368+1G>A			0.0	empty	substitution_protein_empty	NM_MANE	MANE Select	2
+CYBB	NC_000023.11(XM_047441855.1):c.368+3G>C	substitution	NC_000023.11(NM_000397.4):c.674+3G>C	c.368+3G>C			0.0	empty	substitution_protein_empty	NM_MANE	MANE Select	1
+CYBB	NC_000023.11(XM_047441855.1):c.368+4A>G	substitution	NC_000023.11(NM_000397.4):c.674+4A>G	c.368+4A>G			0.0	empty	substitution_protein_empty	NM_MANE	MANE Select	2
+CYBB	NC_000023.11(XM_047441855.1):c.368+4A>T	substitution	NC_000023.11(NM_000397.4):c.674+4A>T	c.368+4A>T			0.0	empty	substitution_protein_empty	NM_MANE	MANE Select	2
+CYBB	NC_000023.11(XM_047441855.1):c.368+4A>C	substitution	NC_000023.11(NM_000397.4):c.674+4A>C	c.368+4A>C			0.0	empty	substitution_protein_empty	NM_MANE	MANE Select	2
+CYBB	NC_000023.11(XM_047441855.1):c.368+6T>C	substitution	NC_000023.11(NM_000397.4):c.674+6T>C	c.368+6T>C			0.0	empty	substitution_protein_empty	NM_MANE	MANE Select	1
+CYBB	NC_000023.11(XM_047441855.1):c.369-2A>C	substitution	NC_000023.11(NM_000397.4):c.675-2A>C	c.369-2A>C			0.0	empty	substitution_protein_empty	NM_MANE	MANE Select	1
+CYBB	NC_000023.11(XM_047441855.1):c.369-1G>A	substitution	NC_000023.11(NM_000397.4):c.675-1G>A	c.369-1G>A			0.0	empty	substitution_protein_empty	NM_MANE	MANE Select	1
+CYBB	NC_000023.11(XM_047441855.1):c.499-2A>T	substitution	NC_000023.11(NM_000397.4):c.805-2A>T	c.499-2A>T			0.0	empty	substitution_protein_empty	NM_MANE	MANE Select	1
+CYBB	NC_000023.11(XM_047441855.1):c.499-1G>C	substitution	NC_000023.11(NM_000397.4):c.805-1G>C	c.499-1G>C			0.0	empty	substitution_protein_empty	NM_MANE	MANE Select	1
+CYBB	NC_000023.11(XM_047441855.1):c.592-1G>A	substitution	NC_000023.11(NM_000397.4):c.898-1G>A	c.592-1G>A			0.0	empty	substitution_protein_empty	NM_MANE	MANE Select	2
+CYBB	NC_000023.11(XM_047441855.1):c.844_845+2del	deletion	NC_000023.11(NM_000397.4):c.1150_1151+2del	c.844_845+2del			2.0	empty	deletion_protein_empty	NM_MANE	MANE Select	7
+CYBB	NC_000023.11(XM_047441855.1):c.845+4A>T	substitution	NC_000023.11(NM_000397.4):c.1151+4A>T	c.845+4A>T			0.0	empty	substitution_protein_empty	NM_MANE	MANE Select	1
+CYBB	NC_000023.11(XM_047441855.1):c.846-2A>T	substitution	NC_000023.11(NM_000397.4):c.1152-2A>T	c.846-2A>T			0.0	empty	substitution_protein_empty	NM_MANE	MANE Select	2
+CYBB	NC_000023.11(XM_047441855.1):c.846-1G>A	substitution	NC_000023.11(NM_000397.4):c.1152-1G>A	c.846-1G>A			0.0	empty	substitution_protein_empty	NM_MANE	MANE Select	2
+CYBB	NC_000023.11(XM_047441855.1):c.1008+1del	deletion	NC_000023.11(NM_000397.4):c.1314+1del	c.1008+1del			1.0	empty	deletion_protein_empty	NM_MANE	MANE Select	2
+CYBB	NC_000023.11(NM_000397.4):c.1314+1del	deletion	NC_000023.11:g.37805169del	c.1314+1del			1.0	empty	deletion_protein_empty	NG_IDRefseq	MANE Select	2
+CYBB	NC_000023.11(XM_047441855.1):c.1008+1G>C	substitution	NC_000023.11(NM_000397.4):c.1314+1G>C	c.1008+1G>C			0.0	empty	substitution_protein_empty	NM_MANE	MANE Select	1
+CYBB	NC_000023.11(XM_047441855.1):c.1008+2T>G	substitution	NC_000023.11(NM_000397.4):c.1314+2T>G	c.1008+2T>G			0.0	empty	substitution_protein_empty	NM_MANE	MANE Select	1
+CYBB	NC_000023.11(XM_047441855.1):c.1008+4_1008+5delinsGC	delins	NC_000023.11(NM_000397.4):c.1314+4_1314+5delinsGC	c.1008+4_1008+5delinsGC			1.0	empty	delins_protein_empty	NM_MANE	MANE Select	1
+CYBB	NC_000023.11(XM_047441855.1):c.1009-2A>C	substitution	NC_000023.11(NM_000397.4):c.1315-2A>C	c.1009-2A>C			0.0	empty	substitution_protein_empty	NM_MANE	MANE Select	2
+CYBB	NC_000023.11(XM_047441855.1):c.1009-1G>T	substitution	NC_000023.11(NM_000397.4):c.1315-1G>T	c.1009-1G>T			0.0	empty	substitution_protein_empty	NM_MANE	MANE Select	1
+CYBB	NC_000023.11(XM_047441855.1):c.1155+2del	deletion	NC_000023.11(NM_000397.4):c.1461+2del	c.1155+2del			1.0	empty	deletion_protein_empty	NM_MANE	MANE Select	1
+CYBB	NC_000023.11(XM_047441855.1):c.1280+1G>C	substitution	NC_000023.11(NM_000397.4):c.1586+1G>C	c.1280+1G>C			0.0	empty	substitution_protein_empty	NM_MANE	MANE Select	1
+CYBB	NC_000023.11(XM_047441855.1):c.1280+3A>T	substitution	NC_000023.11(NM_000397.4):c.1586+3A>T	c.1280+3A>T			0.0	empty	substitution_protein_empty	NM_MANE	MANE Select	1
+CYBB	NC_000023.11(XM_047441855.1):c.1156-1G>T	substitution	NC_000023.11(NM_000397.4):c.1462-1G>T	c.1156-1G>T			0.0	empty	substitution_protein_empty	NM_MANE	MANE Select	1
+CYBB	NC_000023.11(NM_000397.4):c.=	no_change	NC_000023.11(NM_000397.4):c.=		r.(=)	p.(=)		wildtype	no_change_exclude_from_lovd	NM_MANE	MANE Select	1
+CYBB	NC_000023.11:g.=	no_change	NC_000023.11:g.=					empty	no_change_exclude_from_lovd	NG_IDRefseq		1
+DKC1	NC_000023.11(NM_001288747.2):c.1260G>A	substitution	NC_000023.11(NM_001363.5):c.1259+1G>A	c.1260G>A			0.0	empty	substitution_protein_empty	NM_MANE	MANE Select	1
+FCGR1A	NC_000001.11:g.149780231C>T	substitution	NC_000001.11:g.149780231C>T					empty	substitution_protein_empty	NG_IDRefseq		4
+FCGR3A	NC_000001.11:g.161553405A>T	substitution	NC_000001.11:g.161553405A>T					empty	substitution_protein_empty	NG_IDRefseq		3
+FERMT3	NC_000011.10(NM_001382448.1):c.1671-2A>G	substitution	NC_000011.10(NM_031471.6):c.1671-2A>G	c.1671-2A>G			0.0	empty	substitution_protein_empty	NM_MANE	MANE Select	1
+FOXP3	NM_014009.4:c.1290_*12delinsTG	delins		c.1290_*12delinsTG	r.(1290_*12delinsug)	p.(Pro431GlyfsTer22)		frameshift_or_stop	delins_length_unparseable	NM_MANE		1
+G6PC3	NC_000017.11(NM_001384168.1):c.332+1G>A	substitution	NC_000017.11(NM_138387.4):c.677+1G>A	c.332+1G>A			0.0	empty	substitution_protein_empty	NM_MANE	MANE Select	1
+GFI1	NC_000001.11:g.92487336C>T	substitution	NC_000001.11:g.92487336C>T					empty	substitution_protein_empty	NG_IDRefseq		1
+IGHG2	NC_000014.9:g.105642991dup	duplication	NC_000014.9:g.105642991dup					empty	duplication_length_unparseable	NG_IDRefseq		2
+IL12B	NC_000005.10(NM_002187.3):c.482_482+372del	deletion	NC_000005.10:g.159322022_159322394del	c.482_482+372del			1.0	empty	deletion_protein_empty	NG_IDRefseq	MANE Select	2
+IL12RB1	NC_000019.10(NM_001290024.2):c.1309+178_1603+183del	deletion	NC_000019.10:g.18066359_18069368del	c.1309+178_1603+183del	r.(1310_1603del)	p.(Ala437_Ser534del)	295.0	inframe_indel	deletion_expected_frameshift_got_inframe	NG_IDRefseq		1
+IRAK4	NC_000012.12(XM_011538431.3):c.831+5G>T	substitution	NC_000012.12(NM_016123.4):c.831+5G>T	c.831+5G>T			0.0	empty	substitution_protein_empty	NM_MANE	MANE Select	1
+ITGB2	NC_000021.9(NM_001127491.3):c.1628_1657+6del	deletion	NC_000021.9:g.44889978_44890013del	c.1628_1657+6del			30.0	empty	deletion_protein_empty	NG_IDRefseq		1
+ITGB2	NC_000021.9(NM_001127491.3):c.897+1G>A	substitution	NC_000021.9(NM_000211.5):c.897+1G>A	c.897+1G>A			0.0	empty	substitution_protein_empty	NM_MANE	MANE Select	3
+ITGB2	NC_000021.9(NM_001127491.3):c.328+1G>A	substitution	NC_000021.9(NM_000211.5):c.328+1G>A	c.328+1G>A			0.0	empty	substitution_protein_empty	NM_MANE	MANE Select	1
+ITGB2	NC_000021.9(NM_001127491.3):c.329-6C>A	substitution	NC_000021.9(NM_000211.5):c.329-6C>A	c.329-6C>A			0.0	empty	substitution_protein_empty	NM_MANE	MANE Select	1
+ITGB2	NC_000021.9(NM_001127491.3):c.[1388del;1390T>A]	deletion	NC_000021.9(NM_000211.5):c.[1388del;1390T>A]	c.[1388del;1390T>A]	r.([1388del;1390u>a])	p.?		wildtype	deletion_length_unparseable	NM_MANE	MANE Select	1
+ITGB2	NC_000021.9(NM_001127491.3):c.995_1004del	deletion	NC_000021.9(NM_000211.5):c.995_1004del	c.995_1004del			10.0	empty	deletion_protein_empty	NM_MANE	MANE Select	1
+ITGB2	NC_000021.9(NM_001127491.3):c.1225_1412del	deletion	NC_000021.9:g.44891815_44892002del	c.1225_1412del			188.0	empty	deletion_protein_empty	NG_IDRefseq		1
+JAK3	NC_000019.10(NM_001440439.1):c.2200_2350del	deletion	NC_000019.10(NM_000215.4):c.2200_2350del	c.2200_2350del			151.0	empty	deletion_protein_empty	NM_MANE	MANE Select	2
+JAK3	NC_000019.10(NM_000215.4):c.2350+2T>C	substitution	NC_000019.10:g.17834569A>G	c.2350+2T>C			0.0	empty	substitution_protein_empty	NG_IDRefseq	MANE Select	2
+JAK3	NC_000019.10(NM_001440439.1):c.3096+2T>A	substitution	NC_000019.10(NM_000215.4):c.3096+2T>A	c.3096+2T>A			0.0	empty	substitution_protein_empty	NM_MANE	MANE Select	1
+JAK3	NC_000019.10(NM_000215.4):c.1787-1G>A	substitution	NC_000019.10:g.17836052C>T	c.1787-1G>A			0.0	empty	substitution_protein_empty	NG_IDRefseq	MANE Select	1
+JAK3	NC_000019.10(NM_001440439.1):c.2680+3G>C	substitution	NC_000019.10(NM_000215.4):c.2680+3G>C	c.2680+3G>C			0.0	empty	substitution_protein_empty	NM_MANE	MANE Select	2
+JAK3	NC_000019.10(NM_001440439.1):c.3097-1G>A	substitution	NC_000019.10(NM_000215.4):c.3097-1G>A	c.3097-1G>A			0.0	empty	substitution_protein_empty	NM_MANE	MANE Select	1
+JAK3	NC_000019.10(NM_001440439.1):c.1255-8_1255-6del	deletion	NC_000019.10(NM_000215.4):c.1255-8_1255-6del	c.1255-8_1255-6del			1.0	empty	deletion_protein_empty	NM_MANE	MANE Select	1
+JAK3	NC_000019.10(NM_001440439.1):c.1701+351_1787-398del	deletion	NC_000019.10(NM_000215.4):c.1701+351_1787-398del	c.1701+351_1787-398del	r.(1702_1786del)	p.(Ser568AlafsTer13)	87.0	frameshift_or_stop	deletion_expected_inframe_got_frameshift	NM_MANE	MANE Select	1
+LIG1	NC_000019.10(NM_001289063.2):c.1238+1G>A	substitution	NC_000019.10:g.48137007C>T	c.1238+1G>A			0.0	empty	substitution_protein_empty	NG_IDRefseq		1
+LYST	NC_000001.11(XM_011544032.2):c.7060_7066del	deletion	NC_000001.11:g.235755645_235755651del	c.7060_7066del			7.0	empty	deletion_protein_empty	NG_IDRefseq		1
+LYST	NC_000001.11(XM_011544032.2):c.9268_9268+54del	deletion	NC_000001.11:g.235729542_235729596del	c.9268_9268+54del			1.0	empty	deletion_protein_empty	NG_IDRefseq		1
+MAPBPIP	NC_000001.11:g.156054309C>A	substitution	NC_000001.11:g.156054309C>A					empty	substitution_protein_empty	NG_IDRefseq		4
+MASP2	NC_000001.11:g.11050597T>C	substitution	NC_000001.11:g.11050597T>C					empty	substitution_protein_empty	NG_IDRefseq		1
+MRE11A	NC_000011.10(XM_011542837.3):c.1098+5G>A	substitution	NC_000011.10(NM_005591.4):c.1098+5G>A	c.1098+5G>A			0.0	empty	substitution_protein_empty	NM_MANE	MANE Select	2
+NCF2	NC_000001.11(XM_047421222.1):c.366+1G>A	substitution	NC_000001.11:g.183577598C>T	c.366+1G>A			0.0	empty	substitution_protein_empty	NG_IDRefseq		1
+NFKBIA	NC_000014.9:g.35408602C>A	substitution	NC_000014.9:g.35408602C>A					empty	substitution_protein_empty	NG_IDRefseq		1
+NHEJ1	NC_000002.12(NM_001377499.1):c.177+3A>T	substitution	NC_000002.12(NM_024782.3):c.177+3A>T	c.177+3A>T			0.0	empty	substitution_protein_empty	NM_MANE	MANE Select	2
+NHEJ1	NC_000002.12(NM_001377499.1):c.177+1del	deletion	NC_000002.12(NM_024782.3):c.177+1del	c.177+1del			1.0	empty	deletion_protein_empty	NM_MANE	MANE Select	2
+NHEJ1	NC_000002.12(NM_024782.3):c.391-3974del	deletion	NC_000002.12:g.219151769del	c.391-3974del	r.(=)	p.(=)	1.0	wildtype	deletion_protein_wildtype	NG_IDRefseq	MANE Select	1
+NHEJ1	NC_000002.12(NM_024782.3):c.391-4140dup	duplication	NC_000002.12:g.219151935dup	c.391-4140dup	r.(=)	p.(=)	1.0	wildtype	duplication_protein_wildtype	NG_IDRefseq	MANE Select	1
+NHEJ1	NC_000002.12(NM_024782.3):c.588+5406dup	duplication	NC_000002.12:g.219141275dup	c.588+5406dup	r.(=)	p.(=)	1.0	wildtype	duplication_protein_wildtype	NG_IDRefseq	MANE Select	2
+NP	NC_000014.9(NM_000270.3):c.285+1G>A	substitution	NC_000014.9(NM_000270.4):c.285+1G>A	c.285+1G>A			0.0	empty	substitution_protein_empty	NM_MANE	MANE Select	1
+ORAI1	NC_000012.12:g.121622735C>T	substitution	NC_000012.12:g.121622735C>T					empty	substitution_protein_empty	NG_IDRefseq		2
+ORAI1	NC_000012.12:g.121622725_121622726insA	insertion	NC_000012.12:g.121622725_121622726insA					empty	insertion_length_unparseable	NG_IDRefseq		1
+PRKDC	NC_000008.11(NM_001081640.2):c.5751-171_5751-169del	deletion	NC_000008.11:g.47862710_47862712del	c.5751-171_5751-169del	r.(=)	p.(=)	1.0	wildtype	deletion_protein_wildtype	NG_IDRefseq		1
+RAB27A	NC_000015.10(NM_001438970.1):c.156_343+2del	deletion	NC_000015.10(NM_183235.3):c.156_343+2del	c.156_343+2del			188.0	empty	deletion_protein_empty	NM_MANE	MANE Select	3
+RAB27A	NC_000015.10(NM_001438970.1):c.154_239+104del	deletion	NC_000015.10:g.55230297_55230486del	c.154_239+104del			86.0	empty	deletion_protein_empty	NG_IDRefseq		3
+RAB27A	NC_000015.10(NM_001438970.1):c.239+3A>G	substitution	NC_000015.10(NM_183235.3):c.239+3A>G	c.239+3A>G			0.0	empty	substitution_protein_empty	NM_MANE	MANE Select	1
+RAB27A	NC_000015.10(NM_001438970.1):c.467+1G>C	substitution	NC_000015.10(NM_183235.3):c.467+1G>C	c.467+1G>C			0.0	empty	substitution_protein_empty	NM_MANE	MANE Select	2
+RAG1	NC_000011.10(NM_001440489.1):c.-14-5911_-14-5910del	deletion	NC_000011.10:g.36567380_36567381del	c.-14-5911_-14-5910del	r.(=)	p.(=)	1.0	wildtype	deletion_protein_wildtype	NG_IDRefseq		4
+RAG1	NC_000011.10(NM_001440489.1):c.-14-5391del	deletion	NC_000011.10:g.36567900del	c.-14-5391del	r.(=)	p.(=)	1.0	wildtype	deletion_protein_wildtype	NG_IDRefseq		1
+RAG2	NC_000011.10(XM_047427385.1):c.-1028+883_-1028+885del	deletion	NC_000011.10:g.36597217_36597219del	c.-1028+883_-1028+885del	r.(=)	p.(=)	1.0	wildtype	deletion_protein_wildtype	NG_IDRefseq		1
+RNF168	NC_000003.12(NM_152617.4):c.302-2698_302-2697insG	insertion	NC_000003.12:g.196491380_196491381insC	c.302-2698_302-2697insG	r.(=)	p.(=)	1.0	wildtype	insertion_protein_wildtype	NG_IDRefseq	MANE Select	1
+SBDS	NC_000007.14(NM_016038.3):c.258+2T>C	substitution	NC_000007.14(NM_016038.4):c.258+2T>C	c.258+2T>C			0.0	empty	substitution_protein_empty	NM_MANE	MANE Select	212
+SBDS	NC_000007.14(NM_016038.3):c.624+1G>C	substitution	NC_000007.14(NM_016038.4):c.624+1G>C	c.624+1G>C			0.0	empty	substitution_protein_empty	NM_MANE	MANE Select	2
+SBDS	NC_000007.14(NM_016038.3):c.460-1G>A	substitution	NC_000007.14(NM_016038.4):c.460-1G>A	c.460-1G>A			0.0	empty	substitution_protein_empty	NM_MANE	MANE Select	1
+SBDS	NC_000007.14(NM_016038.3):c.183_184delinsCT	delins	NC_000007.14(NM_016038.4):c.183_184delinsCT	c.183_184delinsCT	r.(183_184delinscu)	p.(Lys62Ter)	0.0	frameshift_or_stop	delins_expected_inframe_got_frameshift	NM_MANE	MANE Select	3
+SBDS	NC_000007.14(NM_016038.3):c.259-1G>A	substitution	NC_000007.14(NM_016038.4):c.259-1G>A	c.259-1G>A			0.0	empty	substitution_protein_empty	NM_MANE	MANE Select	1
+SBDS	NC_000007.14(NM_016038.3):c.258+374_459+250del	deletion	NC_000007.14(NM_016038.4):c.258+374_459+250del	c.258+374_459+250del	r.(259_459del)	p.(Ile87_Gln153del)	202.0	inframe_indel	deletion_expected_frameshift_got_inframe	NM_MANE	MANE Select	1
+SLC35C1	NC_000011.10(NM_001145266.2):c.497-539del	deletion	NC_000011.10:g.45810237del	c.497-539del	r.(=)	p.(=)	1.0	wildtype	deletion_protein_wildtype	NG_IDRefseq		1
+SMARCAL1	NC_000002.12(NM_001127207.2):c.1096+1G>A	substitution	NC_000002.12(NM_014140.4):c.1096+1G>A	c.1096+1G>A			0.0	empty	substitution_protein_empty	NM_MANE	MANE Select	1
+SMARCAL1	NC_000002.12(NM_001127207.2):c.1097-2A>G	substitution	NC_000002.12(NM_014140.4):c.1097-2A>G	c.1097-2A>G			0.0	empty	substitution_protein_empty	NM_MANE	MANE Select	1
+SP110	NC_000002.12(XM_047443073.1):c.-2+2469del	deletion	NC_000002.12:g.230216543del	c.-2+2469del	r.(=)	p.(=)	1.0	wildtype	deletion_protein_wildtype	NG_IDRefseq		5
+SP110	NC_000002.12(XM_047443073.1):c.-2+6985del	deletion	NC_000002.12:g.230221059del	c.-2+6985del	r.(=)	p.(=)	1.0	wildtype	deletion_protein_wildtype	NG_IDRefseq		1
+SPINK5	NC_000005.10(NM_001127698.2):c.283-2A>T	substitution	NC_000005.10:g.148086403A>T	c.283-2A>T			0.0	empty	substitution_protein_empty	NG_IDRefseq		1
+SPINK5	NC_000005.10(NM_001127698.2):c.1888-1G>A	substitution	NC_000005.10:g.148114361G>A	c.1888-1G>A			0.0	empty	substitution_protein_empty	NG_IDRefseq		1
+SPINK5	NC_000005.10(NM_001127698.2):c.475-2A>G	substitution	NC_000005.10:g.148089492A>G	c.475-2A>G			0.0	empty	substitution_protein_empty	NG_IDRefseq		1
+SPINK5	NC_000005.10(NM_001127698.2):c.81+2T>A	substitution	NC_000005.10:g.148065374T>A	c.81+2T>A			0.0	empty	substitution_protein_empty	NG_IDRefseq		3
+SPINK5	NC_000005.10(NM_001127698.2):c.1608-1G>A	substitution	NC_000005.10:g.148108752G>A	c.1608-1G>A			0.0	empty	substitution_protein_empty	NG_IDRefseq		1
+SPINK5	NC_000005.10(NM_001127698.2):c.1220+1G>C	substitution	NC_000005.10:g.148100582G>C	c.1220+1G>C			0.0	empty	substitution_protein_empty	NG_IDRefseq		1
+STAT5B	NC_000017.11(XM_047436593.1):c.269-1536dup	duplication	NC_000017.11:g.42221378dup	c.269-1536dup	r.(=)	p.(=)	1.0	wildtype	duplication_protein_wildtype	NG_IDRefseq		1
+STAT5B	NC_000017.11(XM_047436593.1):c.268+1229dup	duplication	NC_000017.11:g.42222153dup	c.268+1229dup	r.(=)	p.(=)	1.0	wildtype	duplication_protein_wildtype	NG_IDRefseq		1
+STX11	NC_000006.12(XM_047419436.1):c.74-2759_74-2752del	deletion	NC_000006.12:g.144183864_144183871del	c.74-2759_74-2752del	r.(=)	p.(=)	1.0	wildtype	deletion_protein_wildtype	NG_IDRefseq		9
+STX11	NC_000006.12(XM_047419436.1):c.74-3019del	deletion	NC_000006.12:g.144183604del	c.74-3019del	r.(=)	p.(=)	1.0	wildtype	deletion_protein_wildtype	NG_IDRefseq		1
+STX11	NC_000006.12(XM_047419436.1):c.74-2546_74-2543del	deletion	NC_000006.12:g.144184077_144184080del	c.74-2546_74-2543del	r.(=)	p.(=)	1.0	wildtype	deletion_protein_wildtype	NG_IDRefseq		3
+STXBP2	NC_000019.10(NM_001414484.1):c.1151-1G>C	substitution	NC_000019.10(NM_006949.4):c.1247-1G>C	c.1151-1G>C			0.0	empty	substitution_protein_empty	NM_MANE	MANE Select	9
+TMC6	NC_000017.11(XM_047435260.1):c.766-2A>T	substitution	NC_000017.11(NM_001127198.5):c.892-2A>T	c.766-2A>T			0.0	empty	substitution_protein_empty	NM_MANE	MANE Select	1
+TNFRSF13B	NC_000017.11(NM_012452.2):c.581_582delinsAA	delins	NC_000017.11(NM_012452.3):c.581_582delinsAA	c.581_582delinsAA	r.(581_582delinsaa)	p.(Ser194Ter)	0.0	frameshift_or_stop	delins_expected_inframe_got_frameshift	NM_MANE	MANE Select	1
+TNFRSF13B	NC_000017.11(NM_012452.2):c.61+1G>T	substitution	NC_000017.11(NM_012452.3):c.61+1G>T	c.61+1G>T			0.0	empty	substitution_protein_empty	NM_MANE	MANE Select	1
+TYK2	NC_000019.10(NM_001385199.1):c.193+4321_193+4324del	deletion	NC_000019.10:g.10373891_10373894del	c.193+4321_193+4324del	r.(=)	p.(=)	1.0	wildtype	deletion_protein_wildtype	NG_IDRefseq		1
+UNC13D	NC_000017.11(NM_199242.2):c.1389+1G>A	substitution	NC_000017.11(NM_199242.3):c.1389+1G>A	c.1389+1G>A			0.0	empty	substitution_protein_empty	NM_MANE	MANE Select	1
+UNC13D	NC_000017.11(NM_199242.3):c.753+1G>T	substitution	NC_000017.11:g.75840506C>A	c.753+1G>T			0.0	empty	substitution_protein_empty	NG_IDRefseq	MANE Select	3
+UNC13D	NC_000017.11(NM_199242.2):c.1596+1G>C	substitution	NC_000017.11(NM_199242.3):c.1596+1G>C	c.1596+1G>C			0.0	empty	substitution_protein_empty	NM_MANE	MANE Select	9
+UNC13D	NC_000017.11(NM_199242.2):c.754-1G>C	substitution	NC_000017.11(NM_199242.3):c.754-1G>C	c.754-1G>C			0.0	empty	substitution_protein_empty	NM_MANE	MANE Select	7
+UNC13D	NC_000017.11(NM_199242.3):c.569+5G>A	substitution	NC_000017.11:g.75842428C>T	c.569+5G>A			0.0	empty	substitution_protein_empty	NG_IDRefseq	MANE Select	1
+UNC13D	NC_000017.11(NM_199242.2):c.753+1G>T	substitution	NC_000017.11(NM_199242.3):c.753+1G>T	c.753+1G>T			0.0	empty	substitution_protein_empty	NM_MANE	MANE Select	1
+UNC13D	NC_000017.11(NM_199242.2):c.1545-1G>T	substitution	NC_000017.11(NM_199242.3):c.1545-1G>T	c.1545-1G>T			0.0	empty	substitution_protein_empty	NM_MANE	MANE Select	1
+UNC13D	NC_000017.11(NM_199242.2):c.753+3G>A	substitution	NC_000017.11(NM_199242.3):c.753+3G>A	c.753+3G>A			0.0	empty	substitution_protein_empty	NM_MANE	MANE Select	1
+UNC13D	NC_000017.11(NM_199242.2):c.2626-1G>A	substitution	NC_000017.11(NM_199242.3):c.2626-1G>A	c.2626-1G>A			0.0	empty	substitution_protein_empty	NM_MANE	MANE Select	2
+UNC13D	NC_000017.11(NM_199242.2):c.1993-2A>G	substitution	NC_000017.11(NM_199242.3):c.1993-2A>G	c.1993-2A>G			0.0	empty	substitution_protein_empty	NM_MANE	MANE Select	1
+UNC13D	NC_000017.11(NM_199242.2):c.2954+5G>A	substitution	NC_000017.11(NM_199242.3):c.2954+5G>A	c.2954+5G>A			0.0	empty	substitution_protein_empty	NM_MANE	MANE Select	1
+UNC13D	NC_000017.11(NM_199242.2):c.2367+1G>A	substitution	NC_000017.11(NM_199242.3):c.2367+1G>A	c.2367+1G>A			0.0	empty	substitution_protein_empty	NM_MANE	MANE Select	1
+UNC93B1	NC_000011.10(NM_030930.4):c.393-512_393-509del	deletion	NC_000011.10:g.68000189_68000192del	c.393-512_393-509del	r.(=)	p.(=)	1.0	wildtype	deletion_protein_wildtype	NG_IDRefseq	MANE Select	1

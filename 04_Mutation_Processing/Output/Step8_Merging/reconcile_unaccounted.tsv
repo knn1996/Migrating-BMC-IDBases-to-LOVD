@@ -1,0 +1,1282 @@
+gene	accession	sysname	pos_start	pos_end	feat_name	allele_num
+ADA	A0052	Allele 1 and 2: g.4037C>T, c.102C>T, p.Q3X	4037	4037	point	1
+ADA	A0052	Allele 1 and 2: g.4037C>T, c.102C>T, p.Q3X	4037	4037	point	2
+ADA	A0053	Allele 1: g.4037C>T, c.102C>T, p.Q3X; Allele 2: g.29885G>A, c.520G>A, p.R142Q	4037	4037	point	1
+ADA	A0053	Allele 1: g.4037C>T, c.102C>T, p.Q3X; Allele 2: g.29885G>A, c.520G>A, p.R142Q	29885	29885	point	2
+ADA	A0068	Allele 1 and 2: g.1135C>T, c.7C>T, r.7c>u, p.Gln3X	1135	1135	point	1
+ADA	A0068	Allele 1 and 2: g.1135C>T, c.7C>T, r.7c>u, p.Gln3X	1135	1135	point	2
+ADA	A0069	Allele 1 and 2: g.1135C>T, c.7C>T, r.7c>u, p.Gln3X	1135	1135	point	1
+ADA	A0069	Allele 1 and 2: g.1135C>T, c.7C>T, r.7c>u, p.Gln3X	1135	1135	point	2
+ADA	A0070	Allele 1 and 2: g.1135C>T, c.7C>T, r.7c>u, p.Gln3X	1135	1135	point	1
+ADA	A0070	Allele 1 and 2: g.1135C>T, c.7C>T, r.7c>u, p.Gln3X	1135	1135	point	2
+ADA	A0071	Allele 1 and 2: g.1135C>T, c.7C>T, r.7c>u, p.Gln3X	1135	1135	point	1
+ADA	A0071	Allele 1 and 2: g.1135C>T, c.7C>T, r.7c>u, p.Gln3X	1135	1135	point	2
+ADA	A0072	Allele 1 and 2: g.1135C>T, c.7C>T, r.7c>u, p.Gln3X	1135	1135	point	1
+ADA	A0072	Allele 1 and 2: g.1135C>T, c.7C>T, r.7c>u, p.Gln3X	1135	1135	point	2
+ADA	A0037	Allele 1: g.19239C>G, c.138C>G, p.H15D; Allele 2: g.29009T>C, c.415T>C, p.L107P	19239	19239	point	1
+ADA	A0037	Allele 1: g.19239C>G, c.138C>G, p.H15D; Allele 2: g.29009T>C, c.415T>C, p.L107P	29009	29009	point	2
+ADA	A0010	Allele 1 and 2: g.19254G>A, c.153G>A, p.G20R	19254	19254	point	1
+ADA	A0010	Allele 1 and 2: g.19254G>A, c.153G>A, p.G20R	19254	19254	point	2
+ADA	A0001	Allele 1: g.28909G>T, c.315G>T, p.G74C; Allele 2: g.32464G>A, c.741G>A, p.G216R	28909	28909	point	1
+ADA	A0001	Allele 1: g.28909G>T, c.315G>T, p.G74C; Allele 2: g.32464G>A, c.741G>A, p.G216R	32464	32464	point	2
+ADA	A0065	Allele 1: g.28910G>A, c.221G>A, r.221g>a, p.Gly74Asp; Allele 2: g.32609G>A, c.715G>A, r.715g>a, p.Gly239Ser	28910	28910	point	1
+ADA	A0065	Allele 1: g.28910G>A, c.221G>A, r.221g>a, p.Gly74Asp; Allele 2: g.32609G>A, c.715G>A, r.715g>a, p.Gly239Ser	32609	32609	point	2
+ADA	A0048	Allele 1: g.28910G>T, c.316G>T, p.G74V; Allele 2: g.35110C>T, c.1081C>T, p.A329V	28910	28910	point	1
+ADA	A0048	Allele 1: g.28910G>T, c.316G>T, p.G74V; Allele 2: g.35110C>T, c.1081C>T, p.A329V	35110	35110	point	2
+ADA	A0012	Allele 1 and 2: g.28915C>T, c.321C>T, p.R76W	28915	28915	point	1
+ADA	A0012	Allele 1 and 2: g.28915C>T, c.321C>T, p.R76W	28915	28915	point	2
+ADA	A0013	Allele 1: g.28915C>T, c.321C>T, p.R76W; Allele 2: g.32891C>T, c.916C>T, p.P274L	28915	28915	point	1
+ADA	A0013	Allele 1: g.28915C>T, c.321C>T, p.R76W; Allele 2: g.32891C>T, c.916C>T, p.P274L	32891	32891	point	2
+ADA	A0014	Allele 1: g.28915C>T, c.321C>T, p.R76W; Allele 2: g.29009T>C, c.415T>C, p.L107P	28915	28915	point	1
+ADA	A0014	Allele 1: g.28915C>T, c.321C>T, p.R76W; Allele 2: g.29009T>C, c.415T>C, p.L107P	29009	29009	point	2
+ADA	A0039	Allele 1: g.28937C>A, c.343C>A, p.A83D; Allele 2: g.IVS5+1G>A, c.EX5del, p.E121fsX131	28937	28937	point	1
+ADA	A0039	Allele 1: g.28937C>A, c.343C>A, p.A83D; Allele 2: g.IVS5+1G>A, c.EX5del, p.E121fsX131	29939	29939	point	2
+ADA	A0057	Allele 1: g.28979A>G, c.385A>G, p.Y97C; Allele 1: g.29005C>G, c.411C>G, p.L106V; Allele 2: g.2430_5678del	28979	28979	point	1
+ADA	A0057	Allele 1: g.28979A>G, c.385A>G, p.Y97C; Allele 1: g.29005C>G, c.411C>G, p.L106V; Allele 2: g.2430_5678del	29005	29005	point	1
+ADA	A0057	Allele 1: g.28979A>G, c.385A>G, p.Y97C; Allele 1: g.29005C>G, c.411C>G, p.L106V; Allele 2: g.2430_5678del	2430	5678	deletion	2
+ADA	A0019	Allele 1: g.28990C>T, c.396C>T, p.R101W; Allele 2: g.32450G>A, c.727G>A, p.R211H	28990	28990	point	1
+ADA	A0019	Allele 1: g.28990C>T, c.396C>T, p.R101W; Allele 2: g.32450G>A, c.727G>A, p.R211H	32450	32450	point	2
+ADA	A0043	Allele 1: g.28991G>T, c.397G>T, p.R101L; Allele 2: g.34380C>T, c.967C>T, p.S291L	28991	28991	point	1
+ADA	A0043	Allele 1: g.28991G>T, c.397G>T, p.R101L; Allele 2: g.34380C>T, c.967C>T, p.S291L	34380	34380	point	2
+ADA	A0009	Allele 1: g.28991G>A, c.397G>A, p.R101Q; Allele 2: g.32461G>A, c.738G>A, p.A215T	28991	28991	point	1
+ADA	A0009	Allele 1: g.28991G>A, c.397G>A, p.R101Q; Allele 2: g.32461G>A, c.738G>A, p.A215T	32461	32461	point	2
+ADA	A0011	Allele 1: g.28991G>A, c.397G>A, p.R101Q; Allele 2: g.IVS1+1G>C	28991	28991	point	1
+ADA	A0011	Allele 1: g.28991G>A, c.397G>A, p.R101Q; Allele 2: g.IVS1+1G>C	4064	4064		2
+ADA	A0035	Allele 1 and 2: g.29000C>T, c.406C>T, p.P104L	29000	29000	point	1
+ADA	A0035	Allele 1 and 2: g.29000C>T, c.406C>T, p.P104L	29000	29000	point	2
+ADA	A0061	Allele 1: g.29003delA, c.314delA, r.314dela, p.His105fsX28; Allele 2: g.32598G>A, c.704G>A, r.704g>a, p.Arg235Gln	29003	29003	deletion	1
+ADA	A0061	Allele 1: g.29003delA, c.314delA, r.314dela, p.His105fsX28; Allele 2: g.32598G>A, c.704G>A, r.704g>a, p.Arg235Gln	32598	32598	point	2
+ADA	A0063	Allele 1: g.29003delA, c.314delA, r.314dela, p.His105fsX28; Allele 2: g.34437T>C, c.929T>C, r.929u>c, p.Met310Thr	29003	29003	deletion	1
+ADA	A0063	Allele 1: g.29003delA, c.314delA, r.314dela, p.His105fsX28; Allele 2: g.34437T>C, c.929T>C, r.929u>c, p.Met310Thr	34437	34437	point	2
+ADA	A0015	Allele 1: g.29009T>C, c.415T>C, p.L107P; Allele 2: g.32449C>T, c.726C>T, p.R211C	29009	29009	point	1
+ADA	A0015	Allele 1: g.29009T>C, c.415T>C, p.L107P; Allele 2: g.32449C>T, c.726C>T, p.R211C	32449	32449	point	2
+ADA	A0029	Allele 1: g.29009T>C, c.415T>C, p.L107P	29009	29009	point	1
+ADA	A0030	Allele 1: g.29009T>C, c.415T>C, p.L107P	29009	29009	point	1
+ADA	A0064	Allele 1: g.29044C>T, c.355C>T, r.355c>u, p.Gln119X; Allele 2: g.32598G>A, c.704G>A, r.704g>a, p.Arg235Gln	29044	29044	point	1
+ADA	A0064	Allele 1: g.29044C>T, c.355C>T, r.355c>u, p.Gln119X; Allele 2: g.32598G>A, c.704G>A, r.704g>a, p.Arg235Gln	32598	32598	point	2
+ADA	A0005	Allele 1 and 2: g.29827delG, c.462delG, p.D123fsX132	29827	29827	deletion	1
+ADA	A0005	Allele 1 and 2: g.29827delG, c.462delG, p.D123fsX132	29827	29827	deletion	2
+ADA	A0008	Allele 1: g.29837C>A, c.472C>A, p.P126Q; Allele 2: g.32464G>A, c.741G>A, p.G216R	29837	29837	point	1
+ADA	A0008	Allele 1: g.29837C>A, c.472C>A, p.P126Q; Allele 2: g.32464G>A, c.741G>A, p.G216R	32464	32464	point	2
+ADA	A0006	Allele 1 and 2: g.29845G>A, c.480G>A, p.V129M	29845	29845	point	1
+ADA	A0006	Allele 1 and 2: g.29845G>A, c.480G>A, p.V129M	29845	29845	point	2
+ADA	A0007	Allele 1: g.29845G>A, c.480G>A, p.V129M	29845	29845	point	1
+ADA	A0003	Allele 1: g.29879G>A, c.514G>A, p.G140E; Allele 2: g.34463_34467delGAAGA, c.1050_1054delGAAGA, p.E319fsX321	29879	29879	point	1
+ADA	A0003	Allele 1: g.29879G>A, c.514G>A, p.G140E; Allele 2: g.34463_34467delGAAGA, c.1050_1054delGAAGA, p.E319fsX321	34463	34467	deletion	2
+ADA	A0054	Allele 1 and 2: g.29884C>T, c.519C>T, p.R142X	29884	29884	point	1
+ADA	A0054	Allele 1 and 2: g.29884C>T, c.519C>T, p.R142X	29884	29884	point	2
+ADA	A0055	Allele 1 and 2: g.29884C>T, c.519C>T, p.R142X	29884	29884	point	1
+ADA	A0055	Allele 1 and 2: g.29884C>T, c.519C>T, p.R142X	29884	29884	point	2
+ADA	A0016	Allele 1: g.29906G>A, c.541G>A, p.R149Q; Allele 2: g.34398C>A, c.985C>A, p.P297Q	29906	29906	point	1
+ADA	A0016	Allele 1: g.29906G>A, c.541G>A, p.R149Q; Allele 2: g.34398C>A, c.985C>A, p.P297Q	34398	34398	point	2
+ADA	A0002	Allele 1: g.29905C>T, c.540C>T, p.R149W; Allele 2: g.35133_35135delGAA, c.1104_1106delGAA, p.E337del	29905	29905	point	1
+ADA	A0002	Allele 1: g.29905C>T, c.540C>T, p.R149W; Allele 2: g.35133_35135delGAA, c.1104_1106delGAA, p.E337del	35133	35135	deletion	2
+ADA	A0058	Allele 1 and 2: g.29914C>A, c.549C>A, p.L152M	29914	29914	point	1
+ADA	A0058	Allele 1 and 2: g.29914C>A, c.549C>A, p.L152M	29914	29914	point	2
+ADA	A0044	Allele 1: g.29927G>A, c.562G>A, p.R156H; Allele 2: g.32464G>A, c.741G>A, p.G216R	29927	29927	point	1
+ADA	A0044	Allele 1: g.29927G>A, c.562G>A, p.R156H; Allele 2: g.32464G>A, c.741G>A, p.G216R	32464	32464	point	2
+ADA	A0024	Allele 1: g.29926C>T, c.561C>T, p.R156C; Allele 2: g.34419T>G, c.1006T>G, p.L304R	29926	29926	point	1
+ADA	A0024	Allele 1: g.29926C>T, c.561C>T, p.R156C; Allele 2: g.34419T>G, c.1006T>G, p.L304R	34419	34419	point	2
+ADA	A0046	Allele 1: g.29927G>A, c.562G>A, p.R156H; Allele 2: g.34463_34467delGAAGA, c.1050_1054delGAAGA, p.E319fsX321	29927	29927	point	1
+ADA	A0046	Allele 1: g.29927G>A, c.562G>A, p.R156H; Allele 2: g.34463_34467delGAAGA, c.1050_1054delGAAGA, p.E319fsX321	34463	34467	deletion	2
+ADA	A0056	Allele 1: g.29927G>A, c.562G>A, p.R156H; Allele 2: g.IVS5+1G>A, c.EX5del, p.E121fsX131	29927	29927	point	1
+ADA	A0056	Allele 1: g.29927G>A, c.562G>A, p.R156H; Allele 2: g.IVS5+1G>A, c.EX5del, p.E121fsX131	29939	29939	point	2
+ADA	A0045	Allele 1: g.29927G>A, c.562G>A, p.R156H; Allele 2: g.34484G>A, c.1070_1071insATGA, p.N326fsX334	29927	29927	point	1
+ADA	A0045	Allele 1: g.29927G>A, c.562G>A, p.R156H; Allele 2: g.34484G>A, c.1070_1071insATGA, p.N326fsX334	34484	34484	insertion	2
+ADA	A0073	Allele 1: g.27156G>A, c.467G>A, r.467g>a, p.Arg156His; Allele 2: g.29831delG, c.704delG, r.704delg, p.Leu236fsX75	27156	27156	point	1
+ADA	A0073	Allele 1: g.27156G>A, c.467G>A, r.467g>a, p.Arg156His; Allele 2: g.29831delG, c.704delG, r.704delg, p.Leu236fsX75	29831	29831	deletion	2
+ADA	A0042	Allele 1: g.31226G>A, c.624G>A, p.V177M; Allele 2: g.35143_35144delAG, c.1114_1115delAG, p.K340fsX348	31226	31226	point	1
+ADA	A0042	Allele 1: g.31226G>A, c.624G>A, p.V177M; Allele 2: g.35143_35144delAG, c.1114_1115delAG, p.K340fsX348	35143	35144	deletion	2
+ADA	A0038	Allele 1: g.31233C>A, c.631C>A, p.A179D; Allele 2: g.32450G>A, c.727G>A, p.R211H	31233	31233	point	1
+ADA	A0038	Allele 1: g.31233C>A, c.631C>A, p.A179D; Allele 2: g.32450G>A, c.727G>A, p.R211H	32450	32450	point	2
+ADA	A0060	Allele 1: g.31236_31237delTT, c.634_635delTT, p.I180fsX185; Allele 2: g.32497G>A, c.702_773delGAGGCTGTGAAGAGCGGCATTCACCGTACTGTCCACGCCGGGGAGGTGGGCTCGGCCGAAGTAGTAAAAGAG, p.E203_A227del	31236	31237	deletion	1
+ADA	A0060	Allele 1: g.31236_31237delTT, c.634_635delTT, p.I180fsX185; Allele 2: g.32497G>A, c.702_773delGAGGCTGTGAAGAGCGGCATTCACCGTACTGTCCACGCCGGGGAGGTGGGCTCGGCCGAAGTAGTAAAAGAG, p.E203_A227del	32497	32497	point	2
+ADA	A0004	Allele 1: g.31293A>C, c.691A>C, p.Q199P; Allele 2: g.32464G>A, c.741G>A, p.G216R	31293	31293	point	1
+ADA	A0004	Allele 1: g.31293A>C, c.691A>C, p.Q199P; Allele 2: g.32464G>A, c.741G>A, p.G216R	32464	32464	point	2
+ADA	A0021	Allele 1: g.32450G>A, c.727G>A, p.R211H; Allele 2: g.35110C>T, c.1081C>T, p.A329V	32450	32450	point	1
+ADA	A0021	Allele 1: g.32450G>A, c.727G>A, p.R211H; Allele 2: g.35110C>T, c.1081C>T, p.A329V	35110	35110	point	2
+ADA	A0018	Allele 1 and 2: g.32461G>A, c.738G>A, p.A215T	32461	32461	point	1
+ADA	A0018	Allele 1 and 2: g.32461G>A, c.738G>A, p.A215T	32461	32461	point	2
+ADA	A0028	Allele 1 and 2: g.32464G>A, c.741G>A, p.G216R	32464	32464	point	1
+ADA	A0028	Allele 1 and 2: g.32464G>A, c.741G>A, p.G216R	32464	32464	point	2
+ADA	A0031	Allele 1: g.32464G>A, c.741G>A, p.G216R; Allele 2: g.34463_34467delGAAGA, c.1050_1054delGAAGA, p.E319fsX321	32464	32464	point	1
+ADA	A0031	Allele 1: g.32464G>A, c.741G>A, p.G216R; Allele 2: g.34463_34467delGAAGA, c.1050_1054delGAAGA, p.E319fsX321	34463	34467	deletion	2
+ADA	A0047	Allele 1: g.32464G>A, c.741G>A, p.G216R; Allele 2: g.IVS5+6T>A, c.EX5del, p.E121fsX131	32464	32464	point	1
+ADA	A0047	Allele 1: g.32464G>A, c.741G>A, p.G216R; Allele 2: g.IVS5+6T>A, c.EX5del, p.E121fsX131	29944	29944	point	2
+ADA	A0049	Allele 1: g.32467G>A, c.744G>A, p.E217K	32467	32467	point	1
+ADA	A0059	Allele 1 and 2: g.32592C>T, c.793C>T, p.T233I	32592	32592	point	1
+ADA	A0059	Allele 1 and 2: g.32592C>T, c.793C>T, p.T233I	32592	32592	point	2
+ADA	A0062	Allele 1: g.32598G>A, c.704G>A, r.704g>a, p.Arg235Gln; Allele 2: g.34437T>C, c.929T>C, r.929u>c, p.Met310Thr	32598	32598	point	1
+ADA	A0062	Allele 1: g.32598G>A, c.704G>A, r.704g>a, p.Arg235Gln; Allele 2: g.34437T>C, c.929T>C, r.929u>c, p.Met310Thr	34437	34437	point	2
+ADA	A0040	Allele 1 and 2: g.32652G>C, c.853G>C, p.R253P	32652	32652	point	1
+ADA	A0040	Allele 1 and 2: g.32652G>C, c.853G>C, p.R253P	32652	32652	point	2
+ADA	A0027	Allele 1: g.32654C>T, c.855C>T, p.Q254X; Allele 2: g.35110C>T, c.1081C>T, p.A329V	32654	32654	point	1
+ADA	A0027	Allele 1: g.32654C>T, c.855C>T, p.Q254X; Allele 2: g.35110C>T, c.1081C>T, p.A329V	35110	35110	point	2
+ADA	A0074	Allele 1 and 2: g.30148G>A, c.845G>A, r.845g>a, p.Arg282Gln	30148	30148	point	1
+ADA	A0074	Allele 1 and 2: g.30148G>A, c.845G>A, r.845g>a, p.Arg282Gln	30148	30148	point	2
+ADA	A0025	Allele 1: g.34380C>T, c.967C>T, p.S291L; Allele 2: g.35110C>T, c.1081C>T, p.A329V	34380	34380	point	1
+ADA	A0025	Allele 1: g.34380C>T, c.967C>T, p.S291L; Allele 2: g.35110C>T, c.1081C>T, p.A329V	35110	35110	point	2
+ADA	A0017	Allele 1 and 2: g.34398C>A, c.985C>A, p.P297Q	34398	34398	point	1
+ADA	A0017	Allele 1 and 2: g.34398C>A, c.985C>A, p.P297Q	34398	34398	point	2
+ADA	A0033	Allele 1 and 2: g.34463_34467delGAAGA, c.1050_1054delGAAGA, p.E319fsX321	34463	34467	deletion	1
+ADA	A0033	Allele 1 and 2: g.34463_34467delGAAGA, c.1050_1054delGAAGA, p.E319fsX321	34463	34467	deletion	2
+ADA	A0036	Allele 1 and 2: g.34463_34467delGAAGA, c.1050_1054delGAAGA, p.E319fsX321	34463	34467	deletion	1
+ADA	A0036	Allele 1 and 2: g.34463_34467delGAAGA, c.1050_1054delGAAGA, p.E319fsX321	34463	34467	deletion	2
+ADA	A0032	Allele 1: g.34463_34467delGAAGA, c.1050_1054delGAAGA, p.E319fsX321	34463	34467	deletion	1
+ADA	A0034	Allele 1: g.34463_34467delGAAGA, c.1050_1054delGAAGA, p.E319fsX321	34463	34467	deletion	1
+ADA	A0026	Allele 1 and 2: g.35110C>T, c.1081C>T, p.A329V	35110	35110	point	1
+ADA	A0026	Allele 1 and 2: g.35110C>T, c.1081C>T, p.A329V	35110	35110	point	2
+ADA	A0020	Allele 1: g.35110C>T, c.1081C>T, p.A329V; Allele 2: g.IVS3-2A>G, c.EX4del, p.G74_E121del	35110	35110	point	1
+ADA	A0020	Allele 1: g.35110C>T, c.1081C>T, p.A329V; Allele 2: g.IVS3-2A>G, c.EX4del, p.G74_E121del	28906	28906	point	2
+ADA	A0050	Allele 1: g.16510G>A, c.95+1G>A, r.190_191insATAA, p.R32fsX31; Allele 2: g.30081_30084delinsTGGAAGAGCAGATCTGG,; c.781-3_781delinsTGGAAGAGCAGATCTGG,; r.781_845del, p.Ile261fsX4	16510	16510	point	1
+ADA	A0050	Allele 1: g.16510G>A, c.95+1G>A, r.190_191insATAA, p.R32fsX31; Allele 2: g.30081_30084delinsTGGAAGAGCAGATCTGG,; c.781-3_781delinsTGGAAGAGCAGATCTGG,; r.781_845del, p.Ile261fsX4	30081	30084	complex	2
+ADA	A0051	Allele 1: g.16510G>A, c.95+1G>A, r.190_191insATAA, p.R32fsX31; Allele 2: g.30081_30084delinsTGGAAGAGCAGATCTGG,; c.781-3_781delinsTGGAAGAGCAGATCTGG,; r.781_845del, p.Ile261fsX4	16510	16510	point	1
+ADA	A0051	Allele 1: g.16510G>A, c.95+1G>A, r.190_191insATAA, p.R32fsX31; Allele 2: g.30081_30084delinsTGGAAGAGCAGATCTGG,; c.781-3_781delinsTGGAAGAGCAGATCTGG,; r.781_845del, p.Ile261fsX4	30081	30084	complex	2
+ADA	A0041	Allele 1 and 2: g.IVS10-34G>A	35066	35066	point	1
+ADA	A0041	Allele 1 and 2: g.IVS10-34G>A	35066	35066	point	2
+ADA	A0066	Allele 1 and 2: g.IVS11-15T>A, c.1112-15T>A, r.1112-15u>a,	32874	32874	point	1
+ADA	A0066	Allele 1 and 2: g.IVS11-15T>A, c.1112-15T>A, r.1112-15u>a,	32874	32874	point	2
+ADA	A0067	Allele 1: g.IVS11-15T>A, c.1112-15T>A, r.1112-15u>a,; Allele 2: g.IVS11-15TGAACCAACGAG>A,; c.1112-15TGAACCAACGAG>A, r.1112-15ugaaccaacgag>a,	32874	32874	point	1
+ADA	A0067	Allele 1: g.IVS11-15T>A, c.1112-15T>A, r.1112-15u>a,; Allele 2: g.IVS11-15TGAACCAACGAG>A,; c.1112-15TGAACCAACGAG>A, r.1112-15ugaaccaacgag>a,	32874	32885	indel	2
+AICDA	A0037	Allele 1 and 2: g.6292_6310delCCGGAGGAAGTTTCTTTAC,; c.21_39delCCGGAGGAAGTTTCTTTAC,; r.21_39delccggaggaaguuucuuuac, p.Arg8fsX19	6292	6310	deletion	1
+AICDA	A0037	Allele 1 and 2: g.6292_6310delCCGGAGGAAGTTTCTTTAC,; c.21_39delCCGGAGGAAGTTTCTTTAC,; r.21_39delccggaggaaguuucuuuac, p.Arg8fsX19	6292	6310	deletion	2
+AICDA	A0059	Allele 1: g.6302T>C, c.31T>C, r.31u>c, p.Phe11Leu; Allele 2: g.7876_7877insT, c.226_227insT, r.226_227insu,; p.Tyr76fsX42	6302	6302	point	1
+AICDA	A0059	Allele 1: g.6302T>C, c.31T>C, r.31u>c, p.Phe11Leu; Allele 2: g.7876_7877insT, c.226_227insT, r.226_227insu,; p.Tyr76fsX42	7877	7877	insertion	2
+AICDA	A0001	Allele 1 and 2: g.6341C>T, c.146C>T, p.R24W	6341	6341	point	1
+AICDA	A0001	Allele 1 and 2: g.6341C>T, c.146C>T, p.R24W	6341	6341	point	2
+AICDA	A0002	Allele 1 and 2: g.6341C>T, c.146C>T, p.R24W	6341	6341	point	1
+AICDA	A0002	Allele 1 and 2: g.6341C>T, c.146C>T, p.R24W	6341	6341	point	2
+AICDA	A0003	Allele 1 and 2: g.6341C>T, c.146C>T, p.R24W	6341	6341	point	1
+AICDA	A0003	Allele 1 and 2: g.6341C>T, c.146C>T, p.R24W	6341	6341	point	2
+AICDA	A0005	Allele 1 and 2: g.6341C>T, c.146C>T, p.R24W	6341	6341	point	1
+AICDA	A0005	Allele 1 and 2: g.6341C>T, c.146C>T, p.R24W	6341	6341	point	2
+AICDA	A0051	Allele 1 and 2: g.6341C>T, c.70C>T, r.70c>u, p.Arg24Trp	6341	6341	point	1
+AICDA	A0051	Allele 1 and 2: g.6341C>T, c.70C>T, r.70c>u, p.Arg24Trp	6341	6341	point	2
+AICDA	A0052	Allele 1 and 2: g.6341C>T, c.70C>T, r.70c>u, p.Arg24Trp	6341	6341	point	1
+AICDA	A0052	Allele 1 and 2: g.6341C>T, c.70C>T, r.70c>u, p.Arg24Trp	6341	6341	point	2
+AICDA	A0062	Allele 1 and 2: g.6398T>C, c.127T>C, r.127u>c, p.Ser43Pro	6398	6398	point	1
+AICDA	A0062	Allele 1 and 2: g.6398T>C, c.127T>C, r.127u>c, p.Ser43Pro	6398	6398	point	2
+AICDA	A0038	Allele 1 and 2: g.7816C>T, c.166C>T, r.166c>u, p.His56Tyr	7816	7816	point	1
+AICDA	A0038	Allele 1 and 2: g.7816C>T, c.166C>T, r.166c>u, p.His56Tyr	7816	7816	point	2
+AICDA	A0081	Allele 1: g.7822G>A, c.172G>A, r.172g>a, p.Glu58Lys; Allele 2: g.7909T>C, c.259T>C, r.259u>c, p.Cys87Arg	7822	7822	point	1
+AICDA	A0081	Allele 1: g.7822G>A, c.172G>A, r.172g>a, p.Glu58Lys; Allele 2: g.7909T>C, c.259T>C, r.259u>c, p.Cys87Arg	7909	7909	point	2
+AICDA	A0031	Allele 1: g.7826_7834delTGCTCTTCC, c.252_260delTGCTCTTCC,; p.L59del; Allele 2: g.7853G>A, c.279G>A, p.W68X	7826	7834	deletion	1
+AICDA	A0031	Allele 1: g.7826_7834delTGCTCTTCC, c.252_260delTGCTCTTCC,; p.L59del; Allele 2: g.7853G>A, c.279G>A, p.W68X	7853	7853	point	2
+AICDA	A0032	Allele 1: g.7826_7834delTGCTCTTCC, c.252_260delTGCTCTTCC,; p.L59del; Allele 2: g.7853G>A, c.279G>A, p.W68X	7826	7834	deletion	1
+AICDA	A0032	Allele 1: g.7826_7834delTGCTCTTCC, c.252_260delTGCTCTTCC,; p.L59del; Allele 2: g.7853G>A, c.279G>A, p.W68X	7853	7853	point	2
+AICDA	A0039	Allele 1 and 2: g.7853G>A, c.203G>A, r.203g>a, p.Trp68X	7853	7853	point	1
+AICDA	A0039	Allele 1 and 2: g.7853G>A, c.203G>A, r.203g>a, p.Trp68X	7853	7853	point	2
+AICDA	A0040	Allele 1 and 2: g.7853G>A, c.203G>A, r.203g>a, p.Trp68X	7853	7853	point	1
+AICDA	A0040	Allele 1 and 2: g.7853G>A, c.203G>A, r.203g>a, p.Trp68X	7853	7853	point	2
+AICDA	A0046	Allele 1: g.7853G>A, c.203G>A, r.203g>a, p.Trp68X	7853	7853	point	1
+AICDA	A0047	Allele 1: g.7853G>A, c.203G>A, r.203g>a, p.Trp68X	7853	7853	point	1
+AICDA	A0048	Allele 1: g.7853G>A, c.203G>A, r.203g>a, p.Trp68X	7853	7853	point	1
+AICDA	A0063	Allele 1 and 2: g.7885_7893delACCTGGTTC,; c.235_243delACCTGGTTC, r.235_243delaccugguuc,; p.Val79_Phe82del	7885	7893	deletion	1
+AICDA	A0063	Allele 1 and 2: g.7885_7893delACCTGGTTC,; c.235_243delACCTGGTTC, r.235_243delaccugguuc,; p.Val79_Phe82del	7885	7893	deletion	2
+AICDA	A0004	Allele 1 and 2: g.7888T>C, c.314T>C, p.W80R	7888	7888	point	1
+AICDA	A0004	Allele 1 and 2: g.7888T>C, c.314T>C, p.W80R	7888	7888	point	2
+AICDA	A0015	Allele 1 and 2: g.7902G>A, c.252G>A, r.252g>a,; p.Trp84X	7902	7902	point	1
+AICDA	A0015	Allele 1 and 2: g.7902G>A, c.252G>A, r.252g>a,; p.Trp84X	7902	7902	point	2
+AICDA	A0029	Allele 1 and 2: g.7902G>A, c.252G>A, r.252g>a,; p.Trp84X	7902	7902	point	1
+AICDA	A0029	Allele 1 and 2: g.7902G>A, c.252G>A, r.252g>a,; p.Trp84X	7902	7902	point	2
+AICDA	A0041	Allele 1 and 2: g.7909T>C, c.259T>C, r.259u>c, p.Cys87Arg	7909	7909	point	1
+AICDA	A0041	Allele 1 and 2: g.7909T>C, c.259T>C, r.259u>c, p.Cys87Arg	7909	7909	point	2
+AICDA	A0064	Allele 1 and 2: g.7909T>C, c.259T>C, r.259u>c, p.Cys87Arg	7909	7909	point	1
+AICDA	A0064	Allele 1 and 2: g.7909T>C, c.259T>C, r.259u>c, p.Cys87Arg	7909	7909	point	2
+AICDA	A0078	Allele 1: g.7909T>C, c.259T>C, r.259u>c, p.Cys87Arg; Allele 2: g.7988T>C, c.338T>C, r.338u>c, p.Leu113Pro	7909	7909	point	1
+AICDA	A0078	Allele 1: g.7909T>C, c.259T>C, r.259u>c, p.Cys87Arg; Allele 2: g.7988T>C, c.338T>C, r.338u>c, p.Leu113Pro	7988	7988	point	2
+AICDA	A0079	Allele 1: g.7909T>C, c.259T>C, r.259u>c, p.Cys87Arg; Allele 2: g.7988T>C, c.338T>C, r.338u>c, p.Leu113Pro	7909	7909	point	1
+AICDA	A0079	Allele 1: g.7909T>C, c.259T>C, r.259u>c, p.Cys87Arg; Allele 2: g.7988T>C, c.338T>C, r.338u>c, p.Leu113Pro	7988	7988	point	2
+AICDA	A0080	Allele 1: g.7909T>C, c.259T>C, r.259u>c, p.Cys87Arg; Allele 2: g.7988T>C, c.338T>C, r.338u>c, p.Leu113Pro	7909	7909	point	1
+AICDA	A0080	Allele 1: g.7909T>C, c.259T>C, r.259u>c, p.Cys87Arg; Allele 2: g.7988T>C, c.338T>C, r.338u>c, p.Leu113Pro	7988	7988	point	2
+AICDA	A0082	Allele 1: g.7909T>C, c.259T>C, r.259u>c, p.Cys87Arg; Allele 2: g.7909T>C, c.259T>C, r.259u>c, p.Cys87Arg	7909	7909	point	1
+AICDA	A0082	Allele 1: g.7909T>C, c.259T>C, r.259u>c, p.Cys87Arg; Allele 2: g.7909T>C, c.259T>C, r.259u>c, p.Cys87Arg	7909	7909	point	2
+AICDA	A0065	Allele 1 and 2: g.7943T>G, c.293T>G, r.293u>g, p.Leu98Arg	7943	7943	point	1
+AICDA	A0065	Allele 1 and 2: g.7943T>G, c.293T>G, r.293u>g, p.Leu98Arg	7943	7943	point	2
+AICDA	A0006	Allele 1 and 2: g.7967T>C, c.393T>C, p.L106P	7967	7967	point	1
+AICDA	A0006	Allele 1 and 2: g.7967T>C, c.393T>C, p.L106P	7967	7967	point	2
+AICDA	A0007	Allele 1 and 2: g.7967T>C, c.393T>C, p.L106P	7967	7967	point	1
+AICDA	A0007	Allele 1 and 2: g.7967T>C, c.393T>C, p.L106P	7967	7967	point	2
+AICDA	A0013	Allele 1 and 2: g.7984C>T, c.410C>T, p.R112C	7984	7984	point	1
+AICDA	A0013	Allele 1 and 2: g.7984C>T, c.410C>T, p.R112C	7984	7984	point	2
+AICDA	A0014	Allele 1 and 2: g.7984C>T, c.410C>T, p.R112C	7984	7984	point	1
+AICDA	A0014	Allele 1 and 2: g.7984C>T, c.410C>T, p.R112C	7984	7984	point	2
+AICDA	A0030	Allele 1 and 2: g.7984C>T, c.410C>T, p.R112C	7984	7984	point	1
+AICDA	A0030	Allele 1 and 2: g.7984C>T, c.410C>T, p.R112C	7984	7984	point	2
+AICDA	A0016	Allele 1 and 2: g.7984C>T, c.410C>T, p.R112C	7984	7984	point	1
+AICDA	A0016	Allele 1 and 2: g.7984C>T, c.410C>T, p.R112C	7984	7984	point	2
+AICDA	A0017	Allele 1 and 2: g.7984C>T, c.410C>T, p.R112C	7984	7984	point	1
+AICDA	A0017	Allele 1 and 2: g.7984C>T, c.410C>T, p.R112C	7984	7984	point	2
+AICDA	A0018	Allele 1 and 2: g.7984C>T, c.410C>T, p.R112C	7984	7984	point	1
+AICDA	A0018	Allele 1 and 2: g.7984C>T, c.410C>T, p.R112C	7984	7984	point	2
+AICDA	A0019	Allele 1 and 2: g.7984C>T, c.410C>T, p.R112C	7984	7984	point	1
+AICDA	A0019	Allele 1 and 2: g.7984C>T, c.410C>T, p.R112C	7984	7984	point	2
+AICDA	A0020	Allele 1 and 2: g.7984C>T, c.410C>T, p.R112C	7984	7984	point	1
+AICDA	A0020	Allele 1 and 2: g.7984C>T, c.410C>T, p.R112C	7984	7984	point	2
+AICDA	A0021	Allele 1 and 2: g.7984C>T, c.410C>T, p.R112C	7984	7984	point	1
+AICDA	A0021	Allele 1 and 2: g.7984C>T, c.410C>T, p.R112C	7984	7984	point	2
+AICDA	A0022	Allele 1 and 2: g.7984C>T, c.410C>T, p.R112C	7984	7984	point	1
+AICDA	A0022	Allele 1 and 2: g.7984C>T, c.410C>T, p.R112C	7984	7984	point	2
+AICDA	A0023	Allele 1 and 2: g.7984C>T, c.410C>T, p.R112C	7984	7984	point	1
+AICDA	A0023	Allele 1 and 2: g.7984C>T, c.410C>T, p.R112C	7984	7984	point	2
+AICDA	A0024	Allele 1 and 2: g.7984C>T, c.410C>T, p.R112C	7984	7984	point	1
+AICDA	A0024	Allele 1 and 2: g.7984C>T, c.410C>T, p.R112C	7984	7984	point	2
+AICDA	A0025	Allele 1 and 2: g.7984C>T, c.410C>T, p.R112C	7984	7984	point	1
+AICDA	A0025	Allele 1 and 2: g.7984C>T, c.410C>T, p.R112C	7984	7984	point	2
+AICDA	A0026	Allele 1 and 2: g.7984C>T, c.410C>T, p.R112C	7984	7984	point	1
+AICDA	A0026	Allele 1 and 2: g.7984C>T, c.410C>T, p.R112C	7984	7984	point	2
+AICDA	A0058	Allele 1: g.7984C>T, c.334C>T, r.334c>u, p.Arg112Cys; Allele 2: g.8956delC, c.544delC, r.544delc, p.Pro182fsX28	7984	7984	point	1
+AICDA	A0058	Allele 1: g.7984C>T, c.334C>T, r.334c>u, p.Arg112Cys; Allele 2: g.8956delC, c.544delC, r.544delc, p.Pro182fsX28	8956	8956	deletion	2
+AICDA	A0066	Allele 1 and 2: g.7984C>T, c.334C>T, r.334c>u, p.Arg112Cys	7984	7984	point	1
+AICDA	A0066	Allele 1 and 2: g.7984C>T, c.334C>T, r.334c>u, p.Arg112Cys	7984	7984	point	2
+AICDA	A0067	Allele 1 and 2: g.7984C>T, c.334C>T, r.334c>u, p.Arg112Cys	7984	7984	point	1
+AICDA	A0067	Allele 1 and 2: g.7984C>T, c.334C>T, r.334c>u, p.Arg112Cys	7984	7984	point	2
+AICDA	A0027	Allele 1 and 2: g.7985G>A, c.411G>A, p.R112H	7985	7985	point	1
+AICDA	A0027	Allele 1 and 2: g.7985G>A, c.411G>A, p.R112H	7985	7985	point	2
+AICDA	A0028	Allele 1 and 2: g.7985G>A, c.411G>A, p.R112H	7985	7985	point	1
+AICDA	A0028	Allele 1 and 2: g.7985G>A, c.411G>A, p.R112H	7985	7985	point	2
+AICDA	A0053	Allele 1 and 2: g.7985G>A, c.335G>A, r.335g>a, p.Arg112His	7985	7985	point	1
+AICDA	A0053	Allele 1 and 2: g.7985G>A, c.335G>A, r.335g>a, p.Arg112His	7985	7985	point	2
+AICDA	A0054	Allele 1 and 2: g.7985G>A, c.335G>A, r.335g>a, p.Arg112His	7985	7985	point	1
+AICDA	A0054	Allele 1 and 2: g.7985G>A, c.335G>A, r.335g>a, p.Arg112His	7985	7985	point	2
+AICDA	A0055	Allele 1 and 2: g.7985G>A, c.335G>A, r.335g>a, p.Arg112His	7985	7985	point	1
+AICDA	A0055	Allele 1 and 2: g.7985G>A, c.335G>A, r.335g>a, p.Arg112His	7985	7985	point	2
+AICDA	A0056	Allele 1 and 2: g.7985G>A, c.335G>A, r.335g>a, p.Arg112His	7985	7985	point	1
+AICDA	A0056	Allele 1 and 2: g.7985G>A, c.335G>A, r.335g>a, p.Arg112His	7985	7985	point	2
+AICDA	A0057	Allele 1 and 2: g.7985G>A, c.335G>A, r.335g>a, p.Arg112His	7985	7985	point	1
+AICDA	A0057	Allele 1 and 2: g.7985G>A, c.335G>A, r.335g>a, p.Arg112His	7985	7985	point	2
+AICDA	A0083	Allele 1: g.8014G>T, c.364G>T, r.364g>u, p.Glu122X	8014	8014	point	1
+AICDA	A0060	Allele 1 and 2: g.8057T>A, c.407T>A, r.407u>a, p.Ile136Lys	8057	8057	point	1
+AICDA	A0060	Allele 1 and 2: g.8057T>A, c.407T>A, r.407u>a, p.Ile136Lys	8057	8057	point	2
+AICDA	A0008	Allele 1 and 2: g.8065A>G, c.491A>G, p.M139V	8065	8065	point	1
+AICDA	A0008	Allele 1 and 2: g.8065A>G, c.491A>G, p.M139V	8065	8065	point	2
+AICDA	A0011	Allele 1 and 2: g.8384C>A, c.517C>A, p.C147X	8384	8384	point	1
+AICDA	A0011	Allele 1 and 2: g.8384C>A, c.517C>A, p.C147X	8384	8384	point	2
+AICDA	A0012	Allele 1 and 2: g.8384C>A, c.517C>A, p.C147X	8384	8384	point	1
+AICDA	A0012	Allele 1 and 2: g.8384C>A, c.517C>A, p.C147X	8384	8384	point	2
+AICDA	A0009	Allele 1 and 2: g.8395T>C, c.528T>C, p.F151S	8395	8395	point	1
+AICDA	A0009	Allele 1 and 2: g.8395T>C, c.528T>C, p.F151S	8395	8395	point	2
+AICDA	A0010	Allele 1 and 2: g.8395T>C, c.528T>C, p.F151S	8395	8395	point	1
+AICDA	A0010	Allele 1 and 2: g.8395T>C, c.528T>C, p.F151S	8395	8395	point	2
+AICDA	A0042	Allele 1 and 2: g.8465A>C, c.522A>C, r.522a>c, p.Arg174Ser	8465	8465	point	1
+AICDA	A0042	Allele 1 and 2: g.8465A>C, c.522A>C, r.522a>c, p.Arg174Ser	8465	8465	point	2
+AICDA	A0043	Allele 1 and 2: g.8465A>C, c.522A>C, r.522a>c, p.Arg174Ser	8465	8465	point	1
+AICDA	A0043	Allele 1 and 2: g.8465A>C, c.522A>C, r.522a>c, p.Arg174Ser	8465	8465	point	2
+AICDA	A0044	Allele 1 and 2: g.8465A>C, c.522A>C, r.522a>c, p.Arg174Ser	8465	8465	point	1
+AICDA	A0044	Allele 1 and 2: g.8465A>C, c.522A>C, r.522a>c, p.Arg174Ser	8465	8465	point	2
+AICDA	A0070	Allele 1: g.8980C>T, c.568C>T, r.568c>u, p.Arg190X	8980	8980	point	1
+AICDA	A0071	Allele 1: g.8980C>T, c.568C>T, r.568c>u, p.Arg190X	8980	8980	point	1
+AICDA	A0072	Allele 1: g.8980C>T, c.568C>T, r.568c>u, p.Arg190X	8980	8980	point	1
+AICDA	A0073	Allele 1: g.8980C>T, c.568C>T, r.568c>u, p.Arg190X	8980	8980	point	1
+AICDA	A0074	Allele 1: g.8980C>T, c.568C>T, r.568c>u, p.Arg190X	8980	8980	point	1
+AICDA	A0075	Allele 1: g.8980C>T, c.568C>T, r.568c>u, p.Arg190X	8980	8980	point	1
+AICDA	A0076	Allele 1: g.8980C>T, c.568C>T, r.568c>u, p.Arg190X	8980	8980	point	1
+AICDA	A0077	Allele 1: g.8980C>T, c.568C>T, r.568c>u, p.Arg190X	8980	8980	point	1
+AICDA	A0068	Allele 1 and 2: g.IVS2+1G>T, c.G>T, r.g>u,	6428	6428	point	1
+AICDA	A0068	Allele 1 and 2: g.IVS2+1G>T, c.G>T, r.g>u,	6428	6428	point	2
+AICDA	A0069	Allele 1 and 2: g.IVS2+1G>T, c.G>T, r.g>u,	6428	6428	point	1
+AICDA	A0069	Allele 1 and 2: g.IVS2+1G>T, c.G>T, r.g>u,	6428	6428	point	2
+AICDA	A0045	Allele 1 and 2: g.IVS4-2A>G, c.A>G, r.a>g,	8954	8954	point	1
+AICDA	A0045	Allele 1 and 2: g.IVS4-2A>G, c.A>G, r.a>g,	8954	8954	point	2
+AICDA	A0061	Allele 1 and 2: g.IVS4+1G>C, c.G>C, r.g>c,	8487	8487	point	1
+AICDA	A0061	Allele 1 and 2: g.IVS4+1G>C, c.G>C, r.g>c,	8487	8487	point	2
+AIRE	A0006	Allele 1: g.8473C>T, c.896C>T, p.R257X; Allele 2: g.16426A>T, c.1765A>T, p.546	8473	8473	point	1
+AIRE	A0006	Allele 1: g.8473C>T, c.896C>T, p.R257X; Allele 2: g.16426A>T, c.1765A>T, p.546	16426	16426	point	2
+AIRE	A0093	Allele 1: g.15091delG, c.1640delG, p.A505fsX520; Allele 2: g.11700_11701insC, c.1230_1231insC, p.P368fsX371	15091	15091	deletion	1
+AIRE	A0093	Allele 1: g.15091delG, c.1640delG, p.A505fsX520; Allele 2: g.11700_11701insC, c.1230_1231insC, p.P368fsX371	11701	11701	insertion	2
+AIRE	A0211	Allele 1 and 2: g.IVS1+1G>C; g.IVS1+5G>, c.132+1G>C;; c.132+5G>, r.132+1g>c; r.132+5g>	4843	4843	deletion	1
+AIRE	A0211	Allele 1 and 2: g.IVS1+1G>C; g.IVS1+5G>, c.132+1G>C;; c.132+5G>, r.132+1g>c; r.132+5g>	4843	4843	deletion	2
+AIRE	A0069	Allele 1: g.IVS3+2T>C	5835	5835	point	1
+AIRE	A0070	Allele 1: g.IVS3+2T>C	5835	5835	point	1
+AIRE	A0071	Allele 1: g.IVS3+2T>C	5835	5835	point	1
+AK2	A0008	Allele 1 and 2: g.16430G>A, c.331-1G>A, r.331-1g>a	16430	16430	point	1
+AK2	A0008	Allele 1 and 2: g.16430G>A, c.331-1G>A, r.331-1g>a	16430	16430	point	2
+AP3B1	A0005	Allele 1 and 2: g.147279..155450del,	147279	155450	deletion	1
+AP3B1	A0005	Allele 1 and 2: g.147279..155450del,	147279	155450	deletion	2
+AP3B1	A0006	Allele 1 and 2: g.147279..155450del,	147279	155450	deletion	1
+AP3B1	A0006	Allele 1 and 2: g.147279..155450del,	147279	155450	deletion	2
+BLNK	B0001	Allele 1 and 2: g.IVS1+3A>T	10199	10199	point	1
+BLNK	B0001	Allele 1 and 2: g.IVS1+3A>T	10199	10199	point	2
+C3	C0006	Allele 1 and 2: g.IVS10+1G>T, c.G>T, r.g>u,	9143	9143	point	1
+C3	C0006	Allele 1 and 2: g.IVS10+1G>T, c.G>T, r.g>u,	9143	9143	point	2
+C3	C0010	Allele 1 and 2: g.IVS39-2A>G, c.A>G, r.a>g,	43362	43362	point	1
+C3	C0010	Allele 1 and 2: g.IVS39-2A>G, c.A>G, r.a>g,	43362	43362	point	2
+C6	C0001	Allele 1: g.IVS16+2T>C	71714	71714	point	1
+C6	C0002	Allele 1: g.IVS16+2T>C	71714	71714	point	1
+C6	C0003	Allele 1: g.IVS16+2T>C	71714	71714	point	1
+C7	C0003	Allele 1: g.IVS1-1G>A; Allele 2: c.853-?_1207+?del	20087	20087	point	1
+C7	C0004	Allele 1: g.IVS1-1G>A; Allele 2: c.853-?_1207+?del	20087	20087	point	1
+C7	C0020	Allele 1: g.IVS3-1G>T, c.G>T, r.g>u,	25832	25832	point	1
+C7	C0023	Allele 1 and 2: g.IVS3-1G>T, c.G>T, r.g>u,	25832	25832	point	1
+C7	C0023	Allele 1 and 2: g.IVS3-1G>T, c.G>T, r.g>u,	25832	25832	point	2
+CD3D	C0004	Allele 1 and 2: g.3149C>A, c.279C>A, r.279c>a, p.Cys93X	3149	3149	point	1
+CD3D	C0004	Allele 1 and 2: g.3149C>A, c.279C>A, r.279c>a, p.Cys93X	3149	3149	point	2
+CD40L	C0231	g.1086C>T, c.31C>T, r.31c>u, p.Arg11X	1086	1086	point	0
+CD40L	C0219	g.1127_1128ins, c.72_73ins291, r.72_73ins,; p.Met25fsX60	1128	1128	insertion	0
+CD40L	C0238	g.9184C>A, c.368C>A, r.368c>a, p.Ala123Glu	9184	9184	point	0
+CD40L	C0048	g.9193C>A, c.433C>A, p.V126D	9193	9193	point	0
+CD40L	C0047	g.9225_9234delGTGTTACAGT, c.465_474delGTGTTACAGT, p.V137fsX145	9225	9234	deletion	0
+CD40L	C0057	g.11864T>C, c.484T>C, p.K143T	11864	11864	point	0
+CD40L	C0193	g.12025delC, c.589delC, r.589delc, p.Ser197fsX45	12025	12025	deletion	0
+CD40L	C0044	g.12059C>A, c.679C>A, p.A208D	12059	12059	point	0
+CD40L	C0239	g.12090C>A, c.654C>A, r.654c>a, p.Cys218X	12090	12090	point	0
+CD40L	C0052	g.12106G>T, c.726G>T, p.H224Y	12106	12106	point	0
+CD40L	C0108	g.12143C>A, c.763C>A, p.S236X	12143	12143	point	0
+CD40L	C0235	g.12197C>T, c.761C>T, r.761c>u, p.Thr254Met	12197	12197	point	0
+CD40L	C0236	g.12197C>T, c.761C>T, r.761c>u, p.Thr254Met	12197	12197	point	0
+CD40L	C0237	g.12197C>T, c.761C>T, r.761c>u, p.Thr254Met	12197	12197	point	0
+CD40L	C0115	g.IVS1+1G>T, c.156+1G>T, r.156+1g>u,	1212	1212	point	0
+CD40L	C0116	g.IVS1+1G>T, c.156+1G>T, r.156+1g>u,	1212	1212	point	0
+CD40L	C0117	g.IVS1+1G>T, c.156+1G>T, r.156+1g>u,	1212	1212	point	0
+CD40L	C0158	g.IVS1+1G>A, c.156+1G>A, r.156+1g>a,	1212	1212	point	0
+CD40L	C0159	g.IVS1+1G>T, c.156+1G>T, r.156+1g>u,	1212	1212	point	0
+CD40L	C0160	g.IVS1+1G>T, c.156+1G>T, r.156+1g>u,	1212	1212	point	0
+CD40L	C0194	g.IVS1-5AATAGATAG>, c.157-5AATAGATAG>, r.157-5aauagauag>,	3068	3076	deletion	0
+CD40L	C0195	g.IVS1-4ATAGATAG>, c.157-4ATAGATAG>, r.157-4auagauag>,	3069	3076	deletion	0
+CD40L	C0247	g.1213T>C, c.156+2T>C, r.156+2u>c	1213	1213	point	0
+CD40L	C0035	g.IVS2+1G>T	3205	3205	point	0
+CD40L	C0134	g.IVS2+1G>A	3205	3205	point	0
+CD40L	C0135	g.IVS2+1G>A	3205	3205	point	0
+CD40L	C0136	g.IVS2+2T>A	3206	3206	point	0
+CD40L	C0012	g.IVS3+4G>C	7241	7241	point	0
+CD40L	C0021	g.IVS3+5G>T	7242	7242	point	0
+CD40L	C0022	g.IVS3+5G>T	7242	7242	point	0
+CD40L	C0023	g.IVS3+5G>T	7242	7242	point	0
+CD40L	C0068	g.IVS3+2T>C	7239	7239	point	0
+CD40L	C0129	g.IVS3+2T>C	7239	7239	point	0
+CD40L	C0130	g.IVS3+5G>A	7242	7242	point	0
+CD40L	C0141	g.IVS3-1G>A, c.347-1G>A, r.347-1g>a,	9162	9162	point	0
+CD40L	C0144	g.IVS3+1G>T, c.346+1G>T, r.346+1g>u,	7238	7238	point	0
+CD40L	C0163	g.IVS3+1G>A, c.346+1G>A, r.346+1g>a,	7238	7238	point	0
+CD40L	C0164	g.IVS3+1G>A, c.346+1G>A, r.346+1g>a,	7238	7238	point	0
+CD40L	C0165	g.IVS3+1G>A, c.346+1G>A, r.346+1g>a,	7238	7238	point	0
+CD40L	C0167	g.IVS3-1G>A, c.347-1G>A, r.347-1g>a,	9162	9162	point	0
+CD40L	C0168	g.IVS3-1G>A, c.347-1G>A, r.347-1g>a,	9162	9162	point	0
+CD40L	C0166	g.IVS3+1G>, c.346+1G>, r.346+1g>,	7238	7238	point	0
+CD40L	C0169	g.IVS3-1G>C, c.347-1G>C, r.347-1g>c,	9162	9162	point	0
+CD40L	C0199	g.IVS3-915A>T, c.347-915A>T, r.347-915a>u,	8248	8248	point	0
+CD40L	C0205	g.IVS3+2T>C, c.346+2T>C, r.346+2u>c,	7239	7239	point	0
+CD40L	C0222	g.IVS3+1G>T, c.346+1G>T, r.346+1g>u	7238	7238	point	0
+CD40L	C0049	g.IVS4+3A>T	9228	9228	point	0
+CD40L	C0123	g.IVS4-1G>	11845	11845	deletion	0
+CD40L	C0124	g.IVS4+1G>C	9226	9226	point	0
+CD40L	C0125	g.IVS4+1G>C	9226	9226	point	0
+CD40L	C0126	g.IVS4+1G>C	9226	9226	point	0
+CD40L	C0127	g.IVS4+1G>C	9226	9226	point	0
+CD40L	C0128	g.IVS4+1G>C	9226	9226	point	0
+CD40L	C0171	g.IVS4+1G>C, c.409+1G>C, r.409+1g>c,	9226	9226	point	0
+CD40L	C0172	g.IVS4+2T>C, c.409+2T>C, r.409+2u>c,	9227	9227	point	0
+CD40L	C0207	g.IVS4+1G>A, c.409+1G>A, r.409+1g>a,	9226	9226	point	0
+CD40	T0004	Allele 1 and 2: g.IVS3-2A>T, c.A>T, r.a>u,	58333	58333	point	1
+CD40	T0004	Allele 1 and 2: g.IVS3-2A>T, c.A>T, r.a>u,	58333	58333	point	2
+CFH	H0024	Allele 1: g.51431_51434delAGAA, c.155_158delAGAA,; p.28fsX32	51431	51434	deletion	1
+CFH	H0042	Allele 1: g.51581A>G, c.232A>G, r.232a>g, p.Arg78Gly	51581	51581	point	1
+CFH	H0034	Allele 1: g.54439_54463delTTAATTACCGTGAATGTGACACAGA,; c.371_395delTTAATTACCGTGAATGTGACACAGA,; r.371_395deluuaauuaccgugaaugugacacaga, p.Ile124fsX13	54439	54463	deletion	1
+CFH	H0028	Allele 1 and 2: g.54448G>T, c.380G>T, r.380g>u, p.Arg127Leu	54448	54448	point	1
+CFH	H0028	Allele 1 and 2: g.54448G>T, c.380G>T, r.380g>u, p.Arg127Leu	54448	54448	point	2
+CFH	H0029	Allele 1 and 2: g.54448G>T, c.380G>T, r.380g>u, p.Arg127Leu	54448	54448	point	1
+CFH	H0029	Allele 1 and 2: g.54448G>T, c.380G>T, r.380g>u, p.Arg127Leu	54448	54448	point	2
+CFH	H0004	Allele 1 and 2: g.56043G>T, c.638G>T, p.E189X	56043	56043	point	1
+CFH	H0004	Allele 1 and 2: g.56043G>T, c.638G>T, p.E189X	56043	56043	point	2
+CFH	H0005	Allele 1 and 2: g.56043G>T, c.638G>T, p.E189X	56043	56043	point	1
+CFH	H0005	Allele 1 and 2: g.56043G>T, c.638G>T, p.E189X	56043	56043	point	2
+CFH	H0006	Allele 1 and 2: g.56043G>T, c.638G>T, p.E189X	56043	56043	point	1
+CFH	H0006	Allele 1 and 2: g.56043G>T, c.638G>T, p.E189X	56043	56043	point	2
+CFH	H0030	Allele 1 and 2: g.68624T>A, c.1291T>A, r.1291u>a,; p.Cys431Ser	68624	68624	point	1
+CFH	H0030	Allele 1 and 2: g.68624T>A, c.1291T>A, r.1291u>a,; p.Cys431Ser	68624	68624	point	2
+CFH	H0011	Allele 1: g.92248delA, c.1493delA, p.474fsX479	92248	92248	deletion	1
+CFH	H0012	Allele 1: g.92248delA, c.1493delA, p.474fsX479	92248	92248	deletion	1
+CFH	H0001	Allele 1: g.94109T>C, c.1679T>C, p.C536R; Allele 2: g.119142G>A, c.2949G>A, p.C959Y	94109	94109	point	1
+CFH	H0001	Allele 1: g.94109T>C, c.1679T>C, p.C536R; Allele 2: g.119142G>A, c.2949G>A, p.C959Y	119142	119142	point	2
+CFH	H0055	Allele 1: g.104916T>G, c.1890T>G, r.1890u>g,; p.Cys630Trp	104916	104916	point	1
+CFH	H0031	Allele 1 and 2: g.105044G>C, c.2018G>C, r.2018g>c,; p.Cys673Ser	105044	105044	point	1
+CFH	H0031	Allele 1 and 2: g.105044G>C, c.2018G>C, r.2018g>c,; p.Cys673Ser	105044	105044	point	2
+CFH	H0037	Allele 1: g.105044G>A, c.2018G>A, r.2018g>a,; p.Cys673Tyr	105044	105044	point	1
+CFH	H0056	Allele 1: g.105275C>G, c.2141C>G, r.2141c>g,; p.Ser714X	105275	105275	point	1
+CFH	H0033	Allele 1: g.106839_106840insA, c.2300_2301insA,; r.2300_2301insa, p.Asn767fsX8	106840	106840	insertion	1
+CFH	H0057	Allele 1: g.115388G>A, c.2548G>A, r.2548g>a,; p.Glu850Lys	115388	115388	point	1
+CFH	H0036	Allele 1: g.115986A>G, c.2678A>G, r.2678a>g,; p.His893Arg	115986	115986	point	1
+CFH	H0040	Allele 1: g.115986A>G, c.2678A>G, r.2678a>g,; p.His893Arg	115986	115986	point	1
+CFH	H0026	Allele 1 and 2: g.116005T>A, c.2697T>A, r.2697u>a,; p.Tyr899X	116005	116005	point	1
+CFH	H0026	Allele 1 and 2: g.116005T>A, c.2697T>A, r.2697u>a,; p.Tyr899X	116005	116005	point	2
+CFH	H0027	Allele 1 and 2: g.116005T>A, c.2697T>A, r.2697u>a,; p.Tyr899X	116005	116005	point	1
+CFH	H0027	Allele 1 and 2: g.116005T>A, c.2697T>A, r.2697u>a,; p.Tyr899X	116005	116005	point	2
+CFH	H0054	Allele 1 and 2: g.116005T>A, c.2697T>A, r.2697u>a,; p.Tyr899X	116005	116005	point	1
+CFH	H0054	Allele 1 and 2: g.116005T>A, c.2697T>A, r.2697u>a,; p.Tyr899X	116005	116005	point	2
+CFH	H0035	Allele 1: g.116051T>A, c.2743T>A, r.2743u>a,; p.Cys915Ser	116051	116051	point	1
+CFH	H0032	Allele 1: g.116081C>T, c.2773C>T, r.2773c>u,; p.Gln925X	116081	116081	point	1
+CFH	H0043	Allele 1: g.119116G>T, c.2850G>T, r.2850g>u,; p.Gln950His	119116	119116	point	1
+CFH	H0044	Allele 1: g.119117T>C, c.2851T>C, r.2851u>c,; p.Tyr951His	119117	119117	point	1
+CFH	H0009	Allele 1: g.119133C>T, c.2940C>T, p.T956M	119133	119133	point	1
+CFH	H0058	Allele 1: g.119200G>T, c.2934G>T, r.2934g>u,; p.Trp978Cys	119200	119200	point	1
+CFH	H0069	Allele 1: g.120410A>T, c.3062A>T, r.3062a>u, p.Tyr1021Phe; Allele 2: g.125675C>T, c.3628C>T, r.3628c>u, p.Arg1210Cys	120410	120410	point	1
+CFH	H0069	Allele 1: g.120410A>T, c.3062A>T, r.3062a>u, p.Tyr1021Phe; Allele 2: g.125675C>T, c.3628C>T, r.3628c>u, p.Arg1210Cys	125675	125675	point	2
+CFH	H0059	Allele 1: g.120475T>C, c.3127T>C, r.3127u>c,; p.Cys1043Arg	120475	120475	point	1
+CFH	H0016	Allele 1: g.121974C>G, c.3299C>G, p.Q1076E; Allele 2: g.124422delA, c.3559delA, p.1162fsX1168	121974	121974	point	1
+CFH	H0016	Allele 1: g.121974C>G, c.3299C>G, p.Q1076E; Allele 2: g.124422delA, c.3559delA, p.1162fsX1168	124422	124422	deletion	2
+CFH	H0060	Allele 1: g.121974C>G, c.3226C>G, r.3226c>g,; p.Gln1076Glu	121974	121974	point	1
+CFH	H0017	Allele 1: g.124292A>G, c.3429A>G, p.D1119G	124292	124292	point	1
+CFH	H0061	Allele 1: g.124337T>G, c.3401T>G, r.3401u>g,; p.Val1134Gly	124337	124337	point	1
+CFH	H0062	Allele 1: g.124360T>G, c.3424T>G, r.3424u>g,; p.Tyr1142Asp	124360	124360	point	1
+CFH	H0063	Allele 1: g.124405T>C, c.3469T>C, r.3469u>c,; p.Trp1157Arg	124405	124405	point	1
+CFH	H0045	Allele 1: g.124425C>G, c.3489C>G, r.3489c>g,; p.Cys1163Trp	124425	124425	point	1
+CFH	H0025	Allele 1: g.125561G>T, c.3587G>T, p.E1172X	125561	125561	point	1
+CFH	H0046	Allele 1: g.125561G>T, c.3514G>T, r.3514g>u,; p.Glu1172X	125561	125561	point	1
+CFH	H0047	Allele 1: g.125561G>T, c.3514G>T, r.3514g>u,; p.Glu1172X	125561	125561	point	1
+CFH	H0007	Allele 1: g.125595G>T, c.3621G>T, p.W1183L	125595	125595	point	1
+CFH	H0039	Allele 1: g.125595G>T, c.3548G>T, r.3548g>u,; p.Trp1183Leu	125595	125595	point	1
+CFH	H0041	Allele 1: g.125594T>A, c.3547T>A, r.3547u>a,; p.Trp1183Arg	125594	125594	point	1
+CFH	H0019	Allele 1: g.125598C>G, c.3624C>G, p.T1184R	125598	125598	point	1
+CFH	H0070	Allele 1: g.125612C>T, c.3565C>T, r.3565c>u,; p.Leu1189Phe	125612	125612	point	1
+CFH	H0008	Allele 1: g.125613T>G, c.3639T>G, p.L1189R	125613	125613	point	1
+CFH	H0002	Allele 1 and 2: g.125619C>T, c.3645C>T, p.S1191L	125619	125619	point	1
+CFH	H0002	Allele 1 and 2: g.125619C>T, c.3645C>T, p.S1191L	125619	125619	point	2
+CFH	H0003	Allele 1 and 2: g.125619C>T, c.3645C>T, p.S1191L	125619	125619	point	1
+CFH	H0003	Allele 1 and 2: g.125619C>T, c.3645C>T, p.S1191L	125619	125619	point	2
+CFH	H0071	Allele 1: g.125619C>G, c.3572C>G, r.3572c>g,; p.Ser1191Trp	125619	125619	point	1
+CFH	H0048	Allele 1: g.125628G>A, c.3581G>A, r.3581g>a,; p.Gly1194Asp	125628	125628	point	1
+CFH	H0049	Allele 1: g.125628G>A, c.3581G>A, r.3581g>a,; p.Gly1194Asp	125628	125628	point	1
+CFH	H0050	Allele 1: g.125637T>C, c.3590T>C, r.3590u>c,; p.Val1197Ala	125637	125637	point	1
+CFH	H0051	Allele 1: g.125637T>C, c.3590T>C, r.3590u>c,; p.Val1197Ala	125637	125637	point	1
+CFH	H0052	Allele 1: g.125640A>C, c.3593A>C, r.3593a>c,; p.Glu1198Ala	125640	125640	point	1
+CFH	H0038	Allele 1: g.125643T>C, c.3596T>C, r.3596u>c,; p.Phe1199Ser	125643	125643	point	1
+CFH	H0013	Allele 1: g.125675C>T, c.3701C>T, p.R1210C	125675	125675	point	1
+CFH	H0014	Allele 1: g.125675C>T, c.3701C>T, p.R1210C	125675	125675	point	1
+CFH	H0015	Allele 1: g.125675C>T, c.3701C>T, p.R1210C	125675	125675	point	1
+CFH	H0053	Allele 1: g.125675C>T, c.3628C>T, r.3628c>u,; p.Arg1210Cys	125675	125675	point	1
+CFH	H0065	Allele 1: g.125675C>T, c.3628C>T, r.3628c>u,; p.Arg1210Cys	125675	125675	point	1
+CFH	H0018	Allele 1: g.125690C>G, c.3716C>G, p.R1215G	125690	125690	point	1
+CFH	H0020	Allele 1: g.125690C>G, c.3716C>G, p.R1215G	125690	125690	point	1
+CFH	H0021	Allele 1: g.125690C>G, c.3716C>G, p.R1215G	125690	125690	point	1
+CFH	H0022	Allele 1: g.125690C>G, c.3716C>G, p.R1215G	125690	125690	point	1
+CFH	H0023	Allele 1: g.125690C>G, c.3716C>G, p.R1215G	125690	125690	point	1
+CFH	H0010	Allele 1: g.125691G>A, c.3717G>A, p.R1215Q	125691	125691	point	1
+CFH	H0066	Allele 1: g.125693_125695delACA, c.3646_3648delACA,; r.3646_3648delaca, p.Thr1216del	125693	125695	deletion	1
+CFH	H0067	Allele 1: g.125723C>T, c.3676C>T, r.3676c>u,; p.Pro1226Ser	125723	125723	point	1
+CFH	H0068	Allele 1: g.125742_125745delAGAA, c.3695_3698delAGAA,; r.3695_3698delagaa, p.1232fsX37	125742	125745	deletion	1
+CFH	H0064	Allele 1: g.IVS21+1G>A, c.3566+1G>A, r.3566+1g>a,	124430	124430	point	1
+CYBA	H0018	Allele 1 and 2: g.5268C>T, c.268C>T, r.268c>u, p.Arg90Trp	5268	5268	point	1
+CYBA	H0018	Allele 1 and 2: g.5268C>T, c.268C>T, r.268c>u, p.Arg90Trp	5268	5268	point	2
+CYBB	A1415	g.16991_16992ins, c.591_592ins41, r.591_592ins41,; p.Arg198fsX30	16992	16992	insertion	0
+CYBB	A0089	g.946A>C, c.A>C, r.a>c	946	946	point	0
+CYBB	A0090	g.946A>C, c.A>C, r.a>c	946	946	point	0
+CYBB	A0166	g.948T>C, c.T>C, r.u>c	948	948	point	0
+CYBB	A0472	g.950C>T, c.C>T, r.c>u	950	950	point	0
+CYBB	A0546	g.951C>T, c.C>T, r.c>u	951	951	point	0
+CYBB	A0547	g.951C>T, c.C>T, r.c>u	951	951	point	0
+CYBB	A0646	g.951C>T, c.C>T, r.c>u	951	951	point	0
+CYBB	A0548	g.950C>T, c.C>T, r.c>u	950	950	point	0
+CYBB	A0549	g.950C>T, c.C>T, r.c>u	950	950	point	0
+CYBB	A0550	g.948T>C, c.T>C, r.u>c	948	948	point	0
+CYBB	A0551	g.948T>C, c.T>C, r.u>c	948	948	point	0
+CYBB	A0552	g.948T>C, c.T>C, r.u>c	948	948	point	0
+CYBB	A0649	g.948dupT, c._insT, r._insu	950	950	insertion	0
+CYBB	A0650	g.948dupT, c._insT, r._insu	950	950	insertion	0
+CYBB	A0651	g.951C>T, c.C>T, r.c>u	951	951	point	0
+CYBB	A0652	g.951C>T, c.C>T, r.c>u	951	951	point	0
+CYBB	A0572	g.30627_30637delAAGTAAGGAGT	30627	30637	deletion;	0
+ELA2	E0109	g.1287A>G, c.1A>G, r.1a>g, p.Met1Val	1287	1287	point	0
+ELA2	E0110	g.1843C>T, c.125C>T, r.125c>u, p.Pro42Leu	1843	1843	point	0
+ELA2	E0111	g.1847C>A, c.129C>A, r.129c>a, p.Phe43Leu	1847	1847	point	0
+ELA2	E0112	g.1855C>T, c.137C>T, r.137c>u, p.Ser46Phe	1855	1855	point	0
+ELA2	E0113	g.1858T>C, c.140T>C, r.140u>c, p.Leu47Pro	1858	1858	point	0
+ELA2	E0114	g.1876A>T, c.158A>T, r.158a>u, p.His53Leu	1876	1876	point	0
+ELA2	E0095	g.1882G>A, c.164G>A, r.164g>a, p.Cys55Tyr	1882	1882	point	0
+ELA2	E0071	g.1887G>A, c.169G>A, r.169g>a, p.Ala57Thr	1887	1887	point	0
+ELA2	E0136	g.1887G>A, c.169G>A, r.169g>a, p.Ala57Thr	1887	1887	point	0
+ELA2	E0072	g.1897T>C, c.179T>C, r.179u>c, p.Ile60Thr	1897	1897	point	0
+ELA2	E0001	g.1900C>T, c.182C>T, r.182c>u, p.Ala61Val	1900	1900	point	0
+ELA2	E0002	g.1900C>T, c.182C>T, r.182c>u, p.Ala61Val	1900	1900	point	0
+ELA2	E0003	g.1900C>T, c.182C>T, r.182c>u, p.Ala61Val	1900	1900	point	0
+ELA2	E0004	g.1900C>T, c.182C>T, r.182c>u, p.Ala61Val	1900	1900	point	0
+ELA2	E0005	g.1900C>T, c.182C>T, r.182c>u, p.Ala61Val	1900	1900	point	0
+ELA2	E0006	g.1900C>T, c.182C>T, r.182c>u, p.Ala61Val	1900	1900	point	0
+ELA2	E0007	g.1900C>T, c.182C>T, r.182c>u, p.Ala61Val	1900	1900	point	0
+ELA2	E0008	g.1900C>T, c.182C>T, r.182c>u, p.Ala61Val	1900	1900	point	0
+ELA2	E0009	g.1900C>T, c.182C>T, r.182c>u, p.Ala61Val	1900	1900	point	0
+ELA2	E0106	g.1900C>T, c.182C>T, r.182c>u, p.Ala61Val	1900	1900	point	0
+ELA2	E0103	g.1929T>C, c.211T>C, r.211u>c, p.Cys71Arg	1929	1929	point	0
+ELA2	E0073	g.1929T>A, c.211T>A, r.211u>a, p.Cys71Ser	1929	1929	point	0
+ELA2	E0115	g.2190G>C, c.242G>C, r.242g>c, p.Arg81Pro	2190	2190	point	0
+ELA2	E0116	g.2192G>A, c.244G>A, r.244g>a, p.Val82Met	2192	2192	point	0
+ELA2	E0117	g.2199T>C, c.251T>C, r.251u>c, p.Leu84Pro	2199	2199	point	0
+ELA2	E0096	g.2202G>A, c.254G>A, r.254g>a, p.Gly85Glu	2202	2202	point	0
+ELA2	E0074	g.2249G>A, c.301G>A, r.301g>a, p.Val101Met	2249	2249	point	0
+ELA2	E0075	g.2249G>A, c.301G>A, r.301g>a, p.Val101Met	2249	2249	point	0
+ELA2	E0118	g.2310T>C, c.362T>C, r.362u>c, p.Leu121Pro	2310	2310	point	0
+ELA2	E0076	g.4495C>T, c.377C>T, r.377c>u, p.Ser126Leu	4495	4495	point	0
+ELA2	E0098	g.4495C>T, c.377C>T, r.377c>u, p.Ser126Leu	4495	4495	point	0
+ELA2	E0099	g.4495C>T, c.377C>T, r.377c>u, p.Ser126Leu	4495	4495	point	0
+ELA2	E0107	g.4495C>T, c.377C>T, r.377c>u, p.Ser126Leu	4495	4495	point	0
+ELA2	E0119	g.4495C>T, c.377C>T, r.377c>u, p.Ser126Leu	4495	4495	point	0
+ELA2	E0137	g.4495C>T, c.377C>T, r.377c>u, p.Ser126Leu	4495	4495	point	0
+ELA2	E0138	g.4495C>T, c.377C>T, r.377c>u, p.Ser126Leu	4495	4495	point	0
+ELA2	E0139	g.4495C>T, c.377C>T, r.377c>u, p.Ser126Leu	4495	4495	point	0
+ELA2	E0140	g.4495C>T, c.377C>T, r.377c>u, p.Ser126Leu	4495	4495	point	0
+ELA2	E0141	g.4495C>T, c.377C>T, r.377c>u, p.Ser126Leu	4495	4495	point	0
+ELA2	E0120	g.4497G>C, c.379G>C, r.379g>c, p.Ala127Pro	4497	4497	point	0
+ELA2	E0077	g.4534C>T, c.416C>T, r.416c>u, p.Pro139Leu	4534	4534	point	0
+ELA2	E0078	g.4534C>T, c.416C>T, r.416c>u, p.Pro139Leu	4534	4534	point	0
+ELA2	E0079	g.4534C>T, c.416C>T, r.416c>u, p.Pro139Leu	4534	4534	point	0
+ELA2	E0080	g.4534C>T, c.416C>T, r.416c>u, p.Pro139Leu	4534	4534	point	0
+ELA2	E0093	g.4534C>T, c.416C>T, r.416c>u, p.Pro139Leu	4534	4534	point	0
+ELA2	E0121	g.4534C>T, c.416C>T, r.416c>u, p.Pro139Leu	4534	4534	point	0
+ELA2	E0132	g.4534C>T, c.416C>T, r.416c>u, p.Pro139Leu	4534	4534	point	0
+ELA2	E0100	g.4569T>A, c.451T>A, r.451u>a, p.Cys151Ser	4569	4569	point	0
+ELA2	E0104	g.4570G>A, c.452G>A, r.452g>a, p.Cys151Tyr	4570	4570	point	0
+ELA2	E0105	g.4570G>A, c.452G>A, r.452g>a, p.Cys151Tyr	4570	4570	point	0
+ELA2	E0122	g.4573T>C, c.455T>C, r.455u>c, p.Leu152Pro	4573	4573	point	0
+ELA2	E0081	g.4638_4661delGTGACGGTGGTGACGTCCCTCTGC,; c.520_543delGTGACGGTGGTGACGTCCCTCTGC,; r.520_543delgugacgguggugacgucccucugc, p.Val174_Arg182del	4638	4661	deletion	0
+ELA2	E0101	g.4898C>G, c.614C>G, r.614c>g, p.Pro205Arg	4898	4898	point	0
+ELA2	E0010	g.4902G>T, c.618G>T, r.618g>u, p.Leu206Phe	4902	4902	point	0
+ELA2	E0011	g.4902G>T, c.618G>T, r.618g>u, p.Leu206Phe	4902	4902	point	0
+ELA2	E0012	g.4902G>T, c.618G>T, r.618g>u, p.Leu206Phe	4902	4902	point	0
+ELA2	E0013	g.4902G>T, c.618G>T, r.618g>u, p.Leu206Phe	4902	4902	point	0
+ELA2	E0014	g.4902G>T, c.618G>T, r.618g>u, p.Leu206Phe	4902	4902	point	0
+ELA2	E0015	g.4902G>T, c.618G>T, r.618g>u, p.Leu206Phe	4902	4902	point	0
+ELA2	E0016	g.4902G>T, c.618G>T, r.618g>u, p.Leu206Phe	4902	4902	point	0
+ELA2	E0017	g.4902G>T, c.618G>T, r.618g>u, p.Leu206Phe	4902	4902	point	0
+ELA2	E0018	g.4902G>T, c.618G>T, r.618g>u, p.Leu206Phe	4902	4902	point	0
+ELA2	E0019	g.4902G>T, c.618G>T, r.618g>u, p.Leu206Phe	4902	4902	point	0
+ELA2	E0082	g.4913G>T, c.629G>T, r.629g>u, p.Gly210Val	4913	4913	point	0
+ELA2	E0083	g.4924G>A, c.640G>A, r.640g>a, p.Gly214Arg	4924	4924	point	0
+ELA2	E0125	g.4924G>A, c.640G>A, r.640g>a, p.Gly214Arg	4924	4924	point	0
+ELA2	E0134	g.4924G>A, c.640G>A, r.640g>a, p.Gly214Arg	4924	4924	point	0
+ELA2	E0126	g.4939G>A, c.655G>A, r.655g>a, p.Val219Ile	4939	4939	point	0
+ELA2	E0020	g.4943G>A, c.659G>A, r.659g>a, p.Arg220Gln	4943	4943	point	0
+ELA2	E0021	g.4943G>A, c.659G>A, r.659g>a, p.Arg220Gln	4943	4943	point	0
+ELA2	E0022	g.4943G>A, c.659G>A, r.659g>a, p.Arg220Gln	4943	4943	point	0
+ELA2	E0023	g.4943G>A, c.659G>A, r.659g>a, p.Arg220Gln	4943	4943	point	0
+ELA2	E0024	g.4943G>A, c.659G>A, r.659g>a, p.Arg220Gln	4943	4943	point	0
+ELA2	E0025	g.4943G>A, c.659G>A, r.659g>a, p.Arg220Gln	4943	4943	point	0
+ELA2	E0026	g.4943G>A, c.659G>A, r.659g>a, p.Arg220Gln	4943	4943	point	0
+ELA2	E0027	g.4943G>A, c.659G>A, r.659g>a, p.Arg220Gln	4943	4943	point	0
+ELA2	E0028	g.4943G>A, c.659G>A, r.659g>a, p.Arg220Gln	4943	4943	point	0
+ELA2	E0029	g.4943G>A, c.659G>A, r.659g>a, p.Arg220Gln	4943	4943	point	0
+ELA2	E0030	g.4943G>A, c.659G>A, r.659g>a, p.Arg220Gln	4943	4943	point	0
+ELA2	E0031	g.4943G>A, c.659G>A, r.659g>a, p.Arg220Gln	4943	4943	point	0
+ELA2	E0032	g.4943G>A, c.659G>A, r.659g>a, p.Arg220Gln	4943	4943	point	0
+ELA2	E0033	g.4943G>A, c.659G>A, r.659g>a, p.Arg220Gln	4943	4943	point	0
+ELA2	E0034	g.4943G>A, c.659G>A, r.659g>a, p.Arg220Gln	4943	4943	point	0
+ELA2	E0035	g.4943G>A, c.659G>A, r.659g>a, p.Arg220Gln	4943	4943	point	0
+ELA2	E0036	g.4943G>A, c.659G>A, r.659g>a, p.Arg220Gln	4943	4943	point	0
+ELA2	E0037	g.4943G>A, c.659G>A, r.659g>a, p.Arg220Gln	4943	4943	point	0
+ELA2	E0038	g.4943G>A, c.659G>A, r.659g>a, p.Arg220Gln	4943	4943	point	0
+ELA2	E0039	g.4943G>A, c.659G>A, r.659g>a, p.Arg220Gln	4943	4943	point	0
+ELA2	E0040	g.4943G>A, c.659G>A, r.659g>a, p.Arg220Gln	4943	4943	point	0
+ELA2	E0130	g.4943G>A, c.659G>A, r.659g>a, p.Arg220Gln	4943	4943	point	0
+ELA2	E0084	g.4945G>T, c.661G>T, r.661g>u, p.Gly221X	4945	4945	point	0
+ELA2	E0127	g.4953C>A, c.669C>A, r.669c>a, p.Cys223X	4953	4953	point	0
+ELA2	E0133	g.4953C>A, c.669C>A, r.669c>a, p.Cys223X	4953	4953	point	0
+ELA2	E0085	g.4958C>A, c.674C>A, r.674c>a, p.Ser225X	4958	4958	point	0
+ELA2	E0086	g.4968C>A, c.684C>A, r.684c>a, p.Tyr228X	4968	4968	point	0
+ELA2	E0128	g.4972delG, c.688delG, r.688delg, p.Asp230fsX10	4972	4972	deletion	0
+ELA2	E0135	g.4981G>C, c.697G>C, r.697g>c, p.Ala233Pro	4981	4981	point	0
+ELA2	E0102	g.5054C>T, c.770C>T, r.770c>u, p.Pro257Leu	5054	5054	point	0
+ELA2	E0129	g.5069C>T, c.785C>T, r.785c>u, p.Pro262Leu	5069	5069	point	0
+ELA2	E0108	g.c.r.	1246	1246	point	0
+ELA2	E0142	g.c.r.	1063	1063	point	0
+ELA2	E0143	g.c.r.	1063	1063	point	0
+ELA2	E0144	g.c.r.	1063	1063	point	0
+ELA2	E0088	g.IVS3-8C>A, c.367-8C>A, r.367-8c>a,	4477	4477	point	0
+ELA2	E0097	g.IVS3-8C>A, c.367-8C>A, r.367-8c>a,	4477	4477	point	0
+ELA2	E0041	g.IVS4+1G>A, c.597+1G>A, r.597+1g>a,	4716	4716	point	0
+ELA2	E0042	g.IVS4+1G>A, c.597+1G>A, r.597+1g>a,	4716	4716	point	0
+ELA2	E0043	g.IVS4+1G>A, c.597+1G>A, r.597+1g>a,	4716	4716	point	0
+ELA2	E0044	g.IVS4+1G>A, c.597+1G>A, r.597+1g>a,	4716	4716	point	0
+ELA2	E0045	g.IVS4+1G>A, c.597+1G>A, r.597+1g>a,	4716	4716	point	0
+ELA2	E0046	g.IVS4+1G>A, c.597+1G>A, r.597+1g>a,	4716	4716	point	0
+ELA2	E0047	g.IVS4+1G>A, c.597+1G>A, r.597+1g>a,	4716	4716	point	0
+ELA2	E0048	g.IVS4+3A>T, c.597+3A>T, r.597+3a>u,	4718	4718	point	0
+ELA2	E0049	g.IVS4+3A>T, c.597+3A>T, r.597+3a>u,	4718	4718	point	0
+ELA2	E0050	g.IVS4+3A>T, c.597+3A>T, r.597+3a>u,	4718	4718	point	0
+ELA2	E0051	g.IVS4+3A>T, c.597+3A>T, r.597+3a>u,	4718	4718	point	0
+ELA2	E0052	g.IVS4+5G>A, c.597+5G>A, r.597+5g>a,	4720	4720	point	0
+ELA2	E0053	g.IVS4+5G>A, c.597+5G>A, r.597+5g>a,	4720	4720	point	0
+ELA2	E0054	g.IVS4+5G>A, c.597+5G>A, r.597+5g>a,	4720	4720	point	0
+ELA2	E0055	g.IVS4+5G>A, c.597+5G>A, r.597+5g>a,	4720	4720	point	0
+ELA2	E0056	g.IVS4+5G>A, c.597+5G>A, r.597+5g>a,	4720	4720	point	0
+ELA2	E0057	g.IVS4+5G>A, c.597+5G>A, r.597+5g>a,	4720	4720	point	0
+ELA2	E0058	g.IVS4+5G>A, c.597+5G>A, r.597+5g>a,	4720	4720	point	0
+ELA2	E0059	g.IVS4+5G>A, c.597+5G>A, r.597+5g>a,	4720	4720	point	0
+ELA2	E0060	g.IVS4+5G>A, c.597+5G>A, r.597+5g>a,	4720	4720	point	0
+ELA2	E0061	g.IVS4+5G>A, c.597+5G>A, r.597+5g>a,	4720	4720	point	0
+ELA2	E0062	g.IVS4+5G>A, c.597+5G>A, r.597+5g>a,	4720	4720	point	0
+ELA2	E0063	g.IVS4+5G>A, c.597+5G>A, r.597+5g>a,	4720	4720	point	0
+ELA2	E0064	g.IVS4+5G>A, c.597+5G>A, r.597+5g>a,	4720	4720	point	0
+ELA2	E0065	g.IVS4+5G>A, c.597+5G>A, r.597+5g>a,	4720	4720	point	0
+ELA2	E0066	g.IVS4+5G>A, c.597+5G>A, r.597+5g>a,	4720	4720	point	0
+ELA2	E0067	g.IVS4+5G>A, c.597+5G>A, r.597+5g>a,	4720	4720	point	0
+ELA2	E0068	g.4676C>A, c.558C>A, r.558c>a, p.Val186Val	4676	4676	point	0
+ELA2	E0069	g.4676C>A, c.558C>A, r.558c>a, p.Val186Val	4676	4676	point	0
+ELA2	E0070	g.4676C>A, c.558C>A, r.558c>a, p.Val186Val	4676	4676	point	0
+ELA2	E0087	g.IVS4+1G>A, c.597+1G>A, r.597+1g>a,	4716	4716	point	0
+ELA2	E0089	g.IVS4+1G>A, c.597+1G>A, r.597+1g>a,	4716	4716	point	0
+ELA2	E0090	g.IVS4+5G>A, c.597+5G>A, r.597+5g>a,	4720	4720	point	0
+ELA2	E0091	g.IVS4+1G>A, c.597+1G>A, r.597+1g>a,	4716	4716	point	0
+ELA2	E0092	g.IVS4+1G>A, c.597+1G>A, r.597+1g>a,	4716	4716	point	0
+ELA2	E0094	g.IVS4+1G>A, c.597+1G>A, r.597+1g>a,	4716	4716	point	0
+ELA2	E0123	g.IVS4+1G>A, c.597+1G>A, r.597+1g>a,	4716	4716	point	0
+ELA2	E0124	g.IVS4+5G>A, c.597+5G>A, r.597+5g>a,	4720	4720	point	0
+ELA2	E0131	g.IVS4+1G>A, c.597+1G>A, r.597+1g>a,	4716	4716	point	0
+FERMT3	F0025	Allele 1 and 2: g.4876A>C, c.A>C, r.a>c	4876	4876	point	1
+FERMT3	F0025	Allele 1 and 2: g.4876A>C, c.A>C, r.a>c	4876	4876	point	2
+FOXP3	F0013	g., c., r., p.Phe373Ala	81684	81685	complex	0
+FOXP3	F0039	g.[76526C>T/80177T>C], c.[543C>T/970T>C],; r.[543c>u/970u>c], p.[Ser181Ser/Phe324Leu]	76526	76526	point	0
+FOXP3	F0039	g.[76526C>T/80177T>C], c.[543C>T/970T>C],; r.[543c>u/970u>c], p.[Ser181Ser/Phe324Leu]	80177	80177	point	0
+FOXP3	F0021	g.c.r.	6247	6247	deletion	0
+FOXP3	F0022	g.c.r.	6247	6247	deletion	0
+ICOS	I0010	Allele 1 and 2: g.172403delT, c.285delT, r.285delu,; p.Leu96fsX26	172403	172403	deletion	1
+ICOS	I0010	Allele 1 and 2: g.172403delT, c.285delT, r.285delu,; p.Leu96fsX26	172403	172403	deletion	2
+ICOS	I0011	Allele 1 and 2: g.172403delT, c.285delT, r.285delu,; p.Leu96fsX26	172403	172403	deletion	1
+ICOS	I0011	Allele 1 and 2: g.172403delT, c.285delT, r.285delu,; p.Leu96fsX26	172403	172403	deletion	2
+ICOS	I0001	Allele 1 and 2: g.171583..173397del	171583	173397	deletion	1
+ICOS	I0001	Allele 1 and 2: g.171583..173397del	171583	173397	deletion	2
+ICOS	I0002	Allele 1 and 2: g.171583..173397del	171583	173397	deletion	1
+ICOS	I0002	Allele 1 and 2: g.171583..173397del	171583	173397	deletion	2
+ICOS	I0003	Allele 1 and 2: g.171583..173397del	171583	173397	deletion	1
+ICOS	I0003	Allele 1 and 2: g.171583..173397del	171583	173397	deletion	2
+ICOS	I0004	Allele 1 and 2: g.171583..173397del	171583	173397	deletion	1
+ICOS	I0004	Allele 1 and 2: g.171583..173397del	171583	173397	deletion	2
+ICOS	I0005	Allele 1 and 2: g.171583..173397del	171583	173397	deletion	1
+ICOS	I0005	Allele 1 and 2: g.171583..173397del	171583	173397	deletion	2
+ICOS	I0006	Allele 1 and 2: g.171583..173397del	171583	173397	deletion	1
+ICOS	I0006	Allele 1 and 2: g.171583..173397del	171583	173397	deletion	2
+ICOS	I0007	Allele 1 and 2: g.171583..173397del	171583	173397	deletion	1
+ICOS	I0007	Allele 1 and 2: g.171583..173397del	171583	173397	deletion	2
+ICOS	I0008	Allele 1 and 2: g.171583..173397del	171583	173397	deletion	1
+ICOS	I0008	Allele 1 and 2: g.171583..173397del	171583	173397	deletion	2
+ICOS	I0009	Allele 1 and 2: g.171583..173397del	171583	173397	deletion	1
+ICOS	I0009	Allele 1 and 2: g.171583..173397del	171583	173397	deletion	2
+IGHG2	I0003	Allele 1 and 2: g.IVS1+4A>G, c.568+4A>G, r.568+4a>g,	513	513	point	1
+IGHG2	I0003	Allele 1 and 2: g.IVS1+4A>G, c.568+4A>G, r.568+4a>g,	513	513	point	2
+IGHG2	I0004	Allele 1 and 2: g.IVS1+4A>G, c.568+4A>G, r.568+4a>g,	513	513	point	1
+IGHG2	I0004	Allele 1 and 2: g.IVS1+4A>G, c.568+4A>G, r.568+4a>g,	513	513	point	2
+IGHG2	I0005	Allele 1 and 2: g.IVS1+4A>G, c.568+4A>G, r.568+4a>g,	513	513	point	1
+IGHG2	I0005	Allele 1 and 2: g.IVS1+4A>G, c.568+4A>G, r.568+4a>g,	513	513	point	2
+IKBKG	I0040	g.9771G>T, c.40G>T, r.40g>u, p.Val14Leu	9771	9771	point	0
+IKBKG	I0022	g.9842_9843insC, c.111_112insC, r.111_112insc, p.Met38fsX12	9843	9843	insertion	0
+IKBKG	I0041	g.9900G>A, c.169G>A, r.169g>a, p.Glu57Lys	9900	9900	point	0
+IKBKG	I0044	g.9915C>T, c.184C>T, r.184c>u, p.Arg62X	9915	9915	point	0
+IKBKG	I0024	g.13951T>C, c.239T>C, r.239u>c, p.Leu80Pro	13951	13951	point	0
+IKBKG	I0042	g.13978_13980delAGA, c.266_268delAGA, r.266_268delaga,; p.Glu89del	13978	13980	deletion	0
+IKBKG	I0052	g.14049G>A, c.337G>A, r.337g>a, p.Asp113Asn	14049	14049	point	0
+IKBKG	I0043	g.14079C>T, c.367C>T, r.367c>u, p.Arg123Trp	14079	14079	point	0
+IKBKG	I0001	g.16325T>G, c.643T>G, p.L153R	16325	16325	point	0
+IKBKG	I0039	g.16384C>G, c.517C>G, r.517c>g, p.Arg173Gly	16384	16384	point	0
+IKBKG	I0008	g.18148G>C, c.709G>C, p.R175P	18148	18148	point	0
+IKBKG	I0076	g.18173G>C, c.549G>C, r.549g>c, p.Gln183His	18173	18173	point	0
+IKBKG	I0013	g.19432T>C, c.865T>C, p.L227P	19432	19432	point	0
+IKBKG	I0045	g.19467C>T, c.715C>T, r.715c>u, p.Gln239X	19467	19467	point	0
+IKBKG	I0055	g.19470G>T, c.718G>T, r.718g>u, p.Glu240X	19470	19470	point	0
+IKBKG	I0027	g.20567_20568insA, c.792_793insA, r.792_793insa,; p.Gln265fsX19	20568	20568	insertion	0
+IKBKG	I0023	g.20586_20603delGAGGAGGCCCTGGTGGCC,; c.811_828delGAGGAGGCCCTGGTGGCC,; r.811_828delgaggaggcccugguggcc, p.Glu271_Lys277del	20586	20603	deletion	0
+IKBKG	I0010	g.20638C>G, c.1048C>G, p.A288G	20638	20638	point	0
+IKBKG	I0007	g.21312_21313insA, c.1115_1116insA, p.D311N	21313	21313	insertion	0
+IKBKG	I0033	g.21326A>C, c.944A>C, r.944a>c, p.Glu315Ala	21326	21326	point	0
+IKBKG	I0034	g.21326A>C, c.944A>C, r.944a>c, p.Glu315Ala	21326	21326	point	0
+IKBKG	I0035	g.21326A>C, c.944A>C, r.944a>c, p.Glu315Ala	21326	21326	point	0
+IKBKG	I0036	g.21326A>C, c.944A>C, r.944a>c, p.Glu315Ala	21326	21326	point	0
+IKBKG	I0047	g.21325_21326insG, c.943_944insG, r.943_944insg,; p.Glu315fsX80	21326	21326	insertion	0
+IKBKG	I0037	g.21338G>A, c.956G>A, r.956g>a, p.Arg319Gln	21338	21338	point	0
+IKBKG	I0038	g.21338G>A, c.956G>A, r.956g>a, p.Arg319Gln	21338	21338	point	0
+IKBKG	I0050	g.21349G>C, c.967G>C, r.967g>c, p.Ala323Pro	21349	21349	point	0
+IKBKG	I0065	g.21376C>T, c.994C>T, r.994c>u, p.Gln332X	21376	21376	point	0
+IKBKG	I0056	g.21714C>T, c.1075C>T, r.1075c>u, p.Arg359Trp	21714	21714	point	0
+IKBKG	I0048	g.21716delC, c.1077delC, r.1077delc, p.His360fsX91	21716	21716	deletion	0
+IKBKG	I0049	g.21754delT, c.1115delT, r.1115delu, p.Pro372fsX79	21754	21754	deletion	0
+IKBKG	I0046	g.22087C>T, c.1150C>T, r.1150c>u, p.Gln384X	22087	22087	point	0
+IKBKG	I0054	g.22103_22104insAC, c.1166_1167insAC, r.1166_1167insac,; p.Glu390fsX62	22104	22104	insertion	0
+IKBKG	I0016	g.22104_22105insC, c.1167_1168insC, r.1167_1168insc,; p.Glu390fsX5	22105	22105	insertion	0
+IKBKG	I0019	g.22104_22105insC, c.1167_1168insC, r.1167_1168insc,; p.Glu390fsX5	22105	22105	insertion	0
+IKBKG	I0029	g.22104_22105insC, c.1167_1168insC, r.1167_1168insc,; p.Glu390fsX5	22105	22105	insertion	0
+IKBKG	I0030	g.22104_22105insC, c.1167_1168insC, r.1167_1168insc,; p.Glu390fsX5	22105	22105	insertion	0
+IKBKG	I0031	g.22104_22105insC, c.1167_1168insC, r.1167_1168insc,; p.Glu390fsX5	22105	22105	insertion	0
+IKBKG	I0051	g.22104_22105insC, c.1167_1168insC, r.1167_1168insc,; p.Glu390fsX5	22105	22105	insertion	0
+IKBKG	I0057	g.22104_22105insC, c.1167_1168insC, r.1167_1168insc,; p.Glu390fsX5	22105	22105	insertion	0
+IKBKG	I0085	g.22104_22105insC, c.1167_1168insC, r.1167_1168insc,; p.Glu390fsX5	22105	22105	insertion	0
+IKBKG	I0015	g.22108G>T, c.1356G>T, p.E391X	22108	22108	point	0
+IKBKG	I0002	g.22144C>T, c.1392C>T, p.Q403X	22144	22144	point	0
+IKBKG	I0004	g.22154A>T, c.1402A>T, p.D406V	22154	22154	point	0
+IKBKG	I0018	g.22154_22155insA, c.1402_1403insA, p.D406fsX419	22155	22155	insertion	0
+IKBKG	I0009	g.22187G>T, c.1435G>T, p.C417F	22187	22187	point	0
+IKBKG	I0017	g.22187G>T, c.1435G>T, p.C417F	22187	22187	point	0
+IKBKG	I0003	g.22186T>C, c.1434T>C, p.C417R	22186	22186	point	0
+IKBKG	I0011	g.22186T>C, c.1434T>C, p.C417R	22186	22186	point	0
+IKBKG	I0012	g.22186T>C, c.1434T>C, p.C417R	22186	22186	point	0
+IKBKG	I0014	g.22186T>C, c.1434T>C, p.C417R	22186	22186	point	0
+IKBKG	I0020	g.22187G>A, c.1250G>A, r.1250g>a, p.Cys417Tyr	22187	22187	point	0
+IKBKG	I0005	g.22196A>G, c.1444A>G, p.420	22196	22196	point	0
+IKBKG	I0006	g.22196A>G, c.1444A>G, p.420	22196	22196	point	0
+IKBKG	I0032	g.22196A>G, c.1259A>G, r.1259a>g, p.420	22196	22196	point	0
+IKBKG	I0025	g.IVS6+5G>A, c.G>A, r.g>a,	19525	19525	point	0
+IKBKG	I0026	g.IVS6+5G>A, c.G>A, r.g>a,	19525	19525	point	0
+IKBKG	I0021	g.IVS8-1G>A, c.G>A, r.g>a,	21694	21694	point	0
+IKBKG	I0053	g.IVS8-5T>C, c.T>C, r.u>c	21690	21690	point	0
+IL12RB1	I0040	Allele 1 and 2: g.IVS1+5G>A, c.64+5G>A, r.64+5g>a,	1133	1133	point	1
+IL12RB1	I0040	Allele 1 and 2: g.IVS1+5G>A, c.64+5G>A, r.64+5g>a,	1133	1133	point	2
+IL12RB1	I0034	Allele 1 and 2: g.IVS5+2T>C, c.549+2T>C, r.549+2u>c,	10374	10374	point	1
+IL12RB1	I0034	Allele 1 and 2: g.IVS5+2T>C, c.549+2T>C, r.549+2u>c,	10374	10374	point	2
+IL12RB1	I0039	Allele 1 and 2: g.IVS5-2A>G, c.550-2A>G, r.550-2a>g,	11559	11559	point	1
+IL12RB1	I0039	Allele 1 and 2: g.IVS5-2A>G, c.550-2A>G, r.550-2a>g,	11559	11559	point	2
+IL12RB1	I0042	Allele 1 and 2: g.11568_11574delinsAGATATCA,	11568	11574	indel	1
+IL12RB1	I0042	Allele 1 and 2: g.11568_11574delinsAGATATCA,	11568	11574	indel	2
+IL12RB1	I0043	Allele 1 and 2: g.10290_10306delGTATGGAGTGGGAGACC,	10290	10306	deletion	1
+IL12RB1	I0043	Allele 1 and 2: g.10290_10306delGTATGGAGTGGGAGACC,	10290	10306	deletion	2
+IL12RB1	I0044	Allele 1 and 2: g.10290_10306delGTATGGAGTGGGAGACC,	10290	10306	deletion	1
+IL12RB1	I0044	Allele 1 and 2: g.10290_10306delGTATGGAGTGGGAGACC,	10290	10306	deletion	2
+IL12RB1	I0009	Allele 1 and 2: g.IVS8+1G>C, c.783+1G>C, r.783+1g>c,	14372	14372	point	1
+IL12RB1	I0009	Allele 1 and 2: g.IVS8+1G>C, c.783+1G>C, r.783+1g>c,	14372	14372	point	2
+IL12RB1	I0013	Allele 1 and 2: g.IVS8+1G>C, c.783+1G>C, r.783+1g>c,	14372	14372	point	1
+IL12RB1	I0013	Allele 1 and 2: g.IVS8+1G>C, c.783+1G>C, r.783+1g>c,	14372	14372	point	2
+IL12RB1	I0014	Allele 1 and 2: g.IVS8+1G>C, c.783+1G>C, r.783+1g>c,	14372	14372	point	1
+IL12RB1	I0014	Allele 1 and 2: g.IVS8+1G>C, c.783+1G>C, r.783+1g>c,	14372	14372	point	2
+IL12RB1	I0015	Allele 1 and 2: g.IVS8+1G>C, c.783+1G>C, r.783+1g>c,	14372	14372	point	1
+IL12RB1	I0015	Allele 1 and 2: g.IVS8+1G>C, c.783+1G>C, r.783+1g>c,	14372	14372	point	2
+IL12RB1	I0045	Allele 1 and 2: g.IVS8+1G>A, c.783+1G>A, r.783+1g>a,	14372	14372	point	1
+IL12RB1	I0045	Allele 1 and 2: g.IVS8+1G>A, c.783+1G>A, r.783+1g>a,	14372	14372	point	2
+IL12RB1	I0046	Allele 1 and 2: g.IVS8+1G>A, c.783+1G>A, r.783+1g>a,	14372	14372	point	1
+IL12RB1	I0046	Allele 1 and 2: g.IVS8+1G>A, c.783+1G>A, r.783+1g>a,	14372	14372	point	2
+IL12RB1	I0047	Allele 1 and 2: g.IVS8+1G>A, c.783+1G>A, r.783+1g>a,	14372	14372	point	1
+IL12RB1	I0047	Allele 1 and 2: g.IVS8+1G>A, c.783+1G>A, r.783+1g>a,	14372	14372	point	2
+IL12RB1	I0048	Allele 1 and 2: g.IVS8+1G>A, c.783+1G>A, r.783+1g>a,	14372	14372	point	1
+IL12RB1	I0048	Allele 1 and 2: g.IVS8+1G>A, c.783+1G>A, r.783+1g>a,	14372	14372	point	2
+IL12RB1	I0053	Allele 1 and 2: g.IVS8+1G>A, c.783+1G>A, r.783+1g>a	14372	14372	point	1
+IL12RB1	I0053	Allele 1 and 2: g.IVS8+1G>A, c.783+1G>A, r.783+1g>a	14372	14372	point	2
+IL12RB1	I0017	Allele 1 and 2: g.IVS10-1G>A, c.1190-1G>A, r.1190-1g>a,	19361	19361	point	1
+IL12RB1	I0017	Allele 1 and 2: g.IVS10-1G>A, c.1190-1G>A, r.1190-1g>a,	19361	19361	point	2
+IL12RB1	I0018	Allele 1 and 2: g.IVS15+2T>G, c.1791+2T>G, r.1791+2u>g,	26768	26768	point	1
+IL12RB1	I0018	Allele 1 and 2: g.IVS15+2T>G, c.1791+2T>G, r.1791+2u>g,	26768	26768	point	2
+IL12RB1	I0020	Allele 1 and 2: g.IVS15+2T>G, c.1791+2T>G, r.1791+2u>g,	26768	26768	point	1
+IL12RB1	I0020	Allele 1 and 2: g.IVS15+2T>G, c.1791+2T>G, r.1791+2u>g,	26768	26768	point	2
+IL12RB1	I0030	Allele 1 and 2: g.IVS15+2T>G, c.1791+2T>G, r.1791+2u>g,	26768	26768	point	1
+IL12RB1	I0030	Allele 1 and 2: g.IVS15+2T>G, c.1791+2T>G, r.1791+2u>g,	26768	26768	point	2
+IL12RB1	I0031	Allele 1 and 2: g.IVS15+2T>G, c.1791+2T>G, r.1791+2u>g,	26768	26768	point	1
+IL12RB1	I0031	Allele 1 and 2: g.IVS15+2T>G, c.1791+2T>G, r.1791+2u>g,	26768	26768	point	2
+IL12RB1	I0032	Allele 1 and 2: g.IVS15+2T>G, c.1791+2T>G, r.1791+2u>g,	26768	26768	point	1
+IL12RB1	I0032	Allele 1 and 2: g.IVS15+2T>G, c.1791+2T>G, r.1791+2u>g,	26768	26768	point	2
+IL12RB1	I0033	Allele 1 and 2: g.IVS15+2T>G, c.1791+2T>G, r.1791+2u>g,	26768	26768	point	1
+IL12RB1	I0033	Allele 1 and 2: g.IVS15+2T>G, c.1791+2T>G, r.1791+2u>g,	26768	26768	point	2
+IL12RB1	I0041	Allele 1 and 2: g.IVS15+2T>G, c.1791+2T>G, r.1791+2u>g,	26768	26768	point	1
+IL12RB1	I0041	Allele 1 and 2: g.IVS15+2T>G, c.1791+2T>G, r.1791+2u>g,	26768	26768	point	2
+IL12RB1	I0057	Allele 1 and 2: g.26768T>G, c.1791+2T>G, r.1791+2u>g	26768	26768	point	1
+IL12RB1	I0057	Allele 1 and 2: g.26768T>G, c.1791+2T>G, r.1791+2u>g	26768	26768	point	2
+IL12RB1	I0058	Allele 1 and 2: g.26768T>G, c.1791+2T>G, r.1791+2u>g	26768	26768	point	1
+IL12RB1	I0058	Allele 1 and 2: g.26768T>G, c.1791+2T>G, r.1791+2u>g	26768	26768	point	2
+IL12RB1	I0059	Allele 1 and 2: g.26768T>G, c.1791+2T>G, r.1791+2u>g	26768	26768	point	1
+IL12RB1	I0059	Allele 1 and 2: g.26768T>G, c.1791+2T>G, r.1791+2u>g	26768	26768	point	2
+IL12RB1	I0037	Allele 1 and 2:g.12502..24667del	12502	24667	deletion	1
+IL12RB1	I0037	Allele 1 and 2:g.12502..24667del	12502	24667	deletion	2
+IL2RA	I0001	Allele 1 and 2: g.37297_37300delGCAG, c.61_64delGCAG,; r.61_64delgcag, p.Ala21fsX26	37297	37300	deletion	1
+IL2RA	I0001	Allele 1 and 2: g.37297_37300delGCAG, c.61_64delGCAG,; r.61_64delgcag, p.Ala21fsX26	37297	37300	deletion	2
+IL7R	I0005	Allele 1: g.[5012C>T + 15134A>G], c.[219C>T + 434A>G],; p.[T66I + I138V]; Allele 2: g.[5012C>T + 15134A>G], c.[219C>T + 434A>G],; p.[T66I + I138V]	5012	5012	point	1
+IL7R	I0005	Allele 1: g.[5012C>T + 15134A>G], c.[219C>T + 434A>G],; p.[T66I + I138V]; Allele 2: g.[5012C>T + 15134A>G], c.[219C>T + 434A>G],; p.[T66I + I138V]	15134	15134	point	1
+IL7R	I0005	Allele 1: g.[5012C>T + 15134A>G], c.[219C>T + 434A>G],; p.[T66I + I138V]; Allele 2: g.[5012C>T + 15134A>G], c.[219C>T + 434A>G],; p.[T66I + I138V]	5012	5012	point	2
+IL7R	I0005	Allele 1: g.[5012C>T + 15134A>G], c.[219C>T + 434A>G],; p.[T66I + I138V]; Allele 2: g.[5012C>T + 15134A>G], c.[219C>T + 434A>G],; p.[T66I + I138V]	15134	15134	point	2
+ITGB2	A0033	Allele 1 and 2: g.IVS5-12T>G	20145	20145	point	1
+ITGB2	A0033	Allele 1 and 2: g.IVS5-12T>G	20145	20145	point	2
+ITGB2	A0039	Allele 1 and 2: g.IVS7+1G>A	21571	21571	point	1
+ITGB2	A0039	Allele 1 and 2: g.IVS7+1G>A	21571	21571	point	2
+ITGB2	A0100	Allele 1 and 2: g.IVS7+1G>A	21571	21571	point	1
+ITGB2	A0100	Allele 1 and 2: g.IVS7+1G>A	21571	21571	point	2
+ITGB2	A0034	Allele 1 and 2: g.IVS9+3G>C	26922	26922	point	1
+ITGB2	A0034	Allele 1 and 2: g.IVS9+3G>C	26922	26922	point	2
+ITGB2	A0035	Allele 1 and 2: g.IVS9+3G>C	26922	26922	point	1
+ITGB2	A0035	Allele 1 and 2: g.IVS9+3G>C	26922	26922	point	2
+ITGB2	A0036	Allele 1 and 2: g.IVS9+3G>C	26922	26922	point	1
+ITGB2	A0036	Allele 1 and 2: g.IVS9+3G>C	26922	26922	point	2
+ITGB2	A0037	Allele 1 and 2: g.IVS9+3G>C	26922	26922	point	1
+ITGB2	A0037	Allele 1 and 2: g.IVS9+3G>C	26922	26922	point	2
+ITGB2	A0038	Allele 1 and 2: g.18318..18486del	18318	18486	deletion	1
+ITGB2	A0038	Allele 1 and 2: g.18318..18486del	18318	18486	deletion	2
+JAK3	J0011	Allele 1 and 2: g.9889C>T, c.1333C>T, r.1333c>u, p.Arg445X	9889	9889	point	1
+JAK3	J0011	Allele 1 and 2: g.9889C>T, c.1333C>T, r.1333c>u, p.Arg445X	9889	9889	point	2
+JAK3	J0008	Allele 1 and 2: g.12303C>T, [c.1744C>T; c.1744C>T +; c.1797_2009del; c.1744C>T + c.1702_1786del], [p.R582W;; p.Ser568_Glu639del; p.Ser568fsX13]	12303	12303	point	0
+JAK3	J0008	Allele 1 and 2: g.12303C>T, [c.1744C>T; c.1744C>T +; c.1797_2009del; c.1744C>T + c.1702_1786del], [p.R582W;; p.Ser568_Glu639del; p.Ser568fsX13]	12303	12303	point	2
+JAK3	J0006	Allele 1 and 2: g.12326C>T, [c.1767C>T + c.1766_1786del],; p.Val590_Ser596del	12326	12326	point	1
+JAK3	J0006	Allele 1 and 2: g.12326C>T, [c.1767C>T + c.1766_1786del],; p.Val590_Ser596del	12326	12326	point	2
+JAK3	J0035	Allele 1: g.13432T>G, c.1796T>G, r.1796u>g, p.Val599Gly; Allele 2: g.14548T>A, c.2125T>A, r.2125u>a, p.Trp709Arg	13432	13432	point	1
+JAK3	J0035	Allele 1: g.13432T>G, c.1796T>G, r.1796u>g, p.Val599Gly; Allele 2: g.14548T>A, c.2125T>A, r.2125u>a, p.Trp709Arg	14548	14548	point	2
+JAK3	J0031	Allele 1: g.14543A>C, c.2120A>C, r.2120a>c, p.Asp707Ala; Allele 2: g.18135T>G, c.2867T>G, r.2867u>g, p.Leu956Arg	14543	14543	point	1
+JAK3	J0031	Allele 1: g.14543A>C, c.2120A>C, r.2120a>c, p.Asp707Ala; Allele 2: g.18135T>G, c.2867T>G, r.2867u>g, p.Leu956Arg	18135	18135	point	2
+JAK3	J0007	Allele 1 and 2: g.IVS10-2A>G, c.1442_1446delAAAAG,; p.Glu481fsX37	11082	11082	point	1
+JAK3	J0007	Allele 1 and 2: g.IVS10-2A>G, c.1442_1446delAAAAG,; p.Glu481fsX37	11082	11082	point	2
+LYST	C0040	Allele 1: g.206889>, c.13242+1>, r.13242+1>; Allele 2: g.206889>, c.13242+1>, r.13242+1>	206889	206889	point	1
+LYST	C0040	Allele 1: g.206889>, c.13242+1>, r.13242+1>; Allele 2: g.206889>, c.13242+1>, r.13242+1>	206889	206889	point	2
+MPO	M0030	Allele 1: g.3520delA, c.325delA, r.325dela,; p.Thr109fsX4	3520	3520	deletion	1
+MPO	M0019	Allele 1: g.3899A>G, c.518A>G, r.518a>g, p.Tyr173Cys	3899	3899	point	1
+MPO	M0020	Allele 1: g.3899A>G, c.518A>G, r.518a>g, p.Tyr173Cys	3899	3899	point	1
+MPO	M0021	Allele 1: g.3899A>G, c.518A>G, r.518a>g, p.Tyr173Cys	3899	3899	point	1
+MPO	M0022	Allele 1: g.3899A>G, c.518A>G, r.518a>g, p.Tyr173Cys	3899	3899	point	1
+MPO	M0017	Allele 1: g.4311T>C, c.752T>C, r.752u>c, p.Met251Thr; Allele 2: g.9953_9966delCCCATGGAACCCAA,; c.1552_1565delCCCATGGAACCCAA, r.1552_1565delcccauggaacccaa,; p.Met519fsX20	4311	4311	point	1
+MPO	M0017	Allele 1: g.4311T>C, c.752T>C, r.752u>c, p.Met251Thr; Allele 2: g.9953_9966delCCCATGGAACCCAA,; c.1552_1565delCCCATGGAACCCAA, r.1552_1565delcccauggaacccaa,; p.Met519fsX20	9953	9966	deletion	2
+MPO	M0027	Allele 1: g.4311T>C, c.752T>C, r.752u>c, p.Met251Thr	4311	4311	point	1
+MPO	M0032	Allele 1: g.4311T>C, c.752T>C, r.752u>c, p.Met251Thr; Allele 2: g.10600C>T, c.1705C>T, r.1705c>u, p.Arg569Trp	4311	4311	point	1
+MPO	M0032	Allele 1: g.4311T>C, c.752T>C, r.752u>c, p.Met251Thr; Allele 2: g.10600C>T, c.1705C>T, r.1705c>u, p.Arg569Trp	10600	10600	point	2
+MPO	M0033	Allele 1: g.4311T>C, c.752T>C, r.752u>c, p.Met251Thr	4311	4311	point	1
+MPO	M0036	Allele 1: g.4311T>C, c.752T>C, r.752u>c, p.Met251Thr	4311	4311	point	1
+MPO	M0029	Allele 1: g.5414C>T, c.995C>T, r.995c>u, p.Ala332Val	5414	5414	point	1
+MPO	M0034	Allele 1: g.5414C>T, c.995C>T, r.995c>u, p.Ala332Val; Allele 2: g.10610T>G, c.1715T>G, r.1715u>g, p.Leu572Trp	5414	5414	point	1
+MPO	M0034	Allele 1: g.5414C>T, c.995C>T, r.995c>u, p.Ala332Val; Allele 2: g.10610T>G, c.1715T>G, r.1715u>g, p.Leu572Trp	10610	10610	point	2
+MPO	M0038	Allele 1: g.5531A>G, c.1112A>G, r.1112a>g,; p.Asp371Gly	5531	5531	point	1
+MPO	M0024	Allele 1 and 2: g.9896C>T, c.1495C>T, r.1495c>u,; p.Arg499Cys	9896	9896	point	1
+MPO	M0024	Allele 1 and 2: g.9896C>T, c.1495C>T, r.1495c>u,; p.Arg499Cys	9896	9896	point	2
+MPO	M0023	Allele 1 and 2: g.9902G>A, c.1501G>A, r.1501g>a,; p.Gly501Ser	9902	9902	point	1
+MPO	M0023	Allele 1 and 2: g.9902G>A, c.1501G>A, r.1501g>a,; p.Gly501Ser	9902	9902	point	2
+MPO	M0018	Allele 1: g.9953_9966delCCCATGGAACCCAA,; c.1552_1565delCCCATGGAACCCAA, r.1552_1565delcccauggaacccaa,; p.Met519fsX20	9953	9966	deletion	1
+MPO	M0026	Allele 1: g.9953_9966delCCCATGGAACCCAA,; c.1552_1565delCCCATGGAACCCAA, r.1552_1565delcccauggaacccaa,; p.Met519fsX20; Allele 2: g.10600C>T, c.1705C>T, r.1705c>u, p.Arg569Trp	9953	9966	deletion	1
+MPO	M0026	Allele 1: g.9953_9966delCCCATGGAACCCAA,; c.1552_1565delCCCATGGAACCCAA, r.1552_1565delcccauggaacccaa,; p.Met519fsX20; Allele 2: g.10600C>T, c.1705C>T, r.1705c>u, p.Arg569Trp	10600	10600	point	2
+MPO	M0028	Allele 1 and 2: g.9953_9966delCCCATGGAACCCAA,; c.1552_1565delCCCATGGAACCCAA, r.1552_1565delcccauggaacccaa,; p.Met519fsX20	9953	9966	deletion	1
+MPO	M0028	Allele 1 and 2: g.9953_9966delCCCATGGAACCCAA,; c.1552_1565delCCCATGGAACCCAA, r.1552_1565delcccauggaacccaa,; p.Met519fsX20	9953	9966	deletion	2
+MPO	M0035	Allele 1: g.9953_9966delCCCATGGAACCCAA,; c.1552_1565delCCCATGGAACCCAA, r.1552_1565delcccauggaacccaa,; p.Met519fsX20	9953	9966	deletion	1
+MPO	M0037	Allele 1: g.9953_9966delCCCATGGAACCCAA,; c.1552_1565delCCCATGGAACCCAA, r.1552_1565delcccauggaacccaa,; p.Met519fsX20; Allele 2: g.IVS11-2A>C, c.2031-2A>C, r.2031-2a>c,	9953	9966	deletion	1
+MPO	M0037	Allele 1: g.9953_9966delCCCATGGAACCCAA,; c.1552_1565delCCCATGGAACCCAA, r.1552_1565delcccauggaacccaa,; p.Met519fsX20; Allele 2: g.IVS11-2A>C, c.2031-2A>C, r.2031-2a>c,	12564	12564	point	2
+MPO	M0039	Allele 1: g.9953_9966delCCCATGGAACCCAA,; c.1552_1565delCCCATGGAACCCAA, r.1552_1565delcccauggaacccaa,; p.Met519fsX20; Allele 2: g.11675T>C, c.1927T>C, r.1927u>c, p.Trp643Arg	9953	9966	deletion	1
+MPO	M0039	Allele 1: g.9953_9966delCCCATGGAACCCAA,; c.1552_1565delCCCATGGAACCCAA, r.1552_1565delcccauggaacccaa,; p.Met519fsX20; Allele 2: g.11675T>C, c.1927T>C, r.1927u>c, p.Trp643Arg	11675	11675	point	2
+MPO	M0001	Allele 1 and 2: g.10600C>T, c.1705C>T, r.1705c>u,; p.Arg569Trp	10600	10600	point	1
+MPO	M0001	Allele 1 and 2: g.10600C>T, c.1705C>T, r.1705c>u,; p.Arg569Trp	10600	10600	point	2
+MPO	M0002	Allele 1: g.10600C>T, c.1705C>T, r.1705c>u,; p.Arg569Trp	10600	10600	point	1
+MPO	M0003	Allele 1: g.10600C>T, c.1705C>T, r.1705c>u,; p.Arg569Trp	10600	10600	point	1
+MPO	M0004	Allele 1: g.10600C>T, c.1705C>T, r.1705c>u,; p.Arg569Trp	10600	10600	point	1
+MPO	M0005	Allele 1: g.10600C>T, c.1705C>T, r.1705c>u,; p.Arg569Trp	10600	10600	point	1
+MPO	M0006	Allele 1: g.10600C>T, c.1705C>T, r.1705c>u,; p.Arg569Trp	10600	10600	point	1
+MPO	M0007	Allele 1: g.10600C>T, c.1705C>T, r.1705c>u,; p.Arg569Trp	10600	10600	point	1
+MPO	M0008	Allele 1: g.10600C>T, c.1705C>T, r.1705c>u,; p.Arg569Trp	10600	10600	point	1
+MPO	M0009	Allele 1: g.10600C>T, c.1705C>T, r.1705c>u,; p.Arg569Trp	10600	10600	point	1
+MPO	M0010	Allele 1: g.10600C>T, c.1705C>T, r.1705c>u,; p.Arg569Trp	10600	10600	point	1
+MPO	M0011	Allele 1: g.10600C>T, c.1705C>T, r.1705c>u,; p.Arg569Trp	10600	10600	point	1
+MPO	M0012	Allele 1: g.10600C>T, c.1705C>T, r.1705c>u,; p.Arg569Trp	10600	10600	point	1
+MPO	M0013	Allele 1: g.10600C>T, c.1705C>T, r.1705c>u,; p.Arg569Trp	10600	10600	point	1
+MPO	M0014	Allele 1: g.10600C>T, c.1705C>T, r.1705c>u,; p.Arg569Trp	10600	10600	point	1
+MPO	M0015	Allele 1: g.10600C>T, c.1705C>T, r.1705c>u,; p.Arg569Trp	10600	10600	point	1
+MPO	M0016	Allele 1 and 2: g.10600C>T, c.1705C>T, r.1705c>u,; p.Arg569Trp	10600	10600	point	1
+MPO	M0016	Allele 1 and 2: g.10600C>T, c.1705C>T, r.1705c>u,; p.Arg569Trp	10600	10600	point	2
+MPO	M0025	Allele 1 and 2: g.IVS11-2A>C, c.2031-2A>C, r.2031-2a>c,	12564	12564	point	1
+MPO	M0025	Allele 1 and 2: g.IVS11-2A>C, c.2031-2A>C, r.2031-2a>c,	12564	12564	point	2
+MPO	M0031	Allele 1 and 2: g.IVS11-2A>C, c.2031-2A>C, r.2031-2a>c,	12564	12564	point	1
+MPO	M0031	Allele 1 and 2: g.IVS11-2A>C, c.2031-2A>C, r.2031-2a>c,	12564	12564	point	2
+NCF1	N0026	Allele 1 and 2: g.10506G>A, c.591G>A, p.W193X	10506	10506	point	1
+NCF1	N0026	Allele 1 and 2: g.10506G>A, c.591G>A, p.W193X	10506	10506	point	2
+NCF2	M0085	Allele 1 and 2: g.13874G>A, c.258-1G>A, r.258-1g>a	13874	13874	point	1
+NCF2	M0085	Allele 1 and 2: g.13874G>A, c.258-1G>A, r.258-1g>a	13874	13874	point	2
+NCF2	M0116	Allele 1 and 2: g.4688G>T, c.257+1G>T, r.257+1g>u	4688	4688	point	1
+NCF2	M0116	Allele 1 and 2: g.4688G>T, c.257+1G>T, r.257+1g>u	4688	4688	point	2
+NCF2	M0010	Allele 1 and 2: g.13985T>C, c.366+2T>C, r.366+2u>c	13985	13985	point	1
+NCF2	M0010	Allele 1 and 2: g.13985T>C, c.366+2T>C, r.366+2u>c	13985	13985	point	2
+NCF2	M0020	Allele 1 and 2: g.IVS3+2T>C, c.366+2T>C, r.366+2u>c	13985	13985	point	1
+NCF2	M0020	Allele 1 and 2: g.IVS3+2T>C, c.366+2T>C, r.366+2u>c	13985	13985	point	2
+NCF2	M0024	Allele 1 and 2: g.13984G>A, c.366+1G>A, r.366+1g>a	13984	13984	point	1
+NCF2	M0024	Allele 1 and 2: g.13984G>A, c.366+1G>A, r.366+1g>a	13984	13984	point	2
+NCF2	M0025	Allele 1 and 2: g.13984G>A, c.366+1G>A, r.366+1g>a	13984	13984	point	1
+NCF2	M0025	Allele 1 and 2: g.13984G>A, c.366+1G>A, r.366+1g>a	13984	13984	point	2
+NCF2	M0011	Allele 1 and 2: g.17096G>A, c.501+1G>A, r.501+1g>a	17096	17096	point	1
+NCF2	M0011	Allele 1 and 2: g.17096G>A, c.501+1G>A, r.501+1g>a	17096	17096	point	2
+NCF2	M0018	Allele 1 and 2: g.IVS4+1G>A, c.501+1G>A, r.501+1g>a	17096	17096	point	1
+NCF2	M0018	Allele 1 and 2: g.IVS4+1G>A, c.501+1G>A, r.501+1g>a	17096	17096	point	2
+NCF2	M0051	Allele 1 and 2: g.17096G>C, c.501+1G>C, r.501+1g>c	17096	17096	point	1
+NCF2	M0051	Allele 1 and 2: g.17096G>C, c.501+1G>C, r.501+1g>c	17096	17096	point	2
+NCF2	M0060	Allele 1 and 2: g.17096G>A, c.501+1G>A, r.501+1g>a	17096	17096	point	1
+NCF2	M0060	Allele 1 and 2: g.17096G>A, c.501+1G>A, r.501+1g>a	17096	17096	point	2
+NCF2	M0073	Allele 1 and 2: g.20742G>T, c.610-1G>T, r.610-1g>u	20742	20742	point	1
+NCF2	M0073	Allele 1 and 2: g.20742G>T, c.610-1G>T, r.610-1g>u	20742	20742	point	2
+NCF2	M0007	Allele 1 and 2: g.24663G>A, c.924+1G>A, r.924+1g>a	24663	24663	point	1
+NCF2	M0007	Allele 1 and 2: g.24663G>A, c.924+1G>A, r.924+1g>a	24663	24663	point	2
+NCF2	M0065	Allele 1 and 2: g.31307A>T, c.1291-2A>T, r.1291-2a>u	31307	31307	point	1
+NCF2	M0065	Allele 1 and 2: g.31307A>T, c.1291-2A>T, r.1291-2a>u	31307	31307	point	2
+NCF2	M0066	Allele 1 and 2: g.31307A>T, c.1291-2A>T, r.1291-2a>u	31307	31307	point	1
+NCF2	M0066	Allele 1 and 2: g.31307A>T, c.1291-2A>T, r.1291-2a>u	31307	31307	point	2
+NFKBIA	N0001	g.1189G>T, c.95G>T, r.95g>u, p.Ser32Ile	1189	1189	point	0
+PRF1	P0032	Allele 1: g.3274A>G, c.102A>G, p.M1V; Allele 2: g.5404G>A, c.1050G>A, p.G317R	3274	3274	point	1
+PRF1	P0032	Allele 1: g.3274A>G, c.102A>G, p.M1V; Allele 2: g.5404G>A, c.1050G>A, p.G317R	5404	5404	point	2
+PRF1	P0033	Allele 1: g.3480delC, c.308delC, p.P69fsX106; Allele 2: g.5545_5546delCT, c.1191_1192delCT, p.L364fsX456	3480	3480	deletion	1
+PRF1	P0033	Allele 1: g.3480delC, c.308delC, p.P69fsX106; Allele 2: g.5545_5546delCT, c.1191_1192delCT, p.L364fsX456	5545	5546	deletion	2
+PRF1	P0034	Allele 1: g.5545_5546delCT, c.1191_1192delCT, p.L364fsX456; Allele 2: g.5701C>T, c.1347C>T, p.Q416X	5545	5546	deletion	1
+PRF1	P0034	Allele 1: g.5545_5546delCT, c.1191_1192delCT, p.L364fsX456; Allele 2: g.5701C>T, c.1347C>T, p.Q416X	5701	5701	point	2
+PTPRC	P0001	Allele 1: g.IVS13+1G>A, c.1444+1G>A, r.1444+1g>a,	78746	78746	point	1
+RAG1	R0066	Allele 1: g.6698A>C, c.406A>C, r.406a>c, p.Lys136Gln; Allele 2: g.6867G>A, c.575G>A, r.575g>a, p.Cys192Tyr	6698	6698	point	1
+RAG1	R0066	Allele 1: g.6698A>C, c.406A>C, r.406a>c, p.Lys136Gln; Allele 2: g.6867G>A, c.575G>A, r.575g>a, p.Cys192Tyr	6867	6867	point	2
+RAG1	R0059	Allele 1 and 2: g.6811delT, c.519delT, r.519delu,; p.Glu174fsX27	6811	6811	deletion	1
+RAG1	R0059	Allele 1 and 2: g.6811delT, c.519delT, r.519delu,; p.Glu174fsX27	6811	6811	deletion	2
+RAG1	R0088	Allele 1: g.7232C>T, c.940C>T, r.940c>u, p.Arg314Trp; Allele 2: g.[7811C>T;8502G>A], c.[1519C>T;2210G>A],; r.[1519c>u;2210g>a], p.[Arg507Trp;Arg737His]	7232	7232	point	1
+RAG1	R0088	Allele 1: g.7232C>T, c.940C>T, r.940c>u, p.Arg314Trp; Allele 2: g.[7811C>T;8502G>A], c.[1519C>T;2210G>A],; r.[1519c>u;2210g>a], p.[Arg507Trp;Arg737His]	7811	7811	point	2
+RAG1	R0088	Allele 1: g.7232C>T, c.940C>T, r.940c>u, p.Arg314Trp; Allele 2: g.[7811C>T;8502G>A], c.[1519C>T;2210G>A],; r.[1519c>u;2210g>a], p.[Arg507Trp;Arg737His]	8502	8502	point	2
+RAG1	R0063	Allele 1 and 2: g.7472C>T, c.1180C>T, r.1180c>u,; p.Arg394Trp	7472	7472	point	1
+RAG1	R0063	Allele 1 and 2: g.7472C>T, c.1180C>T, r.1180c>u,; p.Arg394Trp	7472	7472	point	2
+RAG1	R0078	Allele 1 and 2: g.7638G>A, c.1346G>A, r.1346g>a,; p.Arg449Lys	7638	7638	point	1
+RAG1	R0078	Allele 1 and 2: g.7638G>A, c.1346G>A, r.1346g>a,; p.Arg449Lys	7638	7638	point	2
+RAG1	R0087	Allele 1: g.7713G>A, c.1421G>A, r.1421g>a, p.Arg474His; Allele 2: g.8162C>T, c.1870C>T, r.1870c>u, p.Arg624Cys	7713	7713	point	1
+RAG1	R0087	Allele 1: g.7713G>A, c.1421G>A, r.1421g>a, p.Arg474His; Allele 2: g.8162C>T, c.1870C>T, r.1870c>u, p.Arg624Cys	8162	8162	point	2
+RAG1	R0057	Allele 1 and 2: g.7986G>A, c.1694G>A, r.1694g>a,; p.Ala565Asp	7986	7986	point	1
+RAG1	R0057	Allele 1 and 2: g.7986G>A, c.1694G>A, r.1694g>a,; p.Ala565Asp	7986	7986	point	2
+RAG1	R0069	Allele 1 and 2: g.8059C>G, c.1767C>G, r.1767c>g, p.Tyr589X	8059	8059	point	1
+RAG1	R0069	Allele 1 and 2: g.8059C>G, c.1767C>G, r.1767c>g, p.Tyr589X	8059	8059	point	2
+RAG1	R0070	Allele 1: g.8239delT, c.1947delT, r.1947delu, p.Asn650fsX22	8239	8239	deletion	1
+RAG1	R0056	Allele 1 and 2: g.8294delC, c.2002delC, r.2002delc,; p.His668fsX4	8294	8294	deletion	1
+RAG1	R0056	Allele 1 and 2: g.8294delC, c.2002delC, r.2002delc,; p.His668fsX4	8294	8294	deletion	2
+RAG1	R0068	Allele 1 and 2: g.8418G>A, c.2126G>A, r.2126g>a,; p.Gly709Asp	8418	8418	point	1
+RAG1	R0068	Allele 1 and 2: g.8418G>A, c.2126G>A, r.2126g>a,; p.Gly709Asp	8418	8418	point	2
+RAG1	R0083	Allele 1: g.8619G>A, c.2327G>A, r.2327g>a,; p.Arg776Gln; Allele 2: g.9227_9229delGCC, c.2935_2937delGCC,; r.2935_2937delgcc, p.Ala979del	8619	8619	point	1
+RAG1	R0083	Allele 1: g.8619G>A, c.2327G>A, r.2327g>a,; p.Arg776Gln; Allele 2: g.9227_9229delGCC, c.2935_2937delGCC,; r.2935_2937delgcc, p.Ala979del	9227	9229	deletion	2
+RAG2	S0025	Allele 1 and 2: g.5114C>T, c.46C>T, r.46c>u, p.Gln16X	5114	5114	point	1
+RAG2	S0044	Allele 1: g.5298C>A, c.230C>A, r.230c>a, p.Thr77Asn; Allele 2: g.6420G>C, c.1352G>C, r.1352g>c, p.Gly451Ala	5298	5298	point	1
+RAG2	S0044	Allele 1: g.5298C>A, c.230C>A, r.230c>a, p.Thr77Asn; Allele 2: g.6420G>C, c.1352G>C, r.1352g>c, p.Gly451Ala	6420	6420	point	2
+RAG2	S0032	Allele 1 and 2: g.5712C>T, c.644C>T, r.644c>u, p.Thr215Ile	5712	5712	point	1
+RAG2	S0032	Allele 1 and 2: g.5712C>T, c.644C>T, r.644c>u, p.Thr215Ile	5712	5712	point	2
+RAG2	S0037	Allele 1 and 2: g.6315G>T, c.1247G>T, r.1247g>u,; p.Trp416Leu	6315	6315	point	1
+RAG2	S0037	Allele 1 and 2: g.6315G>T, c.1247G>T, r.1247g>u,; p.Trp416Leu	6315	6315	point	2
+RFX5	R0003	Allele 1 and 2: g.IVS2+5G>A	30412	30412	point	1
+RFX5	R0003	Allele 1 and 2: g.IVS2+5G>A	30412	30412	point	2
+RFX5	R0004	Allele 1 and 2: g.IVS2+5G>A	30412	30412	point	1
+RFX5	R0004	Allele 1 and 2: g.IVS2+5G>A	30412	30412	point	2
+RFX5	R0006	Allele 1 and 2: g.IVS3-1G>A	31423	31423	point	1
+RFX5	R0006	Allele 1 and 2: g.IVS3-1G>A	31423	31423	point	2
+RFX5	R0002	Allele 1: g.IVS4-1G>A	31764	31764	point	1
+RFXANK	R0027	Allele 1 and 2: g.IVS4+1G>C, c.G>C, r.g>c,	5761	5761	point	1
+RFXANK	R0027	Allele 1 and 2: g.IVS4+1G>C, c.G>C, r.g>c,	5761	5761	point	2
+RFXANK	R0028	Allele 1 and 2: g.IVS4+5G>A, c.G>A, r.g>a,	5765	5765	point	1
+RFXANK	R0028	Allele 1 and 2: g.IVS4+5G>A, c.G>A, r.g>a,	5765	5765	point	2
+RFXANK	R0004	Allele 1 and 2: g.IVS5-25GGTATTGCCCGCCTCCTCCTGCCAGG>	6210	6235	deletion	1
+RFXANK	R0004	Allele 1 and 2: g.IVS5-25GGTATTGCCCGCCTCCTCCTGCCAGG>	6210	6235	deletion	2
+RFXANK	R0005	Allele 1 and 2: g.IVS5-25GGTATTGCCCGCCTCCTCCTGCCAGG>	6210	6235	deletion	1
+RFXANK	R0005	Allele 1 and 2: g.IVS5-25GGTATTGCCCGCCTCCTCCTGCCAGG>	6210	6235	deletion	2
+RFXANK	R0006	Allele 1 and 2: g.IVS5-25GGTATTGCCCGCCTCCTCCTGCCAGG>	6210	6235	deletion	1
+RFXANK	R0006	Allele 1 and 2: g.IVS5-25GGTATTGCCCGCCTCCTCCTGCCAGG>	6210	6235	deletion	2
+RFXANK	R0007	Allele 1 and 2: g.IVS5-25GGTATTGCCCGCCTCCTCCTGCCAGG>	6210	6235	deletion	1
+RFXANK	R0007	Allele 1 and 2: g.IVS5-25GGTATTGCCCGCCTCCTCCTGCCAGG>	6210	6235	deletion	2
+RFXANK	R0008	Allele 1 and 2: g.IVS5-25GGTATTGCCCGCCTCCTCCTGCCAGG>	6210	6235	deletion	1
+RFXANK	R0008	Allele 1 and 2: g.IVS5-25GGTATTGCCCGCCTCCTCCTGCCAGG>	6210	6235	deletion	2
+RFXANK	R0009	Allele 1 and 2: g.IVS5-25GGTATTGCCCGCCTCCTCCTGCCAGG>	6210	6235	deletion	1
+RFXANK	R0009	Allele 1 and 2: g.IVS5-25GGTATTGCCCGCCTCCTCCTGCCAGG>	6210	6235	deletion	2
+RFXANK	R0010	Allele 1 and 2: g.IVS5-25GGTATTGCCCGCCTCCTCCTGCCAGG>	6210	6235	deletion	1
+RFXANK	R0010	Allele 1 and 2: g.IVS5-25GGTATTGCCCGCCTCCTCCTGCCAGG>	6210	6235	deletion	2
+RFXANK	R0011	Allele 1 and 2: g.IVS5-25GGTATTGCCCGCCTCCTCCTGCCAGG>	6210	6235	deletion	1
+RFXANK	R0011	Allele 1 and 2: g.IVS5-25GGTATTGCCCGCCTCCTCCTGCCAGG>	6210	6235	deletion	2
+RFXANK	R0012	Allele 1 and 2: g.IVS5-25GGTATTGCCCGCCTCCTCCTGCCAGG>	6210	6235	deletion	1
+RFXANK	R0012	Allele 1 and 2: g.IVS5-25GGTATTGCCCGCCTCCTCCTGCCAGG>	6210	6235	deletion	2
+RFXANK	R0013	Allele 1: g.IVS5-25GGTATTGCCCGCCTCCTCCTGCCAGG>	6210	6235	deletion	1
+RFXANK	R0014	Allele 1 and 2: g.IVS5-25GGTATTGCCCGCCTCCTCCTGCCAGG>	6210	6235	deletion	1
+RFXANK	R0014	Allele 1 and 2: g.IVS5-25GGTATTGCCCGCCTCCTCCTGCCAGG>	6210	6235	deletion	2
+RFXANK	R0015	Allele 1 and 2: g.IVS5-25GGTATTGCCCGCCTCCTCCTGCCAGG>	6210	6235	deletion	1
+RFXANK	R0015	Allele 1 and 2: g.IVS5-25GGTATTGCCCGCCTCCTCCTGCCAGG>	6210	6235	deletion	2
+RFXANK	R0016	Allele 1 and 2: g.IVS5-25GGTATTGCCCGCCTCCTCCTGCCAGG>	6210	6235	deletion	1
+RFXANK	R0016	Allele 1 and 2: g.IVS5-25GGTATTGCCCGCCTCCTCCTGCCAGG>	6210	6235	deletion	2
+RFXANK	R0017	Allele 1 and 2: g.IVS5-25GGTATTGCCCGCCTCCTCCTGCCAGG>	6210	6235	deletion	1
+RFXANK	R0017	Allele 1 and 2: g.IVS5-25GGTATTGCCCGCCTCCTCCTGCCAGG>	6210	6235	deletion	2
+RFXANK	R0018	Allele 1 and 2: g.IVS5-25GGTATTGCCCGCCTCCTCCTGCCAGG>	6210	6235	deletion	1
+RFXANK	R0018	Allele 1 and 2: g.IVS5-25GGTATTGCCCGCCTCCTCCTGCCAGG>	6210	6235	deletion	2
+RFXANK	R0019	Allele 1 and 2: g.IVS5-25GGTATTGCCCGCCTCCTCCTGCCAGG>	6210	6235	deletion	1
+RFXANK	R0019	Allele 1 and 2: g.IVS5-25GGTATTGCCCGCCTCCTCCTGCCAGG>	6210	6235	deletion	2
+RFXANK	R0020	Allele 1: g.IVS5-25GGTATTGCCCGCCTCCTCCTGCCAGG>	6210	6235	deletion	1
+RFXANK	R0021	Allele 1 and 2: g.IVS5-25GGTATTGCCCGCCTCCTCCTGCCAGG>	6210	6235	deletion	1
+RFXANK	R0021	Allele 1 and 2: g.IVS5-25GGTATTGCCCGCCTCCTCCTGCCAGG>	6210	6235	deletion	2
+RFXANK	R0022	Allele 1 and 2: g.IVS5-25GGTATTGCCCGCCTCCTCCTGCCAGG>	6210	6235	deletion	1
+RFXANK	R0022	Allele 1 and 2: g.IVS5-25GGTATTGCCCGCCTCCTCCTGCCAGG>	6210	6235	deletion	2
+RFXANK	R0025	Allele 1 and 2: g.IVS5-25GGTATTGCCCGCCTCCTCCTGCCAGG>	6210	6235	deletion	1
+RFXANK	R0025	Allele 1 and 2: g.IVS5-25GGTATTGCCCGCCTCCTCCTGCCAGG>	6210	6235	deletion	2
+RFXANK	R0023	Allele 1 and 2: g.6313_6370del	6313	6370	deletion	1
+RFXANK	R0023	Allele 1 and 2: g.6313_6370del	6313	6370	deletion	2
+SERPING1	S0280	g.5656_5657delinsAA, c.674_675delinsAA, r.674_675delinsaa,; p.Phe225X	5656	5657	complex	0
+SERPING1	S0281	g.5656_5657delinsAA, c.674_675delinsAA, r.674_675delinsaa,; p.Phe225X	5656	5657	complex	0
+SERPING1	S0282	g.5656_5657delinsAA, c.674_675delinsAA, r.674_675delinsaa,; p.Phe225X	5656	5657	complex	0
+SERPING1	S0283	g.5656_5657delinsAA, c.674_675delinsAA, r.674_675delinsaa,; p.Phe225X	5656	5657	complex	0
+SERPING1	S0287	g.1769A>G, c.1A>G, r.1a>g, p.Met1Val	1769	1769	point	0
+SERPING1	S0288	g.1769A>G, c.1A>G, r.1a>g, p.Met1Val	1769	1769	point	0
+SERPING1	S0289	g.1769A>G, c.1A>G, r.1a>g, p.Met1Val	1769	1769	point	0
+SERPING1	S0290	g.1769A>G, c.1A>G, r.1a>g, p.Met1Val	1769	1769	point	0
+SERPING1	S0049	g.1771_1778dup, c.3_10dup, r.3_10dup, p.Leu5fsX4	1779	1779	duplication	0
+SERPING1	S0051	g.1783_1784dup, c.15_16dup, r.15_16dup, p.Thr6fsX4	1785	1785	duplication	0
+SERPING1	S0200	g.3391C>G, c.65C>G, r.65c>g, p.Ser22X	3391	3391	point	0
+SERPING1	S0278	g.3393_3463del, c.67_137del, r.67_137del, p.Pro24fsX10	3393	3463	deletion	0
+SERPING1	S0279	g.3393_3463del, c.67_137del, r.67_137del, p.Pro24fsX10	3393	3463	deletion	0
+SERPING1	S0159	g.3420C>T, c.94C>T, r.94c>u, p.Gln32X	3420	3420	point	0
+SERPING1	S0201	g.3420C>T, c.94C>T, r.94c>u, p.Gln32X	3420	3420	point	0
+SERPING1	S0033	g.3432_3433delAG, c.106_107delAG, r.106_107delag,; p.Ser36fsX21	3432	3433	deletion	0
+SERPING1	S0095	g.3446_3447delAG, c.120_121delAG, r.120_121delag,; p.Gly41fsX16	3446	3447	deletion	0
+SERPING1	S0096	g.3446_3447delAG, c.120_121delAG, r.120_121delag,; p.Gly41fsX16	3446	3447	deletion	0
+SERPING1	S0097	g.3446_3447delAG, c.120_121delAG, r.120_121delag,; p.Gly41fsX16	3446	3447	deletion	0
+SERPING1	S0203	g.3446_3447delAG, c.120_121delAG, r.120_121delag,; p.Gly41fsX16	3446	3447	deletion	0
+SERPING1	S0202	g.3446delA, c.120delA, r.120dela, p.Gly41fsX38	3446	3446	deletion	0
+SERPING1	S0098	g.3486delC, c.160delC, r.160delc, p.Leu54fsX25	3486	3486	deletion	0
+SERPING1	S0204	g.3490delT, c.164delT, r.164delu, p.Phe55fsX24	3490	3490	deletion	0
+SERPING1	S0205	g.3513delT, c.187delT, r.187delu, p.Ser63fsX16	3513	3513	deletion	0
+SERPING1	S0099	g.3535C>G, c.209C>G, r.209c>g, p.Ser70X	3535	3535	point	0
+SERPING1	S0206	g.3596delC, c.270delC, r.270delc, p.Thr91fsX57	3596	3596	deletion	0
+SERPING1	S0207	g.3617_3621delACCCA, c.291_295delACCCA, r.291_295delaccca,; p.Gln97fsX34	3617	3621	deletion	0
+SERPING1	S0175	g.3640_3643delCAAC, c.314_317delCAAC, r.314_317delcaac,; p.Pro105fsX42	3640	3643	deletion	0
+SERPING1	S0176	g.3640_3643delCAAC, c.314_317delCAAC, r.314_317delcaac,; p.Pro105fsX42	3640	3643	deletion	0
+SERPING1	S0177	g.3640_3643delCAAC, c.314_317delCAAC, r.314_317delcaac,; p.Pro105fsX42	3640	3643	deletion	0
+SERPING1	S0178	g.3640_3643delCAAC, c.314_317delCAAC, r.314_317delcaac,; p.Pro105fsX42	3640	3643	deletion	0
+SERPING1	S0091	g.3649dupA, c.323dupA, r.323dupa, p.Leu109fsX24	3650	3650	duplication	0
+SERPING1	S0120	g.3672C>T, c.346C>T, r.346c>u, p.Gln116X	3672	3672	point	0
+SERPING1	S0149	g.3715G>A, c.389G>A, r.389g>a, p.Cys130Tyr	3715	3715	point	0
+SERPING1	S0150	g.3715G>A, c.389G>A, r.389g>a, p.Cys130Tyr	3715	3715	point	0
+SERPING1	S0162	g.3716_3717delCT, c.390_391delCT, r.390_391delcu,; p.Ser131fsX1	3716	3717	deletion	0
+SERPING1	S0208	g.3756delG, c.430delG, r.430delg, p.Asp144fsX4	3756	3756	deletion	0
+SERPING1	S0163	g.3761_3802del, c.435_476del, r.435_476del, p.Ala145del	3761	3802	deletion	0
+SERPING1	S0164	g.3761_3802del, c.435_476del, r.435_476del, p.Ala145del	3761	3802	deletion	0
+SERPING1	S0209	g.3788C>G, c.462C>G, r.462c>g, p.Tyr154X	3788	3788	point	0
+SERPING1	S0034	g.3832T>C, c.506T>C, r.506u>c, p.Phe169Ser	3832	3832	point	0
+SERPING1	S0210	g.3832T>C, c.506T>C, r.506u>c, p.Phe169Ser	3832	3832	point	0
+SERPING1	S0113	g.3834T>C, c.508T>C, r.508u>c, p.Ser170Pro	3834	3834	point	0
+SERPING1	S0035	g.3838C>T, c.512C>T, r.512c>u, p.Pro171Leu	3838	3838	point	0
+SERPING1	S0211	g.3838C>T, c.512C>T, r.512c>u, p.Pro171Leu	3838	3838	point	0
+SERPING1	S0036	g.3859_3860dup, c.533_534dup, r.533_534dup, p.Thr179fsX33	3861	3861	duplication	0
+SERPING1	S0058	g.5533G>A, c.551G>A, r.551g>a, p.Gly184Glu	5533	5533	point	0
+SERPING1	S0059	g.5533G>A, c.551G>A, r.551g>a, p.Gly184Glu	5533	5533	point	0
+SERPING1	S0037	g.3876G>A, c.550G>A, r.550g>a, p.Gly184Arg	3876	3876	point	0
+SERPING1	S0038	g.3876G>A, c.550G>A, r.550g>a, p.Gly184Arg	3876	3876	point	0
+SERPING1	S0052	g.3876G>A, c.550G>A, r.550g>a, p.Gly184Arg	3876	3876	point	0
+SERPING1	S0053	g.3876G>A, c.550G>A, r.550g>a, p.Gly184Arg	3876	3876	point	0
+SERPING1	S0054	g.3876G>A, c.550G>A, r.550g>a, p.Gly184Arg	3876	3876	point	0
+SERPING1	S0055	g.3876G>A, c.550G>A, r.550g>a, p.Gly184Arg	3876	3876	point	0
+SERPING1	S0056	g.3876G>A, c.550G>A, r.550g>a, p.Gly184Arg	3876	3876	point	0
+SERPING1	S0057	g.3876G>A, c.550G>A, r.550g>a, p.Gly184Arg	3876	3876	point	0
+SERPING1	S0115	g.3876G>A, c.550G>A, r.550g>a, p.Gly184Arg	3876	3876	point	0
+SERPING1	S0119	g.3876G>A, c.550G>A, r.550g>a, p.Gly184Arg	3876	3876	point	0
+SERPING1	S0212	g.3876G>A, c.550G>A, r.550g>a, p.Gly184Arg	3876	3876	point	0
+SERPING1	S0213	g.3876G>A, c.550G>A, r.550g>a, p.Gly184Arg	3876	3876	point	0
+SERPING1	S0214	g.3876G>A, c.550G>A, r.550g>a, p.Gly184Arg	3876	3876	point	0
+SERPING1	S0215	g.3876G>A, c.550G>A, r.550g>a, p.Gly184Arg	3876	3876	point	0
+SERPING1	S0216	g.3876G>C, c.550G>C, r.550g>c, p.Gly184Arg	3876	3876	point	0
+SERPING1	S0060	g.5553delA, c.571delA, r.571dela, p.Thr191fsX20	5553	5553	deletion	0
+SERPING1	S0061	g.5553delA, c.571delA, r.571dela, p.Thr191fsX20	5553	5553	deletion	0
+SERPING1	S0039	g.5553dupA, c.571dupA, r.571dupa, p.Thr191fsX66	5554	5554	duplication	0
+SERPING1	S0222	g.5560T>C, c.578T>C, r.578u>c, p.Leu193Pro	5560	5560	point	0
+SERPING1	S0223	g.5577T>A, c.595T>A, r.595u>a, p.Tyr199Asn	5577	5577	point	0
+SERPING1	S0040	g.5582delC, c.600delC, r.600delc, p.Lys201fsX10	5582	5582	deletion	0
+SERPING1	S0062	g.5596G>A, c.614G>A, r.614g>a, p.Cys205Tyr	5596	5596	point	0
+SERPING1	S0063	g.5596G>A, c.614G>A, r.614g>a, p.Cys205Tyr	5596	5596	point	0
+SERPING1	S0064	g.5596G>A, c.614G>A, r.614g>a, p.Cys205Tyr	5596	5596	point	0
+SERPING1	S0224	g.5604delC, c.622delC, r.622delc, p.Gln208fsX3	5604	5604	deletion	0
+SERPING1	S0065	g.5610delC, c.628delC, r.628delc, p.Leu210X	5610	5610	deletion	0
+SERPING1	S0066	g.5635delT, c.653delT, r.653delu, p.Val218Asp	5635	5635	deletion	0
+SERPING1	S0067	g.5635delT, c.653delT, r.653delu, p.Val218Asp	5635	5635	deletion	0
+SERPING1	S0068	g.5635delT, c.653delT, r.653delu, p.Val218Asp	5635	5635	deletion	0
+SERPING1	S0069	g.5642dupA, c.660dupA, r.660dupa, p.Val221fsX36	5643	5643	duplication	0
+SERPING1	S0160	g.5649C>T, c.667C>T, r.667c>u, p.Gln223X	5649	5649	point	0
+SERPING1	S0225	g.5653T>G, c.671T>G, r.671u>g, p.Ile224Ser	5653	5653	point	0
+SERPING1	S0231	g.9684_9684delinsAA, c.863_864delinsAA, r.863_864delinsaa,; p.Val288Glu	9684	9685	complex	0
+SERPING1	S0025	g.9528T>C, c.707T>C, r.707u>c, p.Phe236Ser	9528	9528	point	0
+SERPING1	S0117	g.9552_9553delinsT, c.731_732delinsT, r.731_732delinsu,; p.Tyr244fsX8	9552	9553	indel	0
+SERPING1	S0227	g.9564C>G, c.743C>G, r.743c>g, p.Pro248Arg	9564	9564	point	0
+SERPING1	S0026	g.9565delC, c.744delC, r.744delc, p.Arg249fsX3	9565	9565	deletion	0
+SERPING1	S0027	g.9572delC, c.751delC, r.751delc, p.Leu251X	9572	9572	deletion	0
+SERPING1	S0028	g.9637_9639delCAA, c.816_818delCAA, r.816_818delcaa,; p.Asn272del	1142	1142	point	0
+SERPING1	S0028	g.9637_9639delCAA, c.816_818delCAA, r.816_818delcaa,; p.Asn272del	9637	9639	deletion	0
+SERPING1	S0228	g.9599G>T, c.778G>T, r.778g>u, p.Glu260X	9599	9599	point	0
+SERPING1	S0229	g.9616G>A, c.795G>A, r.795g>a, p.Trp265X	9616	9616	point	0
+SERPING1	S0080	g.9626_9630dup, c.805_809dup, r.805_809dup, p.Asn271fsX10	9631	9631	duplication	0
+SERPING1	S0081	g.9637_9639delCAA, c.816_818delCAA, r.816_818delcaa,; p.Asn272del	9637	9639	deletion	0
+SERPING1	S0230	g.9637_9639delCAA, c.816_818delCAA, r.816_818delcaa,; p.Asn272del	9637	9639	deletion	0
+SERPING1	S0070	g.9638_9640delAAG, c.817_819delAAG, r.817_819delaag,; p.Lys273del	9638	9640	deletion	0
+SERPING1	S0071	g.9638_9640delAAG, c.817_819delAAG, r.817_819delaag,; p.Lys273del	9638	9640	deletion	0
+SERPING1	S0079	g.9638_9640delAAG, c.817_819delAAG, r.817_819delaag,; p.Lys273del	9638	9640	deletion	0
+SERPING1	S0082	g.9639_9641delAGA, c.818_820delAGA, r.818_820delaga,; p.Lys273del	9639	9641	deletion	0
+SERPING1	S0072	g.9641A>G, c.820A>G, r.820a>g, p.Ile274Val	9641	9641	point	0
+SERPING1	S0100	g.9675_9676delCC, c.854_855delCC, r.854_855delcc,; p.Arg286fsX18	9675	9676	deletion	0
+SERPING1	S0101	g.9675_9676delCC, c.854_855delCC, r.854_855delcc,; p.Arg286fsX18	9675	9676	deletion	0
+SERPING1	S0108	g.9699T>C, c.878T>C, r.878u>c, p.Ile293Thr	9699	9699	point	0
+SERPING1	S0261	g.9699_9702delTCTA, c.878_881delTCTA, r.878_881delucua,; p.Ile293fsX2	9699	9702	deletion	0
+SERPING1	S0262	g.9699_9702delTCTA, c.878_881delTCTA, r.878_881delucua,; p.Ile293fsX2	9699	9702	deletion	0
+SERPING1	S0233	g.9705T>G, c.884T>G, r.884u>g, p.Leu295Arg	9705	9705	point	0
+SERPING1	S0110	g.9919_9921delACA, c.904_906delACA, r.904_906delaca,; p.Thr302del	9919	9921	deletion	0
+SERPING1	S0029	g.9923T>G, c.908T>G, r.908u>g, p.Phe303Cys	9923	9923	point	0
+SERPING1	S0030	g.9989T>C, c.974T>C, r.974u>c, p.Met325Thr	9989	9989	point	0
+SERPING1	S0111	g.9989T>C, c.974T>C, r.974u>c, p.Met325Thr	9989	9989	point	0
+SERPING1	S0031	g.9996_9997delCA, c.981_982delCA, r.981_982delca,; p.Ser327fsX10	9996	9997	deletion	0
+SERPING1	S0235	g.9993_9994dup, c.978_979dup, r.978_979dup, p.Ser327fsX15	9995	9995	duplication	0
+SERPING1	S0032	g.10005C>G, c.990C>G, r.990c>g, p.Tyr330X	10005	10005	point	0
+SERPING1	S0236	g.10005C>G, c.990C>G, r.990c>g, p.Tyr330X	10005	10005	point	0
+SERPING1	S0005	g.15213_15432del, c.1030_1249del, r.1030_1249del,; p.Val344fsX14	15213	15432	deletion	0
+SERPING1	S0237	g.15216G>A, c.1033G>A, r.1033g>a, p.Gly345Arg	15216	15216	point	0
+SERPING1	S0268	g.15216G>A, c.1033G>A, r.1033g>a, p.Gly345Arg	15216	15216	point	0
+SERPING1	S0269	g.15216G>A, c.1033G>A, r.1033g>a, p.Gly345Arg	15216	15216	point	0
+SERPING1	S0270	g.15216G>A, c.1033G>A, r.1033g>a, p.Gly345Arg	15216	15216	point	0
+SERPING1	S0271	g.15216G>A, c.1033G>A, r.1033g>a, p.Gly345Arg	15216	15216	point	0
+SERPING1	S0272	g.15216G>A, c.1033G>A, r.1033g>a, p.Gly345Arg	15216	15216	point	0
+SERPING1	S0273	g.15216G>A, c.1033G>A, r.1033g>a, p.Gly345Arg	15216	15216	point	0
+SERPING1	S0274	g.15216G>A, c.1033G>A, r.1033g>a, p.Gly345Arg	15216	15216	point	0
+SERPING1	S0275	g.15216G>A, c.1033G>A, r.1033g>a, p.Gly345Arg	15216	15216	point	0
+SERPING1	S0276	g.15216G>A, c.1033G>A, r.1033g>a, p.Gly345Arg	15216	15216	point	0
+SERPING1	S0044	g.15219C>T, c.1036C>T, r.1036c>u, p.Gln346X	15219	15219	point	0
+SERPING1	S0107	g.15252delA, c.1069delA, r.1069dela, p.Ile357fsX7	15252	15252	deletion	0
+SERPING1	S0083	g.15264C>T, c.1081C>T, r.1081c>u, p.Gln361X	15264	15264	point	0
+SERPING1	S0084	g.15264C>T, c.1081C>T, r.1081c>u, p.Gln361X	15264	15264	point	0
+SERPING1	S0085	g.15264C>T, c.1081C>T, r.1081c>u, p.Gln361X	15264	15264	point	0
+SERPING1	S0086	g.15264C>T, c.1081C>T, r.1081c>u, p.Gln361X	15264	15264	point	0
+SERPING1	S0087	g.15264C>T, c.1081C>T, r.1081c>u, p.Gln361X	15264	15264	point	0
+SERPING1	S0165	g.15289delA, c.1106delA, r.1106dela, p.Asp369fsX28	15289	15289	deletion	0
+SERPING1	S0238	g.15297C>T, c.1114C>T, r.1114c>u, p.Gln372X	15297	15297	point	0
+SERPING1	S0239	g.15319T>C, c.1136T>C, r.1136u>c, p.Phe379Ser	15319	15319	point	0
+SERPING1	S0045	g.15363A>C, c.1180A>C, r.1180a>c, p.Thr394Pro	15363	15363	point	0
+SERPING1	S0152	g.15363A>C, c.1180A>C, r.1180a>c, p.Thr394Pro	15363	15363	point	0
+SERPING1	S0240	g.15379C>T, c.1196C>T, r.1196c>u, p.Pro399Leu	15379	15379	point	0
+SERPING1	S0241	g.15379C>G, c.1196C>G, r.1196c>g, p.Pro399Arg	15379	15379	point	0
+SERPING1	S0242	g.15386dupC, c.1203dupC, r.1203dupc, p.Lys402fsX23	15387	15387	duplication	0
+SERPING1	S0151	g.15406A>T, c.1223A>T, r.1223a>u, p.Asp408Val	15406	15406	point	0
+SERPING1	S0243	g.15409T>C, c.1226T>C, r.1226u>c, p.Met409Thr	15409	15409	point	0
+SERPING1	S0244	g.15410delG, c.1227delG, r.1227delg, p.Met409fsX22	15410	15410	deletion	0
+SERPING1	S0121	g.15415C>A, c.1232C>A, r.1232c>a, p.Ser411X	15415	15415	point	0
+SERPING1	S0011	g.17838delT, c.1264delT, r.1264delu, p.Ser422fsX9	17838	17838	deletion	0
+SERPING1	S0012	g.17838delT, c.1264delT, r.1264delu, p.Ser422fsX9	17838	17838	deletion	0
+SERPING1	S0009	g.17842dupA, c.1268dupA, r.1268dupa, p.Tyr423X	17843	17843	duplication	0
+SERPING1	S0010	g.17842dupA, c.1268dupA, r.1268dupa, p.Tyr423X	17843	17843	duplication	0
+SERPING1	S0102	g.17858_17859delTG, c.1284_1285delTG, r.1284_1285delug,; p.Cys428fsX44	17858	17859	deletion	0
+SERPING1	S0197	g.17880delC, c.1306delC, r.1306delc, p.Leu436fsX14	17880	17880	deletion	0
+SERPING1	S0116	g.17890delC, c.1316delC, r.1316delc, p.Ser439fsX11	17890	17890	deletion	0
+SERPING1	S0145	g.17889delT, c.1315delT, r.1315delu, p.Ser439fsX11	17889	17889	deletion	0
+SERPING1	S0073	g.17902A>G, c.1328A>G, r.1328a>g, p.His443Arg	17902	17902	point	0
+SERPING1	S0123	g.17902A>G, c.1328A>G, r.1328a>g, p.His443Arg	17902	17902	point	0
+SERPING1	S0114	g.17917_17919delinsT, c.1343_1345delinsT,; r.1343_1345delinsu, p.Glu448fsX24	17917	17919	indel	0
+SERPING1	S0277	g.17925_17926delGA, c.1351_1352delGA, r.1351_1352delga,; p.Glu451fsX21	17925	17926	deletion	0
+SERPING1	S0147	g.17924dupA, c.1350dupA, r.1350dupa, p.Glu451fsX22	17925	17925	duplication	0
+SERPING1	S0148	g.17924dupA, c.1350dupA, r.1350dupa, p.Glu451fsX22	17925	17925	duplication	0
+SERPING1	S0016	g.17931_17932insTGT, c.1357_1358insTGT, r.1357_1358insugu,; p.Thr452_Gly453insValTrp	17932	17932	insertion	0
+SERPING1	S0014	g.17935T>A, c.1361T>A, r.1361u>a, p.Val454Glu	17935	17935	point	0
+SERPING1	S0077	g.17934_17967del, c.1360_1393del, r.1360_1393del,; p.Val454fsX82	17934	17967	deletion	0
+SERPING1	S0122	g.17941C>A, c.1367C>A, r.1367c>a, p.Ala456Glu	17941	17941	point	0
+SERPING1	S0124	g.17941C>A, c.1367C>A, r.1367c>a, p.Ala456Glu	17941	17941	point	0
+SERPING1	S0006	g.17946G>A, c.1372G>A, r.1372g>a, p.Ala458Thr	17946	17946	point	0
+SERPING1	S0007	g.17946G>A, c.1372G>A, r.1372g>a, p.Ala458Thr	17946	17946	point	0
+SERPING1	S0015	g.17946G>A, c.1372G>A, r.1372g>a, p.Ala458Thr	17946	17946	point	0
+SERPING1	S0125	g.17952T>C, c.1378T>C, r.1378u>c, p.Ser460Pro	17952	17952	point	0
+SERPING1	S0166	g.17931_17956dup, c.1357_1382dup, r.1357_1382dup,; p.Ile462fsX94	17957	17957	duplication	0
+SERPING1	S0263	Allele 1 and 2: g.17959T>G, c.1385T>G, r.1385u>g,; p.Ile462Ser	17959	17959	point	0
+SERPING1	S0264	Allele 1 and 2: g.17959T>G, c.1385T>G, r.1385u>g,; p.Ile462Ser	17959	17959	point	0
+SERPING1	S0146	g.17957dupC, c.1383dupC, r.1383dupc, p.Ile462fsX11	17958	17958	duplication	0
+SERPING1	S0001	g.17970C>T, c.1396C>T, r.1396c>u, p.Arg466Cys	17970	17970	point	0
+SERPING1	S0002	g.17970C>T, c.1396C>T, r.1396c>u, p.Arg466Cys	17970	17970	point	0
+SERPING1	S0103	g.17970C>T, c.1396C>T, r.1396c>u, p.Arg466Cys	17970	17970	point	0
+SERPING1	S0104	g.17970C>T, c.1396C>T, r.1396c>u, p.Arg466Cys	17970	17970	point	0
+SERPING1	S0118	g.17970C>T, c.1396C>T, r.1396c>u, p.Arg466Cys	17970	17970	point	0
+SERPING1	S0126	g.17970C>T, c.1396C>T, r.1396c>u, p.Arg466Cys	17970	17970	point	0
+SERPING1	S0127	g.17970C>T, c.1396C>T, r.1396c>u, p.Arg466Cys	17970	17970	point	0
+SERPING1	S0128	g.17970C>T, c.1396C>T, r.1396c>u, p.Arg466Cys	17970	17970	point	0
+SERPING1	S0129	g.17970C>T, c.1396C>T, r.1396c>u, p.Arg466Cys	17970	17970	point	0
+SERPING1	S0153	g.17970C>T, c.1396C>T, r.1396c>u, p.Arg466Cys	17970	17970	point	0
+SERPING1	S0154	g.17970C>T, c.1396C>T, r.1396c>u, p.Arg466Cys	17970	17970	point	0
+SERPING1	S0155	g.17970C>T, c.1396C>T, r.1396c>u, p.Arg466Cys	17970	17970	point	0
+SERPING1	S0265	g.17970C>T, c.1396C>T, r.1396c>u, p.Arg466Cys	17970	17970	point	0
+SERPING1	S0266	g.17970C>T, c.1396C>T, r.1396c>u, p.Arg466Cys	17970	17970	point	0
+SERPING1	S0267	g.17970C>T, c.1396C>T, r.1396c>u, p.Arg466Cys	17970	17970	point	0
+SERPING1	S0003	g.17971G>A, c.1397G>A, r.1397g>a, p.Arg466His	17971	17971	point	0
+SERPING1	S0004	g.17971G>A, c.1397G>A, r.1397g>a, p.Arg466His	17971	17971	point	0
+SERPING1	S0074	g.17971G>A, c.1397G>A, r.1397g>a, p.Arg466His	17971	17971	point	0
+SERPING1	S0105	g.17971G>A, c.1397G>A, r.1397g>a, p.Arg466His	17971	17971	point	0
+SERPING1	S0106	g.17971G>A, c.1397G>A, r.1397g>a, p.Arg466His	17971	17971	point	0
+SERPING1	S0130	g.17971G>A, c.1397G>A, r.1397g>a, p.Arg466His	17971	17971	point	0
+SERPING1	S0131	g.17971G>A, c.1397G>A, r.1397g>a, p.Arg466His	17971	17971	point	0
+SERPING1	S0171	g.17971G>A, c.1397G>A, r.1397g>a, p.Arg466His	17971	17971	point	0
+SERPING1	S0172	g.17971G>A, c.1397G>A, r.1397g>a, p.Arg466His	17971	17971	point	0
+SERPING1	S0195	g.17971G>A, c.1397G>A, r.1397g>a, p.Arg466His	17971	17971	point	0
+SERPING1	S0075	g.17971G>T, c.1397G>T, r.1397g>u, p.Arg466Leu	17971	17971	point	0
+SERPING1	S0089	g.17971G>T, c.1397G>T, r.1397g>u, p.Arg466Leu	17971	17971	point	0
+SERPING1	S0112	g.17971G>T, c.1397G>T, r.1397g>u, p.Arg466Leu	17971	17971	point	0
+SERPING1	S0132	g.17971G>T, c.1397G>T, r.1397g>u, p.Arg466Leu	17971	17971	point	0
+SERPING1	S0133	g.17971G>C, c.1397G>C, r.1397g>c, p.Arg466Pro	17971	17971	point	0
+SERPING1	S0008	g.17970C>A, c.1396C>A, r.1396c>a, p.Arg466Ser	17970	17970	point	0
+SERPING1	S0179	g.17973A>C, c.1399A>C, r.1399a>c, p.Thr467Pro	17973	17973	point	0
+SERPING1	S0180	g.17973A>C, c.1399A>C, r.1399a>c, p.Thr467Pro	17973	17973	point	0
+SERPING1	S0181	g.17973A>C, c.1399A>C, r.1399a>c, p.Thr467Pro	17973	17973	point	0
+SERPING1	S0182	g.17973A>C, c.1399A>C, r.1399a>c, p.Thr467Pro	17973	17973	point	0
+SERPING1	S0183	g.17973A>C, c.1399A>C, r.1399a>c, p.Thr467Pro	17973	17973	point	0
+SERPING1	S0078	g.17953_17972dup, c.1379_1398dup, r.1379_1398dup,; p.Thr467fsX87	17973	17973	duplication	0
+SERPING1	S0156	g.17992T>A, c.1418T>A, r.1418u>a, p.Val473Glu	17992	17992	point	0
+SERPING1	S0134	g.17992T>G, c.1418T>G, r.1418u>g, p.Val473Gly	17992	17992	point	0
+SERPING1	S0017	g.17991G>A, c.1417G>A, r.1417g>a, p.Val473Met	17991	17991	point	0
+SERPING1	S0018	g.17994C>G; g.18016T>G, c.1420C>G; c.1442T>G, r.1420c>g;; r.1442u>g, p.Gln474Glu; p.Leu481Arg	17994	17994	point	0
+SERPING1	S0018	g.17994C>G; g.18016T>G, c.1420C>G; c.1442T>G, r.1420c>g;; r.1442u>g, p.Gln474Glu; p.Leu481Arg	18016	18016	point	0
+SERPING1	S0019	g.18004T>C, c.1430T>C, r.1430u>c, p.Phe477Ser	18004	18004	point	0
+SERPING1	S0094	g.18009T>C, c.1435T>C, r.1435u>c, p.Phe479Leu	18009	18009	point	0
+SERPING1	S0020	g.18016T>C, c.1442T>C, r.1442u>c, p.Leu481Pro	18016	18016	point	0
+SERPING1	S0135	g.18020G>A, c.1446G>A, r.1446g>a, p.Trp482X	18020	18020	point	0
+SERPING1	S0284	g.18019G>A, c.1445G>A, r.1445g>a, p.Trp482X	18019	18019	point	0
+SERPING1	S0285	g.18019G>A, c.1445G>A, r.1445g>a, p.Trp482X	18019	18019	point	0
+SERPING1	S0286	g.18019G>A, c.1445G>A, r.1445g>a, p.Trp482X	18019	18019	point	0
+SERPING1	S0136	g.18024C>T, c.1450C>T, r.1450c>u, p.Gln484X	18024	18024	point	0
+SERPING1	S0021	g.18040C>G, c.1466C>G, r.1466c>g, p.Pro489Arg	18040	18040	point	0
+SERPING1	S0137	g.18043T>A, c.1469T>A, r.1469u>a, p.Val490Asp	18043	18043	point	0
+SERPING1	S0092	g.18049T>A, c.1475T>A, r.1475u>a, p.Met492Lys	18049	18049	point	0
+SERPING1	S0093	g.18049T>A, c.1475T>A, r.1475u>a, p.Met492Lys	18049	18049	point	0
+SERPING1	S0138	g.18052G>A, c.1478G>A, r.1478g>a, p.Gly493Glu	18052	18052	point	0
+SERPING1	S0157	g.18052G>A, c.1478G>A, r.1478g>a, p.Gly493Glu	18052	18052	point	0
+SERPING1	S0050	g.18051G>A, c.1477G>A, r.1477g>a, p.Gly493Arg	18051	18051	point	0
+SERPING1	S0022	g.18054C>T, c.1480C>T, r.1480c>u, p.Arg494X	18054	18054	point	0
+SERPING1	S0023	g.18054C>T, c.1480C>T, r.1480c>u, p.Arg494X	18054	18054	point	0
+SERPING1	S0076	g.18054C>T, c.1480C>T, r.1480c>u, p.Arg494X	18054	18054	point	0
+SERPING1	S0139	g.18054C>T, c.1480C>T, r.1480c>u, p.Arg494X	18054	18054	point	0
+SERPING1	S0140	g.18054C>T, c.1480C>T, r.1480c>u, p.Arg494X	18054	18054	point	0
+SERPING1	S0141	g.18054C>T, c.1480C>T, r.1480c>u, p.Arg494X	18054	18054	point	0
+SERPING1	S0142	g.18054C>T, c.1480C>T, r.1480c>u, p.Arg494X	18054	18054	point	0
+SERPING1	S0143	g.18054C>T, c.1480C>T, r.1480c>u, p.Arg494X	18054	18054	point	0
+SERPING1	S0161	g.18054C>T, c.1480C>T, r.1480c>u, p.Arg494X	18054	18054	point	0
+SERPING1	S0158	g.18067C>G, c.1493C>G, r.1493c>g, p.Pro498Arg	18067	18067	point	0
+SERPING1	S0024	g.18066C>T, c.1492C>T, r.1492c>u, p.Pro498Ser	18066	18066	point	0
+SERPING1	S0144	g.18075T>A, c.1501T>A, r.1501u>a, p.501	18075	18075	point	0
+SERPING1	S0046	g.IVS1-1G>A, c.-21-1G>A, r.-21-1g>a,	1746	1746	point	0
+SERPING1	S0047	g.IVS2+5G>A, c.51+5G>A, r.51+5g>a,	1824	1824	point	0
+SERPING1	S0109	g.IVS2-2A>, c.52-2A>, r.52-2a>,	3376	3376	deletion	0
+SERPING1	S0167	g.IVS2+1G>A, c.51+1G>A, r.51+1g>a,	1820	1820	point	0
+SERPING1	S0168	g.IVS2+1G>A, c.51+1G>A, r.51+1g>a,	1820	1820	point	0
+SERPING1	S0198	g.IVS2+3A>G, c.51+3A>G, r.51+3a>g,	1822	1822	point	0
+SERPING1	S0199	g.IVS2+3A>G, c.51+3A>G, r.51+3a>g,	1822	1822	point	0
+SERPING1	S0169	g.IVS3+1G>A, c.550+1G>A, r.550+1g>a,	3877	3877	point	0
+SERPING1	S0170	g.IVS3+3>T, c.550+3>T, r.550+3>u,	3879	3879	duplication	0
+SERPING1	S0217	g.IVS3+2T>C, c.550+2T>C, r.550+2u>c,	3878	3878	point	0
+SERPING1	S0218	g.IVS3+5G>C, c.550+5G>C, r.550+5g>c,	3881	3881	point	0
+SERPING1	S0219	g.IVS3+5G>C, c.550+5G>C, r.550+5g>c,	3881	3881	point	0
+SERPING1	S0220	g.IVS3+5G>A, c.550+5G>A, r.550+5g>a,	3881	3881	point	0
+SERPING1	S0221	g.IVS3-2A>, c.551-2A>, r.551-2a>,	5531	5531	deletion	0
+SERPING1	S0226	g.IVS4-3C>G, c.686-3C>G, r.686-3c>g,	9504	9504	point	0
+SERPING1	S0090	g.IVS5-2A>G, c.890-2A>G, r.890-2a>g,	9903	9903	point	0
+SERPING1	S0234	g.IVS5+2T>C, c.889+2T>C, r.889+2u>c,	9712	9712	point	0
+SERPING1	S0260	g.IVS5-1G>A, c.890-1G>A, r.890-1g>a,	9904	9904	point	0
+SERPING1	S0013	g.IVS6+1G>T, c.1029+1G>T, r.1029+1g>u,	10045	10045	point	0
+SERPING1	S0041	g.IVS6-12CTTATTTTCTAGGTGGGGCAGCTGCAGC>,; c.1030-12CTTATTTTCTAGGTGGGGCAGCTGCAGC>,; r.1030-12cuuauuuucuagguggggcagcugcagc>,	15201	15228	deletion	0
+SERPING1	S0042	g.IVS6-2AGGT>GCA, c.1030-2AGGT>GCA, r.1030-2aggu>gca,	15211	15214	indel	0
+SERPING1	S0043	g.IVS6-1G>C, c.1030-1G>C, r.1030-1g>c,	15212	15212	point	0
+SERPING1	S0232	g.9703C>G, c.882C>G, r.882c>g	9703	9703	point	0
+SERPING1	S0048	Allele 1 and 2: g.c.r.	1080	1080	point	0
+SERPING1	S0048	Allele 1 and 2: g.c.r.	1080	1080	point	2
+SERPING1	S0173	g.IVS6-1G>A, c.1030-1G>A, r.1030-1g>a,	15212	15212	point	0
+SERPING1	S0174	g.IVS6-1G>A, c.1030-1G>A, r.1030-1g>a,	15212	15212	point	0
+SERPING1	S0088	g.IVS7+2T>A, c.1249+2T>A, r.1249+2u>a,	15434	15434	point	0
+SERPING1	S0245	g.IVS7+2T>, c.1249+2T>, r.1249+2u>,	15434	15434	deletion	0
+SERPING1	S0184	g.4348_6970del	4348	6970	deletion	0
+SERPING1	S0185	g.4271_7470del	4271	7470	deletion	0
+SMARCAL1	S0007	Allele 1: g.IVS4-2A>G, c.1097-2A>G, r.1097-2a>g,; Allele 2: g.IVS6+1GT>, c.1334+1GT>, r.1334+1gu>,	9927	9927	point	1
+SMARCAL1	S0007	Allele 1: g.IVS4-2A>G, c.1097-2A>G, r.1097-2a>g,; Allele 2: g.IVS6+1GT>, c.1334+1GT>, r.1334+1gu>,	15079	15080	deletion	2
+SPINK5	S0071	Allele 1 and 2: g.32779G>A, c.800G>A, r.800g>a, p.Arg267Gln	32779	32779	point	1
+SPINK5	S0071	Allele 1 and 2: g.32779G>A, c.800G>A, r.800g>a, p.Arg267Gln	32779	32779	point	2
+SPINK5	S0018	Allele 1 and 2: g.IVS2+2T>A, c.81+2T>A, r.81+2u>a,	2330	2330	point	1
+SPINK5	S0018	Allele 1 and 2: g.IVS2+2T>A, c.81+2T>A, r.81+2u>a,	2330	2330	point	2
+SPINK5	S0034	Allele 1: g.IVS2+5G>A, c.81+5G>A, r.81+5g>a,; Allele 2: g.IVS23+1G>A, c.2240+1G>A, r.2240+1g>a,	2333	2333	point	1
+SPINK5	S0034	Allele 1: g.IVS2+5G>A, c.81+5G>A, r.81+5g>a,; Allele 2: g.IVS23+1G>A, c.2240+1G>A, r.2240+1g>a,	55521	55521	point	2
+SPINK5	S0055	Allele 1 and 2: g.IVS15-12G>A, c.1431-12G>A, r.1431-12g>a,	41896	41896	point	1
+SPINK5	S0055	Allele 1 and 2: g.IVS15-12G>A, c.1431-12G>A, r.1431-12g>a,	41896	41896	point	2
+SPINK5	S0056	Allele 1 and 2: g.IVS15-12G>A, c.1431-12G>A, r.1431-12g>a,	41896	41896	point	1
+SPINK5	S0056	Allele 1 and 2: g.IVS15-12G>A, c.1431-12G>A, r.1431-12g>a,	41896	41896	point	2
+SPINK5	S0072	Allele 1 and 2: g.IVS15+2T>G, c.1430+2T>G, r.1430+2u>g	38866	38866	point	1
+SPINK5	S0072	Allele 1 and 2: g.IVS15+2T>G, c.1430+2T>G, r.1430+2u>g	38866	38866	point	2
+SPINK5	S0082	Allele 1: g.41896G>A, c.1431-12G>A, r.1431-12g>a	41896	41896	point	1
+SPINK5	S0008	Allele 1 and 2: g.IVS20-1G>A, c.1888-1G>A, r.1888-1g>a,	51317	51317	point	1
+SPINK5	S0008	Allele 1 and 2: g.IVS20-1G>A, c.1888-1G>A, r.1888-1g>a,	51317	51317	point	2
+SPINK5	S0037	Allele 1 and 2: g.IVS20-1G>A, c.1888-1G>A, r.1888-1g>a,	51317	51317	point	1
+SPINK5	S0037	Allele 1 and 2: g.IVS20-1G>A, c.1888-1G>A, r.1888-1g>a,	51317	51317	point	2
+SPINK5	S0027	Allele 1: g.IVS22+1G>A, c.2112+1G>A, r.2112+1g>a,	53423	53423	point	1
+SPINK5	S0033	Allele 1: g.IVS23+1G>A, c.2240+1G>A, r.2240+1g>a,	55521	55521	point	1
+SPINK5	S0009	Allele 1 and 2: g.56014G>A, c.2313G>A, r.2313g>a	56014	56014	point	1
+SPINK5	S0009	Allele 1 and 2: g.56014G>A, c.2313G>A, r.2313g>a	56014	56014	point	2
+SPINK5	S0086	Allele 1 and 2: g.57095_57098delGAGT,; c.2441+3_2441+6delGAGT, r.2441+3_2441+6delgagu	57095	57098	deletion	1
+SPINK5	S0086	Allele 1 and 2: g.57095_57098delGAGT,; c.2441+3_2441+6delGAGT, r.2441+3_2441+6delgagu	57095	57098	deletion	2
+SPINK5	S0087	Allele 1 and 2: g.57095_57098delGAGT,; c.2441+3_2441+6delGAGT, r.2441+3_2441+6delgagu	57095	57098	deletion	1
+SPINK5	S0087	Allele 1 and 2: g.57095_57098delGAGT,; c.2441+3_2441+6delGAGT, r.2441+3_2441+6delgagu	57095	57098	deletion	2
+STX11	S0010	Allele 1 and 2: g.27357..46546del	27357	46546	deletion	1
+STX11	S0010	Allele 1 and 2: g.27357..46546del	27357	46546	deletion	2
+TAP1	T0002	Allele 1 and 2: g.IVS1-1G>A	26157	26157	point	1
+TAP1	T0002	Allele 1 and 2: g.IVS1-1G>A	26157	26157	point	2
+TAZ	T0082	g.10121A>C, c.700A>C, r.700a>c, p.Lys234Gln	10121	10121	point	0
+UNG	U0003	Allele 1 and 2: g.2667_2668delAT, c.427_428delAT,; r.427_428delau, p.Ile143fsX17	2667	2668	deletion	1
+UNG	U0003	Allele 1 and 2: g.2667_2668delAT, c.427_428delAT,; r.427_428delau, p.Ile143fsX17	2667	2668	deletion	2
+UNG	U0002	Allele 1 and 2: g.6953T>C, c.752T>C, r.752u>c, p.Phe251Ser	6953	6953	point	1
+UNG	U0002	Allele 1 and 2: g.6953T>C, c.752T>C, r.752u>c, p.Phe251Ser	6953	6953	point	2

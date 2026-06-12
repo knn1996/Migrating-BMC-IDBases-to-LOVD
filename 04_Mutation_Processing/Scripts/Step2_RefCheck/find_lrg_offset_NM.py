@@ -1,34 +1,31 @@
-import argparse
-import os
+﻿import os
 import re
+import argparse
 import pandas as pd
 from pathlib import Path
 
 _SCRIPT_DIR = Path(__file__).parent
 _THESIS_DIR = (_SCRIPT_DIR / ".." / ".." / "..").resolve()
 _PROC_DIR   = _THESIS_DIR / "04_Mutation_Processing"
+_SEQ_DIR    = _PROC_DIR / "DNA sequences"
 
 SOURCE_DIRS = {
-    "MANE": _PROC_DIR / "DNA sequences" / "Mane_Select_NM",
-    "LRG":  _PROC_DIR / "DNA sequences" / "LRG FASTA file (Source 3)" / "NM",
+    "IDRefseq_NM": _SEQ_DIR / "IDRefseq_NM",
+    "Mane_NM":     _SEQ_DIR / "Mane_Select_NM",
 }
 
-parser = argparse.ArgumentParser()
-parser.add_argument("--source", choices=["MANE", "LRG"], default="LRG",
-                    help="NM FASTA source: MANE (Mane_Select_NM) or LRG (Source 3 NM)")
-args = parser.parse_args()
+OUTPUT_CSVS = {
+    "IDRefseq_NM": _PROC_DIR / "Output" / "Step2_RefCheck" / "lrg_offset_results_NM.csv",
+    "Mane_NM":     _PROC_DIR / "Output" / "Step2_RefCheck" / "lrg_offset_results_NM_MANE.csv",
+}
 
-MUTATIONS_TSV = _PROC_DIR / "Output" / "Step1_Extraction" / "all_mutations.tsv"
-NM_DIR        = SOURCE_DIRS[args.source]
-OUT_CSV       = _PROC_DIR / "Output" / "Step2_RefCheck" / f"lrg_offset_results_NM_{args.source}.csv"
-LOG_PATH      = _PROC_DIR / "Logs" / f"find_lrg_offset_NM_{args.source}.log"
-
+MUTATIONS_TSV      = _PROC_DIR / "Output" / "Step1_Extraction" / "all_mutations.tsv"
 MAX_SEQ_LEN        = 100_000
 MATCH_THRESHOLD    = 0.90
 TARGET_MUT_CLASSES = {"substitution"}
 
 
-def parse_ref_nucleotides(notation: str) -> str:
+def parse_ref_nucleotides(notation):
     if ">" in notation:
         m = re.search(r"([ACGTN]+)>[ACGTN]+$", notation, re.IGNORECASE)
         return m.group(1).upper() if m else ""
@@ -40,55 +37,71 @@ def load_fasta(path):
         return "".join(l.strip().upper() for l in f if not l.startswith(">"))
 
 
-def find_best_offset(nm_seq, mutations):
-    seq_len   = len(nm_seq)
+def find_best_offset(seq, mutations):
+    seq_len   = len(seq)
     positions = [(r["accession"], int(r["pos_start"]), int(r["pos_end"]), r["ref_nucleotides"].upper())
                  for r in mutations]
     total = len(positions)
 
     candidate_offsets = []
-    for seed_acc, seed_start, seed_end, seed_ref in sorted(positions, key=lambda x: len(x[3]), reverse=True):
+    for _, seed_start, _, seed_ref in sorted(positions, key=lambda x: len(x[3]), reverse=True):
         candidate_offsets = []
         idx = 0
         while True:
-            idx = nm_seq.find(seed_ref, idx)
+            idx = seq.find(seed_ref, idx)
             if idx == -1:
                 break
             offset = idx - (seed_start - 1)
             if offset >= 0:
                 candidate_offsets.append(offset)
             idx += 1
-        print(f"    seed='{seed_ref[:20]}{'...' if len(seed_ref) > 20 else ''}' len={len(seed_ref)}  candidates={len(candidate_offsets)}")
         if candidate_offsets:
             break
 
     if not candidate_offsets:
         return None, 0, total, []
 
-    best_offset, best_count, best_non_matching = None, 0, []
+    best_offset, best_count, best_non = None, 0, []
     for offset in candidate_offsets:
         matched, non_matching = 0, []
         for acc, pos_start, pos_end, ref in positions:
             i0, i1 = offset + pos_start - 1, offset + pos_end
-            if i1 > seq_len or nm_seq[i0:i1] != ref:
+            if i1 > seq_len or seq[i0:i1] != ref:
                 non_matching.append(acc)
             else:
                 matched += 1
         if matched > best_count:
-            best_count, best_offset, best_non_matching = matched, offset, non_matching
+            best_count, best_offset, best_non = matched, offset, non_matching
         if best_count == total:
             break
 
-    return best_offset, best_count, total, best_non_matching
+    return best_offset, best_count, total, best_non
+
+
+def is_ok(count, total, non_matching):
+    return len(set(non_matching)) <= 2 or (count / total) >= MATCH_THRESHOLD
+
+
+def shift_mutations(mutations, delta):
+    return [{**r, "pos_start": r["pos_start"] + delta, "pos_end": r["pos_end"] + delta}
+            for r in mutations]
 
 
 def main():
-    os.makedirs(str(LOG_PATH.parent), exist_ok=True)
-    os.makedirs(str(OUT_CSV.parent), exist_ok=True)
+    parser = argparse.ArgumentParser()
+    parser.add_argument("--source", choices=["IDRefseq_NM", "Mane_NM"], default="Mane_NM")
+    args = parser.parse_args()
 
-    print(f"Source: {args.source} -> {NM_DIR}")
+    nm_dir   = SOURCE_DIRS[args.source]
+    out_csv  = OUTPUT_CSVS[args.source]
+    log_path = _PROC_DIR / "Logs" / f"find_lrg_offset_NM_{args.source}.log"
 
-    with open(LOG_PATH, "w", encoding="utf-8") as logf:
+    os.makedirs(str(out_csv.parent), exist_ok=True)
+    os.makedirs(str(log_path.parent), exist_ok=True)
+
+    print(f"Source: {args.source} -> {nm_dir}")
+
+    with open(log_path, "w", encoding="utf-8") as logf:
         def log(msg):
             print(msg)
             logf.write(msg + "\n")
@@ -103,24 +116,23 @@ def main():
         df["pos_end"]   = pd.to_numeric(df["pos_end"],   errors="coerce")
         df = df.dropna(subset=["pos_start", "pos_end"])
         df = df[df["ref_nucleotides"].str.strip() != ""]
-
         log(f"Filtered coding substitution rows with ref: {len(df)}")
 
         nm_files = {}
-        for fname in os.listdir(NM_DIR):
+        for fname in os.listdir(nm_dir):
             if not fname.lower().endswith(".fasta"):
                 continue
             m = re.match(r"^([A-Z0-9]+)_NM_", fname, re.IGNORECASE)
             if m:
                 gene = m.group(1).upper()
                 if gene not in nm_files:
-                    nm_files[gene] = Path(NM_DIR) / fname
+                    nm_files[gene] = Path(nm_dir) / fname
 
-        genes = sorted(df["gene"].str.strip().str.upper().unique())
+        genes   = sorted(df["gene"].str.strip().str.upper().unique())
         results = []
 
         for gene in genes:
-            def skip(status):
+            def skip(status, gene=gene):
                 results.append({"gene": gene, "nm_accession": "", "status": status,
                                  "sstart": "", "send": "", "matched": "", "total": "",
                                  "match_pct": "", "non_matching_accessions": ""})
@@ -129,10 +141,8 @@ def main():
             if fasta_path is None:
                 log(f"  SKIP {gene}: no NM FASTA found"); skip("no_fasta"); continue
 
-            nm_accession = ""
             m = re.search(r"(NM_\d+\.\d+)", fasta_path.name)
-            if m:
-                nm_accession = m.group(1)
+            nm_accession = m.group(1) if m else ""
 
             if fasta_path.stat().st_size > MAX_SEQ_LEN * 5:
                 log(f"  SKIP {gene}: FASTA too large"); skip("too_large"); continue
@@ -145,22 +155,33 @@ def main():
             if not gene_muts:
                 log(f"  SKIP {gene}: no mutations after filtering"); skip("no_mutations"); continue
 
-            log(f"  {gene} ({nm_accession}): {len(gene_muts)} mutations, NM seq {len(nm_seq)} bp")
-            best_offset, best_count, total, non_matching = find_best_offset(nm_seq, gene_muts)
+            total = len(gene_muts)
+            log(f"  {gene} ({nm_accession}): {total} mutations, NM seq {len(nm_seq)} bp")
+
+            best_offset, best_count, _, best_non = find_best_offset(nm_seq, gene_muts)
 
             if best_offset is None:
-                log(f"    no seed found after trying all mutations")
+                log(f"    seed_not_found")
                 results.append({"gene": gene, "nm_accession": nm_accession, "status": "seed_not_found",
                                  "sstart": "", "send": "", "matched": 0, "total": total,
                                  "match_pct": 0.0, "non_matching_accessions": ""})
                 continue
 
+            if not is_ok(best_count, total, best_non):
+                for delta in (+1, -1):
+                    offset, count, _, non = find_best_offset(nm_seq, shift_mutations(gene_muts, delta))
+                    if offset is not None and count > best_count:
+                        best_offset, best_count, best_non = offset, count, non
+                        log(f"    shift ({delta:+d}) improved: {count}/{total} ({count/total:.1%})")
+                        if is_ok(count, total, non):
+                            break
+
+            match_pct        = best_count / total
+            ok               = is_ok(best_count, total, best_non)
+            status           = "ok" if ok else "below_threshold"
             sstart           = best_offset + 1
             send             = len(nm_seq)
-            match_pct        = best_count / total
-            n_non            = len(set(non_matching))
-            status           = "ok" if (n_non <= 2 or match_pct >= MATCH_THRESHOLD) else "below_threshold"
-            non_matching_str = ";".join(sorted(set(non_matching)))
+            non_matching_str = ";".join(sorted(set(best_non)))
 
             log(f"    offset={best_offset}  sstart={sstart}  send={send}  "
                 f"match={best_count}/{total} ({match_pct:.1%})  [{status}]")
@@ -169,10 +190,11 @@ def main():
 
             results.append({"gene": gene, "nm_accession": nm_accession, "status": status,
                              "sstart": sstart, "send": send, "matched": best_count, "total": total,
-                             "match_pct": round(match_pct, 4), "non_matching_accessions": non_matching_str})
+                             "match_pct": round(match_pct, 4),
+                             "non_matching_accessions": non_matching_str})
 
-        pd.DataFrame(results).to_csv(OUT_CSV, index=False)
-        log(f"\nResults written to {OUT_CSV}")
+        pd.DataFrame(results).to_csv(out_csv, index=False)
+        log(f"\nResults written to {out_csv}")
 
 
 if __name__ == "__main__":

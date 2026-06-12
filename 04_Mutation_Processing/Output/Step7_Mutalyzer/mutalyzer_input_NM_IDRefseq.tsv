@@ -3169,13 +3169,13 @@ NP	N0004	2	c.569G>T	NC_000014.9(NM_000270.3):c.569G>T	substitution	G	T	chr14		+
 NP	N0002	1	c.730delA	NC_000014.9(NM_000270.3):c.730delA	deletion	A		chr14		+
 NP	N0008	1	c.286-18G>A	NC_000014.9(NM_000270.3):c.286-18G>A	substitution	G	A	chr14		+
 NRAS	N0003	0	c.38G>A	NM_002524.3:c.38G>A	substitution	G	A			+
-ORAI1	T0003	1	c.261_262insA	NC_000012.12(NM_032790.3):c.261_262insA	insertion		A	chr12		+
-ORAI1	T0003	2	c.261_262insA	NC_000012.12(NM_032790.3):c.261_262insA	insertion		A	chr12		+
-ORAI1	T0001	1	c.271C>T	NC_000012.12(NM_032790.3):c.271C>T	substitution	C	T	chr12		+
-ORAI1	T0001	2	c.271C>T	NC_000012.12(NM_032790.3):c.271C>T	substitution	C	T	chr12		+
-ORAI1	T0002	1	c.271C>T	NC_000012.12(NM_032790.3):c.271C>T	substitution	C	T	chr12		+
-ORAI1	T0002	2	c.271C>T	NC_000012.12(NM_032790.3):c.271C>T	substitution	C	T	chr12		+
-ORAI1	T0004	1	c.581T>C	NC_000012.12(NM_032790.3):c.581T>C	substitution	T	C	chr12		+
+ORAI1	T0003	1	c.261_262insA	NM_032790.3:c.261_262insA	insertion		A	chr12		+
+ORAI1	T0003	2	c.261_262insA	NM_032790.3:c.261_262insA	insertion		A	chr12		+
+ORAI1	T0001	1	c.271C>T	NM_032790.3:c.271C>T	substitution	C	T	chr12		+
+ORAI1	T0001	2	c.271C>T	NM_032790.3:c.271C>T	substitution	C	T	chr12		+
+ORAI1	T0002	1	c.271C>T	NM_032790.3:c.271C>T	substitution	C	T	chr12		+
+ORAI1	T0002	2	c.271C>T	NM_032790.3:c.271C>T	substitution	C	T	chr12		+
+ORAI1	T0004	1	c.581T>C	NM_032790.3:c.581T>C	substitution	T	C	chr12		+
 PIK3R1	A0001	0	c.1226G>A	NM_181523.3:c.1226G>A	substitution	G	A			+
 PRF1	P0061	1	c.208G>T	NC_000010.11(NM_001083116.1):c.208G>T	substitution	G	T	chr10		-
 PRF1	P0067	1	c.3G>A	NC_000010.11(NM_001083116.1):c.3G>A	substitution	G	A	chr10		-
