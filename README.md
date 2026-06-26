@@ -4,7 +4,7 @@
 [![Python](https://img.shields.io/badge/Python-3.x-3776AB.svg)](https://www.python.org/)
 [![Reference](https://img.shields.io/badge/Genome-GRCh38-2C6E91.svg)](https://www.ncbi.nlm.nih.gov/grc)
 [![Nomenclature](https://img.shields.io/badge/Variants-HGVS-12303D.svg)](https://hgvs-nomenclature.org/)
-<!-- After connecting Zenodo and tagging a release, add: [![DOI](https://zenodo.org/badge/DOI/XX.XXXX/zenodo.XXXXXXX.svg)](https://doi.org/XX.XXXX/zenodo.XXXXXXX) -->
+[![DOI](https://zenodo.org/badge/1171232589.svg)](https://doi.org/10.5281/zenodo.20886949)
 
 A reproducible Python pipeline that migrates the **IDbases** immunodeficiency variant
 collection — roughly three decades of expert curation — from the legacy MUTbase
