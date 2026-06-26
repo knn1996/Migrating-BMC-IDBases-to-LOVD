@@ -1,0 +1,42 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite it using the metadata below."
+title: "Migrating BMC IDbases to LOVD"
+abstract: >-
+  A reproducible Python pipeline that migrates the IDbases immunodeficiency
+  variant collection from the legacy MUTbase platform into LOVD 3.0,
+  standardizing all coordinates to GRCh38 and all variants to HGVS nomenclature.
+type: software
+authors:
+  - given-names: Khoi
+    family-names: Nguyen Ngoc
+    affiliation: Lund University
+    # orcid: "https://orcid.org/0009-0002-6766-8198"
+version: 1.0.0
+date-released: "2026-06-26"
+license: MIT
+repository-code: "https://github.com/knn1996/Migrating-BMC-IDBases-to-LOVD"
+url: "https://github.com/knn1996/Migrating-BMC-IDBases-to-LOVD"
+# doi: "TBA"
+keywords:
+  - bioinformatics
+  - genomics
+  - immunodeficiency
+  - LOVD
+  - HGVS
+  - GRCh38
+  - variant-migration
+  - IDbases
+preferred-citation:
+  type: thesis
+  thesis-type: "Master's thesis"
+  title: >-
+    Migrating the BMC IDbases immunodeficiency variant collection to LOVD 3.0
+  authors:
+    - given-names: Khoi
+      family-names: Nguyen Ngoc
+      affiliation: Lund University
+  year: 2026
+  institution:
+    name: "Lund University (LTH), Department of Biotechnology"
+  # url: "TBA"
+  # doi: "TBA"
