@@ -5,13 +5,9 @@ from openpyxl import Workbook
 from openpyxl.styles import Font, PatternFill, Alignment, Border, Side
 from openpyxl.utils import get_column_letter
 
-THESIS_DIR  = r"C:\Users\BornLoser\Desktop\Assignment\Thesis"
-STEP8_DIR   = os.path.join(THESIS_DIR, "04_Mutation_Processing", "Output", "Step8_Merging")
-STEP2_DIR   = os.path.join(THESIS_DIR, "04_Mutation_Processing", "Output", "Step2_RefCheck")
-
-IN_PATH       = os.path.join(STEP8_DIR, "lovd_flat_with_patients.tsv")
-OFFSET_PATH   = os.path.join(STEP2_DIR, "lrg_offset_results.csv")
-OUT_PATH      = os.path.join(STEP8_DIR, "lovd_review.xlsx")
+IN_PATH     = os.environ["IN_PATH"]
+OFFSET_PATH = os.environ["OFFSET_PATH"]
+OUT_PATH    = os.environ["OUT_PATH"]
 
 OUT_OF_SCOPE = {"BTK", "SH2"}
 PROTEIN_ONLY = {"BLNK", "CD79A", "RASGRP2", "STAT2"}

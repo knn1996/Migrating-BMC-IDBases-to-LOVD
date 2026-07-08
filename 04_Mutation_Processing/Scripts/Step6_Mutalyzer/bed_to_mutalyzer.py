@@ -3,10 +3,9 @@ import re
 import csv
 from pathlib import Path
 
-BED_DIR = r"C:\Users\BornLoser\Desktop\Assignment\Thesis\04_Mutation_Processing\Output\Step5_Liftover"
-OUT_TSV = r"C:\Users\BornLoser\Desktop\Assignment\Thesis\04_Mutation_Processing\Output\Step7_Mutalyzer\mutalyzer_input.tsv"
-LOG_TSV = r"C:\Users\BornLoser\Desktop\Assignment\Thesis\04_Mutation_Processing\Output\Step7_Mutalyzer\mutalyzer_skipped.tsv"
-
+BED_DIR = os.environ["BED_DIR"]
+OUT_TSV = os.environ["OUT_TSV"]
+LOG_TSV = os.environ["LOG_TSV"]
 os.makedirs(os.path.dirname(OUT_TSV), exist_ok=True)
 
 CHR_TO_NC = {

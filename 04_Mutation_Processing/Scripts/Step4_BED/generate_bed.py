@@ -16,14 +16,12 @@ import re
 import argparse
 import csv
 
-THESIS_DIR    = r"C:\Users\BornLoser\Desktop\Assignment\Thesis"
-PIPELINE_DIR  = os.path.join(THESIS_DIR, "04_Mutation_Processing")
-MUTATIONS_TSV = os.path.join(PIPELINE_DIR, "Output", "Step1_Extraction", "all_mutations.tsv")
-BED_DIR       = os.path.join(THESIS_DIR, "03_BED_Files", "BED_IDRefseq")
-LOG_DIR       = os.path.join(PIPELINE_DIR, "Logs")
+MUTATIONS_TSV = os.environ["MUTATIONS_TSV"]
+BED_DIR       = os.environ["BED_DIR"]
+LOG_DIR       = os.environ["LOG_DIR"]
 
 SOURCE_BLAST = {
-    "IDRefseq": os.path.join(PIPELINE_DIR, "Output", "Step3_BLAST", "blast_first_hits_source_IDRefseq.tsv"),
+    "IDRefseq": os.environ["BLAST_HITS"],
 }
 
 BUILD_RANK = {"hg16": 0, "hg17": 1, "hg18": 2}

@@ -5,11 +5,11 @@ import time
 import requests
 from pathlib import Path
 
-IDBASE_DIR = r"C:\Users\BornLoser\Desktop\Assignment\Thesis\02_Source_Database\idbase"
-OUT_DIR    = r"C:\Users\BornLoser\Desktop\Assignment\Thesis\04_Mutation_Processing\DNA sequences\Mane_Select_NG"
-LOG_DIR    = r"C:\Users\BornLoser\Desktop\Assignment\Thesis\04_Mutation_Processing\Logs"
-OUT_CSV    = r"C:\Users\BornLoser\Desktop\Assignment\Thesis\04_Mutation_Processing\Output\Step2_RefCheck\mane_ng_accessions.csv"
-ALIAS_CSV  = r"C:\Users\BornLoser\Desktop\Assignment\Thesis\04_Mutation_Processing\Output\alias.csv"
+IDBASE_DIR = os.environ["IDBASE_DIR"]
+OUT_DIR    = os.environ["OUT_DIR"]
+LOG_DIR    = os.environ["LOG_DIR"]
+OUT_CSV    = os.environ["OUT_CSV"]
+ALIAS_CSV  = os.environ["ALIAS_CSV"]
 
 ESEARCH_URL  = "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi"
 ELINK_URL    = "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/elink.fcgi"

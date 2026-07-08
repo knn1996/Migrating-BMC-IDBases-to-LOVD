@@ -4,11 +4,11 @@ import time
 import csv
 import requests
 
-IDBASE_SUMMARY = r"C:\Users\BornLoser\Desktop\Assignment\Thesis\04_Mutation_Processing\Output\IDBases_Summary.csv"
-ALIAS_CSV      = r"C:\Users\BornLoser\Desktop\Assignment\Thesis\04_Mutation_Processing\Output\alias.csv"
-MANE_FASTA     = r"C:\Users\BornLoser\Desktop\Assignment\Thesis\02_Source_Database\MANE.GRCh38.v1.5.refseq_rna.fna"
-OUT_DIR        = r"C:\Users\BornLoser\Desktop\Assignment\Thesis\04_Mutation_Processing\DNA sequences\Mane_Select_NM"
-LOG_DIR        = r"C:\Users\BornLoser\Desktop\Assignment\Thesis\04_Mutation_Processing\Logs"
+IDBASE_SUMMARY = os.environ["IDBASE_SUMMARY"]
+ALIAS_CSV      = os.environ["ALIAS_CSV"]
+MANE_FASTA     = os.environ["MANE_FASTA"]
+OUT_DIR        = os.environ["OUT_DIR"]
+LOG_DIR        = os.environ["LOG_DIR"]
 
 NCBI_ESEARCH  = "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi"
 NCBI_ESUMMARY = "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esummary.fcgi"

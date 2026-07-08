@@ -24,10 +24,9 @@ import logging
 from pathlib import Path
 from datetime import datetime
 
-THESIS_DIR = r"C:\Users\BornLoser\Desktop\Assignment\Thesis"
-IDBASE_DIR = os.path.join(THESIS_DIR, "02_Source_Database", "idbase")
-OUT_PATH   = os.path.join(THESIS_DIR, "04_Mutation_Processing", "Output", "Step1_Extraction", "all_mutations.tsv")
-LOG_PATH   = os.path.join(THESIS_DIR, "04_Mutation_Processing", "Logs", "extract_mutations_log.txt")
+IDBASE_DIR = os.environ["IDBASE_DIR"]
+OUT_PATH   = os.environ["OUT_PATH"]
+LOG_PATH   = os.environ["LOG_PATH"]
 
 RE_STRIP = re.compile(r"<[^>]+>")
 RE_LOC   = re.compile(r"/loc:.*?:\s*(\d+)(?:\.\.(\d+))?", re.IGNORECASE)

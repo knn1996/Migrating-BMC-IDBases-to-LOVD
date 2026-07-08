@@ -1,0 +1,6 @@
+name: idbase-lovd-ucsc
+channels:
+  - conda-forge
+  - bioconda
+dependencies:
+  - ucsc-liftover

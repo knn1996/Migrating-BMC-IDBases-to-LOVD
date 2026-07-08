@@ -7,14 +7,13 @@ import urllib.parse
 from pathlib import Path
 from datetime import datetime
 
-INPUT_TSV    = r"C:\Users\BornLoser\Desktop\Assignment\Thesis\04_Mutation_Processing\Output\Step7_Mutalyzer\mutalyzer_input.tsv"
-OUT_TSV      = r"C:\Users\BornLoser\Desktop\Assignment\Thesis\04_Mutation_Processing\Output\Step7_Mutalyzer\mutalyzer_results.tsv"
-CACHE_G_JSONL = r"C:\Users\BornLoser\Desktop\Assignment\Thesis\04_Mutation_Processing\Output\Step7_Mutalyzer\mutalyzer_cache.jsonl"
-CACHE_C_JSONL = r"C:\Users\BornLoser\Desktop\Assignment\Thesis\04_Mutation_Processing\Output\Step7_Mutalyzer\mutalyzer_cache_c.jsonl"
-LOG_PATH     = r"C:\Users\BornLoser\Desktop\Assignment\Thesis\04_Mutation_Processing\Logs\mutalyzer_run.log"
-
-os.makedirs(os.path.dirname(LOG_PATH), exist_ok=True)
-
+INPUT_TSV    = os.environ["INPUT_TSV"]
+OUT_TSV      = os.environ["OUT_TSV"]
+CACHE_G_JSONL = os.environ["CACHE_G_JSONL"]
+CACHE_C_JSONL = os.environ["CACHE_C_JSONL"]
+LOG_PATH     = os.environ["LOG_PATH"]
+for _d in (OUT_TSV, CACHE_G_JSONL, LOG_PATH):
+    os.makedirs(os.path.dirname(_d), exist_ok=True)
 API_BASE   = "https://mutalyzer.nl/api"
 SLEEP      = 0.5
 MAX_RETRY  = 3

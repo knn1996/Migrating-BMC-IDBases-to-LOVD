@@ -3,13 +3,10 @@ import re
 import pandas as pd
 from pathlib import Path
 
-THESIS_DIR  = r"C:\Users\BornLoser\Desktop\Assignment\Thesis"
-IDBASE_DIR  = os.path.join(THESIS_DIR, "02_Source_Database", "idbase")
-STEP8_DIR   = os.path.join(THESIS_DIR, "04_Mutation_Processing", "Output", "Step8_Merging")
-LOG_DIR     = os.path.join(THESIS_DIR, "04_Mutation_Processing", "Logs")
-IN_PATH     = os.path.join(STEP8_DIR, "lovd_flat.tsv")
-OUT_PATH    = os.path.join(STEP8_DIR, "lovd_flat_with_patients.tsv")
-LOG_PATH    = os.path.join(LOG_DIR, "patient_metadata_missing.tsv")
+IDBASE_DIR = os.environ["IDBASE_DIR"]
+IN_PATH    = os.environ["IN_PATH"]
+OUT_PATH   = os.environ["OUT_PATH"]
+LOG_PATH   = os.environ["LOG_PATH"]
 
 RE_HTML       = re.compile(r"<[^>]+>")
 RE_FIELD      = re.compile(r"^([A-Z][A-Za-z][A-Za-z /]*?)(\s{2,})(.+?)\s*$", re.MULTILINE)

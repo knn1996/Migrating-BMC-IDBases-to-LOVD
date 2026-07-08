@@ -3,10 +3,9 @@ import os
 import sys
 import re
 
-INPUT_TSV  = r"C:\Users\BornLoser\Desktop\Assignment\Thesis\04_Mutation_Processing\Output\Step8_Merging\merged_variants.tsv"
-OUTPUT_TSV = r"C:\Users\BornLoser\Desktop\Assignment\Thesis\04_Mutation_Processing\Output\Step8_Merging\dedup_merged_variants.tsv"
-STATS_TXT  = r"C:\Users\BornLoser\Desktop\Assignment\Thesis\04_Mutation_Processing\Output\Step8_Merging\dedup_stats.txt"
-
+INPUT_TSV  = os.environ["INPUT_TSV"]
+OUTPUT_TSV = os.environ["OUTPUT_TSV"]
+STATS_TXT  = os.environ["STATS_TXT"]
 TRACK_PRIORITY = {"NM_MANE": 0, "NG_IDRefseq": 1, "NM_IDRefseq": 2}
 
 df = pd.read_csv(INPUT_TSV, sep="\t", low_memory=False)

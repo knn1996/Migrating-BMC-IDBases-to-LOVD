@@ -3,15 +3,13 @@ import re
 import argparse
 import pandas as pd
 
-SCRIPT_DIR = os.path.dirname(os.path.abspath(__file__))
-
 SOURCE_DIRS = {
-    1: os.path.join(SCRIPT_DIR, '..', '..', 'DNA sequences', 'Processed FASTA file (Source 1)'),
-    3: os.path.join(SCRIPT_DIR, '..', '..', 'DNA sequences', 'LRG FASTA file (Source 3)', 'NG'),
+    1: os.environ["SEQ_DIR"],
+    3: os.environ["SEQ_DIR"],
 }
 
-INPUT_PATH = os.path.join(SCRIPT_DIR, '..', '..', 'Output', 'Step1_Extraction', 'all_mutations.tsv')
-OUTPUT_DIR = os.path.join(SCRIPT_DIR, '..', '..', 'Output', 'Step2_RefCheck')
+INPUT_PATH = os.environ["MUTATIONS_TSV"]
+OUTPUT_PATH = os.environ["OUT_PATH"]
 
 TARGET_MUT_CLASSES = {'substitution', 'deletion'}
 
@@ -112,8 +110,8 @@ def main():
     args = parser.parse_args()
 
     base_dir = SOURCE_DIRS[args.source]
-    output_path = os.path.join(OUTPUT_DIR, f'reference_check_source_{args.source}.tsv')
-    os.makedirs(OUTPUT_DIR, exist_ok=True)
+    output_path = OUTPUT_PATH
+    os.makedirs(os.path.dirname(output_path), exist_ok=True)
 
     df = pd.read_csv(INPUT_PATH, sep='\t', dtype=str).fillna('')
     df = df[df['variant_type'] == 'genomic'].copy()

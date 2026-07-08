@@ -1,0 +1,8 @@
+name: idbase-lovd-http
+channels:
+  - conda-forge
+  - bioconda
+dependencies:
+  - python=3.11
+  - requests
+  - pandas

@@ -4,22 +4,17 @@ import argparse
 import pandas as pd
 from pathlib import Path
 
-_SCRIPT_DIR = Path(__file__).parent
-_THESIS_DIR = (_SCRIPT_DIR / ".." / ".." / "..").resolve()
-_PROC_DIR   = _THESIS_DIR / "04_Mutation_Processing"
-_SEQ_DIR    = _PROC_DIR / "DNA sequences"
-
 SOURCE_DIRS = {
-    "IDRefseq_NM": _SEQ_DIR / "IDRefseq_NM",
-    "Mane_NM":     _SEQ_DIR / "Mane_Select_NM",
+    "IDRefseq_NM": Path(os.environ["SEQ_DIR"]),
+    "Mane_NM":     Path(os.environ["SEQ_DIR"]),
 }
 
 OUTPUT_CSVS = {
-    "IDRefseq_NM": _PROC_DIR / "Output" / "Step2_RefCheck" / "lrg_offset_results_NM.csv",
-    "Mane_NM":     _PROC_DIR / "Output" / "Step2_RefCheck" / "lrg_offset_results_NM_MANE.csv",
+    "IDRefseq_NM": Path(os.environ["OUT_CSV"]),
+    "Mane_NM":     Path(os.environ["OUT_CSV"]),
 }
 
-MUTATIONS_TSV      = _PROC_DIR / "Output" / "Step1_Extraction" / "all_mutations.tsv"
+MUTATIONS_TSV      = Path(os.environ["MUTATIONS_TSV"])
 MAX_SEQ_LEN        = 100_000
 MATCH_THRESHOLD    = 0.90
 TARGET_MUT_CLASSES = {"substitution"}
@@ -94,7 +89,7 @@ def main():
 
     nm_dir   = SOURCE_DIRS[args.source]
     out_csv  = OUTPUT_CSVS[args.source]
-    log_path = _PROC_DIR / "Logs" / f"find_lrg_offset_NM_{args.source}.log"
+    log_path = Path(os.environ["LOG_PATH"])
 
     os.makedirs(str(out_csv.parent), exist_ok=True)
     os.makedirs(str(log_path.parent), exist_ok=True)

@@ -1,0 +1,64 @@
+thesis_dir: "C:/Users/BornLoser/Desktop/Assignment/Thesis"
+proc_subdir: "04_Mutation_Processing"
+idbase_subdir: "02_Source_Database/idbase"
+
+output_root: "results"
+seq_root: "results/seq"
+blast_root: "results/blast"
+bed_root: "results/bed"
+logs_root: "results/logs"
+
+genome_dir: "C:/Users/BornLoser/Desktop/Assignment/Thesis/01_Reference_Genomes"
+build_dirs:
+  hg16: "HG16"
+  hg17: "HG17"
+  hg18: "HG18"
+builds: ["hg16", "hg17", "hg18"]
+chr_glob: "chr*.fa"
+
+run_set: "test"
+gene_sets:
+  test: ["RAB27A", "UNC13D", "ADA"]
+  all: "auto"
+large_gene: "CYBB"
+
+blast:
+  evalue: "1e-10"
+  max_target_seqs: 100
+  outfmt: "7 qseqid sseqid pident length mismatch gapopen qstart qend sstart send evalue bitscore"
+
+mutalyzer:
+  cache_dir: "results/cache/mutalyzer"
+variantvalidator:
+  cache_dir: "results/cache/variantvalidator"
+
+optional:
+  reference_confirm_source_2: false
+  find_lrg_offset_NM: false
+  confidence_analysis: false
+  qa_branch: false
+
+resources:
+  blast_gene:
+    mem_mb: 16000
+    runtime: 240
+    threads: 8
+  make_blast_db:
+    mem_mb: 8000
+    runtime: 120
+
+dna_seq:
+  mane_nm: "C:/Users/BornLoser/Desktop/Assignment/Thesis/04_Mutation_Processing/DNA sequences/Mane_Select_NM"
+  idrefseq_nm: "C:/Users/BornLoser/Desktop/Assignment/Thesis/04_Mutation_Processing/DNA sequences/IDRefseq_NM"
+  mane_ng: "C:/Users/BornLoser/Desktop/Assignment/Thesis/04_Mutation_Processing/DNA sequences/Mane_Select_NG"
+
+ref_seq:
+  source1_processed: "C:/Users/BornLoser/Desktop/Assignment/Thesis/04_Mutation_Processing/DNA sequences/Processed FASTA file (Source 1)"
+  source2_reference: "C:/Users/BornLoser/Desktop/Assignment/Thesis/04_Mutation_Processing/DNA sequences/Reference sequences (Source 2)"
+  idrefseq_ng: "C:/Users/BornLoser/Desktop/Assignment/Thesis/04_Mutation_Processing/DNA sequences/IDRefseq"
+
+inputs:
+  idbase_summary: "C:/Users/BornLoser/Desktop/Assignment/Thesis/04_Mutation_Processing/Output/IDBases_Summary.csv"
+  alias_csv: "C:/Users/BornLoser/Desktop/Assignment/Thesis/04_Mutation_Processing/Output/alias.csv"
+  lrg_refseqgene_txt: "C:/Users/BornLoser/Desktop/Assignment/Thesis/04_Mutation_Processing/Output/Step1b_RSG_Mapping/LRG_RefSeqGene.txt"
+  mane_rna_fasta: "C:/Users/BornLoser/Desktop/Assignment/Thesis/02_Source_Database/MANE.GRCh38.v1.5.refseq_rna.fna"

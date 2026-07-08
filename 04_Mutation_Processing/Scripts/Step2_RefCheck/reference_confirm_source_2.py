@@ -3,11 +3,9 @@ import re
 import glob
 import pandas as pd
 
-SCRIPT_DIR = os.path.dirname(os.path.abspath(__file__))
-
-SOURCE_2_DIR = os.path.join(SCRIPT_DIR, '..', '..', 'DNA sequences', 'Reference sequences (Source 2)')
-INPUT_PATH   = os.path.join(SCRIPT_DIR, '..', '..', 'Output', 'Step1_Extraction', 'all_mutations.tsv')
-OUTPUT_PATH  = os.path.join(SCRIPT_DIR, '..', '..', 'Output', 'Step2_RefCheck', 'reference_check_source_2.tsv')
+SOURCE_2_DIR = os.environ["SEQ_DIR"]
+INPUT_PATH   = os.environ["MUTATIONS_TSV"]
+OUTPUT_PATH  = os.environ["OUT_PATH"]
 
 
 def fasta_length(fasta_path: str) -> int:

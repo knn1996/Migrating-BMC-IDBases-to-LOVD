@@ -15,12 +15,9 @@ import os
 import pandas as pd
 from pathlib import Path
 
-_SCRIPT_DIR   = Path(__file__).parent
-_MUTATION_DIR = _SCRIPT_DIR.parent.parent
-
-LRG_CSV     = str(_MUTATION_DIR / "Output" / "Step1b_RSG_Mapping" / "LRG.csv")
-REFSEQ_TXT  = str(_MUTATION_DIR / "Output" / "Step1b_RSG_Mapping" / "LRG_RefSeqGene.txt")
-OUTPUT_CSV  = str(_MUTATION_DIR / "Output" / "Step1b_RSG_Mapping" / "LRG_with_NM.csv")
+LRG_CSV     = os.environ["LRG_CSV"]
+REFSEQ_TXT  = os.environ["LRG_REFSEQ_TXT"]
+OUTPUT_CSV  = os.environ["OUTPUT_CSV"]
 
 lrg = pd.read_csv(LRG_CSV)
 ref = pd.read_csv(REFSEQ_TXT, sep="\t", comment="#",
@@ -50,6 +47,7 @@ def pick_nm(ng):
     return ""
 
 lrg["NM"] = lrg["RSG"].apply(pick_nm)
+os.makedirs(os.path.dirname(OUTPUT_CSV), exist_ok=True)
 lrg.to_csv(OUTPUT_CSV, index=False)
 
 total  = len(lrg)

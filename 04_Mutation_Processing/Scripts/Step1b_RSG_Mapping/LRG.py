@@ -1,13 +1,11 @@
+import os
 import pandas as pd
 from pathlib import Path
 
-_SCRIPT_DIR = Path(__file__).parent
-THESIS_DIR  = _SCRIPT_DIR.parent.parent.parent
-
-summary_file = THESIS_DIR / "04_Mutation_Processing" / "Output" / "IDBases_Summary.csv"
-lrg_file     = THESIS_DIR / "04_Mutation_Processing" / "Output" / "Step1b_RSG_Mapping" / "LRG_RefSeqGene.txt"
-alias_file   = THESIS_DIR / "04_Mutation_Processing" / "Output" / "alias.csv"
-output_file  = THESIS_DIR / "04_Mutation_Processing" / "Output" / "Step1b_RSG_Mapping" / "LRG.csv"
+summary_file = Path(os.environ["IDBASE_SUMMARY"])
+lrg_file     = Path(os.environ["LRG_REFSEQ_TXT"])
+alias_file   = Path(os.environ["ALIAS_CSV"])
+output_file  = Path(os.environ["OUT_CSV"])
 
 df_summary = pd.read_csv(summary_file)
 gene_names = df_summary['gene_name'].unique()
@@ -32,5 +30,6 @@ for gene in gene_names:
     results.append({"name": gene, "RSG": rsg})
 
 df_out = pd.DataFrame(results)
+os.makedirs(output_file.parent, exist_ok=True)
 df_out.to_csv(output_file, index=False)
 print(f"File saved to: {output_file}")

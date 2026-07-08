@@ -24,16 +24,10 @@ import csv
 import glob
 import shutil
 
-_SCRIPT_DIR = os.path.dirname(os.path.abspath(__file__))
-_THESIS_DIR = os.path.normpath(os.path.join(_SCRIPT_DIR, "..", "..", ".."))
-_OUT_BASE   = os.path.join(_SCRIPT_DIR, "..", "..", "Output")
-
-REF_SUMMARY  = os.path.join(_OUT_BASE, "Step2_RefCheck", "reference_summary.csv")
-BED_ORIGINAL = os.path.join(_THESIS_DIR, "03_BED_Files", "BED_IDRefseq")
-BED_HG38     = os.path.join(_THESIS_DIR, "03_BED_Files", "BED_IDRefseq", "hg38")
-OUT_STEP4    = os.path.join(_OUT_BASE, "Step4_BED")
-OUT_STEP5    = os.path.join(_OUT_BASE, "Step5_Liftover")
-OUT_EXCLUDED = os.path.join(_OUT_BASE, "Step4_BED", "excluded_accessions.tsv")
+REF_SUMMARY  = os.environ["REF_SUMMARY"]
+IN_DIR       = os.environ["IN_DIR"]
+OUT_DIR      = os.environ["OUT_DIR"]
+OUT_EXCLUDED = os.environ["OUT_EXCLUDED"]
 
 
 def load_excluded_accessions():
@@ -130,6 +124,7 @@ def process_dir(src_dir, out_dir, excluded_accs, label, excluded_log):
 
 
 def write_excluded_log(excluded_log):
+    os.makedirs(os.path.dirname(OUT_EXCLUDED), exist_ok=True)
     with open(OUT_EXCLUDED, "w", encoding="utf-8", newline="") as f:
         writer = csv.DictWriter(f, fieldnames=["gene", "file", "chrom", "pos", "name", "accession"], delimiter="\t")
         writer.writeheader()
@@ -145,8 +140,7 @@ def main():
         print(f"  {gene}: {', '.join(sorted(accs))}")
 
     excluded_log = []
-    process_dir(BED_ORIGINAL, OUT_STEP4, excluded_accs, "Original BED (hg18)", excluded_log)
-    process_dir(BED_HG38,     OUT_STEP5, excluded_accs, "hg38 BED",            excluded_log)
+    process_dir(IN_DIR, OUT_DIR, excluded_accs, "IDRefseq BED", excluded_log)
     write_excluded_log(excluded_log)
 
 

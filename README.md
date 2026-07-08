@@ -113,4 +113,3 @@ Released under the [MIT License](LICENSE).
 Developed under the supervision of Prof. Mauno Vihinen (Lund University). Thanks to the
 IDbases curators for three decades of work, and to the LOVD, ENA, UniProt, and Mutalyzer
 teams for open infrastructure.
-

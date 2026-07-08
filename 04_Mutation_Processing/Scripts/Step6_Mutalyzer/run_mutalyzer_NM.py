@@ -8,18 +8,18 @@ import urllib.parse
 from pathlib import Path
 from datetime import datetime
 
-INPUT_TSV_TEMPLATE  = r"C:\Users\BornLoser\Desktop\Assignment\Thesis\04_Mutation_Processing\Output\Step7_Mutalyzer\mutalyzer_input_NM_{source}.tsv"
-OUT_TSV_TEMPLATE    = r"C:\Users\BornLoser\Desktop\Assignment\Thesis\04_Mutation_Processing\Output\Step7_Mutalyzer\mutalyzer_results_NM_{source}.tsv"
-CACHE_TEMPLATE      = r"C:\Users\BornLoser\Desktop\Assignment\Thesis\04_Mutation_Processing\Output\Step7_Mutalyzer\mutalyzer_cache_NM_{source}.jsonl"
-LOG_TEMPLATE        = r"C:\Users\BornLoser\Desktop\Assignment\Thesis\04_Mutation_Processing\Logs\mutalyzer_run_NM_{source}.log"
+INPUT_TSV  = os.environ["INPUT_TSV"]
+OUT_TSV    = os.environ["OUT_TSV"]
+CACHE_JSONL      = os.environ["CACHE_JSONL"]
+LOG_PATH        = os.environ["LOG_PATH"]
 
 SOURCE_FASTA_DIRS = {
-    "MANE":     r"C:\Users\BornLoser\Desktop\Assignment\Thesis\04_Mutation_Processing\DNA sequences\Mane_Select_NM",
-    "IDRefseq": r"C:\Users\BornLoser\Desktop\Assignment\Thesis\04_Mutation_Processing\DNA sequences\IDRefseq_NM",
+    "MANE":     os.environ.get("MANE_NM_DIR", ""),
+    "IDRefseq": os.environ.get("IDREFSEQ_NM_DIR", ""),
 }
 
-os.makedirs(r"C:\Users\BornLoser\Desktop\Assignment\Thesis\04_Mutation_Processing\Output\Step7_Mutalyzer", exist_ok=True)
-os.makedirs(r"C:\Users\BornLoser\Desktop\Assignment\Thesis\04_Mutation_Processing\Logs", exist_ok=True)
+for _d in (OUT_TSV, CACHE_JSONL, LOG_PATH):
+    os.makedirs(os.path.dirname(_d), exist_ok=True)
 
 API_BASE   = "https://mutalyzer.nl/api"
 SLEEP      = 0.5
@@ -139,10 +139,10 @@ def main():
                         help="Delete the cache file before running to start fresh")
     args = parser.parse_args()
 
-    input_tsv  = INPUT_TSV_TEMPLATE.format(source=args.source)
-    out_tsv    = OUT_TSV_TEMPLATE.format(source=args.source)
-    cache_path = CACHE_TEMPLATE.format(source=args.source)
-    log_path   = LOG_TEMPLATE.format(source=args.source)
+    input_tsv  = INPUT_TSV
+    out_tsv    = OUT_TSV
+    cache_path = CACHE_JSONL
+    log_path   = LOG_PATH
     fasta_dir  = SOURCE_FASTA_DIRS[args.source]
     log        = make_logger(log_path)
 

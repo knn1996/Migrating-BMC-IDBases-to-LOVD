@@ -4,22 +4,17 @@ import argparse
 import pandas as pd
 from pathlib import Path
 
-_SCRIPT_DIR = Path(__file__).parent
-_THESIS_DIR = (_SCRIPT_DIR / ".." / ".." / "..").resolve()
-_PROC_DIR   = _THESIS_DIR / "04_Mutation_Processing"
-_SEQ_DIR    = _PROC_DIR / "DNA sequences"
-
 SOURCE_DIRS = {
-    "IDRefseq": _SEQ_DIR / "IDRefseq",
-    "Mane_NG":  _SEQ_DIR / "Mane_Select_NG",
+    "IDRefseq": Path(os.environ["SEQ_DIR"]),
+    "Mane_NG":  Path(os.environ["SEQ_DIR"]),
 }
 
 OUTPUT_CSVS = {
-    "IDRefseq": _PROC_DIR / "Output" / "Step2_RefCheck" / "lrg_offset_results.csv",
-    "Mane_NG":  _PROC_DIR / "Output" / "Step2_RefCheck" / "MANE_offset_results.csv",
+    "IDRefseq": Path(os.environ["OUT_CSV"]),
+    "Mane_NG":  Path(os.environ["OUT_CSV"]),
 }
 
-MUTATIONS_TSV   = _PROC_DIR / "Output" / "Step1_Extraction" / "all_mutations.tsv"
+MUTATIONS_TSV   = Path(os.environ["MUTATIONS_TSV"])
 MAX_SEQ_LEN     = 400_000
 MATCH_THRESHOLD = 0.90
 
@@ -118,7 +113,7 @@ def main():
     ng_dir       = SOURCE_DIRS[args.source]
     base_out     = OUTPUT_CSVS[args.source]
     out_csv      = base_out.with_name(base_out.stem + suffix + base_out.suffix)
-    log_path     = _PROC_DIR / "Logs" / f"find_lrg_offset_{args.source}{suffix}.log"
+    log_path     = Path(os.environ["LOG_PATH"])
     allow_rc     = args.source != "IDRefseq"
 
     os.makedirs(str(out_csv.parent), exist_ok=True)

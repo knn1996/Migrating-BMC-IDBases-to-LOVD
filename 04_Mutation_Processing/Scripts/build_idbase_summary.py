@@ -5,9 +5,9 @@ import requests
 from pathlib import Path
 import time
 
-IDBASE_DIR   = r"C:\Users\BornLoser\Desktop\Assignment\Thesis\02_Source_Database\idbase"
-REF_SUMMARY  = r"C:\Users\BornLoser\Desktop\Assignment\Thesis\04_Mutation_Processing\Output\Step2_RefCheck\reference_summary.csv"
-OUT_CSV      = r"C:\Users\BornLoser\Desktop\Assignment\Thesis\04_Mutation_Processing\Output\IDBases_Summary.csv"
+IDBASE_DIR   = os.environ["IDBASE_DIR"]
+REF_SUMMARY  = os.environ["REF_SUMMARY"]
+OUT_CSV      = os.environ["OUT_CSV"]
 
 SLEEP = 0.3
 
@@ -61,5 +61,6 @@ for gene in genes:
     })
     time.sleep(SLEEP)
 
+os.makedirs(os.path.dirname(OUT_CSV), exist_ok=True)
 pd.DataFrame(rows).to_csv(OUT_CSV, index=False)
 print(f"\nWritten {len(rows)} genes to {OUT_CSV}")

@@ -1,23 +1,19 @@
-﻿import csv
+import os
+import csv
 from pathlib import Path
 from collections import defaultdict
 
-_SCRIPT_DIR = Path(__file__).parent
-_THESIS_DIR = (_SCRIPT_DIR / ".." / ".." / "..").resolve()
-_PROC_DIR   = _THESIS_DIR / "04_Mutation_Processing"
-_MUT7       = _PROC_DIR / "Output" / "Step7_Mutalyzer"
-_OUT        = _PROC_DIR / "Output" / "Step8_Merging"
-_OUT.mkdir(exist_ok=True)
+TRACK_A = os.environ["TRACK_A"]
+TRACK_B = os.environ["TRACK_B"]
+TRACK_C = os.environ["TRACK_C"]
 
-TRACK_A = _MUT7 / "mutalyzer_results.tsv"
-TRACK_B = _MUT7 / "mutalyzer_results_NM_MANE.tsv"
-TRACK_C = _MUT7 / "mutalyzer_results_NM.tsv"
+OUT_MERGED     = os.environ["OUT_MERGED"]
+OUT_UNRESOLVED = os.environ["OUT_UNRESOLVED"]
+OUT_CROSSCHECK = os.environ["OUT_CROSSCHECK"]
+LOG_PATH       = os.environ["LOG_PATH"]
 
-OUT_MERGED        = _OUT / "merged_variants.tsv"
-OUT_UNRESOLVED    = _OUT / "unresolved_variants.tsv"
-OUT_CROSSCHECK    = _OUT / "crosscheck_disagreements.tsv"
-LOG_PATH          = _PROC_DIR / "Logs" / "merge_tracks.log"
-LOG_PATH.parent.mkdir(exist_ok=True)
+for _d in (OUT_MERGED, LOG_PATH):
+    os.makedirs(os.path.dirname(_d), exist_ok=True)
 
 OUTPUT_COLS = [
     "gene", "accession", "allele_num", "sysname",

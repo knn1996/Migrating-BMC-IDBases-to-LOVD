@@ -1,0 +1,20 @@
+# Normalize line endings: store text as LF in the repo.
+* text=auto
+
+# Scripts that MUST be LF to run under bash / Snakemake.
+*.sh    text eol=lf
+*.py    text eol=lf
+Snakefile text eol=lf
+*.yaml  text eol=lf
+*.yml   text eol=lf
+
+# Data / third-party binaries: never touch.
+*.chain     binary
+*.over.chain binary
+**/liftOver binary
+*.png       binary
+*.pdf       binary
+*.xlsx      binary
+*.fa        binary
+*.fna       binary
+*.fasta     binary

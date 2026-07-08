@@ -4,18 +4,17 @@ import os
 import re
 from pathlib import Path
 
-ALL_MUTATIONS_TSV = r"C:\Users\BornLoser\Desktop\Assignment\Thesis\04_Mutation_Processing\Output\Step1_Extraction\all_mutations.tsv"
-BED_DIR           = r"C:\Users\BornLoser\Desktop\Assignment\Thesis\04_Mutation_Processing\Output\Step5_Liftover"
-OUT_TSV_TEMPLATE  = r"C:\Users\BornLoser\Desktop\Assignment\Thesis\04_Mutation_Processing\Output\Step7_Mutalyzer\mutalyzer_input_NM_{source}.tsv"
-LOG_TSV_TEMPLATE  = r"C:\Users\BornLoser\Desktop\Assignment\Thesis\04_Mutation_Processing\Output\Step7_Mutalyzer\mutalyzer_input_NM_skipped_{source}.tsv"
-
+ALL_MUTATIONS_TSV = os.environ["ALL_MUTATIONS_TSV"]
+BED_DIR           = os.environ["BED_DIR"]
+OUT_TSV  = os.environ["OUT_TSV"]
+LOG_TSV  = os.environ["LOG_TSV"]
 SOURCE_DIRS = {
-    "MANE":     r"C:\Users\BornLoser\Desktop\Assignment\Thesis\04_Mutation_Processing\DNA sequences\Mane_Select_NM",
-    "IDRefseq": r"C:\Users\BornLoser\Desktop\Assignment\Thesis\04_Mutation_Processing\DNA sequences\IDRefseq_NM",
+    "MANE":     os.environ.get("MANE_NM_DIR", ""),
+    "IDRefseq": os.environ.get("IDREFSEQ_NM_DIR", ""),
 }
 
 SOURCE_NG_DIRS = {
-    "MANE":     r"C:\Users\BornLoser\Desktop\Assignment\Thesis\04_Mutation_Processing\DNA sequences\Mane_Select_NG",
+    "MANE":     os.environ.get("MANE_NG_DIR", ""),
     "IDRefseq": None,
 }
 
@@ -25,8 +24,7 @@ CODING_OFFSET = {"ADA": -95}
 
 NM_ONLY_GENES = {"ORAI1"}
 
-os.makedirs(r"C:\Users\BornLoser\Desktop\Assignment\Thesis\04_Mutation_Processing\Output\Step7_Mutalyzer", exist_ok=True)
-
+os.makedirs(os.path.dirname(OUT_TSV), exist_ok=True)
 CHR_TO_NC = {
     "chr1":  "NC_000001.11", "chr2":  "NC_000002.12", "chr3":  "NC_000003.12",
     "chr4":  "NC_000004.12", "chr5":  "NC_000005.10", "chr6":  "NC_000006.12",
@@ -122,8 +120,8 @@ def main():
 
     fasta_dir = SOURCE_DIRS[args.source]
     ng_dir    = SOURCE_NG_DIRS.get(args.source)
-    out_tsv   = OUT_TSV_TEMPLATE.format(source=args.source)
-    log_tsv   = LOG_TSV_TEMPLATE.format(source=args.source)
+    out_tsv   = OUT_TSV
+    log_tsv   = LOG_TSV
 
     nm_index  = build_acc_index(fasta_dir)
     ng_index  = build_acc_index(ng_dir)

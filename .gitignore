@@ -76,7 +76,7 @@ copy_report.csv
 
 # ---- Mutalyzer caches & large per-track results (regenerable) ----
 *.jsonl
-04_Mutation_Processing/Output/Step7_Mutalyzer/mutalyzer_results*.tsv
+04_Mutation_Processing/Output/Step6_Mutalyzer/mutalyzer_results*.tsv
 
 # ---- Removed VCF step (dead output) ----
 04_Mutation_Processing/Output/Step6_VCF/
@@ -84,10 +84,10 @@ copy_report.csv
 # ---- Large intermediate data (deposit in Zenodo, not git) ----
 04_Mutation_Processing/Output/all_mutations.tsv
 04_Mutation_Processing/Output/Step1_Extraction/all_mutations.tsv
-04_Mutation_Processing/Output/Step8_Merging/merged_variants.tsv
-04_Mutation_Processing/Output/Step8_Merging/lovd_flat_with_patients.tsv
-04_Mutation_Processing/Output/Step8_Merging/unresolved_variants.tsv
-04_Mutation_Processing/Output/Step8_Merging/unresolved_disposition.tsv
+04_Mutation_Processing/Output/Step7_Merging/merged_variants.tsv
+04_Mutation_Processing/Output/Step7_Merging/lovd_flat_with_patients.tsv
+04_Mutation_Processing/Output/Step7_Merging/unresolved_variants.tsv
+04_Mutation_Processing/Output/Step7_Merging/unresolved_disposition.tsv
 
 # ---- Per-gene EMBL working dirs (large) ----
 04_Mutation_Processing/Mutation Extraction and Matching/*/
@@ -125,4 +125,4 @@ protein_only_variants.csv
 04_Mutation_Processing/Output/uniprot_all_bases.csv
 04_Mutation_Processing/Output/uniprot_data.csv
 04_Mutation_Processing/Output/uniprot_link.csv
-04_Mutation_Processing/Mutation Extraction and Matching/Mutation_extraction.ipynb
+04_Mutation_Processing/Mutation Extraction and Matching/Mutation_extraction.ipynb04_Mutation_Processing/Scripts/Scripts.rar

@@ -14,26 +14,17 @@
 #   bash summarize_blast_first_hits.sh /home/khoi1996/Documents/BLAST_Results
 #   bash summarize_blast_first_hits.sh /path/to/results -o /path/to/summary.tsv
 
-# ── Defaults ──────────────────────────────────────────────────────────────────
-RESULTS_DIR="/home/khoi1996/Documents/BLAST_Results"
-OUTPUT_FILE=""
-
-# ── Argument parsing ──────────────────────────────────────────────────────────
-while [[ $# -gt 0 ]]; do
-    case "$1" in
-        -o|--output) OUTPUT_FILE="$2"; shift 2 ;;
-        -*) echo "Unknown option: $1"; exit 1 ;;
-        *)  RESULTS_DIR="$1"; shift ;;
-    esac
-done
-
-OUTPUT_FILE="${OUTPUT_FILE:-${RESULTS_DIR}/blast_first_hits_summary.tsv}"
+# ── Paths from environment ────────────────────────────────────────────────────
+RESULTS_DIR="${IN_DIR}"
+OUTPUT_FILE="${OUT_FILE}"
 
 # ── Sanity check ──────────────────────────────────────────────────────────────
 if [[ ! -d "$RESULTS_DIR" ]]; then
     echo "ERROR: Directory not found: $RESULTS_DIR"
     exit 1
 fi
+
+mkdir -p "$(dirname "$OUTPUT_FILE")"
 
 # ── Write header ──────────────────────────────────────────────────────────────
 printf '%s\t%s\t%s\t%s\t%s\t%s\t%s\t%s\t%s\t%s\t%s\t%s\t%s\t%s\t%s\n' \

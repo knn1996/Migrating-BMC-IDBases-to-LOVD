@@ -3,11 +3,8 @@ import argparse
 import pandas as pd
 from scipy.stats import binomtest
 
-THESIS_DIR = r"C:\Users\BornLoser\Desktop\Assignment\Thesis"
-PROC_DIR   = os.path.join(THESIS_DIR, "04_Mutation_Processing")
-
-ALL_MUT_TSV = os.path.join(PROC_DIR, "Output", "Step1_Extraction", "all_mutations.tsv")
-OUT_DIR     = os.path.join(PROC_DIR, "Output", "Step2_RefCheck")
+ALL_MUT_TSV = os.environ["ALL_MUT_TSV"]
+OUT_DIR     = os.environ["OUT_DIR"]
 
 OFFSET_FILES_BASE = {
     "NG_IDRefseq": "lrg_offset_results.csv",
@@ -124,6 +121,8 @@ def main():
 
     suffix         = "_with_indels" if args.include_indels else ""
     anchor_classes = ALL_ANCHOR if args.include_indels else SUB_ONLY
+
+    os.makedirs(OUT_DIR, exist_ok=True)
 
     print(f"Anchor types for spatial: {sorted(anchor_classes)}")
     print(f"Offset file suffix:       '{suffix}'")

@@ -2,10 +2,8 @@ import os
 import re
 import pandas as pd
 
-THESIS_DIR = r"C:\Users\BornLoser\Desktop\Assignment\Thesis"
-STEP8_DIR  = os.path.join(THESIS_DIR, "04_Mutation_Processing", "Output", "Step8_Merging")
-IN_PATH    = os.path.join(STEP8_DIR, "dedup_merged_variants.tsv")
-OUT_PATH   = os.path.join(STEP8_DIR, "lovd_flat.tsv")
+IN_PATH  = os.environ["IN_PATH"]
+OUT_PATH = os.environ["OUT_PATH"]
 
 NM_IN_PARENS = re.compile(r"\((N[MPR]_[^)]+)\)")
 NM_BARE      = re.compile(r"^(N[MPR]_[^:()]+)")
