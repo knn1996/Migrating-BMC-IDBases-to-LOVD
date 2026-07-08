@@ -1,7 +1,7 @@
 import os
 import glob
 
-configfile: "config.yaml"
+configfile: "config/config.yaml"
 
 THESIS = config["thesis_dir"]
 PROC = os.path.join(THESIS, config["proc_subdir"])

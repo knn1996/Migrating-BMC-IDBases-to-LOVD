@@ -11,12 +11,12 @@ authors:
     family-names: Nguyen Ngoc
     affiliation: Lund University
     # orcid: "https://orcid.org/0009-0002-6766-8198"
-version: 1.0.0
-date-released: "2026-06-26"
+version: 1.1.1
+date-released: "2026-07-08"
 license: MIT
 repository-code: "https://github.com/knn1996/Migrating-BMC-IDBases-to-LOVD"
 url: "https://github.com/knn1996/Migrating-BMC-IDBases-to-LOVD"
-# doi: "10.5281/zenodo.20886950"
+doi: "10.5281/zenodo.20886950"
 keywords:
   - bioinformatics
   - genomics

@@ -1,0 +1,34 @@
+name: pipeline-ci
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+  workflow_dispatch:
+
+jobs:
+  lint-and-dryrun:
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: 04_Mutation_Processing/Scripts
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Install Snakemake
+        run: pip install "snakemake>=7.32,<8" "pulp<2.8"
+
+      - name: Generate stub fixtures
+        run: bash tests/make_fixtures.sh
+
+      - name: Snakemake lint (non-blocking)
+        continue-on-error: true
+        run: snakemake -s Snakefile --configfile tests/config.ci.yaml --lint
+
+      - name: Snakemake dry run (DAG must resolve)
+        run: snakemake -s Snakefile --configfile tests/config.ci.yaml -n

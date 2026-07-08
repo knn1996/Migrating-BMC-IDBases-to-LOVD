@@ -125,4 +125,13 @@ protein_only_variants.csv
 04_Mutation_Processing/Output/uniprot_all_bases.csv
 04_Mutation_Processing/Output/uniprot_data.csv
 04_Mutation_Processing/Output/uniprot_link.csv
-04_Mutation_Processing/Mutation Extraction and Matching/Mutation_extraction.ipynb04_Mutation_Processing/Scripts/Scripts.rar
+04_Mutation_Processing/Mutation Extraction and Matching/Mutation_extraction.ipynb
+04_Mutation_Processing/Scripts/Scripts.rar
+
+# ---- Local (gitignored) pipeline config; commit config.example.yaml only ----
+04_Mutation_Processing/Scripts/config/config.yaml
+
+# ---- Snakemake working outputs & CI stub fixtures (regenerable) ----
+04_Mutation_Processing/Scripts/results/
+04_Mutation_Processing/Scripts/tests/fixtures/
+.snakemake/

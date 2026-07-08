@@ -47,8 +47,7 @@ lifting coordinates to GRCh38.
 
 ## Pipeline overview
 
-Seven stages, run in order. _(Step labels mirror the thesis Methods — adjust wording here
-if you want them identical.)_
+Seven stages, run in order. The step labels below mirror the thesis Methods section.
 
 1. **Extraction** — Parse IDbases MUTbase records into a structured variant table
    (gene, accession, c./p. notation, zygosity).
@@ -77,13 +76,61 @@ if you want them identical.)_
 
 ## Quickstart
 
+The pipeline is a **config-driven [Snakemake](https://snakemake.readthedocs.io/)
+workflow**. You need `snakemake` and `conda`/`mamba`; every rule pulls its own
+dependencies from `envs/*.yaml` via `--use-conda`, so no manual `pip install` is
+required.
+
+All commands are run from the pipeline directory, and every relative path in the
+config (`results/…`) resolves against that directory — so always launch Snakemake
+from `04_Mutation_Processing/Scripts`:
+
 ```bash
-pip install requests pandas openpyxl biopython tqdm
+cd 04_Mutation_Processing/Scripts
+
+# 1. Create your local config from the committed template, then edit the paths
+cp config/config.example.yaml config/config.yaml
+#    open config/config.yaml and point the absolute paths at your data
+#    (config/config.yaml is gitignored; config.example.yaml is the shared template)
+
+# 2. Dry run — resolves the DAG without executing anything
+snakemake --use-conda --cores 8 -n
+
+# 3. Real run
+snakemake --use-conda --cores 8
 ```
 
-1. Place `IDBases_Summary_with_UniProt.xlsx` in the working directory.
-2. Edit the `CONSTANTS` block at the top of each script to set your local paths.
-3. Run the stages in order (1 → 7).
+**Outputs.** The final deliverable is **`results/lovd_review.xlsx`** (the LOVD 3.0
+review workbook), written relative to `04_Mutation_Processing/Scripts`. All
+intermediates land under `results/` as well: `results/seq` (downloaded sequences),
+`results/blast` (BLAST DBs and hits), `results/bed` (`raw` → `filtered` → `hg38`),
+`results/cache` (Mutalyzer response cache), and `results/logs`.
+
+### Choosing the gene set (`run_set`)
+
+**The default config runs a 3-gene smoke test** (`RAB27A`, `UNC13D`, `ADA`) so you
+can validate the install quickly. To reproduce the **full thesis dataset**, set:
+
+```yaml
+run_set: "all"
+```
+
+in `config/config.yaml`. With `run_set: all`, the gene list is auto-discovered from
+the IDbases source directories (`idbase_subdir`).
+
+### Required external data
+
+These inputs are third-party or large and are **not** stored in git. Download or
+deposit them and point the matching config key at their location:
+
+| Input | Source | Config key |
+| --- | --- | --- |
+| IDbases source directories (per-gene MUTbase records) | [BMC IDbases](http://structure.bmc.lu.se/idbase/) | `idbase_subdir` |
+| hg16 / hg17 / hg18 chromosome FASTA (`chr*.fa`) | [UCSC Genome Browser](https://hgdownload.soe.ucsc.edu/downloads.html) | `genome_dir` + `build_dirs` |
+| MANE RNA FASTA (`MANE.GRCh38.*.refseq_rna.fna`) | [NCBI MANE](https://www.ncbi.nlm.nih.gov/refseq/MANE/) | `inputs.mane_rna_fasta` |
+| `LRG_RefSeqGene.txt` | [NCBI RefSeqGene / LRG](https://ftp.ncbi.nlm.nih.gov/refseq/H_sapiens/RefSeqGene/) | `inputs.lrg_refseqgene_txt` |
+| Gene alias table (`alias.csv`) | Project-provided | `inputs.alias_csv` |
+| Curated IDRefSeq sequences (NG / NM / processed FASTA) | Zenodo / project deposit | `ref_seq.*`, `dna_seq.*` |
 
 ## Data sources
 

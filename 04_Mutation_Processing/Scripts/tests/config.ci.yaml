@@ -1,0 +1,64 @@
+thesis_dir: "tests/fixtures/thesis"
+proc_subdir: "04_Mutation_Processing"
+idbase_subdir: "idbase"
+
+output_root: "results"
+seq_root: "results/seq"
+blast_root: "results/blast"
+bed_root: "results/bed"
+logs_root: "results/logs"
+
+genome_dir: "tests/fixtures/genomes"
+build_dirs:
+  hg16: "HG16"
+  hg17: "HG17"
+  hg18: "HG18"
+builds: ["hg16", "hg17", "hg18"]
+chr_glob: "chr*.fa"
+
+run_set: "test"
+gene_sets:
+  test: ["RAB27A", "UNC13D", "ADA"]
+  all: "auto"
+large_gene: "CYBB"
+
+blast:
+  evalue: "1e-10"
+  max_target_seqs: 100
+  outfmt: "7 qseqid sseqid pident length mismatch gapopen qstart qend sstart send evalue bitscore"
+
+mutalyzer:
+  cache_dir: "results/cache/mutalyzer"
+variantvalidator:
+  cache_dir: "results/cache/variantvalidator"
+
+optional:
+  reference_confirm_source_2: false
+  find_lrg_offset_NM: false
+  confidence_analysis: false
+  qa_branch: false
+
+resources:
+  blast_gene:
+    mem_mb: 16000
+    runtime: 240
+    threads: 8
+  make_blast_db:
+    mem_mb: 8000
+    runtime: 120
+
+dna_seq:
+  mane_nm: "tests/fixtures/dna/Mane_Select_NM"
+  idrefseq_nm: "tests/fixtures/dna/IDRefseq_NM"
+  mane_ng: "tests/fixtures/dna/Mane_Select_NG"
+
+ref_seq:
+  source1_processed: "tests/fixtures/dna/Processed_FASTA_Source1"
+  source2_reference: "tests/fixtures/dna/Reference_Source2"
+  idrefseq_ng: "tests/fixtures/dna/IDRefseq"
+
+inputs:
+  idbase_summary: "tests/fixtures/inputs/IDBases_Summary.csv"
+  alias_csv: "tests/fixtures/inputs/alias.csv"
+  lrg_refseqgene_txt: "tests/fixtures/inputs/LRG_RefSeqGene.txt"
+  mane_rna_fasta: "tests/fixtures/inputs/MANE.GRCh38.refseq_rna.fna"
