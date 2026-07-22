@@ -1,15 +1,33 @@
 import csv
+import json
 import os
 import re
 
-THESIS_DIR = r"C:\Users\BornLoser\Desktop\Assignment\Thesis"
-STEP8_OUT  = os.path.join(THESIS_DIR, "04_Mutation_Processing", "Output", "Step8_Merging")
-
-IN_PATH  = os.path.join(STEP8_OUT, "unresolved_variants.tsv")
-OUT_PATH = os.path.join(STEP8_OUT, "unresolved_disposition.tsv")
-SUMMARY  = os.path.join(STEP8_OUT, "unresolved_disposition_summary.tsv")
+IN_PATH  = os.environ["IN_PATH"]
+OUT_PATH = os.environ["OUT_PATH"]
+SUMMARY  = os.environ["SUMMARY"]
 
 WATSON = {"A": "T", "T": "A", "C": "G", "G": "C"}
+RE_IVS = re.compile(r"\bIVS\d+", re.IGNORECASE)
+
+
+def _err_codes(err_str):
+    if not err_str:
+        return set()
+    try:
+        items = json.loads(err_str)
+        if isinstance(items, list):
+            return {d.get("code", "") for d in items if isinstance(d, dict)}
+    except (json.JSONDecodeError, ValueError):
+        pass
+    return set(re.findall(r"\b(E[A-Z]+)\b", err_str))
+
+
+def _has_ivs(row):
+    return bool(
+        RE_IVS.search(row.get("sysname") or "")
+        or RE_IVS.search(row.get("hgvs_input") or "")
+    )
 
 
 def rc(s):
@@ -22,28 +40,50 @@ def strip_desc(s):
 
 
 def classify(row):
-    err = row.get("errors") or ""
-    mut = row.get("mut_type", "")
+    err    = row.get("errors") or ""
+    codes  = _err_codes(err)
+    status = row.get("status", "").strip()
 
-    if "ENOSELECTORFOUND" in err:
+    if status == "no_result":
+        return {
+            "category": "NO_REF",
+            "subcategory": "no_usable_reference",
+            "root_cause": "No NG_ or NM_ track produced any result for this variant; "
+                          "gene likely absent from all reference FASTA directories",
+            "rescue_path": "none",
+            "disposition": "UNRESCUABLE",
+        }
+
+    if "ENOSELECTORFOUND" in err or "ENOSELECTORFOUND" in codes:
         return {
             "category": "ENOSELECTORFOUND",
             "subcategory": "nm_not_in_ng",
-            "root_cause": "Specified NM transcript not annotated in the chosen NG_ reference (NM version obsolescence or wrong NG/NM pairing)",
-            "rescue_path": "resubmit against MANE Select NM directly or via VariantValidator; or use the NM version annotated in the NG",
+            "root_cause": "Specified NM transcript not annotated in the chosen NG_ reference "
+                          "(NM version obsolescence or wrong NG/NM pairing)",
+            "rescue_path": "resubmit against MANE Select NM directly or via VariantValidator; "
+                           "or use the NM version annotated in the NG",
             "disposition": "RESCUABLE_AUTO",
         }
 
-    if "EINTRONIC" in err:
+    if "EINTRONIC" in err or "EINTRONIC" in codes:
+        if _has_ivs(row):
+            return {
+                "category": "EINTRONIC",
+                "subcategory": "IVS-syntax",
+                "root_cause": "Legacy IVS notation (e.g. IVS3+1G>T) is not valid HGVS; "
+                              "Mutalyzer cannot resolve intronic position from NG_ context",
+                "rescue_path": "VariantValidator API with bare NM_:c. after IVS normalisation",
+                "disposition": "RESCUABLE_AUTO",
+            }
         return {
             "category": "EINTRONIC",
             "subcategory": "intronic_c_notation",
-            "root_cause": "Intronic position not resolvable in c. context",
+            "root_cause": "Intronic position not resolvable in c. context via Mutalyzer NG_ route",
             "rescue_path": "VariantValidator API with MANE transcript",
             "disposition": "RESCUABLE_AUTO",
         }
 
-    if "ESYNTAXUEOF" in err:
+    if "ESYNTAXUEOF" in err or "ESYNTAXUEOF" in codes:
         return {
             "category": "ESYNTAXUEOF",
             "subcategory": "missing_inserted_sequence",
@@ -52,7 +92,7 @@ def classify(row):
             "disposition": "UNRESCUABLE",
         }
 
-    if "EINSERTIONRANGE" in err:
+    if "EINSERTIONRANGE" in err or "EINSERTIONRANGE" in codes:
         return {
             "category": "EINSERTIONRANGE",
             "subcategory": "non_consecutive_ins_range",
@@ -61,7 +101,7 @@ def classify(row):
             "disposition": "RESCUABLE_MANUAL",
         }
 
-    if "ERANGEREVERSED" in err:
+    if "ERANGEREVERSED" in err or "ERANGEREVERSED" in codes:
         return {
             "category": "ERANGEREVERSED",
             "subcategory": "start_greater_than_end",
@@ -70,7 +110,7 @@ def classify(row):
             "disposition": "RESCUABLE_MANUAL",
         }
 
-    if "ESEQUENCEMISMATCH" in err:
+    if "ESEQUENCEMISMATCH" in err or "ESEQUENCEMISMATCH" in codes:
         m = re.search(
             r"`([ACGT]+)`\s*was not found in the reference sequence;\s*`([ACGT]+)`\s*was found",
             err,
@@ -85,18 +125,20 @@ def classify(row):
             }
         submitted, actual = m.group(1), m.group(2)
         if len(submitted) == 1 and len(actual) == 1:
-            if WATSON[submitted] == actual:
+            if WATSON.get(submitted) == actual:
                 return {
                     "category": "ESEQUENCEMISMATCH",
                     "subcategory": "single_base_complement",
-                    "root_cause": f"Submitted ref {submitted} is complement of actual {actual}; curator may have recorded genomic + strand base on minus-strand gene",
+                    "root_cause": f"Submitted ref {submitted} is complement of actual {actual}; "
+                                  "curator may have recorded genomic + strand base on minus-strand gene",
                     "rescue_path": "none (would require fabricating correct base)",
                     "disposition": "UNRESCUABLE_DATA_ERROR",
                 }
             return {
                 "category": "ESEQUENCEMISMATCH",
                 "subcategory": "single_base_wrong",
-                "root_cause": f"Submitted ref {submitted} does not match GRCh38 ({actual}); curation error or obsolete reference",
+                "root_cause": f"Submitted ref {submitted} does not match GRCh38 ({actual}); "
+                              "curation error or obsolete reference",
                 "rescue_path": "none",
                 "disposition": "UNRESCUABLE_DATA_ERROR",
             }
@@ -114,9 +156,10 @@ def classify(row):
             return {
                 "category": "ESEQUENCEMISMATCH",
                 "subcategory": "positional_offset",
-                "root_cause": f"Submitted {submitted} shares prefix/suffix with actual {actual}; probable off-by-one coordinate",
-                "rescue_path": "manual: strip base from HGVS or shift position then resubmit",
-                "disposition": "RESCUABLE_MANUAL",
+                "root_cause": f"Submitted {submitted} shares prefix/suffix with actual {actual}; "
+                              "probable off-by-one coordinate from legacy reference",
+                "rescue_path": "apply empirical sstart offset from lrg_offset_results.csv then resubmit",
+                "disposition": "RESCUABLE_AUTO",
             }
         if len(submitted) != len(actual):
             return {

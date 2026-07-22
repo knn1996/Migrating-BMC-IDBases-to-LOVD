@@ -8,11 +8,18 @@ PROC = os.path.join(THESIS, config["proc_subdir"])
 IDBASE = os.path.join(THESIS, config["idbase_subdir"])
 SCRIPTS = workflow.basedir
 
-OUT = config["output_root"]
-SEQ = config["seq_root"]
-BLAST = config["blast_root"]
-BED = config["bed_root"]
+OUT  = config["output_root"]
 LOGS = config["logs_root"]
+
+S1A = os.path.join(OUT, "Step1_Extraction")
+S1B = os.path.join(OUT, "Step1b_RSG_Mapping")
+S1C = os.path.join(OUT, "Step1c_SeqDownload")
+S2  = os.path.join(OUT, "Step2_RefCheck")
+S3  = os.path.join(OUT, "Step3_BLAST")
+S4  = os.path.join(OUT, "Step4_BED")
+S5  = os.path.join(OUT, "Step5_Liftover")
+S6  = os.path.join(OUT, "Step6_Mutalyzer")
+S7  = os.path.join(OUT, "Step7_Merging")
 
 GENOME = config["genome_dir"]
 BUILDS = config["builds"]
@@ -47,17 +54,17 @@ def script(rel):
 
 rule all:
     input:
-        os.path.join(OUT, "lovd_review.xlsx"),
-        *([os.path.join(OUT, "reference_check_source_2.tsv")] if config["optional"]["reference_confirm_source_2"] else []),
-        *([os.path.join(OUT, "lrg_offset_results_NM.csv")] if config["optional"]["find_lrg_offset_NM"] else []),
-        *([os.path.join(OUT, "gene_confidence_NG_IDRefseq.csv")] if config["optional"]["confidence_analysis"] else []),
+        os.path.join(S7, "lovd_review.xlsx"),
+        *([os.path.join(S2, "reference_check_source_2.tsv")] if config["optional"]["reference_confirm_source_2"] else []),
+        *([os.path.join(S2, "lrg_offset_results_NM.csv")] if config["optional"]["find_lrg_offset_NM"] else []),
+        *([os.path.join(S2, "gene_confidence_NG_IDRefseq.csv")] if config["optional"]["confidence_analysis"] else []),
 
 
 rule extract_mutations:
     input:
         idbase=IDBASE,
     output:
-        os.path.join(OUT, "all_mutations.tsv"),
+        os.path.join(S1A, "all_mutations.tsv"),
     conda:
         "envs/python.yaml"
     shell:
@@ -68,11 +75,11 @@ rule extract_mutations:
 
 rule lrg_index:
     input:
-        summary=INPUTS["idbase_summary"],
-        refseq=INPUTS["lrg_refseqgene_txt"],
-        alias=INPUTS["alias_csv"],
+        summary=ancient(INPUTS["idbase_summary"]),
+        refseq=ancient(INPUTS["lrg_refseqgene_txt"]),
+        alias=ancient(INPUTS["alias_csv"]),
     output:
-        os.path.join(OUT, "LRG.csv"),
+        os.path.join(S1B, "LRG.csv"),
     conda:
         "envs/http.yaml"
     shell:
@@ -82,10 +89,10 @@ rule lrg_index:
 
 rule add_nm_to_lrg:
     input:
-        lrg=os.path.join(OUT, "LRG.csv"),
+        lrg=os.path.join(S1B, "LRG.csv"),
         refseq=INPUTS["lrg_refseqgene_txt"],
     output:
-        os.path.join(OUT, "LRG_with_NM.csv"),
+        os.path.join(S1B, "LRG_with_NM.csv"),
     conda:
         "envs/http.yaml"
     shell:
@@ -96,9 +103,9 @@ rule add_nm_to_lrg:
 rule summary_v1:
     input:
         idbase=IDBASE,
-        ref=os.path.join(OUT, "reference_summary.csv"),
+        ref=os.path.join(S2, "reference_summary.csv"),
     output:
-        os.path.join(OUT, "IDBases_Summary.v1.csv"),
+        os.path.join(S1B, "IDBases_Summary.v1.csv"),
     conda:
         "envs/http.yaml"
     shell:
@@ -111,7 +118,7 @@ rule download_refseq:
         idbase=IDBASE,
         alias=INPUTS["alias_csv"],
     output:
-        os.path.join(OUT, "mane_ng_accessions.csv"),
+        os.path.join(S2, "mane_ng_accessions.csv"),
     conda:
         "envs/http.yaml"
     shell:
@@ -126,7 +133,7 @@ rule download_nm:
         alias=INPUTS["alias_csv"],
         mane=INPUTS["mane_rna_fasta"],
     output:
-        os.path.join(LOGS, "download_mane_nm_summary.csv"),
+        os.path.join(S1C, "download_mane_nm_summary.csv"),
     conda:
         "envs/http.yaml"
     shell:
@@ -137,9 +144,9 @@ rule download_nm:
 
 rule refcheck_offset:
     input:
-        mut=os.path.join(OUT, "all_mutations.tsv"),
+        mut=os.path.join(S1A, "all_mutations.tsv"),
     output:
-        os.path.join(OUT, "lrg_offset_results.csv"),
+        os.path.join(S2, "lrg_offset_results.csv"),
     params:
         seq=REF_SEQ["idrefseq_ng"],
     conda:
@@ -152,9 +159,9 @@ rule refcheck_offset:
 
 rule reference_confirm_source1:
     input:
-        mut=os.path.join(OUT, "all_mutations.tsv"),
+        mut=os.path.join(S1A, "all_mutations.tsv"),
     output:
-        os.path.join(OUT, "reference_check_source_1.tsv"),
+        os.path.join(S2, "reference_check_source_1.tsv"),
     params:
         seq=REF_SEQ["source1_processed"],
     conda:
@@ -168,10 +175,10 @@ rule make_blast_db:
     input:
         lambda wc: sorted(glob.glob(os.path.join(GENOME, BUILD_DIRS[wc.build], config["chr_glob"]))),
     output:
-        protected(os.path.join(BLAST, "db", "{build}.nsq")),
+        protected(os.path.join(S3, "db", "{build}.nsq")),
     params:
-        prefix=os.path.join(BLAST, "db", "{build}"),
-        fa=os.path.join(BLAST, "db", "{build}.fa"),
+        prefix=os.path.join(S3, "db", "{build}"),
+        fa=os.path.join(S3, "db", "{build}.fa"),
     conda:
         "envs/blast.yaml"
     resources:
@@ -186,11 +193,11 @@ rule make_blast_db:
 rule blast_gene:
     input:
         query=ng_query,
-        db=os.path.join(BLAST, "db", "{build}.nsq"),
+        db=os.path.join(S3, "db", "{build}.nsq"),
     output:
-        os.path.join(BLAST, "{gene}_vs_{build}.txt"),
+        os.path.join(S3, "{gene}_vs_{build}.txt"),
     params:
-        db=os.path.join(BLAST, "db", "{build}"),
+        db=os.path.join(S3, "db", "{build}"),
         outfmt=config["blast"]["outfmt"],
         evalue=config["blast"]["evalue"],
         maxhits=config["blast"]["max_target_seqs"],
@@ -209,24 +216,24 @@ rule blast_gene:
 
 rule summarize_blast:
     input:
-        expand(os.path.join(BLAST, "{gene}_vs_{build}.txt"), gene=GENES, build=BUILDS),
+        expand(os.path.join(S3, "{gene}_vs_{build}.txt"), gene=GENES, build=BUILDS),
     output:
-        os.path.join(OUT, "blast_first_hits_source_IDRefseq.tsv"),
+        os.path.join(S3, "blast_first_hits_source_IDRefseq.tsv"),
     conda:
         "envs/python.yaml"
     shell:
-        f'IN_DIR="{BLAST}" OUT_FILE="{{output}}" '
+        f'IN_DIR="{S3}" OUT_FILE="{{output}}" '
         f'bash "{script("Step3_BLAST/summarize_blast_first_hits.sh")}"'
 
 
 rule build_reference_summary:
     input:
-        s1=os.path.join(OUT, "reference_check_source_1.tsv"),
-        offset=os.path.join(OUT, "lrg_offset_results.csv"),
-        lrg=os.path.join(OUT, "LRG_with_NM.csv"),
-        blast=os.path.join(OUT, "blast_first_hits_source_IDRefseq.tsv"),
+        s1=os.path.join(S2, "reference_check_source_1.tsv"),
+        offset=os.path.join(S2, "lrg_offset_results.csv"),
+        lrg=os.path.join(S1B, "LRG_with_NM.csv"),
+        blast=os.path.join(S3, "blast_first_hits_source_IDRefseq.tsv"),
     output:
-        os.path.join(OUT, "reference_summary.csv"),
+        os.path.join(S2, "reference_summary.csv"),
     conda:
         "envs/python.yaml"
     shell:
@@ -237,10 +244,10 @@ rule build_reference_summary:
 
 rule generate_bed:
     input:
-        mut=os.path.join(OUT, "all_mutations.tsv"),
-        blast=os.path.join(OUT, "blast_first_hits_source_IDRefseq.tsv"),
+        mut=os.path.join(S1A, "all_mutations.tsv"),
+        blast=os.path.join(S3, "blast_first_hits_source_IDRefseq.tsv"),
     output:
-        directory(os.path.join(BED, "raw")),
+        directory(os.path.join(S4, "raw")),
     conda:
         "envs/python.yaml"
     shell:
@@ -251,23 +258,23 @@ rule generate_bed:
 
 rule filter_bed:
     input:
-        raw=os.path.join(BED, "raw"),
-        summary=os.path.join(OUT, "reference_summary.csv"),
+        raw=os.path.join(S4, "raw"),
+        summary=os.path.join(S2, "reference_summary.csv"),
     output:
-        directory(os.path.join(BED, "filtered")),
+        directory(os.path.join(S4, "filtered")),
     conda:
         "envs/python.yaml"
     shell:
         f'REF_SUMMARY="{{input.summary}}" IN_DIR="{{input.raw}}" OUT_DIR="{{output}}" '
-        f'OUT_EXCLUDED="{os.path.join(OUT, "excluded_accessions.tsv")}" '
+        f'OUT_EXCLUDED="{os.path.join(S4, "excluded_accessions.tsv")}" '
         f'python "{script("Step4_BED/filter_bed.py")}"'
 
 
 rule liftover:
     input:
-        os.path.join(BED, "filtered"),
+        os.path.join(S4, "filtered"),
     output:
-        directory(os.path.join(BED, "hg38")),
+        directory(os.path.join(S5, "hg38")),
     params:
         chains=os.path.join(SCRIPTS, "Step5_LiftOver"),
     conda:
@@ -279,10 +286,10 @@ rule liftover:
 
 rule bed_to_mutalyzer:
     input:
-        bed=os.path.join(BED, "hg38"),
+        bed=os.path.join(S5, "hg38"),
     output:
-        tsv=os.path.join(OUT, "mutalyzer_input.tsv"),
-        skipped=os.path.join(OUT, "mutalyzer_skipped.tsv"),
+        tsv=os.path.join(S6, "mutalyzer_input.tsv"),
+        skipped=os.path.join(S6, "mutalyzer_skipped.tsv"),
     conda:
         "envs/python.yaml"
     shell:
@@ -292,9 +299,9 @@ rule bed_to_mutalyzer:
 
 rule mutalyzer_track_A:
     input:
-        os.path.join(OUT, "mutalyzer_input.tsv"),
+        os.path.join(S6, "mutalyzer_input.tsv"),
     output:
-        os.path.join(OUT, "mutalyzer_results.tsv"),
+        os.path.join(S6, "mutalyzer_results.tsv"),
     params:
         cache=config["mutalyzer"]["cache_dir"],
         logs=LOGS,
@@ -309,13 +316,13 @@ rule mutalyzer_track_A:
 
 rule mutalyzer_input_NM:
     input:
-        mut=os.path.join(OUT, "all_mutations.tsv"),
-        bed=os.path.join(BED, "hg38"),
+        mut=os.path.join(S1A, "all_mutations.tsv"),
+        bed=os.path.join(S5, "hg38"),
     output:
-        mane=os.path.join(OUT, "mutalyzer_input_NM_MANE.tsv"),
-        mane_skip=os.path.join(OUT, "mutalyzer_input_NM_skipped_MANE.tsv"),
-        legacy=os.path.join(OUT, "mutalyzer_input_NM_IDRefseq.tsv"),
-        legacy_skip=os.path.join(OUT, "mutalyzer_input_NM_skipped_IDRefseq.tsv"),
+        mane=os.path.join(S6, "mutalyzer_input_NM_MANE.tsv"),
+        mane_skip=os.path.join(S6, "mutalyzer_input_NM_skipped_MANE.tsv"),
+        legacy=os.path.join(S6, "mutalyzer_input_NM_IDRefseq.tsv"),
+        legacy_skip=os.path.join(S6, "mutalyzer_input_NM_skipped_IDRefseq.tsv"),
     params:
         mane_nm=config["dna_seq"]["mane_nm"],
         idr_nm=config["dna_seq"]["idrefseq_nm"],
@@ -335,9 +342,9 @@ rule mutalyzer_input_NM:
 
 rule mutalyzer_track_B:
     input:
-        os.path.join(OUT, "mutalyzer_input_NM_MANE.tsv"),
+        os.path.join(S6, "mutalyzer_input_NM_MANE.tsv"),
     output:
-        os.path.join(OUT, "mutalyzer_results_NM_MANE.tsv"),
+        os.path.join(S6, "mutalyzer_results_NM_MANE.tsv"),
     params:
         cache=config["mutalyzer"]["cache_dir"],
         logs=LOGS,
@@ -354,9 +361,9 @@ rule mutalyzer_track_B:
 
 rule mutalyzer_track_C:
     input:
-        os.path.join(OUT, "mutalyzer_input_NM_IDRefseq.tsv"),
+        os.path.join(S6, "mutalyzer_input_NM_IDRefseq.tsv"),
     output:
-        os.path.join(OUT, "mutalyzer_results_NM_IDRefseq.tsv"),
+        os.path.join(S6, "mutalyzer_results_NM_IDRefseq.tsv"),
     params:
         cache=config["mutalyzer"]["cache_dir"],
         logs=LOGS,
@@ -373,13 +380,13 @@ rule mutalyzer_track_C:
 
 rule merge_tracks:
     input:
-        a=os.path.join(OUT, "mutalyzer_results.tsv"),
-        b=os.path.join(OUT, "mutalyzer_results_NM_MANE.tsv"),
-        c=os.path.join(OUT, "mutalyzer_results_NM_IDRefseq.tsv"),
+        a=os.path.join(S6, "mutalyzer_results.tsv"),
+        b=os.path.join(S6, "mutalyzer_results_NM_MANE.tsv"),
+        c=os.path.join(S6, "mutalyzer_results_NM_IDRefseq.tsv"),
     output:
-        merged=os.path.join(OUT, "merged_variants.tsv"),
-        unresolved=os.path.join(OUT, "unresolved_variants.tsv"),
-        crosscheck=os.path.join(OUT, "crosscheck_disagreements.tsv"),
+        merged=os.path.join(S7, "merged_variants.tsv"),
+        unresolved=os.path.join(S7, "unresolved_variants.tsv"),
+        crosscheck=os.path.join(S7, "crosscheck_disagreements.tsv"),
     params:
         logs=LOGS,
     conda:
@@ -393,10 +400,10 @@ rule merge_tracks:
 
 rule dedup_merged:
     input:
-        os.path.join(OUT, "merged_variants.tsv"),
+        os.path.join(S7, "merged_variants.tsv"),
     output:
-        dedup=os.path.join(OUT, "dedup_merged_variants.tsv"),
-        stats=os.path.join(OUT, "dedup_stats.txt"),
+        dedup=os.path.join(S7, "dedup_merged_variants.tsv"),
+        stats=os.path.join(S7, "dedup_stats.txt"),
     conda:
         "envs/python.yaml"
     shell:
@@ -406,9 +413,9 @@ rule dedup_merged:
 
 rule lovd_flat:
     input:
-        os.path.join(OUT, "dedup_merged_variants.tsv"),
+        os.path.join(S7, "dedup_merged_variants.tsv"),
     output:
-        os.path.join(OUT, "lovd_flat.tsv"),
+        os.path.join(S7, "lovd_flat.tsv"),
     conda:
         "envs/python.yaml"
     shell:
@@ -418,9 +425,9 @@ rule lovd_flat:
 
 rule patient_metadata:
     input:
-        flat=os.path.join(OUT, "lovd_flat.tsv"),
+        flat=os.path.join(S7, "lovd_flat.tsv"),
     output:
-        os.path.join(OUT, "lovd_flat_with_patients.tsv"),
+        os.path.join(S7, "lovd_flat_with_patients.tsv"),
     params:
         idbase=IDBASE,
         logs=LOGS,
@@ -434,10 +441,10 @@ rule patient_metadata:
 
 rule lovd_review:
     input:
-        withpat=os.path.join(OUT, "lovd_flat_with_patients.tsv"),
-        offset=os.path.join(OUT, "lrg_offset_results.csv"),
+        withpat=os.path.join(S7, "lovd_flat_with_patients.tsv"),
+        offset=os.path.join(S2, "lrg_offset_results.csv"),
     output:
-        os.path.join(OUT, "lovd_review.xlsx"),
+        os.path.join(S7, "lovd_review.xlsx"),
     conda:
         "envs/python.yaml"
     shell:
@@ -447,9 +454,9 @@ rule lovd_review:
 
 rule reference_confirm_source_2:
     input:
-        mut=os.path.join(OUT, "all_mutations.tsv"),
+        mut=os.path.join(S1A, "all_mutations.tsv"),
     output:
-        os.path.join(OUT, "reference_check_source_2.tsv"),
+        os.path.join(S2, "reference_check_source_2.tsv"),
     params:
         seq=REF_SEQ["source2_reference"],
     conda:
@@ -461,9 +468,9 @@ rule reference_confirm_source_2:
 
 rule find_lrg_offset_NM:
     input:
-        mut=os.path.join(OUT, "all_mutations.tsv"),
+        mut=os.path.join(S1A, "all_mutations.tsv"),
     output:
-        os.path.join(OUT, "lrg_offset_results_NM.csv"),
+        os.path.join(S2, "lrg_offset_results_NM.csv"),
     params:
         seq=DNA_SEQ["idrefseq_nm"],
     conda:
@@ -476,12 +483,12 @@ rule find_lrg_offset_NM:
 
 rule confidence_analysis:
     input:
-        mut=os.path.join(OUT, "all_mutations.tsv"),
-        offset=os.path.join(OUT, "lrg_offset_results.csv"),
+        mut=os.path.join(S1A, "all_mutations.tsv"),
+        offset=os.path.join(S2, "lrg_offset_results.csv"),
     output:
-        os.path.join(OUT, "gene_confidence_NG_IDRefseq.csv"),
+        os.path.join(S2, "gene_confidence_NG_IDRefseq.csv"),
     conda:
         "envs/python.yaml"
     shell:
-        f'ALL_MUT_TSV="{{input.mut}}" OUT_DIR="{OUT}" '
+        f'ALL_MUT_TSV="{{input.mut}}" OUT_DIR="{S2}" '
         f'python "{script("Step2_RefCheck/confidence_analysis_v3.py")}"'

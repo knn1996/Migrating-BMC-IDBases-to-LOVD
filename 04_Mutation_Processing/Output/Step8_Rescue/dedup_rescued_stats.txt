@@ -1,0 +1,65 @@
+Input rows                  : 8592
+After c.-notation dedup     : 2672
+XM/NM duplicate rows removed : 421
+Unique variants (final)     : 2251
+Patients linked             : 3118
+Patient-variant pairs       : 5794
+
+Dedup key source breakdown:
+dedup_key_source
+c_hgvs        2070
+normalized     181
+
+Representative track chosen:
+source_track
+NM_MANE             1187
+NG_IDRefseq          951
+NM_IDRefseq          102
+variantvalidator      11
+
+Track coverage (variants resolved by N distinct tracks):
+tracks_merged
+1    1388
+2     863
+
+Patient-sharing distribution (patients per unique variant):
+patient_count
+1      1399
+2       405
+3       156
+4        76
+5        63
+6        34
+7        23
+8        13
+9        17
+10       10
+11        9
+12        1
+13        3
+14        2
+16        3
+17        5
+18        2
+19        3
+20        3
+21        1
+23        1
+25        2
+26        1
+27        1
+31        1
+32        2
+38        1
+39        2
+41        2
+45        1
+46        1
+47        1
+55        1
+56        1
+62        1
+74        1
+117       1
+158       1
+212       1
