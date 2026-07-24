@@ -7,6 +7,7 @@ IDBASE_DIR = os.environ["IDBASE_DIR"]
 IN_PATH    = os.environ["IN_PATH"]
 OUT_PATH   = os.environ["OUT_PATH"]
 LOG_PATH   = os.environ["LOG_PATH"]
+LOG_DIR    = os.path.dirname(LOG_PATH)
 
 RE_HTML       = re.compile(r"<[^>]+>")
 RE_FIELD      = re.compile(r"^([A-Z][A-Za-z][A-Za-z /]*?)(\s{2,})(.+?)\s*$", re.MULTILINE)

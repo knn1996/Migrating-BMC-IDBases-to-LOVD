@@ -277,7 +277,9 @@ def main():
 
     resolved = []
     residual = []
-    counters  = {"mane_remap": 0, "variantvalidator": 0, "offset_fix": 0}
+    counters  = {"mane_remap": 0, "variantvalidator": 0, "offset_fix": 0, "vv_mismatch": 0}
+    VV_PROBE_SUBS = {"single_base_wrong", "single_base_complement",
+                     "multibase_rc_match", "completely_different", "length_mismatch"}
     residual_cats = {}
 
     for row in disp_rows:
@@ -286,7 +288,9 @@ def main():
         sub  = row.get("subcategory", "")
         disp = row.get("disposition", "")
 
-        if disp in ("UNRESCUABLE", "UNRESCUABLE_DATA_ERROR"):
+        if disp in ("UNRESCUABLE", "UNRESCUABLE_DATA_ERROR") and not (
+            cat == "ESEQUENCEMISMATCH" and sub in VV_PROBE_SUBS
+        ):
             residual_cats[f"{cat}/{sub}"] = residual_cats.get(f"{cat}/{sub}", 0) + 1
             residual.append(row)
             continue
@@ -312,11 +316,24 @@ def main():
             if key in mut_ok:
                 r = mut_ok[key]
                 vv_data = {
-                    "c_hgvs": r.get("c_hgvs", ""), "g_hgvs": r.get("g_hgvs", ""),
+                    "c_hgvs": r.get("c_hgvs", "") or r.get("normalized", ""),
+                    "g_hgvs": r.get("g_hgvs", ""),
                     "r_hgvs": r.get("r_hgvs", ""), "p_hgvs": r.get("p_hgvs", ""),
-                    "nc_hgvs": r.get("nc_hgvs", ""), "mane_select": r.get("mane_select", ""),
+                    "nc_hgvs": r.get("nc_hgvs", ""),
+                    "mane_select": r.get("mane_select", "") or r.get("normalized", ""),
                     "vv_chrom": r.get("chrom", ""), "vv_pos": r.get("pos_hg38", ""),
                 }
+                anchor_q = r.get("normalized", "") or r.get("c_hgvs", "")
+                if anchor_q and not vv_data["g_hgvs"] and not vv_data["vv_pos"]:
+                    anc = call_vv(anchor_q, session, vv_cache, log)
+                    if anc:
+                        vv_data["g_hgvs"]   = vv_data["g_hgvs"]   or anc.get("g_hgvs", "")
+                        vv_data["nc_hgvs"]  = vv_data["nc_hgvs"]  or anc.get("nc_hgvs", "")
+                        vv_data["vv_chrom"] = vv_data["vv_chrom"] or anc.get("vv_chrom", "")
+                        vv_data["vv_pos"]   = vv_data["vv_pos"]   or anc.get("vv_pos", "")
+                        vv_data["r_hgvs"]   = vv_data["r_hgvs"]   or anc.get("r_hgvs", "")
+                        vv_data["p_hgvs"]   = vv_data["p_hgvs"]   or anc.get("p_hgvs", "")
+                        vv_data["mane_select"] = vv_data["mane_select"] or anc.get("mane_select", "")
                 resolved_row = _build_row(row, vv_data, "mane_remap",
                                           new_hgvs_input=r.get("hgvs_input", ""))
                 counters["mane_remap"] += 1
@@ -368,6 +385,28 @@ def main():
                 else:
                     log(f"    offset_fix FAIL: {hgvs_in}")
 
+        elif cat == "ESEQUENCEMISMATCH" and sub in VV_PROBE_SUBS:
+            r = vv_ok.get(key)
+            if r is not None:
+                vv_data = {
+                    "c_hgvs": r.get("c_hgvs", ""), "g_hgvs": r.get("g_hgvs", ""),
+                    "r_hgvs": r.get("r_hgvs", ""), "p_hgvs": r.get("p_hgvs", ""),
+                    "nc_hgvs": r.get("nc_hgvs", ""), "mane_select": r.get("mane_select", ""),
+                    "vv_chrom": r.get("chrom", ""), "vv_pos": r.get("pos_hg38", ""),
+                }
+                resolved_row = _build_row(row, vv_data, "variantvalidator")
+                counters["vv_mismatch"] += 1
+            else:
+                hgvs_in = row.get("hgvs_input", "").strip()
+                parsed = call_vv(hgvs_in, session, vv_cache, log) if hgvs_in else None
+                if parsed is not None and parsed.get("c_hgvs"):
+                    resolved_row = _build_row(row, parsed, "variantvalidator",
+                                              new_hgvs_input=hgvs_in)
+                    counters["vv_mismatch"] += 1
+                    log(f"    VV mismatch-probe OK: {hgvs_in} -> {parsed.get('c_hgvs','')}")
+                else:
+                    log(f"    VV mismatch-probe FAIL: {hgvs_in}")
+
         if resolved_row is not None:
             resolved.append(resolved_row)
             log(f"  RESOLVED [{resolved_row['resolving_tool']}] {row['gene']} {row.get('sysname','')} "
@@ -387,6 +426,7 @@ def main():
     n_remaining   = len(residual)
     n_mane        = counters["mane_remap"]
     n_vv          = counters["variantvalidator"]
+    n_vv_mismatch = counters["vv_mismatch"]
     n_offset      = counters["offset_fix"]
 
     with open(OUT_FUNNEL, "w", newline="", encoding="utf-8") as f:
@@ -395,6 +435,7 @@ def main():
         w.writerow(["unresolved_in",                   n_unresolved])
         w.writerow(["resolved_by_MANE_remap",          n_mane])
         w.writerow(["resolved_by_VariantValidator",    n_vv])
+        w.writerow(["resolved_by_VV_mismatch_probe",   n_vv_mismatch])
         w.writerow(["resolved_by_offset_fix",          n_offset])
         w.writerow(["total_rescued",                   n_rescued])
         w.writerow(["remaining_genuine_errors",        n_remaining])
@@ -424,8 +465,8 @@ Of the {n_unresolved} variants that failed all three Mutalyzer processing
 tracks (NG\\_IDRefseq, NM\\_MANE, and NM\\_IDRefseq), **{n_rescued}
 ({pct_rescued:.0f}%)** were automatically resolved by the rescue layer:
 {n_mane} via MANE Select NM\\_ re-mapping (correcting obsolete transcript
-version references), {n_vv} via VariantValidator (resolving intronic and
-IVS-notation variants against the current GRCh38 build), and
+version references), {n_vv + n_vv_mismatch} via VariantValidator (resolving intronic,
+IVS-notation, and reference-mismatch variants against the current GRCh38 build), and
 {n_offset} via empirical coordinate-offset correction (±1 c.\\ position
 shift confirmed against GRCh38). Combined with the {n_merged_rows}
 patient-level entries resolved in the primary pipeline, the post-rescue
@@ -454,6 +495,7 @@ ambiguities in the variant data itself.
     log(f"  Unresolved input       : {n_unresolved}")
     log(f"  Resolved by mane_remap : {n_mane}")
     log(f"  Resolved by VV         : {n_vv}")
+    log(f"  Resolved by VV mismatch: {n_vv_mismatch}")
     log(f"  Resolved by offset_fix : {n_offset}")
     log(f"  Total rescued          : {n_rescued}  ({pct_rescued:.1f}% of unresolved)")
     log(f"  Remaining              : {n_remaining}")

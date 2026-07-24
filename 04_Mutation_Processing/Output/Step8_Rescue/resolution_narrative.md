@@ -4,8 +4,8 @@ Of the 698 variants that failed all three Mutalyzer processing
 tracks (NG\_IDRefseq, NM\_MANE, and NM\_IDRefseq), **412
 (59%)** were automatically resolved by the rescue layer:
 401 via MANE Select NM\_ re-mapping (correcting obsolete transcript
-version references), 11 via VariantValidator (resolving intronic and
-IVS-notation variants against the current GRCh38 build), and
+version references), 11 via VariantValidator (resolving intronic,
+IVS-notation, and reference-mismatch variants against the current GRCh38 build), and
 0 via empirical coordinate-offset correction (±1 c.\ position
 shift confirmed against GRCh38). Combined with the 7776
 patient-level entries resolved in the primary pipeline, the post-rescue

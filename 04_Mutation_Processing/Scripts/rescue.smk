@@ -12,6 +12,8 @@ S7  = os.path.join(OUT, "Step7_Merging")
 S8  = os.path.join(OUT, "Step8_Rescue")
 
 DNA_SEQ = config["dna_seq"]
+THESIS = config["thesis_dir"]
+IDBASE = os.path.join(THESIS, config["idbase_subdir"])
 
 
 def script(rel):
@@ -22,6 +24,7 @@ rule all:
     input:
         os.path.join(S8, "lovd_flat_final.tsv"),
         os.path.join(S8, "rescue_metrics_comparison.csv"),
+        os.path.join(S8, "lovd_review_final.xlsx"),
 
 
 rule classify_unresolved:
@@ -173,3 +176,44 @@ rule build_final_lovd:
         f'OUT_FLAT="{{output.flat}}" '
         f'OUT_METRICS="{{output.metrics}}" '
         f'python "{script("Step8_Rescue/build_final_lovd.py")}"'
+
+
+rule lovd_flat_final_cols:
+    input:
+        os.path.join(S8, "dedup_merged_variants.rescued.tsv"),
+    output:
+        os.path.join(S8, "lovd_flat_final_cols.tsv"),
+    conda:
+        "envs/python.yaml"
+    shell:
+        f'IN_PATH="{{input}}" OUT_PATH="{{output}}" '
+        f'python "{script("Step7_Merging/build_lovd_flat.py")}"'
+
+
+rule patient_metadata_final:
+    input:
+        flat=os.path.join(S8, "lovd_flat_final_cols.tsv"),
+    output:
+        os.path.join(S8, "lovd_flat_with_patients_final.tsv"),
+    params:
+        idbase=IDBASE,
+        logs=LOGS,
+    conda:
+        "envs/python.yaml"
+    shell:
+        f'IN_PATH="{{input.flat}}" IDBASE_DIR="{{params.idbase}}" '
+        f'OUT_PATH="{{output}}" LOG_PATH="{{params.logs}}/patient_metadata_missing_final.tsv" '
+        f'python "{script("Step7_Merging/extract_patient_metadata.py")}"'
+
+
+rule lovd_review_final:
+    input:
+        withpat=os.path.join(S8, "lovd_flat_with_patients_final.tsv"),
+        offset=os.path.join(S2, "lrg_offset_results.csv"),
+    output:
+        os.path.join(S8, "lovd_review_final.xlsx"),
+    conda:
+        "envs/python.yaml"
+    shell:
+        f'IN_PATH="{{input.withpat}}" OFFSET_PATH="{{input.offset}}" OUT_PATH="{{output}}" '
+        f'python "{script("Step7_Merging/build_lovd_review_xlsx.py")}"'

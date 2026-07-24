@@ -2,6 +2,7 @@ stage	count
 unresolved_in	698
 resolved_by_MANE_remap	401
 resolved_by_VariantValidator	11
+resolved_by_VV_mismatch_probe	0
 resolved_by_offset_fix	0
 total_rescued	412
 remaining_genuine_errors	286
