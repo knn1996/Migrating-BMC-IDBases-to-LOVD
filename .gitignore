@@ -135,3 +135,6 @@ protein_only_variants.csv
 04_Mutation_Processing/Scripts/results/
 04_Mutation_Processing/Scripts/tests/fixtures/
 .snakemake/
+
+# ---- README figures (tracked) ----
+!docs/figures/*.png
