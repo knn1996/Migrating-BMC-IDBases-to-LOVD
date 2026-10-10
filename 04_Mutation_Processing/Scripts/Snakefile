@@ -1,7 +1,8 @@
 import os
 import glob
+import sys
 
-configfile: "config/config.yaml"
+configfile: os.path.join(workflow.basedir, "config", "config.yaml")
 
 THESIS = config["thesis_dir"]
 PROC = os.path.join(THESIS, config["proc_subdir"])
@@ -30,9 +31,14 @@ REF_SEQ = config["ref_seq"]
 INPUTS = config["inputs"]
 
 
+def ng_fasta_for(gene):
+    hits = sorted(glob.glob(os.path.join(DNA_SEQ["mane_ng"], f"{gene}_*.fasta")))
+    return hits[0] if hits else ""
+
+
 def ng_query(wc):
-    hits = sorted(glob.glob(os.path.join(DNA_SEQ["mane_ng"], f"{wc.gene}_*.fasta")))
-    return hits[0] if hits else os.path.join(DNA_SEQ["mane_ng"], f"{wc.gene}.fasta")
+    return ancient(ng_fasta_for(wc.gene)
+                   or os.path.join(DNA_SEQ["mane_ng"], f"{wc.gene}.fasta"))
 
 
 def discover_genes():
@@ -40,12 +46,44 @@ def discover_genes():
     for d in sorted(os.listdir(IDBASE)):
         p = os.path.join(IDBASE, d)
         if os.path.isdir(p) and d.lower().endswith("base") and d.lower() != "immunomebase":
-            genes.append(d[:-4].upper() if d.lower().endswith("base") else d.upper())
+            genes.append(d[:-4].upper())
     return genes
 
 
-_set = config["gene_sets"][config["run_set"]]
-GENES = discover_genes() if _set == "auto" else [g.upper() for g in _set]
+def resolve_gene_set():
+    """
+    Resolve run_set to a concrete gene list and validate FASTA availability.
+
+    A frozen list is authoritative: any gene in it that lacks an NG_ FASTA is a
+    configuration error and aborts the run, because silently dropping a gene
+    would change the analysed set without changing the config that documents
+    it. Auto-discovery is permissive by default, since the idbase directory
+    contains databases that never yielded extractable variants.
+    """
+    spec = config["gene_sets"][config["run_set"]]
+    auto = spec == "auto"
+    genes = discover_genes() if auto else [g.upper() for g in spec]
+
+    missing = [g for g in genes if not ng_fasta_for(g)]
+    if not missing:
+        return genes
+
+    if auto and config.get("skip_genes_without_ng_fasta", True):
+        sys.stderr.write(
+            f"[gene_set] run_set={config['run_set']!r}: skipping {len(missing)} "
+            f"of {len(genes)} genes with no NG_ FASTA in {DNA_SEQ['mane_ng']}\n"
+            f"[gene_set] skipped: {', '.join(sorted(missing))}\n"
+        )
+        return [g for g in genes if g not in set(missing)]
+
+    raise WorkflowError(
+        f"run_set={config['run_set']!r} names {len(missing)} gene(s) with no NG_ "
+        f"FASTA in {DNA_SEQ['mane_ng']}: {', '.join(sorted(missing))}. "
+        f"Download the missing references, or remove them from the gene set."
+    )
+
+
+GENES = resolve_gene_set()
 
 
 def script(rel):
@@ -58,6 +96,7 @@ rule all:
         *([os.path.join(S2, "reference_check_source_2.tsv")] if config["optional"]["reference_confirm_source_2"] else []),
         *([os.path.join(S2, "lrg_offset_results_NM.csv")] if config["optional"]["find_lrg_offset_NM"] else []),
         *([os.path.join(S2, "gene_confidence_NG_IDRefseq.csv")] if config["optional"]["confidence_analysis"] else []),
+        *([os.path.join(S1B, "IDBases_Summary.v1.csv")] if config["optional"]["rebuild_idbase_summary"] else []),
 
 
 rule extract_mutations:
@@ -90,7 +129,7 @@ rule lrg_index:
 rule add_nm_to_lrg:
     input:
         lrg=os.path.join(S1B, "LRG.csv"),
-        refseq=INPUTS["lrg_refseqgene_txt"],
+        refseq=ancient(INPUTS["lrg_refseqgene_txt"]),
     output:
         os.path.join(S1B, "LRG_with_NM.csv"),
     conda:
@@ -100,25 +139,64 @@ rule add_nm_to_lrg:
         f'python "{script("Step1b_RSG_Mapping/add_nm_to_lrg.py")}"'
 
 
+# IDBases_Summary.csv is a two-pass bootstrap artefact, not a DAG product.
+#
+# lrg_index consumes it, but the rule that regenerates it (summary_v1) needs
+# reference_summary.csv, which depends on LRG_with_NM.csv, which depends on
+# lrg_index. That is a genuine cycle and Snakemake cannot express it. The file
+# is therefore supplied as an ancient() external input and refreshed manually
+# on a second pass once reference_summary.csv exists:
+#
+#   snakemake --use-conda -j1 Output/Step1b_RSG_Mapping/IDBases_Summary.v1.csv
+#   cp Output/Step1b_RSG_Mapping/IDBases_Summary.v1.csv Output/IDBases_Summary.csv
+#
+# Only the uniprot and reference_sequence columns change between passes, and
+# neither feeds back into variant calling, so a single pass is sufficient for
+# the results reported in the thesis. Enable optional.rebuild_idbase_summary to
+# have `rule all` build the v1 file for comparison.
 rule summary_v1:
     input:
         idbase=IDBASE,
         ref=os.path.join(S2, "reference_summary.csv"),
     output:
         os.path.join(S1B, "IDBases_Summary.v1.csv"),
+    log:
+        os.path.join(LOGS, "build_idbase_summary.log"),
     conda:
         "envs/http.yaml"
     shell:
         f'IDBASE_DIR="{{input.idbase}}" REF_SUMMARY="{{input.ref}}" OUT_CSV="{{output}}" '
-        f'python "{script("build_idbase_summary.py")}"'
+        f'python "{script("build_idbase_summary.py")}" > "{{log}}" 2>&1'
+
+
+MANE_NG_MANIFEST = os.path.join(S2, "mane_ng_accessions.csv")
+
+# download_mane_nm_sequences.py writes its manifest to LOG_DIR, not to
+# Step1c_SeqDownload. The rule previously declared the Step1c path, which the
+# script never creates, so download_nm could only ever fail on a missing output.
+MANE_NM_MANIFEST = os.path.join(LOGS, "download_mane_nm_summary.csv")
+
+
+def _fasta_count(d):
+    return len(glob.glob(os.path.join(d, "*.fasta"))) + len(glob.glob(os.path.join(d, "*.fa")))
+
+
+if not config["rerun_downloads"]:
+    for _label, _dir in (("mane_ng", DNA_SEQ["mane_ng"]), ("mane_nm", DNA_SEQ["mane_nm"])):
+        if _fasta_count(_dir) == 0:
+            raise WorkflowError(
+                f"rerun_downloads is false but {_label} directory {_dir} contains no "
+                f"FASTA files. Set rerun_downloads: true to fetch them from NCBI, or "
+                f"restore the directory."
+            )
 
 
 rule download_refseq:
     input:
         idbase=IDBASE,
-        alias=INPUTS["alias_csv"],
+        alias=ancient(INPUTS["alias_csv"]),
     output:
-        os.path.join(S2, "mane_ng_accessions.csv"),
+        MANE_NG_MANIFEST,
     conda:
         "envs/http.yaml"
     shell:
@@ -129,11 +207,11 @@ rule download_refseq:
 
 rule download_nm:
     input:
-        summary=INPUTS["idbase_summary"],
-        alias=INPUTS["alias_csv"],
-        mane=INPUTS["mane_rna_fasta"],
+        summary=ancient(INPUTS["idbase_summary"]),
+        alias=ancient(INPUTS["alias_csv"]),
+        mane=ancient(INPUTS["mane_rna_fasta"]),
     output:
-        os.path.join(S1C, "download_mane_nm_summary.csv"),
+        MANE_NM_MANIFEST,
     conda:
         "envs/http.yaml"
     shell:
@@ -171,29 +249,35 @@ rule reference_confirm_source1:
         f'python "{script("Step2_RefCheck/reference_confirm.py")}" --source 1'
 
 
+BLAST_DB_EXT = [".nhr", ".nin", ".nsq"]
+
+
 rule make_blast_db:
     input:
         lambda wc: sorted(glob.glob(os.path.join(GENOME, BUILD_DIRS[wc.build], config["chr_glob"]))),
     output:
-        protected(os.path.join(S3, "db", "{build}.nsq")),
+        protected(multiext(os.path.join(S3, "db", "{build}"), *BLAST_DB_EXT)),
     params:
         prefix=os.path.join(S3, "db", "{build}"),
         fa=os.path.join(S3, "db", "{build}.fa"),
+    log:
+        os.path.join(LOGS, "make_blast_db_{build}.log"),
     conda:
         "envs/blast.yaml"
     resources:
         mem_mb=config["resources"]["make_blast_db"]["mem_mb"],
         runtime=config["resources"]["make_blast_db"]["runtime"],
     shell:
-        'cat {input} > "{params.fa}" && '
+        '( cat {input} > "{params.fa}" && '
         'makeblastdb -in "{params.fa}" -dbtype nucl -out "{params.prefix}" && '
-        'rm -f "{params.fa}"'
+        'rm -f "{params.fa}" ) > "{log}" 2>&1'
 
 
 rule blast_gene:
     input:
+        unpack(lambda wc: {"manifest": MANE_NG_MANIFEST} if config["rerun_downloads"] else {}),
         query=ng_query,
-        db=os.path.join(S3, "db", "{build}.nsq"),
+        db=multiext(os.path.join(S3, "db", "{build}"), *BLAST_DB_EXT),
     output:
         os.path.join(S3, "{gene}_vs_{build}.txt"),
     params:
@@ -201,6 +285,8 @@ rule blast_gene:
         outfmt=config["blast"]["outfmt"],
         evalue=config["blast"]["evalue"],
         maxhits=config["blast"]["max_target_seqs"],
+    log:
+        os.path.join(LOGS, "blast_{gene}_vs_{build}.log"),
     conda:
         "envs/blast.yaml"
     threads:
@@ -211,19 +297,37 @@ rule blast_gene:
     shell:
         'blastn -query "{input.query}" -db "{params.db}" -out "{output}" '
         '-outfmt "{params.outfmt}" -num_threads {threads} '
-        '-evalue {params.evalue} -max_target_seqs {params.maxhits}'
+        '-evalue {params.evalue} -max_target_seqs {params.maxhits} 2> "{log}"'
 
 
-rule summarize_blast:
-    input:
-        expand(os.path.join(S3, "{gene}_vs_{build}.txt"), gene=GENES, build=BUILDS),
-    output:
-        os.path.join(S3, "blast_first_hits_source_IDRefseq.tsv"),
-    conda:
-        "envs/python.yaml"
-    shell:
-        f'IN_DIR="{S3}" OUT_FILE="{{output}}" '
-        f'bash "{script("Step3_BLAST/summarize_blast_first_hits.sh")}"'
+BLAST_HITS = os.path.join(S3, "blast_first_hits_source_IDRefseq.tsv")
+
+if config["rerun_blast"]:
+
+    rule summarize_blast:
+        input:
+            expand(os.path.join(S3, "{gene}_vs_{build}.txt"), gene=GENES, build=BUILDS),
+        output:
+            BLAST_HITS,
+        log:
+            os.path.join(LOGS, "summarize_blast.log"),
+        conda:
+            "envs/python.yaml"
+        shell:
+            f'IN_DIR="{S3}" OUT_FILE="{{output}}" '
+            f'bash "{script("Step3_BLAST/summarize_blast_first_hits.sh")}" > "{{log}}" 2>&1'
+
+else:
+
+    if not os.path.exists(BLAST_HITS):
+        raise WorkflowError(
+            f"rerun_blast is false but {BLAST_HITS} does not exist. Either restore "
+            f"the summarised BLAST table or set rerun_blast: true in config to "
+            f"rebuild the BLAST tier from the reference genomes."
+        )
+
+
+BLAST_HITS_IN = BLAST_HITS if config["rerun_blast"] else ancient(BLAST_HITS)
 
 
 rule build_reference_summary:
@@ -231,7 +335,7 @@ rule build_reference_summary:
         s1=os.path.join(S2, "reference_check_source_1.tsv"),
         offset=os.path.join(S2, "lrg_offset_results.csv"),
         lrg=os.path.join(S1B, "LRG_with_NM.csv"),
-        blast=os.path.join(S3, "blast_first_hits_source_IDRefseq.tsv"),
+        blast=BLAST_HITS_IN,
     output:
         os.path.join(S2, "reference_summary.csv"),
     conda:
@@ -242,51 +346,87 @@ rule build_reference_summary:
         f'python "{script("Step2_RefCheck/build_reference_summary.py")}"'
 
 
-rule generate_bed:
-    input:
-        mut=os.path.join(S1A, "all_mutations.tsv"),
-        blast=os.path.join(S3, "blast_first_hits_source_IDRefseq.tsv"),
-    output:
-        directory(os.path.join(S4, "raw")),
-    conda:
-        "envs/python.yaml"
-    shell:
-        f'MUTATIONS_TSV="{{input.mut}}" BLAST_HITS="{{input.blast}}" '
-        f'BED_DIR="{{output}}" LOG_DIR="{LOGS}" '
-        f'python "{script("Step4_BED/generate_bed.py")}" --source IDRefseq'
+BED_RAW      = config["bed_raw_dir"]
+BED_RAW_HG38 = os.path.join(BED_RAW, "hg38")
+
+if config["rerun_bed"]:
+
+    # generate_bed declares a manifest outside BED_RAW rather than the directory
+    # itself: liftover writes into BED_RAW/hg38, and Snakemake rejects an output
+    # that is a child of another rule's output directory.
+    rule generate_bed:
+        input:
+            mut=os.path.join(S1A, "all_mutations.tsv"),
+            blast=BLAST_HITS_IN,
+        output:
+            os.path.join(OUT, "bed_raw_manifest.txt"),
+        params:
+            bed=BED_RAW,
+        conda:
+            "envs/python.yaml"
+        shell:
+            f'MUTATIONS_TSV="{{input.mut}}" BLAST_HITS="{{input.blast}}" '
+            f'BED_DIR="{{params.bed}}" LOG_DIR="{LOGS}" '
+            f'python "{script("Step4_BED/generate_bed.py")}" --source IDRefseq && '
+            f'ls -1 "{{params.bed}}"/*.BED > "{{output}}"'
+
+    rule liftover:
+        input:
+            os.path.join(OUT, "bed_raw_manifest.txt"),
+        output:
+            directory(BED_RAW_HG38),
+        params:
+            chains=os.path.join(SCRIPTS, "Step5_LiftOver"),
+            bed=BED_RAW,
+        conda:
+            "envs/ucsc.yaml"
+        shell:
+            f'IN_DIR="{{params.bed}}" OUT_DIR="{{output}}" CHAIN_DIR="{{params.chains}}" '
+            f'bash "{script("Step5_LiftOver/liftover.sh")}"'
+
+    rule filter_bed_hg18:
+        input:
+            raw=os.path.join(OUT, "bed_raw_manifest.txt"),
+            summary=os.path.join(S2, "reference_summary.csv"),
+        output:
+            directory(S4),
+        params:
+            bed=BED_RAW,
+        conda:
+            "envs/python.yaml"
+        shell:
+            f'REF_SUMMARY="{{input.summary}}" IN_DIR="{{params.bed}}" OUT_DIR="{{output}}" '
+            f'OUT_EXCLUDED="{os.path.join(OUT, "excluded_accessions_hg18.tsv")}" '
+            f'python "{script("Step4_BED/filter_bed.py")}"'
+
+    rule filter_bed_hg38:
+        input:
+            raw=BED_RAW_HG38,
+            summary=os.path.join(S2, "reference_summary.csv"),
+        output:
+            directory(S5),
+        conda:
+            "envs/python.yaml"
+        shell:
+            f'REF_SUMMARY="{{input.summary}}" IN_DIR="{{input.raw}}" OUT_DIR="{{output}}" '
+            f'OUT_EXCLUDED="{os.path.join(OUT, "excluded_accessions_hg38.tsv")}" '
+            f'python "{script("Step4_BED/filter_bed.py")}"'
+
+else:
+
+    if not glob.glob(os.path.join(S5, "*.BED")):
+        raise WorkflowError(
+            f"rerun_bed is false but {S5} contains no BED files. Set rerun_bed: true "
+            f"to regenerate the BED and liftover tiers from {BED_RAW}."
+        )
 
 
-rule filter_bed:
-    input:
-        raw=os.path.join(S4, "raw"),
-        summary=os.path.join(S2, "reference_summary.csv"),
-    output:
-        directory(os.path.join(S4, "filtered")),
-    conda:
-        "envs/python.yaml"
-    shell:
-        f'REF_SUMMARY="{{input.summary}}" IN_DIR="{{input.raw}}" OUT_DIR="{{output}}" '
-        f'OUT_EXCLUDED="{os.path.join(S4, "excluded_accessions.tsv")}" '
-        f'python "{script("Step4_BED/filter_bed.py")}"'
-
-
-rule liftover:
-    input:
-        os.path.join(S4, "filtered"),
-    output:
-        directory(os.path.join(S5, "hg38")),
-    params:
-        chains=os.path.join(SCRIPTS, "Step5_LiftOver"),
-    conda:
-        "envs/ucsc.yaml"
-    shell:
-        f'IN_DIR="{{input}}" OUT_DIR="{{output}}" CHAIN_DIR="{{params.chains}}" '
-        f'bash "{script("Step5_LiftOver/liftover.sh")}"'
+BED_HG38_IN = S5 if config["rerun_bed"] else ancient(S5)
 
 
 rule bed_to_mutalyzer:
     input:
-        bed=os.path.join(S5, "hg38"),
+        bed=BED_HG38_IN,
     output:
         tsv=os.path.join(S6, "mutalyzer_input.tsv"),
         skipped=os.path.join(S6, "mutalyzer_skipped.tsv"),
@@ -316,66 +456,54 @@ rule mutalyzer_track_A:
 
 rule mutalyzer_input_NM:
     input:
+        unpack(lambda wc: {"manifest": MANE_NM_MANIFEST} if config["rerun_downloads"] else {}),
         mut=os.path.join(S1A, "all_mutations.tsv"),
-        bed=os.path.join(S5, "hg38"),
+        bed=BED_HG38_IN,
     output:
-        mane=os.path.join(S6, "mutalyzer_input_NM_MANE.tsv"),
-        mane_skip=os.path.join(S6, "mutalyzer_input_NM_skipped_MANE.tsv"),
-        legacy=os.path.join(S6, "mutalyzer_input_NM_IDRefseq.tsv"),
-        legacy_skip=os.path.join(S6, "mutalyzer_input_NM_skipped_IDRefseq.tsv"),
+        tsv=os.path.join(S6, "mutalyzer_input_NM_{source}.tsv"),
+        skipped=os.path.join(S6, "mutalyzer_input_NM_skipped_{source}.tsv"),
     params:
         mane_nm=config["dna_seq"]["mane_nm"],
         idr_nm=config["dna_seq"]["idrefseq_nm"],
         mane_ng=config["dna_seq"]["mane_ng"],
+    wildcard_constraints:
+        source="MANE|IDRefseq",
+    log:
+        os.path.join(LOGS, "mutalyzer_input_NM_{source}.log"),
     conda:
         "envs/python.yaml"
     shell:
         f'ALL_MUTATIONS_TSV="{{input.mut}}" BED_DIR="{{input.bed}}" '
         f'MANE_NM_DIR="{{params.mane_nm}}" IDREFSEQ_NM_DIR="{{params.idr_nm}}" MANE_NG_DIR="{{params.mane_ng}}" '
-        f'OUT_TSV="{{output.mane}}" LOG_TSV="{{output.mane_skip}}" '
-        f'python "{script("Step6_Mutalyzer/generate_mutalyzer_input_NM.py")}" --source MANE && '
-        f'ALL_MUTATIONS_TSV="{{input.mut}}" BED_DIR="{{input.bed}}" '
-        f'MANE_NM_DIR="{{params.mane_nm}}" IDREFSEQ_NM_DIR="{{params.idr_nm}}" MANE_NG_DIR="{{params.mane_ng}}" '
-        f'OUT_TSV="{{output.legacy}}" LOG_TSV="{{output.legacy_skip}}" '
-        f'python "{script("Step6_Mutalyzer/generate_mutalyzer_input_NM.py")}" --source IDRefseq'
+        f'OUT_TSV="{{output.tsv}}" LOG_TSV="{{output.skipped}}" '
+        f'python "{script("Step6_Mutalyzer/generate_mutalyzer_input_NM.py")}" '
+        f'--source {{wildcards.source}} > "{{log}}" 2>&1'
 
 
-rule mutalyzer_track_B:
+TRACK_CACHE = {"MANE": "track_b_MANE", "IDRefseq": "track_c_IDRefseq"}
+
+
+rule mutalyzer_track_NM:
     input:
-        os.path.join(S6, "mutalyzer_input_NM_MANE.tsv"),
+        os.path.join(S6, "mutalyzer_input_NM_{source}.tsv"),
     output:
-        os.path.join(S6, "mutalyzer_results_NM_MANE.tsv"),
+        os.path.join(S6, "mutalyzer_results_NM_{source}.tsv"),
     params:
         cache=config["mutalyzer"]["cache_dir"],
         logs=LOGS,
         mane_nm=config["dna_seq"]["mane_nm"],
         idr_nm=config["dna_seq"]["idrefseq_nm"],
+        stem=lambda wc: TRACK_CACHE[wc.source],
+    wildcard_constraints:
+        source="MANE|IDRefseq",
     conda:
         "envs/http.yaml"
     shell:
         f'INPUT_TSV="{{input}}" OUT_TSV="{{output}}" '
-        f'CACHE_JSONL="{{params.cache}}/track_b_MANE.jsonl" LOG_PATH="{{params.logs}}/mutalyzer_run_NM_MANE.log" '
+        f'CACHE_JSONL="{{params.cache}}/{{params.stem}}.jsonl" '
+        f'LOG_PATH="{{params.logs}}/mutalyzer_run_NM_{{wildcards.source}}.log" '
         f'MANE_NM_DIR="{{params.mane_nm}}" IDREFSEQ_NM_DIR="{{params.idr_nm}}" '
-        f'python "{script("Step6_Mutalyzer/run_mutalyzer_NM.py")}" --source MANE'
-
-
-rule mutalyzer_track_C:
-    input:
-        os.path.join(S6, "mutalyzer_input_NM_IDRefseq.tsv"),
-    output:
-        os.path.join(S6, "mutalyzer_results_NM_IDRefseq.tsv"),
-    params:
-        cache=config["mutalyzer"]["cache_dir"],
-        logs=LOGS,
-        mane_nm=config["dna_seq"]["mane_nm"],
-        idr_nm=config["dna_seq"]["idrefseq_nm"],
-    conda:
-        "envs/http.yaml"
-    shell:
-        f'INPUT_TSV="{{input}}" OUT_TSV="{{output}}" '
-        f'CACHE_JSONL="{{params.cache}}/track_c_IDRefseq.jsonl" LOG_PATH="{{params.logs}}/mutalyzer_run_NM_IDRefseq.log" '
-        f'MANE_NM_DIR="{{params.mane_nm}}" IDREFSEQ_NM_DIR="{{params.idr_nm}}" '
-        f'python "{script("Step6_Mutalyzer/run_mutalyzer_NM.py")}" --source IDRefseq'
+        f'python "{script("Step6_Mutalyzer/run_mutalyzer_NM.py")}" --source {{wildcards.source}}'
 
 
 rule merge_tracks:

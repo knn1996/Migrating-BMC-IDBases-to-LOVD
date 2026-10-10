@@ -103,7 +103,8 @@ def main():
     out[:] = ""
 
     out["chromosome"]            = df["chrom"].apply(clean_chr)
-    out["VariantOnGenome/DNA"]   = df["normalized"].where(is_genomic, "")
+    g_hgvs = df["g_hgvs"] if "g_hgvs" in df.columns else pd.Series("", index=df.index)
+    out["VariantOnGenome/DNA"]   = g_hgvs.where(g_hgvs != "", df["normalized"].where(is_genomic, ""))
 
     c_source = df["c_hgvs"].where(df["c_hgvs"] != "", df["normalized"].where(~is_genomic, ""))
 

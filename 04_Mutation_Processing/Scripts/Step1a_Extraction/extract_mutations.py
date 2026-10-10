@@ -1,25 +1,7 @@
-﻿"""
-extract_mutations.py
-====================
-Extracts all DNA mutations from every *pub.html in the idbase directory.
-
-Output TSV columns:
-  gene         — gene symbol (ADAbase → ADA)
-  accession    — patient accession (e.g. A0022)
-  allele_num   — 0 (unknown/single), 1, or 2
-  variant_type — genomic / coding / rna / protein / mitochondrial / non_coding / unknown
-  notation     — individual HGVS notation for this row
-  pos_start    — extracted from notation; for genomic rows falls back to IDRefSeq /loc
-  pos_end      — same logic as pos_start
-  mut_class    — substitution / deletion / insertion / indel / duplication / unknown
-                 derived from the genomic (g.) notation and applied to all levels of
-                 the same accession so c. and p. rows share the same classification
-  missing_flag — comma-separated missing levels among g./c./p., empty if all present
-"""
-
 import os
 import re
 import sys
+import html
 import logging
 from pathlib import Path
 from datetime import datetime
@@ -28,8 +10,12 @@ IDBASE_DIR = os.environ["IDBASE_DIR"]
 OUT_PATH   = os.environ["OUT_PATH"]
 LOG_PATH   = os.environ["LOG_PATH"]
 
-RE_STRIP = re.compile(r"<[^>]+>")
-RE_LOC   = re.compile(r"/loc:.*?:\s*(\d+)(?:\.\.(\d+))?", re.IGNORECASE)
+RE_STRIP     = re.compile(r"<[^>]+>")
+RE_LOC       = re.compile(r"/loc:.*?:\s*(\d+)(?:\.\.(\d+))?", re.IGNORECASE)
+RE_ALLELE    = re.compile(r"Allele\s+(1\s+and\s+2|\d+)\s*:\s*", re.IGNORECASE)
+RE_FEAT_HDR  = re.compile(r"^FeatureHeader\s+allele;\s*(\d+)", re.IGNORECASE)
+RE_FEAT_DNA  = re.compile(r"^Feature\s+dna;", re.IGNORECASE)
+RE_FEAT_OTHR = re.compile(r"^Feature\s+(rna|aa);", re.IGNORECASE)
 
 VARIANT_PREFIXES = [
     ("g.", "genomic"),
@@ -65,7 +51,6 @@ def detect_variant_type(notation):
 
 
 def classify_mutation(notation):
-    """Classify based on the notation string. Applied from g. notation when available."""
     n = notation.lower()
     if "delins" in n:
         return "indel"
@@ -81,7 +66,6 @@ def classify_mutation(notation):
 
 
 def extract_pos_from_notation(notation):
-    """Extract (pos_start, pos_end) from a notation string. Returns (None, None) on failure."""
     if notation.startswith("p."):
         m = re.search(r"[A-Za-z*]+(\d+)", notation[2:])
         if m:
@@ -97,26 +81,52 @@ def extract_pos_from_notation(notation):
     return None, None
 
 
-def parse_allele_label(sysname):
-    m = re.match(r"Allele\s+1\s+and\s+2\s*:\s*(.+)", sysname, re.IGNORECASE)
-    if m:
-        return "both", m.group(1).strip()
-    m = re.match(r"Allele\s+(\d+)\s*:\s*(.+)", sysname, re.IGNORECASE)
-    if m:
-        return m.group(1), m.group(2).strip()
-    return None, sysname
+RE_PREF_BRACKET = re.compile(r"([gcrpnm])\.\s*\[([^\]]*)\]")
+RE_BARE_BRACKET = re.compile(r"\[([^\]]*)\]")
 
 
-def split_by_level(sysname_clean):
-    """Parse a cleaned sysname into {variant_type: [token, ...]} dict."""
+def join_sysname_lines(lines):
+    out, depth = "", 0
+    for ln in lines:
+        ln = ln.strip()
+        if not out:
+            out = ln
+        elif depth > 0:
+            out = out + " " + ln
+        else:
+            out = out.rstrip(" ,;") + ", " + ln
+        depth += ln.count("[") - ln.count("]")
+    return out
+
+
+def expand_brackets(text):
+    def pref(m):
+        p = m.group(1)
+        items = [re.sub(r"^[gcrpnm]\.\s*", "", x.strip()) for x in re.split(r"[;+]", m.group(2)) if x.strip()]
+        return "; ".join(f"{p}.{x}" for x in items)
+    text = RE_PREF_BRACKET.sub(pref, text)
+    return RE_BARE_BRACKET.sub(lambda m: "; ".join(x.strip() for x in re.split(r"[;+]", m.group(1)) if x.strip()), text)
+
+
+def split_alleles(sysname):
+    parts = RE_ALLELE.split(expand_brackets(sysname))
+    units = []
+    if parts[0].strip(" ,;"):
+        units.append(("0", parts[0]))
+    for i in range(1, len(parts) - 1, 2):
+        label = re.sub(r"\s+", " ", parts[i].strip().lower())
+        units.append(("both" if "and" in label else label, parts[i + 1]))
+    return units
+
+
+def split_by_level(text):
     levels = {}
-    for seg in sysname_clean.split(","):
-        tokens = [t.strip() for t in re.split(r";+", seg) if t.strip()]
-        if not tokens:
-            continue
-        vtype = detect_variant_type(tokens[0])
-        if vtype != "unknown":
-            levels[vtype] = tokens
+    for seg in text.split(","):
+        tokens = [t.strip() for t in seg.split(";") if t.strip()]
+        for tok in tokens:
+            vtype = detect_variant_type(tok)
+            if vtype != "unknown":
+                levels.setdefault(vtype, []).append(tok)
     return levels
 
 
@@ -125,87 +135,80 @@ def compute_missing_flag(levels):
     return ",".join(sorted(missing)) if missing else ""
 
 
-def expand_rows(gene, accession, sysname, genomic_loc_start, genomic_loc_end):
-    """
-    Yield one output row per (allele, variant_type) combination.
+def expand_rows(gene, accession, sysname, loc_by_allele, first_loc, stats):
+    units = split_alleles(sysname)
+    distinct = {re.sub(r"\s+", " ", t.strip(" ,;")) for a, t in units if a != "both"}
+    if len(distinct) > 1:
+        stats["compound_het"] += 1
 
-    Position logic:
-      - genomic rows: extract from g. notation, fall back to IDRefSeq /loc
-      - all other rows (coding, protein, rna, ...): extract from their own notation only;
-        do NOT fall back to genomic /loc (those coordinates are meaningless for c./p.)
+    for allele_mode, text in units:
+        clean  = re.sub(r"\s+", " ", text).strip(" ,;")
+        levels = split_by_level(clean)
+        allele_nums = [1, 2] if allele_mode == "both" else [int(allele_mode)]
 
-    mut_class logic:
-      - derived from the genomic (g.) notation when present, shared across all levels
-      - falls back to per-notation classification only when no g. notation exists
-    """
-    allele_mode, clean = parse_allele_label(sysname)
-    levels       = split_by_level(clean) if clean else {}
-    missing_flag = compute_missing_flag(levels)
+        if not levels:
+            for an in allele_nums:
+                loc = loc_by_allele.get(an, first_loc)
+                ps, pe = extract_pos_from_notation(clean)
+                yield {
+                    "gene": gene, "accession": accession, "allele_num": an,
+                    "variant_type": "unknown", "notation": clean,
+                    "pos_start": ps if ps is not None else loc[0],
+                    "pos_end":   pe if pe is not None else loc[1],
+                    "mut_class": classify_mutation(clean),
+                    "missing_flag": "genomic,coding,protein",
+                }
+            continue
 
-    # Determine shared mut_class from g. notation if available
-    genomic_tokens = levels.get("genomic", [])
-    shared_mut_class = classify_mutation(genomic_tokens[0]) if genomic_tokens else None
+        missing_flag = compute_missing_flag(levels)
+        genomic = levels.get("genomic", [])
+        if any(len(v) > 1 for v in levels.values()):
+            stats["cis_multi"] += 1
 
-    if not levels:
-        ps, pe = extract_pos_from_notation(clean)
-        yield {
-            "gene": gene, "accession": accession, "allele_num": 0,
-            "variant_type": "unknown", "notation": clean,
-            "pos_start": ps if ps is not None else genomic_loc_start,
-            "pos_end":   pe if pe is not None else genomic_loc_end,
-            "mut_class": classify_mutation(clean),
-            "missing_flag": "genomic,coding,protein",
-        }
-        return
-
-    if allele_mode == "both":
-        allele_pairs = [(1, 0), (2, 1)]
-    elif allele_mode is not None:
-        allele_pairs = [(int(allele_mode), 0)]
-    else:
-        allele_pairs = [(0, 0)]
-
-    for vtype, tokens in levels.items():
-        for allele_num, token_idx in allele_pairs:
-            notation = tokens[token_idx] if token_idx < len(tokens) else tokens[-1]
-            ps, pe   = extract_pos_from_notation(notation)
-
-            # Only genomic rows may fall back to IDRefSeq /loc coordinates
-            if vtype == "genomic":
-                ps = ps if ps is not None else genomic_loc_start
-                pe = pe if pe is not None else genomic_loc_end
-
-            mut_class = shared_mut_class if shared_mut_class else classify_mutation(notation)
-
-            yield {
-                "gene": gene, "accession": accession, "allele_num": allele_num,
-                "variant_type": vtype, "notation": notation,
-                "pos_start": ps,
-                "pos_end":   pe,
-                "mut_class": mut_class,
-                "missing_flag": missing_flag,
-            }
+        for an in allele_nums:
+            loc = loc_by_allele.get(an, first_loc)
+            for vtype, tokens in levels.items():
+                for idx, notation in enumerate(tokens):
+                    ps, pe = extract_pos_from_notation(notation)
+                    if vtype == "genomic":
+                        ps = ps if ps is not None else loc[0]
+                        pe = pe if pe is not None else loc[1]
+                    if idx < len(genomic):
+                        mut_class = classify_mutation(genomic[idx])
+                    elif genomic:
+                        mut_class = classify_mutation(genomic[0])
+                    else:
+                        mut_class = classify_mutation(notation)
+                    yield {
+                        "gene": gene, "accession": accession, "allele_num": an,
+                        "variant_type": vtype, "notation": notation,
+                        "pos_start": ps,
+                        "pos_end":   pe,
+                        "mut_class": mut_class,
+                        "missing_flag": missing_flag,
+                    }
 
 
-def parse_pub_html(pub_html_path, gene, log):
-    """
-    Parse one pub.html and yield output rows.
+def parse_pub_html(pub_html_path, gene, log, stats):
+    text = html.unescape(RE_STRIP.sub("", Path(pub_html_path).read_text(encoding="utf-8", errors="replace")))
+    lines = text.splitlines()
 
-    Emission strategy: one emission per accession, triggered at the '//' record
-    separator. IDRefSeq /loc lines are collected during parsing and the FIRST
-    genomic DNA /loc is used as the positional fallback for that accession.
-    This avoids duplicates caused by emitting once per /loc line.
-    """
-    lines = RE_STRIP.sub(
-        "", Path(pub_html_path).read_text(encoding="utf-8", errors="replace")
-    ).splitlines()
+    state = {"acc": "", "sys": [], "loc_by_allele": {}, "first_loc": (None, None),
+             "cur_allele": None, "in_dna": False}
+    emitted = set()
+    total   = [0]
 
-    acc      = ""
-    sys_name = ""
-    loc_start = None
-    loc_end   = None
-    emitted   = set()
-    total     = 0
+    def reset(acc=""):
+        state.update({"acc": acc, "sys": [], "loc_by_allele": {}, "first_loc": (None, None),
+                      "cur_allele": None, "in_dna": False})
+
+    def flush():
+        acc = state["acc"]
+        if acc and state["sys"] and acc not in emitted:
+            emitted.add(acc)
+            total[0] += 1
+            sysname = join_sysname_lines(state["sys"])
+            yield from expand_rows(gene, acc, sysname, state["loc_by_allele"], state["first_loc"], stats)
 
     for line in lines:
         s = line.strip()
@@ -213,31 +216,42 @@ def parse_pub_html(pub_html_path, gene, log):
         if s.startswith("Accession"):
             m = re.match(r"Accession\s+(\S+)", s)
             if m:
-                acc       = m.group(1)
-                sys_name  = ""
-                loc_start = None
-                loc_end   = None
+                if state["acc"] and state["acc"] not in emitted:
+                    stats["glued"] += 1
+                    log.warning(f"  {gene}: record separator missing before {m.group(1)}; emitting {state['acc']} separately")
+                yield from flush()
+                reset(m.group(1))
 
         elif s.startswith("Systematic name"):
             m = re.match(r"Systematic name\s+(.+)", s)
             if m:
-                part = m.group(1).strip()
-                sys_name = f"{sys_name}; {part}" if sys_name else part
+                state["sys"].append(m.group(1).strip())
+
+        elif RE_FEAT_HDR.match(s):
+            state["cur_allele"] = int(RE_FEAT_HDR.match(s).group(1))
+            state["in_dna"] = False
+
+        elif RE_FEAT_DNA.match(s):
+            state["in_dna"] = True
+
+        elif RE_FEAT_OTHR.match(s):
+            state["in_dna"] = False
 
         elif RE_LOC.search(s):
-            # Capture only the first /loc per accession as the genomic position fallback
-            if loc_start is None:
-                m = RE_LOC.search(s)
-                loc_start = int(m.group(1))
-                loc_end   = int(m.group(2)) if m.group(2) else loc_start
+            m = RE_LOC.search(s)
+            loc = (int(m.group(1)), int(m.group(2)) if m.group(2) else int(m.group(1)))
+            if state["first_loc"] == (None, None):
+                state["first_loc"] = loc
+            if state["in_dna"] and state["cur_allele"] is not None:
+                state["loc_by_allele"].setdefault(state["cur_allele"], loc)
 
         elif s == "//":
-            if acc and sys_name and acc not in emitted:
-                emitted.add(acc)
-                total += 1
-                yield from expand_rows(gene, acc, sys_name, loc_start, loc_end)
+            yield from flush()
+            reset()
 
-    if total == 0:
+    yield from flush()
+
+    if total[0] == 0:
         log.warning(f"  {gene}: 0 entries emitted — check pub.html structure")
 
 
@@ -264,6 +278,7 @@ def main():
     rows           = []
     skipped_genes  = []
     zero_row_genes = []
+    totals = {"compound_het": 0, "glued": 0, "cis_multi": 0}
 
     for folder in folders:
         gene        = re.sub(r"base$", "", folder, flags=re.IGNORECASE)
@@ -275,14 +290,19 @@ def main():
             skipped_genes.append(gene)
             continue
 
-        gene_rows = list(parse_pub_html(os.path.join(folder_path, pub), gene, log))
+        stats = {"compound_het": 0, "glued": 0, "cis_multi": 0}
+        gene_rows = list(parse_pub_html(os.path.join(folder_path, pub), gene, log, stats))
         rows.extend(gene_rows)
+        for k in totals:
+            totals[k] += stats[k]
 
         missing_flags = sum(1 for r in gene_rows if r["missing_flag"])
         unknown_types = sum(1 for r in gene_rows if r["variant_type"] == "unknown")
 
         log.info(
             f"  {gene:<15}  {len(gene_rows):5d} rows"
+            + (f"  [{stats['compound_het']} compound_het]" if stats["compound_het"] else "")
+            + (f"  [{stats['glued']} glued_repaired]" if stats["glued"] else "")
             + (f"  [{missing_flags} missing_flag]" if missing_flags else "")
             + (f"  [{unknown_types} unknown_type]"  if unknown_types  else "")
         )
@@ -305,13 +325,16 @@ def main():
     log.info("=" * 60)
     log.info("SUMMARY")
     log.info("=" * 60)
-    log.info(f"  Genes processed   : {len(folders) - len(skipped_genes)}")
-    log.info(f"  Genes skipped     : {len(skipped_genes)}  {skipped_genes or ''}")
-    log.info(f"  Genes with 0 rows : {len(zero_row_genes)}  {zero_row_genes or ''}")
-    log.info(f"  Total rows        : {len(rows)}")
-    log.info(f"  Output            : {OUT_PATH}")
-    log.info(f"  Log               : {LOG_PATH}")
-    log.info(f"  Elapsed           : {str(elapsed).split('.')[0]}")
+    log.info(f"  Genes processed          : {len(folders) - len(skipped_genes)}")
+    log.info(f"  Genes skipped            : {len(skipped_genes)}  {skipped_genes or ''}")
+    log.info(f"  Genes with 0 rows        : {len(zero_row_genes)}  {zero_row_genes or ''}")
+    log.info(f"  Compound-het accessions  : {totals['compound_het']}")
+    log.info(f"  Glued records repaired   : {totals['glued']}")
+    log.info(f"  Alleles with cis changes : {totals['cis_multi']}")
+    log.info(f"  Total rows               : {len(rows)}")
+    log.info(f"  Output                   : {OUT_PATH}")
+    log.info(f"  Log                      : {LOG_PATH}")
+    log.info(f"  Elapsed                  : {str(elapsed).split('.')[0]}")
     log.info("=" * 60)
 
 

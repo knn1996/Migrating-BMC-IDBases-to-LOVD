@@ -39,6 +39,9 @@ from pathlib import Path
 
 import requests
 
+sys.path.insert(0, str(Path(__file__).resolve().parent))
+from hgvs_norm import normalize_hgvs_query, describe_normalization
+
 IN_DISPOSITION = os.environ["IN_DISPOSITION"]
 IN_MUTALYZER   = os.environ["IN_MUTALYZER"]
 IN_VV          = os.environ["IN_VV"]
@@ -68,7 +71,8 @@ OUT_FIELDS  = [
     "protein_pos_first", "mane_select", "mutalyzer_gene",
     "hgvs_input", "normalized", "errors",
 ]
-EXTRA_FIELDS = ["validated_hgvs", "transcript_used", "resolving_tool", "accession_list"]
+EXTRA_FIELDS = ["validated_hgvs", "transcript_used", "resolving_tool", "accession_list",
+                "normalization_applied", "needs_curator_review"]
 
 _SIMPLE_SUB = re.compile(r"^c\.(-?\d+)([ACGT]+>[ACGT]+)$", re.IGNORECASE)
 
@@ -153,7 +157,12 @@ def _parse_vv(resp, vv_query):
     }
 
 
-def call_vv(hgvs, session, cache, log):
+def call_vv(raw_hgvs, session, cache, log):
+    hgvs = normalize_hgvs_query(raw_hgvs)
+    if not hgvs:
+        return None
+    if hgvs != (raw_hgvs or "").strip():
+        log(f"    normalised: {raw_hgvs} -> {hgvs}")
     if hgvs in cache:
         return _parse_vv(cache[hgvs], hgvs)
     encoded = urllib.parse.quote(hgvs, safe="")
@@ -182,6 +191,7 @@ def call_vv(hgvs, session, cache, log):
 
 
 def try_offset_shifts(hgvs_input, session, cache, log):
+    hgvs_input = normalize_hgvs_query(hgvs_input)
     if ":" not in hgvs_input:
         return None, None
     prefix, c_part = hgvs_input.rsplit(":", 1)
@@ -224,6 +234,9 @@ def _build_row(base, vv, resolving_tool, new_hgvs_input=None):
     row["validated_hgvs"]  = validated
     row["transcript_used"] = tx
     row["resolving_tool"]  = resolving_tool
+    norm = describe_normalization(base.get("hgvs_input", ""))
+    row["normalization_applied"] = norm
+    row["needs_curator_review"]  = "yes" if "deldup_shortened" in norm else ""
     return row
 
 
@@ -397,7 +410,7 @@ def main():
                 resolved_row = _build_row(row, vv_data, "variantvalidator")
                 counters["vv_mismatch"] += 1
             else:
-                hgvs_in = row.get("hgvs_input", "").strip()
+                hgvs_in = normalize_hgvs_query(row.get("hgvs_input", ""))
                 parsed = call_vv(hgvs_in, session, vv_cache, log) if hgvs_in else None
                 if parsed is not None and parsed.get("c_hgvs"):
                     resolved_row = _build_row(row, parsed, "variantvalidator",
@@ -428,6 +441,28 @@ def main():
     n_vv          = counters["variantvalidator"]
     n_vv_mismatch = counters["vv_mismatch"]
     n_offset      = counters["offset_fix"]
+    n_review      = sum(1 for r in resolved if r.get("needs_curator_review") == "yes")
+
+    pct_rescued = n_rescued / n_unresolved * 100 if n_unresolved else 0
+
+    REF_MISMATCH_SUBS = {
+        "single_base_wrong", "single_base_complement", "completely_different",
+        "multibase_rc_match", "length_mismatch", "positional_offset",
+    }
+    TX_STRUCTURE_SUBS = {"nm_not_in_ng", "intronic_c_notation"}
+
+    n_ref_mismatch = n_tx_structure = n_curation_loss = n_manual_only = 0
+    for r in residual:
+        sub  = r.get("subcategory", "")
+        disp = r.get("disposition", "")
+        if sub in REF_MISMATCH_SUBS:
+            n_ref_mismatch += 1
+        elif sub in TX_STRUCTURE_SUBS:
+            n_tx_structure += 1
+        elif disp == "RESCUABLE_MANUAL":
+            n_manual_only += 1
+        else:
+            n_curation_loss += 1
 
     with open(OUT_FUNNEL, "w", newline="", encoding="utf-8") as f:
         w = csv.writer(f, delimiter="\t")
@@ -438,53 +473,67 @@ def main():
         w.writerow(["resolved_by_VV_mismatch_probe",   n_vv_mismatch])
         w.writerow(["resolved_by_offset_fix",          n_offset])
         w.writerow(["total_rescued",                   n_rescued])
-        w.writerow(["remaining_genuine_errors",        n_remaining])
+        w.writerow(["  of which need curator review",  n_review])
+        w.writerow(["remaining_unresolved",            n_remaining])
+        w.writerow(["  ref_mismatch",                  n_ref_mismatch])
+        w.writerow(["  tx_structure",                  n_tx_structure])
+        w.writerow(["  curation_loss",                 n_curation_loss])
+        w.writerow(["  manual_rewrite",                n_manual_only])
         w.writerow(["", ""])
         w.writerow(["remaining_by_category", "count"])
         for cat_sub, n in sorted(residual_cats.items(), key=lambda x: -x[1]):
             w.writerow([cat_sub, n])
 
-    pre_rate      = n_merged_rows / (n_merged_rows + n_unresolved) * 100 if (n_merged_rows + n_unresolved) else 0
-    est_post      = n_merged_rows + n_rescued
-    est_total     = n_merged_rows + n_unresolved
-    post_rate_est = est_post / est_total * 100 if est_total else 0
-    pct_rescued   = n_rescued / n_unresolved * 100 if n_unresolved else 0
-
-    residual_disp = {}
-    for r in residual:
-        d = r.get("disposition", "UNKNOWN")
-        residual_disp[d] = residual_disp.get(d, 0) + 1
-    n_unrescuable  = residual_disp.get("UNRESCUABLE", 0) + residual_disp.get("UNRESCUABLE_DATA_ERROR", 0)
-    n_syntax_lost  = sum(v for k, v in residual_cats.items() if "missing_inserted" in k or "ESYNTAXUEOF" in k)
-    n_manual_only  = residual_disp.get("RESCUABLE_MANUAL", 0)
-
     narrative = f"""\
-## Resolution of Unresolved Variants: 76% Was Not a Ceiling
+## Resolution of Unresolved Variants
 
-Of the {n_unresolved} variants that failed all three Mutalyzer processing
-tracks (NG\\_IDRefseq, NM\\_MANE, and NM\\_IDRefseq), **{n_rescued}
-({pct_rescued:.0f}%)** were automatically resolved by the rescue layer:
+Of the {n_unresolved} distinct variants that failed all three Mutalyzer
+processing tracks (NG\\_IDRefseq, NM\\_MANE, and NM\\_IDRefseq), **{n_rescued}
+({pct_rescued:.1f}%)** were automatically resolved by the rescue layer:
 {n_mane} via MANE Select NM\\_ re-mapping (correcting obsolete transcript
-version references), {n_vv + n_vv_mismatch} via VariantValidator (resolving intronic,
-IVS-notation, and reference-mismatch variants against the current GRCh38 build), and
+version references), {n_vv} via VariantValidator against the current GRCh38
+build (intronic and IVS-notation variants), {n_vv_mismatch} via a
+VariantValidator probe of reference-mismatch candidates, and
 {n_offset} via empirical coordinate-offset correction (±1 c.\\ position
-shift confirmed against GRCh38). Combined with the {n_merged_rows}
-patient-level entries resolved in the primary pipeline, the post-rescue
-variant pool reaches **{est_post}** rows (exact distinct count after
-deduplication is reported in `dedup_stats.txt`), raising the automated
-resolution rate from {pre_rate:.1f}% to an estimated **{post_rate_est:.1f}%**
-of all submitted variants.
+shift confirmed against GRCh38).
 
-The residual **{n_remaining}** unresolved variants comprise a small,
-well-characterised set of genuine source-data errors that cannot be
-corrected without fabricating sequence information:
-{n_unrescuable} carry reference-sequence mismatches attributable to
-strand-orientation discrepancies or completely divergent legacy sequences,
-{n_syntax_lost} lost their inserted sequence during original database
-curation (delins with no alt allele), and {n_manual_only} require
-targeted manual HGVS rewrite before automated re-verification.
-These categories represent hard limits of automated rescue rather than
-ambiguities in the variant data itself.
+Of these, **{n_review} require curator review before submission.** These are
+descriptions that spelled out the deleted or duplicated sequence in the
+deprecated pre-2016 style (e.g. c.1293delC rather than c.1293del). Shortening
+the description discards the source record's assertion about which base was
+deleted while retaining its assertion about the position, so where that base
+disagreed with GRCh38 the variant now validates against the reference base
+instead. Position is being trusted over allele; the affected rows are flagged
+`needs_curator_review` in `resolved_unresolved.tsv` and should be confirmed
+against the primary literature before deposition.
+
+Resolution rates are reported on a distinct-variant basis in
+`rescue_metrics_comparison.csv`; patient-level row counts before and after
+augmentation are reported in `augment_stats.txt` and `dedup_rescued_stats.txt`.
+The pre-rescue pool contained {n_merged_rows} patient-variant rows, which is
+not directly comparable with the {n_unresolved} distinct unresolved variants
+above and is therefore not combined into a single ratio here.
+
+The residual **{n_remaining}** variants fall into three mechanistically
+distinct groups:
+
+- **{n_ref_mismatch} reference-sequence mismatches.** The base asserted by the
+  source record disagrees with GRCh38 at the stated position, either through
+  strand-orientation error in the original curation or through a legacy
+  reference sequence that diverges from the current assembly. These cannot be
+  corrected without fabricating sequence information and represent a genuine
+  limit of automated rescue.
+- **{n_tx_structure} legacy transcript-structure incompatibilities.** The
+  historical c.\\ numbering anchors positions — particularly intronic offsets —
+  to exon boundaries that do not exist in the MANE Select transcript, yielding
+  EEXONBOUNDARY on re-validation. These are not source-data errors; resolving
+  them requires reconstructing genomic coordinates from the legacy RefSeqGene
+  reference rather than re-mapping the c.\\ description, which is outside the
+  scope of the present rescue layer.
+- **{n_curation_loss} curation losses and {n_manual_only} manual-rewrite cases.**
+  Descriptions that lost their inserted sequence during original database entry,
+  carry reversed or non-consecutive ranges, or otherwise require a targeted
+  human HGVS rewrite before automated re-verification is meaningful.
 """
 
     with open(OUT_NARRATIVE, "w", encoding="utf-8") as f:
@@ -499,8 +548,12 @@ ambiguities in the variant data itself.
     log(f"  Resolved by offset_fix : {n_offset}")
     log(f"  Total rescued          : {n_rescued}  ({pct_rescued:.1f}% of unresolved)")
     log(f"  Remaining              : {n_remaining}")
-    log(f"  Pre-rescue merged rows : {n_merged_rows}")
-    log(f"  Estimated resolution   : {post_rate_est:.1f}%  (exact in dedup_stats.txt)")
+    log(f"    ref mismatch         : {n_ref_mismatch}")
+    log(f"    tx structure         : {n_tx_structure}")
+    log(f"    curation loss        : {n_curation_loss}")
+    log(f"    manual rewrite       : {n_manual_only}")
+    log(f"  Pre-rescue merged rows : {n_merged_rows}  (patient-variant rows, not variants)")
+    log("  Resolution rates       : see rescue_metrics_comparison.csv")
     log(f"  OUT_RESOLVED           : {OUT_RESOLVED}")
     log(f"  OUT_FUNNEL             : {OUT_FUNNEL}")
     log(f"  OUT_NARRATIVE          : {OUT_NARRATIVE}")

@@ -19,6 +19,12 @@ TRANSCRIPTS  VV transcript selector: "mane_select" (default) or "all"
 Endpoint verified live 2026-07-21:
     https://rest.variantvalidator.org/VariantValidator/variantvalidator/
     GRCh38/{variant}/{transcripts}
+
+Every hgvs_input is passed through hgvs_norm.normalize_hgvs_query before
+submission. This strips NC_/NG_ reference wrappers (VV cannot align an NM_
+transcript against an NG_ RefSeqGene record) and shortens deprecated
+del<seq>/dup<seq> spellings. When normalisation alters the description, the
+original is preserved in the hgvs_submitted_raw column for audit.
 """
 
 import csv
@@ -31,6 +37,9 @@ import urllib.parse
 from pathlib import Path
 
 import requests
+
+sys.path.insert(0, str(Path(__file__).resolve().parent))
+from hgvs_norm import normalize_hgvs_query, describe_normalization
 
 IN_TSV      = os.environ["IN_TSV"]
 OUT_TSV     = os.environ["OUT_TSV"]
@@ -87,16 +96,6 @@ def load_cache(path):
 def append_cache(path, query, response):
     with open(path, "a", encoding="utf-8") as f:
         f.write(json.dumps({"query": query, "response": response}) + "\n")
-
-
-def strip_nc_wrapper(hgvs_input):
-    m = re.match(
-        r"^NC_[0-9.]+\((NM_[0-9.]+)\):(c\..+)$",
-        (hgvs_input or "").strip(),
-    )
-    if m:
-        return f"{m.group(1)}:{m.group(2)}"
-    return (hgvs_input or "").strip()
 
 
 def query_vv(hgvs, session, log):
@@ -284,6 +283,9 @@ def main():
 
     extra_cols = [c for c in rows[0] if c not in OUT_FIELDS]
     out_fieldnames = OUT_FIELDS + extra_cols
+    for _c in ("hgvs_submitted_raw", "normalization_applied"):
+        if _c not in out_fieldnames:
+            out_fieldnames = out_fieldnames + [_c]
 
     session = requests.Session()
     session.headers.update({
@@ -292,7 +294,7 @@ def main():
     })
 
     out_rows = []
-    n_ok = n_fail = n_cached = n_skip = 0
+    n_ok = n_fail = n_cached = n_skip = n_norm = n_deldup = 0
     stopped_early = False
 
     for i, row in enumerate(rows, 1):
@@ -305,8 +307,14 @@ def main():
             n_skip += 1
             continue
 
-        vv_query = strip_nc_wrapper(original_input)
+        vv_query = normalize_hgvs_query(original_input)
         out_row["hgvs_input"] = vv_query
+        if vv_query != original_input:
+            out_row["hgvs_submitted_raw"]    = original_input
+            out_row["normalization_applied"] = describe_normalization(original_input)
+            n_norm += 1
+            if "deldup_shortened" in out_row["normalization_applied"]:
+                n_deldup += 1
 
         if vv_query in cache:
             resp = cache[vv_query]
@@ -321,7 +329,7 @@ def main():
                 out_rows.append(out_row)
                 for remaining in rows[i:]:
                     r2 = {c: remaining.get(c, "") for c in out_fieldnames}
-                    r2["hgvs_input"] = strip_nc_wrapper(remaining.get("hgvs_input") or "")
+                    r2["hgvs_input"] = normalize_hgvs_query(remaining.get("hgvs_input") or "")
                     r2["status"] = "unreachable"
                     r2["errors"] = "VV unreachable after max retries"
                     out_rows.append(r2)
@@ -363,6 +371,8 @@ def main():
     log("")
     log("=== Summary ===")
     log(f"  Input rows          : {len(rows)}")
+    log(f"  Normalised queries  : {n_norm}  (wrapper stripped and/or del/dup shortened)")
+    log(f"    of which del/dup  : {n_deldup}  REVIEW: source deleted base discarded")
     log(f"  Skipped (no input)  : {n_skip}")
     log(f"  Served from cache   : {n_cached}")
     log(f"  Resolved (ok)       : {n_ok}")

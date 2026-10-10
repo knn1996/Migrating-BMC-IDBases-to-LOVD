@@ -10,6 +10,9 @@ from pathlib import Path
 
 import requests
 
+sys.path.insert(0, str(Path(__file__).resolve().parent))
+from hgvs_norm import normalize_hgvs_query
+
 THESIS_DIR = r"C:\Users\BornLoser\Desktop\Assignment\Thesis"
 STEP7_OUT  = os.path.join(THESIS_DIR, "04_Mutation_Processing", "Output", "Step8_Merging")
 LOG_DIR    = os.path.join(THESIS_DIR, "04_Mutation_Processing", "Logs")
@@ -32,10 +35,7 @@ OUT_FIELDS = [
 
 
 def strip_nc_wrapper(hgvs_input: str) -> str:
-    m = re.match(r"^NC_[0-9.]+\((NM_[0-9.]+)\):(c\..+)$", hgvs_input.strip())
-    if m:
-        return f"{m.group(1)}:{m.group(2)}"
-    return hgvs_input.strip()
+    return normalize_hgvs_query(hgvs_input)
 
 
 def query_vv(hgvs: str, session: requests.Session) -> dict:

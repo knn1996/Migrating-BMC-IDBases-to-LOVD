@@ -90,7 +90,7 @@ rule vv_rescue:
         "envs/http.yaml"
     shell:
         f'IN_TSV="{{input}}" OUT_TSV="{{output}}" '
-        f'CACHE_JSONL="{{params.cache}}/vv_rescue.jsonl" '
+        f'CACHE_JSONL="{{params.cache}}/vv_rescue_probe.jsonl" '
         f'LOG_PATH="{{params.logs}}/vv_rescue.log" '
         f'TRANSCRIPTS="mane_select" FILTER_DISPOSITIONS="RESCUABLE_AUTO" '
         f'python "{script("Step7_Merging/vv_client.py")}"'
@@ -121,7 +121,7 @@ rule resolve_unresolved:
         f'OUT_RESOLVED="{{output.resolved}}" '
         f'OUT_FUNNEL="{{output.funnel}}" '
         f'OUT_NARRATIVE="{{output.narrative}}" '
-        f'VV_CACHE_JSONL="{{params.vv_cache}}/vv_rescue.jsonl" '
+        f'VV_CACHE_JSONL="{{params.vv_cache}}/vv_resolve.jsonl" '
         f'LOG_PATH="{{params.logs}}/resolve_unresolved.log" '
         f'python "{script("Step7_Merging/resolve_unresolved.py")}"'
 
@@ -190,9 +190,22 @@ rule lovd_flat_final_cols:
         f'python "{script("Step7_Merging/build_lovd_flat.py")}"'
 
 
-rule patient_metadata_final:
+rule annotate_vario:
     input:
         flat=os.path.join(S8, "lovd_flat_final_cols.tsv"),
+        owx=os.path.join(SCRIPTS, "refs", "VariO_1.09.owx"),
+    output:
+        os.path.join(S8, "lovd_flat_final_cols_vario.tsv"),
+    conda:
+        "envs/python.yaml"
+    shell:
+        f'IN_PATH="{{input.flat}}" OUT_PATH="{{output}}" VARIO_OWX="{{input.owx}}" '
+        f'python "{script("Step7_Merging/annotate_vario.py")}"'
+
+
+rule patient_metadata_final:
+    input:
+        flat=os.path.join(S8, "lovd_flat_final_cols_vario.tsv"),
     output:
         os.path.join(S8, "lovd_flat_with_patients_final.tsv"),
     params:
