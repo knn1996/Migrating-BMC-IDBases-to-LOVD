@@ -9,8 +9,9 @@ import re
 import csv
 from pathlib import Path
 
-IDBASE_DIR = r"C:\Users\BornLoser\Desktop\Assignment\Thesis\02_Source_Database\idbase_pub_html_only"
-OUT_CSV    = r"C:\Users\BornLoser\Desktop\Assignment\Thesis\02_Source_Database\idbase_patient_variant_counts.csv"
+THESIS_DIR = Path(os.environ.get("THESIS_DIR", Path(__file__).resolve().parents[3]))
+IDBASE_DIR = os.environ.get("IDBASE_DIR", THESIS_DIR / "02_Source_Database" / "idbase_pub_html_only")
+OUT_CSV    = os.environ.get("OUT_CSV", THESIS_DIR / "02_Source_Database" / "idbase_patient_variant_counts.csv")
 
 X_LINKED = {
     "BTK", "CD40LG", "CYBB", "DKC1", "ELA2", "FOXP3", "G6PD", "GATA1",

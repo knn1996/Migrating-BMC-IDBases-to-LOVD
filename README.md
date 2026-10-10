@@ -152,11 +152,15 @@ Row counts overstate biological content, so deduplication runs in two stages:
 │   │   ├── config/             # config.example.yaml (template) + config.yaml (gitignored)
 │   │   ├── envs/               # per-rule conda environments
 │   │   ├── R for figures/      # ggplot2 scripts for every figure
+│   │   ├── refs/               # VariO ontology (VariO_1.09.owx)
 │   │   ├── Step1a_Extraction/  Step1b_RSG_Mapping/  Step1c_SeqDownload/
 │   │   ├── Step2_RefCheck/     Step3_BLAST/  Step4_BED/  Step5_LiftOver/
 │   │   ├── Step6_Mutalyzer/    Step7_Merging/  Step8_Rescue/
+│   │   ├── Step9_NMD/          Step10_Audit/
+│   │   ├── Utilities/          # one-off checks and maintenance scripts
 │   │   └── tests/
-│   └── Output/                 # mirrors the Step* layout above
+│   ├── Output/                 # mirrors the Step* layout above, plus cache/
+│   └── Logs/                   # run logs (gitignored)
 └── 05_Testing/                 # validation and test scripts
 ```
 
@@ -191,7 +195,8 @@ snakemake --use-conda --cores 8 -n
 # 3. Primary workflow — as-published results
 snakemake --use-conda --cores 8
 
-# 4. Rescue workflow — reads primary outputs, writes to Output/Step8_Rescue/
+# 4. Rescue workflow — reads primary outputs, writes to Output/Step8_Rescue/,
+#    then NMD annotation (Output/Step9_NMD/) and the source audit (Output/Step10_Audit/)
 snakemake -s rescue.smk --use-conda --cores 8
 ```
 
@@ -237,13 +242,19 @@ them and point the matching config key at their location:
 
 | File | Contents |
 |---|---|
-| `Output/all_mutations.tsv` | Extracted patient-level variant records, source notation preserved |
-| `Output/lrg_offset_results.csv` | Per-gene IDRefSeq → LRG / `NG_` offset, alignment span, anchor match rate |
-| `Output/Step2_RefCheck/gene_confidence.csv` | Per-gene anchor statistics, Wilson CI, acceptance status |
+| `Output/Step1a_Extraction/all_mutations.tsv` | Extracted patient-level variant records, source notation preserved |
+| `Output/Step2_RefCheck/lrg_offset_results.csv` | Per-gene IDRefSeq → LRG / `NG_` offset, alignment span, anchor match rate |
+| `Output/Step2_RefCheck/gene_confidence_NG_IDRefseq.csv` | Per-gene anchor statistics, Wilson CI, acceptance status (optional rule) |
 | `Output/Step7_Merging/merged_variants.tsv` | Three-track merged, resolved records (row-level) |
 | `Output/Step7_Merging/dedup_merged_variants.tsv` | **Canonical deduplicated variant set — the LOVD import table** |
-| `Output/Step7_Merging/unresolved_disposition.tsv` | Failures with error code, subcategory and rescuability class |
 | `Output/Step7_Merging/lovd_review.xlsx` | LOVD 3.0 review workbook |
+| `Output/Step8_Rescue/unresolved_disposition.tsv` | Failures with error code, subcategory and rescuability class |
+| `Output/Step8_Rescue/lovd_flat_final.tsv` | Rescue-inclusive LOVD flat table |
+| `Output/Step8_Rescue/lovd_flat_with_patients_final.tsv` | Rescue-inclusive table with VariO terms and patient metadata |
+| `Output/Step8_Rescue/lovd_review_final.xlsx` | Rescue-inclusive LOVD 3.0 review workbook |
+| `Output/Step8_Rescue/rescue_metrics_comparison.csv` | Primary vs rescue-inclusive resolution metrics |
+| `Output/Step9_NMD/nmd_annotation.tsv` | Premature-stop variants with NMD prediction and proposed `r.`/`p.` descriptions |
+| `Output/Step10_Audit/audit_summary.tsv` | Source-to-output audit: fate of every IDbases record, metadata and protein checks |
 
 ## Limitations
 

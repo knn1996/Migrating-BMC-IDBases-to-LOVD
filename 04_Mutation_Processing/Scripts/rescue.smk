@@ -1,19 +1,24 @@
 import os
 
-configfile: "config/config.yaml"
+configfile: os.path.join(workflow.basedir, "config", "config.yaml")
 
 SCRIPTS = workflow.basedir
 OUT  = config["output_root"]
 LOGS = config["logs_root"]
 
+S1A = os.path.join(OUT, "Step1a_Extraction")
 S1B = os.path.join(OUT, "Step1b_RSG_Mapping")
 S2  = os.path.join(OUT, "Step2_RefCheck")
 S7  = os.path.join(OUT, "Step7_Merging")
 S8  = os.path.join(OUT, "Step8_Rescue")
+S9  = os.path.join(OUT, "Step9_NMD")
+S10 = os.path.join(OUT, "Step10_Audit")
 
 DNA_SEQ = config["dna_seq"]
 THESIS = config["thesis_dir"]
 IDBASE = os.path.join(THESIS, config["idbase_subdir"])
+PUB_DIR = os.path.join(THESIS, config.get("idbase_pub_subdir", "02_Source_Database/idbase_pub_html_only"))
+GB_CACHE = config.get("ncbi", {}).get("genbank_cache_dir", os.path.join(OUT, "cache", "genbank"))
 
 
 def script(rel):
@@ -25,6 +30,8 @@ rule all:
         os.path.join(S8, "lovd_flat_final.tsv"),
         os.path.join(S8, "rescue_metrics_comparison.csv"),
         os.path.join(S8, "lovd_review_final.xlsx"),
+        os.path.join(S9, "nmd_annotation.tsv"),
+        os.path.join(S10, "audit_summary.tsv"),
 
 
 rule classify_unresolved:
@@ -37,7 +44,7 @@ rule classify_unresolved:
         "envs/python.yaml"
     shell:
         f'IN_PATH="{{input}}" OUT_PATH="{{output.disp}}" SUMMARY="{{output.summary}}" '
-        f'python "{script("Step7_Merging/classify_unresolved.py")}"'
+        f'python "{script("Step8_Rescue/classify_unresolved.py")}"'
 
 
 rule generate_rescue_input:
@@ -55,7 +62,7 @@ rule generate_rescue_input:
         f'IN_DISPOSITION="{{input.disp}}" LRG_NM_CSV="{{input.lrg}}" '
         f'MANE_NM_DIR="{{params.mane_nm}}" '
         f'OUT_TSV="{{output.tsv}}" LOG_TSV="{{output.skip}}" '
-        f'python "{script("Step7_Merging/generate_rescue_input.py")}"'
+        f'python "{script("Step8_Rescue/generate_rescue_input.py")}"'
 
 
 rule mutalyzer_rescue:
@@ -93,7 +100,7 @@ rule vv_rescue:
         f'CACHE_JSONL="{{params.cache}}/vv_rescue_probe.jsonl" '
         f'LOG_PATH="{{params.logs}}/vv_rescue.log" '
         f'TRANSCRIPTS="mane_select" FILTER_DISPOSITIONS="RESCUABLE_AUTO" '
-        f'python "{script("Step7_Merging/vv_client.py")}"'
+        f'python "{script("Step8_Rescue/vv_client.py")}"'
 
 
 rule resolve_unresolved:
@@ -123,7 +130,7 @@ rule resolve_unresolved:
         f'OUT_NARRATIVE="{{output.narrative}}" '
         f'VV_CACHE_JSONL="{{params.vv_cache}}/vv_resolve.jsonl" '
         f'LOG_PATH="{{params.logs}}/resolve_unresolved.log" '
-        f'python "{script("Step7_Merging/resolve_unresolved.py")}"'
+        f'python "{script("Step8_Rescue/resolve_unresolved.py")}"'
 
 
 rule augment_merged:
@@ -138,7 +145,7 @@ rule augment_merged:
     shell:
         f'MERGED_TSV="{{input.merged}}" RESOLVED_TSV="{{input.resolved}}" '
         f'OUT_TSV="{{output.tsv}}" STATS_TXT="{{output.stats}}" '
-        f'python "{script("Step7_Merging/merge_with_rescued.py")}"'
+        f'python "{script("Step8_Rescue/merge_with_rescued.py")}"'
 
 
 rule dedup_rescued:
@@ -230,3 +237,50 @@ rule lovd_review_final:
     shell:
         f'IN_PATH="{{input.withpat}}" OFFSET_PATH="{{input.offset}}" OUT_PATH="{{output}}" '
         f'python "{script("Step7_Merging/build_lovd_review_xlsx.py")}"'
+
+
+rule annotate_nmd:
+    input:
+        os.path.join(S8, "lovd_flat_final_cols_vario.tsv"),
+    output:
+        nmd=os.path.join(S9, "nmd_annotation.tsv"),
+        structure=os.path.join(S9, "transcript_structure.tsv"),
+        review=os.path.join(S9, "nmd_review.tsv"),
+    params:
+        out_dir=S9,
+        gb_cache=GB_CACHE,
+    log:
+        os.path.join(LOGS, "annotate_nmd.log"),
+    conda:
+        "envs/python.yaml"
+    shell:
+        f'IN_TSV="{{input}}" OUT_DIR="{{params.out_dir}}" GB_CACHE="{{params.gb_cache}}" '
+        f'python "{script("Step9_NMD/annotate_nmd.py")}" > "{{log}}" 2>&1'
+
+
+rule audit_against_source:
+    input:
+        final=os.path.join(S8, "lovd_flat_with_patients_final.tsv"),
+        augment=os.path.join(S8, "augmented_merged_variants.tsv"),
+        unres=os.path.join(S8, "unresolved_disposition.tsv"),
+        rescued=os.path.join(S8, "resolved_unresolved.tsv"),
+        extract=os.path.join(S1A, "all_mutations.tsv"),
+        pub=ancient(PUB_DIR),
+    output:
+        summary=os.path.join(S10, "audit_summary.tsv"),
+        variants=os.path.join(S10, "audit_variants.tsv"),
+        by_gene=os.path.join(S10, "audit_by_gene.tsv"),
+        metadata=os.path.join(S10, "audit_metadata_flags.tsv"),
+        not_registered=os.path.join(S10, "audit_not_registered.tsv"),
+        protein=os.path.join(S10, "audit_protein_flags.tsv"),
+    params:
+        out_dir=S10,
+    log:
+        os.path.join(LOGS, "audit_against_source.log"),
+    conda:
+        "envs/python.yaml"
+    shell:
+        f'FINAL_TSV="{{input.final}}" AUGMENT_TSV="{{input.augment}}" UNRES_TSV="{{input.unres}}" '
+        f'RESCUED_TSV="{{input.rescued}}" EXTRACT_TSV="{{input.extract}}" PUB_DIR="{{input.pub}}" '
+        f'OUT_DIR="{{params.out_dir}}" '
+        f'python "{script("Step10_Audit/audit_against_source.py")}" > "{{log}}" 2>&1'

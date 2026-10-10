@@ -21,6 +21,7 @@ gene_sets:
   test: ["RAB27A", "UNC13D", "ADA"]
   all: "auto"
 large_gene: "CYBB"
+skip_genes_without_ng_fasta: true
 
 blast:
   evalue: "1e-10"
@@ -37,6 +38,13 @@ optional:
   find_lrg_offset_NM: false
   confidence_analysis: false
   qa_branch: false
+  resolve_unresolved: true
+  rebuild_idbase_summary: false
+
+rerun_blast: true
+rerun_downloads: true
+bed_raw_dir: "results/bed_raw"
+rerun_bed: true
 
 resources:
   blast_gene:

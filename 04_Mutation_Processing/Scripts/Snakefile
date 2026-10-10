@@ -12,13 +12,13 @@ SCRIPTS = workflow.basedir
 OUT  = config["output_root"]
 LOGS = config["logs_root"]
 
-S1A = os.path.join(OUT, "Step1_Extraction")
+S1A = os.path.join(OUT, "Step1a_Extraction")
 S1B = os.path.join(OUT, "Step1b_RSG_Mapping")
 S1C = os.path.join(OUT, "Step1c_SeqDownload")
 S2  = os.path.join(OUT, "Step2_RefCheck")
 S3  = os.path.join(OUT, "Step3_BLAST")
 S4  = os.path.join(OUT, "Step4_BED")
-S5  = os.path.join(OUT, "Step5_Liftover")
+S5  = os.path.join(OUT, "Step5_LiftOver")
 S6  = os.path.join(OUT, "Step6_Mutalyzer")
 S7  = os.path.join(OUT, "Step7_Merging")
 

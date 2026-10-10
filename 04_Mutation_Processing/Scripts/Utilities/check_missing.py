@@ -1,8 +1,10 @@
 import csv
+import os
 from pathlib import Path
 
-IDBASE_DIR = r"C:\Users\BornLoser\Desktop\Assignment\Thesis\02_Source_Database\idbase_pub_html_only"
-SUMMARY_CSV = r"C:\Users\BornLoser\Desktop\Assignment\Thesis\04_Mutation_Processing\Output\IDBases_Summary.csv"
+THESIS_DIR = Path(os.environ.get("THESIS_DIR", Path(__file__).resolve().parents[3]))
+IDBASE_DIR = os.environ.get("IDBASE_DIR", THESIS_DIR / "02_Source_Database" / "idbase_pub_html_only")
+SUMMARY_CSV = os.environ.get("SUMMARY_CSV", THESIS_DIR / "04_Mutation_Processing" / "Output" / "IDBases_Summary.csv")
 
 with open(SUMMARY_CSV, encoding="utf-8") as f:
     summary_genes = {row["gene_name"].upper() for row in csv.DictReader(f) if row["gene_name"]}

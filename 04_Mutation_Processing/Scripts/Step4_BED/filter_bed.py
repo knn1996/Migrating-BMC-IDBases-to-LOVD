@@ -9,7 +9,7 @@ Usage:
 
 Input:
     03_BED_Files/BED_IDRefseq/*.BED          -> Output/Step4_BED/
-    03_BED_Files/BED_IDRefseq/hg38/*.BED     -> Output/Step5_Liftover/
+    03_BED_Files/BED_IDRefseq/hg38/*.BED     -> Output/Step5_LiftOver/
 
 Logic:
     - For each gene, pick the IDRefseq source (higher match_pct; source_3 if tied)
