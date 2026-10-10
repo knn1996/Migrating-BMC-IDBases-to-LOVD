@@ -161,4 +161,8 @@ fi
 
 say ""
 say "Summary: $n_ok actions, $n_skip skipped (missing), $n_warn warnings (target exists)"
-[ $APPLY -eq 1 ] && say "Manifest: $MANIFEST" && say "Review with: git status --short | head -50"
+if [ $APPLY -eq 1 ]; then
+    say "Manifest: $MANIFEST"
+    say "Review with: git status --short | head -50"
+fi
+exit 0
