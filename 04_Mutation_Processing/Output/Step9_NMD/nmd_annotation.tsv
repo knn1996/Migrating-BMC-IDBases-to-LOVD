@@ -1,36 +1,26 @@
 _gene	_dedup_key	transcriptid	VariantOnTranscript/DNA	rna_current	protein_current	ptc_kind	ref_check	ptc_c	ptc_aa	mutalyzer_stop_aa	stop_agrees_mutalyzer	dist_to_last_junction_nt	nmd_call	flags	rna_proposed	protein_proposed
 AIRE	c.769C>T	NM_000383.3	c.769C>T	r.(769c>u)	p.(Arg257Ter)	nonsense	ok	769	257	257	yes	798	NMD_predicted		r.0?	p.0?
 AIRE	c.247A>G	NM_000383.4	c.247A>G	r.(247a>g)	p.(Lys83Glu)								not_ptc		r.(247a>g)	p.(Lys83Glu)
-AIRE	c.1094_1106del	NM_000383.3	c.1094_1106del	r.(1094_1106del)	p.(Pro365ArgfsTer9)	frameshift		1130	373	373	yes	437	NMD_predicted		r.0?	p.0?
 AIRE	c.967_979del	NM_000383.3	c.967_979del	r.(967_979del)	p.(Leu323SerfsTer51)	frameshift		1130	373	373	yes	437	NMD_predicted		r.0?	p.0?
 AIRE	c.607C>T	NM_000383.3	c.607C>T	r.(607c>u)	p.(Arg203Ter)	nonsense	ok	607	203	203	yes	960	NMD_predicted		r.0?	p.0?
-AIRE	c.1096_1097insCCTG	NM_000383.3	c.1096_1097insCCTG	r.(1096_1097insccug)	p.(Leu366ProfsTer7)	frameshift		1110	372	372	yes	457	NMD_predicted		r.0?	p.0?
 AIRE	c.966_969dup	NM_000383.4	c.966_969dup	r.(966_969delinsccugccug)	p.(Ser324ProfsTer49)	frameshift		1110	372	372	yes	457	NMD_predicted		r.0?	p.0?
 AIRE	c.415C>T	NM_000383.3	c.415C>T	r.(415c>u)	p.(Arg139Ter)	nonsense	ok	415	139	139	yes	1152	NMD_predicted		r.0?	p.0?
-AIRE	c.1393del	NM_000383.3	c.1393del	r.(1393del)	p.(Arg465GlyfsTer15)	frameshift		1436	479	479	yes	131	NMD_predicted		r.0?	p.0?
 AIRE	c.1265del	NM_000383.4	c.1265del	r.(1265del)	p.(Pro422LeufsTer58)	frameshift		1436	479	479	yes	131	NMD_predicted		r.0?	p.0?
-AIRE	c.171G>T	NM_000383.3	c.171G>T	r.(171g>u)	p.(Gln57His)								not_ptc		r.(171g>u)	p.(Gln57His)
 AIRE	c.44G>T	NM_000383.4	c.44G>T	r.(44g>u)	p.(Arg15Leu)								not_ptc		r.(44g>u)	p.(Arg15Leu)
 AIRE	c.269A>G	NM_000383.4	c.269A>G	r.(269a>g)	p.(Tyr90Cys)								not_ptc		r.(269a>g)	p.(Tyr90Cys)
 AIRE	c.1249del	NM_000383.4	c.1249del	r.(1249del)	p.(Leu417TyrfsTer63)	frameshift		1436	479	479	yes	131	NMD_predicted		r.0?	p.0?
 AIRE	c.83T>C	NM_000383.4	c.83T>C	r.(83u>c)	p.(Leu28Pro)								not_ptc		r.(83u>c)	p.(Leu28Pro)
-AIRE	c.1421_1422insAC	NM_000383.3	c.1421_1422insAC	r.(1421_1422insac)	p.(Cys475ProfsTer6)	frameshift		1436	480	480	yes	131	NMD_predicted		r.0?	p.0?
 AIRE	c.1294_1295insAC	NM_000383.4	c.1294_1295insAC	r.(1294_1295insac)	p.(Ala432AspfsTer49)	frameshift		1436	480	480	yes	131	NMD_predicted		r.0?	p.0?
-AIRE	c.1369_1370insA	NM_000383.3	c.1369_1370insA	r.(1369_1370insa)	p.(Cys457Ter)	nonsense		1369	457	457	yes	199	NMD_predicted		r.0?	p.0?
 AIRE	c.1242_1243insA	NM_000383.3	c.1242_1243insA	r.(1242_1243insa)	p.(His415ThrfsTer9)	frameshift		1266	423	423	yes	301	NMD_predicted		r.0?	p.0?
-AIRE	c.319_354del	NM_000383.3	c.319_354del	r.(319_354del)	p.(Ser107_Val118del)								not_ptc		r.(319_354del)	p.(Ser107_Val118del)
 AIRE	c.191_226del	NM_000383.4	c.191_226del	r.(191_226del)	p.(Ser64_Asp76delinsTyr)								not_ptc		r.(191_226del)	p.(Ser64_Asp76delinsTyr)
 AIRE	c.517C>T	NM_000383.4	c.517C>T	r.(517c>u)	p.(Gln173Ter)	nonsense	ok	517	173	173	yes	1050	NMD_predicted		r.0?	p.0?
-AIRE	c.335_336insCAGG	NM_000383.3	c.335_336insCAGG	r.(335_336inscagg)	p.(Lys114GlufsTer104)	frameshift		645	217	217	yes	922	NMD_predicted		r.0?	p.0?
 AIRE	c.205_208dup	NM_000383.3	c.205_208dup	r.(205_208delinscaggcagg)	p.(Asp70AlafsTer148)	frameshift		645	217	217	yes	922	NMD_predicted		r.0?	p.0?
 AIRE	c.278T>G	NM_000383.4	c.278T>G	r.(278u>g)	p.(Leu93Arg)								not_ptc		r.(278u>g)	p.(Leu93Arg)
-AIRE	c.1230dup	NM_000383.3	c.1230dup	r.(1230delinscc)	p.(Ser411LeufsTer13)	frameshift		1266	423	423	yes	301	NMD_predicted		r.0?	p.0?
 AIRE	c.1103dup	NM_000383.4	c.1103dup	r.(1103dup)	p.(Leu370AlafsTer2)	frameshift		1110	371	371	yes	457	NMD_predicted		r.0?	p.0?
 AIRE	c.1512del	NM_000383.4	c.1512del	r.(1512del)	p.(Ala505ProfsTer16)	frameshift		1559	520	520	yes	8	NMD_escape_50nt_rule		r.(1512del)	p.(Ala505ProfsTer16)
 AIRE	c.901G>A	NM_000383.4	c.901G>A	r.(901g>a)	p.(Val301Met)								not_ptc		r.(901g>a)	p.(Val301Met)
 AIRE	c.977C>T	NM_000383.4	c.977C>T	r.(977c>u)	p.(Pro326Leu)								not_ptc		r.(977c>u)	p.(Pro326Leu)
 AIRE	c.232T>A	NM_000383.3	c.232T>A	r.(232u>a)	p.(Trp78Arg)								not_ptc		r.(232u>a)	p.(Trp78Arg)
-AIRE	c.174C>T	NM_000383.3	c.174C>T	r.(174c>u)	p.(=)								not_ptc		r.(174c>u)	p.(=)
 AIRE	c.47C>T	NM_000383.3	c.47C>T	r.(47c>u)	p.(Thr16Met)								not_ptc		r.(47c>u)	p.(Thr16Met)
 AIRE	c.682G>T	NM_000383.3	c.682G>T	r.(682g>u)	p.(Gly228Trp)								not_ptc		r.(682g>u)	p.(Gly228Trp)
 AIRE	c.232T>C	NM_000383.3	c.232T>C	r.(232u>c)	p.(Trp78Arg)								not_ptc		r.(232u>c)	p.(Trp78Arg)
@@ -38,7 +28,6 @@ AIRE	c.1072C>T	NM_000383.3	c.1072C>T	r.(1072c>u)	p.(Gln358Ter)	nonsense	ok	1072	
 AIRE	c.755C>T	NM_000383.3	c.755C>T	r.(755c>u)	p.(Pro252Leu)								not_ptc		r.(755c>u)	p.(Pro252Leu)
 AIRE	c.931del	NM_000383.3	c.931del	r.(931del)	p.(Cys311ValfsTer67)	frameshift		1130	377	377	yes	437	NMD_predicted		r.0?	p.0?
 AIRE	c.1616C>T	NM_000383.3	c.1616C>T	r.(1616c>u)	p.(Pro539Leu)								not_ptc		r.(1616c>u)	p.(Pro539Leu)
-AIRE	c.1615C>T	NM_000383.4	c.1615C>T	r.(1615c>u)	p.(Pro539Ser)								not_ptc		r.(1615c>u)	p.(Pro539Ser)
 AIRE	c.1096-1G>C	NM_000383.3	c.1096-1G>C										not_ptc			
 AIRE	c.86T>C	NM_000383.3	c.86T>C	r.(86u>c)	p.(Leu29Pro)								not_ptc		r.(86u>c)	p.(Leu29Pro)
 AIRE	c.43C>T	NM_000383.3	c.43C>T	r.(43c>u)	p.(Arg15Cys)								not_ptc		r.(43c>u)	p.(Arg15Cys)
@@ -85,7 +74,6 @@ AK2	c.453del	NM_013411.5	c.453del	r.(453del)	p.(Tyr152ThrfsTer12)	frameshift		48
 AK2	c.498+1G>A	NM_013411.5	c.498+1G>A										not_ptc			
 AP3B1	c.1020+3_1083+2del	NM_001271769.2	c.1020+3_1083+2del			frameshift_candidate							not_assessable_noncoding_or_intronic			
 AP3B1	c.1592T>G	NM_001271769.2	c.1592T>G	r.(1739u>g)	p.(Leu580Arg)								not_ptc		r.(1739u>g)	p.(Leu580Arg)
-AP3B1	c.1020+1_1020+63del	NM_001271769.2	c.1020+1_1020+63del			frameshift_candidate							not_assessable_noncoding_or_intronic			
 AP3B1	c.1378C>T	NM_001271769.2	c.1378C>T	r.(1525c>u)	p.(Arg509Ter)	nonsense	ok	1378	460	509	NO	1607	NMD_predicted		r.0?	p.0?
 AP3B1	c.1828G>T	NM_001271769.2	c.1828G>T	r.(1975g>u)	p.(Glu659Ter)	nonsense	ok	1828	610	659	NO	1157	NMD_predicted		r.0?	p.0?
 AP3B1	c.1326+6T>C	NM_001271769.2	c.1326+6T>C										not_ptc			
@@ -169,25 +157,17 @@ BLM	c.3107G>T	NM_001287246.2	c.3107G>T	r.(3107g>u)	p.(Cys1036Phe)								not_ptc
 C1QA	g.22634470C>T												not_ptc			
 C1QA	c.622C>T	NM_001347466.2	c.622C>T	r.(622c>u)	p.(Gln208Ter)	nonsense	ok	622	208	208	yes	-458	NMD_escape_last_exon		r.(622c>u)	p.(Gln208Ter)
 C1QA	c.648G>A	NM_001347466.2	c.648G>A	r.(648g>a)	p.(Trp216Ter)	nonsense	ok	646	216	216	yes	-482	NMD_escape_last_exon		r.(648g>a)	p.(Trp216Ter)
-C1QA	g.22634496G>A												not_ptc			
 C1QA	c.157del	NM_001347466.2	c.157del	r.(157del)	p.(Glu53SerfsTer229)	frameshift		842					no_PTC_stop_at_or_beyond_normal		r.(157del)	p.(Glu53SerfsTer229)
 C1QA	c.190C>T	NM_001347466.2	c.190C>T	r.(190c>u)	p.(Gln64Ter)	nonsense	ok	190	64	64	yes	-26	NMD_escape_last_exon		r.(190c>u)	p.(Gln64Ter)
-C1QA	g.22632952del												not_ptc			
-C1QA	g.22634038C>T												not_ptc			
 C1QB	c.-23-2228C>T	NM_001371184.3	c.-23-2228C>T	r.(=)	p.(=)								not_ptc		r.(=)	p.(=)
 C1QB	c.-24+1480G>A	NM_001371184.3	c.-24+1480G>A	r.(=)	p.(=)								not_ptc		r.(=)	p.(=)
 C1QB	c.-23-2027G>A	NM_001371184.3	c.-23-2027G>A	r.(=)	p.(=)								not_ptc		r.(=)	p.(=)
 C1QC	c.100G>A	NM_001347619.2	c.100G>A	r.(100g>a)	p.(Gly34Arg)								not_ptc		r.(100g>a)	p.(Gly34Arg)
-C1QC	g.22640281G>A												not_ptc			
 C1QC	c.213del	NM_001347619.2	c.213del	r.(213del)	p.(Gln74ArgfsTer64)	frameshift		410	137	137	yes	-227	NMD_escape_last_exon		r.(213del)	p.(Gln74ArgfsTer64)
-C1QC	g.22643416del												not_ptc			
 C1QC	c.205C>T	NM_001347619.2	c.205C>T	r.(205c>u)	p.(Arg69Ter)	nonsense	ok	205	69	69	yes	-23	NMD_escape_last_exon		r.(205c>u)	p.(Arg69Ter)
-C1QC	g.22643408C>T												not_ptc			
 C1QC	c.226G>A	NM_001347619.2	c.226G>A	r.(226g>a)	p.(Gly76Arg)								not_ptc		r.(226g>a)	p.(Gly76Arg)
-C1QC	g.22643429G>A												not_ptc			
 C1S	c.1132_1135del	NM_201442.4	c.1132_1135del	r.(1132_1135del)	p.(Phe378ValfsTer32)	frameshift		1229	409	409	yes	42	NMD_escape_50nt_rule		r.(1132_1135del)	p.(Phe378ValfsTer32)
 C1S	c.1789G>T	NM_201442.4	c.1789G>T	r.(1789g>u)	p.(Glu597Ter)	nonsense	ok	1789	597	597	yes	-518	NMD_escape_last_exon		r.(1789g>u)	p.(Glu597Ter)
-C1S	c.1769C>T	NM_201442.4	c.1769C>T	r.(1769c>u)	p.(Ala590Val)								not_ptc		r.(1769c>u)	p.(Ala590Val)
 C1S	c.1567C>T	NM_201442.4	c.1567C>T	r.(1567c>u)	p.(Arg523Ter)	nonsense	ok	1567	523	523	yes	-296	NMD_escape_last_exon		r.(1567c>u)	p.(Arg523Ter)
 C1S	c.1889G>A	NM_201442.4	c.1889G>A	r.(1889g>a)	p.(Gly630Glu)								not_ptc		r.(1889g>a)	p.(Gly630Glu)
 C1S	c.612C>G	NM_201442.4	c.612C>G	r.(612c>g)	p.(Tyr204Ter)	nonsense	ok	610	204	204	yes	661	NMD_predicted		r.0?	p.0?
@@ -195,32 +175,23 @@ C2	c.-63-8962G>A	NM_001282457.2	c.-63-8962G>A	r.(=)	p.(=)								not_ptc		r.(=)	
 C2	c.-63-2054G>C	NM_001282457.2	c.-63-2054G>C	r.(=)	p.(=)								not_ptc		r.(=)	p.(=)
 C2	c.688G>A	NM_001282457.2	c.688G>A	r.(1426g>a)	p.(Glu476Lys)								not_ptc		r.(1426g>a)	p.(Glu476Lys)
 C2	c.139_166del	NM_001282457.2	c.139_166del	r.(877_904del)	p.(Val293ProfsTer8)	frameshift		188	54	300	NO	1154	NMD_predicted		r.0?	p.0?
-C2	c.392-434G>A	NM_001282457.2	c.392-434G>A	r.(=)	p.(=)								not_ptc		r.(=)	p.(=)
-C2	c.-63-3787_-63-3760del	NM_001282457.2	c.-63-3787_-63-3760del	r.(=)	p.(=)	frameshift_candidate							not_assessable_noncoding_or_intronic		r.(=)	p.(=)
 C3	c.3303C>G	NM_000064.3	c.3303C>G	r.(3303c>g)	p.(Cys1101Trp)								not_ptc		r.(3303c>g)	p.(Cys1101Trp)
 C3	c.2354+2_2416del	NM_000064.3	c.2354+2_2416del			frameshift_candidate							not_assessable_noncoding_or_intronic			
-C3	c.2296_2354+2del	NM_000064.4	c.2296_2354+2del			frameshift_candidate							not_assessable_noncoding_or_intronic			
 C3	c.2857_3010del	NM_000064.3	c.2857_3010del	r.(2857_3010del)	p.(Gly953LeufsTer2)	frameshift		3014	954	954	yes	1837	NMD_predicted		r.0?	p.0?
 C3	c.1656G>A	NM_000064.3	c.1656G>A	r.(1656g>a)	p.(Trp552Ter)	nonsense	ok	1654	552	552	yes	3197	NMD_predicted		r.0?	p.0?
 C3	c.1645G>A	NM_000064.3	c.1645G>A	r.(1645g>a)	p.(Asp549Asn)								not_ptc		r.(1645g>a)	p.(Asp549Asn)
 C3	c.2542C>T	NM_000064.3	c.2542C>T	r.(2542c>u)	p.(Arg848Ter)	nonsense	ok	2542	848	848	yes	2309	NMD_predicted		r.0?	p.0?
 C3	c.3116dup	NM_000064.3	c.3116dup	r.(3116dup)	p.(Glu1040ArgfsTer66)	frameshift		3312	1105	1105	yes	1539	NMD_predicted		r.0?	p.0?
 C3	c.3243C>G	NM_000064.3	c.3243C>G	r.(3243c>g)	p.(Tyr1081Ter)	nonsense	ok	3241	1081	1081	yes	1610	NMD_predicted		r.0?	p.0?
-C3	c.3117_3118insT	NM_000064.4	c.3117_3118insT	r.(3117_3118insu)	p.(Glu1040Ter)	nonsense		3117	1040	1040	yes	1734	NMD_predicted		r.0?	p.0?
 C3	c.3176dup	NM_000064.3	c.3176dup	r.(3176dup)	p.(Arg1060GlnfsTer46)	frameshift		3312	1105	1105	yes	1539	NMD_predicted		r.0?	p.0?
-C3	c.3177_3178insT	NM_000064.4	c.3177_3178insT	r.(3177_3178insu)	p.(Arg1060Ter)	nonsense		3177	1060	1060	yes	1674	NMD_predicted		r.0?	p.0?
 C3	c.1775G>A	NM_000064.3	c.1775G>A	r.(1775g>a)	p.(Arg592Gln)								not_ptc		r.(1775g>a)	p.(Arg592Gln)
 C3	c.1648T>C	NM_000064.3	c.1648T>C	r.(1648u>c)	p.(Ser550Pro)								not_ptc		r.(1648u>c)	p.(Ser550Pro)
 C5	c.84-6457C>T	NM_001317163.2	c.84-6457C>T	r.(=)	p.(=)								not_ptc		r.(=)	p.(=)
 C5	c.4239-1659C>T	NM_001317163.2	c.4239-1659C>T	r.(=)	p.(=)								not_ptc		r.(=)	p.(=)
 C5	c.1133A>G	NM_001317163.2	c.1133A>G	r.(1115a>g)	p.(Lys372Arg)								not_ptc		r.(1115a>g)	p.(Lys372Arg)
-C5	c.892-473A>G	NM_001317163.2	c.892-473A>G	r.(=)	p.(=)								not_ptc		r.(=)	p.(=)
 C5	c.1901_1902delinsCTCT	NM_001317163.2	c.1901_1902delinsCTCT	r.(1883_1884delinscucu)	p.(Glu628AlafsTer22)	frameshift		1961	655	649	NO	2959	NMD_predicted		r.0?	p.0?
 C5	c.2554T>C	NM_001317163.2	c.2554T>C	r.(2536u>c)	p.(Tyr846His)								not_ptc		r.(2536u>c)	p.(Tyr846His)
-C5	c.1490delinsTCT	NM_001317163.2	c.1490delinsTCT	r.(1490delinsucu)	p.(Pro497LeufsTer7)	frameshift		1505	503	503	yes	3415	NMD_predicted		r.0?	p.0?
-C5	c.2276-113T>C	NM_001317163.2	c.2276-113T>C	r.(=)	p.(=)								not_ptc		r.(=)	p.(=)
 C5	c.910C>T	NM_001317163.2	c.910C>T	r.(892c>u)	p.(Gln298Ter)	nonsense	ok	910	304	298	NO	4010	NMD_predicted		r.0?	p.0?
-C5	c.777-954C>T	NM_001317163.2	c.777-954C>T	r.(=)	p.(=)								not_ptc		r.(=)	p.(=)
 C6	c.170+6564del		c.170+6564del	r.(=)	p.(=)	frameshift_candidate							not_assessable_noncoding_or_intronic		r.(=)	p.(=)
 C6	c.7+19944del		c.7+19944del	r.(=)	p.(=)	frameshift_candidate							not_assessable_noncoding_or_intronic		r.(=)	p.(=)
 C6	c.8-11016del		c.8-11016del	r.(=)	p.(=)	frameshift_candidate							not_assessable_noncoding_or_intronic		r.(=)	p.(=)
@@ -245,152 +216,103 @@ C7	c.2107C>T	NM_000587.4	c.2107C>T	r.(2107c>u)	p.(Gln703Ter)	nonsense	ok	2107	70
 C7	c.189T>G	NM_000587.4	c.189T>G	r.(189u>g)	p.(Cys63Trp)								not_ptc		r.(189u>g)	p.(Cys63Trp)
 C7	c.1743del	NM_000587.4	c.1743del	r.(1743del)	p.(Phe581LeufsTer15)	frameshift		1784	595	595	yes	567	NMD_predicted		r.0?	p.0?
 C8B	c.1096C>T	NM_001278544.2	c.1096C>T	r.(1282c>u)	p.(Arg428Ter)	nonsense	ok	1096	366	428	NO	340	NMD_predicted		r.0?	p.0?
-C8B	c.1235-243C>T	NM_000066.4	c.1235-243C>T	r.(=)	p.(=)								not_ptc		r.(=)	p.(=)
 C8B	c.634C>T	NM_001278544.2	c.634C>T	r.(820c>u)	p.(Arg274Ter)	nonsense	ok	634	212	274	NO	802	NMD_predicted		r.0?	p.0?
-C8B	c.667-137C>T	NM_000066.4	c.667-137C>T	r.(=)	p.(=)								not_ptc		r.(=)	p.(=)
 C8B	c.175C>T	NM_001278544.2	c.175C>T	r.(361c>u)	p.(Arg121Ter)	nonsense	ok	175	59	121	NO	1261	NMD_predicted		r.0?	p.0?
-C8B	c.250-179C>T	NM_000066.4	c.250-179C>T	r.(=)	p.(=)								not_ptc		r.(=)	p.(=)
 C8B	c.85C>T	NM_001278544.2	c.85C>T	r.(271c>u)	p.(Gln91Ter)	nonsense	ok	85	29	91	NO	1351	NMD_predicted	start_proximal	r.0?	p.0?
-C8B	c.250-269C>T	NM_000066.4	c.250-269C>T	r.(=)	p.(=)								not_ptc		r.(=)	p.(=)
 C8B	c.150del	NM_001278544.2	c.150del	r.(336del)	p.(Asn113ThrfsTer22)	frameshift		215	72	134	NO	1221	NMD_predicted		r.0?	p.0?
 C8B	c.419del	NM_001278544.2	c.419del	r.(605del)	p.(Pro202ArgfsTer5)	frameshift		431	144	206	NO	1005	NMD_predicted		r.0?	p.0?
-C8B	c.250-203del	NM_000066.4	c.250-203del	r.(=)	p.(=)	frameshift_candidate							not_assessable_noncoding_or_intronic		r.(=)	p.(=)
-C8B	c.534-219del	NM_000066.4	c.534-219del	r.(=)	p.(=)	frameshift_candidate							not_assessable_noncoding_or_intronic		r.(=)	p.(=)
 C8B	c.855_861dup	NM_001278544.2	c.855_861dup	r.(1041_1047delinsggcugugggcugug)	p.(Leu350GlyfsTer8)	frameshift		876	295	357	NO	560	NMD_predicted		r.0?	p.0?
-C8B	c.865-114_865-108dup	NM_000066.4	c.865-114_865-108dup	r.(=)	p.(=)	frameshift_candidate							not_assessable_noncoding_or_intronic		r.(=)	p.(=)
 C9	c.166C>A	NM_001737.4	c.166C>A	r.(166c>a)	p.(Pro56Thr)								not_ptc		r.(166c>a)	p.(Pro56Thr)
 C9	c.464C>T	NM_001737.4	c.464C>T	r.(464c>u)	p.(Thr155Ile)								not_ptc		r.(464c>u)	p.(Thr155Ile)
-C9	c.78-3168C>A	NM_001737.5	c.78-3168C>A	r.(=)	p.(=)								not_ptc		r.(=)	p.(=)
-C9	c.78-2218C>T	NM_001737.5	c.78-2218C>T	r.(=)	p.(=)								not_ptc		r.(=)	p.(=)
 C9	c.78-2332C>T	NM_001737.5	c.78-2332C>T	r.(=)	p.(=)								not_ptc		r.(=)	p.(=)
 C9	c.1284C>G	NM_001737.4	c.1284C>G	r.(1284c>g)	p.(=)								not_ptc		r.(1284c>g)	p.(=)
 C9	c.78-2323T>G	NM_001737.5	c.78-2323T>G	r.(=)	p.(=)								not_ptc		r.(=)	p.(=)
-C9	c.1111+1095C>G	NM_001737.5	c.1111+1095C>G	r.(=)	p.(=)								not_ptc		r.(=)	p.(=)
 CARD9	c.883C>T	NM_052813.4	c.883C>T	r.(883c>u)	p.(Gln295Ter)	nonsense	ok	883	295	295	yes	629	NMD_predicted		r.0?	p.0?
 CASP10	c.721+318C>T	NM_032974.5	c.721+318C>T	r.(=)	p.(=)								not_ptc		r.(=)	p.(=)
 CASP10	c.1246G>A	NM_032974.5	c.1246G>A	r.(1246g>a)	p.(Ala416Thr)								not_ptc		r.(1246g>a)	p.(Ala416Thr)
-CASP10	c.722-537G>A	NM_032974.5	c.722-537G>A	r.(=)	p.(=)								not_ptc		r.(=)	p.(=)
 CASP8	c.-27+14137C>T	NM_001228.5	c.-27+14137C>T	r.(=)	p.(=)								not_ptc		r.(=)	p.(=)
 CD19	c.971dup	NM_001178098.2	c.971dup	r.(971delinsaa)	p.(Arg325AlafsTer4)	frameshift		981	328	328	yes	709	NMD_predicted		r.0?	p.0?
-CD19	c.88+101dup	NM_001178098.2	c.88+101dup	r.(=)	p.(=)	frameshift_candidate							not_assessable_noncoding_or_intronic		r.(=)	p.(=)
 CD19	c.1386_1387del	NM_001178098.2	c.1386_1387del	r.(1386_1387del)	p.(Asn463ArgfsTer3)	frameshift		1395	465	465	yes	295	NMD_predicted		r.0?	p.0?
-CD19	c.835+135_835+136del	NM_001178098.2	c.835+135_835+136del	r.(=)	p.(=)	frameshift_candidate							not_assessable_noncoding_or_intronic		r.(=)	p.(=)
 CD19	c.947-1G>T	NM_001178098.2	c.947-1G>T										not_ptc			
 CD247	c.208C>T	NM_000734.4	c.208C>T	r.(208c>u)	p.(Gln70Ter)	nonsense	ok	208	70	70	yes	219	NMD_predicted		r.0?	p.0?
-CD247	c.59-2607C>T	NM_000734.4	c.59-2607C>T	r.(=)	p.(=)								not_ptc		r.(=)	p.(=)
 CD247	c.411dup	NM_000734.4	c.411dup	r.(414delinscc)	p.(Asp139ArgfsTer135)	frameshift		813					no_PTC_stop_at_or_beyond_normal		r.(414delinscc)	p.(Asp139ArgfsTer135)
-CD247	c.300+1515_300+1516insC	NM_000734.4	c.300+1515_300+1516insC	r.(=)	p.(=)	frameshift_candidate							not_assessable_noncoding_or_intronic		r.(=)	p.(=)
 CD3D	c.202C>T	NM_001040651.2	c.202C>T	r.(202c>u)	p.(Arg68Ter)	nonsense	ok	202	68	68	yes	117	NMD_predicted		r.0?	p.0?
-CD3D	c.55+552G>A	NM_000073.3	c.55+552G>A	r.(=)	p.(=)								not_ptc		r.(=)	p.(=)
 CD3D	c.275-408C>A	NM_001040651.2	c.275-408C>A	r.(279c>a)	p.(Cys93Ter)	nonsense							not_assessable_noncoding_or_intronic		r.(279c>a)	p.(Cys93Ter)
-CD3D	c.55+7G>T	NM_000073.3	c.55+7G>T										not_ptc			
 CD3D	c.275-414A>G	NM_001040651.2	c.275-414A>G										not_ptc			
 CD3E	c.128_129del	NM_000733.3	c.128_129del	r.(128_129del)	p.(Thr43AsnfsTer13)	frameshift		165	55	55	yes	403	NMD_predicted		r.0?	p.0?
-CD3E	c.85+82_85+83del	NM_000733.4	c.85+82_85+83del	r.(=)	p.(=)	frameshift_candidate							not_assessable_noncoding_or_intronic		r.(=)	p.(=)
 CD3G	c.205A>T	NM_001440319.1	c.205A>T	r.(205a>u)	p.(Lys69Ter)	nonsense	ok	205	69	69	yes	363	NMD_predicted		r.0?	p.0?
-CD3G	c.55+1351A>T	NM_000073.3	c.55+1351A>T	r.(=)	p.(=)								not_ptc		r.(=)	p.(=)
 CD40L	c.464T>C	NM_000074.2	c.464T>C	r.(464u>c)	p.(Leu155Pro)								not_ptc		r.(464u>c)	p.(Leu155Pro)
-CD40L	c.266_267insT	NM_000074.2	c.266_267insT	r.(266_267insu)	p.(Gln90ProfsTer3)	frameshift		273	92	92	yes	137	NMD_predicted		r.0?	p.0?
 CD40L	c.210_211insT	NM_000074.3	c.210_211insT	r.(210_211insu)	p.(Arg71Ter)	nonsense		210	71	71	yes	200	NMD_predicted		r.0?	p.0?
 CD40L	c.158_161del	NM_000074.2	c.158_161del			frameshift_candidate		197	65			213	NMD_predicted		r.0?	p.0?
 CD40L	c.419G>A	NM_000074.3	c.419G>A	r.(419g>a)	p.(Trp140Ter)	nonsense	ok	418	140	140	yes	-8	NMD_escape_last_exon		r.(419g>a)	p.(Trp140Ter)
 CD40L	c.346G>C	NM_000074.3	c.346G>C	r.(346g>c)	p.(Gly116Arg)								not_ptc		r.(346g>c)	p.(Gly116Arg)
-CD40L	c.299dup	NM_000074.2	c.299dup	r.(299delinsuu)	p.(Leu100PhefsTer13)	frameshift		333	112	112	yes	77	NMD_predicted		r.0?	p.0?
 CD40L	c.242dup	NM_000074.2	c.242dup	r.(242delinsuu)	p.(Leu81PhefsTer5)	frameshift		252	85	85	yes	158	NMD_predicted		r.0?	p.0?
-CD40L	c.350del	NM_000074.2	c.350del	r.(350del)	p.(Asp117ValfsTer11)	frameshift		380	127	127	yes	30	NMD_escape_50nt_rule		r.(350del)	p.(Asp117ValfsTer11)
 CD40L	c.295del	NM_000074.3	c.295del	r.(295del)	p.(Met99CysfsTer2)	frameshift		299	100	100	yes	111	NMD_predicted		r.0?	p.0?
 CD40L	c.320_326del	NM_000074.3	c.320_326del	r.(320_326del)	p.(Lys107ThrfsTer19)	frameshift		380	125	125	yes	30	NMD_escape_50nt_rule		r.(320_326del)	p.(Lys107ThrfsTer19)
-CD40L	c.*40G>A	NM_000074.2	c.*40G>A	r.(*40g>a)	p.(=)								not_ptc		r.(*40g>a)	p.(=)
 CD40L	c.770G>A	NM_000074.3	c.770G>A	r.(770g>a)	p.(Gly257Asp)								not_ptc		r.(770g>a)	p.(Gly257Asp)
 CD40L	c.677G>C	NM_000074.3	c.677G>C	r.(677g>c)	p.(Gly226Ala)								not_ptc		r.(677g>c)	p.(Gly226Ala)
 CD40L	c.518C>A	NM_000074.3	c.518C>A	r.(518c>a)	p.(Ala173Asp)								not_ptc		r.(518c>a)	p.(Ala173Asp)
-CD40L	c.432dup	NM_000074.2	c.432dup	r.(432delinsaa)	p.(Tyr145IlefsTer20)	frameshift		489	164	164	yes	-80	NMD_escape_last_exon		r.(432delinsaa)	p.(Tyr145IlefsTer20)
 CD40L	c.376_377insA	NM_000074.3	c.376_377insA	r.(376_377insa)	p.(Val126AspfsTer4)	frameshift		384	129	129	yes	26	NMD_escape_50nt_rule		r.(376_377insa)	p.(Val126AspfsTer4)
 CD40L	c.761C>T	NM_000074.2	c.761C>T	r.(761c>u)	p.(Thr254Met)								not_ptc		r.(761c>u)	p.(Thr254Met)
-CD40L	c.707_708insT	NM_000074.2	c.707_708insT	r.(707_708insu)	p.(Val237GlyfsTer7)	frameshift		726	243	243	yes	-317	NMD_escape_last_exon		r.(707_708insu)	p.(Val237GlyfsTer7)
 CD40L	c.652dup	NM_000074.3	c.652dup	r.(652delinsuu)	p.(Cys218LeufsTer13)	frameshift		687	230	230	yes	-278	NMD_escape_last_exon		r.(652delinsuu)	p.(Cys218LeufsTer13)
 CD40L	c.551C>A	NM_000074.3	c.551C>A	r.(551c>a)	p.(Ser184Ter)	nonsense	ok	550	184	184	yes	-140	NMD_escape_last_exon		r.(551c>a)	p.(Ser184Ter)
 CD40L	c.495del	NM_000074.3	c.495del	r.(495del)	p.(Arg165SerfsTer26)	frameshift		569	190	190	yes	-158	NMD_escape_last_exon		r.(495del)	p.(Arg165SerfsTer26)
-CD40L	c.765dup	NM_000074.2	c.765dup	r.(765delinscc)	p.(Phe256LeufsTer30)	frameshift		852					no_PTC_stop_at_or_beyond_normal		r.(765delinscc)	p.(Phe256LeufsTer30)
 CD40L	c.709_710insC	NM_000074.3	c.709_710insC	r.(709_710insc)	p.(Val237AlafsTer7)	frameshift		726	243	243	yes	-317	NMD_escape_last_exon		r.(709_710insc)	p.(Val237AlafsTer7)
 CD40L	c.112G>C	NM_000074.3	c.112G>C	r.(112g>c)	p.(Gly38Arg)								not_ptc		r.(112g>c)	p.(Gly38Arg)
 CD40L	c.444_448del	NM_000074.3	c.444_448del	r.(444_448del)	p.(Met148IlefsTer15)	frameshift		489	162	162	yes	-74	NMD_escape_last_exon		r.(444_448del)	p.(Met148IlefsTer15)
-CD40L	c.*39G>A	NM_000074.2	c.*39G>A	r.(*39g>a)	p.(=)								not_ptc		r.(*39g>a)	p.(=)
 CD40L	c.769G>A	NM_000074.3	c.769G>A	r.(769g>a)	p.(Gly257Ser)								not_ptc		r.(769g>a)	p.(Gly257Ser)
 CD40L	c.418T>C	NM_000074.3	c.418T>C	r.(418u>c)	p.(Trp140Arg)								not_ptc		r.(418u>c)	p.(Trp140Arg)
-CD40L	c.487G>A	NM_000074.2	c.487G>A	r.(487g>a)	p.(Val163Ile)								not_ptc		r.(487g>a)	p.(Val163Ile)
 CD40L	c.431G>A	NM_000074.2	c.431G>A	r.(431g>a)	p.(Gly144Glu)								not_ptc		r.(431g>a)	p.(Gly144Glu)
 CD40L	c.658C>T	NM_000074.2	c.658C>T	r.(658c>u)	p.(Gln220Ter)	nonsense	ok	658	220	220	yes	-248	NMD_escape_last_exon		r.(658c>u)	p.(Gln220Ter)
-CD40L	c.583C>T	NM_000074.2	c.583C>T	r.(583c>u)	p.(=)								not_ptc		r.(583c>u)	p.(=)
 CD40L	c.527C>T	NM_000074.3	c.527C>T	r.(527c>u)	p.(Thr176Ile)								not_ptc		r.(527c>u)	p.(Thr176Ile)
-CD40L	c.739_740insATT	NM_000074.2	c.739_740insATT	r.(739_740insauu)	p.(Val247delinsAspLeu)								not_ptc		r.(739_740insauu)	p.(Val247delinsAspLeu)
 CD40L	c.684_686dup	NM_000074.3	c.684_686dup	r.(684_686delinsauuauu)	p.(Val228_Phe229insLeu)								not_ptc		r.(684_686delinsauuauu)	p.(Val228_Phe229insLeu)
 CD40L	c.116C>A	NM_000074.3	c.116C>A	r.(116c>a)	p.(Ser39Ter)	nonsense	ok	115	39	39	yes	295	NMD_predicted	start_proximal	r.0?	p.0?
 CD40L	c.521A>G	NM_000074.2	c.521A>G	r.(521a>g)	p.(Gln174Arg)								not_ptc		r.(521a>g)	p.(Gln174Arg)
-CD40L	c.640T>C	NM_000074.2	c.640T>C	r.(640u>c)	p.(Ser214Pro)								not_ptc		r.(640u>c)	p.(Ser214Pro)
 CD40L	c.584T>C	NM_000074.3	c.584T>C	r.(584u>c)	p.(Leu195Pro)								not_ptc		r.(584u>c)	p.(Leu195Pro)
 CD40L	c.604G>T	NM_000074.3	c.604G>T	r.(604g>u)	p.(Glu202Ter)	nonsense	ok	604	202	202	yes	-194	NMD_escape_last_exon		r.(604g>u)	p.(Glu202Ter)
 CD40L	c.226G>T	NM_000074.3	c.226G>T	r.(226g>u)	p.(Glu76Ter)	nonsense	ok	226	76	76	yes	184	NMD_predicted		r.0?	p.0?
 CD40L	c.623C>A	NM_000074.3	c.623C>A	r.(623c>a)	p.(Ala208Asp)								not_ptc		r.(623c>a)	p.(Ala208Asp)
 CD40L	c.368C>A	NM_000074.2	c.368C>A	r.(368c>a)	p.(Ala123Glu)								not_ptc		r.(368c>a)	p.(Ala123Glu)
 CD40L	c.409_409+9del	NM_000074.3	c.409_409+9del			frameshift_candidate							not_assessable_noncoding_or_intronic			
-CD40L	c.212G>A	NM_000074.2	c.212G>A	r.(212g>a)	p.(Arg71Lys)								not_ptc		r.(212g>a)	p.(Arg71Lys)
 CD40L	c.156G>A	NM_000074.3	c.156G>A	r.(156g>a)	p.(=)								not_ptc		r.(156g>a)	p.(=)
-CD40L	c.*46del	NM_000074.2	c.*46del	r.(*46del)	p.(=)	frameshift_candidate							not_assessable_noncoding_or_intronic		r.(*46del)	p.(=)
 CD40L	c.776del	NM_000074.3	c.776del	r.(776del)	p.(Leu259ProfsTer54)	frameshift		935					no_PTC_stop_at_or_beyond_normal		r.(776del)	p.(Leu259ProfsTer54)
 CD40L	c.474del	NM_000074.3	c.474del	r.(474del)	p.(Lys159AsnfsTer3)	frameshift		482	161	161	yes	-71	NMD_escape_last_exon		r.(474del)	p.(Lys159AsnfsTer3)
-CD40L	c.717C>T	NM_000074.2	c.717C>T	r.(717c>u)	p.(=)								not_ptc		r.(717c>u)	p.(=)
 CD40L	c.661C>T	NM_000074.3	c.661C>T	r.(661c>u)	p.(Gln221Ter)	nonsense	ok	661	221	221	yes	-251	NMD_escape_last_exon		r.(661c>u)	p.(Gln221Ter)
-CD40L	c.660dup	NM_000074.2	c.660dup	r.(660delinsaa)	p.(Gln221ThrfsTer10)	frameshift		687	230	230	yes	-278	NMD_escape_last_exon		r.(660delinsaa)	p.(Gln221ThrfsTer10)
 CD40L	c.605dup	NM_000074.3	c.605dup	r.(605delinsaa)	p.(Arg203GlufsTer28)	frameshift		687	230	230	yes	-278	NMD_escape_last_exon		r.(605delinsaa)	p.(Arg203GlufsTer28)
-CD40L	c.602_603insATA	NM_000074.2	c.602_603insATA	r.(602_603insaua)	p.(Phe201delinsLeuTyr)								not_ptc		r.(602_603insaua)	p.(Phe201delinsLeuTyr)
 CD40L	c.546_547insATA	NM_000074.3	c.546_547insATA	r.(546_547insaua)	p.(Glu182_Ala183insIle)								not_ptc		r.(546_547insaua)	p.(Glu182_Ala183insIle)
 CD40L	c.726_727del	NM_000074.3	c.726_727del	r.(726_727del)	p.(Asp243SerfsTer42)	frameshift		852					no_PTC_stop_at_or_beyond_normal		r.(726_727del)	p.(Asp243SerfsTer42)
 CD40L	c.142A>T	NM_000074.3	c.142A>T	r.(142a>u)	p.(Arg48Ter)	nonsense	ok	142	48	48	yes	268	NMD_predicted	start_proximal	r.0?	p.0?
-CD40L	c.433T>C	NM_000074.2	c.433T>C	r.(433u>c)	p.(Tyr145His)								not_ptc		r.(433u>c)	p.(Tyr145His)
 CD40L	c.377T>C	NM_000074.3	c.377T>C	r.(377u>c)	p.(Val126Ala)								not_ptc		r.(377u>c)	p.(Val126Ala)
-CD40L	c.437dup	NM_000074.2	c.437dup	r.(437delinsaa)	p.(Tyr146Ter)	nonsense		436	146	146	yes	-26	NMD_escape_last_exon		r.(437delinsaa)	p.(Tyr146Ter)
 CD40L	c.382dup	NM_000074.3	c.382dup	r.(382delinsaa)	p.(Ser128LysfsTer2)	frameshift		384	129	129	yes	26	NMD_escape_50nt_rule		r.(382delinsaa)	p.(Ser128LysfsTer2)
-CD40L	c.466del	NM_000074.2	c.466del	r.(466del)	p.(Glu156LysfsTer6)	frameshift		482	161	161	yes	-71	NMD_escape_last_exon		r.(466del)	p.(Glu156LysfsTer6)
 CD40L	c.409+1del	NM_000074.3	c.409+1del			frameshift_candidate							not_assessable_noncoding_or_intronic			
-CD40L	c.634_635insTC	NM_000074.2	c.634_635insTC	r.(634_635insuc)	p.(His212LeufsTer31)	frameshift		722	242	242	yes	-314	NMD_escape_last_exon		r.(634_635insuc)	p.(His212LeufsTer31)
 CD40L	c.577_578insCT	NM_000074.3	c.577_578insCT	r.(577_578inscu)	p.(Leu193ProfsTer4)	frameshift		584	196	196	yes	-176	NMD_escape_last_exon		r.(577_578inscu)	p.(Leu193ProfsTer4)
 CD40L	c.367del	NM_000074.3	c.367del	r.(367del)	p.(Ala123ArgfsTer5)	frameshift		380	127	127	yes	30	NMD_escape_50nt_rule		r.(367del)	p.(Ala123ArgfsTer5)
 CD40L	c.418T>G	NM_000074.2	c.418T>G	r.(418u>g)	p.(Trp140Gly)								not_ptc		r.(418u>g)	p.(Trp140Gly)
 CD40L	c.374A>G	NM_000074.3	c.374A>G	r.(374a>g)	p.(His125Arg)								not_ptc		r.(374a>g)	p.(His125Arg)
 CD40L	c.511_513del	NM_000074.3	c.511_513del	r.(511_513del)	p.(Ile171del)								not_ptc		r.(511_513del)	p.(Ile171del)
-CD40L	c.496C>A	NM_000074.2	c.496C>A	r.(496c>a)	p.(Gln166Lys)								not_ptc		r.(496c>a)	p.(Gln166Lys)
 CD40L	c.440C>A	NM_000074.3	c.440C>A	r.(440c>a)	p.(Thr147Asn)								not_ptc		r.(440c>a)	p.(Thr147Asn)
 CD40L	c.680G>T	NM_000074.3	c.680G>T	r.(680g>u)	p.(Gly227Val)								not_ptc		r.(680g>u)	p.(Gly227Val)
 CD40L	c.703G>C	NM_000074.3	c.703G>C	r.(703g>c)	p.(Ala235Pro)								not_ptc		r.(703g>c)	p.(Ala235Pro)
 CD40L	c.31C>T	NM_000074.2	c.31C>T	r.(31c>u)	p.(Arg11Ter)	nonsense	ok	31	11	11	yes	379	NMD_predicted	start_proximal	r.0?	p.0?
 CD40L	c.166G>T	NM_000074.3	c.166G>T	r.(166g>u)	p.(Glu56Ter)	nonsense	ok	166	56	56	yes	244	NMD_predicted		r.0?	p.0?
-CD40L	c.612C>T	NM_000074.2	c.612C>T	r.(612c>u)	p.(=)								not_ptc		r.(612c>u)	p.(=)
 CD40L	c.556C>T	NM_000074.2	c.556C>T	r.(556c>u)	p.(Gln186Ter)	nonsense	ok	556	186	186	yes	-146	NMD_escape_last_exon		r.(556c>u)	p.(Gln186Ter)
 CD40L	c.692T>C	NM_000074.3	c.692T>C	r.(692u>c)	p.(Leu231Ser)								not_ptc		r.(692u>c)	p.(Leu231Ser)
 CD40L	c.509A>G	NM_000074.2	c.509A>G	r.(509a>g)	p.(Tyr170Cys)								not_ptc		r.(509a>g)	p.(Tyr170Cys)
-CD40L	c.*43T>C	NM_000074.2	c.*43T>C	r.(*43u>c)	p.(=)								not_ptc		r.(*43u>c)	p.(=)
 CD40L	c.773T>C	NM_000074.3	c.773T>C	r.(773u>c)	p.(Leu258Ser)								not_ptc		r.(773u>c)	p.(Leu258Ser)
 CD40L	c.654C>A	NM_000074.2	c.654C>A	r.(654c>a)	p.(Cys218Ter)	nonsense	ok	652	218	218	yes	-242	NMD_escape_last_exon		r.(654c>a)	p.(Cys218Ter)
 CD40L	c.107T>G	NM_000074.3	c.107T>G	r.(107u>g)	p.(Met36Arg)								not_ptc		r.(107u>g)	p.(Met36Arg)
 CD40L	c.420G>T	NM_000074.2	c.420G>T	r.(420g>u)	p.(Trp140Cys)								not_ptc		r.(420g>u)	p.(Trp140Cys)
-CD40L	c.766T>A	NM_000074.2	c.766T>A	r.(766u>a)	p.(Phe256Ile)								not_ptc		r.(766u>a)	p.(Phe256Ile)
 CD40L	c.710T>A	NM_000074.3	c.710T>A	r.(710u>a)	p.(Val237Glu)								not_ptc		r.(710u>a)	p.(Val237Glu)
 CD40L	c.598A>T	NM_000074.2	c.598A>T	r.(598a>u)	p.(Arg200Ter)	nonsense	ok	598	200	200	yes	-188	NMD_escape_last_exon		r.(598a>u)	p.(Arg200Ter)
-CD40L	c.750C>T	NM_000074.2	c.750C>T	r.(750c>u)	p.(=)								not_ptc		r.(750c>u)	p.(=)
 CD40L	c.694C>T	NM_000074.2	c.694C>T	r.(694c>u)	p.(Gln232Ter)	nonsense	ok	694	232	232	yes	-284	NMD_escape_last_exon		r.(694c>u)	p.(Gln232Ter)
 CD40L	c.216C>A	NM_000074.2	c.216C>A	r.(216c>a)	p.(Cys72Ter)	nonsense	ok	214	72	72	yes	196	NMD_predicted		r.0?	p.0?
 CD40L	c.707C>A	NM_000074.3	c.707C>A	r.(707c>a)	p.(Ser236Ter)	nonsense	ok	706	236	236	yes	-296	NMD_escape_last_exon		r.(707c>a)	p.(Ser236Ter)
 CD40L	c.636_637del	NM_000074.3	c.636_637del	r.(636_637del)	p.(His212GlnfsTer18)	frameshift		687	229	229	yes	-275	NMD_escape_last_exon		r.(636_637del)	p.(His212GlnfsTer18)
-CD40L	c.437A[3]	NM_000074.2	c.437A[3]	r.(437delinsaaa)	p.(Tyr146Ter)	nonsense	ok	436	146	146	yes	-26	NMD_escape_last_exon		r.(437delinsaaa)	p.(Tyr146Ter)
 CD40L	c.381_382A[4]	NM_000074.3	c.381_382A[4]	r.(381_382delinsaaaa)	p.(Ser128LysfsTer22)	frameshift	ok	443	149	149	yes	-33	NMD_escape_last_exon		r.(381_382delinsaaaa)	p.(Ser128LysfsTer22)
 CD40L	c.680_682del	NM_000074.3	c.680_682del	r.(680_682del)	p.(Gly227del)								not_ptc		r.(680_682del)	p.(Gly227del)
-CD40L	c.437_438insG	NM_000074.2	c.437_438insG	r.(437_438insg)	p.(Tyr146Ter)	nonsense		436	146	146	yes	-26	NMD_escape_last_exon		r.(437_438insg)	p.(Tyr146Ter)
 CD40L	c.381_382insG	NM_000074.3	c.381_382insG	r.(381_382insg)	p.(Ser128GlufsTer2)	frameshift		384	129	129	yes	26	NMD_escape_50nt_rule		r.(381_382insg)	p.(Ser128GlufsTer2)
 CD40L	c.156+1G>T	NM_000074.2	c.156+1G>T										not_ptc			
-CD40L	c.485_486insA	NM_000074.2	c.485_486insA	r.(485_486insa)	p.(Val163ArgfsTer2)	frameshift		489	164	164	yes	-80	NMD_escape_last_exon		r.(485_486insa)	p.(Val163ArgfsTer2)
 CD40L	c.429dup	NM_000074.3	c.429dup	r.(429delinsaa)	p.(Gly144ArgfsTer21)	frameshift		489	164	164	yes	-80	NMD_escape_last_exon		r.(429delinsaa)	p.(Gly144ArgfsTer21)
-CD40L	c.635_636insGCCCA	NM_000074.2	c.635_636insGCCCA	r.(635_636insgccca)	p.(His212GlnfsTer32)	frameshift		722	243	243	yes	-317	NMD_escape_last_exon		r.(635_636insgccca)	p.(His212GlnfsTer32)
 CD40L	c.573_577dup	NM_000074.3	c.573_577dup	r.(573_577delinscagcccagcc)	p.(Leu193ProfsTer5)	frameshift		584	197	197	yes	-179	NMD_escape_last_exon		r.(573_577delinscagcccagcc)	p.(Leu193ProfsTer5)
 CD40L	c.346G>A	NM_000074.3	c.346G>A	r.(346g>a)	p.(Gly116Ser)								not_ptc		r.(346g>a)	p.(Gly116Ser)
 CD40L	c.665C>T	NM_000074.3	c.665C>T	r.(665c>u)	p.(Ser222Phe)								not_ptc		r.(665c>u)	p.(Ser222Phe)
@@ -444,21 +366,15 @@ CD40L	c.482T>C	NM_000074.2	c.482T>C	r.(482u>c)	p.(Leu161Pro)								not_ptc		r.(
 CD40L	c.87del	NM_000074.2	c.87del	r.(87del)	p.(Val30PhefsTer7)	frameshift		107	36	36	yes	303	NMD_predicted	start_proximal	r.0?	p.0?
 CD40L	c.184_200del	NM_000074.2	c.184_200del	r.(184_200del)	p.(Asp62AsnfsTer18)	frameshift		252	79	79	yes	158	NMD_predicted		r.0?	p.0?
 CD55	c.596C>T	NM_001114752.3	c.596C>T	r.(596c>u)	p.(Ser199Leu)								not_ptc		r.(596c>u)	p.(Ser199Leu)
-CD55	c.287-897C>T	NM_001114752.3	c.287-897C>T	r.(=)	p.(=)								not_ptc		r.(=)	p.(=)
 CD55	c.261G>A	NM_001114752.3	c.261G>A	r.(261g>a)	p.(Trp87Ter)	nonsense	ok	259	87	87	yes	941	NMD_predicted		r.0?	p.0?
-CD55	g.207319435G>A												not_ptc			
 CD55	c.263C>A	NM_001114752.3	c.263C>A	r.(263c>a)	p.(Ser88Ter)	nonsense	ok	262	88	88	yes	938	NMD_predicted		r.0?	p.0?
 CD55	c.508C>T	NM_001114752.3	c.508C>T	r.(508c>u)	p.(Arg170Ter)	nonsense	ok	508	170	170	yes	692	NMD_predicted		r.0?	p.0?
-CD55	c.263C>T	NM_001114752.3	c.263C>T	r.(263c>u)	p.(Ser88Leu)								not_ptc		r.(263c>u)	p.(Ser88Leu)
 CD59	c.123del	NM_203330.2	c.123del	r.(123del)	p.(Val42SerfsTer38)	frameshift		236	79	79	yes	-66	NMD_escape_last_exon		r.(123del)	p.(Val42SerfsTer38)
-CD59	c.67+964del	NM_203330.2	c.67+964del	r.(=)	p.(=)	frameshift_candidate							not_assessable_noncoding_or_intronic		r.(=)	p.(=)
 CD79B	g.63934794C>T												not_ptc			
 CD8A	g.86812337C>T												not_ptc			
 CD8A	c.331G>A	NM_001145873.1	c.331G>A	r.(331g>a)	p.(Gly111Ser)								not_ptc		r.(331g>a)	p.(Gly111Ser)
 CEBPE	c.249_253del	NM_001805.3	c.249_253del	r.(249_253del)	p.(Asp84SerfsTer119)	frameshift		609	202	202	yes	-98	NMD_escape_last_exon		r.(249_253del)	p.(Asp84SerfsTer119)
-CEBPE	g.23121820_23121824del												not_ptc			
 CEBPE	c.509dup	NM_001805.3	c.509dup	r.(508delinsaa)	p.(Ala171GlyfsTer34)	frameshift		609	204	204	yes	-98	NMD_escape_last_exon		r.(508delinsaa)	p.(Ala171GlyfsTer34)
-CEBPE	g.23121563dup												not_ptc			
 CEBPE	c.653T>C	NM_001805.3	c.653T>C	r.(653u>c)	p.(Val218Ala)								not_ptc		r.(653u>c)	p.(Val218Ala)
 CFD	c.125C>A	NM_001928.2	c.125C>A	r.(125c>a)	p.(Ser42Ter)	nonsense							not_assessable_no_transcript		r.(125c>a)	p.(Ser42Ter)
 CFD	c.638T>G	NM_001928.2	c.638T>G	r.(638u>g)	p.(Val213Gly)								not_ptc		r.(638u>g)	p.(Val213Gly)
@@ -478,162 +394,95 @@ CFI	c.895A>G	NM_001375282.1	c.895A>G	r.(916a>g)	p.(Ile306Val)								not_ptc		r.
 CFI	c.1513+5G>T	NM_001375282.1	c.1513+5G>T										not_ptc			
 CFI	c.1085A>C	NM_001375282.1	c.1085A>C	r.(1106a>c)	p.(Tyr369Ser)								not_ptc		r.(1106a>c)	p.(Tyr369Ser)
 CFP	c.481C>T	NM_001145252.3	c.481C>T	r.(481c>u)	p.(Arg161Ter)	nonsense	ok	481	161	161	yes	764	NMD_predicted		r.0?	p.0?
-CFP	c.477C>T	NM_002621.2	c.477C>T	r.(477c>u)	p.(=)								not_ptc		r.(477c>u)	p.(=)
 CFP	c.235C>T	NM_001145252.3	c.235C>T	r.(235c>u)	p.(Arg79Ter)	nonsense	ok	235	79	79	yes	1010	NMD_predicted		r.0?	p.0?
 CFP	c.298C>T	NM_001145252.3	c.298C>T	r.(298c>u)	p.(Arg100Trp)								not_ptc		r.(298c>u)	p.(Arg100Trp)
-CFP	c.1203T>G	NM_002621.2	c.1203T>G	r.(1203u>g)	p.(=)								not_ptc		r.(1203u>g)	p.(=)
 CFP	c.961T>G	NM_001145252.3	c.961T>G	r.(961u>g)	p.(Trp321Gly)								not_ptc		r.(961u>g)	p.(Trp321Gly)
 CFP	c.671_672del	NM_001145252.3	c.671_672del	r.(671_672del)	p.(Cys224PhefsTer4)	frameshift		681	227	227	yes	564	NMD_predicted		r.0?	p.0?
 CFP	c.1028A>G	NM_001145252.3	c.1028A>G	r.(1028a>g)	p.(Gln343Arg)								not_ptc		r.(1028a>g)	p.(Gln343Arg)
-CFP	c.859C>G	NM_002621.2	c.859C>G	r.(859c>g)	p.(Pro287Ala)								not_ptc		r.(859c>g)	p.(Pro287Ala)
 CFP	c.617C>G	NM_001145252.3	c.617C>G	r.(617c>g)	p.(Ser206Ter)	nonsense	ok	616	206	206	yes	629	NMD_predicted		r.0?	p.0?
 CFP	c.786_793del	NM_001145252.3	c.786_793del	r.(786_793del)	p.(Trp263CysfsTer91)	frameshift		1065	353	353	yes	180	NMD_predicted		r.0?	p.0?
-CFP	c.1204G>C	NM_002621.2	c.1204G>C	r.(1204g>c)	p.(Ala402Pro)								not_ptc		r.(1204g>c)	p.(Ala402Pro)
 CFP	c.962G>C	NM_001145252.3	c.962G>C	r.(962g>c)	p.(Trp321Ser)								not_ptc		r.(962g>c)	p.(Trp321Ser)
 CFP	c.893G>T	NM_001145252.3	c.893G>T	r.(893g>u)	p.(Gly298Val)								not_ptc		r.(893g>u)	p.(Gly298Val)
 CFP	c.1036C>T	NM_001145252.3	c.1036C>T	r.(1036c>u)	p.(Arg346Cys)								not_ptc		r.(1036c>u)	p.(Arg346Cys)
-CFP	c.801C>T	NM_002621.2	c.801C>T	r.(801c>u)	p.(=)								not_ptc		r.(801c>u)	p.(=)
 CFP	c.559C>T	NM_001145252.3	c.559C>T	r.(559c>u)	p.(Gln187Ter)	nonsense	ok	559	187	187	yes	686	NMD_predicted		r.0?	p.0?
 CIITA	c.1234+413G>T		c.1234+413G>T	r.(=)	p.(=)								not_ptc		r.(=)	p.(=)
-CIITA	c.3664_3675del		c.3664_3675del	r.(3367_3378del)	p.(Gln1123_Arg1126del)								not_ptc		r.(3367_3378del)	p.(Gln1123_Arg1126del)
 CIITA	c.3446+1422_3446+1433del		c.3446+1422_3446+1433del	r.(=)	p.(=)	frameshift_candidate							not_assessable_noncoding_or_intronic		r.(=)	p.(=)
 CIITA	c.1235-171T>C		c.1235-171T>C	r.(=)	p.(=)								not_ptc		r.(=)	p.(=)
 CIITA	c.1303+418G>A		c.1303+418G>A	r.(=)	p.(=)								not_ptc		r.(=)	p.(=)
-CIITA	c.3325_3405del		c.3325_3405del	r.(3028_3108del)	p.(Thr1010_Ala1036del)								not_ptc		r.(3028_3108del)	p.(Thr1010_Ala1036del)
 CIITA	c.3186-2306_3186-2226del		c.3186-2306_3186-2226del	r.(=)	p.(=)	frameshift_candidate							not_assessable_noncoding_or_intronic		r.(=)	p.(=)
 CIITA	c.3267-216_3267-214del		c.3267-216_3267-214del	r.(=)	p.(=)	frameshift_candidate							not_assessable_noncoding_or_intronic		r.(=)	p.(=)
-CTSC	c.*25845A>T	NM_001114173.3	c.*25845A>T	r.(755a>u)	p.(Gln252Leu)								not_ptc		r.(755a>u)	p.(Gln252Leu)
 CTSC	c.755A>T	NM_001814.6	c.755A>T	r.(755a>u)	p.(Gln252Leu)								not_ptc		r.(755a>u)	p.(Gln252Leu)
-CTSC	c.*31994C>T	NM_001114173.3	c.*31994C>T	r.(1015c>u)	p.(Arg339Cys)								not_ptc		r.(1015c>u)	p.(Arg339Cys)
 CTSC	c.1015C>T	NM_001814.6	c.1015C>T	r.(1015c>u)	p.(Arg339Cys)								not_ptc		r.(1015c>u)	p.(Arg339Cys)
 CTSC	c.*17058G>A	NM_001114173.3	c.*17058G>A										not_ptc			
-CTSC	c.*25835G>T	NM_001114173.3	c.*25835G>T	r.(745g>u)	p.(Val249Phe)								not_ptc		r.(745g>u)	p.(Val249Phe)
 CTSC	c.745G>T	NM_001814.6	c.745G>T	r.(745g>u)	p.(Val249Phe)								not_ptc		r.(745g>u)	p.(Val249Phe)
-CTSC	c.*32019A>G	NM_001114173.3	c.*32019A>G	r.(1040a>g)	p.(Tyr347Cys)								not_ptc		r.(1040a>g)	p.(Tyr347Cys)
 CTSC	c.1040A>G	NM_001814.6	c.1040A>G	r.(1040a>g)	p.(Tyr347Cys)								not_ptc		r.(1040a>g)	p.(Tyr347Cys)
-CTSC	c.*31880G>A	NM_001114173.3	c.*31880G>A	r.(901g>a)	p.(Gly301Ser)								not_ptc		r.(901g>a)	p.(Gly301Ser)
 CTSC	c.901G>A	NM_001814.6	c.901G>A	r.(901g>a)	p.(Gly301Ser)								not_ptc		r.(901g>a)	p.(Gly301Ser)
-CTSC	c.*17201C>T	NM_001114173.3	c.*17201C>T	r.(628c>u)	p.(Arg210Ter)	nonsense							not_assessable_noncoding_or_intronic		r.(628c>u)	p.(Arg210Ter)
 CTSC	c.628C>T	NM_001814.6	c.628C>T	r.(628c>u)	p.(Arg210Ter)	nonsense	ok	628	210	210	yes	262	NMD_predicted		r.0?	p.0?
-CTSC	c.*30170G>C	NM_001114173.3	c.*30170G>C	r.(815g>c)	p.(Arg272Pro)								not_ptc		r.(815g>c)	p.(Arg272Pro)
 CTSC	c.815G>C	NM_001814.6	c.815G>C	r.(815g>c)	p.(Arg272Pro)								not_ptc		r.(815g>c)	p.(Arg272Pro)
-CTSC	c.*30211C>T	NM_001114173.3	c.*30211C>T	r.(856c>u)	p.(Gln286Ter)	nonsense							not_assessable_noncoding_or_intronic		r.(856c>u)	p.(Gln286Ter)
 CTSC	c.856C>T	NM_001814.6	c.856C>T	r.(856c>u)	p.(Gln286Ter)	nonsense	ok	856	286	286	yes	34	NMD_escape_50nt_rule		r.(856c>u)	p.(Gln286Ter)
-CTSC	c.*32026del	NM_001114173.3	c.*32026del	r.(1047del)	p.(Gly350ValfsTer10)	frameshift							not_assessable_noncoding_or_intronic		r.(1047del)	p.(Gly350ValfsTer10)
 CTSC	c.1047del	NM_001814.6	c.1047del	r.(1047del)	p.(Gly350ValfsTer10)	frameshift		1076	359	359	yes	-185	NMD_escape_last_exon		r.(1047del)	p.(Gly350ValfsTer10)
-CTSC	c.*32007_*32008del	NM_001114173.3	c.*32007_*32008del	r.(1028_1029del)	p.(Ser343Ter)	nonsense							not_assessable_noncoding_or_intronic		r.(1028_1029del)	p.(Ser343Ter)
 CTSC	c.1028_1029del	NM_001814.6	c.1028_1029del	r.(1028_1029del)	p.(Ser343Ter)	nonsense		1027	343	343	yes	-137	NMD_escape_last_exon		r.(1028_1029del)	p.(Ser343Ter)
-CTSC	c.*32268del	NM_001114173.3	c.*32268del	r.(1289del)	p.(Gly430AlafsTer24)	frameshift							not_assessable_noncoding_or_intronic		r.(1289del)	p.(Gly430AlafsTer24)
 CTSC	c.1289del	NM_001814.6	c.1289del	r.(1289del)	p.(Gly430AlafsTer24)	frameshift		1358	453	453	yes	-467	NMD_escape_last_exon		r.(1289del)	p.(Gly430AlafsTer24)
-CTSC	c.*30212A>G	NM_001114173.3	c.*30212A>G	r.(857a>g)	p.(Gln286Arg)								not_ptc		r.(857a>g)	p.(Gln286Arg)
 CTSC	c.857A>G	NM_001814.6	c.857A>G	r.(857a>g)	p.(Gln286Arg)								not_ptc		r.(857a>g)	p.(Gln286Arg)
 CTSC	c.201_224del	NM_001114173.3	c.201_224del	r.(201_224del)	p.(Leu68_Tyr75del)								not_ptc		r.(201_224del)	p.(Leu68_Tyr75del)
-CTSC	c.*13948_*13949insATGT	NM_001114173.3	c.*13948_*13949insATGT	r.(444_445insaugu)	p.(Val149MetfsTer10)	frameshift							not_assessable_noncoding_or_intronic		r.(444_445insaugu)	p.(Val149MetfsTer10)
 CTSC	c.444_445insATGT	NM_001814.6	c.444_445insATGT	r.(444_445insaugu)	p.(Val149MetfsTer10)	frameshift		468	158	158	yes	422	NMD_predicted		r.0?	p.0?
-CTSC	c.*17195dup	NM_001114173.3	c.*17195dup	r.(621delinscc)	p.(His208ProfsTer16)	frameshift							not_assessable_noncoding_or_intronic		r.(621delinscc)	p.(His208ProfsTer16)
 CTSC	c.622dup	NM_001814.6	c.622dup	r.(621delinscc)	p.(His208ProfsTer16)	frameshift		666	223	223	yes	224	NMD_predicted		r.0?	p.0?
-CTSC	c.*25794G>A	NM_001114173.3	c.*25794G>A	r.(704g>a)	p.(Trp235Ter)	nonsense							not_assessable_noncoding_or_intronic		r.(704g>a)	p.(Trp235Ter)
 CTSC	c.704G>A	NM_001814.6	c.704G>A	r.(704g>a)	p.(Trp235Ter)	nonsense	ok	703	235	235	yes	187	NMD_predicted		r.0?	p.0?
-CTSC	c.*25838C>T	NM_001114173.3	c.*25838C>T	r.(748c>u)	p.(Arg250Ter)	nonsense							not_assessable_noncoding_or_intronic		r.(748c>u)	p.(Arg250Ter)
 CTSC	c.748C>T	NM_001814.6	c.748C>T	r.(748c>u)	p.(Arg250Ter)	nonsense	ok	748	250	250	yes	142	NMD_predicted		r.0?	p.0?
-CTSC	c.*32319A>G	NM_001114173.3	c.*32319A>G	r.(1340a>g)	p.(Glu447Gly)								not_ptc		r.(1340a>g)	p.(Glu447Gly)
-CTSC	c.*31877G>A	NM_001114173.3	c.*31877G>A	r.(898g>a)	p.(Gly300Ser)								not_ptc		r.(898g>a)	p.(Gly300Ser)
 CTSC	c.898G>A	NM_001814.6	c.898G>A	r.(898g>a)	p.(Gly300Ser)								not_ptc		r.(898g>a)	p.(Gly300Ser)
 CTSC	c.1340A>G	NM_001814.6	c.1340A>G	r.(1340a>g)	p.(Glu447Gly)								not_ptc		r.(1340a>g)	p.(Glu447Gly)
-CTSC	c.*31881G>T	NM_001114173.3	c.*31881G>T	r.(902g>u)	p.(Gly301Val)								not_ptc		r.(902g>u)	p.(Gly301Val)
 CTSC	c.902G>T	NM_001814.6	c.902G>T	r.(902g>u)	p.(Gly301Val)								not_ptc		r.(902g>u)	p.(Gly301Val)
-CTSC	c.*31889T>A	NM_001114173.3	c.*31889T>A	r.(910u>a)	p.(Tyr304Asn)								not_ptc		r.(910u>a)	p.(Tyr304Asn)
 CTSC	c.910T>A	NM_001814.6	c.910T>A	r.(910u>a)	p.(Tyr304Asn)								not_ptc		r.(910u>a)	p.(Tyr304Asn)
-CTSC	c.*31935A>G	NM_001114173.3	c.*31935A>G	r.(956a>g)	p.(Glu319Gly)								not_ptc		r.(956a>g)	p.(Glu319Gly)
 CTSC	c.956A>G	NM_001814.6	c.956A>G	r.(956a>g)	p.(Glu319Gly)								not_ptc		r.(956a>g)	p.(Glu319Gly)
-CTSC	c.*32265G>A	NM_001114173.3	c.*32265G>A	r.(1286g>a)	p.(Trp429Ter)	nonsense							not_assessable_noncoding_or_intronic		r.(1286g>a)	p.(Trp429Ter)
 CTSC	c.1286G>A	NM_001814.6	c.1286G>A	r.(1286g>a)	p.(Trp429Ter)	nonsense	ok	1285	429	429	yes	-395	NMD_escape_last_exon		r.(1286g>a)	p.(Trp429Ter)
 CTSC	c.116G>C	NM_001114173.3	c.116G>C	r.(116g>c)	p.(Trp39Ser)								not_ptc		r.(116g>c)	p.(Trp39Ser)
-CTSC	c.*25796G>T	NM_001114173.3	c.*25796G>T	r.(706g>u)	p.(Asp236Tyr)								not_ptc		r.(706g>u)	p.(Asp236Tyr)
-CTSC	c.*30227G>A	NM_001114173.3	c.*30227G>A	r.(872g>a)	p.(Cys291Tyr)								not_ptc		r.(872g>a)	p.(Cys291Tyr)
 CTSC	c.706G>T	NM_001814.6	c.706G>T	r.(706g>u)	p.(Asp236Tyr)								not_ptc		r.(706g>u)	p.(Asp236Tyr)
 CTSC	c.872G>A	NM_001814.6	c.872G>A	r.(872g>a)	p.(Cys291Tyr)								not_ptc		r.(872g>a)	p.(Cys291Tyr)
 CTSC	c.72C>A	NM_001114173.3	c.72C>A	r.(72c>a)	p.(Cys24Ter)	nonsense	ok	70	24	24	yes	334	NMD_predicted	start_proximal	r.0?	p.0?
-CTSC	c.*31964_*31970del	NM_001114173.3	c.*31964_*31970del	r.(985_991del)	p.(Ser329AlafsTer3)	frameshift							not_assessable_noncoding_or_intronic		r.(985_991del)	p.(Ser329AlafsTer3)
 CTSC	c.985_991del	NM_001814.6	c.985_991del	r.(985_991del)	p.(Ser329AlafsTer3)	frameshift		998	331	331	yes	-101	NMD_escape_last_exon		r.(985_991del)	p.(Ser329AlafsTer3)
-CTSC	c.*13884A>C	NM_001114173.3	c.*13884A>C	r.(380a>c)	p.(His127Pro)								not_ptc		r.(380a>c)	p.(His127Pro)
 CTSC	c.96T>G	NM_001114173.3	c.96T>G	r.(96u>g)	p.(Tyr32Ter)	nonsense	ok	94	32	32	yes	310	NMD_predicted	start_proximal	r.0?	p.0?
 CTSC	c.380A>C	NM_001814.6	c.380A>C	r.(380a>c)	p.(His127Pro)								not_ptc		r.(380a>c)	p.(His127Pro)
-CTSC	c.*32120del	NM_001114173.3	c.*32120del	r.(1141del)	p.(Leu381SerfsTer13)	frameshift							not_assessable_noncoding_or_intronic		r.(1141del)	p.(Leu381SerfsTer13)
 CTSC	c.1141del	NM_001814.6	c.1141del	r.(1141del)	p.(Leu381SerfsTer13)	frameshift		1178	393	393	yes	-287	NMD_escape_last_exon		r.(1141del)	p.(Leu381SerfsTer13)
-CTSC	c.*32035del	NM_001114173.3	c.*32035del	r.(1056del)	p.(Tyr352Ter)	nonsense							not_assessable_noncoding_or_intronic		r.(1056del)	p.(Tyr352Ter)
-CTSC	c.*32266G>C	NM_001114173.3	c.*32266G>C	r.(1287g>c)	p.(Trp429Cys)								not_ptc		r.(1287g>c)	p.(Trp429Cys)
 CTSC	c.1056del	NM_001814.6	c.1056del	r.(1056del)	p.(Tyr352Ter)	nonsense		1054	352	352	yes	-164	NMD_escape_last_exon		r.(1056del)	p.(Tyr352Ter)
 CTSC	c.1287G>C	NM_001814.6	c.1287G>C	r.(1287g>c)	p.(Trp429Cys)								not_ptc		r.(1287g>c)	p.(Trp429Cys)
-CTSC	c.*17128G>A	NM_001114173.3	c.*17128G>A	r.(555g>a)	p.(Trp185Ter)	nonsense							not_assessable_noncoding_or_intronic		r.(555g>a)	p.(Trp185Ter)
 CTSC	c.555G>A	NM_001814.6	c.555G>A	r.(555g>a)	p.(Trp185Ter)	nonsense	ok	553	185	185	yes	337	NMD_predicted		r.0?	p.0?
-CTSC	c.*13919G>A	NM_001114173.3	c.*13919G>A	r.(415g>a)	p.(Gly139Arg)								not_ptc		r.(415g>a)	p.(Gly139Arg)
 CTSC	c.415G>A	NM_001814.6	c.415G>A	r.(415g>a)	p.(Gly139Arg)								not_ptc		r.(415g>a)	p.(Gly139Arg)
-CTSC	c.*17139_*17145del	NM_001114173.3	c.*17139_*17145del	r.(566_572del)	p.(Thr189ArgfsTer11)	frameshift							not_assessable_noncoding_or_intronic		r.(566_572del)	p.(Thr189ArgfsTer11)
 CTSC	c.566_572del	NM_001814.6	c.566_572del	r.(566_572del)	p.(Thr189ArgfsTer11)	frameshift		602	199	199	yes	288	NMD_predicted		r.0?	p.0?
-CTSC	c.*32247G>C	NM_001114173.3	c.*32247G>C	r.(1268g>c)	p.(Trp423Ser)								not_ptc		r.(1268g>c)	p.(Trp423Ser)
-CTSC	c.*31926T>G	NM_001114173.3	c.*31926T>G	r.(947u>g)	p.(Leu316Arg)								not_ptc		r.(947u>g)	p.(Leu316Arg)
 CTSC	c.947T>G	NM_001814.6	c.947T>G	r.(947u>g)	p.(Leu316Arg)								not_ptc		r.(947u>g)	p.(Leu316Arg)
 CTSC	c.1268G>C	NM_001814.6	c.1268G>C	r.(1268g>c)	p.(Trp423Ser)								not_ptc		r.(1268g>c)	p.(Trp423Ser)
 CTSC	c.145C>T	NM_001114173.3	c.145C>T	r.(145c>u)	p.(Gln49Ter)	nonsense	ok	145	49	49	yes	259	NMD_predicted	start_proximal	r.0?	p.0?
 CTSC	c.205C>T	NM_001114173.3	c.205C>T	r.(205c>u)	p.(Gln69Ter)	nonsense	ok	205	69	69	yes	199	NMD_predicted		r.0?	p.0?
-CTSC	c.*31891C>A	NM_001114173.3	c.*31891C>A	r.(912c>a)	p.(Tyr304Ter)	nonsense							not_assessable_noncoding_or_intronic		r.(912c>a)	p.(Tyr304Ter)
 CTSC	c.912C>A	NM_001814.6	c.912C>A	r.(912c>a)	p.(Tyr304Ter)	nonsense	ok	910	304	304	yes	-20	NMD_escape_last_exon		r.(912c>a)	p.(Tyr304Ter)
-CTSC	c.*30235T>C	NM_001114173.3	c.*30235T>C	r.(880u>c)	p.(Tyr294His)								not_ptc		r.(880u>c)	p.(Tyr294His)
 CTSC	c.880T>C	NM_001814.6	c.880T>C	r.(880u>c)	p.(Tyr294His)								not_ptc		r.(880u>c)	p.(Tyr294His)
-CTSC	c.*32192C>A	NM_001114173.3	c.*32192C>A	r.(1213c>a)	p.(His405Asn)								not_ptc		r.(1213c>a)	p.(His405Asn)
 CTSC	c.1213C>A	NM_001814.6	c.1213C>A	r.(1213c>a)	p.(His405Asn)								not_ptc		r.(1213c>a)	p.(His405Asn)
-CTSC	c.*32214A>G	NM_001114173.3	c.*32214A>G	r.(1235a>g)	p.(Tyr412Cys)								not_ptc		r.(1235a>g)	p.(Tyr412Cys)
-CTSC	c.*30170G>A	NM_001114173.3	c.*30170G>A	r.(815g>a)	p.(Arg272His)								not_ptc		r.(815g>a)	p.(Arg272His)
 CTSC	c.815G>A	NM_001814.6	c.815G>A	r.(815g>a)	p.(Arg272His)								not_ptc		r.(815g>a)	p.(Arg272His)
 CTSC	c.1235A>G	NM_001814.6	c.1235A>G	r.(1235a>g)	p.(Tyr412Cys)								not_ptc		r.(1235a>g)	p.(Tyr412Cys)
-CTSC	c.*31914A>G	NM_001114173.3	c.*31914A>G	r.(935a>g)	p.(Gln312Arg)								not_ptc		r.(935a>g)	p.(Gln312Arg)
 CTSC	c.935A>G	NM_001814.6	c.935A>G	r.(935a>g)	p.(Gln312Arg)								not_ptc		r.(935a>g)	p.(Gln312Arg)
-CTSC	c.*17160T>C	NM_001114173.3	c.*17160T>C	r.(587u>c)	p.(Leu196Pro)								not_ptc		r.(587u>c)	p.(Leu196Pro)
 CTSC	c.587T>C	NM_001814.6	c.587T>C	r.(587u>c)	p.(Leu196Pro)								not_ptc		r.(587u>c)	p.(Leu196Pro)
 CTSC	c.*13822G>A	NM_001114173.3	c.*13822G>A										not_ptc			
 CTSC	c.90C>A	NM_001114173.3	c.90C>A	r.(90c>a)	p.(Cys30Ter)	nonsense	ok	88	30	30	yes	316	NMD_predicted	start_proximal	r.0?	p.0?
-CTSC	c.*32192_*32194del	NM_001114173.3	c.*32192_*32194del	r.(1213_1215del)	p.(His405del)								not_ptc		r.(1213_1215del)	p.(His405del)
 CTSC	c.1213_1215del	NM_001814.6	c.1213_1215del	r.(1213_1215del)	p.(His405del)								not_ptc		r.(1213_1215del)	p.(His405del)
-CTSC	c.*17202_*17203del	NM_001114173.3	c.*17202_*17203del	r.(629_630del)	p.(Arg210GlnfsTer13)	frameshift							not_assessable_noncoding_or_intronic		r.(629_630del)	p.(Arg210GlnfsTer13)
 CTSC	c.629_630del	NM_001814.6	c.629_630del	r.(629_630del)	p.(Arg210GlnfsTer13)	frameshift		666	222	222	yes	224	NMD_predicted		r.0?	p.0?
-CTSC	c.*32193A>G	NM_001114173.3	c.*32193A>G	r.(1214a>g)	p.(His405Arg)								not_ptc		r.(1214a>g)	p.(His405Arg)
 CTSC	c.1214A>G	NM_001814.6	c.1214A>G	r.(1214a>g)	p.(His405Arg)								not_ptc		r.(1214a>g)	p.(His405Arg)
-CTSC	c.*30133T>C	NM_001114173.3	c.*30133T>C	r.(778u>c)	p.(Ser260Pro)								not_ptc		r.(778u>c)	p.(Ser260Pro)
 CTSC	c.778T>C	NM_001814.6	c.778T>C	r.(778u>c)	p.(Ser260Pro)								not_ptc		r.(778u>c)	p.(Ser260Pro)
 CTSC	c.113_116del	NM_001114173.3	c.113_116del	r.(113_116del)	p.(Thr38ArgfsTer26)	frameshift		191	63	63	yes	213	NMD_predicted		r.0?	p.0?
-CTSC	c.*30206G>A	NM_001114173.3	c.*30206G>A	r.(851g>a)	p.(Ser284Asn)								not_ptc		r.(851g>a)	p.(Ser284Asn)
 CTSC	c.851G>A	NM_001814.6	c.851G>A	r.(851g>a)	p.(Ser284Asn)								not_ptc		r.(851g>a)	p.(Ser284Asn)
-CTSC	c.*32135G>C	NM_001114173.3	c.*32135G>C	r.(1156g>c)	p.(Gly386Arg)								not_ptc		r.(1156g>c)	p.(Gly386Arg)
 CTSC	c.1156G>C	NM_001814.6	c.1156G>C	r.(1156g>c)	p.(Gly386Arg)								not_ptc		r.(1156g>c)	p.(Gly386Arg)
 CTSC	c.757G>A	NM_001814.6	c.757G>A	r.(757g>a)	p.(Ala253Thr)								not_ptc		r.(757g>a)	p.(Ala253Thr)
-CTSC	c.*13826A>T	NM_001114173.3	c.*13826A>T	r.(322a>u)	p.(Lys108Ter)	nonsense							not_assessable_noncoding_or_intronic		r.(322a>u)	p.(Lys108Ter)
-CTSC	c.*13940del	NM_001114173.3	c.*13940del	r.(436del)	p.(Ser146LeufsTer8)	frameshift							not_assessable_noncoding_or_intronic		r.(436del)	p.(Ser146LeufsTer8)
 CTSC	c.322A>T	NM_001814.6	c.322A>T	r.(322a>u)	p.(Lys108Ter)	nonsense	ok	322	108	108	yes	568	NMD_predicted		r.0?	p.0?
 CTSC	c.436del	NM_001814.6	c.436del	r.(436del)	p.(Ser146LeufsTer8)	frameshift		458	153	153	yes	432	NMD_predicted		r.0?	p.0?
-CTSC	c.*30209C>T	NM_001114173.3	c.*30209C>T	r.(854c>u)	p.(Pro285Leu)								not_ptc		r.(854c>u)	p.(Pro285Leu)
 CTSC	c.854C>T	NM_001814.6	c.854C>T	r.(854c>u)	p.(Pro285Leu)								not_ptc		r.(854c>u)	p.(Pro285Leu)
-CTSC	c.*32248G>A	NM_001114173.3	c.*32248G>A	r.(1269g>a)	p.(Trp423Ter)	nonsense							not_assessable_noncoding_or_intronic		r.(1269g>a)	p.(Trp423Ter)
 CTSC	c.1269G>A	NM_001814.6	c.1269G>A	r.(1269g>a)	p.(Trp423Ter)	nonsense	ok	1267	423	423	yes	-377	NMD_escape_last_exon		r.(1269g>a)	p.(Trp423Ter)
-CTSC	c.*31869G>T	NM_001114173.3	c.*31869G>T	r.(890g>u)	p.(Gly297Val)								not_ptc		r.(890g>u)	p.(Gly297Val)
-CTSC	c.*31902G>A	NM_001114173.3	c.*31902G>A	r.(923g>a)	p.(Gly308Glu)								not_ptc		r.(923g>a)	p.(Gly308Glu)
 CTSC	c.890G>T	NM_001814.6	c.890G>T	r.(890g>u)	p.(Gly297Val)								not_ptc		r.(890g>u)	p.(Gly297Val)
 CTSC	c.923G>A	NM_001814.6	c.923G>A	r.(923g>a)	p.(Gly308Glu)								not_ptc		r.(923g>a)	p.(Gly308Glu)
 CTSC	c.21del	NM_001114173.3	c.21del	r.(21del)	p.(Leu7PhefsTer58)	frameshift		191	64	64	yes	213	NMD_predicted		r.0?	p.0?
-CTSC	c.*17077C>G	NM_001114173.3	c.*17077C>G	r.(504c>g)	p.(Tyr168Ter)	nonsense							not_assessable_noncoding_or_intronic		r.(504c>g)	p.(Tyr168Ter)
 CTSC	c.504C>G	NM_001814.6	c.504C>G	r.(504c>g)	p.(Tyr168Ter)	nonsense	ok	502	168	168	yes	388	NMD_predicted		r.0?	p.0?
 CXCR4	c.1099C>T	NM_001348059.2	c.1099C>T	r.(1000c>u)	p.(Arg334Ter)	nonsense	ok	1099	367	334	NO	-984	NMD_escape_last_exon		r.(1000c>u)	p.(Arg334Ter)
-CXCR4	c.1000C>T	NM_003467.3	c.1000C>T	r.(1000c>u)	p.(Arg334Ter)	nonsense	ok	1000	334	334	yes	-984	NMD_escape_last_exon		r.(1000c>u)	p.(Arg334Ter)
 CXCR4	c.1126G>T	NM_001348059.2	c.1126G>T	r.(1027g>u)	p.(Glu343Ter)	nonsense	ok	1126	376	343	NO	-1011	NMD_escape_last_exon		r.(1027g>u)	p.(Glu343Ter)
-CXCR4	c.1027G>T	NM_003467.3	c.1027G>T	r.(1027g>u)	p.(Glu343Ter)	nonsense	ok	1027	343	343	yes	-1011	NMD_escape_last_exon		r.(1027g>u)	p.(Glu343Ter)
 CXCR4	c.1115_1116del	NM_001348059.2	c.1115_1116del	r.(1016_1017del)	p.(Ser339CysfsTer4)	frameshift		1125	375	342	NO	-1008	NMD_escape_last_exon		r.(1016_1017del)	p.(Ser339CysfsTer4)
-CXCR4	c.1016_1017del	NM_003467.3	c.1016_1017del	r.(1016_1017del)	p.(Ser339CysfsTer4)	frameshift		1026	342	342	yes	-1008	NMD_escape_last_exon		r.(1016_1017del)	p.(Ser339CysfsTer4)
 CXCR4	c.1105G>T	NM_001348059.2	c.1105G>T	r.(1006g>u)	p.(Gly336Ter)	nonsense	ok	1105	369	336	NO	-990	NMD_escape_last_exon		r.(1006g>u)	p.(Gly336Ter)
-CXCR4	c.1006G>T	NM_003467.3	c.1006G>T	r.(1006g>u)	p.(Gly336Ter)	nonsense	ok	1006	336	336	yes	-990	NMD_escape_last_exon		r.(1006g>u)	p.(Gly336Ter)
 CXCR4	c.1112C>G	NM_001348059.2	c.1112C>G	r.(1013c>g)	p.(Ser338Ter)	nonsense	ok	1111	371	338	NO	-996	NMD_escape_last_exon		r.(1013c>g)	p.(Ser338Ter)
-CXCR4	c.1013C>G	NM_003467.3	c.1013C>G	r.(1013c>g)	p.(Ser338Ter)	nonsense	ok	1012	338	338	yes	-996	NMD_escape_last_exon		r.(1013c>g)	p.(Ser338Ter)
 CXCR4	c.1120del	NM_001348059.2	c.1120del	r.(1021del)	p.(Ser341ProfsTer25)	frameshift		1193					no_PTC_stop_at_or_beyond_normal		r.(1021del)	p.(Ser341ProfsTer25)
-CXCR4	c.1021del	NM_003467.3	c.1021del	r.(1021del)	p.(Ser341ProfsTer25)	frameshift		1094					no_PTC_stop_at_or_beyond_normal		r.(1021del)	p.(Ser341ProfsTer25)
 CYBA	c.246del		c.246del	r.(246del)	p.(Phe83LeufsTer108)	frameshift							not_assessable_no_transcript		r.(246del)	p.(Phe83LeufsTer108)
 CYBA	c.269G>A		c.269G>A	r.(269g>a)	p.(Arg90Gln)								not_ptc		r.(269g>a)	p.(Arg90Gln)
 CYBA	c.369+1G>C		c.369+1G>C										not_ptc			
@@ -847,7 +696,6 @@ CYBB	c.960del	NM_000397.4	c.960del	r.(960del)	p.(Val321TrpfsTer22)	frameshift		1
 CYBB	c.1679del	NM_000397.4	c.1679del	r.(1679del)	p.(Gly560GlufsTer17)	frameshift		1727					no_PTC_stop_at_or_beyond_normal		r.(1679del)	p.(Gly560GlufsTer17)
 CYBB	c.1348_1352del	NM_000397.4	c.1348_1352del	r.(1348_1352del)	p.(Ala450Ter)	nonsense		1353	450	450	yes	234	NMD_predicted		r.0?	p.0?
 CYBB	c.565_568del	NM_000397.4	c.565_568del	r.(565_568del)	p.(Ile189SerfsTer24)	frameshift		638	212	212	yes	949	NMD_predicted		r.0?	p.0?
-CYBB	c.891_897+8del	NM_000397.4	c.891_897+8del			frameshift_candidate							not_assessable_noncoding_or_intronic			
 CYBB	c.472_475del	NM_000397.4	c.472_475del	r.(472_475del)	p.(Lys158GlufsTer2)	frameshift		479	159	159	yes	1108	NMD_predicted		r.0?	p.0?
 CYBB	c.1497del	NM_000397.4	c.1497del	r.(1497del)	p.(Asp500MetfsTer2)	frameshift		1502	501	501	yes	85	NMD_predicted		r.0?	p.0?
 CYBB	c.1522_1523del	NM_000397.4	c.1522_1523del	r.(1522_1523del)	p.(Lys508AspfsTer10)	frameshift		1551	517	517	yes	36	NMD_escape_50nt_rule		r.(1522_1523del)	p.(Lys508AspfsTer10)
@@ -874,7 +722,6 @@ CYBB	c.1607dup	NM_000397.4	c.1607dup	r.(1607delinsuu)	p.(Cys537LeufsTer4)	frames
 CYBB	c.6dup	NM_000397.4	c.6dup	r.(6delinsgg)	p.(Asn3GlufsTer6)	frameshift		21	8	8	yes	1566	NMD_predicted	start_proximal	r.0?	p.0?
 CYBB	c.1016dup	NM_000397.4	c.1016dup	r.(1016delinscc)	p.(Thr341TyrfsTer7)	frameshift		1038	347	347	yes	549	NMD_predicted		r.0?	p.0?
 CYBB	c.52dup	NM_000397.4	c.52dup	r.(52delinsuu)	p.(Trp18LeufsTer17)	frameshift		99	34	34	yes	1488	NMD_predicted	start_proximal	r.0?	p.0?
-CYBB	c.-1602dup		c.-1602dup	r.(135delinsuu)	p.(Leu46SerfsTer57)	frameshift							not_assessable_noncoding_or_intronic		r.(135delinsuu)	p.(Leu46SerfsTer57)
 CYBB	c.121dup	NM_000397.4	c.121dup	r.(121delinsuu)	p.(Tyr41LeufsTer62)	frameshift		303	102	102	yes	1284	NMD_predicted		r.0?	p.0?
 CYBB	c.671C>G	NM_000397.4	c.671C>G	r.(671c>g)	p.(Ala224Gly)								not_ptc		r.(671c>g)	p.(Ala224Gly)
 CYBB	c.164C>A	NM_000397.4	c.164C>A	r.(164c>a)	p.(Ala55Asp)								not_ptc		r.(164c>a)	p.(Ala55Asp)
@@ -1232,7 +1079,6 @@ CYBB	c.178-8T>G		c.178-8T>G	r.(=)	p.(=)								not_ptc		r.(=)	p.(=)
 CYBB	c.1534G>A	NM_000397.4	c.1534G>A	r.(1534g>a)	p.(Gly512Arg)								not_ptc		r.(1534g>a)	p.(Gly512Arg)
 CYBB	c.1156-1G>T		c.1156-1G>T										not_ptc			
 CYBB	c.=			r.(=)	p.(=)								not_ptc		r.(=)	p.(=)
-CYBB	g.=												not_ptc			
 CYBB	c.1375del	NM_000397.4	c.1375del	r.(1375del)	p.(Gln459AsnfsTer43)	frameshift		1502	501	501	yes	85	NMD_predicted		r.0?	p.0?
 CYBB	c.911C>A	NM_000397.4	c.911C>A	r.(911c>a)	p.(Pro304His)								not_ptc		r.(911c>a)	p.(Pro304His)
 CYBB	c.266del	NM_000397.4	c.266del	r.(266del)	p.(Arg89LysfsTer19)	frameshift		320	107	107	yes	1267	NMD_predicted		r.0?	p.0?
@@ -1252,9 +1098,7 @@ DNMT3B	c.2452G>A	NM_006892.3	c.2452G>A	r.(2452g>a)	p.(Val818Met)								not_ptc	
 FASLG	c.629_712del	NM_000639.1	c.629_712del	r.(629_712del)	p.(Lys210_Gln237del)								not_ptc		r.(629_712del)	p.(Lys210_Gln237del)
 FASLG	c.740C>A	NM_000639.1	c.740C>A	r.(740c>a)	p.(Ala247Glu)								not_ptc		r.(740c>a)	p.(Ala247Glu)
 FCGR1A	c.378-964G>A	NM_001161334.2	c.378-964G>A	r.(274c>u)	p.(Arg92Ter)	nonsense							not_assessable_noncoding_or_intronic		r.(274c>u)	p.(Arg92Ter)
-FCGR1A	g.149780231C>T												not_ptc			
 FCGR3A	c.194T>A	NM_001386450.1	c.194T>A	r.(197u>a)	p.(Leu66His)								not_ptc		r.(197u>a)	p.(Leu66His)
-FCGR3A	g.161553405A>T												not_ptc			
 FERMT3	c.1525C>T	NM_001382448.1	c.1525C>T	r.(1525c>u)	p.(Arg509Ter)	nonsense	ok	1525	509	509	yes	288	NMD_predicted		r.0?	p.0?
 FERMT3	c.1717C>T	NM_001382448.1	c.1717C>T	r.(1717c>u)	p.(Arg573Ter)	nonsense	ok	1717	573	573	yes	96	NMD_predicted		r.0?	p.0?
 FERMT3	c.687G>A	NM_001382448.1	c.687G>A	r.(687g>a)	p.(Trp229Ter)	nonsense	ok	685	229	229	yes	1128	NMD_predicted		r.0?	p.0?
@@ -1302,39 +1146,22 @@ G6PC3	c.2T>A	NM_001384168.1	c.2T>A	r.(347u>a)	p.(Met116Lys)								not_ptc		r.(3
 G6PC3	c.434G>A	NM_001384168.1	c.434G>A	r.(779g>a)	p.(Gly260Asp)								not_ptc		r.(779g>a)	p.(Gly260Asp)
 G6PC3	c.1A>G	NM_001384168.1	c.1A>G	r.(346a>g)	p.(Met116Val)								not_ptc		r.(346a>g)	p.(Met116Val)
 GFI1	c.1145A>G	NM_001127216.3	c.1145A>G	r.(1145a>g)	p.(Asn382Ser)								not_ptc		r.(1145a>g)	p.(Asn382Ser)
-GFI1	c.924+240A>G	NM_005263.5	c.924+240A>G	r.(=)	p.(=)								not_ptc		r.(=)	p.(=)
 GFI1	c.1208A>G	NM_001127216.3	c.1208A>G	r.(1208a>g)	p.(Lys403Arg)								not_ptc		r.(1208a>g)	p.(Lys403Arg)
-GFI1	c.924+303A>G	NM_005263.5	c.924+303A>G	r.(=)	p.(=)								not_ptc		r.(=)	p.(=)
 GFI1	c.107G>A	NM_001127216.3	c.107G>A	r.(107g>a)	p.(Ser36Asn)								not_ptc		r.(107g>a)	p.(Ser36Asn)
-GFI1	g.92487336C>T												not_ptc			
-HAX1	c.54-68_54-67insA	NM_001018837.2	c.54-68_54-67insA	r.(130_131insa)	p.(Trp44Ter)	nonsense							not_assessable_noncoding_or_intronic		r.(130_131insa)	p.(Trp44Ter)
 HAX1	c.130_131insA	NM_006118.4	c.130_131insA	r.(130_131insa)	p.(Trp44Ter)	nonsense		130	44	44	yes	626	NMD_predicted	start_proximal	r.0?	p.0?
 HAX1	c.112C>T	NM_001018837.2	c.112C>T	r.(256c>u)	p.(Arg86Ter)	nonsense	ok	112	38	86	NO	499	NMD_predicted	start_proximal	r.0?	p.0?
-HAX1	c.256C>T	NM_006118.4	c.256C>T	r.(256c>u)	p.(Arg86Ter)	nonsense	ok	256	86	86	yes	499	NMD_predicted		r.0?	p.0?
 HAX1	c.424C>T	NM_001018837.2	c.424C>T	r.(568c>u)	p.(Gln190Ter)	nonsense	ok	424	142	190	NO	187	NMD_predicted		r.0?	p.0?
-HAX1	c.568C>T	NM_006118.4	c.568C>T	r.(568c>u)	p.(Gln190Ter)	nonsense	ok	568	190	190	yes	187	NMD_predicted		r.0?	p.0?
-HAX1	c.54-18del	NM_001018837.2	c.54-18del	r.(180del)	p.(Glu60AspfsTer25)	frameshift							not_assessable_noncoding_or_intronic		r.(180del)	p.(Glu60AspfsTer25)
 HAX1	c.180del	NM_006118.4	c.180del	r.(180del)	p.(Glu60AspfsTer25)	frameshift		251	84	84	yes	504	NMD_predicted		r.0?	p.0?
 HAX1	c.286dup	NM_001018837.2	c.286dup	r.(430delinsgg)	p.(Val144GlyfsTer5)	frameshift		297	100	148	NO	314	NMD_predicted		r.0?	p.0?
-HAX1	c.430dup	NM_006118.4	c.430dup	r.(430delinsgg)	p.(Val144GlyfsTer5)	frameshift		441	148	148	yes	314	NMD_predicted		r.0?	p.0?
 HAX1	c.224_237del	NM_001018837.2	c.224_237del	r.(368_381del)	p.(Gln123LeufsTer4)	frameshift		246	78	126	NO	365	NMD_predicted		r.0?	p.0?
-HAX1	c.368_381del	NM_006118.4	c.368_381del	r.(368_381del)	p.(Gln123LeufsTer4)	frameshift		390	126	126	yes	365	NMD_predicted		r.0?	p.0?
-HAX1	c.54-24_54-23insC	NM_001018837.2	c.54-24_54-23insC	r.(174_175insc)	p.(Glu59ArgfsTer20)	frameshift							not_assessable_noncoding_or_intronic		r.(174_175insc)	p.(Glu59ArgfsTer20)
 HAX1	c.174_175insC	NM_006118.4	c.174_175insC	r.(174_175insc)	p.(Glu59ArgfsTer20)	frameshift		231	78	78	yes	524	NMD_predicted		r.0?	p.0?
-HAX1	c.54-107del	NM_001018837.2	c.54-107del	r.(91del)	p.(Glu31LysfsTer54)	frameshift							not_assessable_noncoding_or_intronic		r.(91del)	p.(Glu31LysfsTer54)
 HAX1	c.91del	NM_006118.4	c.91del	r.(91del)	p.(Glu31LysfsTer54)	frameshift		251	84	84	yes	504	NMD_predicted		r.0?	p.0?
 HAX1	c.277T>C	NM_001018837.2	c.277T>C	r.(421u>c)	p.(Phe141Leu)								not_ptc		r.(421u>c)	p.(Phe141Leu)
-HAX1	c.421T>C	NM_006118.4	c.421T>C	r.(421u>c)	p.(Phe141Leu)								not_ptc		r.(421u>c)	p.(Phe141Leu)
 HAX1	c.245T>G	NM_001018837.2	c.245T>G	r.(389u>g)	p.(Leu130Arg)								not_ptc		r.(389u>g)	p.(Leu130Arg)
-HAX1	c.389T>G	NM_006118.4	c.389T>G	r.(389u>g)	p.(Leu130Arg)								not_ptc		r.(389u>g)	p.(Leu130Arg)
 HAX1	c.265C>T	NM_001018837.2	c.265C>T	r.(409c>u)	p.(Gln137Ter)	nonsense	ok	265	89	137	NO	346	NMD_predicted		r.0?	p.0?
-HAX1	c.409C>T	NM_006118.4	c.409C>T	r.(409c>u)	p.(Gln137Ter)	nonsense	ok	409	137	137	yes	346	NMD_predicted		r.0?	p.0?
 HAX1	c.319dup	NM_001018837.2	c.319dup	r.(463delinscc)	p.(Gln155ProfsTer14)	frameshift		357	120	168	NO	254	NMD_predicted		r.0?	p.0?
-HAX1	c.463dup	NM_006118.4	c.463dup	r.(463delinscc)	p.(Gln155ProfsTer14)	frameshift		501	168	168	yes	254	NMD_predicted		r.0?	p.0?
 HAX1	c.287T>G	NM_001018837.2	c.287T>G	r.(431u>g)	p.(Val144Gly)								not_ptc		r.(431u>g)	p.(Val144Gly)
-HAX1	c.431T>G	NM_006118.4	c.431T>G	r.(431u>g)	p.(Val144Gly)								not_ptc		r.(431u>g)	p.(Val144Gly)
 HAX1	c.370G>A	NM_001018837.2	c.370G>A	r.(514g>a)	p.(Val172Ile)								not_ptc		r.(514g>a)	p.(Val172Ile)
-HAX1	c.514G>A	NM_006118.4	c.514G>A	r.(514g>a)	p.(Val172Ile)								not_ptc		r.(514g>a)	p.(Val172Ile)
 IFNGR1	c.347C>A	NM_000416.2	c.347C>A	r.(347c>a)	p.(Ser116Ter)	nonsense	ok	346	116	116	yes	516	NMD_predicted		r.0?	p.0?
 IFNGR1	c.131del	NM_000416.2	c.131del	r.(131del)	p.(Pro44LeufsTer18)	frameshift		182	61	61	yes	680	NMD_predicted		r.0?	p.0?
 IFNGR1	c.260T>C	NM_000416.2	c.260T>C	r.(260u>c)	p.(Ile87Thr)								not_ptc		r.(260u>c)	p.(Ile87Thr)
@@ -1368,10 +1195,8 @@ IFNGR2	c.560C>A	NM_001329128.2	c.560C>A	r.(503c>a)	p.(Thr168Asn)								not_ptc	
 IFNGR2	c.439_444dup	NM_001329128.2	c.439_444dup	r.(382_387delinsacaaugacaaug)	p.(Thr128_Met129dup)								not_ptc		r.(382_387delinsacaaugacaaug)	p.(Thr128_Met129dup)
 IGHG2	g.105642991dup												not_ptc			
 IGLL1	c.182C>T	NM_152855.3	c.182C>T	r.(182c>u)	p.(Ser61Phe)								not_ptc		r.(182c>u)	p.(Ser61Phe)
-IGLL1	c.488-1565C>T		c.488-1565C>T	r.(=)	p.(=)								not_ptc		r.(=)	p.(=)
 IGLL1	c.206+1588C>T	NM_152855.3	c.206+1588C>T	r.(=)	p.(=)								not_ptc		r.(=)	p.(=)
 IL12B	c.482+3_855+2del	NM_002187.2	c.482+3_855+2del			frameshift_candidate							not_assessable_noncoding_or_intronic			
-IL12B	c.482_482+372del	NM_002187.3	c.482_482+372del			frameshift_candidate							not_assessable_noncoding_or_intronic			
 IL12B	c.320dup	NM_002187.2	c.320dup	r.(316delinsaa)	p.(Glu108GlyfsTer8)	frameshift		342	115	115	yes	646	NMD_predicted		r.0?	p.0?
 IL12B	c.298_305del	NM_002187.2	c.298_305del	r.(298_305del)	p.(Ser100AlafsTer13)	frameshift		342	112	112	yes	646	NMD_predicted		r.0?	p.0?
 IL12RB1	c.214C>T	NM_001290024.2	c.214C>T	r.(94c>u)	p.(Gln32Ter)	nonsense	ok	214	72	32	NO	1890	NMD_predicted		r.0?	p.0?
@@ -1396,21 +1221,16 @@ IL12RB1	c.903+1G>A	NM_001290024.2	c.903+1G>A										not_ptc
 IL12RB1	c.712T>C	NM_001290024.2	c.712T>C	r.(592u>c)	p.(Cys198Arg)								not_ptc		r.(592u>c)	p.(Cys198Arg)
 IL12RB1	c.752G>C	NM_001290024.2	c.752G>C	r.(632g>c)	p.(Arg211Pro)								not_ptc		r.(632g>c)	p.(Arg211Pro)
 IL12RB1	c.530_669del	NM_001290024.2	c.530_669del			frameshift_candidate		690	184			1414	NMD_predicted		r.0?	p.0?
-IL12RB1	c.587_603del	NM_001290024.2	c.587_603del	r.(587_603del)	p.(Arg196ProfsTer3)	frameshift		609	198	198	yes	1495	NMD_predicted		r.0?	p.0?
 IL12RB1	c.830dup	NM_001290024.2	c.830dup	r.(705delinscc)	p.(Gln238ThrfsTer57)	frameshift		999	334	294	NO	1105	NMD_predicted		r.0?	p.0?
 IL12RB1	c.748_764dup	NM_001290024.2	c.748_764dup	r.(628_644delinscuccgacgacggcagcucuccgacgacggcagcu)	p.(Gly216SerfsTer32)	frameshift		842	287	247	NO	1262	NMD_predicted		r.0?	p.0?
 IL12RB1	c.1576C>T	NM_001290024.2	c.1576C>T	r.(1456c>u)	p.(Arg486Ter)	nonsense	ok	1576	526	486	NO	528	NMD_predicted		r.0?	p.0?
 IL2RA	c.62_64+1del	NM_001308243.2	c.62_64+1del			frameshift_candidate							not_assessable_noncoding_or_intronic			
-IL2RA	c.65-3387_65-3384del	NM_001308243.2	c.65-3387_65-3384del	r.(=)	p.(=)	frameshift_candidate							not_assessable_noncoding_or_intronic		r.(=)	p.(=)
 IL2RA	c.301C>T	NM_001308243.2	c.301C>T	r.(301c>u)	p.(Gln101Ter)	nonsense	ok	301	101	101	yes	206	NMD_predicted		r.0?	p.0?
 IL2RA	c.404dup	NM_001308243.2	c.404dup	r.(692delinsaa)	p.(Thr232AspfsTer38)	frameshift		516	173	269	NO	-9	NMD_escape_last_exon		r.(692delinsaa)	p.(Thr232AspfsTer38)
-IL2RA	c.65-1669C>T	NM_001308243.2	c.65-1669C>T	r.(=)	p.(=)								not_ptc		r.(=)	p.(=)
-IL2RA	c.367+1398dup	NM_001308243.2	c.367+1398dup	r.(=)	p.(=)	frameshift_candidate							not_assessable_noncoding_or_intronic		r.(=)	p.(=)
 IL7R	c.538-252C>T	NM_001437964.1	c.538-252C>T	r.(=)	p.(=)								not_ptc		r.(=)	p.(=)
 IL7R	c.*143G>A	NM_001437964.1	c.*143G>A	r.(*143g>a)	p.(=)								not_ptc		r.(*143g>a)	p.(=)
 IL7R	c.434A>G	NM_001437964.1	c.434A>G	r.(434a>g)	p.(Asp145Gly)								not_ptc		r.(434a>g)	p.(Asp145Gly)
 IL7R	c.616C>T	NM_001437964.1	c.616C>T	r.(616c>u)	p.(Arg206Ter)	nonsense	ok	616	206	206	yes	185	NMD_predicted		r.0?	p.0?
-IL7R	c.*108C>T	NM_001437964.1	c.*108C>T	r.(*108c>u)	p.(=)								not_ptc		r.(*108c>u)	p.(=)
 IL7R	c.380-1439G>A	NM_001437964.1	c.380-1439G>A	r.(=)	p.(=)								not_ptc		r.(=)	p.(=)
 IRAK4	c.821del		c.821del	r.(821del)	p.(Leu274ProfsTer14)	frameshift							not_assessable_no_transcript		r.(821del)	p.(Leu274ProfsTer14)
 IRAK4	c.877C>T		c.877C>T	r.(877c>u)	p.(Gln293Ter)	nonsense							not_assessable_no_transcript		r.(877c>u)	p.(Gln293Ter)
@@ -1501,18 +1321,15 @@ ITGB2	c.1877T>C	NM_001127491.3	c.1877T>C	r.(1877u>c)	p.(Ile626Thr)								not_pt
 ITGB2	c.2074A>C	NM_001127491.3	c.2074A>C	r.(2074a>c)	p.(Ser692Arg)								not_ptc		r.(2074a>c)	p.(Ser692Arg)
 JAK3	c.299A>G	NM_001440439.1	c.299A>G	r.(299a>g)	p.(Tyr100Cys)								not_ptc		r.(299a>g)	p.(Tyr100Cys)
 JAK3	c.2200_2350del	NM_001440439.1	c.2200_2350del			frameshift_candidate		2531	794			677	NMD_predicted		r.0?	p.0?
-JAK3	c.2350+2T>C	NM_000215.4	c.2350+2T>C										not_ptc			
 JAK3	c.1178dup	NM_001440439.1	c.1178dup	r.(1178dup)	p.(Ser394LeufsTer16)	frameshift		1224	409	409	yes	1984	NMD_predicted		r.0?	p.0?
 JAK3	c.1695C>A	NM_001440439.1	c.1695C>A	r.(1695c>a)	p.(Cys565Ter)	nonsense	ok	1693	565	565	yes	1515	NMD_predicted		r.0?	p.0?
 JAK3	c.1442A>G	NM_001440439.1	c.1442A>G	r.(1442a>g)	p.(Glu481Gly)								not_ptc		r.(1442a>g)	p.(Glu481Gly)
 JAK3	c.1442_1786del	NM_001440439.1	c.1442_1786del	r.(1442_1786del)	p.(Glu481_Ser596delinsGly)								not_ptc		r.(1442_1786del)	p.(Glu481_Ser596delinsGly)
-JAK3	c.1442_1587del	NM_000215.4	c.1442_1587del	r.(1442_1587del)	p.(Glu481GlyfsTer13)	frameshift		1623	493	493	yes	1585	NMD_predicted		r.0?	p.0?
 JAK3	c.1333C>T	NM_001440439.1	c.1333C>T	r.(1333c>u)	p.(Arg445Ter)	nonsense	ok	1333	445	445	yes	1875	NMD_predicted		r.0?	p.0?
 JAK3	c.2275T>C	NM_001440439.1	c.2275T>C	r.(2275u>c)	p.(Cys759Arg)								not_ptc		r.(2275u>c)	p.(Cys759Arg)
 JAK3	c.1767_1786+1del	NM_001440439.1	c.1767_1786+1del			frameshift_candidate							not_assessable_noncoding_or_intronic			
 JAK3	c.1767C>T	NM_001440439.1	c.1767C>T	r.(1767c>u)	p.(=)								not_ptc		r.(1767c>u)	p.(=)
 JAK3	c.1442_1446del	NM_001440439.1	c.1442_1446del			frameshift_candidate		1554	517			1654	NMD_predicted		r.0?	p.0?
-JAK3	c.1442-2A>G	NM_000215.4	c.1442-2A>G										not_ptc			
 JAK3	c.1702_1786del	NM_001440439.1	c.1702_1786del	r.(1702_1786del)	p.(Ser568AlafsTer13)	frameshift		1823	580	580	yes	1385	NMD_predicted		r.0?	p.0?
 JAK3	c.1744C>T	NM_001440439.1	c.1744C>T	r.(1744c>u)	p.(Arg582Trp)								not_ptc		r.(1744c>u)	p.(Arg582Trp)
 JAK3	c.1797_2009del	NM_001440439.1	c.1797_2009del	r.(1797_2009del)	p.(Gln600_Ser670del)								not_ptc		r.(1797_2009del)	p.(Gln600_Ser670del)
@@ -1549,8 +1366,6 @@ JAK3	c.1796T>G	NM_001440439.1	c.1796T>G	r.(1796u>g)	p.(Val599Gly)								not_ptc
 JAK3	c.2125T>A	NM_001440439.1	c.2125T>A	r.(2125u>a)	p.(Trp709Arg)								not_ptc		r.(2125u>a)	p.(Trp709Arg)
 LIG1	c.1603G>A	NM_001289063.2	c.1603G>A	r.(1696g>a)	p.(Glu566Lys)								not_ptc		r.(1696g>a)	p.(Glu566Lys)
 LIG1	c.2218C>T	NM_001289063.2	c.2218C>T	r.(2311c>u)	p.(Arg771Trp)								not_ptc		r.(2311c>u)	p.(Arg771Trp)
-LIG1	c.1238+1G>A	NM_001289063.2	c.1238+1G>A										not_ptc			
-LIG1	c.1912-1922C>T	NM_001289063.2	c.1912-1922C>T	r.(=)	p.(=)								not_ptc		r.(=)	p.(=)
 LIG4	c.1738C>T	NM_001098268.2	c.1738C>T	r.(1738c>u)	p.(Arg580Ter)	nonsense	ok	1738	580	580	yes	-1765	NMD_escape_last_exon		r.(1738c>u)	p.(Arg580Ter)
 LIG4	c.2440C>T	NM_001098268.2	c.2440C>T	r.(2440c>u)	p.(Arg814Ter)	nonsense	ok	2440	814	814	yes	-2467	NMD_escape_last_exon		r.(2440c>u)	p.(Arg814Ter)
 LIG4	c.26C>T	NM_001098268.2	c.26C>T	r.(26c>u)	p.(Thr9Ile)								not_ptc		r.(26c>u)	p.(Thr9Ile)
@@ -1562,39 +1377,30 @@ LIG4	c.1271_1275del	NM_001098268.2	c.1271_1275del	r.(1271_1275del)	p.(Lys424Argf
 LIG4	c.839A>G	NM_001098268.2	c.839A>G	r.(839a>g)	p.(Gln280Arg)								not_ptc		r.(839a>g)	p.(Gln280Arg)
 LIG4	c.845A>T	NM_001098268.2	c.845A>T	r.(845a>u)	p.(His282Leu)								not_ptc		r.(845a>u)	p.(His282Leu)
 LIG4	c.745A>G	NM_001098268.2	c.745A>G	r.(745a>g)	p.(Met249Val)								not_ptc		r.(745a>g)	p.(Met249Val)
-LYST	c.307dup		c.307dup	r.(307delinsgg)	p.(Asp103GlyfsTer29)	frameshift							not_assessable_no_transcript		r.(307delinsgg)	p.(Asp103GlyfsTer29)
 LYST	c.118dup		c.118dup	r.(117delinsgg)	p.(Ala40GlyfsTer24)	frameshift							not_assessable_no_transcript		r.(117delinsgg)	p.(Ala40GlyfsTer24)
 LYST	c.3073_3074del		c.3073_3074del	r.(3073_3074del)	p.(Asn1025GlnfsTer6)	frameshift							not_assessable_no_transcript		r.(3073_3074del)	p.(Asn1025GlnfsTer6)
 LYST	c.3085C>T		c.3085C>T	r.(3085c>u)	p.(Gln1029Ter)	nonsense							not_assessable_no_transcript		r.(3085c>u)	p.(Gln1029Ter)
 LYST	c.148C>T		c.148C>T	r.(148c>u)	p.(Arg50Ter)	nonsense							not_assessable_no_transcript		r.(148c>u)	p.(Arg50Ter)
-LYST	c.2093dup		c.2093dup	r.(2092delinsaa)	p.(Asn698LysfsTer5)	frameshift							not_assessable_no_transcript		r.(2092delinsaa)	p.(Asn698LysfsTer5)
 LYST	c.1902dup		c.1902dup	r.(1897delinsaa)	p.(Ala635SerfsTer4)	frameshift							not_assessable_no_transcript		r.(1897delinsaa)	p.(Ala635SerfsTer4)
-LYST	c.9941del		c.9941del	r.(9779del)	p.(Tyr3260PhefsTer28)	frameshift							not_assessable_no_transcript		r.(9779del)	p.(Tyr3260PhefsTer28)
 LYST	c.9752del		c.9752del	r.(9590del)	p.(Tyr3197LeufsTer62)	frameshift							not_assessable_no_transcript		r.(9590del)	p.(Tyr3197LeufsTer62)
-LYST	c.1656del		c.1656del	r.(1656del)	p.(Cys553ValfsTer14)	frameshift							not_assessable_no_transcript		r.(1656del)	p.(Cys553ValfsTer14)
 LYST	c.1467del		c.1467del	r.(1467del)	p.(Glu489AspfsTer78)	frameshift							not_assessable_no_transcript		r.(1467del)	p.(Glu489AspfsTer78)
 LYST	c.3310C>T		c.3310C>T	r.(3310c>u)	p.(Arg1104Ter)	nonsense							not_assessable_no_transcript		r.(3310c>u)	p.(Arg1104Ter)
-LYST	c.2810del		c.2810del	r.(2810del)	p.(Leu937Ter)	nonsense							not_assessable_no_transcript		r.(2810del)	p.(Leu937Ter)
 LYST	c.2623del		c.2623del	r.(2623del)	p.(Tyr875MetfsTer24)	frameshift							not_assessable_no_transcript		r.(2623del)	p.(Tyr875MetfsTer24)
 LYST	c.7555del		c.7555del	r.(7555del)	p.(Tyr2519IlefsTer10)	frameshift							not_assessable_no_transcript		r.(7555del)	p.(Tyr2519IlefsTer10)
 LYST	c.7060_7066del		c.7060_7066del			frameshift_candidate							not_assessable_no_transcript			
-LYST	c.9457_9511del		c.9457_9511del	r.(9295_9349del)	p.(Leu3099IlefsTer15)	frameshift							not_assessable_no_transcript		r.(9295_9349del)	p.(Leu3099IlefsTer15)
 LYST	c.9268_9268+54del		c.9268_9268+54del			frameshift_candidate							not_assessable_noncoding_or_intronic			
 LYST	c.10557del		c.10557del	r.(10557del)	p.(Gly3520AlafsTer2)	frameshift							not_assessable_no_transcript		r.(10557del)	p.(Gly3520AlafsTer2)
 LYST	c.2454del		c.2454del	r.(2454del)	p.(Ala819HisfsTer5)	frameshift							not_assessable_no_transcript		r.(2454del)	p.(Ala819HisfsTer5)
-LYST	c.3623dup		c.3623dup	r.(3623delinsaa)	p.(Cys1209ValfsTer3)	frameshift							not_assessable_no_transcript		r.(3623delinsaa)	p.(Cys1209ValfsTer3)
 LYST	c.3434dup		c.3434dup	r.(3434delinsaa)	p.(His1145GlnfsTer9)	frameshift							not_assessable_no_transcript		r.(3434delinsaa)	p.(His1145GlnfsTer9)
 LYST	c.4052C>G		c.4052C>G	r.(4052c>g)	p.(Ser1351Ter)	nonsense							not_assessable_no_transcript		r.(4052c>g)	p.(Ser1351Ter)
 LYST	c.6078C>A		c.6078C>A	r.(6078c>a)	p.(Tyr2026Ter)	nonsense							not_assessable_no_transcript		r.(6078c>a)	p.(Tyr2026Ter)
 LYST	c.8590G>A		c.8590G>A	r.(8590g>a)	p.(Glu2864Lys)								not_ptc		r.(8590g>a)	p.(Glu2864Lys)
 LYST	c.4274del		c.4274del	r.(4274del)	p.(Leu1425TyrfsTer2)	frameshift							not_assessable_no_transcript		r.(4274del)	p.(Leu1425TyrfsTer2)
-LYST	c.5250T>A		c.5250T>A	r.(5250u>a)	p.(=)								not_ptc		r.(5250u>a)	p.(=)
 LYST	c.4361C>A		c.4361C>A	r.(4361c>a)	p.(Ala1454Asp)								not_ptc		r.(4361c>a)	p.(Ala1454Asp)
 LYST	c.5061T>A		c.5061T>A	r.(5061u>a)	p.(Tyr1687Ter)	nonsense							not_assessable_no_transcript		r.(5061u>a)	p.(Tyr1687Ter)
 LYST	c.4688G>A		c.4688G>A	r.(4688g>a)	p.(Arg1563His)								not_ptc		r.(4688g>a)	p.(Arg1563His)
 LYST	c.5996T>A		c.5996T>A	r.(5996u>a)	p.(Val1999Asp)								not_ptc		r.(5996u>a)	p.(Val1999Asp)
 LYST	c.8934G>A		c.8934G>A	r.(8772g>a)	p.(=)								not_ptc		r.(8772g>a)	p.(=)
-LYST	c.8745G>A		c.8745G>A	r.(8745g>a)	p.(Trp2915Ter)	nonsense							not_assessable_no_transcript		r.(8745g>a)	p.(Trp2915Ter)
 LYST	c.5317del		c.5317del	r.(5317del)	p.(Arg1773AspfsTer13)	frameshift							not_assessable_no_transcript		r.(5317del)	p.(Arg1773AspfsTer13)
 LYST	c.1540C>T		c.1540C>T	r.(1540c>u)	p.(Arg514Ter)	nonsense							not_assessable_no_transcript		r.(1540c>u)	p.(Arg514Ter)
 LYST	c.10055del		c.10055del	r.(9893del)	p.(Phe3298SerfsTer7)	frameshift							not_assessable_no_transcript		r.(9893del)	p.(Phe3298SerfsTer7)
@@ -1605,11 +1411,8 @@ LYST	c.11164G>T		c.11164G>T	r.(11002g>u)	p.(Glu3668Ter)	nonsense							not_asses
 LYST	c.3622C>T		c.3622C>T	r.(3622c>u)	p.(Gln1208Ter)	nonsense							not_assessable_no_transcript		r.(3622c>u)	p.(Gln1208Ter)
 LYST	c.4000T>G		c.4000T>G	r.(4000u>g)	p.(Phe1334Val)								not_ptc		r.(4000u>g)	p.(Phe1334Val)
 MAPBPIP	c.*23C>A	NM_001145264.2	c.*23C>A	r.(*23c>a)	p.(=)								not_ptc		r.(*23c>a)	p.(=)
-MAPBPIP	g.156054309C>A												not_ptc			
 MASP2	c.359A>G		c.359A>G	r.(359a>g)	p.(Asp120Gly)								not_ptc		r.(359a>g)	p.(Asp120Gly)
-MASP2	g.11050597T>C												not_ptc			
 MLPH	c.103C>T	NM_001281474.2	c.103C>T	r.(103c>u)	p.(Arg35Trp)								not_ptc		r.(103c>u)	p.(Arg35Trp)
-MLPH	c.-25+2095C>T	NM_001281474.2	c.-25+2095C>T	r.(=)	p.(=)								not_ptc		r.(=)	p.(=)
 MRE11A	c.1897C>T		c.1897C>T	r.(1897c>u)	p.(Arg633Ter)	nonsense							not_assessable_no_transcript		r.(1897c>u)	p.(Arg633Ter)
 MRE11A	c.1714C>T		c.1714C>T	r.(1714c>u)	p.(Arg572Ter)	nonsense							not_assessable_no_transcript		r.(1714c>u)	p.(Arg572Ter)
 MRE11A	c.350A>G		c.350A>G	r.(350a>g)	p.(Asn117Ser)								not_ptc		r.(350a>g)	p.(Asn117Ser)
@@ -1619,13 +1422,9 @@ MRE11A	c.1098+5G>A		c.1098+5G>A										not_ptc
 MRE11A	c.727T>C		c.727T>C	r.(727u>c)	p.(Trp243Arg)								not_ptc		r.(727u>c)	p.(Trp243Arg)
 MRE11A	c.415dup		c.415dup	r.(413delinsuu)	p.(Cys139LeufsTer27)	frameshift							not_assessable_no_transcript		r.(413delinsuu)	p.(Cys139LeufsTer27)
 MYO5A	c.3736C>T		c.3736C>T	r.(3736c>u)	p.(Arg1246Cys)								not_ptc		r.(3736c>u)	p.(Arg1246Cys)
-MYO5A	c.3424-1333C>T		c.3424-1333C>T	r.(=)	p.(=)								not_ptc		r.(=)	p.(=)
 MYO5A	c.2332C>T		c.2332C>T	r.(2332c>u)	p.(Arg778Ter)	nonsense							not_assessable_no_transcript		r.(2332c>u)	p.(Arg778Ter)
-MYO5A	c.2013-507C>T		c.2013-507C>T	r.(=)	p.(=)								not_ptc		r.(=)	p.(=)
-NCF1	c.515del	NM_000265.5	c.515del	r.(515del)	p.(Gly172AlafsTer15)	frameshift		557	186	186	yes	495	NMD_predicted		r.0?	p.0?
 NCF1	c.75_76del	NM_000265.7	c.75_76del	r.(75_76del)	p.(Tyr26HisfsTer26)	frameshift		153	51	51	yes	899	NMD_predicted		r.0?	p.0?
 NCF1	c.502del	NM_000265.7	c.502del	r.(502del)	p.(Glu168ArgfsTer19)	frameshift		557	186	186	yes	495	NMD_predicted		r.0?	p.0?
-NCF1	c.591G>A	NM_000265.5	c.591G>A	r.(591g>a)	p.(=)								not_ptc		r.(591g>a)	p.(=)
 NCF1	c.579G>A	NM_000265.7	c.579G>A	r.(579g>a)	p.(Trp193Ter)	nonsense	ok	577	193	193	yes	475	NMD_predicted		r.0?	p.0?
 NCF1	c.271C>T	NM_000265.7	c.271C>T	r.(271c>u)	p.(Gln91Ter)	nonsense	ok	271	91	91	yes	781	NMD_predicted		r.0?	p.0?
 NCF1	c.353T>A	NM_000265.7	c.353T>A	r.(353u>a)	p.(Phe118Tyr)								not_ptc		r.(353u>a)	p.(Phe118Tyr)
@@ -1694,24 +1493,15 @@ NCF2	c.158T>C		c.158T>C	r.(158u>c)	p.(Met53Thr)								not_ptc		r.(158u>c)	p.(Me
 NCF2	c.1120C>T		c.1120C>T	r.(1120c>u)	p.(Gln374Ter)	nonsense							not_assessable_no_transcript		r.(1120c>u)	p.(Gln374Ter)
 NCF2	c.1284_1287del		c.1284_1287del	r.(1284_1287del)	p.(Asn428LysfsTer55)	frameshift							not_assessable_no_transcript		r.(1284_1287del)	p.(Asn428LysfsTer55)
 NFKBIA	c.95G>T	NM_020529.2	c.95G>T	r.(95g>u)	p.(Ser32Ile)								not_ptc		r.(95g>u)	p.(Ser32Ile)
-NFKBIA	g.35408547C>A												not_ptc			
 NFKBIA	c.40G>T	NM_020529.2	c.40G>T	r.(40g>u)	p.(Glu14Ter)	nonsense	ok	40	14	14	yes	867	NMD_predicted	start_proximal	r.0?	p.0?
-NFKBIA	g.35408602C>A												not_ptc			
 NHEJ1	c.169C>G	NM_001377499.1	c.169C>G	r.(169c>g)	p.(Arg57Gly)								not_ptc		r.(169c>g)	p.(Arg57Gly)
 NHEJ1	c.367T>C	NM_001377499.1	c.367T>C	r.(367u>c)	p.(Cys123Arg)								not_ptc		r.(367u>c)	p.(Cys123Arg)
-NHEJ1	c.391-3982C>G	NM_024782.3	c.391-3982C>G	r.(=)	p.(=)								not_ptc		r.(=)	p.(=)
-NHEJ1	c.391-3283T>C	NM_024782.3	c.391-3283T>C	r.(=)	p.(=)								not_ptc		r.(=)	p.(=)
 NHEJ1	c.532C>T	NM_001377499.1	c.532C>T	r.(532c>u)	p.(Arg178Ter)	nonsense	ok	532	178	178	yes	309	NMD_predicted		r.0?	p.0?
-NHEJ1	c.588+6361C>T	NM_024782.3	c.588+6361C>T	r.(=)	p.(=)								not_ptc		r.(=)	p.(=)
 NHEJ1	c.177+3A>T	NM_001377499.1	c.177+3A>T										not_ptc			
 NHEJ1	c.177+1del	NM_001377499.1	c.177+1del			frameshift_candidate							not_assessable_noncoding_or_intronic			
-NHEJ1	c.391-3974del	NM_024782.3	c.391-3974del	r.(=)	p.(=)	frameshift_candidate							not_assessable_noncoding_or_intronic		r.(=)	p.(=)
 NHEJ1	c.11dup	NM_001377499.1	c.11dup	r.(11delinsuu)	p.(Glu5GlyfsTer43)	frameshift		138	47	47	yes	703	NMD_predicted	start_proximal	r.0?	p.0?
-NHEJ1	c.391-4140dup	NM_024782.3	c.391-4140dup	r.(=)	p.(=)	frameshift_candidate							not_assessable_noncoding_or_intronic		r.(=)	p.(=)
 NHEJ1	c.495dup	NM_001377499.1	c.495dup	r.(494delinsaa)	p.(Asp166ArgfsTer20)	frameshift		552	185	185	yes	289	NMD_predicted		r.0?	p.0?
-NHEJ1	c.588+5406dup	NM_024782.3	c.588+5406dup	r.(=)	p.(=)	frameshift_candidate							not_assessable_noncoding_or_intronic		r.(=)	p.(=)
 NHEJ1	c.526C>T	NM_001377499.1	c.526C>T	r.(526c>u)	p.(Arg176Ter)	nonsense	ok	526	176	176	yes	315	NMD_predicted		r.0?	p.0?
-NHEJ1	c.588+5437C>T	NM_024782.3	c.588+5437C>T	r.(=)	p.(=)								not_ptc		r.(=)	p.(=)
 NP	c.265G>A	NM_000270.3	c.265G>A	r.(265g>a)	p.(Glu89Lys)								not_ptc		r.(265g>a)	p.(Glu89Lys)
 NP	c.575A>G	NM_000270.3	c.575A>G	r.(575a>g)	p.(Tyr192Cys)								not_ptc		r.(575a>g)	p.(Tyr192Cys)
 NP	c.731del	NM_000270.3	c.731del	r.(731del)	p.(Lys244ArgfsTer18)	frameshift		782	261	261	yes	-128	NMD_escape_last_exon		r.(731del)	p.(Lys244ArgfsTer18)
@@ -1733,25 +1523,16 @@ NP	c.475T>G	NM_000270.3	c.475T>G	r.(475u>g)	p.(Phe159Val)								not_ptc		r.(475
 NP	c.487T>C	NM_000270.3	c.487T>C	r.(487u>c)	p.(Ser163Pro)								not_ptc		r.(487u>c)	p.(Ser163Pro)
 NRAS	c.38G>A	NM_002524.3	c.38G>A	r.(38g>a)	p.(Gly13Asp)								not_ptc		r.(38g>a)	p.(Gly13Asp)
 ORAI1	c.271C>T	NM_032790.4	c.271C>T	r.(271c>u)	p.(Arg91Trp)								not_ptc		r.(271c>u)	p.(Arg91Trp)
-ORAI1	g.121622735C>T												not_ptc			
 ORAI1	c.261dup	NM_032790.4	c.261dup	r.(261delinsaa)	p.(Ala88SerfsTer25)	frameshift		333	112	112	yes	-29	NMD_escape_last_exon		r.(261delinsaa)	p.(Ala88SerfsTer25)
-ORAI1	g.121622725_121622726insA												not_ptc			
 ORAI1	c.308C>A	NM_032790.4	c.308C>A	r.(308c>a)	p.(Ala103Glu)								not_ptc		r.(308c>a)	p.(Ala103Glu)
 ORAI1	c.581T>C	NM_032790.4	c.581T>C	r.(581u>c)	p.(Leu194Pro)								not_ptc		r.(581u>c)	p.(Leu194Pro)
-ORAI1	c.307-4274C>A	NM_032790.3	c.307-4274C>A	r.(=)	p.(=)								not_ptc		r.(=)	p.(=)
 PIK3R1	c.1226G>A	NM_181523.3	c.1226G>A	r.(1226g>a)	p.(Arg409Gln)								not_ptc		r.(1226g>a)	p.(Arg409Gln)
 PRF1	c.50del	NM_005041.6	c.50del	r.(50del)	p.(Leu17ArgfsTer34)	frameshift		149	50	50	yes	391	NMD_predicted	start_proximal	r.0?	p.0?
-PRF1	c.1223G>A	NM_005041.6	c.1223G>A	r.(1223g>a)	p.(Cys408Tyr)								not_ptc		r.(1223g>a)	p.(Cys408Tyr)
 PRF1	c.1122G>A	NM_005041.6	c.1122G>A	r.(1122g>a)	p.(Trp374Ter)	nonsense	ok	1120	374	374	yes	-580	NMD_escape_last_exon		r.(1122g>a)	p.(Trp374Ter)
-PRF1	c.291C>T	NM_005041.6	c.291C>T	r.(291c>u)	p.(=)								not_ptc		r.(291c>u)	p.(=)
 PRF1	c.190C>T	NM_005041.6	c.190C>T	r.(190c>u)	p.(Gln64Ter)	nonsense	ok	190	64	64	yes	350	NMD_predicted		r.0?	p.0?
-PRF1	c.1387G>A	NM_005041.6	c.1387G>A	r.(1387g>a)	p.(Val463Met)								not_ptc		r.(1387g>a)	p.(Val463Met)
 PRF1	c.673C>T	NM_005041.6	c.673C>T	r.(673c>u)	p.(Arg225Trp)								not_ptc		r.(673c>u)	p.(Arg225Trp)
 PRF1	c.1286G>A	NM_005041.6	c.1286G>A	r.(1286g>a)	p.(Gly429Glu)								not_ptc		r.(1286g>a)	p.(Gly429Glu)
-PRF1	c.1135C>T	NM_005041.6	c.1135C>T	r.(1135c>u)	p.(Arg379Trp)								not_ptc		r.(1135c>u)	p.(Arg379Trp)
 PRF1	c.1034C>T	NM_005041.6	c.1034C>T	r.(1034c>u)	p.(Pro345Leu)								not_ptc		r.(1034c>u)	p.(Pro345Leu)
-PRF1	c.649T>G	NM_005041.6	c.649T>G	r.(649u>g)	p.(Ser217Ala)								not_ptc		r.(649u>g)	p.(Ser217Ala)
-PRF1	c.937G>A	NM_005041.6	c.937G>A	r.(937g>a)	p.(Asp313Asn)								not_ptc		r.(937g>a)	p.(Asp313Asn)
 PRF1	c.548T>G	NM_005041.6	c.548T>G	r.(548u>g)	p.(Val183Gly)								not_ptc		r.(548u>g)	p.(Val183Gly)
 PRF1	c.836G>A	NM_005041.6	c.836G>A	r.(836g>a)	p.(Cys279Tyr)								not_ptc		r.(836g>a)	p.(Cys279Tyr)
 PRF1	c.755A>G	NM_005041.6	c.755A>G	r.(755a>g)	p.(Asn252Ser)								not_ptc		r.(755a>g)	p.(Asn252Ser)
@@ -1760,19 +1541,14 @@ PRF1	c.148G>A	NM_005041.6	c.148G>A	r.(148g>a)	p.(Val50Met)								not_ptc		r.(14
 PRF1	c.657C>A	NM_005041.6	c.657C>A	r.(657c>a)	p.(Tyr219Ter)	nonsense	ok	655	219	219	yes	-115	NMD_escape_last_exon		r.(657c>a)	p.(Tyr219Ter)
 PRF1	c.853_855del	NM_005041.6	c.853_855del	r.(853_855del)	p.(Lys285del)								not_ptc		r.(853_855del)	p.(Lys285del)
 PRF1	c.283T>C	NM_005041.6	c.283T>C	r.(283u>c)	p.(Trp95Arg)								not_ptc		r.(283u>c)	p.(Trp95Arg)
-PRF1	c.759G>A	NM_005041.6	c.759G>A	r.(759g>a)	p.(=)								not_ptc		r.(759g>a)	p.(=)
 PRF1	c.658G>A	NM_005041.6	c.658G>A	r.(658g>a)	p.(Gly220Ser)								not_ptc		r.(658g>a)	p.(Gly220Ser)
 PRF1	c.662C>T	NM_005041.6	c.662C>T	r.(662c>u)	p.(Thr221Ile)								not_ptc		r.(662c>u)	p.(Thr221Ile)
-PRF1	c.1282dup	NM_005041.6	c.1282dup	r.(1282delinsuu)	p.(Trp428LeufsTer30)	frameshift		1368	457	457	yes	-829	NMD_escape_last_exon		r.(1282delinsuu)	p.(Trp428LeufsTer30)
-PRF1	c.795C>T	NM_005041.6	c.795C>T	r.(795c>u)	p.(=)								not_ptc		r.(795c>u)	p.(=)
 PRF1	c.694C>T	NM_005041.6	c.694C>T	r.(694c>u)	p.(Arg232Cys)								not_ptc		r.(694c>u)	p.(Arg232Cys)
 PRF1	c.1181_1182insT	NM_005041.6	c.1181_1182insT	r.(1181_1182insu)	p.(Gln394HisfsTer64)	frameshift		1368	457	457	yes	-829	NMD_escape_last_exon		r.(1181_1182insu)	p.(Gln394HisfsTer64)
-PRF1	c.1184del	NM_005041.6	c.1184del	r.(1184del)	p.(Cys395LeufsTer25)	frameshift		1256	419	419	yes	-715	NMD_escape_last_exon		r.(1184del)	p.(Cys395LeufsTer25)
 PRF1	c.1083del	NM_005041.6	c.1083del	r.(1083del)	p.(Arg362GlyfsTer3)	frameshift		1091	364	364	yes	-550	NMD_escape_last_exon		r.(1083del)	p.(Arg362GlyfsTer3)
 PRF1	c.1491T>A	NM_005041.6	c.1491T>A	r.(1491u>a)	p.(Cys497Ter)	nonsense	ok	1489	497	497	yes	-949	NMD_escape_last_exon		r.(1491u>a)	p.(Cys497Ter)
 PRF1	c.207del	NM_005041.6	c.207del	r.(207del)	p.(Asp70ThrfsTer37)	frameshift		317	106	106	yes	223	NMD_predicted		r.0?	p.0?
 PRF1	c.1090_1091del	NM_005041.6	c.1090_1091del	r.(1090_1091del)	p.(Leu364GlufsTer93)	frameshift		1368	456	456	yes	-826	NMD_escape_last_exon		r.(1090_1091del)	p.(Leu364GlufsTer93)
-PRF1	c.1050G>A	NM_005041.6	c.1050G>A	r.(1050g>a)	p.(=)								not_ptc		r.(1050g>a)	p.(=)
 PRF1	c.1A>G	NM_005041.6	c.1A>G	r.(1a>g)	p.?								not_ptc		r.(1a>g)	p.?
 PRF1	c.949G>A	NM_005041.6	c.949G>A	r.(949g>a)	p.(Gly317Arg)								not_ptc		r.(949g>a)	p.(Gly317Arg)
 PRF1	c.1246C>T	NM_005041.6	c.1246C>T	r.(1246c>u)	p.(Gln416Ter)	nonsense	ok	1246	416	416	yes	-706	NMD_escape_last_exon		r.(1246c>u)	p.(Gln416Ter)
@@ -1827,7 +1603,6 @@ PRF1	c.305G>T	NM_005041.6	c.305G>T	r.(305g>u)	p.(Cys102Phe)								not_ptc		r.(3
 PRF1	c.1568C>A	NM_005041.6	c.1568C>A	r.(1568c>a)	p.(Ala523Asp)								not_ptc		r.(1568c>a)	p.(Ala523Asp)
 PRKDC	c.6338_6340del	NM_001081640.2	c.6338_6340del	r.(6338_6340del)	p.(Gly2113del)								not_ptc		r.(6338_6340del)	p.(Gly2113del)
 PRKDC	c.9185T>G	NM_001081640.2	c.9185T>G	r.(9185u>g)	p.(Leu3062Arg)								not_ptc		r.(9185u>g)	p.(Leu3062Arg)
-PRKDC	c.5751-171_5751-169del	NM_001081640.2	c.5751-171_5751-169del	r.(=)	p.(=)	frameshift_candidate							not_assessable_noncoding_or_intronic		r.(=)	p.(=)
 PTPN11	c.124A>G	NM_002834.3	c.124A>G	r.(124a>g)	p.(Thr42Ala)								not_ptc		r.(124a>g)	p.(Thr42Ala)
 PTPN11	c.172A>G	NM_002834.3	c.172A>G	r.(172a>g)	p.(Asn58Asp)								not_ptc		r.(172a>g)	p.(Asn58Asp)
 PTPN11	c.174C>G	NM_002834.3	c.174C>G	r.(174c>g)	p.(Asn58Lys)								not_ptc		r.(174c>g)	p.(Asn58Lys)
@@ -1873,7 +1648,6 @@ RAB27A	c.514_518del	NM_001438970.1	c.514_518del	r.(514_518del)	p.(Gln172AsnfsTer
 RAB27A	c.400_401del	NM_001438970.1	c.400_401del	r.(400_401del)	p.(Lys134GlufsTer2)	frameshift		405	135	135	yes	63	NMD_predicted		r.0?	p.0?
 RAB27A	c.149del	NM_001438970.1	c.149del	r.(149del)	p.(Arg50LysfsTer35)	frameshift		251	84	84	yes	217	NMD_predicted		r.0?	p.0?
 RAB27A	c.156_343+2del	NM_001438970.1	c.156_343+2del			frameshift_candidate							not_assessable_noncoding_or_intronic			
-RAB27A	c.154_239+104del	NM_001438970.1	c.154_239+104del			frameshift_candidate							not_assessable_noncoding_or_intronic			
 RAB27A	c.239+3A>G	NM_001438970.1	c.239+3A>G										not_ptc			
 RAB27A	c.467+1G>C	NM_001438970.1	c.467+1G>C										not_ptc			
 RAB27A	c.346C>T	NM_001438970.1	c.346C>T	r.(346c>u)	p.(Gln116Ter)	nonsense	ok	346	116	116	yes	122	NMD_predicted		r.0?	p.0?
@@ -1887,22 +1661,16 @@ RAB27A	c.53_54del	NM_001438970.1	c.53_54del	r.(53_54del)	p.(Ser18TrpfsTer15)	fra
 RAB27A	c.65A>G	NM_001438970.1	c.65A>G	r.(65a>g)	p.(Lys22Arg)								not_ptc		r.(65a>g)	p.(Lys22Arg)
 RAB27A	c.239G>C	NM_001438970.1	c.239G>C	r.(239g>c)	p.(Arg80Thr)								not_ptc		r.(239g>c)	p.(Arg80Thr)
 RAC2	c.169G>A		c.169G>A	r.(169g>a)	p.(Asp57Asn)								not_ptc		r.(169g>a)	p.(Asp57Asn)
-RAC2	c.108-3934G>A	NM_002872.5	c.108-3934G>A	r.(=)	p.(=)								not_ptc		r.(=)	p.(=)
 RAD50	c.3277C>T	NM_005732.3	c.3277C>T	r.(3277c>u)	p.(Arg1093Ter)	nonsense	ok	3277	1093	1093	yes	476	NMD_predicted		r.0?	p.0?
 RAD50	c.3939A>T	NM_005732.3	c.3939A>T	r.(3939a>u)	p.(Ter1313TyrextTer66)								not_ptc		r.(3939a>u)	p.(Ter1313TyrextTer66)
-RAD50	c.3037-1774C>T	NM_005732.4	c.3037-1774C>T	r.(=)	p.(=)								not_ptc		r.(=)	p.(=)
-RAD50	c.3618+188A>T	NM_005732.4	c.3618+188A>T	r.(=)	p.(=)								not_ptc		r.(=)	p.(=)
 RAG1	c.2276G>A	NM_001440489.1	c.2276G>A	r.(2276g>a)	p.(Arg759His)								not_ptc		r.(2276g>a)	p.(Arg759His)
-RAG1	c.-14-4003G>A	NM_001440489.1	c.-14-4003G>A	r.(=)	p.(=)								not_ptc		r.(=)	p.(=)
 RAG1	c.1983G>A	NM_001440489.1	c.1983G>A	r.(1983g>a)	p.(Met661Ile)								not_ptc		r.(1983g>a)	p.(Met661Ile)
 RAG1	c.1794G>A	NM_001440489.1	c.1794G>A	r.(1794g>a)	p.(=)								not_ptc		r.(1794g>a)	p.(=)
 RAG1	c.-14-3432A>G	NM_001440489.1	c.-14-3432A>G	r.(=)	p.(=)								not_ptc		r.(=)	p.(=)
 RAG1	c.1299G>A	NM_001440489.1	c.1299G>A	r.(1299g>a)	p.(=)								not_ptc		r.(1299g>a)	p.(=)
-RAG1	c.-14-4556_-14-4544del	NM_001440489.1	c.-14-4556_-14-4544del	r.(=)	p.(=)	frameshift_candidate							not_assessable_noncoding_or_intronic		r.(=)	p.(=)
 RAG1	c.-14-4881A>G	NM_001440489.1	c.-14-4881A>G	r.(=)	p.(=)								not_ptc		r.(=)	p.(=)
 RAG1	c.-14-5911_-14-5910del	NM_001440489.1	c.-14-5911_-14-5910del	r.(=)	p.(=)	frameshift_candidate							not_assessable_noncoding_or_intronic		r.(=)	p.(=)
 RAG1	c.-14-4486C>T	NM_001440489.1	c.-14-4486C>T	r.(=)	p.(=)								not_ptc		r.(=)	p.(=)
-RAG1	c.2039_2040insAGCTCTCAGAATGTGAAAC	NM_001440489.1	c.2039_2040insAGCTCTCAGAATGTGAAAC	r.(2039_2040insagcucucagaaugugaaac)	p.(Glu681AlafsTer5)	frameshift		2034	685	685	yes	-2066	NMD_escape_last_exon		r.(2039_2040insagcucucagaaugugaaac)	p.(Glu681AlafsTer5)
 RAG1	c.-14-4241_-14-4240insCAGCTCTCAGAATGTGAAA	NM_001440489.1	c.-14-4241_-14-4240insCAGCTCTCAGAATGTGAAA	r.(=)	p.(=)	frameshift_candidate							not_assessable_noncoding_or_intronic		r.(=)	p.(=)
 RAG1	c.-14-5021del	NM_001440489.1	c.-14-5021del	r.(=)	p.(=)	frameshift_candidate							not_assessable_noncoding_or_intronic		r.(=)	p.(=)
 RAG1	c.1443C>T	NM_001440489.1	c.1443C>T	r.(1443c>u)	p.(=)								not_ptc		r.(1443c>u)	p.(=)
@@ -1910,10 +1678,8 @@ RAG1	c.1341G>A	NM_001440489.1	c.1341G>A	r.(1341g>a)	p.(=)								not_ptc		r.(134
 RAG1	c.2988G>A	NM_001440489.1	c.2988G>A	r.(2988g>a)	p.(=)								not_ptc		r.(2988g>a)	p.(=)
 RAG1	c.-14-4097_-14-4090del	NM_001440489.1	c.-14-4097_-14-4090del	r.(=)	p.(=)	frameshift_candidate							not_assessable_noncoding_or_intronic		r.(=)	p.(=)
 RAG1	c.1313T>C	NM_001440489.1	c.1313T>C	r.(1313u>c)	p.(Phe438Ser)								not_ptc		r.(1313u>c)	p.(Phe438Ser)
-RAG1	c.2599_2600delinsTT	NM_001440489.1	c.2599_2600delinsTT	r.(2599_2600delinsuu)	p.(Asp867Phe)	frameshift_candidate		3130					no_PTC_stop_at_or_beyond_normal		r.(2599_2600delinsuu)	p.(Asp867Phe)
 RAG1	c.-14-3680_-14-3679del	NM_001440489.1	c.-14-3680_-14-3679del	r.(=)	p.(=)	frameshift_candidate							not_assessable_noncoding_or_intronic		r.(=)	p.(=)
 RAG1	c.1095G>A	NM_001440489.1	c.1095G>A	r.(1095g>a)	p.(=)								not_ptc		r.(1095g>a)	p.(=)
-RAG1	c.-14-5106del	NM_001440489.1	c.-14-5106del	r.(=)	p.(=)	frameshift_candidate							not_assessable_noncoding_or_intronic		r.(=)	p.(=)
 RAG1	c.-14-4758_-14-4757del	NM_001440489.1	c.-14-4758_-14-4757del	r.(=)	p.(=)	frameshift_candidate							not_assessable_noncoding_or_intronic		r.(=)	p.(=)
 RAG1	c.1533G>A	NM_001440489.1	c.1533G>A	r.(1533g>a)	p.(=)								not_ptc		r.(1533g>a)	p.(=)
 RAG1	c.2370A>T	NM_001440489.1	c.2370A>T	r.(2370a>u)	p.(=)								not_ptc		r.(2370a>u)	p.(=)
@@ -1923,7 +1689,6 @@ RAG1	c.1299G>T	NM_001440489.1	c.1299G>T	r.(1299g>u)	p.(=)								not_ptc		r.(129
 RAG1	c.1789G>T	NM_001440489.1	c.1789G>T	r.(1789g>u)	p.(Val597Leu)								not_ptc		r.(1789g>u)	p.(Val597Leu)
 RAG1	c.-14-4864A>G	NM_001440489.1	c.-14-4864A>G	r.(=)	p.(=)								not_ptc		r.(=)	p.(=)
 RAG1	c.-14-3513T>G	NM_001440489.1	c.-14-3513T>G	r.(=)	p.(=)								not_ptc		r.(=)	p.(=)
-RAG1	c.631del	NM_001440489.1	c.631del	r.(631del)	p.(Cys211ValfsTer53)	frameshift		788	263	263	yes	-800	NMD_escape_last_exon		r.(631del)	p.(Cys211ValfsTer53)
 RAG1	c.-14-5648del	NM_001440489.1	c.-14-5648del	r.(=)	p.(=)	frameshift_candidate							not_assessable_noncoding_or_intronic		r.(=)	p.(=)
 RAG1	c.-14-5391del	NM_001440489.1	c.-14-5391del	r.(=)	p.(=)	frameshift_candidate							not_assessable_noncoding_or_intronic		r.(=)	p.(=)
 RAG1	c.2194C>T	NM_001440489.1	c.2194C>T	r.(2194c>u)	p.(Leu732Phe)								not_ptc		r.(2194c>u)	p.(Leu732Phe)
@@ -1989,7 +1754,6 @@ RAG2	c.-1028+883_-1028+885del		c.-1028+883_-1028+885del	r.(=)	p.(=)	frameshift_c
 RAG2	c.*974T>A		c.*974T>A	r.(=)	p.(=)								not_ptc		r.(=)	p.(=)
 RAG2	c.-1028+987G>A		c.-1028+987G>A	r.(=)	p.(=)								not_ptc		r.(=)	p.(=)
 RAG2	c.*80_*81insTGTTC		c.*80_*81insTGTTC	r.(*80_*81insuguuc)	p.(=)	frameshift_candidate							not_assessable_noncoding_or_intronic		r.(*80_*81insuguuc)	p.(=)
-RAG2	c.-1028+530_-1028+531insGTTCT		c.-1028+530_-1028+531insGTTCT	r.(=)	p.(=)	frameshift_candidate							not_assessable_noncoding_or_intronic		r.(=)	p.(=)
 RAG2	c.*234T>G		c.*234T>G	r.(*234u>g)	p.(=)								not_ptc		r.(*234u>g)	p.(=)
 RAG2	c.-1028+508C>T		c.-1028+508C>T	r.(=)	p.(=)								not_ptc		r.(=)	p.(=)
 RAG2	c.1316A>G		c.1316A>G	r.(1316a>g)	p.(Asn439Ser)								not_ptc		r.(1316a>g)	p.(Asn439Ser)
@@ -2021,10 +1785,7 @@ RASA1	c.*43551T>C	NM_001364076.2	c.*43551T>C	r.(1198a>g)	p.(Lys400Glu)								no
 RASA1	c.*43548T>C	NM_001364076.2	c.*43548T>C	r.(1201a>g)	p.(Ile401Val)								not_ptc		r.(1201a>g)	p.(Ile401Val)
 RFX5	c.760C>T	NM_001379419.1	c.760C>T	r.(760c>u)	p.(Arg254Ter)	nonsense	ok	760	254	254	yes	-21	NMD_escape_last_exon		r.(760c>u)	p.(Arg254Ter)
 RFX5	c.1002C>T	NM_001379419.1	c.1002C>T	r.(1122c>u)	p.(=)								not_ptc		r.(1122c>u)	p.(=)
-RFX5	c.841C>T	NM_001379419.1	c.841C>T	r.(841c>u)	p.(Gln281Ter)	nonsense	ok	841	281	281	yes	-102	NMD_escape_last_exon		r.(841c>u)	p.(Gln281Ter)
 RFX5	c.487G>A	NM_001379419.1	c.487G>A	r.(607g>a)	p.(Ala203Thr)								not_ptc		r.(607g>a)	p.(Ala203Thr)
-RFX5	c.326G>A	NM_001379419.1	c.326G>A	r.(326g>a)	p.(Arg109Gln)								not_ptc		r.(326g>a)	p.(Arg109Gln)
-RFXANK	c.721G>T		c.721G>T	r.(721g>u)	p.(Val241Leu)								not_ptc		r.(721g>u)	p.(Val241Leu)
 RFXANK	c.304G>T		c.304G>T	r.(304g>u)	p.(Glu102Ter)	nonsense							not_assessable_no_transcript		r.(304g>u)	p.(Glu102Ter)
 RFXANK	c.584T>C		c.584T>C	r.(584u>c)	p.(Leu195Pro)								not_ptc		r.(584u>c)	p.(Leu195Pro)
 RFXANK	c.469C>T		c.469C>T	r.(469c>u)	p.(Arg157Ter)	nonsense							not_assessable_no_transcript		r.(469c>u)	p.(Arg157Ter)
@@ -2034,8 +1795,6 @@ RFXANK	c.362A>T		c.362A>T	r.(362a>u)	p.(Asp121Val)								not_ptc		r.(362a>u)	p.
 RFXAP	c.150_151insGCGGGGC	NM_000538.3	c.150_151insGCGGGGC	r.(150_151insgcggggc)	p.(Pro51AlafsTer24)	frameshift		213	74	74	yes	496	NMD_predicted		r.0?	p.0?
 RNF168	c.1323_1326del	NM_152617.3	c.1323_1326del	r.(1323_1326del)	p.(Gln442LysfsTer45)	frameshift		1460	486	486	yes	-693	NMD_escape_last_exon		r.(1323_1326del)	p.(Gln442LysfsTer45)
 RNF168	c.397dup	NM_152617.3	c.397dup	r.(397dup)	p.(Ala133GlyfsTer11)	frameshift		426	143	143	yes	337	NMD_predicted		r.0?	p.0?
-RNF168	c.302-2698_302-2697insG	NM_152617.4	c.302-2698_302-2697insG	r.(=)	p.(=)	frameshift_candidate							not_assessable_noncoding_or_intronic		r.(=)	p.(=)
-RNF168	c.681-720_681-717del	NM_152617.4	c.681-720_681-717del	r.(=)	p.(=)	frameshift_candidate							not_assessable_noncoding_or_intronic		r.(=)	p.(=)
 SBDS	c.101dup	NM_016038.3	c.101dup	r.(101dup)	p.(Asn34LysfsTer16)	frameshift		144	49	49	yes	481	NMD_predicted	start_proximal	r.0?	p.0?
 SBDS	c.258+2T>C	NM_016038.3	c.258+2T>C										not_ptc			
 SBDS	c.183_184delinsCT	NM_016038.3	c.183_184delinsCT	r.(183_184delinscu)	p.(Lys62Ter)	nonsense		184	62	62	yes	441	NMD_predicted		r.0?	p.0?
@@ -2086,15 +1845,10 @@ SH2D1A	c.138-2A>C	NM_001114937.3	c.138-2A>C										not_ptc
 SH2D1A	c.138-2A>G	NM_001114937.3	c.138-2A>G										not_ptc			
 SH2D1A	c.201+3A>G	NM_001114937.3	c.201+3A>G										not_ptc			
 SLC35C1	c.400C>T	NM_001145266.2	c.400C>T	r.(439c>u)	p.(Arg147Cys)								not_ptc		r.(439c>u)	p.(Arg147Cys)
-SLC35C1	c.-31-161C>T	NM_001145266.2	c.-31-161C>T	r.(=)	p.(=)								not_ptc		r.(=)	p.(=)
 SLC35C1	c.884C>G	NM_001145266.2	c.884C>G	r.(923c>g)	p.(Thr308Arg)								not_ptc		r.(923c>g)	p.(Thr308Arg)
-SLC35C1	c.497-204C>G	NM_001145266.2	c.497-204C>G	r.(=)	p.(=)								not_ptc		r.(=)	p.(=)
 SLC35C1	c.549del	NM_001145266.2	c.549del	r.(588del)	p.(Trp196CysfsTer35)	frameshift		650	217	230	NO	-152	NMD_escape_last_exon		r.(588del)	p.(Trp196CysfsTer35)
-SLC35C1	c.497-539del	NM_001145266.2	c.497-539del	r.(=)	p.(=)	frameshift_candidate							not_assessable_noncoding_or_intronic		r.(=)	p.(=)
 SLC35C1	c.930G>A	NM_001145266.2	c.930G>A	r.(969g>a)	p.(Trp323Ter)	nonsense	ok	928	310	323	NO	-431	NMD_escape_last_exon		r.(969g>a)	p.(Trp323Ter)
-SLC35C1	c.497-158G>A	NM_001145266.2	c.497-158G>A	r.(=)	p.(=)								not_ptc		r.(=)	p.(=)
 SLC35C1	c.971A>G	NM_001145266.2	c.971A>G	r.(1010a>g)	p.(Tyr337Cys)								not_ptc		r.(1010a>g)	p.(Tyr337Cys)
-SLC35C1	c.497-117A>G	NM_001145266.2	c.497-117A>G	r.(=)	p.(=)								not_ptc		r.(=)	p.(=)
 SMARCAL1	c.1756C>T	NM_001127207.2	c.1756C>T	r.(1756c>u)	p.(Arg586Trp)								not_ptc		r.(1756c>u)	p.(Arg586Trp)
 SMARCAL1	c.1132G>T	NM_001127207.2	c.1132G>T	r.(1132g>u)	p.(Glu378Ter)	nonsense	ok	1132	378	378	yes	1494	NMD_predicted		r.0?	p.0?
 SMARCAL1	c.2459G>A	NM_001127207.2	c.2459G>A	r.(2459g>a)	p.(Arg820His)								not_ptc		r.(2459g>a)	p.(Arg820His)
@@ -2132,9 +1886,7 @@ SMARCAL1	c.1934G>A	NM_001127207.2	c.1934G>A	r.(1934g>a)	p.(Arg645His)								not
 SMARCAL1	c.1682G>A	NM_001127207.2	c.1682G>A	r.(1682g>a)	p.(Arg561His)								not_ptc		r.(1682g>a)	p.(Arg561His)
 SMARCAL1	c.3G>A	NM_001127207.2	c.3G>A	r.(3g>a)	p.?								not_ptc		r.(3g>a)	p.?
 SP110	c.-233-1280del		c.-233-1280del	r.(642del)	p.(Ser215AlafsTer14)	frameshift							not_assessable_noncoding_or_intronic		r.(642del)	p.(Ser215AlafsTer14)
-SP110	c.-2+2469del		c.-2+2469del	r.(=)	p.(=)	frameshift_candidate							not_assessable_noncoding_or_intronic		r.(=)	p.(=)
 SP110	c.-2+2814del		c.-2+2814del	r.(40del)	p.(Gln14SerfsTer25)	frameshift							not_assessable_noncoding_or_intronic		r.(40del)	p.(Gln14SerfsTer25)
-SP110	c.-2+6985del		c.-2+6985del	r.(=)	p.(=)	frameshift_candidate							not_assessable_noncoding_or_intronic		r.(=)	p.(=)
 SPINK5	c.2258dup	NM_001127698.2	c.2258dup	r.(2258delinsgg)	p.(Asn755LysfsTer2)	frameshift		2265	756	756	yes	1012	NMD_predicted		r.0?	p.0?
 SPINK5	c.81G>A	NM_001127698.2	c.81G>A	r.(81g>a)	p.(=)								not_ptc		r.(81g>a)	p.(=)
 SPINK5	c.153del	NM_001127698.2	c.153del	r.(153del)	p.(Gln52LysfsTer6)	frameshift		170	57	57	yes	3107	NMD_predicted		r.0?	p.0?
@@ -2224,23 +1976,14 @@ STAT3	c.929G>A	NM_001384989.1	c.929G>A	r.(1025g>a)	p.(Gly342Asp)								not_ptc	
 STAT3	c.1495A>G	NM_001384989.1	c.1495A>G	r.(1591a>g)	p.(Lys531Glu)								not_ptc		r.(1591a>g)	p.(Lys531Glu)
 STAT3	c.1973_2002del	NM_001384989.1	c.1973_2002del	r.(2069_2098del)	p.(Glu690_Pro699del)								not_ptc		r.(2069_2098del)	p.(Glu690_Pro699del)
 STAT5B	c.1606G>C		c.1606G>C	r.(1888g>c)	p.(Ala630Pro)								not_ptc		r.(1888g>c)	p.(Ala630Pro)
-STAT5B	c.1191+1890G>C		c.1191+1890G>C	r.(=)	p.(=)								not_ptc		r.(=)	p.(=)
 STAT5B	c.909dup		c.909dup	r.(1191delinsgg)	p.(Asn398GlufsTer16)	frameshift							not_assessable_no_transcript		r.(1191delinsgg)	p.(Asn398GlufsTer16)
-STAT5B	c.269-1536dup		c.269-1536dup	r.(=)	p.(=)	frameshift_candidate							not_assessable_noncoding_or_intronic		r.(=)	p.(=)
 STAT5B	c.820dup		c.820dup	r.(1095delinscc)	p.(Gln368ProfsTer9)	frameshift							not_assessable_no_transcript		r.(1095delinscc)	p.(Gln368ProfsTer9)
-STAT5B	c.268+1229dup		c.268+1229dup	r.(=)	p.(=)	frameshift_candidate							not_assessable_noncoding_or_intronic		r.(=)	p.(=)
 STAT5B	c.172C>T		c.172C>T	r.(454c>u)	p.(Arg152Ter)	nonsense							not_assessable_no_transcript		r.(454c>u)	p.(Arg152Ter)
-STAT5B	c.4-2545C>T		c.4-2545C>T	r.(=)	p.(=)								not_ptc		r.(=)	p.(=)
 STIM1	c.184G>T	NM_001382578.1	c.184G>T	r.(406g>u)	p.(Glu136Ter)	nonsense	ok	184	62	136	NO	1173	NMD_predicted		r.0?	p.0?
-STIM1	c.164-3978G>T	NM_001382578.1	c.164-3978G>T	r.(=)	p.(=)								not_ptc		r.(=)	p.(=)
 STX11	c.447_454delinsTGG		c.447_454delinsTGG	r.(369_376delinsugg)	p.(Val124GlyfsTer60)	frameshift							not_assessable_no_transcript		r.(369_376delinsugg)	p.(Val124GlyfsTer60)
-STX11	c.74-2759_74-2753delinsGG		c.74-2759_74-2753delinsGG	r.(=)	p.(=)	frameshift_candidate							not_assessable_noncoding_or_intronic		r.(=)	p.(=)
 STX11	c.880C>T		c.880C>T	r.(802c>u)	p.(Gln268Ter)	nonsense							not_assessable_no_transcript		r.(802c>u)	p.(Gln268Ter)
-STX11	c.74-2327C>T		c.74-2327C>T	r.(=)	p.(=)								not_ptc		r.(=)	p.(=)
 STX11	c.188del		c.188del	r.(110del)	p.(Thr37ArgfsTer26)	frameshift							not_assessable_no_transcript		r.(110del)	p.(Thr37ArgfsTer26)
-STX11	c.74-3019del		c.74-3019del	r.(=)	p.(=)	frameshift_candidate							not_assessable_noncoding_or_intronic		r.(=)	p.(=)
 STX11	c.659_662del		c.659_662del	r.(581_584del)	p.(Leu194ProfsTer3)	frameshift							not_assessable_no_transcript		r.(581_584del)	p.(Leu194ProfsTer3)
-STX11	c.74-2546_74-2543del		c.74-2546_74-2543del	r.(=)	p.(=)	frameshift_candidate							not_assessable_noncoding_or_intronic		r.(=)	p.(=)
 STXBP2	c.1151-1G>C	NM_001414484.1	c.1151-1G>C										not_ptc			
 STXBP2	c.530T>C	NM_001414484.1	c.530T>C	r.(626u>c)	p.(Leu209Pro)								not_ptc		r.(626u>c)	p.(Leu209Pro)
 STXBP2	c.779G>A	NM_001414484.1	c.779G>A	r.(875g>a)	p.(Arg292His)								not_ptc		r.(875g>a)	p.(Arg292His)
@@ -2301,22 +2044,14 @@ TCN2	c.1117_1118del	NM_000355.2	c.1117_1118del	r.(1117_1118del)	p.(Gln373GlyfsTe
 TCN2	c.501_503del	NM_000355.2	c.501_503del	r.(501_503del)	p.(His167del)								not_ptc		r.(501_503del)	p.(His167del)
 TCN2	c.1195C>T	NM_000355.2	c.1195C>T	r.(1195c>u)	p.(Arg399Ter)	nonsense							not_assessable_no_transcript		r.(1195c>u)	p.(Arg399Ter)
 TLR3	c.908T>C	NM_003265.2	c.908T>C	r.(908u>c)	p.(Phe303Ser)								not_ptc		r.(908u>c)	p.(Phe303Ser)
-TLR3	c.442-208T>C	NM_003265.3	c.442-208T>C	r.(=)	p.(=)								not_ptc		r.(=)	p.(=)
 TLR3	c.1660C>T	NM_003265.2	c.1660C>T	r.(1660c>u)	p.(Pro554Ser)								not_ptc		r.(1660c>u)	p.(Pro554Ser)
-TLR3	c.633+353C>T	NM_003265.3	c.633+353C>T	r.(=)	p.(=)								not_ptc		r.(=)	p.(=)
 TMC6	c.280C>T		c.280C>T	r.(280c>u)	p.(Arg94Ter)	nonsense							not_assessable_no_transcript		r.(280c>u)	p.(Arg94Ter)
-TMC6	c.-74-46C>T		c.-74-46C>T	r.(=)	p.(=)								not_ptc		r.(=)	p.(=)
 TMC6	c.1600G>T		c.1600G>T	r.(1726g>u)	p.(Glu576Ter)	nonsense							not_assessable_no_transcript		r.(1726g>u)	p.(Glu576Ter)
-TMC6	c.1589+195G>T		c.1589+195G>T	r.(=)	p.(=)								not_ptc		r.(=)	p.(=)
 TMC6	c.634-16C>A		c.634-16C>A	r.(744c>a)	p.(Tyr248Ter)	nonsense							not_assessable_noncoding_or_intronic		r.(744c>a)	p.(Tyr248Ter)
 TMC6	c.766-2A>T		c.766-2A>T										not_ptc			
-TMC6	c.409C>A		c.409C>A	r.(409c>a)	p.(Pro137Thr)								not_ptc		r.(409c>a)	p.(Pro137Thr)
 TMC6	c.786_790dup		c.786_790dup	r.(910_914delinsgucaugucau)	p.(Tyr306SerfsTer12)	frameshift							not_assessable_no_transcript		r.(910_914delinsgucaugucau)	p.(Tyr306SerfsTer12)
-TMC6	c.459_463dup		c.459_463dup	r.(459_463dup)	p.(Ser155ThrfsTer18)	frameshift							not_assessable_no_transcript		r.(459_463dup)	p.(Ser155ThrfsTer18)
 TMC6	c.842del		c.842del	r.(968del)	p.(Leu323ArgfsTer27)	frameshift							not_assessable_no_transcript		r.(968del)	p.(Leu323ArgfsTer27)
-TMC6	c.515del		c.515del	r.(515del)	p.(Leu172ArgfsTer40)	frameshift							not_assessable_no_transcript		r.(515del)	p.(Leu172ArgfsTer40)
 TMC6	c.220C>T		c.220C>T	r.(220c>u)	p.(Gln74Ter)	nonsense							not_assessable_no_transcript		r.(220c>u)	p.(Gln74Ter)
-TMC6	c.-74-498C>T		c.-74-498C>T	r.(=)	p.(=)								not_ptc		r.(=)	p.(=)
 TMC8	c.755del	NM_152468.4	c.755del	r.(755del)	p.(Phe252SerfsTer32)	frameshift		848	283	283	yes	1055	NMD_predicted		r.0?	p.0?
 TMC8	c.1084G>T	NM_152468.4	c.1084G>T	r.(1084g>u)	p.(Glu362Ter)	nonsense	ok	1084	362	362	yes	819	NMD_predicted		r.0?	p.0?
 TMC8	c.-75+421C>T		c.-75+421C>T	r.(188g>a)	p.(Trp63Ter)	nonsense							not_assessable_noncoding_or_intronic		r.(188g>a)	p.(Trp63Ter)
@@ -2333,14 +2068,12 @@ TNFRSF13B	c.124C>A	NM_012452.2	c.124C>A	r.(124c>a)	p.(Pro42Thr)								not_ptc		
 TNFRSF13B	c.515G>A	NM_012452.2	c.515G>A	r.(515g>a)	p.(Cys172Tyr)								not_ptc		r.(515g>a)	p.(Cys172Tyr)
 TNFRSF13B	c.61+1G>T	NM_012452.2	c.61+1G>T										not_ptc			
 TYK2	c.209_212del	NM_001385199.1	c.209_212del	r.(209_212del)	p.(Cys70SerfsTer21)	frameshift		272	90	90	yes	2972	NMD_predicted		r.0?	p.0?
-TYK2	c.193+4321_193+4324del	NM_001385199.1	c.193+4321_193+4324del	r.(=)	p.(=)	frameshift_candidate							not_assessable_noncoding_or_intronic		r.(=)	p.(=)
 UNC13D	c.1828_1839del	NM_199242.2	c.1828_1839del	r.(1828_1839del)	p.(Arg610_Gln613del)								not_ptc		r.(1828_1839del)	p.(Arg610_Gln613del)
 UNC13D	c.216del	NM_199242.2	c.216del	r.(216del)	p.(Asn73ThrfsTer3)	frameshift		224	75	75	yes	2928	NMD_predicted		r.0?	p.0?
 UNC13D	c.1754dup	NM_199242.2	c.1754dup	r.(1752delinsuu)	p.(His586ProfsTer31)	frameshift		1845	616	616	yes	1307	NMD_predicted		r.0?	p.0?
 UNC13D	c.1389+1G>A	NM_199242.2	c.1389+1G>A										not_ptc			
 UNC13D	c.753+1G>T	NM_199242.2	c.753+1G>T										not_ptc			
 UNC13D	c.766C>T	NM_199242.2	c.766C>T	r.(766c>u)	p.(Arg256Ter)	nonsense	ok	766	256	256	yes	2386	NMD_predicted		r.0?	p.0?
-UNC13D	c.684-38C>T	NM_199242.3	c.684-38C>T	r.(=)	p.(=)								not_ptc		r.(=)	p.(=)
 UNC13D	c.1596+1G>C	NM_199242.2	c.1596+1G>C										not_ptc			
 UNC13D	c.322-1G>A	NM_199242.2	c.322-1G>A										not_ptc			
 UNC13D	c.640C>T	NM_199242.2	c.640C>T	r.(640c>u)	p.(Arg214Ter)	nonsense	ok	640	214	214	yes	2512	NMD_predicted		r.0?	p.0?
@@ -2348,7 +2081,6 @@ UNC13D	c.754-1G>C	NM_199242.2	c.754-1G>C										not_ptc
 UNC13D	c.1722dup	NM_199242.2	c.1722dup	r.(1722dup)	p.(Glu575ArgfsTer10)	frameshift		1749	584	584	yes	1403	NMD_predicted		r.0?	p.0?
 UNC13D	c.177_178del	NM_199242.2	c.177_178del	r.(177_178del)	p.(Tyr61HisfsTer10)	frameshift		210	70	70	yes	2942	NMD_predicted		r.0?	p.0?
 UNC13D	c.2346_2349del	NM_199242.2	c.2346_2349del	r.(2346_2349del)	p.(Arg782SerfsTer12)	frameshift		2381	793	793	yes	771	NMD_predicted		r.0?	p.0?
-UNC13D	c.2230_2233del	NM_199242.3	c.2230_2233del	r.(2230_2233del)	p.(Gln744CysfsTer50)	frameshift		2381	793	793	yes	771	NMD_predicted		r.0?	p.0?
 UNC13D	c.3131T>G	NM_199242.2	c.3131T>G	r.(3131u>g)	p.(Leu1044Arg)								not_ptc		r.(3131u>g)	p.(Leu1044Arg)
 UNC13D	c.569+5G>A	NM_199242.2	c.569+5G>A										not_ptc			
 UNC13D	c.627del	NM_199242.2	c.627del	r.(627del)	p.(Val210TrpfsTer39)	frameshift		743	248	248	yes	2409	NMD_predicted		r.0?	p.0?
@@ -2385,17 +2117,12 @@ UNC13D	c.343G>A	NM_199242.2	c.343G>A	r.(343g>a)	p.(Ala115Thr)								not_ptc		r.
 UNC13D	c.-247G>T	NM_199242.3	c.-247G>T	r.(=)	p.(=)								not_ptc		r.(=)	p.(=)
 UNC13D	c.2448-13G>A	NM_199242.2	c.2448-13G>A	r.(=)	p.(=)								not_ptc		r.(=)	p.(=)
 UNC93B1	c.627_630del		c.627_630del	r.(1038_1041del)	p.(Phe346LeufsTer102)	frameshift							not_assessable_no_transcript		r.(1038_1041del)	p.(Phe346LeufsTer102)
-UNC93B1	c.393-512_393-509del	NM_030930.4	c.393-512_393-509del	r.(=)	p.(=)	frameshift_candidate							not_assessable_noncoding_or_intronic		r.(=)	p.(=)
 UNC93B1	c.370G>A		c.370G>A	r.(781g>a)	p.(Gly261Ser)								not_ptc		r.(781g>a)	p.(Gly261Ser)
 UNG	c.365del	NM_003362.4	c.365del	r.(392del)	p.(Pro131HisfsTer13)	frameshift		401	134	143	NO	374	NMD_predicted		r.0?	p.0?
 UNG	c.542_543del	NM_003362.4	c.542_543del	r.(569_570del)	p.(Ile190ArgfsTer37)	frameshift		651	217	226	NO	124	NMD_predicted		r.0?	p.0?
-UNG	c.392del	NM_080911.3	c.392del	r.(392del)	p.(Pro131HisfsTer13)	frameshift		428	143	143	yes	374	NMD_predicted		r.0?	p.0?
 UNG	c.725T>C	NM_003362.4	c.725T>C	r.(752u>c)	p.(Phe251Ser)								not_ptc		r.(752u>c)	p.(Phe251Ser)
-UNG	c.752T>C	NM_080911.3	c.752T>C	r.(752u>c)	p.(Phe251Ser)								not_ptc		r.(752u>c)	p.(Phe251Ser)
 UNG	c.401_402del	NM_003362.4	c.401_402del	r.(428_429del)	p.(Ile143LysfsTer17)	frameshift		450	150	159	NO	325	NMD_predicted		r.0?	p.0?
-UNG	c.428_429del	NM_080911.3	c.428_429del	r.(428_429del)	p.(Ile143LysfsTer17)	frameshift		477	159	159	yes	325	NMD_predicted		r.0?	p.0?
 UNG	c.235C>T	NM_003362.4	c.235C>T	r.(262c>u)	p.(Arg88Cys)								not_ptc		r.(262c>u)	p.(Arg88Cys)
-UNG	c.262C>T	NM_080911.3	c.262C>T	r.(262c>u)	p.(Arg88Cys)								not_ptc		r.(262c>u)	p.(Arg88Cys)
 ZAP70	c.1624-11G>A		c.1624-11G>A	r.(=)	p.(=)								not_ptc		r.(=)	p.(=)
 ZAP70	c.1510_1522del		c.1510_1522del	r.(1510_1522del)	p.(Lys504ProfsTer36)	frameshift							not_assessable_no_transcript		r.(1510_1522del)	p.(Lys504ProfsTer36)
 ZAP70	c.1554C>A		c.1554C>A	r.(1554c>a)	p.(Ser518Arg)								not_ptc		r.(1554c>a)	p.(Ser518Arg)
@@ -2479,19 +2206,6 @@ AICDA	c.568C>T	NM_020661.4	c.568C>T	r.(568c>u)	p.(Arg190Ter)	nonsense	ok	568	190
 AICDA	c.338T>C	NM_020661.4	c.338T>C	r.(338u>c)	p.(Leu113Pro)								not_ptc		r.(338u>c)	p.(Leu113Pro)
 AICDA	c.172G>A	NM_020661.4	c.172G>A	r.(172g>a)	p.(Glu58Lys)								not_ptc		r.(172g>a)	p.(Glu58Lys)
 AICDA	c.364G>T	NM_020661.4	c.364G>T	r.(364g>u)	p.(Glu122Ter)	nonsense	ok	364	122	122	yes	180	NMD_predicted		r.0?	p.0?
-AIRE	c.1376del	NM_000383.4	c.1376del		p.(Phe459SerfsTer21)	frameshift		1436	479	479	yes	131	NMD_predicted		r.0?	p.0?
-C1S	c.1334_1337del	NM_001734.5	c.1334_1337del		p.(Asp445ValfsTer26)	frameshift		1412	470	470	yes	-137	NMD_escape_last_exon			p.(Asp445ValfsTer26)
-C6	c.2034del	NM_000065.5	c.2034del		p.(Val679LeufsTer35)	frameshift		2138	713	713	yes	486	NMD_predicted		r.0?	p.0?
-C6	c.392del	NM_000065.5	c.392del		p.(Lys131SerfsTer26)	frameshift		467	156	156	yes	2157	NMD_predicted		r.0?	p.0?
-C6	c.977del	NM_000065.5	c.977del		p.(Thr326LysfsTer14)	frameshift		1016	339	339	yes	1608	NMD_predicted		r.0?	p.0?
-CD40L	c.375_381del	NM_000074.3	c.375_381del		p.(His125GlnfsTer22)	frameshift		443	146	146	yes	-33	NMD_escape_last_exon			p.(His125GlnfsTer22)
-CD40L	c.551del	NM_000074.3	c.551del		p.(Ser184Ter)	nonsense		550	184	184	yes	-140	NMD_escape_last_exon			p.(Ser184Ter)
-CD40L	c.500_504del	NM_000074.3	c.500_504del		p.(Gly167ValfsTer32)	frameshift		597	198	198	yes	-182	NMD_escape_last_exon			p.(Gly167ValfsTer32)
-CD40L	c.465_474del	NM_000074.3	c.465_474del		p.(Glu156AsnfsTer3)	frameshift		482	158	158	yes	-62	NMD_escape_last_exon			p.(Glu156AsnfsTer3)
-CD40L	c.528del	NM_000074.3	c.528del		p.(Phe177SerfsTer14)	frameshift		569	190	190	yes	-158	NMD_escape_last_exon			p.(Phe177SerfsTer14)
-CD40L	c.423del	NM_000074.3	c.423del		p.(Glu142LysfsTer7)	frameshift		443	148	148	yes	-32	NMD_escape_last_exon			p.(Glu142LysfsTer7)
-CD40L	c.567_569del	NM_000074.3	c.567_569del		p.(Phe189_Ile190delinsLeu)								not_ptc			p.(Phe189_Ile190delinsLeu)
-CD40L	c.735_737del	NM_000074.3	c.735_737del		p.(Ser245_Gln246delinsArg)								not_ptc			p.(Ser245_Gln246delinsArg)
 CD79A	c.380-2A>G	NM_001783.4	c.380-2A>G		p.?								not_ptc			p.?
 CD79A	c.379+1G>A	NM_001783.4	c.379+1G>A		p.?								not_ptc			p.?
 CFH	c.2940C>T	NM_000186.4	c.2940C>T	r.(2940c>u)	p.(=)								not_ptc		r.(2940c>u)	p.(=)
@@ -2548,8 +2262,6 @@ CFH	c.1699A>G	NM_000186.4	c.1699A>G	r.(1699a>g)	p.(Arg567Gly)								not_ptc		r.
 CFH	c.1548T>A	NM_000186.4	c.1548T>A	r.(1548u>a)	p.(Asn516Lys)								not_ptc		r.(1548u>a)	p.(Asn516Lys)
 CFH	c.3557A>C	NM_000186.4	c.3557A>C	r.(3557a>c)	p.(Lys1186Thr)								not_ptc		r.(3557a>c)	p.(Lys1186Thr)
 CFH	c.415C>T	NM_000186.4	c.415C>T	r.(415c>u)	p.(Pro139Ser)								not_ptc		r.(415c>u)	p.(Pro139Ser)
-CFP	c.1025_1032del	NM_001145252.3	c.1025_1032del		p.(Gly342ValfsTer12)	frameshift		1065	353	353	yes	180	NMD_predicted		r.0?	p.0?
-CIITA	c.3216_3218del	NM_000246.4	c.3216_3218del		p.(Ser1073del)								not_ptc			p.(Ser1073del)
 CYBB	c.890_904del	NM_000397.4	c.890_904del		p.(Ile297_Val301del)								not_ptc			p.(Ile297_Val301del)
 CYBB	c.10del	NM_000397.4	c.10del		p.(Trp4GlyfsTer3)	frameshift		17	6	6	yes	1570	NMD_predicted	start_proximal	r.0?	p.0?
 DCLRE1C	c.241C>T	NM_001033855.3	c.241C>T	r.(241c>u)	p.(Arg81Ter)	nonsense	ok	241	81	81	yes	916	NMD_predicted		r.0?	p.0?
@@ -2659,12 +2371,6 @@ IKBKG	c.718G>T	NM_001099857.5	c.718G>T	r.(718g>u)	p.(Glu240Ter)	nonsense	ok	718	
 IKBKG	c.1075C>T	NM_001099857.5	c.1075C>T	r.(1075c>u)	p.(Arg359Trp)								not_ptc		r.(1075c>u)	p.(Arg359Trp)
 IKBKG	c.994C>T	NM_001099857.5	c.994C>T	r.(994c>u)	p.(Gln332Ter)	nonsense	ok	994	332	332	yes	124	NMD_predicted		r.0?	p.0?
 IKBKG	c.549G>C	NM_001099857.5	c.549G>C	r.(549g>c)	p.(Gln183His)								not_ptc		r.(549g>c)	p.(Gln183His)
-LYST	c.3262_3263del	NM_000081.4	c.3262_3263del		p.(Ala1088LysfsTer9)	frameshift		3288	1096	1096	yes	7980	NMD_predicted		r.0?	p.0?
-LYST	c.7744del	NM_000081.4	c.7744del		p.(His2582IlefsTer4)	frameshift		7754	2585	2585	yes	3514	NMD_predicted		r.0?	p.0?
-LYST	c.7249_7255del	NM_000081.4	c.7249_7255del		p.(Arg2417TrpfsTer15)	frameshift		7298	2431	2431	yes	3970	NMD_predicted		r.0?	p.0?
-LYST	c.10584del	NM_000081.4	c.10584del		p.(Ser3528ArgfsTer10)	frameshift		10610	3537	3537	yes	658	NMD_predicted		r.0?	p.0?
-LYST	c.4463del	NM_000081.4	c.4463del		p.(Glu1488GlyfsTer10)	frameshift		4490	1497	1497	yes	6778	NMD_predicted		r.0?	p.0?
-LYST	c.5506del	NM_000081.4	c.5506del		p.(Arg1836GlufsTer6)	frameshift		5522	1841	1841	yes	5746	NMD_predicted		r.0?	p.0?
 MPO	c.1705C>T	NM_000250.2	c.1705C>T	r.(1705c>u)	p.(Arg569Trp)								not_ptc		r.(1705c>u)	p.(Arg569Trp)
 MPO	c.1555_1568del	NM_000250.2	c.1555_1568del	r.(1555_1568del)	p.(Met519ProfsTer21)	frameshift		1629	539	539	yes	402	NMD_predicted		r.0?	p.0?
 MPO	c.752T>C	NM_000250.2	c.752T>C	r.(752u>c)	p.(Met251Thr)								not_ptc		r.(752u>c)	p.(Met251Thr)
@@ -2677,17 +2383,8 @@ MPO	c.325del	NM_000250.2	c.325del	r.(325del)	p.(Thr109ProfsTer5)	frameshift		338
 MPO	c.1715T>G	NM_000250.2	c.1715T>G	r.(1715u>g)	p.(Leu572Trp)								not_ptc		r.(1715u>g)	p.(Leu572Trp)
 MPO	c.1112A>G	NM_000250.2	c.1112A>G	r.(1112a>g)	p.(Asp371Gly)								not_ptc		r.(1112a>g)	p.(Asp371Gly)
 MPO	c.1927T>C	NM_000250.2	c.1927T>C	r.(1927u>c)	p.(Trp643Arg)								not_ptc		r.(1927u>c)	p.(Trp643Arg)
-NCF1	c.87_88del	NM_000265.7	c.87_88del		p.(Val30GlufsTer22)	frameshift		153	51	51	yes	899	NMD_predicted		r.0?	p.0?
-PRF1	c.151del	NM_001083116.3	c.151del		p.(Thr51ProfsTer56)	frameshift		317	106	106	yes	223	NMD_predicted		r.0?	p.0?
-PRF1	c.954_956del	NM_001083116.3	c.954_956del		p.(Ile318_Gln319delinsMet)								not_ptc			p.(Ile318_Gln319delinsMet)
-PRF1	c.308del	NM_001083116.3	c.308del		p.(Gln103ArgfsTer4)	frameshift		317	106	106	yes	223	NMD_predicted		r.0?	p.0?
-PRF1	c.1191_1192del	NM_001083116.3	c.1191_1192del		p.(Cys397Ter)	nonsense		1189	397	397	yes	-649	NMD_escape_last_exon			p.(Cys397Ter)
-PTPRC	c.1082_1087del	NM_002838.5	c.1082_1087del		p.(Pro361_Glu362del)								not_ptc			p.(Pro361_Glu362del)
 RAG1	c.1723_1735del	NM_000448.3	c.1723_1735del		p.(Glu575LysfsTer3)	frameshift		1742	577	577	yes	-1742	NMD_escape_last_exon			p.(Glu575LysfsTer3)
-RAG1	c.1258del	NM_000448.3	c.1258del		p.(Ala420ProfsTer11)	frameshift		1289	430	430	yes	-1301	NMD_escape_last_exon			p.(Ala420ProfsTer11)
 RAG1	c.1173del	NM_000448.3	c.1173del		p.(Gly393AlafsTer10)	frameshift		1205	402	402	yes	-1217	NMD_escape_last_exon			p.(Gly393AlafsTer10)
-RAG1	c.1521_1522del	NM_000448.3	c.1521_1522del		p.(Asn508CysfsTer2)	frameshift		1527	509	509	yes	-1538	NMD_escape_last_exon			p.(Asn508CysfsTer2)
-RAG1	c.887del	NM_000448.3	c.887del		p.(Cys296LeufsTer49)	frameshift		1031	344	344	yes	-1043	NMD_escape_last_exon			p.(Cys296LeufsTer49)
 RFXAP	c.484del	NM_000538.4	c.484del		p.(Cys162AlafsTer22)	frameshift		548	183	183	yes	161	NMD_predicted		r.0?	p.0?
 SERPING1	c.1396C>T	NM_000062.3	c.1396C>T	r.(1396c>u)	p.(Arg466Cys)								not_ptc		r.(1396c>u)	p.(Arg466Cys)
 SERPING1	c.1397G>A	NM_000062.3	c.1397G>A	r.(1397g>a)	p.(Arg466His)								not_ptc		r.(1397g>a)	p.(Arg466His)
