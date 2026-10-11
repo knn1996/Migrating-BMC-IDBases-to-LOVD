@@ -10,7 +10,8 @@ and maintains, under the history directory:
 
     audit_history.tsv                 one wide row per run; re-running a run_id replaces its row in place
     snapshots/<run_id>.tsv.gz         per source unit: gene, accession, allele, fate, fate_detail, protein_check
-    snapshots/<run_id>.pairs.tsv.gz   per final (individual, variant) pair: individual_id, variant_key, track, label
+    snapshots/<run_id>.pairs.tsv.gz   per final (individual, variant) pair: individual_id, variant_key, track,
+                                      label, equivalence, source_change_ids
     changes/<run_id>_vs_<prev>.tsv    units whose fate or protein_check differ from the previous run, and
                                       pairs that became inconsistent, became consistent, or were removed
                                       while inconsistent
@@ -45,34 +46,53 @@ in lovd_flat_with_patients_final.tsv with individual_id = GENE_accession:
                   alleles counts once; genomic notation is used when the allele has it,
                   coding otherwise). individuals_with_excess counts individuals with
                   more final pairs than expected, excess_pairs sums the surplus.
-    consistency   every final pair's protein is compared, with the audit's
-                  compare_protein, against every source protein change of the
-                  individual. consistent = some comparison is in GOOD_P;
-                  inconsistent:<label> = none good and at least one in BAD_P (the
-                  label of the closest one); uncheckable:no_final_p,
-                  uncheckable:no_source_p or uncheckable:not_comparable otherwise.
-                  pair_consistency_pct = consistent / (consistent + inconsistent).
+    link          every pair is linked to its own source changes. The pipeline state's
+                  own dedup_merged_variants.py (git show at the run commit) is replayed
+                  on its augmented_merged_variants.tsv; the replay must reproduce
+                  dedup_merged_variants.rescued.tsv byte for byte. Each augmented row is
+                  followed from its stage-1 record to the record that holds its unit
+                  after the XM/NM merge (position merge before dd183da, logged stage-2
+                  rules after), and gets its source_change_id from
+                  Step7_Merging/source_change.py on the run's extraction. Where the
+                  state stores ids (augmented source_change_id, resolution_pairs.tsv)
+                  the rebuilt ids must equal them; a pair may differ only when its
+                  stored link is empty and every rebuilt id came through a stage-2 merge.
+    consistency   the final protein of a pair is compared with the source proteins of
+                  its own source changes: the p. component at the index of the change's
+                  c. token (g. token if the c. token is absent) in the allele notation,
+                  where the p. list has one entry per token. A slash-joined or repeated
+                  p. component counts as alternatives. consistent = some comparison is in
+                  GOOD_P (compare_protein) or is one of the notation equivalences;
+                  inconsistent:<label> = none good and at least one in BAD_P (the label
+                  of the closest one); uncheckable:no_final_p, :unlinked, :source_error
+                  (every source change of the pair is in SOURCE_ERRORS), :no_source_p or
+                  :not_comparable otherwise. pair_consistency_pct = consistent /
+                  (consistent + inconsistent).
+    equivalences  E1 immediate stop: source XnfsX1, XnfsX (no distance) or XnfsX<n> with
+                  n = start (absolute stop numbering) equals final p.(XnTer).
+                  E2 insertion as dup: an ins whose right flank is the dup start, with the
+                  dup length and the dup end residues as first and last inserted residues.
 
---rescore-all re-runs audit_against_source.py for every recorded run on inputs pulled
-from the run's pipeline_commit with git show into a scratch directory, recomputes the
-row and requires every pre-existing column to reproduce exactly; if any value moves
+--rescore-all re-runs audit_against_source.py and the pair linkage for every recorded
+run on inputs pulled from the run's pipeline_commit with git show into a scratch
+directory, and recomputes the row. Every pre-existing column outside the precision
+columns (pairs_*, pair_consistency_pct) must reproduce exactly; if any value moves
 nothing is written. label, recorded_utc, pipeline_commit and outputs_dirty are kept
 from the recorded row. all_mutations.tsv is not tracked, so the current file is used
-unless --extract-tsv RUN_ID=PATH names another (it only feeds stage_extracted, which
-no ledger column reads).
+unless --extract-tsv RUN_ID=PATH names another; it feeds stage_extracted and the
+source change ids of the linkage.
 
 Usage:
     python Step10_Audit/audit_ledger.py --label "after rescue rerun"
-    python Step10_Audit/audit_ledger.py --label "pre-fix baseline" --audit-dir /tmp/audit0 \
-        --final-tsv /tmp/audit0/lovd_flat_with_patients_final.tsv \
-        --final-dedup-tsv /tmp/audit0/dedup_merged_variants.rescued.tsv --pipeline-commit 7c7f6fc
     python Step10_Audit/audit_ledger.py --rescore-all \
         --extract-tsv 20261011_7c7f6fc=99_Archive/04_Mutation_Processing/Output/Step1_Extraction/all_mutations_pre_fix.tsv
 """
 
 import argparse
+import contextlib
 import gzip
 import importlib.util
+import io
 import os
 import re
 import subprocess
@@ -87,10 +107,12 @@ import yaml
 
 SCRIPTS = Path(__file__).resolve().parents[1]
 AUDIT_SCRIPT = SCRIPTS / "Step10_Audit" / "audit_against_source.py"
+DEDUP_SCRIPT = SCRIPTS / "Step7_Merging" / "dedup_merged_variants.py"
+SOURCE_CHANGE_MODULE = SCRIPTS / "Step7_Merging" / "source_change.py"
 PLOT_SCRIPT = SCRIPTS / "Utilities" / "plot_audit_history.py"
 KEY = ["gene", "accession", "allele"]
 SNAP_COLS = KEY + ["fate", "fate_detail", "protein_check"]
-PAIR_COLS = ["individual_id", "variant_key", "track", "label"]
+PAIR_COLS = ["individual_id", "variant_key", "track", "label", "equivalence", "source_change_ids"]
 META_EXCLUDED = {"SUBHEADERS_STRIPPED", "EXTRA_REFS_NOT_CARRIED"}
 HEAD_COLS = ["run_id", "label", "recorded_utc", "rescored_utc", "pipeline_commit", "outputs_dirty",
              "audit_script_sha", "prev_run_id"]
@@ -104,11 +126,28 @@ RUN_INPUTS = {
     "UNRES_TSV": ("Step8_Rescue/unresolved_disposition.tsv",),
     "RESCUED_TSV": ("Step8_Rescue/resolved_unresolved.tsv",),
     "DEDUP_TSV": FINAL_DEDUP_CANDIDATES,
+    "RESCUED_DEDUP_TSV": ("Step8_Rescue/dedup_merged_variants.rescued.tsv",),
+    "RESOLUTION_PAIRS_TSV": ("Step8_Rescue/resolution_pairs.tsv",),
 }
-REQUIRED_INPUTS = {"FINAL_TSV", "AUGMENT_TSV", "UNRES_TSV", "DEDUP_TSV"}
+REQUIRED_INPUTS = {"FINAL_TSV", "AUGMENT_TSV", "UNRES_TSV", "DEDUP_TSV", "RESCUED_DEDUP_TSV"}
 RE_SEG = re.compile(r"^[\[\s]*(?:([gcrp])\s*\.|(?=IVS))", re.I)
 COUNT_KEYS = ["gains", "regressions", "protein_good_to_bad", "protein_bad_to_good",
               "pairs_became_inconsistent", "pairs_became_consistent", "pairs_inconsistent_removed"]
+UNCHECKABLE = ["no_final_p", "unlinked", "source_error", "no_source_p", "not_comparable"]
+EQUIVALENCES = ["E1", "E2"]
+SOURCE_ERRORS = frozenset()
+DEDUP_CAPTURE = (
+    ("result = result.loc[kept]", "result_all = result.copy()\nresult = result.loc[kept]"),
+    ("result = result.drop(index=drop_idx)", "result_all = result.copy()\nresult = result.drop(index=drop_idx)"),
+)
+AA1 = {"A": "Ala", "R": "Arg", "N": "Asn", "D": "Asp", "C": "Cys", "Q": "Gln", "E": "Glu", "G": "Gly",
+       "H": "His", "I": "Ile", "L": "Leu", "K": "Lys", "M": "Met", "F": "Phe", "P": "Pro", "S": "Ser",
+       "T": "Thr", "W": "Trp", "Y": "Tyr", "V": "Val", "X": "Ter", "*": "Ter"}
+RES = r"(?:[A-Z][a-z]{2}|[A-Z*])"
+RE_SRC_FS = re.compile(rf"^p\.\(?({RES})(\d+){RES}?fs(?:X|\*|Ter)?(\d*)\)?$")
+RE_FIN_STOP = re.compile(r"^p\.\(?([A-Z][a-z]{2})(\d+)(?:Ter|\*|X)\)?$")
+RE_INS = re.compile(r"^p\.\(?([A-Z][a-z]{2})(\d+)_([A-Z][a-z]{2})(\d+)ins((?:[A-Z][a-z]{2})+)\)?$")
+RE_DUP = re.compile(r"^p\.\(?([A-Z][a-z]{2})(\d+)(?:_([A-Z][a-z]{2})(\d+))?dup\)?$")
 
 
 class LedgerError(Exception):
@@ -123,6 +162,10 @@ class Audit:
         self.good_p = frozenset(mod.GOOD_P)
         self.bad_p = tuple(sorted(mod.BAD_P))
         self.compare = mod.compare_protein
+        spec = importlib.util.spec_from_file_location("source_change", SOURCE_CHANGE_MODULE)
+        sc = importlib.util.module_from_spec(spec)
+        spec.loader.exec_module(sc)
+        self.source_changes = sc.SourceChanges
 
 
 def git(repo, *args):
@@ -148,6 +191,9 @@ def config_paths(config_path):
         "history_dir": out / "Step10_Audit" / "history",
         "final_tsv": out / "Step8_Rescue" / "lovd_flat_with_patients_final.tsv",
         "final_dedup_tsv": final_dedup_path(out),
+        "augment_tsv": out / "Step8_Rescue" / "augmented_merged_variants.tsv",
+        "rescued_dedup_tsv": out / "Step8_Rescue" / "dedup_merged_variants.rescued.tsv",
+        "resolution_pairs_tsv": out / "Step8_Rescue" / "resolution_pairs.tsv",
         "extract_tsv": out / "Step1a_Extraction" / "all_mutations.tsv",
         "thesis_dir": Path(cfg["thesis_dir"]),
         "output_root": out,
@@ -160,6 +206,9 @@ def parse_args(defaults):
     ap.add_argument("--audit-dir", type=Path, default=defaults["audit_dir"])
     ap.add_argument("--final-tsv", type=Path, default=defaults["final_tsv"])
     ap.add_argument("--final-dedup-tsv", type=Path, default=defaults["final_dedup_tsv"])
+    ap.add_argument("--augment-tsv", type=Path, default=defaults["augment_tsv"])
+    ap.add_argument("--rescued-dedup-tsv", type=Path, default=defaults["rescued_dedup_tsv"])
+    ap.add_argument("--resolution-pairs-tsv", type=Path, default=defaults["resolution_pairs_tsv"])
     ap.add_argument("--history-dir", type=Path, default=defaults["history_dir"])
     ap.add_argument("--pipeline-commit", default="HEAD")
     ap.add_argument("--run-id", default=None)
@@ -198,6 +247,14 @@ def read_tsv(path):
     if not Path(path).exists():
         raise LedgerError(f"missing input: {path}")
     return pd.read_csv(path, sep="\t", dtype=str, keep_default_na=False)
+
+
+def text(v):
+    if v is None or (isinstance(v, float) and pd.isna(v)):
+        return ""
+    if isinstance(v, float) and v.is_integer():
+        return str(int(v))
+    return str(v).strip()
 
 
 def disambiguate_alleles(var):
@@ -257,42 +314,254 @@ def source_dna_changes(txt):
     return set()
 
 
-def source_proteins(txt):
-    return ["p." + comp for comp in source_components(txt)["p"]]
+def protein_alternatives(comp):
+    parts = [x for x in re.split(r"/|p\.", comp) if x and x != "?"]
+    return list(dict.fromkeys("p." + x for x in parts))
 
 
 def individual_ids(genes, accessions):
     return genes.str.strip().str.upper() + "_" + accessions.str.strip()
 
 
-def pair_label(final_p, src_ps, audit):
+def notation_token(tok):
+    return re.sub(r"^[gc]\.", "", re.sub(r"[\[\]\s]", "", tok), flags=re.I)
+
+
+class SourceProteins:
+    def __init__(self, var):
+        self.alleles = defaultdict(list)
+        for iid, txt in zip(individual_ids(var["gene"], var["accession"]), var["source_systematic_name"]):
+            self.alleles[iid].append(source_components(txt))
+
+    def of(self, sid):
+        parts = sid.split("|", 4)
+        if len(parts) != 5:
+            return []
+        gene, acc, _, g_tok, c_tok = parts
+        out = []
+        for lv in self.alleles.get(f"{gene}_{acc}", []):
+            for level, tok in (("c", c_tok), ("g", g_tok)):
+                if tok == "-":
+                    continue
+                toks, n = lv[level], notation_token(tok)
+                if n not in toks:
+                    continue
+                if len(lv["p"]) == len(toks):
+                    for i, x in enumerate(toks):
+                        if x == n:
+                            out.extend(protein_alternatives(lv["p"][i]))
+                break
+        return list(dict.fromkeys(out))
+
+
+def residue(x):
+    return AA1.get(x, x) if len(x) == 1 else x
+
+
+def immediate_stop(src, fin):
+    s, f = RE_SRC_FS.match(src), RE_FIN_STOP.match(fin)
+    if not s or not f:
+        return False
+    pos = int(s.group(2))
+    if residue(s.group(1)) != f.group(1) or pos != int(f.group(2)):
+        return False
+    return s.group(3) in ("", "1") or int(s.group(3)) == pos
+
+
+def ins_as_dup(ins, dup):
+    a, d = RE_INS.match(ins), RE_DUP.match(dup)
+    if not a or not d:
+        return False
+    if int(a.group(4)) != int(a.group(2)) + 1:
+        return False
+    seq = re.findall(r"[A-Z][a-z]{2}", a.group(5))
+    start_res, start = d.group(1), int(d.group(2))
+    end_res, end = (d.group(3), int(d.group(4))) if d.group(3) else (start_res, start)
+    return (int(a.group(4)) == start and a.group(3) == start_res and len(seq) == end - start + 1
+            and seq[0] == start_res and seq[-1] == end_res)
+
+
+def equivalence(src, fin):
+    if immediate_stop(src, fin):
+        return "E1"
+    if ins_as_dup(src, fin) or ins_as_dup(fin, src):
+        return "E2"
+    return ""
+
+
+def pair_label(final_p, sids, src_proteins, audit):
     if not final_p.strip():
-        return "uncheckable:no_final_p"
+        return "uncheckable:no_final_p", ""
+    if not sids:
+        return "uncheckable:unlinked", ""
+    if all(s in SOURCE_ERRORS for s in sids):
+        return "uncheckable:source_error", ""
+    src_ps = list(dict.fromkeys(p for s in sids if s not in SOURCE_ERRORS for p in src_proteins.of(s)))
     if not src_ps:
-        return "uncheckable:no_source_p"
+        return "uncheckable:no_source_p", ""
     res = [audit.compare(s, final_p) for s in src_ps]
     if any(st in audit.good_p for st, _ in res):
-        return "consistent"
+        return "consistent", ""
+    for s in src_ps:
+        eq = equivalence(s, final_p.strip())
+        if eq:
+            return "consistent", eq
     bad = sorted((abs(off) if off is not None else float("inf"), st) for st, off in res if st in audit.bad_p)
     if bad:
-        return f"inconsistent:{bad[0][1]}"
-    return "uncheckable:not_comparable"
+        return f"inconsistent:{bad[0][1]}", ""
+    return "uncheckable:not_comparable", ""
 
 
-def build_pairs(var, final, audit):
+def replay_dedup(code, augment_tsv, rescued_dedup_tsv, work):
+    hits = [c for c in DEDUP_CAPTURE if code.count(c[0]) == 1]
+    if len(hits) != 1:
+        raise LedgerError("dedup replay: capture anchor not found exactly once in dedup_merged_variants.py")
+    work.mkdir(parents=True, exist_ok=True)
+    env = {"INPUT_TSV": str(augment_tsv), "OUTPUT_TSV": str(work / "dedup_replay.tsv"),
+           "STATS_TXT": str(work / "dedup_replay_stats.txt"), "DEDUP_LOG": str(work / "dedup_replay_log.tsv")}
+    saved = {k: os.environ.get(k) for k in env}
+    os.environ.update(env)
+    ns = {"__name__": "dedup_replay"}
+    try:
+        with contextlib.redirect_stdout(io.StringIO()):
+            exec(compile(code.replace(*hits[0]), "dedup_merged_variants.py", "exec"), ns)
+    except SystemExit as e:
+        raise LedgerError(f"dedup replay exited: {e}")
+    finally:
+        for k, v in saved.items():
+            if v is None:
+                os.environ.pop(k, None)
+            else:
+                os.environ[k] = v
+    if Path(env["OUTPUT_TSV"]).read_bytes() != Path(rescued_dedup_tsv).read_bytes():
+        raise LedgerError(f"dedup replay does not reproduce {rescued_dedup_tsv}; see {env['OUTPUT_TSV']}")
+    return ns
+
+
+def row_targets(ns):
+    df, ra, res = ns["df"], ns["result_all"], ns["result"]
+    kept = set(res.index)
+    keyidx = {(text(ra.at[i, "gene"]), text(ra.at[i, "dedup_key"])): i for i in ra.index}
+    out = {}
+    if "units" in ns:
+        units, describe = ns["units"], ns["describe"]
+        desc = {(text(ra.at[i, "gene"]), describe(ra.loc[i])): i for i in ra.index}
+        ident, moved = {}, defaultdict(list)
+        for lr in ns["log_rows"]:
+            g = lr["gene"]
+            if lr["rule"] == "identical_change":
+                ident[desc[(g, lr["dropped_record"])]] = desc[(g, lr["kept_record"])]
+            elif lr["rule"].startswith("same_source_unit"):
+                n = desc[(g, lr["kept_record"])]
+                for u in lr["source_units"].split(";"):
+                    a, al = u.split(":", 1)
+                    moved[(g, a, "" if al == "?" else al)].append(n)
+        for r in df.index:
+            g = text(df.at[r, "gene"])
+            u = (text(df.at[r, "accession"]), text(df.at[r, "allele_num"]))
+            i = keyidx.get((g, text(df.at[r, "_dedup_key"])))
+            if i is None:
+                out[r] = []
+            elif i in kept and u in units[i]:
+                out[r] = [(i, "stage1")]
+            elif i in ident:
+                out[r] = [(ident[i], "stage2")]
+            else:
+                out[r] = [(n, "stage2") for n in dict.fromkeys(moved.get((g,) + u, [])) if n in kept and u in units[n]]
+    else:
+        best = {}
+        located = ra[ra["_gpos"].notna()]
+        for _, grp in located.groupby("_gid"):
+            nm, xm = grp[~grp["_xm"]], grp[grp["_xm"]]
+            if len(nm) and len(xm):
+                b = nm["patient_count"].idxmax()
+                for x in xm.index:
+                    best[x] = b
+        accs = {i: set(text(res.at[i, "accession_list"]).split(";")) for i in res.index}
+        for r in df.index:
+            a = text(df.at[r, "accession"])
+            i = keyidx.get((text(df.at[r, "gene"]), text(df.at[r, "_dedup_key"])))
+            if i is None:
+                out[r] = []
+            elif i in kept:
+                out[r] = [(i, "stage1")] if a in accs[i] else []
+            elif i in best and a in accs[best[i]]:
+                out[r] = [(best[i], "stage2")]
+            else:
+                out[r] = []
+    return out
+
+
+def build_links(link_inputs, audit):
+    ns = replay_dedup(link_inputs["dedup_code"], link_inputs["augment_tsv"], link_inputs["rescued_dedup_tsv"],
+                      link_inputs["work"])
+    df, ra = ns["df"], ns["result_all"]
+    changes = audit.source_changes(str(link_inputs["extract_tsv"]))
+    has_stored = "source_change_id" in df.columns
+    links = defaultdict(dict)
+    stats = {"rows": len(df), "rows_unmapped": 0, "rows_without_source_change": 0}
+    row_mismatch = []
+    for r, targets in row_targets(ns).items():
+        gene, acc = text(df.at[r, "gene"]).upper(), text(df.at[r, "accession"])
+        sid, _ = changes.lookup(gene, acc, text(df.at[r, "allele_num"]), text(df.at[r, "sysname"]),
+                                text(df.at[r, "source_track"]))
+        if has_stored and text(df.at[r, "source_change_id"]) != sid:
+            row_mismatch.append((gene, acc, text(df.at[r, "sysname"]), text(df.at[r, "source_change_id"]), sid))
+        if not targets:
+            stats["rows_unmapped"] += 1
+        if not sid:
+            stats["rows_without_source_change"] += 1
+        for i, path in targets:
+            d = links[(f"{gene}_{acc}", text(ra.at[i, "dedup_key"]))]
+            if sid and (sid not in d or path == "stage1"):
+                d[sid] = path
+    if row_mismatch:
+        shown = "\n  ".join(map(str, row_mismatch[:10]))
+        raise LedgerError(f"rebuilt source_change_id differs from the stored one on {len(row_mismatch)} "
+                          f"augmented rows:\n  {shown}")
+    return dict(links), stats
+
+
+def link_gate(links, pair_keys, resolution_pairs_tsv):
+    if not resolution_pairs_tsv or not Path(resolution_pairs_tsv).exists():
+        return ""
+    rp = read_tsv(resolution_pairs_tsv)
+    stored = {(i, k): {s.strip() for s in v.split(" ; ") if s.strip()}
+              for i, k, v in zip(rp["individual_id"], rp["dedup_key"], rp["source_change_ids"])}
+    bad, exceptions = [], 0
+    for pk in pair_keys:
+        rebuilt = links.get(pk, {})
+        if pk not in stored:
+            bad.append((pk, "pair absent from resolution_pairs", sorted(rebuilt), None))
+            continue
+        if set(rebuilt) == stored[pk]:
+            continue
+        if not stored[pk] and rebuilt and all(p == "stage2" for p in rebuilt.values()):
+            exceptions += 1
+            continue
+        bad.append((pk, "link differs", sorted(rebuilt.items()), sorted(stored[pk])))
+    if bad:
+        shown = "\n  ".join(map(str, bad[:15]))
+        raise LedgerError(f"link gate failed on {len(bad)} pairs (rebuilt vs resolution_pairs):\n  {shown}")
+    return exceptions
+
+
+def build_pairs(var, final, audit, links):
     need = ["_gene", "_accession", "_dedup_key", "_source_track", "VariantOnTranscript/Protein"]
     missing = [c for c in need if c not in final.columns]
     if missing:
         raise LedgerError(f"final table lacks columns {missing}")
-    src_p = defaultdict(list)
-    for iid, txt in zip(individual_ids(var["gene"], var["accession"]), var["source_systematic_name"]):
-        src_p[iid].extend(source_proteins(txt))
+    src_proteins = SourceProteins(var)
     f = final.assign(individual_id=individual_ids(final["_gene"], final["_accession"]))
     f = f.drop_duplicates(["individual_id", "_dedup_key"])
-    labels = [pair_label(p, src_p.get(i, []), audit)
-              for i, p in zip(f["individual_id"], f["VariantOnTranscript/Protein"])]
-    pairs = pd.DataFrame({"individual_id": f["individual_id"].values, "variant_key": f["_dedup_key"].values,
-                          "track": f["_source_track"].values, "label": labels})
+    rows = []
+    for iid, key, track, p in zip(f["individual_id"], f["_dedup_key"], f["_source_track"],
+                                  f["VariantOnTranscript/Protein"]):
+        sids = sorted(links.get((iid, key), {}))
+        label, eq = pair_label(p, sids, src_proteins, audit)
+        rows.append({"individual_id": iid, "variant_key": key, "track": track, "label": label,
+                     "equivalence": eq, "source_change_ids": " ; ".join(sids)})
+    pairs = pd.DataFrame(rows, columns=PAIR_COLS)
     return pairs.sort_values(["individual_id", "variant_key"]).reset_index(drop=True)
 
 
@@ -305,7 +574,7 @@ def excess_metrics(var, pairs):
     return {"individuals_with_excess": len(surplus), "excess_pairs": int(sum(surplus))}
 
 
-def pair_metrics(pairs, bad_p):
+def pair_metrics(pairs, bad_p, link_stats):
     m = {}
     lab = pairs["label"]
     cons = int((lab == "consistent").sum())
@@ -317,10 +586,18 @@ def pair_metrics(pairs, bad_p):
     for label in bad_p:
         m[f"pairs_inconsistent__{label}"] = int((lab == f"inconsistent:{label}").sum())
     m["pairs_uncheckable"] = int(lab.str.startswith("uncheckable:").sum())
+    for reason in UNCHECKABLE:
+        m[f"pairs_uncheckable__{reason}"] = int((lab == f"uncheckable:{reason}").sum())
+    for eq in EQUIVALENCES:
+        m[f"pairs_equivalent__{eq}"] = int((pairs["equivalence"] == eq).sum())
+    linked = int((pairs["source_change_ids"] != "").sum())
+    m["pairs_linked"] = linked
+    m["pairs_unlinked"] = len(pairs) - linked
+    m["pairs_link_gate_stage2_exceptions"] = link_stats["gate_exceptions"]
     return m
 
 
-def compute_metrics(var, meta, final, dedup, pairs, audit):
+def compute_metrics(var, meta, final, dedup, pairs, audit, link_stats):
     good_p, bad_p = audit.good_p, audit.bad_p
     m = {}
     fate = var["fate"]
@@ -352,7 +629,7 @@ def compute_metrics(var, meta, final, dedup, pairs, audit):
     m["wb_individuals_gene_accession"] = int(final["Individual/ID"].nunique())
     m["wb_rows"] = len(final)
     m.update(excess_metrics(var, pairs))
-    m.update(pair_metrics(pairs, bad_p))
+    m.update(pair_metrics(pairs, bad_p, link_stats))
     if len(pairs) != m["final_pairs"]:
         print(f"WARNING: {len(pairs)} distinct (individual, variant) pairs in the final table "
               f"vs final_pairs {m['final_pairs']} from the dedup table")
@@ -370,7 +647,8 @@ def pair_class(label):
 
 
 def diff_pairs(prev, cur):
-    j = prev.merge(cur, on=["individual_id", "variant_key"], how="outer", suffixes=("_prev", "_now"))
+    keep = ["individual_id", "variant_key", "track", "label"]
+    j = prev[keep].merge(cur[keep], on=["individual_id", "variant_key"], how="outer", suffixes=("_prev", "_now"))
     j["label_prev"] = j["label_prev"].fillna("")
     j["label_now"] = j["label_now"].fillna("")
     cp = j["label_prev"].map(pair_class)
@@ -454,15 +732,18 @@ def compare_runs(prev_id, prev_snap, prev_pairs, snap, pairs, audit):
     return pd.concat([unit_changes, pair_changes], ignore_index=True).fillna(""), counts
 
 
-def evaluate(audit_dir, final_tsv, dedup_tsv, audit):
+def evaluate(audit_dir, final_tsv, dedup_tsv, audit, link_inputs):
     var = disambiguate_alleles(read_tsv(Path(audit_dir) / "audit_variants.tsv"))
     meta = read_tsv(Path(audit_dir) / "audit_metadata_flags.tsv")
     final = read_tsv(final_tsv)
     dedup = read_tsv(dedup_tsv)
     snap = build_snapshot(var)
-    pairs = build_pairs(var, final, audit)
-    metrics = compute_metrics(var, meta, final, dedup, pairs, audit)
-    return snap, pairs, metrics
+    links, link_stats = build_links(link_inputs, audit)
+    pair_keys = set(zip(individual_ids(final["_gene"], final["_accession"]), final["_dedup_key"]))
+    link_stats["gate_exceptions"] = link_gate(links, pair_keys, link_inputs.get("resolution_pairs_tsv"))
+    pairs = build_pairs(var, final, audit, links)
+    metrics = compute_metrics(var, meta, final, dedup, pairs, audit, link_stats)
+    return snap, pairs, metrics, link_stats
 
 
 def load_history(path):
@@ -490,14 +771,14 @@ def write_atomic_tsv(df, path):
 
 
 def write_gz_tsv(df, path):
-    text = df.to_csv(sep="\t", index=False)
+    text_out = df.to_csv(sep="\t", index=False)
     if path.exists():
         with gzip.open(path, "rt", encoding="utf-8", newline="") as f:
-            if f.read() == text:
+            if f.read() == text_out:
                 return
     tmp = path.with_suffix(path.suffix + ".tmp")
     with open(tmp, "wb") as raw, gzip.GzipFile(filename="", mode="wb", fileobj=raw, mtime=0) as gz:
-        gz.write(text.encode("utf-8"))
+        gz.write(text_out.encode("utf-8"))
     os.replace(tmp, path)
 
 
@@ -535,6 +816,24 @@ def print_row(row, label):
         print(f"  {k:<48} {row.get(k, '')}")
 
 
+def print_coverage(entries):
+    print("pair linkage coverage")
+    print(f"  {'run_id':<20} {'pairs':>6} {'linked':>7} {'unlinked':>8} {'linked%':>8} {'no_source_p':>11} "
+          f"{'stage2_exc':>10} {'rows_unmapped':>13} {'rows_no_sid':>11}")
+    pct = []
+    for run_id, m, ls in entries:
+        n = m["pairs_linked"] + m["pairs_unlinked"]
+        p = 100 * m["pairs_linked"] / n if n else 0.0
+        pct.append(p)
+        print(f"  {run_id:<20} {n:>6} {m['pairs_linked']:>7} {m['pairs_unlinked']:>8} {p:>7.2f}% "
+              f"{m['pairs_uncheckable__no_source_p']:>11} {str(ls['gate_exceptions']):>10} "
+              f"{ls['rows_unmapped']:>13} {ls['rows_without_source_change']:>11}")
+    med = sorted(pct)[len(pct) // 2]
+    for (run_id, _, _), p in zip(entries, pct):
+        if abs(p - med) > 1.0:
+            print(f"  FLAG {run_id}: linked {p:.2f}% vs median {med:.2f}%")
+
+
 def render_plot(plot_python, history_dir):
     r = subprocess.run([plot_python, str(PLOT_SCRIPT), "--history-dir", str(history_dir)])
     if r.returncode != 0:
@@ -546,7 +845,15 @@ def record_one(args, defaults, repo, audit):
     run_id = args.run_id or f"{datetime.now():%Y%m%d}_{sha[:7]}"
     audit_sha = git(repo, "hash-object", str(AUDIT_SCRIPT))
     print(f"final dedup table: {args.final_dedup_tsv}")
-    snap, pairs, metrics = evaluate(args.audit_dir, args.final_tsv, args.final_dedup_tsv, audit)
+    overrides = extract_overrides(args.extract_tsv, repo)
+    link_inputs = {
+        "dedup_code": DEDUP_SCRIPT.read_text(encoding="utf-8"),
+        "augment_tsv": args.augment_tsv, "rescued_dedup_tsv": args.rescued_dedup_tsv,
+        "resolution_pairs_tsv": args.resolution_pairs_tsv,
+        "extract_tsv": overrides.get(run_id, defaults["extract_tsv"]),
+        "work": Path(tempfile.mkdtemp(prefix="audit_link_")),
+    }
+    snap, pairs, metrics, link_stats = evaluate(args.audit_dir, args.final_tsv, args.final_dedup_tsv, audit, link_inputs)
 
     hist_path = args.history_dir / "audit_history.tsv"
     history = load_history(hist_path)
@@ -579,6 +886,7 @@ def record_one(args, defaults, repo, audit):
     write_atomic_tsv(merge_history(history, [row]), hist_path)
 
     print_row(row, args.label)
+    print_coverage([(run_id, metrics, link_stats)])
     print(f"history : {hist_path}")
     print(f"snapshot: {args.history_dir / 'snapshots' / f'{run_id}.tsv.gz'}")
     render_plot(args.plot_python, args.history_dir)
@@ -641,15 +949,19 @@ def extract_overrides(items, repo):
     return out
 
 
+def is_precision(col):
+    return col.startswith("pairs_") or col == "pair_consistency_pct"
+
+
 def validate(old, new):
-    moved = []
+    moved, precision = [], []
     for col, old_val in old.items():
         if col in NOT_VALIDATED:
             continue
         new_val = str(new.get(col, ""))
         if str(old_val) != new_val:
-            moved.append((col, old_val, new_val))
-    return moved
+            (precision if is_precision(col) else moved).append((col, old_val, new_val))
+    return moved, precision
 
 
 def rescore_all(args, defaults, repo, audit):
@@ -658,6 +970,7 @@ def rescore_all(args, defaults, repo, audit):
     if history.empty:
         raise LedgerError(f"no recorded runs in {hist_path}")
     rel_out = os.path.relpath(defaults["output_root"], repo)
+    rel_dedup = os.path.relpath(DEDUP_SCRIPT, repo)
     overrides = extract_overrides(args.extract_tsv, repo)
     unknown = set(overrides) - set(history["run_id"])
     if unknown:
@@ -675,7 +988,15 @@ def rescore_all(args, defaults, repo, audit):
         inputs = stage_inputs(repo, rel_out, sha, work / "in")
         extract = overrides.get(run_id, defaults["extract_tsv"])
         run_audit(defaults, inputs, extract, work / "audit")
-        snap, pairs, metrics = evaluate(work / "audit", inputs["FINAL_TSV"], inputs["DEDUP_TSV"], audit)
+        link_inputs = {
+            "dedup_code": subprocess.run(["git", "-C", str(repo), "show", f"{sha}:{rel_dedup}"],
+                                         capture_output=True, check=True).stdout.decode("utf-8"),
+            "augment_tsv": inputs["AUGMENT_TSV"], "rescued_dedup_tsv": inputs["RESCUED_DEDUP_TSV"],
+            "resolution_pairs_tsv": inputs["RESOLUTION_PAIRS_TSV"], "extract_tsv": extract,
+            "work": work / "link",
+        }
+        snap, pairs, metrics, link_stats = evaluate(work / "audit", inputs["FINAL_TSV"], inputs["DEDUP_TSV"],
+                                                    audit, link_inputs)
         write_atomic_tsv(pairs, work / "audit" / "audit_pairs.tsv")
 
         prev_id = prev["run_id"] if prev is not None else ""
@@ -689,32 +1010,36 @@ def rescore_all(args, defaults, repo, audit):
         head.update({"rescored_utc": now, "audit_script_sha": audit_sha, "prev_run_id": prev_id})
         head = {k: head[k] for k in HEAD_COLS[1:]}
         row = make_row(run_id, head, metrics, counts)
-        moved = validate(old, row)
+        moved, precision = validate(old, row)
         if moved:
             failures.append((run_id, moved))
         cur = {"run_id": run_id, "row": row, "snap": snap, "pairs": pairs, "changes": changes,
-               "prev_id": prev_id, "metrics": metrics, "extract": extract}
+               "prev_id": prev_id, "metrics": metrics, "extract": extract, "link_stats": link_stats,
+               "precision": precision}
         results.append(cur)
         prev = cur
         print(f"rescored {run_id} on {sha[:7]} (extract {extract.name}, dedup {inputs['DEDUP_TSV'].name}); "
-              f"{len(moved)} pre-existing values moved")
+              f"{len(moved)} non-precision values moved, {len(precision)} precision values moved")
 
     if failures:
         lines = []
         for run_id, moved in failures:
             for col, a, b in moved:
                 lines.append(f"  {run_id}  {col}: recorded {a!r} -> rescored {b!r}")
-        raise LedgerError("rescore changed pre-existing values; nothing was written:\n" + "\n".join(lines)
-                          + f"\nscratch kept at {scratch}")
+        raise LedgerError("rescore changed pre-existing non-precision values; nothing was written:\n"
+                          + "\n".join(lines) + f"\nscratch kept at {scratch}")
 
     for r in results:
         write_run(args.history_dir, r["run_id"], r["prev_id"], r["snap"], r["pairs"], r["changes"])
     write_atomic_tsv(merge_history(history, [r["row"] for r in results]), hist_path)
-    print(f"validation: every pre-existing column reproduced exactly for {len(results)} runs")
+    print(f"validation: every pre-existing non-precision column reproduced exactly for {len(results)} runs")
+    for r in results:
+        print(f"precision moves {r['run_id']}:")
+        for col, a, b in r["precision"]:
+            print(f"  {col:<48} {a} -> {b}")
     new_cols = [c for c in results[-1]["row"] if c not in history.columns]
     print(f"new columns: {', '.join(new_cols) if new_cols else 'none'}")
-    for r in results:
-        print_row(r["row"], r["row"]["label"])
+    print_coverage([(r["run_id"], r["metrics"], r["link_stats"]) for r in results])
     print(f"history : {hist_path}")
     print(f"scratch : {scratch}")
     render_plot(args.plot_python, args.history_dir)
