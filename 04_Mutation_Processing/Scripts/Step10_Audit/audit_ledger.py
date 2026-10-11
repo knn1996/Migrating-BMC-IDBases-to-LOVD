@@ -68,6 +68,14 @@ in lovd_flat_with_patients_final.tsv with individual_id = GENE_accession:
                   (every source change of the pair is in SOURCE_ERRORS), :no_source_p or
                   :not_comparable otherwise. pair_consistency_pct = consistent /
                   (consistent + inconsistent).
+    coherence     a pair is coherent when the protein accession of its final record's p. is the
+                  product of the transcript of its c. (the field the dedup key came from),
+                  incoherent when it is another protein, unknown when the record has no
+                  protein accession or the transcript's product is not known offline. Products
+                  come from the GenBank cache (/protein_id) and, for MANE Select transcripts
+                  (MANE v1.5 GFF), from cached Mutalyzer responses (the protein of the
+                  normalized selector); a transcript with two products counts as unknown.
+                  pairs_coherence_pct = coherent / (coherent + incoherent).
     equivalences  E1 immediate stop: source XnfsX1, XnfsX (no distance) or XnfsX<n> with
                   n = start (absolute stop numbering) equals final p.(XnTer).
                   E2 insertion as dup: an ins whose right flank is the dup start, with the
@@ -93,6 +101,7 @@ import contextlib
 import gzip
 import importlib.util
 import io
+import json
 import os
 import re
 import subprocess
@@ -112,7 +121,7 @@ SOURCE_CHANGE_MODULE = SCRIPTS / "Step7_Merging" / "source_change.py"
 PLOT_SCRIPT = SCRIPTS / "Utilities" / "plot_audit_history.py"
 KEY = ["gene", "accession", "allele"]
 SNAP_COLS = KEY + ["fate", "fate_detail", "protein_check"]
-PAIR_COLS = ["individual_id", "variant_key", "track", "label", "equivalence", "source_change_ids"]
+PAIR_COLS = ["individual_id", "variant_key", "track", "label", "equivalence", "source_change_ids", "coherence"]
 META_EXCLUDED = {"SUBHEADERS_STRIPPED", "EXTRA_REFS_NOT_CARRIED"}
 HEAD_COLS = ["run_id", "label", "recorded_utc", "rescored_utc", "pipeline_commit", "outputs_dirty",
              "audit_script_sha", "prev_run_id"]
@@ -147,11 +156,59 @@ RES = r"(?:[A-Z][a-z]{2}|[A-Z*])"
 RE_SRC_FS = re.compile(rf"^p\.\(?({RES})(\d+){RES}?fs(?:X|\*|Ter)?(\d*)\)?$")
 RE_FIN_STOP = re.compile(r"^p\.\(?([A-Z][a-z]{2})(\d+)(?:Ter|\*|X)\)?$")
 RE_INS = re.compile(r"^p\.\(?([A-Z][a-z]{2})(\d+)_([A-Z][a-z]{2})(\d+)ins((?:[A-Z][a-z]{2})+)\)?$")
+RE_TX = re.compile(r"\(((?:NM|XM|NR|XR)_\d+\.\d+)\)|^((?:NM|XM|NR|XR)_\d+\.\d+):")
+RE_NP = re.compile(r"\((NP_\d+\.\d+)\)|^(NP_\d+\.\d+):")
+MUTALYZER_CACHES = ("track_a_c", "track_b_MANE", "track_c_IDRefseq", "rescue_MANE")
+MANE_GFF = Path("01_Reference_Genomes") / "GRCh38_MANE" / "MANE.GRCh38.v1.5.ensembl_genomic.gff.gz"
 RE_DUP = re.compile(r"^p\.\(?([A-Z][a-z]{2})(\d+)(?:_([A-Z][a-z]{2})(\d+))?dup\)?$")
 
 
 class LedgerError(Exception):
     pass
+
+
+def first_group(rx, s):
+    m = rx.search(s or "")
+    return next((g for g in m.groups() if g), "") if m else ""
+
+
+class ProteinMap:
+    def __init__(self, genbank_dir, mutalyzer_dir, mane_gff):
+        products = defaultdict(set)
+        for path in sorted(Path(genbank_dir).glob("*.gb")):
+            m = re.search(r'/protein_id="([^"]+)"', path.read_text(encoding="utf-8"))
+            if m:
+                products[path.stem].add(m.group(1))
+        mane = set()
+        if Path(mane_gff).exists():
+            with gzip.open(mane_gff, "rt", encoding="utf-8") as f:
+                for line in f:
+                    if "\ttranscript\t" in line and "tag=MANE_Select" in line:
+                        nm = re.search(r"RefSeq:(NM_\d+\.\d+)", line)
+                        if nm:
+                            mane.add(nm.group(1))
+        for name in MUTALYZER_CACHES:
+            path = Path(mutalyzer_dir) / f"{name}.jsonl"
+            if not path.exists():
+                continue
+            with open(path, encoding="utf-8-sig") as f:
+                for line in f:
+                    try:
+                        obj = json.loads(line)
+                    except ValueError:
+                        continue
+                    v = obj.get("value", {})
+                    selector = first_group(RE_TX, obj["key"] if name == "track_a_c" else v.get("normalized", ""))
+                    protein = first_group(RE_NP, v.get("p_hgvs", ""))
+                    if selector in mane and protein:
+                        products[selector].add(protein)
+        self.product = {t: next(iter(ps)) for t, ps in products.items() if len(ps) == 1}
+
+    def coherence(self, c_field, p_hgvs):
+        tx, np_acc = first_group(RE_TX, c_field), first_group(RE_NP, p_hgvs)
+        if not tx or not np_acc or tx not in self.product:
+            return "unknown"
+        return "coherent" if self.product[tx] == np_acc else "incoherent"
 
 
 class Audit:
@@ -557,7 +614,15 @@ def link_gate(links, pair_keys, resolution_pairs_tsv):
     return exceptions
 
 
-def build_pairs(var, final, audit, links):
+def record_coherence(dedup, protein_map):
+    out = {}
+    for _, r in dedup.iterrows():
+        field = r.get("dedup_key_source", "") or "c_hgvs"
+        out[(r["gene"].strip().upper(), r["dedup_key"])] = protein_map.coherence(r.get(field, ""), r.get("p_hgvs", ""))
+    return out
+
+
+def build_pairs(var, final, audit, links, coherence):
     need = ["_gene", "_accession", "_dedup_key", "_source_track", "VariantOnTranscript/Protein"]
     missing = [c for c in need if c not in final.columns]
     if missing:
@@ -571,7 +636,8 @@ def build_pairs(var, final, audit, links):
         sids = sorted(links.get((iid, key), {}))
         label, eq = pair_label(p, sids, src_proteins, audit)
         rows.append({"individual_id": iid, "variant_key": key, "track": track, "label": label,
-                     "equivalence": eq, "source_change_ids": " ; ".join(sids)})
+                     "equivalence": eq, "source_change_ids": " ; ".join(sids),
+                     "coherence": coherence.get((iid.split("_", 1)[0], key), "unknown")})
     pairs = pd.DataFrame(rows, columns=PAIR_COLS)
     return pairs.sort_values(["individual_id", "variant_key"]).reset_index(drop=True)
 
@@ -605,6 +671,12 @@ def pair_metrics(pairs, bad_p, link_stats):
     m["pairs_linked"] = linked
     m["pairs_unlinked"] = len(pairs) - linked
     m["pairs_link_gate_stage2_exceptions"] = link_stats["gate_exceptions"]
+    coh = pairs["coherence"]
+    m["pairs_coherent"] = int((coh == "coherent").sum())
+    m["pairs_incoherent"] = int((coh == "incoherent").sum())
+    m["pairs_coherence_unknown"] = int((coh == "unknown").sum())
+    known = m["pairs_coherent"] + m["pairs_incoherent"]
+    m["pairs_coherence_pct"] = round(100 * m["pairs_coherent"] / known, 2) if known else 0.0
     return m
 
 
@@ -752,7 +824,7 @@ def evaluate(audit_dir, final_tsv, dedup_tsv, audit, link_inputs):
     links, link_stats = build_links(link_inputs, audit)
     pair_keys = set(zip(individual_ids(final["_gene"], final["_accession"]), final["_dedup_key"]))
     link_stats["gate_exceptions"] = link_gate(links, pair_keys, link_inputs.get("resolution_pairs_tsv"))
-    pairs = build_pairs(var, final, audit, links)
+    pairs = build_pairs(var, final, audit, links, record_coherence(dedup, audit.protein_map))
     metrics = compute_metrics(var, meta, final, dedup, pairs, audit, link_stats)
     return snap, pairs, metrics, link_stats
 
@@ -1061,6 +1133,9 @@ def main():
     args = parse_args(defaults)
     repo = Path(git(SCRIPTS, "rev-parse", "--show-toplevel"))
     audit = Audit()
+    out = defaults["output_root"]
+    audit.protein_map = ProteinMap(out / "cache" / "genbank", out / "cache" / "mutalyzer",
+                                   defaults["thesis_dir"] / MANE_GFF)
     if args.rescore_all:
         rescore_all(args, defaults, repo, audit)
     else:
