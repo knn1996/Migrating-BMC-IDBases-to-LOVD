@@ -137,13 +137,14 @@ rule augment_merged:
     input:
         resolved=os.path.join(S8, "resolved_unresolved.tsv"),
         merged=os.path.join(S7, "merged_variants.tsv"),
+        mut=os.path.join(S1A, "all_mutations.tsv"),
     output:
         tsv=os.path.join(S8, "augmented_merged_variants.tsv"),
         stats=os.path.join(S8, "augment_stats.txt"),
     conda:
         "envs/python.yaml"
     shell:
-        f'MERGED_TSV="{{input.merged}}" RESOLVED_TSV="{{input.resolved}}" '
+        f'MERGED_TSV="{{input.merged}}" RESOLVED_TSV="{{input.resolved}}" ALL_MUTATIONS_TSV="{{input.mut}}" '
         f'OUT_TSV="{{output.tsv}}" STATS_TXT="{{output.stats}}" '
         f'python "{script("Step8_Rescue/merge_with_rescued.py")}"'
 
@@ -163,9 +164,30 @@ rule dedup_rescued:
         f'python "{script("Step7_Merging/dedup_merged_variants.py")}"'
 
 
+rule resolve_tracks:
+    input:
+        dedup=os.path.join(S8, "dedup_merged_variants.rescued.tsv"),
+        augment=os.path.join(S8, "augmented_merged_variants.tsv"),
+        audit=os.path.join(SCRIPTS, "Step10_Audit", "audit_against_source.py"),
+        pub=ancient(PUB_DIR),
+    output:
+        dedup=os.path.join(S8, "dedup_merged_variants.resolved.tsv"),
+        pairs=os.path.join(S8, "resolution_pairs.tsv"),
+        log=os.path.join(S8, "resolution_log.tsv"),
+        stats=os.path.join(S8, "resolution_stats.txt"),
+    conda:
+        "envs/python.yaml"
+    shell:
+        f'DEDUP_TSV="{{input.dedup}}" AUGMENT_TSV="{{input.augment}}" '
+        f'PUB_DIR="{{input.pub}}" AUDIT_SCRIPT="{{input.audit}}" '
+        f'OUT_DEDUP="{{output.dedup}}" OUT_PAIRS="{{output.pairs}}" '
+        f'OUT_LOG="{{output.log}}" OUT_STATS="{{output.stats}}" '
+        f'python "{script("Step8_Rescue/resolve_tracks.py")}"'
+
+
 rule build_final_lovd:
     input:
-        rescued_dedup=os.path.join(S8, "dedup_merged_variants.rescued.tsv"),
+        rescued_dedup=os.path.join(S8, "dedup_merged_variants.resolved.tsv"),
         primary_dedup=os.path.join(S7, "dedup_merged_variants.tsv"),
         merged=os.path.join(S7, "merged_variants.tsv"),
         disp=os.path.join(S8, "unresolved_disposition.tsv"),
@@ -189,7 +211,7 @@ rule build_final_lovd:
 
 rule lovd_flat_final_cols:
     input:
-        os.path.join(S8, "dedup_merged_variants.rescued.tsv"),
+        os.path.join(S8, "dedup_merged_variants.resolved.tsv"),
     output:
         os.path.join(S8, "lovd_flat_final_cols.tsv"),
     conda:
@@ -215,6 +237,7 @@ rule annotate_vario:
 rule patient_metadata_final:
     input:
         flat=os.path.join(S8, "lovd_flat_final_cols_vario.tsv"),
+        pairs=os.path.join(S8, "resolution_pairs.tsv"),
     output:
         os.path.join(S8, "lovd_flat_with_patients_final.tsv"),
     params:
@@ -223,7 +246,7 @@ rule patient_metadata_final:
     conda:
         "envs/python.yaml"
     shell:
-        f'IN_PATH="{{input.flat}}" IDBASE_DIR="{{params.idbase}}" '
+        f'IN_PATH="{{input.flat}}" IDBASE_DIR="{{params.idbase}}" PAIR_ANNOT_TSV="{{input.pairs}}" '
         f'OUT_PATH="{{output}}" LOG_PATH="{{params.logs}}/patient_metadata_missing_final.tsv" '
         f'python "{script("Step7_Merging/extract_patient_metadata.py")}"'
 

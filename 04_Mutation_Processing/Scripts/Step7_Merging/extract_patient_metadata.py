@@ -3,11 +3,14 @@ import re
 import pandas as pd
 from pathlib import Path
 
-IDBASE_DIR = os.environ["IDBASE_DIR"]
-IN_PATH    = os.environ["IN_PATH"]
-OUT_PATH   = os.environ["OUT_PATH"]
-LOG_PATH   = os.environ["LOG_PATH"]
-LOG_DIR    = os.path.dirname(LOG_PATH)
+IDBASE_DIR     = os.environ["IDBASE_DIR"]
+IN_PATH        = os.environ["IN_PATH"]
+OUT_PATH       = os.environ["OUT_PATH"]
+LOG_PATH       = os.environ["LOG_PATH"]
+PAIR_ANNOT_TSV = os.environ.get("PAIR_ANNOT_TSV", "")
+LOG_DIR        = os.path.dirname(LOG_PATH)
+
+PAIR_ANNOT_COLS = ["confidence_tier", "alt_descriptions"]
 
 RE_HTML       = re.compile(r"<[^>]+>")
 RE_FIELD      = re.compile(r"^([A-Z][A-Za-z][A-Za-z /]*?)(\s{2,})(.+?)\s*$", re.MULTILINE)
@@ -120,6 +123,24 @@ def build_metadata_cache():
     return cache
 
 
+def add_pair_annotations(exploded):
+    annot = pd.read_csv(PAIR_ANNOT_TSV, sep="\t", dtype=str).fillna("")
+    annot = annot.assign(_gene_key=annot["gene"].str.strip().str.upper(),
+                         _accession=annot["accession"].str.strip(),
+                         _dedup_key=annot["dedup_key"])
+    annot = annot.drop_duplicates(["_gene_key", "_accession", "_dedup_key"])
+    exploded = exploded.assign(_gene_key=exploded["_gene"].str.strip().str.upper())
+    merged = exploded.merge(annot[["_gene_key", "_accession", "_dedup_key"] + PAIR_ANNOT_COLS],
+                            on=["_gene_key", "_accession", "_dedup_key"], how="left")
+    merged = merged.drop(columns="_gene_key")
+    for col in PAIR_ANNOT_COLS:
+        merged[col] = merged[col].fillna("")
+    missing = int((merged["confidence_tier"] == "").sum())
+    print(f"Pair annotations joined from {PAIR_ANNOT_TSV}; rows without a tier: {missing}")
+    print(merged["confidence_tier"].value_counts().to_string())
+    return merged
+
+
 def main():
     os.makedirs(LOG_DIR, exist_ok=True)
     df = pd.read_csv(IN_PATH, sep="\t", dtype=str).fillna("")
@@ -157,11 +178,15 @@ def main():
 
     exploded["Individual/ID"] = exploded["_gene"] + "_" + exploded["_accession"]
 
+    if PAIR_ANNOT_TSV:
+        exploded = add_pair_annotations(exploded)
+
     leading = ["Individual/ID", "_gene", "_accession", "_dedup_key",
                "_source_track", "_patient_count", "_status", "_mane_select"]
+    trailing = [c for c in PAIR_ANNOT_COLS if c in exploded.columns]
     rest    = [c for c in exploded.columns
-               if c not in leading and c not in ("_accession_list",)]
-    exploded = exploded[leading + rest]
+               if c not in leading and c not in trailing and c not in ("_accession_list",)]
+    exploded = exploded[leading + rest + trailing]
 
     exploded.to_csv(OUT_PATH, sep="\t", index=False)
     print(f"\nWrote {len(exploded)} rows -> {OUT_PATH}")

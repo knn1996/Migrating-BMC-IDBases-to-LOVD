@@ -28,9 +28,12 @@ refused: re-score the history with the current audit script first.
 
 Final counts follow Step8_Rescue/build_final_lovd.py (its definitions are
 mirrored here because that module needs its pipeline environment to import):
-final_unique_variants = rows of dedup_merged_variants.rescued.tsv, final_pairs =
-sum of patient_count, final_individuals = distinct individual_id (GENE_accession)
-over accession_list. The wb_* columns are the lovd_review workbook definitions on
+final_unique_variants = rows of the final dedup table, final_pairs = sum of
+patient_count, final_individuals = distinct individual_id (GENE_accession) over
+accession_list. The final dedup table is dedup_merged_variants.resolved.tsv
+(after resolve_tracks) where the pipeline state has it, and
+dedup_merged_variants.rescued.tsv for states before track resolution. The wb_*
+columns are the lovd_review workbook definitions on
 lovd_flat_with_patients_final.tsv: distinct (gene, dedup_key), distinct
 Individual/ID (gene_accession), and row count.
 
@@ -93,12 +96,14 @@ HEAD_COLS = ["run_id", "label", "recorded_utc", "rescored_utc", "pipeline_commit
              "audit_script_sha", "prev_run_id"]
 KEPT_ON_RESCORE = ["label", "recorded_utc", "pipeline_commit", "outputs_dirty"]
 NOT_VALIDATED = {"rescored_utc"}
+FINAL_DEDUP_CANDIDATES = ("Step8_Rescue/dedup_merged_variants.resolved.tsv",
+                          "Step8_Rescue/dedup_merged_variants.rescued.tsv")
 RUN_INPUTS = {
-    "FINAL_TSV": "Step8_Rescue/lovd_flat_with_patients_final.tsv",
-    "AUGMENT_TSV": "Step8_Rescue/augmented_merged_variants.tsv",
-    "UNRES_TSV": "Step8_Rescue/unresolved_disposition.tsv",
-    "RESCUED_TSV": "Step8_Rescue/resolved_unresolved.tsv",
-    "DEDUP_TSV": "Step8_Rescue/dedup_merged_variants.rescued.tsv",
+    "FINAL_TSV": ("Step8_Rescue/lovd_flat_with_patients_final.tsv",),
+    "AUGMENT_TSV": ("Step8_Rescue/augmented_merged_variants.tsv",),
+    "UNRES_TSV": ("Step8_Rescue/unresolved_disposition.tsv",),
+    "RESCUED_TSV": ("Step8_Rescue/resolved_unresolved.tsv",),
+    "DEDUP_TSV": FINAL_DEDUP_CANDIDATES,
 }
 REQUIRED_INPUTS = {"FINAL_TSV", "AUGMENT_TSV", "UNRES_TSV", "DEDUP_TSV"}
 RE_SEG = re.compile(r"^[\[\s]*(?:([gcrp])\s*\.|(?=IVS))", re.I)
@@ -127,6 +132,13 @@ def git(repo, *args):
     return r.stdout.strip()
 
 
+def final_dedup_path(output_root):
+    for rel in FINAL_DEDUP_CANDIDATES:
+        if (output_root / rel).exists():
+            return output_root / rel
+    return output_root / FINAL_DEDUP_CANDIDATES[-1]
+
+
 def config_paths(config_path):
     with open(config_path, encoding="utf-8") as f:
         cfg = yaml.safe_load(f)
@@ -135,7 +147,7 @@ def config_paths(config_path):
         "audit_dir": out / "Step10_Audit",
         "history_dir": out / "Step10_Audit" / "history",
         "final_tsv": out / "Step8_Rescue" / "lovd_flat_with_patients_final.tsv",
-        "final_dedup_tsv": out / "Step8_Rescue" / "dedup_merged_variants.rescued.tsv",
+        "final_dedup_tsv": final_dedup_path(out),
         "extract_tsv": out / "Step1a_Extraction" / "all_mutations.tsv",
         "thesis_dir": Path(cfg["thesis_dir"]),
         "output_root": out,
@@ -533,6 +545,7 @@ def record_one(args, defaults, repo, audit):
     sha, dirty = resolve_commit(repo, args.pipeline_commit, defaults["output_root"], args.history_dir, args.allow_dirty)
     run_id = args.run_id or f"{datetime.now():%Y%m%d}_{sha[:7]}"
     audit_sha = git(repo, "hash-object", str(AUDIT_SCRIPT))
+    print(f"final dedup table: {args.final_dedup_tsv}")
     snap, pairs, metrics = evaluate(args.audit_dir, args.final_tsv, args.final_dedup_tsv, audit)
 
     hist_path = args.history_dir / "audit_history.tsv"
@@ -574,15 +587,20 @@ def record_one(args, defaults, repo, audit):
 def stage_inputs(repo, rel_out, sha, dest):
     dest.mkdir(parents=True, exist_ok=True)
     paths = {}
-    for var, rel in RUN_INPUTS.items():
-        target = dest / Path(rel).name
-        r = subprocess.run(["git", "-C", str(repo), "show", f"{sha}:{rel_out}/{rel}"], capture_output=True)
-        if r.returncode != 0:
+    for var, candidates in RUN_INPUTS.items():
+        found = None
+        for rel in candidates:
+            r = subprocess.run(["git", "-C", str(repo), "show", f"{sha}:{rel_out}/{rel}"], capture_output=True)
+            if r.returncode == 0:
+                found = (rel, r.stdout)
+                break
+        if found is None:
             if var in REQUIRED_INPUTS:
-                raise LedgerError(f"{rel} not found at {sha[:7]}")
-            target = dest / f"absent_{Path(rel).name}"
-        else:
-            target.write_bytes(r.stdout)
+                raise LedgerError(f"none of {', '.join(candidates)} found at {sha[:7]}")
+            paths[var] = dest / f"absent_{Path(candidates[0]).name}"
+            continue
+        target = dest / Path(found[0]).name
+        target.write_bytes(found[1])
         paths[var] = target
     return paths
 
@@ -678,7 +696,8 @@ def rescore_all(args, defaults, repo, audit):
                "prev_id": prev_id, "metrics": metrics, "extract": extract}
         results.append(cur)
         prev = cur
-        print(f"rescored {run_id} on {sha[:7]} (extract {extract.name}); {len(moved)} pre-existing values moved")
+        print(f"rescored {run_id} on {sha[:7]} (extract {extract.name}, dedup {inputs['DEDUP_TSV'].name}); "
+              f"{len(moved)} pre-existing values moved")
 
     if failures:
         lines = []
@@ -693,7 +712,7 @@ def rescore_all(args, defaults, repo, audit):
     write_atomic_tsv(merge_history(history, [r["row"] for r in results]), hist_path)
     print(f"validation: every pre-existing column reproduced exactly for {len(results)} runs")
     new_cols = [c for c in results[-1]["row"] if c not in history.columns]
-    print(f"new columns: {', '.join(new_cols)}")
+    print(f"new columns: {', '.join(new_cols) if new_cols else 'none'}")
     for r in results:
         print_row(r["row"], r["row"]["label"])
     print(f"history : {hist_path}")
