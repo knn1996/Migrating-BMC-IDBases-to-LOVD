@@ -450,6 +450,8 @@ ITGB2	A0125	2	g.26924G>C, c.G>C, r.g>c	g.26924G>C	c.G>C		NOT_REGISTERED	allele_a
 ITGB2	A0131	2	g.21571G>A, c.G>A, r.g>a	g.21571G>A	c.G>A		NOT_REGISTERED	allele_absent_accession_present						2	all	yes
 ITGB2	A0111	2	g.32393A>G, c.A>G, r.a>g	g.32393A>G	c.A>G		NOT_REGISTERED	allele_absent_accession_present						2	all	yes
 ITGB2	A0030	2	g.[IVS6-14C>A + 32493C>T], c. [813_814ins + 1756C>T], p. [p.P247_E248insPSSQ + Arg586Trp]	g.[IVS6-14C>A + 32493C>T]	c. [813_814ins + 1756C>T]	p. [p.P247_E248insPSSQ + Arg586Trp]	NOT_REGISTERED	allele_absent_accession_present						2	none	yes
+ITGB2	A0106	1+2	g.26893_26895delins, c.1057_1059delins, r.1057_1059delins, p.Val353delinsSerSerHisX	g.26893_26895delins	c.1057_1059delins	p.Val353delinsSerSerHisX	NOT_REGISTERED	source_incomplete_notation						1	all	no
+ITGB2	A0107	1+2	g.26893_26895delins, c.1057_1059delins, r.1057_1059delins, p.Val353delinsSerSerHisX	g.26893_26895delins	c.1057_1059delins	p.Val353delinsSerSerHisX	NOT_REGISTERED	source_incomplete_notation						1	all	no
 ITGB2	A0134	1+2	g.30082-149_33197+839delinsAAAA, c..1413-149_2080+839delinsAAA, r.1413-149_2080+839delinsaaa p.Cys471fsX43	g.30082-149_33197+839delinsAAAA	c..1413-149_2080+839delinsAAA		NOT_REGISTERED	accession_absent_from_final						1	all	no
 ITGB2	A0137	1+2	g.2146G>C, c.G>C, r.g>c	g.2146G>C	c.G>C		NOT_REGISTERED	accession_absent_from_final						1	all	no
 ITGB2	A0087	1	g.11508C>A, c.C>A, r.c>a	g.11508C>A	c.C>A		NOT_REGISTERED	accession_absent_from_final						1	all	no
