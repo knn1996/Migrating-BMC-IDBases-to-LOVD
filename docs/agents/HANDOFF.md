@@ -1,4 +1,4 @@
-# Handoff — IDbases → LOVD pipeline (source of truth; updated 2026-10-12 01:10)
+# Handoff — IDbases → LOVD pipeline (source of truth; updated 2026-10-12, after Run 7)
 
 This file is the single source of truth. The planner (`thesis-plan`) updates it after each recorded run. The older copy in the claude.ai project (claude/handoff_2026-10-11.md) is frozen and may be stale.
 
@@ -10,14 +10,14 @@ Submission format: Mauno is contacting the current LOVD director; for a database
 Sessions: executor `thesis-exec` (Claude Code, repo root, Remote Control on), planner `thesis-plan` (Claude Code, repo root, see docs/agents/PLANNER.md). Shared rules in CLAUDE.md.
 
 Shell setup for the user: `tmux new -A -s thesis`, then `thesis` (bash function: cd to Scripts + conda activate snakemake).
-Opening routine: (1) tmux session `thesis` (`tmux new -A -s thesis`) holds the Claude sessions: one window for the executor, Claude Code session named `thesis-exec`, Remote Control on; one window for the planner, Claude Code session named `thesis-plan` (`/rename thesis-plan` if needed), told "Read docs/agents/PLANNER.md and follow its start-of-session steps"; (2) tmux session `pipeline` (`tmux new -A -s pipeline`, then `thesis`) for Snakemake runs. Model per task: the planner tags each message [Sonnet OK] or [Opus]; switch the executor with /model.
+Opening routine: (1) tmux session `thesis` (`tmux new -A -s thesis`) holds the Claude sessions: one window for the executor, Claude Code session named `thesis-exec`, Remote Control on; one window for the planner, Claude Code session named `thesis-plan` (`/rename thesis-plan` if needed), told "Read docs/agents/PLANNER.md and follow its start-of-session steps"; (2) tmux session `pipeline` (`tmux new -A -s pipeline`, then `thesis`) for Snakemake runs. Both sessions run Opus for everything (no per-task model switching).
 
 Pipeline (Snakemake 9.27, env `snakemake`, run from 04_Mutation_Processing/Scripts):
 - `Snakefile`: Step1a extraction → … → Step7 merge/dedup
 - `rescue.smk`: Step8 rescue, resolve_tracks, build_final_lovd, VariO; Step9 NMD (fetches missing GenBank transcripts from NCBI); Step10 audit
 - Always `--cores 1`. Force code changes with `-R <rule>`. Commit primary outputs before the rescue run (build_final_lovd refuses otherwise).
 - audit_pairs.tsv is produced by the ledger (throwaway ledger run before committing rescue outputs).
-- Forecast tools don't cover NMD GenBank fetches (backlog).
+- Forecast tools don't cover NMD GenBank fetches (backlog). vv_client.py pings VariantValidator at startup, so every rescue run needs network even with 0 queries.
 - matplotlib missing in the snakemake env → audit_trend.png stale: `conda install -n snakemake -c conda-forge matplotlib` (network; user runs).
 
 ## Audit ledger
@@ -37,7 +37,8 @@ Pipeline (Snakemake 9.27, env `snakemake`, run from 04_Mutation_Processing/Scrip
 | 4 | IVS position fix | 89.98% | 93.11% | 89.93% | 731 | 7,169 | 73.17% |
 | 5 | R2 track resolution | 89.98% | 96.20% | 96.41% | 23 | 6,456 | 73.69% |
 | 6 | dedup transcript split + stage-2 links + accession fix | 89.98% | 96.20% | 96.65% | 8 | 6,441 | 73.69% |
-Coherence ruler: 3fc3b8a (code), 4c7c6b1 (history). Run 6: dcde390, 9e0e2b7, f6de49d, d82a5c5, 7543cbb (rescue), aa6c043 (history). Nothing pushed.
+| 7 | Track B c./p. coherence | 89.98% | 96.20% | 96.65% | 8 | 6,441 | 100.00% |
+Coherence ruler: 3fc3b8a (code), 4c7c6b1 (history). Run 6: dcde390, 9e0e2b7, f6de49d, d82a5c5, 7543cbb (rescue), aa6c043 (history). Run 7: 0c255fe (code), 1e12fd6 (primary), d6b09bb (rescue), 3b4cc34 (history, run_id 20261012_d6b09bb). Nothing pushed.
 
 ## Fixed so far
 1. Extraction: compound-het alleles, glued records, brackets (Run 1)
@@ -48,16 +49,16 @@ Coherence ruler: 3fc3b8a (code), 4c7c6b1 (history). Run 6: dcde390, 9e0e2b7, f6d
 6. Track A allele labels + source_change_id (Run 5 prep)
 7. Track priority never fired → R2 track resolution with alt_descriptions and confidence_tier A/B/Review (Run 5)
 8. Transcript-blind stage-1 dedup, resolve_tracks follows stage-2 merges, trailing ";" in accessions (Run 6)
+9. Track B c. taken from the normalized MANE transcript (same as p.); old c. kept as alt_c_hgvs → alt_descriptions (Run 7)
 Measurement: count definitions, precision metric, own-source-change ruler, c./p. coherence axis, --rescore-all.
 
-## Run 7 — CURRENT (Track B c./p. coherence)
-- Cause: run_mutalyzer_NM.py call_normalize took p. from the normalized (MANE) transcript but c. from pick_mane(equivalent_descriptions["c"]), which falls back to the first entry (another transcript).
-- Code edit DONE, UNCOMMITTED in the working tree: run_mutalyzer_NM.py emits c. = cached normalized when c_hgvs is on another transcript; old c. → new alt_c_hgvs column (own p. from the Track A c.-pass cache where available); passed through merge_tracks.py, merge_with_rescued.py, prepended into alt_descriptions by resolve_tracks.py; Snakefile passes ALT_P_CACHE. Cache reinterpreted, never rewritten.
-- Offline simulation (NM tracks → audit; NMD not simulated): in_final 6,316, 0 regressions, excess 8, pair consistency 96.65%, inconsistent 183; coherence 73.69% → 100% of known (5,703 coherent, 0 incoherent, 738 unknown); Track B on exact current MANE 64/1,322 → 1,829/1,829; all final records on exact current MANE 1,206 → 2,464 of 2,663. 676 pairs renamed (c. string changed); stage-2 identical_change merges 449 → 4; skip_different_change_same_unit 23 → 74; R2 conflicts 515 unchanged, 198 gone, 199 new.
-- Queries: 0 Mutalyzer, 0 VariantValidator; 59 NCBI GenBank fetches in the NMD step (new MANE transcripts, e.g. NM_000057.4, NM_001625.4, NM_003664.5).
-- DECISION: user chose option 1 — the real rescue run fetches the 59 GenBank records (network only in the user's own run, then cached).
-- Code committed: 0c255fe (5 files, 29+/6-; translation_test.py stays untracked). Dry run 8 jobs; forecast 0 Mutalyzer / 0 VV. Rescue run also needs network for vv_client.py's startup VariantValidator ping (no queries).
-- Remaining steps: user runs `snakemake -s Snakefile --use-conda --cores 1 -R mutalyzer_track_NM` → executor commits primary outputs → user runs rescue.smk (with the fetches) → executor commits rescue outputs and records Run 7 ("Track B c./p. coherence"). Expect: in_final 6,316, 0 regressions, excess 8, consistency 96.65%, coherence ~100% of known, real outputs = simulation except NMD.
+## Run 7 — DONE (Track B c./p. coherence)
+- Cause: run_mutalyzer_NM.py took p. from the normalized MANE transcript but c. from pick_mane's fallback (another transcript).
+- Result: coherence 73.69% → 100% of known (coherent 3,926 → 5,703, incoherent 1,402 → 0, unknown 1,113 → 738). in_final, protein_good, excess, consistency, pairs unchanged. Gains 0, regressions 0, GOOD↔BAD 0.
+- Pair transitions: 9 removed + 9 inconsistent = the same 9 pairs re-keyed to MANE c. strings, DIFFERENT before and after (C2_C0002 ×2, C2_C0003 ×2, LYST_C0027, LYST_C0028, RFX5_R0005/R0007/R0008). They belong to Run 8 (legacy numbering).
+- Track B on exact MANE 1,829/1,829; all final records 2,464/2,663. Dedup identical_change 449 → 4; rescue skip_different_change_same_unit 23 → 74 (primary 5 → 56).
+- NMD fetched 59 GenBank records (146 → 205 files). Real outputs = offline replay byte for byte.
+- Note: lovd_review_final.xlsx needs openpyxl (missing in the base env; only affects offline replays).
 
 ## Next after Run 7
 1. Run 8 — Legacy c. numbering remap (~70 pairs; RAG1 +112, AICDA +76, CFH +73, TCIRG1 +60, WAS 34–36, LYST 190, RFXAP 116) + ADA over-remap. Needs Utilities/translation_test.py (draft, uncommitted): forecast missing transcripts first (fetch = network step), per-gene shift verified when ≥2 independent changes reconcile (C1QB −2 codons, RFX5 −40 codons are isoform numbering), include small frameshifts/in-frame indels, one shared remap function for c. tracks and rescue. ~25 queries + transcripts. Also yields source_error flags.
