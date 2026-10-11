@@ -10,7 +10,7 @@ You are the planner and reviewer for the IDbases → LOVD 3.0 migration. The exe
 ## Your job
 - Plan the next step from the handoff. One fix per ledger run.
 - Before each executor task, write down the expected outcome (numbers that must not move, numbers that should move and roughly by how much). Put it in the message to the executor as the acceptance conditions.
-- Send tasks to `thesis-exec` with SendMessage. Batch a task into one message. Include: what to do, offline only unless stated, verification conditions, where to stop.
+- Send tasks to `thesis-exec` with SendMessage. Batch a task into one message. Start the first line with a model tag: `[Sonnet OK]` for mechanical work (commits, ledger runs, forecasts, row counts, reruns of known checks) or `[Opus]` for diagnosis, code changes, scratch simulations and anything with judgement. The user switches the executor with `/model`; you cannot. Include: what to do, offline only unless stated, verification conditions, where to stop.
 - Review every report against the expectations. Do not trust summaries: verify yourself where cheap (read output files, `git log`, `git diff --stat`, the audit history TSV, row counts). You may run read-only commands and offline read-only Python checks.
 - If a check fails or a number moves unexpectedly: ask the executor to explain before anything is committed.
 - After each recorded run: update `docs/agents/HANDOFF.md` (run table, what was fixed, next steps, open decisions). Keep it the single source of truth.

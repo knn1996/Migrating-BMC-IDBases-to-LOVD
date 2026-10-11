@@ -10,6 +10,7 @@ Submission format: Mauno is contacting the current LOVD director; for a database
 Sessions: executor `thesis-exec` (Claude Code, repo root, Remote Control on), planner `thesis-plan` (Claude Code, repo root, see docs/agents/PLANNER.md). Shared rules in CLAUDE.md.
 
 Shell setup for the user: `tmux new -A -s thesis`, then `thesis` (bash function: cd to Scripts + conda activate snakemake).
+Opening routine: (1) tmux session `thesis` (`tmux new -A -s thesis`) holds the Claude sessions: one window for the executor, Claude Code session named `thesis-exec`, Remote Control on; one window for the planner, Claude Code session named `thesis-plan` (`/rename thesis-plan` if needed), told "Read docs/agents/PLANNER.md and follow its start-of-session steps"; (2) tmux session `pipeline` (`tmux new -A -s pipeline`, then `thesis`) for Snakemake runs. Model per task: the planner tags each message [Sonnet OK] or [Opus]; switch the executor with /model.
 
 Pipeline (Snakemake 9.27, env `snakemake`, run from 04_Mutation_Processing/Scripts):
 - `Snakefile`: Step1a extraction → … → Step7 merge/dedup
@@ -55,7 +56,8 @@ Measurement: count definitions, precision metric, own-source-change ruler, c./p.
 - Offline simulation (NM tracks → audit; NMD not simulated): in_final 6,316, 0 regressions, excess 8, pair consistency 96.65%, inconsistent 183; coherence 73.69% → 100% of known (5,703 coherent, 0 incoherent, 738 unknown); Track B on exact current MANE 64/1,322 → 1,829/1,829; all final records on exact current MANE 1,206 → 2,464 of 2,663. 676 pairs renamed (c. string changed); stage-2 identical_change merges 449 → 4; skip_different_change_same_unit 23 → 74; R2 conflicts 515 unchanged, 198 gone, 199 new.
 - Queries: 0 Mutalyzer, 0 VariantValidator; 59 NCBI GenBank fetches in the NMD step (new MANE transcripts, e.g. NM_000057.4, NM_001625.4, NM_003664.5).
 - DECISION: user chose option 1 — the real rescue run fetches the 59 GenBank records (network only in the user's own run, then cached).
-- Remaining steps: executor commits the code → user runs `snakemake -s Snakefile --use-conda --cores 1 -R mutalyzer_track_NM` → executor commits primary outputs → user runs rescue.smk (with the fetches) → executor commits rescue outputs and records Run 7 ("Track B c./p. coherence"). Expect: in_final 6,316, 0 regressions, excess 8, consistency 96.65%, coherence ~100% of known, real outputs = simulation except NMD.
+- Code committed: 0c255fe (5 files, 29+/6-; translation_test.py stays untracked). Dry run 8 jobs; forecast 0 Mutalyzer / 0 VV. Rescue run also needs network for vv_client.py's startup VariantValidator ping (no queries).
+- Remaining steps: user runs `snakemake -s Snakefile --use-conda --cores 1 -R mutalyzer_track_NM` → executor commits primary outputs → user runs rescue.smk (with the fetches) → executor commits rescue outputs and records Run 7 ("Track B c./p. coherence"). Expect: in_final 6,316, 0 regressions, excess 8, consistency 96.65%, coherence ~100% of known, real outputs = simulation except NMD.
 
 ## Next after Run 7
 1. Run 8 — Legacy c. numbering remap (~70 pairs; RAG1 +112, AICDA +76, CFH +73, TCIRG1 +60, WAS 34–36, LYST 190, RFXAP 116) + ADA over-remap. Needs Utilities/translation_test.py (draft, uncommitted): forecast missing transcripts first (fetch = network step), per-gene shift verified when ≥2 independent changes reconcile (C1QB −2 codons, RFX5 −40 codons are isoform numbering), include small frameshifts/in-frame indels, one shared remap function for c. tracks and rescue. ~25 queries + transcripts. Also yields source_error flags.
