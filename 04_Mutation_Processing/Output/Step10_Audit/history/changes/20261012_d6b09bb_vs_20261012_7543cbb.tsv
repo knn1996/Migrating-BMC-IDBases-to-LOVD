@@ -1,0 +1,21 @@
+gene	accession	allele	change	fate_prev	fate_now	fate_detail_prev	fate_detail_now	protein_check_prev	protein_check_now	individual_id	variant_key	track_prev	track_now	pair_label_prev	pair_label_now
+LYST	C0006	1+2	fate_detail_change	IN_FINAL	IN_FINAL	traced_through_pipeline	protein_matched_key_changed	MATCH_FS	MATCH_FS						
+LYST	C0015	1+2	fate_detail_change	IN_FINAL	IN_FINAL	traced_through_pipeline	protein_matched_key_changed	MATCH_FS	MATCH_FS						
+C2	C0002		pair_inconsistent_removed							C2_C0002	c.139_166del	NM_MANE		inconsistent:DIFFERENT	absent
+C2	C0002		pair_became_inconsistent							C2_C0002	c.1426G>A		NM_MANE	absent	inconsistent:DIFFERENT
+C2	C0002		pair_inconsistent_removed							C2_C0002	c.688G>A	NM_MANE		inconsistent:DIFFERENT	absent
+C2	C0002		pair_became_inconsistent							C2_C0002	c.877_904del		NM_MANE	absent	inconsistent:DIFFERENT
+C2	C0003		pair_inconsistent_removed							C2_C0003	c.139_166del	NM_MANE		inconsistent:DIFFERENT	absent
+C2	C0003		pair_became_inconsistent							C2_C0003	c.1426G>A		NM_MANE	absent	inconsistent:DIFFERENT
+C2	C0003		pair_inconsistent_removed							C2_C0003	c.688G>A	NM_MANE		inconsistent:DIFFERENT	absent
+C2	C0003		pair_became_inconsistent							C2_C0003	c.877_904del		NM_MANE	absent	inconsistent:DIFFERENT
+LYST	C0027		pair_became_inconsistent							LYST_C0027	c.8772G>A		NM_MANE	absent	inconsistent:DIFFERENT
+LYST	C0027		pair_inconsistent_removed							LYST_C0027	c.8934G>A	NM_MANE		inconsistent:DIFFERENT	absent
+LYST	C0028		pair_became_inconsistent							LYST_C0028	c.8772G>A		NM_MANE	absent	inconsistent:DIFFERENT
+LYST	C0028		pair_inconsistent_removed							LYST_C0028	c.8934G>A	NM_MANE		inconsistent:DIFFERENT	absent
+RFX5	R0005		pair_inconsistent_removed							RFX5_R0005	c.1002C>T	NM_MANE		inconsistent:DIFFERENT	absent
+RFX5	R0005		pair_became_inconsistent							RFX5_R0005	c.1122C>T		NM_MANE	absent	inconsistent:DIFFERENT
+RFX5	R0007		pair_inconsistent_removed							RFX5_R0007	c.487G>A	NM_MANE		inconsistent:DIFFERENT	absent
+RFX5	R0007		pair_became_inconsistent							RFX5_R0007	c.607G>A		NM_MANE	absent	inconsistent:DIFFERENT
+RFX5	R0008		pair_inconsistent_removed							RFX5_R0008	c.487G>A	NM_MANE		inconsistent:DIFFERENT	absent
+RFX5	R0008		pair_became_inconsistent							RFX5_R0008	c.607G>A		NM_MANE	absent	inconsistent:DIFFERENT
