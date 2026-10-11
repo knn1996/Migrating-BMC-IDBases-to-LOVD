@@ -5,8 +5,15 @@
 *.sh    text eol=lf
 *.py    text eol=lf
 Snakefile text eol=lf
+*.smk   text eol=lf
 *.yaml  text eol=lf
 *.yml   text eol=lf
+
+# Pipeline data tables: LF in the repo and in the working tree.
+*.bed   text eol=lf
+*.BED   text eol=lf
+*.tsv   text eol=lf
+*.txt   text eol=lf
 
 # Data / third-party binaries: never touch.
 *.chain     binary
@@ -18,3 +25,4 @@ Snakefile text eol=lf
 *.fa        binary
 *.fna       binary
 *.fasta     binary
+*.gz        binary
