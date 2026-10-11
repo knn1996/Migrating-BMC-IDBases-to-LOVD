@@ -19,21 +19,28 @@ CHR_TO_NC = {
     "chr22": "NC_000022.11", "chrX":  "NC_000023.11", "chrY":  "NC_000024.10",
 }
 
-COMP = {"A":"T","T":"A","G":"C","C":"G","a":"t","t":"a","g":"c","c":"g"}
+COMP = {"A": "T", "T": "A", "G": "C", "C": "G", "N": "N"}
 
-RE_SUBST   = re.compile(r"^g\.(?:IVS\d+[+-]?\d*)?(\d+)([A-Z])>([A-Z])$", re.IGNORECASE)
-RE_DEL     = re.compile(r"^g\.(?:IVS\d+[+-]?\d*)?(\d+)(?:[._-]+(\d+))?del([A-Z]*)$", re.IGNORECASE)
-RE_INS     = re.compile(r"^g\.(?:IVS\d+[+-]?\d*)?(\d+)(?:[._-]+(\d+))?ins([A-Z]+)$", re.IGNORECASE)
-RE_DELINS  = re.compile(r"^g\.(?:IVS\d+[+-]?\d*)?(\d+)(?:[._-]+(\d+))?delins([A-Z]+)$", re.IGNORECASE)
-RE_DUP     = re.compile(r"^g\.(?:IVS\d+[+-]?\d*)?(\d+)(?:[._-]+(\d+))?dup([A-Z]*)$", re.IGNORECASE)
+LOC = r"^g\.(?:IVS\d+[+-]?\d*)?(\d+)(?:[._-]+(\d+))?"
+RE_SUBST  = re.compile(r"^g\.(?:IVS\d+[+-]?\d*)?(\d+)([A-Z])>([A-Z])$", re.IGNORECASE)
+RE_DELINS = re.compile(LOC + r"delins([A-Z]+)$", re.IGNORECASE)
+RE_DEL    = re.compile(LOC + r"del(?!ins)([A-Z]*)$", re.IGNORECASE)
+RE_INS    = re.compile(LOC + r"ins([A-Z]+)$", re.IGNORECASE)
+RE_DUP    = re.compile(LOC + r"dup([A-Z]*)$", re.IGNORECASE)
+RE_INV    = re.compile(LOC + r"inv([A-Z]*)$", re.IGNORECASE)
 
-RE_IVS_SUBST  = re.compile(r"^g\.IVS\d+[+-]\d+([A-Z])>([A-Z])$", re.IGNORECASE)
-RE_IVS_DEL    = re.compile(r"^g\.IVS\d+[+-]\d+([A-Z]+)>$", re.IGNORECASE)
-RE_IVS_BARE   = re.compile(r"^g\.IVS\d+[+-]?\d*([A-Z]*)>([A-Z]*)$", re.IGNORECASE)
+RE_IVS_SUBST = re.compile(r"^g\.IVS\d+[+-]\d+([A-Z])>([A-Z])$", re.IGNORECASE)
+RE_IVS_DEL   = re.compile(r"^g\.IVS\d+[+-]\d+([A-Z]+)>$", re.IGNORECASE)
+RE_IVS_BARE  = re.compile(r"^g\.IVS\d+[+-]?\d*([A-Z]*)>([A-Z]*)$", re.IGNORECASE)
 
 
-def complement(seq):
-    return "".join(COMP.get(b, b) for b in seq)
+def revcomp(seq):
+    return "".join(COMP.get(b, b) for b in reversed(seq.upper()))
+
+
+def oriented(seq, is_rev):
+    seq = seq.upper()
+    return revcomp(seq) if is_rev else seq
 
 
 def strip_ivs(sysname):
@@ -41,6 +48,19 @@ def strip_ivs(sysname):
     if m:
         return m.group(1) + m.group(2)
     return sysname
+
+
+def source_span(m, seq=""):
+    start = int(m.group(1))
+    if m.group(2):
+        return int(m.group(2)) - start + 1
+    return len(seq) if seq else 1
+
+
+def ranged(pos, span, kind, tail=""):
+    if span > 1:
+        return f"g.{pos}_{pos + span - 1}{kind}{tail}"
+    return f"g.{pos}{kind}{tail}"
 
 
 def parse_sysname(sysname, chrom_pos_0based, strand):
@@ -52,79 +72,60 @@ def parse_sysname(sysname, chrom_pos_0based, strand):
 
     m = RE_SUBST.match(normalized)
     if m:
-        ref = m.group(2).upper()
-        alt = m.group(3).upper()
-        if is_rev:
-            ref, alt = complement(ref), complement(alt)
+        ref = oriented(m.group(2), is_rev)
+        alt = oriented(m.group(3), is_rev)
         return f"g.{pos}{ref}>{alt}", ref, alt, "substitution", is_ivs
-
-    m = RE_DEL.match(normalized)
-    if m:
-        deleted = m.group(3).upper() if m.group(3) else "N"
-        end_raw = m.group(2)
-        span = (int(end_raw) - int(m.group(1)) + 1) if end_raw else (len(deleted) if deleted != "N" else 1)
-        if deleted == "N" or len(deleted) != span:
-            deleted = "N" * span
-        elif is_rev:
-            deleted = complement(deleted)
-        end_pos  = pos + span - 1
-        notation = f"g.{pos}_{end_pos}del" if span > 1 else f"g.{pos}del"
-        return notation, deleted, "", "deletion", is_ivs
-
-    m = RE_INS.match(normalized)
-    if m:
-        inserted = m.group(3).upper()
-        if is_rev:
-            inserted = complement(inserted)
-        return f"g.{pos}_{pos+1}ins{inserted}", "", inserted, "insertion", is_ivs
 
     m = RE_DELINS.match(normalized)
     if m:
-        inserted = m.group(3).upper()
-        if is_rev:
-            inserted = complement(inserted)
-        end_raw = m.group(2)
-        end_pos = int(end_raw) if end_raw else pos
-        return f"g.{pos}_{end_pos}delins{inserted}", "N", inserted, "delins", is_ivs
+        inserted = oriented(m.group(3), is_rev)
+        span = source_span(m)
+        return ranged(pos, span, "delins", inserted), "N" * span, inserted, "delins", is_ivs
+
+    m = RE_DEL.match(normalized)
+    if m:
+        deleted = m.group(3).upper()
+        span = source_span(m, deleted)
+        deleted = oriented(deleted, is_rev) if deleted and len(deleted) == span else "N" * span
+        return ranged(pos, span, "del"), deleted, "", "deletion", is_ivs
+
+    m = RE_INS.match(normalized)
+    if m:
+        inserted = oriented(m.group(3), is_rev)
+        return f"g.{pos}_{pos + 1}ins{inserted}", "", inserted, "insertion", is_ivs
 
     m = RE_DUP.match(normalized)
     if m:
-        duped = m.group(3).upper() if m.group(3) else "N"
-        if is_rev and duped != "N":
-            duped = complement(duped)
-        return f"g.{pos}dup", duped, duped, "duplication", is_ivs
+        duped = m.group(3).upper()
+        span = source_span(m, duped)
+        duped = oriented(duped, is_rev) if duped and len(duped) == span else "N" * span
+        return ranged(pos, span, "dup"), duped, duped, "duplication", is_ivs
+
+    m = RE_INV.match(normalized)
+    if m:
+        span = source_span(m, m.group(3))
+        if span > 1:
+            return ranged(pos, span, "inv"), "N" * span, "N" * span, "inversion", is_ivs
 
     if is_ivs:
         m = RE_IVS_SUBST.match(sysname)
         if m:
-            ref, alt = m.group(1).upper(), m.group(2).upper()
-            if is_rev:
-                ref, alt = complement(ref), complement(alt)
+            ref, alt = oriented(m.group(1), is_rev), oriented(m.group(2), is_rev)
             return f"g.{pos}{ref}>{alt}", ref, alt, "substitution", True
 
         m = RE_IVS_DEL.match(sysname)
         if m:
-            deleted = m.group(1).upper()
-            if is_rev:
-                deleted = complement(deleted)
-            span    = len(deleted)
-            end_pos = pos + span - 1
-            notation = f"g.{pos}_{end_pos}del" if span > 1 else f"g.{pos}del"
-            return notation, deleted, "", "deletion", True
+            deleted = oriented(m.group(1), is_rev)
+            return ranged(pos, len(deleted), "del"), deleted, "", "deletion", True
 
         m = RE_IVS_BARE.match(sysname)
         if m:
             ref, alt = m.group(1).upper(), m.group(2).upper()
             if ref and not alt:
-                if is_rev:
-                    ref = complement(ref)
-                span    = len(ref)
-                end_pos = pos + span - 1
-                notation = f"g.{pos}_{end_pos}del" if span > 1 else f"g.{pos}del"
-                return notation, ref, "", "deletion", True
+                ref = oriented(ref, is_rev)
+                return ranged(pos, len(ref), "del"), ref, "", "deletion", True
             if ref and alt:
-                if is_rev:
-                    ref, alt = complement(ref), complement(alt)
+                ref, alt = oriented(ref, is_rev), oriented(alt, is_rev)
                 return f"g.{pos}{ref}>{alt}", ref, alt, "substitution", True
 
     return None, None, None, "unparseable", is_ivs
@@ -185,12 +186,12 @@ def main():
                 })
 
     with open(OUT_TSV, "w", newline="", encoding="utf-8") as f:
-        writer = csv.DictWriter(f, fieldnames=["gene","accession","sysname","hgvs_input","mut_type","ref","alt","chrom","pos_hg38","strand","was_ivs"], delimiter="\t")
+        writer = csv.DictWriter(f, fieldnames=["gene", "accession", "sysname", "hgvs_input", "mut_type", "ref", "alt", "chrom", "pos_hg38", "strand", "was_ivs"], delimiter="\t")
         writer.writeheader()
         writer.writerows(out_rows)
 
     with open(LOG_TSV, "w", newline="", encoding="utf-8") as f:
-        writer = csv.DictWriter(f, fieldnames=["gene","accession","sysname","reason"], delimiter="\t", extrasaction="ignore")
+        writer = csv.DictWriter(f, fieldnames=["gene", "accession", "sysname", "reason"], delimiter="\t", extrasaction="ignore")
         writer.writeheader()
         writer.writerows(skipped_rows)
 
