@@ -62,13 +62,12 @@ meta:Individual/Gender:DIFFERENT	30
 meta:Individual/Gender:EXTRA_IN_FINAL	18
 meta:Individual/Gender:MISSING_IN_FINAL	81
 meta:Individual/Gender:PARTIAL_SUPERSET	1
-meta:Individual/ID:ORPHAN_IN_FINAL	1
 meta:Individual/Origin/Geographic:EXTRA_IN_FINAL	19
-meta:Individual/Origin/Geographic:MISSING_IN_FINAL	72
+meta:Individual/Origin/Geographic:MISSING_IN_FINAL	73
 meta:Individual/Origin/Geographic:PARTIAL_SUPERSET	23
 meta:Individual/Remarks:DIFFERENT	1
 meta:Individual/Remarks:EXTRA_IN_FINAL	37
-meta:Individual/Remarks:MISSING_IN_FINAL	33
+meta:Individual/Remarks:MISSING_IN_FINAL	34
 meta:Individual/Remarks:PARTIAL_SUPERSET	10
 meta:Phenotype/Additional:DIFFERENT	191
 meta:Phenotype/Additional:EXTRA_IN_FINAL	12
@@ -81,23 +80,23 @@ meta:Phenotype/Disease:MISSING_IN_FINAL	66
 meta:Phenotype/Disease:PARTIAL_SUPERSET	35
 meta:Reference/Authors:EXTRA_IN_FINAL	3
 meta:Reference/Authors:MERGED_ALL_REFS	471
-meta:Reference/Authors:MISSING_IN_FINAL	114
+meta:Reference/Authors:MISSING_IN_FINAL	115
 meta:Reference/Authors:PARTIAL_SUPERSET	60
 meta:Reference/Location:DIFFERENT	1
 meta:Reference/Location:MERGED_ALL_REFS	513
-meta:Reference/Location:MISSING_IN_FINAL	121
+meta:Reference/Location:MISSING_IN_FINAL	122
 meta:Reference/Location:PARTIAL_SUPERSET	68
 meta:Reference/PubMed_ID:EXTRA_IN_FINAL	3
-meta:Reference/PubMed_ID:MISSING_IN_FINAL	114
+meta:Reference/PubMed_ID:MISSING_IN_FINAL	115
 meta:Reference/Title:EXTRA_IN_FINAL	3
 meta:Reference/Title:MERGED_ALL_REFS	471
-meta:Reference/Title:MISSING_IN_FINAL	114
+meta:Reference/Title:MISSING_IN_FINAL	115
 meta:Reference/Title:PARTIAL_SUPERSET	60
 meta:VariantOnGenome/Remarks:DIFFERENT	1
-meta:VariantOnGenome/Remarks:MISSING_IN_FINAL	121
+meta:VariantOnGenome/Remarks:MISSING_IN_FINAL	122
 meta:VariantOnGenome/Remarks:PARTIAL_SUBSET	1
 meta:VariantOnGenome/Remarks:PARTIAL_SUPERSET	68
-meta:accessions_with_extra_refs	493
+meta:accessions_with_extra_refs	494
 pos_shift_offsets:AICDA	[(25, 2)]
 pos_shift_offsets:LYST	[(54, 1)]
 pos_shift_offsets:RFX5	[(-40, 1)]

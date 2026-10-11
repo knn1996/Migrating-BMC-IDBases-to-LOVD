@@ -55,6 +55,7 @@ CYBA	c.288-3_300del		c.288-3_300del			frameshift_candidate							not_assessable_
 CYBB	c.99T>A	NM_000397.4	c.99T>A	r.(99u>a)	p.(Tyr33Ter)	nonsense	ok	97	33	33	yes	1490	NMD_predicted	start_proximal	r.0?	p.0?
 CYBB	c.368+4_368+7del		c.368+4_368+7del			frameshift_candidate							not_assessable_noncoding_or_intronic			
 CYBB	c.40del	NM_000397.4	c.40del	r.(40del)	p.(Val14SerfsTer8)	frameshift		62	21	21	yes	1525	NMD_predicted	start_proximal	r.0?	p.0?
+CYBB	c.12G>A	NM_000397.4	c.12G>A	r.(12g>a)	p.(Trp4Ter)	nonsense	ok	10	4	4	yes	1577	NMD_predicted	start_proximal	r.0?	p.0?
 CYBB	c.667_668delinsTT	NM_000397.4	c.667_668delinsTT	r.(667_668delinsuu)	p.(Gly223Leu)	frameshift_candidate		1711					no_PTC_stop_at_or_beyond_normal		r.(667_668delinsuu)	p.(Gly223Leu)
 CYBB	c.47del	NM_000397.4	c.47del	r.(47del)	p.(Leu16ArgfsTer6)	frameshift		62	21	21	yes	1525	NMD_predicted	start_proximal	r.0?	p.0?
 CYBB	c.49del	NM_000397.4	c.49del	r.(49del)	p.(Val17PhefsTer5)	frameshift		62	21	21	yes	1525	NMD_predicted	start_proximal	r.0?	p.0?

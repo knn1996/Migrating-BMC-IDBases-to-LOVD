@@ -3941,6 +3941,14 @@ RFXAP	R0006	Reference/Authors	MERGED_ALL_REFS	Fondaneche, M. C., Villard, J., Wi
 RFXAP	R0006	Reference/Title	MERGED_ALL_REFS	Genetic and molecular definition of complementation group D in MHC class II deficiency.	Genetic and molecular definition of complementation group D in MHC class II deficiency. Primary immunodeficiency mutation databases. MHC class II deficiency: a disease of gene regulation.
 RFXAP	R0006	Reference/Location	MERGED_ALL_REFS	Hum Mol Genet 7:879-885 (1998)	Hum Mol Genet 7:879-885 (1998) Adv Genet 43:103-188 (2001) Medicine (Baltimore) 80:405-418 (2001)
 RFXAP	R0006	Reference/PubMed_ID(additional)	EXTRA_REFS_NOT_CARRIED	9536093;11037300;11704716	9536093
+RFXAP	R0007	Individual/Origin/Geographic	MISSING_IN_FINAL	Druze	
+RFXAP	R0007	Individual/Remarks	MISSING_IN_FINAL	RFXAPbase; R0006 cousin	
+RFXAP	R0007	VariantOnGenome/Remarks	MISSING_IN_FINAL	Allele 1 and 2: insertion in the exon 1 leading to a premature stop codon	
+RFXAP	R0007	Reference/PubMed_ID	MISSING_IN_FINAL	9536093	
+RFXAP	R0007	Reference/Authors	MISSING_IN_FINAL	Fondaneche, M. C., Villard, J., Wiszniewski, W., Jouanguy, E., Etzioni, A., Le Deist, F., Peijnenburg, A., Casanova, J. L., Reith, W., Mach, B., Fischer, A., Lisowska- Grospierre, B.	
+RFXAP	R0007	Reference/Title	MISSING_IN_FINAL	Genetic and molecular definition of complementation group D in MHC class II deficiency.	
+RFXAP	R0007	Reference/Location	MISSING_IN_FINAL	Hum Mol Genet 7:879-885 (1998)	
+RFXAP	R0007	Reference/PubMed_ID(additional)	EXTRA_REFS_NOT_CARRIED	9536093;11037300;11704716	9536093
 RFXAP	R0001	Reference/Authors	MERGED_ALL_REFS	Durand, B., Sperisen, P., Emery, P., Barras, E., Zufferey, M., Mach, B., Reith, W.	Durand, B., Sperisen, P., Emery, P., Barras, E., Zufferey, M., Mach, B., Reith, W. Villard, J., Lisowska-Grospierre, B., van den Elsen, P., Fischer, A., Reith, W., Mach, B. Vihinen, M., Arredondo-Vega, F. X., Casanova, J. L., Etzioni, A., Giliani, S., Hammarstrom, L., Hershfield, M. S., Heyworth, P. G., Hsu, A. P., Lahdesmaki, A., Lappalainen, I., Notarangelo, L. D., Puck, J. M., Reith, W., Roos, D., Schumacher, R. F., Schwarz, K., Vezzoni, P., Villa, A., Valiaho, J., Smith, C. I. Villard, J., Masternak, K., Lisowska-Grospierre, B., Fischer, A., Reith, W.
 RFXAP	R0001	Reference/Title	MERGED_ALL_REFS	RFXAP, a novel subunit of the RFX DNA binding complex is mutated in MHC class II deficiency.	RFXAP, a novel subunit of the RFX DNA binding complex is mutated in MHC class II deficiency. Mutation of RFXAP, a regulator of MHC class II genes, in primary MHC class II deficiency. Primary immunodeficiency mutation databases. MHC class II deficiency: a disease of gene regulation.
 RFXAP	R0001	Reference/Location	MERGED_ALL_REFS	EMBO J 16:1045-1055 (1997)	EMBO J 16:1045-1055 (1997) N Engl J Med 337:748-753 (1997) Adv Genet 43:103-188 (2001) Medicine (Baltimore) 80:405-418 (2001)
@@ -4348,4 +4356,3 @@ ZAP70	Z0003	Reference/Authors	MERGED_ALL_REFS	Arpaia, E., Shahar, M., Dadi, H., 
 ZAP70	Z0003	Reference/Title	MERGED_ALL_REFS	Defective T cell receptor signaling and CD8+ thymic selection in humans lacking zap-70 kinase.	Defective T cell receptor signaling and CD8+ thymic selection in humans lacking zap-70 kinase. Phenotypic features of selective T cell deficiency characterized by absence of CD8+ T lymphocytes and undetectable mRNA for ZAP-70 kinase.
 ZAP70	Z0003	Reference/Location	MERGED_ALL_REFS	Cell 76:947-958 (1994)	Cell 76:947-958 (1994) Clin Immunol Immunopathol 84:129-138 (1997)
 ZAP70	Z0003	Reference/PubMed_ID(additional)	EXTRA_REFS_NOT_CARRIED	8124727;9245543	8124727
-RFXAP	R0007	Individual/ID	ORPHAN_IN_FINAL		accession not found in pub.html

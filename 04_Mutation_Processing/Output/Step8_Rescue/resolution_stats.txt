@@ -1,7 +1,7 @@
 resolve_tracks summary
 ======================
-  input records / pairs                : 2966 / 7169
-  pairs without a source_change_id     : 16
+  input records / pairs                : 2966 / 7154
+  pairs without a source_change_id     : 0
   conflicting source changes           : 713
     same genomic change                : 199
     different position                 : 514
@@ -13,7 +13,7 @@ resolve_tracks summary
     decided by track_priority   tier B     : 58
     decided by track_priority   tier Review: 3
   pairs removed                        : 713
-  output records / pairs               : 2663 / 6456
+  output records / pairs               : 2663 / 6441
   pairs with alt_descriptions          : 199
-  confidence_tier A / B / Review       : 6208 / 199 / 49
+  confidence_tier A / B / Review       : 6193 / 199 / 49
   output                               : /mnt/d/Assignment/Thesis/04_Mutation_Processing/Output/Step8_Rescue/dedup_merged_variants.resolved.tsv
