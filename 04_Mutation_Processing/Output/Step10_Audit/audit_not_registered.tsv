@@ -120,9 +120,6 @@ CYBB	A0538	0	g.[24823C>A; 24827C>G], c.[907C>A; 911C>G], r.[907c>a; 911c>g], p.[
 CYBB	A0648	0	g.[24823C>A; 24827C>G], c.[907C>A; 911C>G], r.[907c>a; 911c>g], p.[His303Asn; Pro304Arg]	g.[24823C>A	c.[907C>A	p.[His303Asn	NOT_REGISTERED	allele_absent_accession_present						1	none	yes
 CYBB	A1100	0	g.[24838_24839insTCCTTTCA;24851_24853delTGA], c.[922_923insTCCTTTCA;935_937delTGA], r.[922_923insuccuuuca;935_937deluga], p.[Glu309fsX7;Met312del]	g.[24838_24839insTCCTTTCA	c.[922_923insTCCTTTCA	p.[Glu309fsX7	NOT_REGISTERED	allele_absent_accession_present						1	none	yes
 CYBB	A1116	0	g.[24874delG;24878T>G], c.[958delG;962T>G], r.[958delg;962u>g], p.[Glu320fsX23;Val321Gly]	g.[24874delG	c.[958delG	p.[Glu320fsX23	NOT_REGISTERED	allele_absent_accession_present						1	none	yes
-CYBB	A0377	0	g.24881G>A, c.965G>A, r.965g>a, p.Gly322Glu	g.24881G>A	c.965G>A	p.Gly322Glu	NOT_REGISTERED	mutalyzer_ok_but_absent_from_final						1	all	yes
-CYBB	A1117	0	g.24881G>A, c.965G>A, r.965g>a, p.Gly322Glu	g.24881G>A	c.965G>A	p.Gly322Glu	NOT_REGISTERED	mutalyzer_ok_but_absent_from_final						1	all	yes
-CYBB	A0330	0	g.26063delG, c.1272delG, r.1272delg, p.Trp424fsX11	g.26063delG	c.1272delG	p.Trp424fsX11	NOT_REGISTERED	mutalyzer_ok_but_absent_from_final						1	all	yes
 CYBB	A0089	0	g.946A>C, c.A>C, r.a>c	g.946A>C	c.A>C		NOT_REGISTERED	accession_absent_from_final						1	all	no
 CYBB	A0090	0	g.946A>C, c.A>C, r.a>c	g.946A>C	c.A>C		NOT_REGISTERED	accession_absent_from_final						1	all	no
 CYBB	A0166	0	g.948T>C, c.T>C, r.u>c	g.948T>C	c.T>C		NOT_REGISTERED	accession_absent_from_final						1	all	no
@@ -139,16 +136,6 @@ CYBB	A0649	0	g.948dupT, c._insT, r._insu	g.948dupT	c._insT		NOT_REGISTERED	acces
 CYBB	A0650	0	g.948dupT, c._insT, r._insu	g.948dupT	c._insT		NOT_REGISTERED	accession_absent_from_final						1	all	no
 CYBB	A0651	0	g.951C>T, c.C>T, r.c>u	g.951C>T	c.C>T		NOT_REGISTERED	accession_absent_from_final						1	all	no
 CYBB	A0652	0	g.951C>T, c.C>T, r.c>u	g.951C>T	c.C>T		NOT_REGISTERED	accession_absent_from_final						1	all	no
-CYBB	A0224	0	g.3024G>A, c.46-1G>A, r.46-1g>a	g.3024G>A	c.46-1G>A		NOT_REGISTERED	mutalyzer_ok_but_absent_from_final						1	all	yes
-CYBB	A0500	0	g.3024G>A, c.46-1G>A, r.46-1g>a	g.3024G>A	c.46-1G>A		NOT_REGISTERED	mutalyzer_ok_but_absent_from_final						1	all	yes
-CYBB	A0593	0	g.IVS1-1G>T, c.46-1G>T, r.46-1g>u	g.IVS1-1G>T	c.46-1G>T		NOT_REGISTERED	mutalyzer_ok_but_absent_from_final						1	all	yes
-CYBB	A0625	0	g.IVS1-1G>C, c.46-1G>C, r.46-1g>c	g.IVS1-1G>C	c.46-1G>C		NOT_REGISTERED	mutalyzer_ok_but_absent_from_final						1	all	yes
-CYBB	A0005	0	g.20019T>A, c.804+2T>A, r.804+2u>a	g.20019T>A	c.804+2T>A		NOT_REGISTERED	mutalyzer_ok_but_absent_from_final						1	all	yes
-CYBB	A0236	0	g.20019T>C, c.804+2T>C, r.804+2u>c	g.20019T>C	c.804+2T>C		NOT_REGISTERED	mutalyzer_ok_but_absent_from_final						1	all	yes
-CYBB	A0237	0	g.20019T>C, c.804+2T>C, r.804+2u>c	g.20019T>C	c.804+2T>C		NOT_REGISTERED	mutalyzer_ok_but_absent_from_final						1	all	yes
-CYBB	A1046	0	g.20019T>C, c.804+2T>C, r.804+2u>c	g.20019T>C	c.804+2T>C		NOT_REGISTERED	mutalyzer_ok_but_absent_from_final						1	all	yes
-CYBB	A1047	0	g.20019T>C, c.804+2T>C, r.804+2u>c	g.20019T>C	c.804+2T>C		NOT_REGISTERED	mutalyzer_ok_but_absent_from_final						1	all	yes
-CYBB	A1434	0	g.20019T>C, c.804+2T>C, r.804+2u>c	g.20019T>C	c.804+2T>C		NOT_REGISTERED	mutalyzer_ok_but_absent_from_final						1	all	yes
 CYBB	A0572	0	g.30627_30637delAAGTAAGGAGT	g.30627_30637delAAGTAAGGAGT			NOT_REGISTERED	accession_absent_from_final						1	all	no
 CYBB	A0026	0	c.(253-?_1151+?)del		c.(253-?_1151+?)del		NOT_REGISTERED	source_incomplete_notation						1	all	no
 CYBB	A0027	0	c.(338-?_483+?)del		c.(338-?_483+?)del		NOT_REGISTERED	source_incomplete_notation						1	all	no

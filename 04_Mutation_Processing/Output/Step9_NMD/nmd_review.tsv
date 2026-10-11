@@ -68,6 +68,7 @@ CYBA	c.288-3_300del		c.288-3_300del			frameshift_candidate							not_assessable_
 CYBB	c.99T>A	NM_000397.4	c.99T>A	r.(99u>a)	p.(Tyr33Ter)	nonsense	ok	97	33	33	yes	1490	NMD_predicted	start_proximal	r.0?	p.0?
 CYBB	c.368+4_368+7del		c.368+4_368+7del			frameshift_candidate							not_assessable_noncoding_or_intronic			
 CYBB	c.40del	NM_000397.4	c.40del	r.(40del)	p.(Val14SerfsTer8)	frameshift		62	21	21	yes	1525	NMD_predicted	start_proximal	r.0?	p.0?
+CYBB	c.361_362delinsTT		c.361_362delinsTT	r.(667_668delinsuu)	p.(Gly223Leu)	frameshift_candidate							not_assessable_no_transcript		r.(667_668delinsuu)	p.(Gly223Leu)
 CYBB	c.47del	NM_000397.4	c.47del	r.(47del)	p.(Leu16ArgfsTer6)	frameshift		62	21	21	yes	1525	NMD_predicted	start_proximal	r.0?	p.0?
 CYBB	c.49del	NM_000397.4	c.49del	r.(49del)	p.(Val17PhefsTer5)	frameshift		62	21	21	yes	1525	NMD_predicted	start_proximal	r.0?	p.0?
 CYBB	c.-1595del		c.-1595del			frameshift_candidate							not_assessable_noncoding_or_intronic			
@@ -99,15 +100,14 @@ CYBB	c.112A>T	NM_000397.4	c.112A>T	r.(112a>u)	p.(Lys38Ter)	nonsense	ok	112	38	38
 CYBB	c.-301delinsACCTCTTCTAG		c.-301delinsACCTCTTCTAG	r.(=)	p.(=)	frameshift_candidate							not_assessable_noncoding_or_intronic		r.(=)	p.(=)
 CYBB	c.143C>G	NM_000397.4	c.143C>G	r.(143c>g)	p.(Ser48Ter)	nonsense	ok	142	48	48	yes	1445	NMD_predicted	start_proximal	r.0?	p.0?
 CYBB	c.-179+2dup		c.-179+2dup			frameshift_candidate							not_assessable_noncoding_or_intronic			
+CYBB	c.24_25delinsAT		c.24_25delinsAT	r.(330_331delinsau)	p.(His111Tyr)	frameshift_candidate							not_assessable_no_transcript		r.(330_331delinsau)	p.(His111Tyr)
 CYBB	c.31+2dup		c.31+2dup			frameshift_candidate							not_assessable_noncoding_or_intronic			
 CYBB	c.31+5dup		c.31+5dup			frameshift_candidate							not_assessable_noncoding_or_intronic			
 CYBB	c.[300del;302A>G]		c.[300del;302A>G]	r.([606del;608a>g])	p.?	frameshift_candidate							not_assessable_no_transcript		r.([606del;608a>g])	p.?
 CYBB	c.844_845+2del		c.844_845+2del			frameshift_candidate							not_assessable_noncoding_or_intronic			
-CYBB	c.1008+1del		c.1008+1del			frameshift_candidate							not_assessable_noncoding_or_intronic			
 CYBB	c.1314+1del	NM_000397.4	c.1314+1del			frameshift_candidate							not_assessable_noncoding_or_intronic			
 CYBB	c.1008+4_1008+5delinsGC		c.1008+4_1008+5delinsGC			frameshift_candidate							not_assessable_noncoding_or_intronic			
 CYBB	c.1155+2del		c.1155+2del			frameshift_candidate							not_assessable_noncoding_or_intronic			
-CYBB	c.480_498+2dup		c.480_498+2dup			frameshift_candidate							not_assessable_noncoding_or_intronic			
 CYBB	c.786_804+2dup	NM_000397.4	c.786_804+2dup			frameshift_candidate							not_assessable_noncoding_or_intronic			
 CYBB	c.804+2_804+3insTG	NM_000397.4	c.804+2_804+3insTG			frameshift_candidate							not_assessable_noncoding_or_intronic			
 CYBB	c.804+3_804+10del	NM_000397.4	c.804+3_804+10del			frameshift_candidate							not_assessable_noncoding_or_intronic			
