@@ -1,0 +1,4 @@
+gene	accession	allele	change	fate_prev	fate_now	fate_detail_prev	fate_detail_now	protein_check_prev	protein_check_now
+ITGB2	A0104	1+2	regression;protein_check_change	IN_FINAL	KNOWN_UNRESOLVED	traced_through_pipeline	UNRESCUABLE:ESYNTAXUEOF	TYPE_DIFF_SAME_POS	
+ITGB2	A0106	1+2	regression;protein_check_change	IN_FINAL	NOT_REGISTERED	traced_through_pipeline	source_incomplete_notation	TYPE_DIFF_SAME_POS	
+ITGB2	A0107	1+2	regression;protein_check_change	IN_FINAL	NOT_REGISTERED	traced_through_pipeline	source_incomplete_notation	TYPE_DIFF_SAME_POS	
