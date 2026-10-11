@@ -1,0 +1,606 @@
+gene	accession	allele	change	fate_prev	fate_now	fate_detail_prev	fate_detail_now	protein_check_prev	protein_check_now	individual_id	variant_key	track_prev	track_now	pair_label_prev	pair_label_now
+AIRE	A0009	2	protein_bad_to_good	IN_FINAL	IN_FINAL	traced_through_pipeline	traced_through_pipeline	FS_START_DIFF	MATCH_FS						
+AIRE	A0011	1+2	protein_bad_to_good	IN_FINAL	IN_FINAL	traced_through_pipeline	traced_through_pipeline	FS_START_DIFF	MATCH_FS						
+AIRE	A0015	1+2	protein_bad_to_good	IN_FINAL	IN_FINAL	traced_through_pipeline	traced_through_pipeline	FS_START_DIFF	MATCH_FS						
+AIRE	A0017	2	protein_bad_to_good	IN_FINAL	IN_FINAL	traced_through_pipeline	traced_through_pipeline	FS_START_DIFF	MATCH_FS						
+AIRE	A0018	1+2	protein_bad_to_good	IN_FINAL	IN_FINAL	traced_through_pipeline	traced_through_pipeline	FS_START_DIFF	MATCH_FS						
+AIRE	A0019	1+2	protein_bad_to_good	IN_FINAL	IN_FINAL	traced_through_pipeline	traced_through_pipeline	FS_START_DIFF	MATCH_FS						
+AIRE	A0020	2	protein_bad_to_good	IN_FINAL	IN_FINAL	traced_through_pipeline	traced_through_pipeline	FS_START_DIFF	MATCH_FS						
+AIRE	A0021	2	protein_bad_to_good	IN_FINAL	IN_FINAL	traced_through_pipeline	traced_through_pipeline	FS_START_DIFF	MATCH_FS						
+AIRE	A0029	1	protein_bad_to_good	IN_FINAL	IN_FINAL	traced_through_pipeline	traced_through_pipeline	FS_START_DIFF	MATCH_FS						
+AIRE	A0036	1+2	protein_bad_to_good	IN_FINAL	IN_FINAL	traced_through_pipeline	traced_through_pipeline	FS_START_DIFF	MATCH_FS						
+AIRE	A0037	1	protein_bad_to_good	IN_FINAL	IN_FINAL	traced_through_pipeline	traced_through_pipeline	FS_START_DIFF	MATCH_FS						
+AIRE	A0037	2	protein_bad_to_good	IN_FINAL	IN_FINAL	traced_through_pipeline	traced_through_pipeline	FS_START_DIFF	MATCH_FS						
+AIRE	A0038	1	protein_bad_to_good	IN_FINAL	IN_FINAL	traced_through_pipeline	traced_through_pipeline	FS_START_DIFF	MATCH_FS						
+AIRE	A0038	2	protein_bad_to_good	IN_FINAL	IN_FINAL	traced_through_pipeline	traced_through_pipeline	FS_START_DIFF	MATCH_FS						
+AIRE	A0039	1+2	protein_bad_to_good	IN_FINAL	IN_FINAL	traced_through_pipeline	traced_through_pipeline	FS_START_DIFF	MATCH_FS						
+AIRE	A0040	1+2	protein_bad_to_good	IN_FINAL	IN_FINAL	traced_through_pipeline	traced_through_pipeline	FS_START_DIFF	MATCH_FS						
+AIRE	A0041	1+2	protein_bad_to_good	IN_FINAL	IN_FINAL	traced_through_pipeline	traced_through_pipeline	FS_START_DIFF	MATCH_FS						
+AIRE	A0042	1	protein_bad_to_good	IN_FINAL	IN_FINAL	traced_through_pipeline	traced_through_pipeline	DIFFERENT	MATCH						
+AIRE	A0042	2	protein_bad_to_good	IN_FINAL	IN_FINAL	traced_through_pipeline	traced_through_pipeline	FS_START_DIFF	MATCH_FS						
+AIRE	A0045	1+2	protein_bad_to_good	IN_FINAL	IN_FINAL	traced_through_pipeline	traced_through_pipeline	FS_START_DIFF	MATCH_FS						
+AIRE	A0047	1+2	protein_bad_to_good	IN_FINAL	IN_FINAL	traced_through_pipeline	traced_through_pipeline	FS_START_DIFF	MATCH_FS						
+AIRE	A0048	1+2	protein_bad_to_good	IN_FINAL	IN_FINAL	traced_through_pipeline	traced_through_pipeline	FS_START_DIFF	MATCH_FS						
+AIRE	A0049	1+2	protein_bad_to_good	IN_FINAL	IN_FINAL	traced_through_pipeline	traced_through_pipeline	FS_START_DIFF	MATCH_FS						
+AIRE	A0050	1+2	protein_bad_to_good	IN_FINAL	IN_FINAL	traced_through_pipeline	traced_through_pipeline	FS_START_DIFF	MATCH_FS						
+AIRE	A0051	1+2	protein_bad_to_good	IN_FINAL	IN_FINAL	traced_through_pipeline	traced_through_pipeline	FS_START_DIFF	MATCH_FS						
+AIRE	A0052	1+2	protein_bad_to_good	IN_FINAL	IN_FINAL	traced_through_pipeline	traced_through_pipeline	FS_START_DIFF	MATCH_FS						
+AIRE	A0053	1	protein_bad_to_good	IN_FINAL	IN_FINAL	traced_through_pipeline	traced_through_pipeline	FS_START_DIFF	MATCH_FS						
+AIRE	A0054	1+2	protein_bad_to_good	IN_FINAL	IN_FINAL	traced_through_pipeline	traced_through_pipeline	FS_START_DIFF	MATCH_FS						
+AIRE	A0055	1+2	protein_bad_to_good	IN_FINAL	IN_FINAL	traced_through_pipeline	traced_through_pipeline	FS_START_DIFF	MATCH_FS						
+AIRE	A0056	1+2	protein_bad_to_good	IN_FINAL	IN_FINAL	traced_through_pipeline	traced_through_pipeline	FS_START_DIFF	MATCH_FS						
+AIRE	A0057	1+2	protein_bad_to_good	IN_FINAL	IN_FINAL	traced_through_pipeline	traced_through_pipeline	FS_START_DIFF	MATCH_FS						
+AIRE	A0058	1+2	protein_bad_to_good	IN_FINAL	IN_FINAL	traced_through_pipeline	traced_through_pipeline	FS_START_DIFF	MATCH_FS						
+AIRE	A0059	1+2	protein_bad_to_good	IN_FINAL	IN_FINAL	traced_through_pipeline	traced_through_pipeline	FS_START_DIFF	MATCH_FS						
+AIRE	A0060	1+2	protein_bad_to_good	IN_FINAL	IN_FINAL	traced_through_pipeline	traced_through_pipeline	FS_START_DIFF	MATCH_FS						
+AIRE	A0061	1+2	protein_bad_to_good	IN_FINAL	IN_FINAL	traced_through_pipeline	traced_through_pipeline	FS_START_DIFF	MATCH_FS						
+AIRE	A0062	1+2	protein_bad_to_good	IN_FINAL	IN_FINAL	traced_through_pipeline	traced_through_pipeline	FS_START_DIFF	MATCH_FS						
+AIRE	A0065	2	protein_bad_to_good	IN_FINAL	IN_FINAL	traced_through_pipeline	traced_through_pipeline	FS_START_DIFF	MATCH_FS						
+AIRE	A0066	2	protein_bad_to_good	IN_FINAL	IN_FINAL	traced_through_pipeline	traced_through_pipeline	FS_START_DIFF	MATCH_FS						
+AIRE	A0068	1	protein_bad_to_good	IN_FINAL	IN_FINAL	traced_through_pipeline	traced_through_pipeline	FS_START_DIFF	MATCH_FS						
+AIRE	A0072	1	protein_bad_to_good	IN_FINAL	IN_FINAL	traced_through_pipeline	traced_through_pipeline	DIFFERENT	MATCH_FS						
+AIRE	A0073	1	protein_bad_to_good	IN_FINAL	IN_FINAL	traced_through_pipeline	traced_through_pipeline	DIFFERENT	MATCH_FS						
+AIRE	A0074	1	protein_bad_to_good	IN_FINAL	IN_FINAL	traced_through_pipeline	traced_through_pipeline	DIFFERENT	MATCH_FS						
+AIRE	A0075	1+2	protein_bad_to_good	IN_FINAL	IN_FINAL	traced_through_pipeline	traced_through_pipeline	FS_START_DIFF	MATCH_FS						
+AIRE	A0076	1+2	protein_bad_to_good	IN_FINAL	IN_FINAL	traced_through_pipeline	traced_through_pipeline	FS_START_DIFF	MATCH_FS						
+AIRE	A0077	1+2	protein_bad_to_good	IN_FINAL	IN_FINAL	traced_through_pipeline	traced_through_pipeline	FS_START_DIFF	MATCH_FS						
+AIRE	A0078	1+2	protein_bad_to_good	IN_FINAL	IN_FINAL	traced_through_pipeline	traced_through_pipeline	FS_START_DIFF	MATCH_FS						
+AIRE	A0079	1+2	protein_bad_to_good	IN_FINAL	IN_FINAL	traced_through_pipeline	traced_through_pipeline	FS_START_DIFF	MATCH_FS						
+AIRE	A0080	1	protein_bad_to_good	IN_FINAL	IN_FINAL	traced_through_pipeline	traced_through_pipeline	FS_START_DIFF	MATCH_FS						
+AIRE	A0081	1	protein_bad_to_good	IN_FINAL	IN_FINAL	traced_through_pipeline	traced_through_pipeline	FS_START_DIFF	MATCH_FS						
+AIRE	A0082	1	protein_bad_to_good	IN_FINAL	IN_FINAL	traced_through_pipeline	traced_through_pipeline	FS_START_DIFF	MATCH_FS						
+AIRE	A0082	2	protein_check_change	IN_FINAL	IN_FINAL	traced_through_pipeline	traced_through_pipeline	POS_SHIFT	TYPE_DIFF_SAME_POS						
+AIRE	A0083	2	protein_bad_to_good	IN_FINAL	IN_FINAL	traced_through_pipeline	traced_through_pipeline	FS_START_DIFF	MATCH_FS						
+AIRE	A0084	1	protein_bad_to_good	IN_FINAL	IN_FINAL	traced_through_pipeline	traced_through_pipeline	FS_START_DIFF	MATCH_FS						
+AIRE	A0086	1	protein_bad_to_good	IN_FINAL	IN_FINAL	traced_through_pipeline	traced_through_pipeline	FS_START_DIFF	MATCH_FS						
+AIRE	A0089	1+2	protein_bad_to_good	IN_FINAL	IN_FINAL	traced_through_pipeline	traced_through_pipeline	FS_START_DIFF	MATCH_FS						
+AIRE	A0090	1+2	protein_bad_to_good	IN_FINAL	IN_FINAL	traced_through_pipeline	traced_through_pipeline	FS_START_DIFF	MATCH_FS						
+AIRE	A0091	1	protein_bad_to_good	IN_FINAL	IN_FINAL	traced_through_pipeline	traced_through_pipeline	FS_START_DIFF	MATCH_FS						
+AIRE	A0092	1	protein_bad_to_good	IN_FINAL	IN_FINAL	traced_through_pipeline	traced_through_pipeline	FS_START_DIFF	MATCH_FS						
+AIRE	A0093	2	protein_bad_to_good	IN_FINAL	IN_FINAL	traced_through_pipeline	traced_through_pipeline	DIFFERENT	MATCH_FS						
+AIRE	A0094	2	protein_bad_to_good	IN_FINAL	IN_FINAL	traced_through_pipeline	traced_through_pipeline	DIFFERENT	MATCH_FS						
+AIRE	A0102	2	protein_bad_to_good	IN_FINAL	IN_FINAL	traced_through_pipeline	traced_through_pipeline	FS_START_DIFF	MATCH_FS						
+AIRE	A0105	1	protein_bad_to_good	IN_FINAL	IN_FINAL	traced_through_pipeline	traced_through_pipeline	FS_START_DIFF	MATCH_FS						
+AIRE	A0122	2	protein_bad_to_good	IN_FINAL	IN_FINAL	traced_through_pipeline	traced_through_pipeline	DIFFERENT	MATCH						
+AIRE	A0124	1+2	protein_bad_to_good	IN_FINAL	IN_FINAL	traced_through_pipeline	traced_through_pipeline	FS_START_DIFF	MATCH_FS						
+AIRE	A0131	1+2	protein_bad_to_good	IN_FINAL	IN_FINAL	traced_through_pipeline	traced_through_pipeline	FS_START_DIFF	MATCH_FS						
+C1S	C0003	1+2	protein_bad_to_good	IN_FINAL	IN_FINAL	traced_through_pipeline	traced_through_pipeline	DIFFERENT	MATCH						
+CD40L	C0002	0	protein_check_change	IN_FINAL	IN_FINAL	traced_through_pipeline	traced_through_pipeline	DIFFERENT	TYPE_DIFF_SAME_POS						
+CD40L	C0008	0	protein_bad_to_good	IN_FINAL	IN_FINAL	traced_through_pipeline	traced_through_pipeline	DIFFERENT	MATCH_FS						
+CD40L	C0009	0	protein_bad_to_good	IN_FINAL	IN_FINAL	traced_through_pipeline	traced_through_pipeline	DIFFERENT	MATCH_FS						
+CD40L	C0010	0	protein_bad_to_good	IN_FINAL	IN_FINAL	traced_through_pipeline	traced_through_pipeline	DIFFERENT	MATCH_FS						
+CD40L	C0013	0	protein_bad_to_good	IN_FINAL	IN_FINAL	traced_through_pipeline	traced_through_pipeline	DIFFERENT	MATCH						
+CD40L	C0018	0	protein_bad_to_good	IN_FINAL	IN_FINAL	traced_through_pipeline	traced_through_pipeline	DIFFERENT	MATCH_FS						
+CD40L	C0020	0	protein_bad_to_good	IN_FINAL	IN_FINAL	traced_through_pipeline	traced_through_pipeline	DIFFERENT	MATCH_FS						
+CD40L	C0027	0	protein_bad_to_good	IN_FINAL	IN_FINAL	traced_through_pipeline	traced_through_pipeline	DIFFERENT	MATCH_FS						
+CD40L	C0030	0	protein_bad_to_good	IN_FINAL	IN_FINAL	traced_through_pipeline	traced_through_pipeline	DIFFERENT	MATCH						
+CD40L	C0032	0	protein_bad_to_good	IN_FINAL	IN_FINAL	traced_through_pipeline	traced_through_pipeline	DIFFERENT	MATCH						
+CD40L	C0034	0	protein_bad_to_good	IN_FINAL	IN_FINAL	traced_through_pipeline	traced_through_pipeline	DIFFERENT	MATCH						
+CD40L	C0036	0	protein_check_change	IN_FINAL	IN_FINAL	traced_through_pipeline	traced_through_pipeline	DIFFERENT	TYPE_DIFF_SAME_POS						
+CD40L	C0039	0	protein_bad_to_good	IN_FINAL	IN_FINAL	traced_through_pipeline	traced_through_pipeline	DIFFERENT	MATCH						
+CD40L	C0050	0	protein_bad_to_good	IN_FINAL	IN_FINAL	traced_through_pipeline	traced_through_pipeline	DIFFERENT	MATCH						
+CD40L	C0051	0	protein_check_change	IN_FINAL	IN_FINAL	traced_through_pipeline	traced_through_pipeline	NOT_COMPARABLE	MATCH_FS						
+CD40L	C0054	0	protein_bad_to_good	IN_FINAL	IN_FINAL	traced_through_pipeline	traced_through_pipeline	DIFFERENT	MATCH						
+CD40L	C0055	0	protein_bad_to_good	IN_FINAL	IN_FINAL	traced_through_pipeline	traced_through_pipeline	FS_START_DIFF	MATCH_FS						
+CD40L	C0056	0	protein_bad_to_good	IN_FINAL	IN_FINAL	traced_through_pipeline	traced_through_pipeline	FS_START_DIFF	MATCH_FS						
+CD40L	C0059	0	protein_bad_to_good	IN_FINAL	IN_FINAL	traced_through_pipeline	traced_through_pipeline	DIFFERENT	MATCH_INFRAME						
+CD40L	C0062	0	protein_bad_to_good	IN_FINAL	IN_FINAL	traced_through_pipeline	traced_through_pipeline	DIFFERENT	MATCH						
+CD40L	C0063	0	protein_bad_to_good	IN_FINAL	IN_FINAL	traced_through_pipeline	traced_through_pipeline	DIFFERENT	MATCH_FS						
+CD40L	C0064	0	protein_check_change	IN_FINAL	IN_FINAL	traced_through_pipeline	traced_through_pipeline	DIFFERENT	FINAL_NO_P						
+CD40L	C0065	0	protein_check_change	IN_FINAL	IN_FINAL	traced_through_pipeline	traced_through_pipeline	DIFFERENT	FINAL_NO_P						
+CD40L	C0066	0	protein_check_change	IN_FINAL	IN_FINAL	traced_through_pipeline	traced_through_pipeline	DIFFERENT	FINAL_NO_P						
+CD40L	C0067	0	protein_bad_to_good	IN_FINAL	IN_FINAL	traced_through_pipeline	traced_through_pipeline	DIFFERENT	MATCH_FS						
+CD40L	C0074	0	protein_bad_to_good	IN_FINAL	IN_FINAL	traced_through_pipeline	traced_through_pipeline	DIFFERENT	MATCH						
+CD40L	C0081	0	protein_bad_to_good	IN_FINAL	IN_FINAL	traced_through_pipeline	traced_through_pipeline	DIFFERENT	MATCH						
+CD40L	C0082	0	protein_bad_to_good	IN_FINAL	IN_FINAL	traced_through_pipeline	traced_through_pipeline	DIFFERENT	MATCH						
+CD40L	C0087	0	protein_bad_to_good	IN_FINAL	IN_FINAL	traced_through_pipeline	traced_through_pipeline	DIFFERENT	MATCH						
+CD40L	C0088	0	protein_bad_to_good	IN_FINAL	IN_FINAL	traced_through_pipeline	traced_through_pipeline	DIFFERENT	MATCH						
+CD40L	C0089	0	protein_bad_to_good	IN_FINAL	IN_FINAL	traced_through_pipeline	traced_through_pipeline	DIFFERENT	MATCH						
+CD40L	C0090	0	protein_bad_to_good	IN_FINAL	IN_FINAL	traced_through_pipeline	traced_through_pipeline	DIFFERENT	MATCH						
+CD40L	C0091	0	protein_bad_to_good	IN_FINAL	IN_FINAL	traced_through_pipeline	traced_through_pipeline	DIFFERENT	MATCH						
+CD40L	C0099	0	protein_bad_to_good	IN_FINAL	IN_FINAL	traced_through_pipeline	traced_through_pipeline	DIFFERENT	MATCH						
+CD40L	C0104	0	protein_bad_to_good	IN_FINAL	IN_FINAL	traced_through_pipeline	traced_through_pipeline	DIFFERENT	MATCH						
+CD40L	C0105	0	protein_bad_to_good	IN_FINAL	IN_FINAL	traced_through_pipeline	traced_through_pipeline	DIFFERENT	MATCH						
+CD40L	C0111	0	protein_check_change	IN_FINAL	IN_FINAL	traced_through_pipeline	traced_through_pipeline	DIFFERENT	FS_STOP_DIFF						
+CD40L	C0114	0	protein_bad_to_good	IN_FINAL	IN_FINAL	traced_through_pipeline	traced_through_pipeline	DIFFERENT	MATCH_FS						
+CD40L	C0118	0	protein_bad_to_good	IN_FINAL	IN_FINAL	traced_through_pipeline	traced_through_pipeline	DIFFERENT	MATCH_FS						
+CD40L	C0119	0	protein_bad_to_good	IN_FINAL	IN_FINAL	traced_through_pipeline	traced_through_pipeline	DIFFERENT	MATCH_FS						
+CD40L	C0120	0	protein_bad_to_good	IN_FINAL	IN_FINAL	traced_through_pipeline	traced_through_pipeline	FS_START_DIFF	MATCH_FS						
+CD40L	C0121	0	protein_bad_to_good	IN_FINAL	IN_FINAL	traced_through_pipeline	traced_through_pipeline	DIFFERENT	MATCH_FS						
+CD40L	C0122	0	protein_bad_to_good	IN_FINAL	IN_FINAL	traced_through_pipeline	traced_through_pipeline	DIFFERENT	MATCH_FS						
+CFP	P0003	0	protein_bad_to_good	IN_FINAL	IN_FINAL	traced_through_pipeline	traced_through_pipeline	DIFFERENT	MATCH						
+CFP	P0004	0	protein_bad_to_good	IN_FINAL	IN_FINAL	traced_through_pipeline	traced_through_pipeline	DIFFERENT	MATCH						
+CFP	P0005	0	protein_bad_to_good	IN_FINAL	IN_FINAL	traced_through_pipeline	traced_through_pipeline	DIFFERENT	MATCH						
+CFP	P0006	0	protein_bad_to_good	IN_FINAL	IN_FINAL	traced_through_pipeline	traced_through_pipeline	DIFFERENT	MATCH						
+CFP	P0009	0	protein_bad_to_good	IN_FINAL	IN_FINAL	traced_through_pipeline	traced_through_pipeline	DIFFERENT	MATCH						
+CFP	P0012	0	protein_bad_to_good	IN_FINAL	IN_FINAL	traced_through_pipeline	traced_through_pipeline	DIFFERENT	MATCH						
+CFP	P0013	0	protein_bad_to_good	IN_FINAL	IN_FINAL	traced_through_pipeline	traced_through_pipeline	DIFFERENT	MATCH						
+CFP	P0014	0	protein_bad_to_good	IN_FINAL	IN_FINAL	traced_through_pipeline	traced_through_pipeline	DIFFERENT	MATCH						
+CFP	P0021	0	protein_bad_to_good	IN_FINAL	IN_FINAL	traced_through_pipeline	traced_through_pipeline	DIFFERENT	MATCH						
+CFP	P0022	0	protein_bad_to_good	IN_FINAL	IN_FINAL	traced_through_pipeline	traced_through_pipeline	DIFFERENT	MATCH						
+CFP	P0023	0	protein_bad_to_good	IN_FINAL	IN_FINAL	traced_through_pipeline	traced_through_pipeline	DIFFERENT	MATCH						
+CFP	P0024	0	protein_bad_to_good	IN_FINAL	IN_FINAL	traced_through_pipeline	traced_through_pipeline	DIFFERENT	MATCH						
+CFP	P0025	0	protein_bad_to_good	IN_FINAL	IN_FINAL	traced_through_pipeline	traced_through_pipeline	DIFFERENT	MATCH						
+CFP	P0028	0	protein_bad_to_good	IN_FINAL	IN_FINAL	traced_through_pipeline	traced_through_pipeline	DIFFERENT	MATCH						
+CFP	P0029	0	protein_bad_to_good	IN_FINAL	IN_FINAL	traced_through_pipeline	traced_through_pipeline	DIFFERENT	MATCH						
+CFP	P0030	0	protein_bad_to_good	IN_FINAL	IN_FINAL	traced_through_pipeline	traced_through_pipeline	DIFFERENT	MATCH						
+CFP	P0031	0	protein_bad_to_good	IN_FINAL	IN_FINAL	traced_through_pipeline	traced_through_pipeline	DIFFERENT	MATCH						
+CFP	P0032	0	protein_bad_to_good	IN_FINAL	IN_FINAL	traced_through_pipeline	traced_through_pipeline	DIFFERENT	MATCH						
+CFP	P0033	0	protein_bad_to_good	IN_FINAL	IN_FINAL	traced_through_pipeline	traced_through_pipeline	DIFFERENT	MATCH						
+CFP	P0034	0	protein_bad_to_good	IN_FINAL	IN_FINAL	traced_through_pipeline	traced_through_pipeline	DIFFERENT	MATCH						
+CFP	P0036	0	protein_bad_to_good	IN_FINAL	IN_FINAL	traced_through_pipeline	traced_through_pipeline	DIFFERENT	MATCH						
+CIITA	M0002	1+2	protein_check_change	IN_FINAL	IN_FINAL	traced_through_pipeline	traced_through_pipeline	POS_SHIFT	NOT_COMPARABLE						
+CIITA	M0008	1	protein_check_change	IN_FINAL	IN_FINAL	traced_through_pipeline	traced_through_pipeline	POS_SHIFT	NOT_COMPARABLE						
+CYBB	A0310	0	protein_check_change	IN_FINAL	IN_FINAL	traced_through_pipeline	traced_through_pipeline	FINAL_NO_P	MATCH_INFRAME						
+CYBB	A0350	0	protein_bad_to_good	IN_FINAL	IN_FINAL	traced_through_pipeline	traced_through_pipeline	FS_START_DIFF	MATCH_FS						
+CYBB	A1432	0	protein_check_change	IN_FINAL	IN_FINAL	traced_through_pipeline	traced_through_pipeline	FINAL_NO_P	MATCH						
+LYST	C0001	1	protein_bad_to_good	IN_FINAL	IN_FINAL	traced_through_pipeline	traced_through_pipeline	DIFFERENT	MATCH_FS						
+LYST	C0005	1+2	protein_bad_to_good	IN_FINAL	IN_FINAL	traced_through_pipeline	traced_through_pipeline	DIFFERENT	MATCH_FS						
+LYST	C0006	1+2	protein_bad_to_good	IN_FINAL	IN_FINAL	traced_through_pipeline	traced_through_pipeline	DIFFERENT	MATCH_FS						
+LYST	C0007	1+2	protein_bad_to_good	IN_FINAL	IN_FINAL	traced_through_pipeline	traced_through_pipeline	FS_START_DIFF	MATCH_FS						
+LYST	C0009	1+2	protein_bad_to_good	IN_FINAL	IN_FINAL	traced_through_pipeline	traced_through_pipeline	DIFFERENT	MATCH_FS						
+LYST	C0010	1+2	protein_bad_to_good	IN_FINAL	IN_FINAL	traced_through_pipeline	traced_through_pipeline	DIFFERENT	MATCH_FS						
+LYST	C0014	1+2	protein_check_change	IN_FINAL	IN_FINAL	traced_through_pipeline	traced_through_pipeline	DIFFERENT	FINAL_NO_P						
+LYST	C0015	1+2	protein_bad_to_good	IN_FINAL	IN_FINAL	traced_through_pipeline	traced_through_pipeline	DIFFERENT	MATCH_FS						
+LYST	C0016	1+2	protein_bad_to_good	IN_FINAL	IN_FINAL	traced_through_pipeline	traced_through_pipeline	DIFFERENT	MATCH_FS						
+LYST	C0019	1	protein_bad_to_good	IN_FINAL	IN_FINAL	traced_through_pipeline	traced_through_pipeline	DIFFERENT	MATCH_FS						
+LYST	C0024	1	protein_bad_to_good	IN_FINAL	IN_FINAL	traced_through_pipeline	traced_through_pipeline	DIFFERENT	MATCH						
+NCF1	N0002	1	protein_check_change	IN_FINAL	IN_FINAL	traced_through_pipeline	traced_through_pipeline	DIFFERENT	FS_STOP_DIFF						
+NCF1	N0024	1+2	protein_bad_to_good	IN_FINAL	IN_FINAL	traced_through_pipeline	traced_through_pipeline	DIFFERENT	MATCH						
+NCF1	N0025	1+2	protein_bad_to_good	IN_FINAL	IN_FINAL	traced_through_pipeline	traced_through_pipeline	DIFFERENT	MATCH						
+NCF1	N0026	1+2	protein_bad_to_good	IN_FINAL	IN_FINAL	traced_through_pipeline	traced_through_pipeline	DIFFERENT	MATCH						
+ORAI1	T0004	1	fate_detail_change;protein_bad_to_good	IN_FINAL	IN_FINAL	traced_through_pipeline	protein_matched_key_changed	DIFFERENT	MATCH						
+PRF1	P0002	1+2	protein_bad_to_good	IN_FINAL	IN_FINAL	traced_through_pipeline	traced_through_pipeline	DIFFERENT	MATCH						
+PRF1	P0003	1+2	protein_bad_to_good	IN_FINAL	IN_FINAL	traced_through_pipeline	traced_through_pipeline	DIFFERENT	MATCH						
+PRF1	P0004	1+2	protein_bad_to_good	IN_FINAL	IN_FINAL	traced_through_pipeline	traced_through_pipeline	DIFFERENT	MATCH						
+PRF1	P0005	2	protein_bad_to_good	IN_FINAL	IN_FINAL	traced_through_pipeline	traced_through_pipeline	DIFFERENT	MATCH						
+PRF1	P0006	1+2	protein_bad_to_good	IN_FINAL	IN_FINAL	traced_through_pipeline	traced_through_pipeline	DIFFERENT	MATCH						
+PRF1	P0007	1	protein_bad_to_good	IN_FINAL	IN_FINAL	traced_through_pipeline	traced_through_pipeline	DIFFERENT	MATCH						
+PRF1	P0007	2	protein_bad_to_good	IN_FINAL	IN_FINAL	traced_through_pipeline	traced_through_pipeline	DIFFERENT	MATCH						
+PRF1	P0009	1+2	protein_bad_to_good	IN_FINAL	IN_FINAL	traced_through_pipeline	traced_through_pipeline	DIFFERENT	MATCH						
+PRF1	P0010	1+2	protein_bad_to_good	IN_FINAL	IN_FINAL	traced_through_pipeline	traced_through_pipeline	DIFFERENT	MATCH						
+PRF1	P0011	1+2	protein_bad_to_good	IN_FINAL	IN_FINAL	traced_through_pipeline	traced_through_pipeline	DIFFERENT	MATCH						
+PRF1	P0012	1+2	protein_bad_to_good	IN_FINAL	IN_FINAL	traced_through_pipeline	traced_through_pipeline	DIFFERENT	MATCH						
+PRF1	P0019	1+2	protein_bad_to_good	IN_FINAL	IN_FINAL	traced_through_pipeline	traced_through_pipeline	DIFFERENT	MATCH						
+PRF1	P0021	1	protein_bad_to_good	IN_FINAL	IN_FINAL	traced_through_pipeline	traced_through_pipeline	DIFFERENT	MATCH						
+PRF1	P0021	2	protein_bad_to_good	IN_FINAL	IN_FINAL	traced_through_pipeline	traced_through_pipeline	FS_START_DIFF	MATCH_FS						
+PRF1	P0022	1+2	protein_bad_to_good	IN_FINAL	IN_FINAL	traced_through_pipeline	traced_through_pipeline	DIFFERENT	MATCH						
+PRF1	P0023	1+2	protein_bad_to_good	IN_FINAL	IN_FINAL	traced_through_pipeline	traced_through_pipeline	DIFFERENT	MATCH						
+PRF1	P0024	1+2	protein_bad_to_good	IN_FINAL	IN_FINAL	traced_through_pipeline	traced_through_pipeline	DIFFERENT	MATCH						
+PRF1	P0025	1+2	protein_bad_to_good	IN_FINAL	IN_FINAL	traced_through_pipeline	traced_through_pipeline	DIFFERENT	MATCH						
+PRF1	P0026	1	protein_bad_to_good	IN_FINAL	IN_FINAL	traced_through_pipeline	traced_through_pipeline	DIFFERENT	MATCH_FS						
+PRF1	P0027	1	protein_bad_to_good	IN_FINAL	IN_FINAL	traced_through_pipeline	traced_through_pipeline	DIFFERENT	MATCH_FS						
+PRF1	P0028	1	protein_bad_to_good	IN_FINAL	IN_FINAL	traced_through_pipeline	traced_through_pipeline	DIFFERENT	MATCH_FS						
+PRF1	P0029	2	protein_bad_to_good	IN_FINAL	IN_FINAL	traced_through_pipeline	traced_through_pipeline	DIFFERENT	MATCH						
+PRF1	P0032	2	protein_bad_to_good	IN_FINAL	IN_FINAL	traced_through_pipeline	traced_through_pipeline	DIFFERENT	MATCH						
+RAG1	R0006	2	protein_check_change	IN_FINAL	IN_FINAL	traced_through_pipeline	traced_through_pipeline	NOT_COMPARABLE	DIFFERENT						
+RAG1	R0011	2	protein_check_change	IN_FINAL	IN_FINAL	traced_through_pipeline	traced_through_pipeline	DIFFERENT	NOT_COMPARABLE						
+RAG1	R0021	2	protein_check_change	IN_FINAL	IN_FINAL	traced_through_pipeline	traced_through_pipeline	DIFFERENT	NOT_COMPARABLE						
+RAG1	R0027	1	protein_check_change	IN_FINAL	IN_FINAL	traced_through_pipeline	traced_through_pipeline	NOT_COMPARABLE	DIFFERENT						
+RAG1	R0040	1+2	protein_check_change	IN_FINAL	IN_FINAL	traced_through_pipeline	traced_through_pipeline	DIFFERENT	NOT_COMPARABLE						
+RFXANK	R0001	1+2	protein_bad_to_good	IN_FINAL	IN_FINAL	traced_through_pipeline	traced_through_pipeline	DIFFERENT	MATCH						
+AIRE	A0009		pair_inconsistent_removed							AIRE_A0009	c.1094_1106del	NM_MANE		inconsistent:FS_START_DIFF	absent
+AIRE	A0011		pair_inconsistent_removed							AIRE_A0011	c.1096_1097insCCTG	NM_MANE		inconsistent:FS_START_DIFF	absent
+AIRE	A0015		pair_inconsistent_removed							AIRE_A0015	c.1094_1106del	NM_MANE		inconsistent:FS_START_DIFF	absent
+AIRE	A0017		pair_inconsistent_removed							AIRE_A0017	c.1094_1106del	NM_MANE		inconsistent:FS_START_DIFF	absent
+AIRE	A0018		pair_inconsistent_removed							AIRE_A0018	c.1094_1106del	NM_MANE		inconsistent:FS_START_DIFF	absent
+AIRE	A0019		pair_inconsistent_removed							AIRE_A0019	c.1094_1106del	NM_MANE		inconsistent:FS_START_DIFF	absent
+AIRE	A0020		pair_inconsistent_removed							AIRE_A0020	c.1094_1106del	NM_MANE		inconsistent:FS_START_DIFF	absent
+AIRE	A0021		pair_inconsistent_removed							AIRE_A0021	c.1094_1106del	NM_MANE		inconsistent:FS_START_DIFF	absent
+AIRE	A0029		pair_inconsistent_removed							AIRE_A0029	c.1094_1106del	NM_MANE		inconsistent:FS_START_DIFF	absent
+AIRE	A0036		pair_inconsistent_removed							AIRE_A0036	c.1094_1106del	NM_MANE		inconsistent:FS_START_DIFF	absent
+AIRE	A0037		pair_inconsistent_removed							AIRE_A0037	c.1094_1106del	NM_MANE		inconsistent:FS_START_DIFF	absent
+AIRE	A0037		pair_inconsistent_removed							AIRE_A0037	c.1393del	NM_MANE		inconsistent:FS_START_DIFF	absent
+AIRE	A0038		pair_inconsistent_removed							AIRE_A0038	c.1094_1106del	NM_MANE		inconsistent:FS_START_DIFF	absent
+AIRE	A0038		pair_inconsistent_removed							AIRE_A0038	c.1393del	NM_MANE		inconsistent:FS_START_DIFF	absent
+AIRE	A0039		pair_inconsistent_removed							AIRE_A0039	c.1094_1106del	NM_MANE		inconsistent:FS_START_DIFF	absent
+AIRE	A0040		pair_inconsistent_removed							AIRE_A0040	c.1094_1106del	NM_MANE		inconsistent:FS_START_DIFF	absent
+AIRE	A0041		pair_inconsistent_removed							AIRE_A0041	c.1094_1106del	NM_MANE		inconsistent:FS_START_DIFF	absent
+AIRE	A0042		pair_inconsistent_removed							AIRE_A0042	c.1094_1106del	NM_MANE		inconsistent:FS_START_DIFF	absent
+AIRE	A0042		pair_inconsistent_removed							AIRE_A0042	c.171G>T	NM_MANE		inconsistent:DIFFERENT	absent
+AIRE	A0045		pair_inconsistent_removed							AIRE_A0045	c.1094_1106del	NM_MANE		inconsistent:FS_START_DIFF	absent
+AIRE	A0046		pair_inconsistent_removed							AIRE_A0046	c.1376del	variantvalidator		inconsistent:FS_START_DIFF	absent
+AIRE	A0047		pair_inconsistent_removed							AIRE_A0047	c.1094_1106del	NM_MANE		inconsistent:FS_START_DIFF	absent
+AIRE	A0048		pair_inconsistent_removed							AIRE_A0048	c.1094_1106del	NM_MANE		inconsistent:FS_START_DIFF	absent
+AIRE	A0049		pair_inconsistent_removed							AIRE_A0049	c.1094_1106del	NM_MANE		inconsistent:FS_START_DIFF	absent
+AIRE	A0050		pair_inconsistent_removed							AIRE_A0050	c.1094_1106del	NM_MANE		inconsistent:FS_START_DIFF	absent
+AIRE	A0051		pair_inconsistent_removed							AIRE_A0051	c.1094_1106del	NM_MANE		inconsistent:FS_START_DIFF	absent
+AIRE	A0052		pair_inconsistent_removed							AIRE_A0052	c.1094_1106del	NM_MANE		inconsistent:FS_START_DIFF	absent
+AIRE	A0053		pair_inconsistent_removed							AIRE_A0053	c.1094_1106del	NM_MANE		inconsistent:FS_START_DIFF	absent
+AIRE	A0054		pair_inconsistent_removed							AIRE_A0054	c.1094_1106del	NM_MANE		inconsistent:FS_START_DIFF	absent
+AIRE	A0055		pair_inconsistent_removed							AIRE_A0055	c.1094_1106del	NM_MANE		inconsistent:FS_START_DIFF	absent
+AIRE	A0056		pair_inconsistent_removed							AIRE_A0056	c.1094_1106del	NM_MANE		inconsistent:FS_START_DIFF	absent
+AIRE	A0057		pair_inconsistent_removed							AIRE_A0057	c.1094_1106del	NM_MANE		inconsistent:FS_START_DIFF	absent
+AIRE	A0058		pair_inconsistent_removed							AIRE_A0058	c.1094_1106del	NM_MANE		inconsistent:FS_START_DIFF	absent
+AIRE	A0059		pair_inconsistent_removed							AIRE_A0059	c.1094_1106del	NM_MANE		inconsistent:FS_START_DIFF	absent
+AIRE	A0060		pair_inconsistent_removed							AIRE_A0060	c.1094_1106del	NM_MANE		inconsistent:FS_START_DIFF	absent
+AIRE	A0061		pair_inconsistent_removed							AIRE_A0061	c.1094_1106del	NM_MANE		inconsistent:FS_START_DIFF	absent
+AIRE	A0062		pair_inconsistent_removed							AIRE_A0062	c.1094_1106del	NM_MANE		inconsistent:FS_START_DIFF	absent
+AIRE	A0065		pair_inconsistent_removed							AIRE_A0065	c.1094_1106del	NM_MANE		inconsistent:FS_START_DIFF	absent
+AIRE	A0066		pair_inconsistent_removed							AIRE_A0066	c.1094_1106del	NM_MANE		inconsistent:FS_START_DIFF	absent
+AIRE	A0068		pair_inconsistent_removed							AIRE_A0068	c.1421_1422insAC	NM_MANE		inconsistent:FS_START_DIFF	absent
+AIRE	A0072		pair_inconsistent_removed							AIRE_A0072	c.1369_1370insA	NM_MANE		inconsistent:DIFFERENT	absent
+AIRE	A0073		pair_inconsistent_removed							AIRE_A0073	c.1369_1370insA	NM_MANE		inconsistent:DIFFERENT	absent
+AIRE	A0074		pair_inconsistent_removed							AIRE_A0074	c.1369_1370insA	NM_MANE		inconsistent:DIFFERENT	absent
+AIRE	A0075		pair_inconsistent_removed							AIRE_A0075	c.1094_1106del	NM_MANE		inconsistent:FS_START_DIFF	absent
+AIRE	A0076		pair_inconsistent_removed							AIRE_A0076	c.1094_1106del	NM_MANE		inconsistent:FS_START_DIFF	absent
+AIRE	A0077		pair_inconsistent_removed							AIRE_A0077	c.1094_1106del	NM_MANE		inconsistent:FS_START_DIFF	absent
+AIRE	A0078		pair_inconsistent_removed							AIRE_A0078	c.1094_1106del	NM_MANE		inconsistent:FS_START_DIFF	absent
+AIRE	A0079		pair_inconsistent_removed							AIRE_A0079	c.1094_1106del	NM_MANE		inconsistent:FS_START_DIFF	absent
+AIRE	A0080		pair_inconsistent_removed							AIRE_A0080	c.1094_1106del	NM_MANE		inconsistent:FS_START_DIFF	absent
+AIRE	A0081		pair_inconsistent_removed							AIRE_A0081	c.1094_1106del	NM_MANE		inconsistent:FS_START_DIFF	absent
+AIRE	A0082		pair_inconsistent_removed							AIRE_A0082	c.1094_1106del	NM_MANE		inconsistent:FS_START_DIFF	absent
+AIRE	A0082		pair_inconsistent_removed							AIRE_A0082	c.319_354del	NM_MANE		inconsistent:POS_SHIFT	absent
+AIRE	A0083		pair_inconsistent_removed							AIRE_A0083	c.1094_1106del	NM_MANE		inconsistent:FS_START_DIFF	absent
+AIRE	A0084		pair_inconsistent_removed							AIRE_A0084	c.1094_1106del	NM_MANE		inconsistent:FS_START_DIFF	absent
+AIRE	A0086		pair_inconsistent_removed							AIRE_A0086	c.1393del	NM_MANE		inconsistent:FS_START_DIFF	absent
+AIRE	A0089		pair_inconsistent_removed							AIRE_A0089	c.335_336insCAGG	NM_MANE		inconsistent:FS_START_DIFF	absent
+AIRE	A0090		pair_inconsistent_removed							AIRE_A0090	c.1094_1106del	NM_MANE		inconsistent:FS_START_DIFF	absent
+AIRE	A0091		pair_inconsistent_removed							AIRE_A0091	c.1094_1106del	NM_MANE		inconsistent:FS_START_DIFF	absent
+AIRE	A0092		pair_inconsistent_removed							AIRE_A0092	c.1094_1106del	NM_MANE		inconsistent:FS_START_DIFF	absent
+AIRE	A0093		pair_inconsistent_removed							AIRE_A0093	c.1230dup	NM_MANE		inconsistent:DIFFERENT	absent
+AIRE	A0094		pair_inconsistent_removed							AIRE_A0094	c.1230dup	NM_MANE		inconsistent:DIFFERENT	absent
+AIRE	A0102		pair_inconsistent_removed							AIRE_A0102	c.1094_1106del	NM_MANE		inconsistent:FS_START_DIFF	absent
+AIRE	A0105		pair_inconsistent_removed							AIRE_A0105	c.1094_1106del	NM_MANE		inconsistent:FS_START_DIFF	absent
+AIRE	A0122		pair_inconsistent_removed							AIRE_A0122	c.174C>T	NM_MANE		inconsistent:DIFFERENT	absent
+AIRE	A0124		pair_inconsistent_removed							AIRE_A0124	c.1094_1106del	NM_MANE		inconsistent:FS_START_DIFF	absent
+AIRE	A0131		pair_inconsistent_removed							AIRE_A0131	c.1094_1106del	NM_MANE		inconsistent:FS_START_DIFF	absent
+AIRE	A0150		pair_inconsistent_removed							AIRE_A0150	c.1615C>T	NG_IDRefseq		inconsistent:DIFFERENT	absent
+C1S	C0001		pair_inconsistent_removed							C1S_C0001	c.1334_1337del	variantvalidator		inconsistent:DIFFERENT	absent
+C1S	C0002		pair_inconsistent_removed							C1S_C0002	c.1334_1337del	variantvalidator		inconsistent:DIFFERENT	absent
+C1S	C0003		pair_inconsistent_removed							C1S_C0003	c.1769C>T	NM_MANE		inconsistent:DIFFERENT	absent
+C2	C0002		pair_inconsistent_removed							C2_C0002	c.-63-3787_-63-3760del	NG_IDRefseq		inconsistent:DIFFERENT	absent
+C2	C0002		pair_inconsistent_removed							C2_C0002	c.392-434G>A	NG_IDRefseq		inconsistent:DIFFERENT	absent
+C2	C0003		pair_inconsistent_removed							C2_C0003	c.-63-3787_-63-3760del	NG_IDRefseq		inconsistent:DIFFERENT	absent
+C2	C0003		pair_inconsistent_removed							C2_C0003	c.392-434G>A	NG_IDRefseq		inconsistent:DIFFERENT	absent
+C3	C0011		pair_inconsistent_removed							C3_C0011	c.3117_3118insT	NG_IDRefseq		inconsistent:TYPE_DIFF_SAME_POS	absent
+C3	C0012		pair_inconsistent_removed							C3_C0012	c.3177_3178insT	NG_IDRefseq		inconsistent:TYPE_DIFF_SAME_POS	absent
+C5	C0005		pair_inconsistent_removed							C5_C0005	c.892-473A>G	NG_IDRefseq		inconsistent:DIFFERENT	absent
+C5	C0006		pair_inconsistent_removed							C5_C0006	c.1490delinsTCT	NG_IDRefseq		inconsistent:DIFFERENT	absent
+C5	C0006		pair_inconsistent_removed							C5_C0006	c.2276-113T>C	NG_IDRefseq		inconsistent:DIFFERENT	absent
+C5	C0007		pair_inconsistent_removed							C5_C0007	c.777-954C>T	NG_IDRefseq		inconsistent:DIFFERENT	absent
+C5	C0008		pair_inconsistent_removed							C5_C0008	c.777-954C>T	NG_IDRefseq		inconsistent:DIFFERENT	absent
+C6	C0004		pair_inconsistent_removed							C6_C0004	c.2034del	variantvalidator		inconsistent:DIFFERENT	absent
+C6	C0005		pair_inconsistent_removed							C6_C0005	c.392del	variantvalidator		inconsistent:DIFFERENT	absent
+C6	C0006		pair_inconsistent_removed							C6_C0006	c.2034del	variantvalidator		inconsistent:DIFFERENT	absent
+C6	C0007		pair_inconsistent_removed							C6_C0007	c.2034del	variantvalidator		inconsistent:DIFFERENT	absent
+C6	C0008		pair_inconsistent_removed							C6_C0008	c.2034del	variantvalidator		inconsistent:DIFFERENT	absent
+C6	C0009		pair_inconsistent_removed							C6_C0009	c.2034del	variantvalidator		inconsistent:DIFFERENT	absent
+C6	C0010		pair_inconsistent_removed							C6_C0010	c.977del	variantvalidator		inconsistent:DIFFERENT	absent
+C6	C0011		pair_inconsistent_removed							C6_C0011	c.2034del	variantvalidator		inconsistent:DIFFERENT	absent
+C6	C0011		pair_inconsistent_removed							C6_C0011	c.977del	variantvalidator		inconsistent:DIFFERENT	absent
+C6	C0012		pair_inconsistent_removed							C6_C0012	c.977del	variantvalidator		inconsistent:DIFFERENT	absent
+C6	C0013		pair_inconsistent_removed							C6_C0013	c.977del	variantvalidator		inconsistent:DIFFERENT	absent
+C8B	C0001		pair_inconsistent_removed							C8B_C0001	c.1235-243C>T	NG_IDRefseq		inconsistent:DIFFERENT	absent
+C8B	C0002		pair_inconsistent_removed							C8B_C0002	c.1235-243C>T	NG_IDRefseq		inconsistent:DIFFERENT	absent
+C8B	C0003		pair_inconsistent_removed							C8B_C0003	c.1235-243C>T	NG_IDRefseq		inconsistent:DIFFERENT	absent
+C8B	C0004		pair_inconsistent_removed							C8B_C0004	c.1235-243C>T	NG_IDRefseq		inconsistent:DIFFERENT	absent
+C8B	C0005		pair_inconsistent_removed							C8B_C0005	c.1235-243C>T	NG_IDRefseq		inconsistent:DIFFERENT	absent
+C8B	C0006		pair_inconsistent_removed							C8B_C0006	c.1235-243C>T	NG_IDRefseq		inconsistent:DIFFERENT	absent
+C8B	C0007		pair_inconsistent_removed							C8B_C0007	c.1235-243C>T	NG_IDRefseq		inconsistent:DIFFERENT	absent
+C8B	C0008		pair_inconsistent_removed							C8B_C0008	c.1235-243C>T	NG_IDRefseq		inconsistent:DIFFERENT	absent
+C8B	C0009		pair_inconsistent_removed							C8B_C0009	c.1235-243C>T	NG_IDRefseq		inconsistent:DIFFERENT	absent
+C8B	C0010		pair_inconsistent_removed							C8B_C0010	c.1235-243C>T	NG_IDRefseq		inconsistent:DIFFERENT	absent
+C8B	C0011		pair_inconsistent_removed							C8B_C0011	c.1235-243C>T	NG_IDRefseq		inconsistent:DIFFERENT	absent
+C8B	C0012		pair_inconsistent_removed							C8B_C0012	c.1235-243C>T	NG_IDRefseq		inconsistent:DIFFERENT	absent
+C8B	C0013		pair_inconsistent_removed							C8B_C0013	c.1235-243C>T	NG_IDRefseq		inconsistent:DIFFERENT	absent
+C8B	C0014		pair_inconsistent_removed							C8B_C0014	c.1235-243C>T	NG_IDRefseq		inconsistent:DIFFERENT	absent
+C8B	C0015		pair_inconsistent_removed							C8B_C0015	c.1235-243C>T	NG_IDRefseq		inconsistent:DIFFERENT	absent
+C8B	C0016		pair_inconsistent_removed							C8B_C0016	c.1235-243C>T	NG_IDRefseq		inconsistent:DIFFERENT	absent
+C8B	C0017		pair_inconsistent_removed							C8B_C0017	c.1235-243C>T	NG_IDRefseq		inconsistent:DIFFERENT	absent
+C8B	C0018		pair_inconsistent_removed							C8B_C0018	c.1235-243C>T	NG_IDRefseq		inconsistent:DIFFERENT	absent
+C8B	C0019		pair_inconsistent_removed							C8B_C0019	c.1235-243C>T	NG_IDRefseq		inconsistent:DIFFERENT	absent
+C8B	C0020		pair_inconsistent_removed							C8B_C0020	c.1235-243C>T	NG_IDRefseq		inconsistent:DIFFERENT	absent
+C8B	C0021		pair_inconsistent_removed							C8B_C0021	c.1235-243C>T	NG_IDRefseq		inconsistent:DIFFERENT	absent
+C8B	C0022		pair_inconsistent_removed							C8B_C0022	c.1235-243C>T	NG_IDRefseq		inconsistent:DIFFERENT	absent
+C8B	C0023		pair_inconsistent_removed							C8B_C0023	c.1235-243C>T	NG_IDRefseq		inconsistent:DIFFERENT	absent
+C8B	C0024		pair_inconsistent_removed							C8B_C0024	c.1235-243C>T	NG_IDRefseq		inconsistent:DIFFERENT	absent
+C8B	C0025		pair_inconsistent_removed							C8B_C0025	c.1235-243C>T	NG_IDRefseq		inconsistent:DIFFERENT	absent
+C8B	C0026		pair_inconsistent_removed							C8B_C0026	c.1235-243C>T	NG_IDRefseq		inconsistent:DIFFERENT	absent
+C8B	C0027		pair_inconsistent_removed							C8B_C0027	c.1235-243C>T	NG_IDRefseq		inconsistent:DIFFERENT	absent
+C8B	C0028		pair_inconsistent_removed							C8B_C0028	c.1235-243C>T	NG_IDRefseq		inconsistent:DIFFERENT	absent
+C8B	C0029		pair_inconsistent_removed							C8B_C0029	c.1235-243C>T	NG_IDRefseq		inconsistent:DIFFERENT	absent
+C8B	C0030		pair_inconsistent_removed							C8B_C0030	c.1235-243C>T	NG_IDRefseq		inconsistent:DIFFERENT	absent
+C8B	C0031		pair_inconsistent_removed							C8B_C0031	c.1235-243C>T	NG_IDRefseq		inconsistent:DIFFERENT	absent
+C8B	C0032		pair_inconsistent_removed							C8B_C0032	c.1235-243C>T	NG_IDRefseq		inconsistent:DIFFERENT	absent
+C8B	C0033		pair_inconsistent_removed							C8B_C0033	c.1235-243C>T	NG_IDRefseq		inconsistent:DIFFERENT	absent
+C8B	C0034		pair_inconsistent_removed							C8B_C0034	c.1235-243C>T	NG_IDRefseq		inconsistent:DIFFERENT	absent
+C8B	C0035		pair_inconsistent_removed							C8B_C0035	c.1235-243C>T	NG_IDRefseq		inconsistent:DIFFERENT	absent
+C8B	C0036		pair_inconsistent_removed							C8B_C0036	c.1235-243C>T	NG_IDRefseq		inconsistent:DIFFERENT	absent
+C8B	C0037		pair_inconsistent_removed							C8B_C0037	c.1235-243C>T	NG_IDRefseq		inconsistent:DIFFERENT	absent
+C8B	C0038		pair_inconsistent_removed							C8B_C0038	c.1235-243C>T	NG_IDRefseq		inconsistent:DIFFERENT	absent
+C8B	C0039		pair_inconsistent_removed							C8B_C0039	c.1235-243C>T	NG_IDRefseq		inconsistent:DIFFERENT	absent
+C8B	C0040		pair_inconsistent_removed							C8B_C0040	c.1235-243C>T	NG_IDRefseq		inconsistent:DIFFERENT	absent
+C8B	C0041		pair_inconsistent_removed							C8B_C0041	c.1235-243C>T	NG_IDRefseq		inconsistent:DIFFERENT	absent
+C8B	C0042		pair_inconsistent_removed							C8B_C0042	c.1235-243C>T	NG_IDRefseq		inconsistent:DIFFERENT	absent
+C8B	C0043		pair_inconsistent_removed							C8B_C0043	c.1235-243C>T	NG_IDRefseq		inconsistent:DIFFERENT	absent
+C8B	C0044		pair_inconsistent_removed							C8B_C0044	c.1235-243C>T	NG_IDRefseq		inconsistent:DIFFERENT	absent
+C8B	C0045		pair_inconsistent_removed							C8B_C0045	c.1235-243C>T	NG_IDRefseq		inconsistent:DIFFERENT	absent
+C8B	C0045		pair_inconsistent_removed							C8B_C0045	c.667-137C>T	NG_IDRefseq		inconsistent:DIFFERENT	absent
+C8B	C0046		pair_inconsistent_removed							C8B_C0046	c.1235-243C>T	NG_IDRefseq		inconsistent:DIFFERENT	absent
+C8B	C0046		pair_inconsistent_removed							C8B_C0046	c.250-179C>T	NG_IDRefseq		inconsistent:DIFFERENT	absent
+C8B	C0047		pair_inconsistent_removed							C8B_C0047	c.1235-243C>T	NG_IDRefseq		inconsistent:DIFFERENT	absent
+C8B	C0047		pair_inconsistent_removed							C8B_C0047	c.250-179C>T	NG_IDRefseq		inconsistent:DIFFERENT	absent
+C8B	C0048		pair_inconsistent_removed							C8B_C0048	c.1235-243C>T	NG_IDRefseq		inconsistent:DIFFERENT	absent
+C8B	C0048		pair_inconsistent_removed							C8B_C0048	c.250-269C>T	NG_IDRefseq		inconsistent:DIFFERENT	absent
+C8B	C0049		pair_inconsistent_removed							C8B_C0049	c.1235-243C>T	NG_IDRefseq		inconsistent:DIFFERENT	absent
+C8B	C0049		pair_inconsistent_removed							C8B_C0049	c.250-269C>T	NG_IDRefseq		inconsistent:DIFFERENT	absent
+C8B	C0050		pair_inconsistent_removed							C8B_C0050	c.1235-243C>T	NG_IDRefseq		inconsistent:DIFFERENT	absent
+C8B	C0050		pair_inconsistent_removed							C8B_C0050	c.250-269C>T	NG_IDRefseq		inconsistent:DIFFERENT	absent
+C8B	C0051		pair_inconsistent_removed							C8B_C0051	c.1235-243C>T	NG_IDRefseq		inconsistent:DIFFERENT	absent
+C8B	C0051		pair_inconsistent_removed							C8B_C0051	c.250-269C>T	NG_IDRefseq		inconsistent:DIFFERENT	absent
+C8B	C0054		pair_inconsistent_removed							C8B_C0054	c.1235-243C>T	NG_IDRefseq		inconsistent:DIFFERENT	absent
+C8B	C0054		pair_inconsistent_removed							C8B_C0054	c.250-179C>T	NG_IDRefseq		inconsistent:DIFFERENT	absent
+C8B	C0055		pair_inconsistent_removed							C8B_C0055	c.250-179C>T	NG_IDRefseq		inconsistent:DIFFERENT	absent
+C8B	C0056		pair_inconsistent_removed							C8B_C0056	c.1235-243C>T	NG_IDRefseq		inconsistent:DIFFERENT	absent
+C8B	C0056		pair_inconsistent_removed							C8B_C0056	c.250-179C>T	NG_IDRefseq		inconsistent:DIFFERENT	absent
+C8B	C0057		pair_inconsistent_removed							C8B_C0057	c.1235-243C>T	NG_IDRefseq		inconsistent:DIFFERENT	absent
+C8B	C0058		pair_inconsistent_removed							C8B_C0058	c.1235-243C>T	NG_IDRefseq		inconsistent:DIFFERENT	absent
+C8B	C0059		pair_inconsistent_removed							C8B_C0059	c.1235-243C>T	NG_IDRefseq		inconsistent:DIFFERENT	absent
+C8B	C0060		pair_inconsistent_removed							C8B_C0060	c.250-269C>T	NG_IDRefseq		inconsistent:DIFFERENT	absent
+C8B	C0060		pair_inconsistent_removed							C8B_C0060	c.865-114_865-108dup	NG_IDRefseq		inconsistent:DIFFERENT	absent
+C9	C0001		pair_inconsistent_removed							C9_C0001	c.78-2218C>T	NG_IDRefseq		inconsistent:DIFFERENT	absent
+C9	C0001		pair_inconsistent_removed							C9_C0001	c.78-3168C>A	NG_IDRefseq		inconsistent:DIFFERENT	absent
+C9	C0002		pair_inconsistent_removed							C9_C0002	c.78-3168C>A	NG_IDRefseq		inconsistent:DIFFERENT	absent
+C9	C0003		pair_inconsistent_removed							C9_C0003	c.1111+1095C>G	NG_IDRefseq		inconsistent:DIFFERENT	absent
+C9	C0009		pair_inconsistent_removed							C9_C0009	c.78-2218C>T	NG_IDRefseq		inconsistent:DIFFERENT	absent
+C9	C0009		pair_inconsistent_removed							C9_C0009	c.78-3168C>A	NG_IDRefseq		inconsistent:DIFFERENT	absent
+CASP10	C0002		pair_inconsistent_removed							CASP10_C0002	c.722-537G>A	NG_IDRefseq		inconsistent:DIFFERENT	absent
+CD247	C0001		pair_inconsistent_removed							CD247_C0001	c.59-2607C>T	NG_IDRefseq		inconsistent:DIFFERENT	absent
+CD3D	C0001		pair_inconsistent_removed							CD3D_C0001	c.55+552G>A	NG_IDRefseq		inconsistent:DIFFERENT	absent
+CD3D	C0002		pair_inconsistent_removed							CD3D_C0002	c.55+552G>A	NG_IDRefseq		inconsistent:DIFFERENT	absent
+CD3D	C0003		pair_inconsistent_removed							CD3D_C0003	c.55+552G>A	NG_IDRefseq		inconsistent:DIFFERENT	absent
+CD3D	C0007		pair_inconsistent_removed							CD3D_C0007	c.55+552G>A	NG_IDRefseq		inconsistent:DIFFERENT	absent
+CD3G	A0004		pair_inconsistent_removed							CD3G_A0004	c.55+1351A>T	NG_IDRefseq		inconsistent:DIFFERENT	absent
+CD40L	C0002		pair_inconsistent_removed							CD40L_C0002	c.266_267insT	NM_MANE		inconsistent:DIFFERENT	absent
+CD40L	C0008		pair_inconsistent_removed							CD40L_C0008	c.299dup	NM_MANE		inconsistent:DIFFERENT	absent
+CD40L	C0009		pair_inconsistent_removed							CD40L_C0009	c.299dup	NM_MANE		inconsistent:DIFFERENT	absent
+CD40L	C0010		pair_inconsistent_removed							CD40L_C0010	c.350del	NM_MANE		inconsistent:DIFFERENT	absent
+CD40L	C0011		pair_inconsistent_removed							CD40L_C0011	c.375_381del	variantvalidator		inconsistent:DIFFERENT	absent
+CD40L	C0013		pair_inconsistent_removed							CD40L_C0013	c.*40G>A	NM_MANE		inconsistent:DIFFERENT	absent
+CD40L	C0018		pair_inconsistent_removed							CD40L_C0018	c.432dup	NM_MANE		inconsistent:DIFFERENT	absent
+CD40L	C0020		pair_inconsistent_removed							CD40L_C0020	c.707_708insT	NM_MANE		inconsistent:DIFFERENT	absent
+CD40L	C0025		pair_inconsistent_removed							CD40L_C0025	c.551del	variantvalidator		inconsistent:DIFFERENT	absent
+CD40L	C0026		pair_inconsistent_removed							CD40L_C0026	c.551del	variantvalidator		inconsistent:DIFFERENT	absent
+CD40L	C0027		pair_inconsistent_removed							CD40L_C0027	c.765dup	NM_MANE		inconsistent:DIFFERENT	absent
+CD40L	C0029		pair_inconsistent_removed							CD40L_C0029	c.500_504del	variantvalidator		inconsistent:DIFFERENT	absent
+CD40L	C0030		pair_inconsistent_removed							CD40L_C0030	c.*39G>A	NM_MANE		inconsistent:DIFFERENT	absent
+CD40L	C0032		pair_inconsistent_removed							CD40L_C0032	c.487G>A	NM_MANE		inconsistent:DIFFERENT	absent
+CD40L	C0034		pair_inconsistent_removed							CD40L_C0034	c.583C>T	NM_MANE		inconsistent:DIFFERENT	absent
+CD40L	C0036		pair_inconsistent_removed							CD40L_C0036	c.739_740insATT	NM_MANE		inconsistent:DIFFERENT	absent
+CD40L	C0039		pair_inconsistent_removed							CD40L_C0039	c.640T>C	NM_MANE		inconsistent:DIFFERENT	absent
+CD40L	C0047		pair_inconsistent_removed							CD40L_C0047	c.465_474del	variantvalidator		inconsistent:DIFFERENT	absent
+CD40L	C0050		pair_inconsistent_removed							CD40L_C0050	c.212G>A	NM_MANE		inconsistent:DIFFERENT	absent
+CD40L	C0053		pair_inconsistent_removed							CD40L_C0053	c.528del	variantvalidator		inconsistent:DIFFERENT	absent
+CD40L	C0054		pair_inconsistent_removed							CD40L_C0054	c.717C>T	NM_MANE		inconsistent:DIFFERENT	absent
+CD40L	C0055		pair_inconsistent_removed							CD40L_C0055	c.660dup	NM_MANE		inconsistent:FS_START_DIFF	absent
+CD40L	C0056		pair_inconsistent_removed							CD40L_C0056	c.660dup	NM_MANE		inconsistent:FS_START_DIFF	absent
+CD40L	C0059		pair_inconsistent_removed							CD40L_C0059	c.602_603insATA	NM_MANE		inconsistent:DIFFERENT	absent
+CD40L	C0062		pair_inconsistent_removed							CD40L_C0062	c.433T>C	NM_MANE		inconsistent:DIFFERENT	absent
+CD40L	C0063		pair_inconsistent_removed							CD40L_C0063	c.437dup	NM_MANE		inconsistent:DIFFERENT	absent
+CD40L	C0064		pair_inconsistent_removed							CD40L_C0064	c.466del	NM_MANE		inconsistent:DIFFERENT	absent
+CD40L	C0065		pair_inconsistent_removed							CD40L_C0065	c.466del	NM_MANE		inconsistent:DIFFERENT	absent
+CD40L	C0066		pair_inconsistent_removed							CD40L_C0066	c.466del	NM_MANE		inconsistent:DIFFERENT	absent
+CD40L	C0067		pair_inconsistent_removed							CD40L_C0067	c.634_635insTC	NM_MANE		inconsistent:DIFFERENT	absent
+CD40L	C0069		pair_inconsistent_removed							CD40L_C0069	c.423del	variantvalidator		inconsistent:DIFFERENT	absent
+CD40L	C0072		pair_inconsistent_removed							CD40L_C0072	c.567_569del	variantvalidator		inconsistent:DIFFERENT	absent
+CD40L	C0074		pair_inconsistent_removed							CD40L_C0074	c.496C>A	NM_MANE		inconsistent:DIFFERENT	absent
+CD40L	C0081		pair_inconsistent_removed							CD40L_C0081	c.612C>T	NM_MANE		inconsistent:DIFFERENT	absent
+CD40L	C0082		pair_inconsistent_removed							CD40L_C0082	c.717C>T	NM_MANE		inconsistent:DIFFERENT	absent
+CD40L	C0087		pair_inconsistent_removed							CD40L_C0087	c.*43T>C	NM_MANE		inconsistent:DIFFERENT	absent
+CD40L	C0088		pair_inconsistent_removed							CD40L_C0088	c.*43T>C	NM_MANE		inconsistent:DIFFERENT	absent
+CD40L	C0089		pair_inconsistent_removed							CD40L_C0089	c.*43T>C	NM_MANE		inconsistent:DIFFERENT	absent
+CD40L	C0090		pair_inconsistent_removed							CD40L_C0090	c.*43T>C	NM_MANE		inconsistent:DIFFERENT	absent
+CD40L	C0091		pair_inconsistent_removed							CD40L_C0091	c.*43T>C	NM_MANE		inconsistent:DIFFERENT	absent
+CD40L	C0099		pair_inconsistent_removed							CD40L_C0099	c.766T>A	NM_MANE		inconsistent:DIFFERENT	absent
+CD40L	C0104		pair_inconsistent_removed							CD40L_C0104	c.750C>T	NM_MANE		inconsistent:DIFFERENT	absent
+CD40L	C0105		pair_inconsistent_removed							CD40L_C0105	c.750C>T	NM_MANE		inconsistent:DIFFERENT	absent
+CD40L	C0111		pair_inconsistent_removed							CD40L_C0111	c.437A[3]	NM_MANE		inconsistent:DIFFERENT	absent
+CD40L	C0113		pair_inconsistent_removed							CD40L_C0113	c.735_737del	variantvalidator		inconsistent:DIFFERENT	absent
+CD40L	C0114		pair_inconsistent_removed							CD40L_C0114	c.437_438insG	NM_MANE		inconsistent:DIFFERENT	absent
+CD40L	C0118		pair_inconsistent_removed							CD40L_C0118	c.437_438insG	NM_MANE		inconsistent:DIFFERENT	absent
+CD40L	C0119		pair_inconsistent_removed							CD40L_C0119	c.437_438insG	NM_MANE		inconsistent:DIFFERENT	absent
+CD40L	C0120		pair_inconsistent_removed							CD40L_C0120	c.485_486insA	NM_MANE		inconsistent:FS_START_DIFF	absent
+CD40L	C0121		pair_inconsistent_removed							CD40L_C0121	c.635_636insGCCCA	NM_MANE		inconsistent:DIFFERENT	absent
+CD40L	C0122		pair_inconsistent_removed							CD40L_C0122	c.635_636insGCCCA	NM_MANE		inconsistent:DIFFERENT	absent
+CD55	D0001		pair_inconsistent_removed							CD55_D0001	c.287-897C>T	NG_IDRefseq		inconsistent:DIFFERENT	absent
+CD55	D0002		pair_inconsistent_removed							CD55_D0002	c.287-897C>T	NG_IDRefseq		inconsistent:DIFFERENT	absent
+CD55	D0003		pair_inconsistent_removed							CD55_D0003	c.287-897C>T	NG_IDRefseq		inconsistent:DIFFERENT	absent
+CD55	D0004		pair_inconsistent_removed							CD55_D0004	c.287-897C>T	NG_IDRefseq		inconsistent:DIFFERENT	absent
+CD55	D0008		pair_inconsistent_removed							CD55_D0008	c.287-897C>T	NG_IDRefseq		inconsistent:DIFFERENT	absent
+CD55	D0009		pair_inconsistent_removed							CD55_D0009	c.263C>T	NG_IDRefseq		inconsistent:DIFFERENT	absent
+CFP	P0003		pair_inconsistent_removed							CFP_P0003	c.477C>T	NM_MANE		inconsistent:DIFFERENT	absent
+CFP	P0004		pair_inconsistent_removed							CFP_P0004	c.477C>T	NM_MANE		inconsistent:DIFFERENT	absent
+CFP	P0005		pair_inconsistent_removed							CFP_P0005	c.477C>T	NM_MANE		inconsistent:DIFFERENT	absent
+CFP	P0006		pair_inconsistent_removed							CFP_P0006	c.477C>T	NM_MANE		inconsistent:DIFFERENT	absent
+CFP	P0009		pair_inconsistent_removed							CFP_P0009	c.1203T>G	NM_MANE		inconsistent:DIFFERENT	absent
+CFP	P0012		pair_inconsistent_removed							CFP_P0012	c.477C>T	NM_MANE		inconsistent:DIFFERENT	absent
+CFP	P0013		pair_inconsistent_removed							CFP_P0013	c.859C>G	NM_MANE		inconsistent:DIFFERENT	absent
+CFP	P0014		pair_inconsistent_removed							CFP_P0014	c.859C>G	NM_MANE		inconsistent:DIFFERENT	absent
+CFP	P0015		pair_inconsistent_removed							CFP_P0015	c.1025_1032del	variantvalidator		inconsistent:FS_START_DIFF	absent
+CFP	P0016		pair_inconsistent_removed							CFP_P0016	c.1025_1032del	variantvalidator		inconsistent:FS_START_DIFF	absent
+CFP	P0017		pair_inconsistent_removed							CFP_P0017	c.1025_1032del	variantvalidator		inconsistent:FS_START_DIFF	absent
+CFP	P0018		pair_inconsistent_removed							CFP_P0018	c.1025_1032del	variantvalidator		inconsistent:FS_START_DIFF	absent
+CFP	P0019		pair_inconsistent_removed							CFP_P0019	c.1025_1032del	variantvalidator		inconsistent:FS_START_DIFF	absent
+CFP	P0020		pair_inconsistent_removed							CFP_P0020	c.1025_1032del	variantvalidator		inconsistent:FS_START_DIFF	absent
+CFP	P0021		pair_inconsistent_removed							CFP_P0021	c.1204G>C	NM_MANE		inconsistent:DIFFERENT	absent
+CFP	P0022		pair_inconsistent_removed							CFP_P0022	c.1204G>C	NM_MANE		inconsistent:DIFFERENT	absent
+CFP	P0023		pair_inconsistent_removed							CFP_P0023	c.1204G>C	NM_MANE		inconsistent:DIFFERENT	absent
+CFP	P0024		pair_inconsistent_removed							CFP_P0024	c.1204G>C	NM_MANE		inconsistent:DIFFERENT	absent
+CFP	P0025		pair_inconsistent_removed							CFP_P0025	c.1204G>C	NM_MANE		inconsistent:DIFFERENT	absent
+CFP	P0028		pair_inconsistent_removed							CFP_P0028	c.1203T>G	NM_MANE		inconsistent:DIFFERENT	absent
+CFP	P0029		pair_inconsistent_removed							CFP_P0029	c.1203T>G	NM_MANE		inconsistent:DIFFERENT	absent
+CFP	P0030		pair_inconsistent_removed							CFP_P0030	c.1203T>G	NM_MANE		inconsistent:DIFFERENT	absent
+CFP	P0031		pair_inconsistent_removed							CFP_P0031	c.1203T>G	NM_MANE		inconsistent:DIFFERENT	absent
+CFP	P0032		pair_inconsistent_removed							CFP_P0032	c.1203T>G	NM_MANE		inconsistent:DIFFERENT	absent
+CFP	P0033		pair_inconsistent_removed							CFP_P0033	c.1203T>G	NM_MANE		inconsistent:DIFFERENT	absent
+CFP	P0034		pair_inconsistent_removed							CFP_P0034	c.1203T>G	NM_MANE		inconsistent:DIFFERENT	absent
+CFP	P0036		pair_inconsistent_removed							CFP_P0036	c.801C>T	NM_MANE		inconsistent:DIFFERENT	absent
+CIITA	M0002		pair_inconsistent_removed							CIITA_M0002	c.3664_3675del	NM_MANE		inconsistent:POS_SHIFT	absent
+CIITA	M0008		pair_inconsistent_removed							CIITA_M0008	c.3216_3218del	variantvalidator		inconsistent:POS_SHIFT	absent
+CIITA	M0008		pair_inconsistent_removed							CIITA_M0008	c.3325_3405del	NM_MANE		inconsistent:POS_SHIFT	absent
+CTSC	C0016		pair_inconsistent_removed							CTSC_C0016	c.*32268del	NM_MANE		inconsistent:TYPE_DIFF_SAME_POS	absent
+CTSC	C0017		pair_inconsistent_removed							CTSC_C0017	c.*32268del	NM_MANE		inconsistent:TYPE_DIFF_SAME_POS	absent
+CTSC	C0127		pair_inconsistent_removed							CTSC_C0127	c.*13940del	NM_MANE		inconsistent:FS_STOP_DIFF	absent
+CYBB	A0350		pair_inconsistent_removed							CYBB_A0350	c.-1602dup	NM_MANE		inconsistent:FS_START_DIFF	absent
+GFI1	G0001		pair_inconsistent_removed							GFI1_G0001	c.924+240A>G	NG_IDRefseq		inconsistent:DIFFERENT	absent
+GFI1	G0002		pair_inconsistent_removed							GFI1_G0002	c.924+240A>G	NG_IDRefseq		inconsistent:DIFFERENT	absent
+GFI1	G0003		pair_inconsistent_removed							GFI1_G0003	c.924+240A>G	NG_IDRefseq		inconsistent:DIFFERENT	absent
+GFI1	G0004		pair_inconsistent_removed							GFI1_G0004	c.924+303A>G	NG_IDRefseq		inconsistent:DIFFERENT	absent
+IGLL1	G0001		pair_inconsistent_removed							IGLL1_G0001	c.488-1565C>T	NG_IDRefseq		inconsistent:DIFFERENT	absent
+IL12RB1	I0051		pair_inconsistent_removed							IL12RB1_I0051	c.587_603del	NG_IDRefseq		inconsistent:DIFFERENT	absent
+IL2RA	I0002		pair_inconsistent_removed							IL2RA_I0002	c.367+1398dup	NG_IDRefseq		inconsistent:DIFFERENT	absent
+IL2RA	I0002		pair_inconsistent_removed							IL2RA_I0002	c.65-1669C>T	NG_IDRefseq		inconsistent:DIFFERENT	absent
+IL7R	I0009		pair_inconsistent_removed							IL7R_I0009	c.*108C>T	NG_IDRefseq		inconsistent:DIFFERENT	absent
+ITGB2	A0016		pair_inconsistent_removed							ITGB2_A0016	c.2142del	NM_MANE		inconsistent:DIFFERENT	absent
+JAK3	J0004		pair_inconsistent_removed							JAK3_J0004	c.1442_1587del	NG_IDRefseq		inconsistent:TYPE_DIFF_SAME_POS	absent
+LIG1	L0001		pair_inconsistent_removed							LIG1_L0001	c.1912-1922C>T	NG_IDRefseq		inconsistent:DIFFERENT	absent
+LYST	C0001		pair_inconsistent_removed							LYST_C0001	c.307dup	NM_MANE		inconsistent:DIFFERENT	absent
+LYST	C0002		pair_inconsistent_removed							LYST_C0002	c.3262_3263del	variantvalidator		inconsistent:DIFFERENT	absent
+LYST	C0005		pair_inconsistent_removed							LYST_C0005	c.2093dup	NM_MANE		inconsistent:DIFFERENT	absent
+LYST	C0006		pair_inconsistent_removed							LYST_C0006	c.9941del	NM_MANE		inconsistent:DIFFERENT	absent
+LYST	C0007		pair_inconsistent_removed							LYST_C0007	c.1656del	NM_MANE		inconsistent:FS_START_DIFF	absent
+LYST	C0009		pair_inconsistent_removed							LYST_C0009	c.307dup	NM_MANE		inconsistent:DIFFERENT	absent
+LYST	C0010		pair_inconsistent_removed							LYST_C0010	c.2810del	NM_MANE		inconsistent:DIFFERENT	absent
+LYST	C0012		pair_inconsistent_removed							LYST_C0012	c.7744del	variantvalidator		inconsistent:DIFFERENT	absent
+LYST	C0013		pair_inconsistent_removed							LYST_C0013	c.7249_7255del	variantvalidator		inconsistent:DIFFERENT	absent
+LYST	C0014		pair_inconsistent_removed							LYST_C0014	c.9457_9511del	NM_MANE		inconsistent:DIFFERENT	absent
+LYST	C0015		pair_inconsistent_removed							LYST_C0015	c.9941del	NM_MANE		inconsistent:DIFFERENT	absent
+LYST	C0016		pair_inconsistent_removed							LYST_C0016	c.2810del	NM_MANE		inconsistent:DIFFERENT	absent
+LYST	C0017		pair_inconsistent_removed							LYST_C0017	c.10584del	variantvalidator		inconsistent:DIFFERENT	absent
+LYST	C0019		pair_inconsistent_removed							LYST_C0019	c.3623dup	NM_MANE		inconsistent:DIFFERENT	absent
+LYST	C0023		pair_inconsistent_removed							LYST_C0023	c.4463del	variantvalidator		inconsistent:DIFFERENT	absent
+LYST	C0024		pair_inconsistent_removed							LYST_C0024	c.5250T>A	NM_MANE		inconsistent:DIFFERENT	absent
+LYST	C0027		pair_inconsistent_removed							LYST_C0027	c.8745G>A	NG_IDRefseq		inconsistent:POS_SHIFT	absent
+LYST	C0028		pair_inconsistent_removed							LYST_C0028	c.8745G>A	NG_IDRefseq		inconsistent:POS_SHIFT	absent
+LYST	C0029		pair_inconsistent_removed							LYST_C0029	c.5506del	variantvalidator		inconsistent:DIFFERENT	absent
+LYST	C0030		pair_inconsistent_removed							LYST_C0030	c.5506del	variantvalidator		inconsistent:DIFFERENT	absent
+MLPH	M0001		pair_inconsistent_removed							MLPH_M0001	c.-25+2095C>T	NG_IDRefseq		inconsistent:DIFFERENT	absent
+MYO5A	M0001		pair_inconsistent_removed							MYO5A_M0001	c.3424-1333C>T	NG_IDRefseq		inconsistent:DIFFERENT	absent
+MYO5A	M0002		pair_inconsistent_removed							MYO5A_M0002	c.2013-507C>T	NG_IDRefseq		inconsistent:DIFFERENT	absent
+NCF1	N0002		pair_inconsistent_removed							NCF1_N0002	c.515del	NM_MANE		inconsistent:DIFFERENT	absent
+NCF1	N0002		pair_inconsistent_removed							NCF1_N0002	c.87_88del	variantvalidator		inconsistent:FS_START_DIFF	absent
+NCF1	N0004		pair_inconsistent_removed							NCF1_N0004	c.87_88del	variantvalidator		inconsistent:FS_START_DIFF	absent
+NCF1	N0005		pair_inconsistent_removed							NCF1_N0005	c.87_88del	variantvalidator		inconsistent:FS_START_DIFF	absent
+NCF1	N0006		pair_inconsistent_removed							NCF1_N0006	c.87_88del	variantvalidator		inconsistent:FS_START_DIFF	absent
+NCF1	N0007		pair_inconsistent_removed							NCF1_N0007	c.87_88del	variantvalidator		inconsistent:FS_START_DIFF	absent
+NCF1	N0009		pair_inconsistent_removed							NCF1_N0009	c.87_88del	variantvalidator		inconsistent:FS_START_DIFF	absent
+NCF1	N0010		pair_inconsistent_removed							NCF1_N0010	c.87_88del	variantvalidator		inconsistent:FS_START_DIFF	absent
+NCF1	N0011		pair_inconsistent_removed							NCF1_N0011	c.87_88del	variantvalidator		inconsistent:FS_START_DIFF	absent
+NCF1	N0012		pair_inconsistent_removed							NCF1_N0012	c.87_88del	variantvalidator		inconsistent:FS_START_DIFF	absent
+NCF1	N0013		pair_inconsistent_removed							NCF1_N0013	c.87_88del	variantvalidator		inconsistent:FS_START_DIFF	absent
+NCF1	N0014		pair_inconsistent_removed							NCF1_N0014	c.87_88del	variantvalidator		inconsistent:FS_START_DIFF	absent
+NCF1	N0015		pair_inconsistent_removed							NCF1_N0015	c.87_88del	variantvalidator		inconsistent:FS_START_DIFF	absent
+NCF1	N0016		pair_inconsistent_removed							NCF1_N0016	c.87_88del	variantvalidator		inconsistent:FS_START_DIFF	absent
+NCF1	N0017		pair_inconsistent_removed							NCF1_N0017	c.87_88del	variantvalidator		inconsistent:FS_START_DIFF	absent
+NCF1	N0018		pair_inconsistent_removed							NCF1_N0018	c.87_88del	variantvalidator		inconsistent:FS_START_DIFF	absent
+NCF1	N0019		pair_inconsistent_removed							NCF1_N0019	c.87_88del	variantvalidator		inconsistent:FS_START_DIFF	absent
+NCF1	N0020		pair_inconsistent_removed							NCF1_N0020	c.87_88del	variantvalidator		inconsistent:FS_START_DIFF	absent
+NCF1	N0021		pair_inconsistent_removed							NCF1_N0021	c.87_88del	variantvalidator		inconsistent:FS_START_DIFF	absent
+NCF1	N0022		pair_inconsistent_removed							NCF1_N0022	c.87_88del	variantvalidator		inconsistent:FS_START_DIFF	absent
+NCF1	N0023		pair_inconsistent_removed							NCF1_N0023	c.87_88del	variantvalidator		inconsistent:FS_START_DIFF	absent
+NCF1	N0024		pair_inconsistent_removed							NCF1_N0024	c.591G>A	NM_MANE		inconsistent:DIFFERENT	absent
+NCF1	N0025		pair_inconsistent_removed							NCF1_N0025	c.591G>A	NM_MANE		inconsistent:DIFFERENT	absent
+NCF1	N0026		pair_inconsistent_removed							NCF1_N0026	c.591G>A	NM_MANE		inconsistent:DIFFERENT	absent
+NCF1	N0027		pair_inconsistent_removed							NCF1_N0027	c.87_88del	variantvalidator		inconsistent:FS_START_DIFF	absent
+NCF1	N0028		pair_inconsistent_removed							NCF1_N0028	c.87_88del	variantvalidator		inconsistent:FS_START_DIFF	absent
+NCF1	N0029		pair_inconsistent_removed							NCF1_N0029	c.87_88del	variantvalidator		inconsistent:FS_START_DIFF	absent
+NCF1	N0031		pair_inconsistent_removed							NCF1_N0031	c.87_88del	variantvalidator		inconsistent:FS_START_DIFF	absent
+NCF1	N0032		pair_inconsistent_removed							NCF1_N0032	c.87_88del	variantvalidator		inconsistent:FS_START_DIFF	absent
+NCF1	N0033		pair_inconsistent_removed							NCF1_N0033	c.87_88del	variantvalidator		inconsistent:FS_START_DIFF	absent
+NCF1	N0034		pair_inconsistent_removed							NCF1_N0034	c.87_88del	variantvalidator		inconsistent:FS_START_DIFF	absent
+NHEJ1	N0001		pair_inconsistent_removed							NHEJ1_N0001	c.391-3283T>C	NG_IDRefseq		inconsistent:DIFFERENT	absent
+NHEJ1	N0001		pair_inconsistent_removed							NHEJ1_N0001	c.391-3982C>G	NG_IDRefseq		inconsistent:DIFFERENT	absent
+NHEJ1	N0002		pair_inconsistent_removed							NHEJ1_N0002	c.588+6361C>T	NG_IDRefseq		inconsistent:DIFFERENT	absent
+NHEJ1	N0005		pair_inconsistent_removed							NHEJ1_N0005	c.391-3982C>G	NG_IDRefseq		inconsistent:DIFFERENT	absent
+NHEJ1	N0007		pair_inconsistent_removed							NHEJ1_N0007	c.391-3982C>G	NG_IDRefseq		inconsistent:DIFFERENT	absent
+NHEJ1	N0010		pair_inconsistent_removed							NHEJ1_N0010	c.588+5437C>T	NG_IDRefseq		inconsistent:DIFFERENT	absent
+NHEJ1	N0011		pair_inconsistent_removed							NHEJ1_N0011	c.588+6361C>T	NG_IDRefseq		inconsistent:DIFFERENT	absent
+ORAI1	T0004		pair_inconsistent_removed							ORAI1_T0004	c.307-4274C>A	NG_IDRefseq		inconsistent:DIFFERENT	absent
+PRF1	P0001		pair_inconsistent_removed							PRF1_P0001	c.151del	variantvalidator		inconsistent:DIFFERENT	absent
+PRF1	P0002		pair_inconsistent_removed							PRF1_P0002	c.1223G>A	NM_MANE		inconsistent:DIFFERENT	absent
+PRF1	P0003		pair_inconsistent_removed							PRF1_P0003	c.291C>T	NM_MANE		inconsistent:DIFFERENT	absent
+PRF1	P0004		pair_inconsistent_removed							PRF1_P0004	c.1223G>A	NM_MANE		inconsistent:DIFFERENT	absent
+PRF1	P0005		pair_inconsistent_removed							PRF1_P0005	c.1387G>A	NM_MANE		inconsistent:DIFFERENT	absent
+PRF1	P0006		pair_inconsistent_removed							PRF1_P0006	c.1135C>T	NM_MANE		inconsistent:DIFFERENT	absent
+PRF1	P0007		pair_inconsistent_removed							PRF1_P0007	c.649T>G	NM_MANE		inconsistent:DIFFERENT	absent
+PRF1	P0007		pair_inconsistent_removed							PRF1_P0007	c.937G>A	NM_MANE		inconsistent:DIFFERENT	absent
+PRF1	P0009		pair_inconsistent_removed							PRF1_P0009	c.1223G>A	NM_MANE		inconsistent:DIFFERENT	absent
+PRF1	P0010		pair_inconsistent_removed							PRF1_P0010	c.1223G>A	NM_MANE		inconsistent:DIFFERENT	absent
+PRF1	P0011		pair_inconsistent_removed							PRF1_P0011	c.1223G>A	NM_MANE		inconsistent:DIFFERENT	absent
+PRF1	P0012		pair_inconsistent_removed							PRF1_P0012	c.1223G>A	NM_MANE		inconsistent:DIFFERENT	absent
+PRF1	P0015		pair_inconsistent_removed							PRF1_P0015	c.954_956del	variantvalidator		inconsistent:DIFFERENT	absent
+PRF1	P0016		pair_inconsistent_removed							PRF1_P0016	c.151del	variantvalidator		inconsistent:DIFFERENT	absent
+PRF1	P0019		pair_inconsistent_removed							PRF1_P0019	c.759G>A	NM_MANE		inconsistent:DIFFERENT	absent
+PRF1	P0021		pair_inconsistent_removed							PRF1_P0021	c.1282dup	NM_MANE		inconsistent:FS_START_DIFF	absent
+PRF1	P0021		pair_inconsistent_removed							PRF1_P0021	c.795C>T	NM_MANE		inconsistent:DIFFERENT	absent
+PRF1	P0022		pair_inconsistent_removed							PRF1_P0022	c.1223G>A	NM_MANE		inconsistent:DIFFERENT	absent
+PRF1	P0023		pair_inconsistent_removed							PRF1_P0023	c.1223G>A	NM_MANE		inconsistent:DIFFERENT	absent
+PRF1	P0024		pair_inconsistent_removed							PRF1_P0024	c.1223G>A	NM_MANE		inconsistent:DIFFERENT	absent
+PRF1	P0025		pair_inconsistent_removed							PRF1_P0025	c.1223G>A	NM_MANE		inconsistent:DIFFERENT	absent
+PRF1	P0026		pair_inconsistent_removed							PRF1_P0026	c.1184del	NM_MANE		inconsistent:DIFFERENT	absent
+PRF1	P0027		pair_inconsistent_removed							PRF1_P0027	c.1184del	NM_MANE		inconsistent:DIFFERENT	absent
+PRF1	P0028		pair_inconsistent_removed							PRF1_P0028	c.1184del	NM_MANE		inconsistent:DIFFERENT	absent
+PRF1	P0029		pair_inconsistent_removed							PRF1_P0029	c.1223G>A	NM_MANE		inconsistent:DIFFERENT	absent
+PRF1	P0029		pair_inconsistent_removed							PRF1_P0029	c.308del	variantvalidator		inconsistent:FS_START_DIFF	absent
+PRF1	P0030		pair_inconsistent_removed							PRF1_P0030	c.1191_1192del	variantvalidator		inconsistent:DIFFERENT	absent
+PRF1	P0031		pair_inconsistent_removed							PRF1_P0031	c.1191_1192del	variantvalidator		inconsistent:DIFFERENT	absent
+PRF1	P0032		pair_inconsistent_removed							PRF1_P0032	c.1050G>A	NM_MANE		inconsistent:DIFFERENT	absent
+PRF1	P0033		pair_inconsistent_removed							PRF1_P0033	c.1191_1192del	variantvalidator		inconsistent:DIFFERENT	absent
+PRF1	P0033		pair_inconsistent_removed							PRF1_P0033	c.308del	variantvalidator		inconsistent:FS_START_DIFF	absent
+PRF1	P0034		pair_inconsistent_removed							PRF1_P0034	c.1191_1192del	variantvalidator		inconsistent:DIFFERENT	absent
+PRF1	P0035		pair_inconsistent_removed							PRF1_P0035	c.1191_1192del	variantvalidator		inconsistent:DIFFERENT	absent
+PRF1	P0035		pair_inconsistent_removed							PRF1_P0035	c.308del	variantvalidator		inconsistent:FS_START_DIFF	absent
+PRF1	P0036		pair_inconsistent_removed							PRF1_P0036	c.1191_1192del	variantvalidator		inconsistent:DIFFERENT	absent
+PRKDC	P0001		pair_inconsistent_removed							PRKDC_P0001	c.5751-171_5751-169del	NG_IDRefseq		inconsistent:DIFFERENT	absent
+RAC2	R0001		pair_inconsistent_removed							RAC2_R0001	c.108-3934G>A	NG_IDRefseq		inconsistent:DIFFERENT	absent
+RAD50	R0001		pair_inconsistent_removed							RAD50_R0001	c.3037-1774C>T	NG_IDRefseq		inconsistent:DIFFERENT	absent
+RAD50	R0001		pair_inconsistent_removed							RAD50_R0001	c.3618+188A>T	NG_IDRefseq		inconsistent:DIFFERENT	absent
+RAG1	R0001		pair_inconsistent_removed							RAG1_R0001	c.-14-4003G>A	NG_IDRefseq		inconsistent:DIFFERENT	absent
+RAG1	R0006		pair_inconsistent_removed							RAG1_R0006	c.-14-4556_-14-4544del	NG_IDRefseq		inconsistent:DIFFERENT	absent
+RAG1	R0011		pair_inconsistent_removed							RAG1_R0011	c.2039_2040insAGCTCTCAGAATGTGAAAC	NM_MANE		inconsistent:DIFFERENT	absent
+RAG1	R0012		pair_inconsistent_removed							RAG1_R0012	c.1258del	variantvalidator		inconsistent:DIFFERENT	absent
+RAG1	R0018		pair_inconsistent_removed							RAG1_R0018	c.-14-4003G>A	NG_IDRefseq		inconsistent:DIFFERENT	absent
+RAG1	R0021		pair_inconsistent_removed							RAG1_R0021	c.2599_2600delinsTT	NM_MANE		inconsistent:DIFFERENT	absent
+RAG1	R0022		pair_inconsistent_removed							RAG1_R0022	c.-14-4003G>A	NG_IDRefseq		inconsistent:DIFFERENT	absent
+RAG1	R0027		pair_inconsistent_removed							RAG1_R0027	c.-14-5106del	NG_IDRefseq		inconsistent:DIFFERENT	absent
+RAG1	R0028		pair_inconsistent_removed							RAG1_R0028	c.1521_1522del	variantvalidator		inconsistent:FS_START_DIFF	absent
+RAG1	R0040		pair_inconsistent_removed							RAG1_R0040	c.631del	NM_MANE		inconsistent:DIFFERENT	absent
+RAG1	R0041		pair_inconsistent_removed							RAG1_R0041	c.887del	variantvalidator		inconsistent:DIFFERENT	absent
+RFX5	R0005		pair_inconsistent_removed							RFX5_R0005	c.841C>T	NG_IDRefseq		inconsistent:POS_SHIFT	absent
+RFX5	R0007		pair_inconsistent_removed							RFX5_R0007	c.326G>A	NG_IDRefseq		inconsistent:POS_SHIFT	absent
+RFX5	R0008		pair_inconsistent_removed							RFX5_R0008	c.326G>A	NG_IDRefseq		inconsistent:POS_SHIFT	absent
+RFXANK	R0001		pair_inconsistent_removed							RFXANK_R0001	c.721G>T	NM_MANE		inconsistent:DIFFERENT	absent
+SLC35C1	A0001		pair_inconsistent_removed							SLC35C1_A0001	c.-31-161C>T	NG_IDRefseq		inconsistent:DIFFERENT	absent
+SLC35C1	A0002		pair_inconsistent_removed							SLC35C1_A0002	c.497-204C>G	NG_IDRefseq		inconsistent:DIFFERENT	absent
+SLC35C1	A0003		pair_inconsistent_removed							SLC35C1_A0003	c.497-204C>G	NG_IDRefseq		inconsistent:DIFFERENT	absent
+SLC35C1	A0005		pair_inconsistent_removed							SLC35C1_A0005	c.497-204C>G	NG_IDRefseq		inconsistent:DIFFERENT	absent
+SLC35C1	A0006		pair_inconsistent_removed							SLC35C1_A0006	c.497-204C>G	NG_IDRefseq		inconsistent:DIFFERENT	absent
+SLC35C1	A0007		pair_inconsistent_removed							SLC35C1_A0007	c.497-204C>G	NG_IDRefseq		inconsistent:DIFFERENT	absent
+SLC35C1	A0008		pair_inconsistent_removed							SLC35C1_A0008	c.497-158G>A	NG_IDRefseq		inconsistent:DIFFERENT	absent
+SLC35C1	A0009		pair_inconsistent_removed							SLC35C1_A0009	c.497-117A>G	NG_IDRefseq		inconsistent:DIFFERENT	absent
+STAT5B	S0001		pair_inconsistent_removed							STAT5B_S0001	c.1191+1890G>C	NG_IDRefseq		inconsistent:DIFFERENT	absent
+STAT5B	S0004		pair_inconsistent_removed							STAT5B_S0004	c.4-2545C>T	NG_IDRefseq		inconsistent:DIFFERENT	absent
+STIM1	S0001		pair_inconsistent_removed							STIM1_S0001	c.164-3978G>T	NG_IDRefseq		inconsistent:DIFFERENT	absent
+STIM1	S0002		pair_inconsistent_removed							STIM1_S0002	c.164-3978G>T	NG_IDRefseq		inconsistent:DIFFERENT	absent
+STX11	S0008		pair_inconsistent_removed							STX11_S0008	c.74-2327C>T	NG_IDRefseq		inconsistent:DIFFERENT	absent
+STX11	S0009		pair_inconsistent_removed							STX11_S0009	c.74-2327C>T	NG_IDRefseq		inconsistent:DIFFERENT	absent
+STX11	S0013		pair_inconsistent_removed							STX11_S0013	c.74-2327C>T	NG_IDRefseq		inconsistent:DIFFERENT	absent
+STX11	S0015		pair_inconsistent_removed							STX11_S0015	c.74-2327C>T	NG_IDRefseq		inconsistent:DIFFERENT	absent
+STX11	S0016		pair_inconsistent_removed							STX11_S0016	c.74-2327C>T	NG_IDRefseq		inconsistent:DIFFERENT	absent
+TLR3	T0001		pair_inconsistent_removed							TLR3_T0001	c.442-208T>C	NG_IDRefseq		inconsistent:DIFFERENT	absent
+TLR3	T0002		pair_inconsistent_removed							TLR3_T0002	c.633+353C>T	NG_IDRefseq		inconsistent:DIFFERENT	absent
+TLR3	T0003		pair_inconsistent_removed							TLR3_T0003	c.633+353C>T	NG_IDRefseq		inconsistent:DIFFERENT	absent
+TMC6	E0001		pair_inconsistent_removed							TMC6_E0001	c.-74-46C>T	NG_IDRefseq		inconsistent:DIFFERENT	absent
+TMC6	E0002		pair_inconsistent_removed							TMC6_E0002	c.-74-46C>T	NG_IDRefseq		inconsistent:DIFFERENT	absent
+TMC6	E0003		pair_inconsistent_removed							TMC6_E0003	c.-74-46C>T	NG_IDRefseq		inconsistent:DIFFERENT	absent
+TMC6	E0004		pair_inconsistent_removed							TMC6_E0004	c.1589+195G>T	NG_IDRefseq		inconsistent:DIFFERENT	absent
+TMC6	E0005		pair_inconsistent_removed							TMC6_E0005	c.1589+195G>T	NG_IDRefseq		inconsistent:DIFFERENT	absent
+TMC6	E0006		pair_inconsistent_removed							TMC6_E0006	c.1589+195G>T	NG_IDRefseq		inconsistent:DIFFERENT	absent
+TMC6	E0007		pair_inconsistent_removed							TMC6_E0007	c.409C>A	NG_IDRefseq		inconsistent:DIFFERENT	absent
+TMC6	E0008		pair_inconsistent_removed							TMC6_E0008	c.459_463dup	NG_IDRefseq		inconsistent:DIFFERENT	absent
+TMC6	E0009		pair_inconsistent_removed							TMC6_E0009	c.459_463dup	NG_IDRefseq		inconsistent:DIFFERENT	absent
+TMC6	E0010		pair_inconsistent_removed							TMC6_E0010	c.515del	NG_IDRefseq		inconsistent:DIFFERENT	absent
+TMC6	E0011		pair_inconsistent_removed							TMC6_E0011	c.-74-498C>T	NG_IDRefseq		inconsistent:DIFFERENT	absent
+UNC13D	U0010		pair_inconsistent_removed							UNC13D_U0010	c.684-38C>T	NG_IDRefseq		inconsistent:DIFFERENT	absent
+UNC13D	U0020		pair_inconsistent_removed							UNC13D_U0020	c.2230_2233del	NG_IDRefseq		inconsistent:FS_START_DIFF	absent
