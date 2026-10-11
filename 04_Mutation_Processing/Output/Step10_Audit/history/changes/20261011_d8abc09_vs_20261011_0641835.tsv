@@ -1,33 +1,127 @@
-gene	accession	allele	change	fate_prev	fate_now	fate_detail_prev	fate_detail_now	protein_check_prev	protein_check_now
-CYBB	A0005	0	gain;protein_check_change	NOT_REGISTERED	IN_FINAL	mutalyzer_ok_but_absent_from_final	traced_through_pipeline		SOURCE_NO_P
-CYBB	A0021	0	protein_bad_to_good	IN_FINAL	IN_FINAL	traced_through_pipeline	traced_through_pipeline	FS_STOP_DIFF	MATCH_FS
-CYBB	A0091	0	protein_bad_to_good	IN_FINAL	IN_FINAL	traced_through_pipeline	traced_through_pipeline	FS_STOP_DIFF	MATCH_FS
-CYBB	A0109	0	protein_bad_to_good	IN_FINAL	IN_FINAL	traced_through_pipeline	traced_through_pipeline	TYPE_DIFF_SAME_POS	MATCH
-CYBB	A0111	0	protein_bad_to_good	IN_FINAL	IN_FINAL	traced_through_pipeline	traced_through_pipeline	TYPE_DIFF_SAME_POS	MATCH
-CYBB	A0224	0	gain;protein_check_change	NOT_REGISTERED	IN_FINAL	mutalyzer_ok_but_absent_from_final	traced_through_pipeline		SOURCE_NO_P
-CYBB	A0236	0	gain;protein_check_change	NOT_REGISTERED	IN_FINAL	mutalyzer_ok_but_absent_from_final	traced_through_pipeline		SOURCE_NO_P
-CYBB	A0237	0	gain;protein_check_change	NOT_REGISTERED	IN_FINAL	mutalyzer_ok_but_absent_from_final	traced_through_pipeline		SOURCE_NO_P
-CYBB	A0330	0	gain;protein_check_change	NOT_REGISTERED	IN_FINAL	mutalyzer_ok_but_absent_from_final	traced_through_pipeline		MATCH_FS
-CYBB	A0377	0	gain;protein_check_change	NOT_REGISTERED	IN_FINAL	mutalyzer_ok_but_absent_from_final	traced_through_pipeline		MATCH
-CYBB	A0500	0	gain;protein_check_change	NOT_REGISTERED	IN_FINAL	mutalyzer_ok_but_absent_from_final	traced_through_pipeline		SOURCE_NO_P
-CYBB	A0585	0	protein_check_change	IN_FINAL	IN_FINAL	traced_through_pipeline	traced_through_pipeline	TYPE_DIFF_SAME_POS	DIFFERENT
-CYBB	A0593	0	gain;protein_check_change	NOT_REGISTERED	IN_FINAL	mutalyzer_ok_but_absent_from_final	traced_through_pipeline		SOURCE_NO_P
-CYBB	A0599	0	protein_bad_to_good	IN_FINAL	IN_FINAL	traced_through_pipeline	traced_through_pipeline	TYPE_DIFF_SAME_POS	MATCH_INFRAME
-CYBB	A0600	0	protein_bad_to_good	IN_FINAL	IN_FINAL	traced_through_pipeline	traced_through_pipeline	TYPE_DIFF_SAME_POS	MATCH_INFRAME
-CYBB	A0601	0	protein_bad_to_good	IN_FINAL	IN_FINAL	traced_through_pipeline	traced_through_pipeline	TYPE_DIFF_SAME_POS	MATCH_INFRAME
-CYBB	A0625	0	gain;protein_check_change	NOT_REGISTERED	IN_FINAL	mutalyzer_ok_but_absent_from_final	traced_through_pipeline		SOURCE_NO_P
-CYBB	A0645	0	protein_bad_to_good	IN_FINAL	IN_FINAL	traced_through_pipeline	traced_through_pipeline	TYPE_DIFF_SAME_POS	MATCH_INFRAME
-CYBB	A0674	0	protein_bad_to_good	IN_FINAL	IN_FINAL	traced_through_pipeline	traced_through_pipeline	FS_STOP_DIFF	MATCH_FS
-CYBB	A0689	0	protein_bad_to_good	IN_FINAL	IN_FINAL	traced_through_pipeline	traced_through_pipeline	FS_STOP_DIFF	MATCH_FS
-CYBB	A0709	0	protein_bad_to_good	IN_FINAL	IN_FINAL	traced_through_pipeline	traced_through_pipeline	TYPE_DIFF_SAME_POS	MATCH_FS
-CYBB	A0710	0	protein_bad_to_good	IN_FINAL	IN_FINAL	traced_through_pipeline	traced_through_pipeline	TYPE_DIFF_SAME_POS	MATCH_FS
-CYBB	A0711	0	protein_bad_to_good	IN_FINAL	IN_FINAL	traced_through_pipeline	traced_through_pipeline	TYPE_DIFF_SAME_POS	MATCH_FS
-CYBB	A0819	0	protein_check_change	IN_FINAL	IN_FINAL	traced_through_pipeline	traced_through_pipeline	FS_STOP_DIFF	TYPE_DIFF_SAME_POS
-CYBB	A1046	0	gain;protein_check_change	NOT_REGISTERED	IN_FINAL	mutalyzer_ok_but_absent_from_final	traced_through_pipeline		SOURCE_NO_P
-CYBB	A1047	0	gain;protein_check_change	NOT_REGISTERED	IN_FINAL	mutalyzer_ok_but_absent_from_final	traced_through_pipeline		SOURCE_NO_P
-CYBB	A1078	0	protein_bad_to_good	IN_FINAL	IN_FINAL	traced_through_pipeline	traced_through_pipeline	FS_STOP_DIFF	MATCH_FS
-CYBB	A1117	0	gain;protein_check_change	NOT_REGISTERED	IN_FINAL	mutalyzer_ok_but_absent_from_final	traced_through_pipeline		MATCH
-CYBB	A1121	0	protein_bad_to_good	IN_FINAL	IN_FINAL	traced_through_pipeline	traced_through_pipeline	TYPE_DIFF_SAME_POS	MATCH_FS
-CYBB	A1256	0	protein_bad_to_good	IN_FINAL	IN_FINAL	traced_through_pipeline	traced_through_pipeline	FS_STOP_DIFF	MATCH_FS
-CYBB	A1425	0	protein_bad_to_good	IN_FINAL	IN_FINAL	traced_through_pipeline	traced_through_pipeline	TYPE_DIFF_SAME_POS	MATCH_FS
-CYBB	A1434	0	gain;protein_check_change	NOT_REGISTERED	IN_FINAL	mutalyzer_ok_but_absent_from_final	traced_through_pipeline		SOURCE_NO_P
+gene	accession	allele	change	fate_prev	fate_now	fate_detail_prev	fate_detail_now	protein_check_prev	protein_check_now	individual_id	variant_key	track_prev	track_now	pair_label_prev	pair_label_now
+CYBB	A0005	0	gain;protein_check_change	NOT_REGISTERED	IN_FINAL	mutalyzer_ok_but_absent_from_final	traced_through_pipeline		SOURCE_NO_P						
+CYBB	A0021	0	protein_bad_to_good	IN_FINAL	IN_FINAL	traced_through_pipeline	traced_through_pipeline	FS_STOP_DIFF	MATCH_FS						
+CYBB	A0091	0	protein_bad_to_good	IN_FINAL	IN_FINAL	traced_through_pipeline	traced_through_pipeline	FS_STOP_DIFF	MATCH_FS						
+CYBB	A0109	0	protein_bad_to_good	IN_FINAL	IN_FINAL	traced_through_pipeline	traced_through_pipeline	TYPE_DIFF_SAME_POS	MATCH						
+CYBB	A0111	0	protein_bad_to_good	IN_FINAL	IN_FINAL	traced_through_pipeline	traced_through_pipeline	TYPE_DIFF_SAME_POS	MATCH						
+CYBB	A0224	0	gain;protein_check_change	NOT_REGISTERED	IN_FINAL	mutalyzer_ok_but_absent_from_final	traced_through_pipeline		SOURCE_NO_P						
+CYBB	A0236	0	gain;protein_check_change	NOT_REGISTERED	IN_FINAL	mutalyzer_ok_but_absent_from_final	traced_through_pipeline		SOURCE_NO_P						
+CYBB	A0237	0	gain;protein_check_change	NOT_REGISTERED	IN_FINAL	mutalyzer_ok_but_absent_from_final	traced_through_pipeline		SOURCE_NO_P						
+CYBB	A0330	0	gain;protein_check_change	NOT_REGISTERED	IN_FINAL	mutalyzer_ok_but_absent_from_final	traced_through_pipeline		MATCH_FS						
+CYBB	A0377	0	gain;protein_check_change	NOT_REGISTERED	IN_FINAL	mutalyzer_ok_but_absent_from_final	traced_through_pipeline		MATCH						
+CYBB	A0500	0	gain;protein_check_change	NOT_REGISTERED	IN_FINAL	mutalyzer_ok_but_absent_from_final	traced_through_pipeline		SOURCE_NO_P						
+CYBB	A0585	0	protein_check_change	IN_FINAL	IN_FINAL	traced_through_pipeline	traced_through_pipeline	TYPE_DIFF_SAME_POS	DIFFERENT						
+CYBB	A0593	0	gain;protein_check_change	NOT_REGISTERED	IN_FINAL	mutalyzer_ok_but_absent_from_final	traced_through_pipeline		SOURCE_NO_P						
+CYBB	A0599	0	protein_bad_to_good	IN_FINAL	IN_FINAL	traced_through_pipeline	traced_through_pipeline	TYPE_DIFF_SAME_POS	MATCH_INFRAME						
+CYBB	A0600	0	protein_bad_to_good	IN_FINAL	IN_FINAL	traced_through_pipeline	traced_through_pipeline	TYPE_DIFF_SAME_POS	MATCH_INFRAME						
+CYBB	A0601	0	protein_bad_to_good	IN_FINAL	IN_FINAL	traced_through_pipeline	traced_through_pipeline	TYPE_DIFF_SAME_POS	MATCH_INFRAME						
+CYBB	A0625	0	gain;protein_check_change	NOT_REGISTERED	IN_FINAL	mutalyzer_ok_but_absent_from_final	traced_through_pipeline		SOURCE_NO_P						
+CYBB	A0645	0	protein_bad_to_good	IN_FINAL	IN_FINAL	traced_through_pipeline	traced_through_pipeline	TYPE_DIFF_SAME_POS	MATCH_INFRAME						
+CYBB	A0674	0	protein_bad_to_good	IN_FINAL	IN_FINAL	traced_through_pipeline	traced_through_pipeline	FS_STOP_DIFF	MATCH_FS						
+CYBB	A0689	0	protein_bad_to_good	IN_FINAL	IN_FINAL	traced_through_pipeline	traced_through_pipeline	FS_STOP_DIFF	MATCH_FS						
+CYBB	A0709	0	protein_bad_to_good	IN_FINAL	IN_FINAL	traced_through_pipeline	traced_through_pipeline	TYPE_DIFF_SAME_POS	MATCH_FS						
+CYBB	A0710	0	protein_bad_to_good	IN_FINAL	IN_FINAL	traced_through_pipeline	traced_through_pipeline	TYPE_DIFF_SAME_POS	MATCH_FS						
+CYBB	A0711	0	protein_bad_to_good	IN_FINAL	IN_FINAL	traced_through_pipeline	traced_through_pipeline	TYPE_DIFF_SAME_POS	MATCH_FS						
+CYBB	A0819	0	protein_check_change	IN_FINAL	IN_FINAL	traced_through_pipeline	traced_through_pipeline	FS_STOP_DIFF	TYPE_DIFF_SAME_POS						
+CYBB	A1046	0	gain;protein_check_change	NOT_REGISTERED	IN_FINAL	mutalyzer_ok_but_absent_from_final	traced_through_pipeline		SOURCE_NO_P						
+CYBB	A1047	0	gain;protein_check_change	NOT_REGISTERED	IN_FINAL	mutalyzer_ok_but_absent_from_final	traced_through_pipeline		SOURCE_NO_P						
+CYBB	A1078	0	protein_bad_to_good	IN_FINAL	IN_FINAL	traced_through_pipeline	traced_through_pipeline	FS_STOP_DIFF	MATCH_FS						
+CYBB	A1117	0	gain;protein_check_change	NOT_REGISTERED	IN_FINAL	mutalyzer_ok_but_absent_from_final	traced_through_pipeline		MATCH						
+CYBB	A1121	0	protein_bad_to_good	IN_FINAL	IN_FINAL	traced_through_pipeline	traced_through_pipeline	TYPE_DIFF_SAME_POS	MATCH_FS						
+CYBB	A1256	0	protein_bad_to_good	IN_FINAL	IN_FINAL	traced_through_pipeline	traced_through_pipeline	FS_STOP_DIFF	MATCH_FS						
+CYBB	A1425	0	protein_bad_to_good	IN_FINAL	IN_FINAL	traced_through_pipeline	traced_through_pipeline	TYPE_DIFF_SAME_POS	MATCH_FS						
+CYBB	A1434	0	gain;protein_check_change	NOT_REGISTERED	IN_FINAL	mutalyzer_ok_but_absent_from_final	traced_through_pipeline		SOURCE_NO_P						
+CYBA	H0053		pair_inconsistent_removed							CYBA_H0053	c.*1796_*1829del	NM_MANE		inconsistent:TYPE_DIFF_SAME_POS	absent
+CYBB	A0001		pair_inconsistent_removed							CYBB_A0001	c.781C>T	NG_IDRefseq		inconsistent:TYPE_DIFF_SAME_POS	absent
+CYBB	A0004		pair_inconsistent_removed							CYBB_A0004	c.1166G>A	NG_IDRefseq		inconsistent:DIFFERENT	absent
+CYBB	A0007		pair_inconsistent_removed							CYBB_A0007	c.356A>G	NG_IDRefseq		inconsistent:TYPE_DIFF_SAME_POS	absent
+CYBB	A0068		pair_became_inconsistent							CYBB_A0068	c.1215_1219delinsCATCTGGG		NM_MANE	absent	inconsistent:TYPE_DIFF_SAME_POS
+CYBB	A0072		pair_became_inconsistent							CYBB_A0072	c.874_876delinsATGTGATGAACACAT		NM_MANE	absent	inconsistent:TYPE_DIFF_SAME_POS
+CYBB	A0073		pair_became_inconsistent							CYBB_A0073	c.874_876delinsATGTGATGAACACAT		NM_MANE	absent	inconsistent:TYPE_DIFF_SAME_POS
+CYBB	A0080		pair_inconsistent_removed							CYBB_A0080	c.388C>T	NG_IDRefseq		inconsistent:TYPE_DIFF_SAME_POS	absent
+CYBB	A0094		pair_inconsistent_removed							CYBB_A0094	c.1548G>A	NG_IDRefseq		inconsistent:DIFFERENT	absent
+CYBB	A0112		pair_inconsistent_removed							CYBB_A0112	c.1244C>A	NG_IDRefseq		inconsistent:DIFFERENT	absent
+CYBB	A0211		pair_inconsistent_removed							CYBB_A0211	c.625C>T	NG_IDRefseq		inconsistent:TYPE_DIFF_SAME_POS	absent
+CYBB	A0221		pair_inconsistent_removed							CYBB_A0221	c.919A>C	NG_IDRefseq		inconsistent:TYPE_DIFF_SAME_POS	absent
+CYBB	A0243		pair_inconsistent_removed							CYBB_A0243	c.160_165del	NG_IDRefseq		inconsistent:TYPE_DIFF_SAME_POS	absent
+CYBB	A0251		pair_inconsistent_removed							CYBB_A0251	c.731G>A	NG_IDRefseq		inconsistent:DIFFERENT	absent
+CYBB	A0317		pair_inconsistent_removed							CYBB_A0317	c.1016C>A	NG_IDRefseq		inconsistent:TYPE_DIFF_SAME_POS	absent
+CYBB	A0330		pair_inconsistent_removed							CYBB_A0330	c.1272G>A	NG_IDRefseq		inconsistent:TYPE_DIFF_SAME_POS	absent
+CYBB	A0347		pair_inconsistent_removed							CYBB_A0347	c.1016C>A	NG_IDRefseq		inconsistent:DIFFERENT	absent
+CYBB	A0359		pair_inconsistent_removed							CYBB_A0359	c.730T>C	NG_IDRefseq		inconsistent:DIFFERENT	absent
+CYBB	A0363		pair_inconsistent_removed							CYBB_A0363	c.176G>T	NG_IDRefseq		inconsistent:DIFFERENT	absent
+CYBB	A0367		pair_inconsistent_removed							CYBB_A0367	c.1498G>A	NG_IDRefseq		inconsistent:DIFFERENT	absent
+CYBB	A0375		pair_inconsistent_removed							CYBB_A0375	c.535G>T	NG_IDRefseq		inconsistent:DIFFERENT	absent
+CYBB	A0377		pair_inconsistent_removed							CYBB_A0377	c.965del	NG_IDRefseq		inconsistent:TYPE_DIFF_SAME_POS	absent
+CYBB	A0394		pair_inconsistent_removed							CYBB_A0394	c.664C>A	NG_IDRefseq		inconsistent:DIFFERENT	absent
+CYBB	A0396		pair_inconsistent_removed							CYBB_A0396	c.1012C>T	NG_IDRefseq		inconsistent:DIFFERENT	absent
+CYBB	A0402		pair_inconsistent_removed							CYBB_A0402	c.897G>A	NG_IDRefseq		inconsistent:DIFFERENT	absent
+CYBB	A0407		pair_inconsistent_removed							CYBB_A0407	c.1514T>G	NG_IDRefseq		inconsistent:DIFFERENT	absent
+CYBB	A0419		pair_inconsistent_removed							CYBB_A0419	c.1244C>A	NG_IDRefseq		inconsistent:DIFFERENT	absent
+CYBB	A0470		pair_inconsistent_removed							CYBB_A0470	c.1022C>A	NG_IDRefseq		inconsistent:DIFFERENT	absent
+CYBB	A0495		pair_inconsistent_removed							CYBB_A0495	c.121del	NG_IDRefseq		inconsistent:TYPE_DIFF_SAME_POS	absent
+CYBB	A0544		pair_inconsistent_removed							CYBB_A0544	c.121del	NG_IDRefseq		inconsistent:TYPE_DIFF_SAME_POS	absent
+CYBB	A0564		pair_inconsistent_removed							CYBB_A0564	c.375G>T	NG_IDRefseq		inconsistent:DIFFERENT	absent
+CYBB	A0569		pair_inconsistent_removed							CYBB_A0569	c.958del	NG_IDRefseq		inconsistent:TYPE_DIFF_SAME_POS	absent
+CYBB	A0585		pair_became_inconsistent							CYBB_A0585	c.249_254dup		NM_MANE	absent	inconsistent:DIFFERENT
+CYBB	A0585		pair_inconsistent_removed							CYBB_A0585	c.555C>A	NG_IDRefseq		inconsistent:TYPE_DIFF_SAME_POS	absent
+CYBB	A0611		pair_inconsistent_removed							CYBB_A0611	c.1076G>T	NG_IDRefseq		inconsistent:DIFFERENT	absent
+CYBB	A0629		pair_inconsistent_removed							CYBB_A0629	c.935T>G	NG_IDRefseq		inconsistent:DIFFERENT	absent
+CYBB	A0632		pair_inconsistent_removed							CYBB_A0632	c.1498G>A	NG_IDRefseq		inconsistent:DIFFERENT	absent
+CYBB	A0660		pair_inconsistent_removed							CYBB_A0660	c.27dup	NG_IDRefseq		inconsistent:FS_STOP_DIFF	absent
+CYBB	A0682		pair_became_inconsistent							CYBB_A0682	c.-1647_-1645delinsGGT		NM_MANE	absent	inconsistent:TYPE_DIFF_SAME_POS
+CYBB	A0682		pair_inconsistent_removed							CYBB_A0682	c.90C>A	NG_IDRefseq		inconsistent:TYPE_DIFF_SAME_POS	absent
+CYBB	A0709		pair_inconsistent_removed							CYBB_A0709	c.143C>G	NG_IDRefseq		inconsistent:TYPE_DIFF_SAME_POS	absent
+CYBB	A0710		pair_inconsistent_removed							CYBB_A0710	c.143C>G	NG_IDRefseq		inconsistent:TYPE_DIFF_SAME_POS	absent
+CYBB	A0711		pair_inconsistent_removed							CYBB_A0711	c.143C>G	NG_IDRefseq		inconsistent:TYPE_DIFF_SAME_POS	absent
+CYBB	A0720		pair_inconsistent_removed							CYBB_A0720	c.177C>G	NG_IDRefseq		inconsistent:DIFFERENT	absent
+CYBB	A0746		pair_inconsistent_removed							CYBB_A0746	c.242del	NG_IDRefseq		inconsistent:FS_STOP_DIFF	absent
+CYBB	A0819		pair_became_inconsistent							CYBB_A0819	c.24_25delinsAT		NM_MANE	absent	inconsistent:TYPE_DIFF_SAME_POS
+CYBB	A0832		pair_inconsistent_removed							CYBB_A0832	c.388C>T	NG_IDRefseq		inconsistent:TYPE_DIFF_SAME_POS	absent
+CYBB	A0833		pair_inconsistent_removed							CYBB_A0833	c.388C>T	NG_IDRefseq		inconsistent:TYPE_DIFF_SAME_POS	absent
+CYBB	A0862		pair_inconsistent_removed							CYBB_A0862	c.389G>C	NG_IDRefseq		inconsistent:DIFFERENT	absent
+CYBB	A0910		pair_became_inconsistent							CYBB_A0910	c.267_275dup		NM_MANE	absent	inconsistent:TYPE_DIFF_SAME_POS
+CYBB	A0914		pair_inconsistent_removed							CYBB_A0914	c.281_282insAAAAAC	NM_MANE		inconsistent:TYPE_DIFF_SAME_POS	absent
+CYBB	A0917		pair_inconsistent_removed							CYBB_A0917	c.603del	NG_IDRefseq		inconsistent:TYPE_DIFF_SAME_POS	absent
+CYBB	A0926		pair_inconsistent_removed							CYBB_A0926	c.632T>C	NG_IDRefseq		inconsistent:DIFFERENT	absent
+CYBB	A0931		pair_inconsistent_removed							CYBB_A0931	c.665A>G	NG_IDRefseq		inconsistent:DIFFERENT	absent
+CYBB	A0932		pair_inconsistent_removed							CYBB_A0932	c.667_668del	NG_IDRefseq		inconsistent:TYPE_DIFF_SAME_POS	absent
+CYBB	A1005		pair_inconsistent_removed							CYBB_A1005	c.730T>C	NG_IDRefseq		inconsistent:DIFFERENT	absent
+CYBB	A1034		pair_inconsistent_removed							CYBB_A1034	c.755del	NG_IDRefseq		inconsistent:FS_STOP_DIFF	absent
+CYBB	A1039		pair_became_inconsistent							CYBB_A1039	c.1085C>G		NG_IDRefseq	absent	inconsistent:DIFFERENT
+CYBB	A1039		pair_inconsistent_removed							CYBB_A1039	c.1085C>T	NG_IDRefseq		inconsistent:DIFFERENT	absent
+CYBB	A1090		pair_inconsistent_removed							CYBB_A1090	c.907C>A	NG_IDRefseq		inconsistent:DIFFERENT	absent
+CYBB	A1098		pair_inconsistent_removed							CYBB_A1098	c.911C>G	NG_IDRefseq		inconsistent:DIFFERENT	absent
+CYBB	A1099		pair_inconsistent_removed							CYBB_A1099	c.911C>G	NG_IDRefseq		inconsistent:DIFFERENT	absent
+CYBB	A1100		pair_inconsistent_removed							CYBB_A1100	c.935T>G	NG_IDRefseq		inconsistent:TYPE_DIFF_SAME_POS	absent
+CYBB	A1109		pair_inconsistent_removed							CYBB_A1109	c.925G>A	NG_IDRefseq		inconsistent:DIFFERENT	absent
+CYBB	A1110		pair_inconsistent_removed							CYBB_A1110	c.925G>A	NG_IDRefseq		inconsistent:DIFFERENT	absent
+CYBB	A1117		pair_inconsistent_removed							CYBB_A1117	c.965del	NG_IDRefseq		inconsistent:TYPE_DIFF_SAME_POS	absent
+CYBB	A1146		pair_inconsistent_removed							CYBB_A1146	c.1016C>A	NG_IDRefseq		inconsistent:DIFFERENT	absent
+CYBB	A1147		pair_inconsistent_removed							CYBB_A1147	c.1016C>A	NG_IDRefseq		inconsistent:DIFFERENT	absent
+CYBB	A1152		pair_inconsistent_removed							CYBB_A1152	c.1030T>C	NG_IDRefseq		inconsistent:TYPE_DIFF_SAME_POS	absent
+CYBB	A1153		pair_inconsistent_removed							CYBB_A1153	c.1030T>C	NG_IDRefseq		inconsistent:TYPE_DIFF_SAME_POS	absent
+CYBB	A1158		pair_inconsistent_removed							CYBB_A1158	c.1061A>G	NG_IDRefseq		inconsistent:DIFFERENT	absent
+CYBB	A1159		pair_inconsistent_removed							CYBB_A1159	c.1061A>G	NG_IDRefseq		inconsistent:DIFFERENT	absent
+CYBB	A1161		pair_inconsistent_removed							CYBB_A1161	c.1063del	NG_IDRefseq		inconsistent:FS_STOP_DIFF	absent
+CYBB	A1173		pair_inconsistent_removed							CYBB_A1173	c.1085C>T	NG_IDRefseq		inconsistent:DIFFERENT	absent
+CYBB	A1175		pair_inconsistent_removed							CYBB_A1175	c.1094T>C	NG_IDRefseq		inconsistent:TYPE_DIFF_SAME_POS	absent
+CYBB	A1206		pair_inconsistent_removed							CYBB_A1206	c.1166G>A	NG_IDRefseq		inconsistent:DIFFERENT	absent
+CYBB	A1207		pair_inconsistent_removed							CYBB_A1207	c.1166G>A	NG_IDRefseq		inconsistent:TYPE_DIFF_SAME_POS	absent
+CYBB	A1207		pair_became_inconsistent							CYBB_A1207	c.860_863delinsTGTTCAG		NM_MANE	absent	inconsistent:TYPE_DIFF_SAME_POS
+CYBB	A1218		pair_inconsistent_removed							CYBB_A1218	c.1234G>C	NG_IDRefseq		inconsistent:TYPE_DIFF_SAME_POS	absent
+CYBB	A1220		pair_inconsistent_removed							CYBB_A1220	c.1244C>A	NG_IDRefseq		inconsistent:DIFFERENT	absent
+CYBB	A1221		pair_inconsistent_removed							CYBB_A1221	c.1244C>A	NG_IDRefseq		inconsistent:DIFFERENT	absent
+CYBB	A1224		pair_inconsistent_removed							CYBB_A1224	c.1265C>A	NG_IDRefseq		inconsistent:TYPE_DIFF_SAME_POS	absent
+CYBB	A1246		pair_inconsistent_removed							CYBB_A1246	c.1357T>C	NG_IDRefseq		inconsistent:TYPE_DIFF_SAME_POS	absent
+CYBB	A1277		pair_inconsistent_removed							CYBB_A1277	c.1498G>A	NG_IDRefseq		inconsistent:DIFFERENT	absent
+CYBB	A1278		pair_inconsistent_removed							CYBB_A1278	c.1498G>A	NG_IDRefseq		inconsistent:DIFFERENT	absent
+CYBB	A1279		pair_inconsistent_removed							CYBB_A1279	c.1498G>A	NG_IDRefseq		inconsistent:DIFFERENT	absent
+CYBB	A1284		pair_inconsistent_removed							CYBB_A1284	c.1514T>G	NG_IDRefseq		inconsistent:DIFFERENT	absent
+CYBB	A1314		pair_inconsistent_removed							CYBB_A1314	c.1637T>C	NG_IDRefseq		inconsistent:DIFFERENT	absent
+CYBB	A1317		pair_inconsistent_removed							CYBB_A1317	c.1661_1662insGAGTCTGGCCCTCGGGGAGTGCATTTCA	NG_IDRefseq		inconsistent:TYPE_DIFF_SAME_POS	absent
+CYBB	A1320		pair_inconsistent_removed							CYBB_A1320	c.1662dup	NG_IDRefseq		inconsistent:TYPE_DIFF_SAME_POS	absent
+CYBB	A1425		pair_inconsistent_removed							CYBB_A1425	c.94del	NG_IDRefseq		inconsistent:FS_STOP_DIFF	absent
+CYBB	A1435		pair_inconsistent_removed							CYBB_A1435	c.1375C>T	NG_IDRefseq		inconsistent:TYPE_DIFF_SAME_POS	absent
+CYBB	A1436		pair_inconsistent_removed							CYBB_A1436	c.911C>G	NG_IDRefseq		inconsistent:DIFFERENT	absent
+CYBB	A1442		pair_inconsistent_removed							CYBB_A1442	c.94del	NG_IDRefseq		inconsistent:FS_STOP_DIFF	absent
