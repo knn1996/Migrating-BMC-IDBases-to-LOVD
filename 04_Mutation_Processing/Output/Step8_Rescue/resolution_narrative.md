@@ -23,7 +23,7 @@ against the primary literature before deposition.
 Resolution rates are reported on a distinct-variant basis in
 `rescue_metrics_comparison.csv`; patient-level row counts before and after
 augmentation are reported in `augment_stats.txt` and `dedup_rescued_stats.txt`.
-The pre-rescue pool contained 9052 patient-variant rows, which is
+The pre-rescue pool contained 9064 patient-variant rows, which is
 not directly comparable with the 848 distinct unresolved variants
 above and is therefore not combined into a single ratio here.
 

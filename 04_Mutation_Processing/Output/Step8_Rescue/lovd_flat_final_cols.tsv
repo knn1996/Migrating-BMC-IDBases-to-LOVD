@@ -1706,7 +1706,6 @@ Individual/Gender	Individual/Origin/Geographic	Individual/Age	Individual/Remarks
 							2	NC_000002.12:g.219158183T>A						NM_001377499.1	c.177+3A>T			NHEJ1	c.177+3A>T	2	N0003;N0004	MANE Select	NM_MANE	ok	substitution
 							2	NC_000002.12:g.219158186del						NM_001377499.1	c.177+1del			NHEJ1	c.177+1del	2	N0003;N0004	MANE Select	NM_MANE	ok	deletion
 							2	NC_000002.12:g.219151769del						NM_024782.3	c.391-3974del	r.(=)	p.(=)	NHEJ1	c.391-3974del	2	N0003;N0004	MANE Select	NG_IDRefseq	ok	deletion
-							2	NC_000002.12:g.219151769T>A						NM_024782.3	c.391-3974A>T	r.(=)	p.(=)	NHEJ1	c.391-3974A>T	2	N0003;N0004	MANE Select	NG_IDRefseq	ok	substitution
 							2	NC_000002.12:g.219158352dup						NM_001377499.1	c.11dup	r.(11delinsuu)	p.(Glu5GlyfsTer43)	NHEJ1	c.11dup	1	N0006	MANE Select	NM_MANE	ok	duplication
 							2	NC_000002.12:g.219151935dup						NM_024782.3	c.391-4140dup	r.(=)	p.(=)	NHEJ1	c.391-4140dup	1	N0006	MANE Select	NG_IDRefseq	ok	duplication
 							2	NC_000002.12:g.219147692dup						NM_001377499.1	c.495dup	r.(494delinsaa)	p.(Asp166ArgfsTer20)	NHEJ1	c.495dup	2	N0008;N0009	MANE Select	NM_MANE	ok	duplication

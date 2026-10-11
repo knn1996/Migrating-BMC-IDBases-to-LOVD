@@ -1706,7 +1706,6 @@ NHEJ1	c.588+6361C>T	NM_024782.3	c.588+6361C>T	r.(=)	p.(=)								not_ptc		r.(=)	
 NHEJ1	c.177+3A>T	NM_001377499.1	c.177+3A>T										not_ptc			
 NHEJ1	c.177+1del	NM_001377499.1	c.177+1del			frameshift_candidate							not_assessable_noncoding_or_intronic			
 NHEJ1	c.391-3974del	NM_024782.3	c.391-3974del	r.(=)	p.(=)	frameshift_candidate							not_assessable_noncoding_or_intronic		r.(=)	p.(=)
-NHEJ1	c.391-3974A>T	NM_024782.3	c.391-3974A>T	r.(=)	p.(=)								not_ptc		r.(=)	p.(=)
 NHEJ1	c.11dup	NM_001377499.1	c.11dup	r.(11delinsuu)	p.(Glu5GlyfsTer43)	frameshift		138	47	47	yes	703	NMD_predicted	start_proximal	r.0?	p.0?
 NHEJ1	c.391-4140dup	NM_024782.3	c.391-4140dup	r.(=)	p.(=)	frameshift_candidate							not_assessable_noncoding_or_intronic		r.(=)	p.(=)
 NHEJ1	c.495dup	NM_001377499.1	c.495dup	r.(494delinsaa)	p.(Asp166ArgfsTer20)	frameshift		552	185	185	yes	289	NMD_predicted		r.0?	p.0?
