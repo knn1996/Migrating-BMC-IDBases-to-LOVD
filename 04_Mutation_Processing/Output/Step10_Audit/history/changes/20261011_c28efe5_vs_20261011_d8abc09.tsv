@@ -50,8 +50,6 @@ BLM	B0063		pair_inconsistent_removed							BLM_B0063	c.2207_2212del	NG_IDRefseq	
 BLM	B0064		pair_inconsistent_removed							BLM_B0064	c.2207_2212del	NG_IDRefseq		inconsistent:TYPE_DIFF_SAME_POS	absent
 C5	C0006		pair_inconsistent_removed							C5_C0006	c.1489_1490del	NG_IDRefseq		inconsistent:DIFFERENT	absent
 C5	C0006		pair_became_inconsistent							C5_C0006	c.1490delinsTCT		NG_IDRefseq	absent	inconsistent:DIFFERENT
-C8B	C0060		pair_inconsistent_removed							C8B_C0060	c.865-108dup	NG_IDRefseq		inconsistent:DIFFERENT	absent
-C8B	C0060		pair_became_inconsistent							C8B_C0060	c.865-114_865-108dup		NG_IDRefseq	absent	inconsistent:DIFFERENT
 CFI	I0005		pair_inconsistent_removed							CFI_I0005	c.1156dup	NG_IDRefseq		inconsistent:FS_START_DIFF	absent
 CFI	I0006		pair_inconsistent_removed							CFI_I0006	c.1156dup	NG_IDRefseq		inconsistent:FS_START_DIFF	absent
 CYBB	A0021		pair_inconsistent_removed							CYBB_A0021	c.741_742del	NG_IDRefseq		inconsistent:FS_STOP_DIFF	absent

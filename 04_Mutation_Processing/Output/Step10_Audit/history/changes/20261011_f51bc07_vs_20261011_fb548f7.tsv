@@ -249,9 +249,7 @@ AIRE	A0150		pair_inconsistent_removed							AIRE_A0150	c.1615C>T	NG_IDRefseq		in
 C1S	C0001		pair_inconsistent_removed							C1S_C0001	c.1334_1337del	variantvalidator		inconsistent:DIFFERENT	absent
 C1S	C0002		pair_inconsistent_removed							C1S_C0002	c.1334_1337del	variantvalidator		inconsistent:DIFFERENT	absent
 C1S	C0003		pair_inconsistent_removed							C1S_C0003	c.1769C>T	NM_MANE		inconsistent:DIFFERENT	absent
-C2	C0002		pair_inconsistent_removed							C2_C0002	c.-63-3787_-63-3760del	NG_IDRefseq		inconsistent:DIFFERENT	absent
 C2	C0002		pair_inconsistent_removed							C2_C0002	c.392-434G>A	NG_IDRefseq		inconsistent:DIFFERENT	absent
-C2	C0003		pair_inconsistent_removed							C2_C0003	c.-63-3787_-63-3760del	NG_IDRefseq		inconsistent:DIFFERENT	absent
 C2	C0003		pair_inconsistent_removed							C2_C0003	c.392-434G>A	NG_IDRefseq		inconsistent:DIFFERENT	absent
 C3	C0011		pair_inconsistent_removed							C3_C0011	c.3117_3118insT	NG_IDRefseq		inconsistent:TYPE_DIFF_SAME_POS	absent
 C3	C0012		pair_inconsistent_removed							C3_C0012	c.3177_3178insT	NG_IDRefseq		inconsistent:TYPE_DIFF_SAME_POS	absent
@@ -338,7 +336,6 @@ C8B	C0057		pair_inconsistent_removed							C8B_C0057	c.1235-243C>T	NG_IDRefseq		
 C8B	C0058		pair_inconsistent_removed							C8B_C0058	c.1235-243C>T	NG_IDRefseq		inconsistent:DIFFERENT	absent
 C8B	C0059		pair_inconsistent_removed							C8B_C0059	c.1235-243C>T	NG_IDRefseq		inconsistent:DIFFERENT	absent
 C8B	C0060		pair_inconsistent_removed							C8B_C0060	c.250-269C>T	NG_IDRefseq		inconsistent:DIFFERENT	absent
-C8B	C0060		pair_inconsistent_removed							C8B_C0060	c.865-114_865-108dup	NG_IDRefseq		inconsistent:DIFFERENT	absent
 C9	C0001		pair_inconsistent_removed							C9_C0001	c.78-2218C>T	NG_IDRefseq		inconsistent:DIFFERENT	absent
 C9	C0001		pair_inconsistent_removed							C9_C0001	c.78-3168C>A	NG_IDRefseq		inconsistent:DIFFERENT	absent
 C9	C0002		pair_inconsistent_removed							C9_C0002	c.78-3168C>A	NG_IDRefseq		inconsistent:DIFFERENT	absent
@@ -449,7 +446,6 @@ GFI1	G0003		pair_inconsistent_removed							GFI1_G0003	c.924+240A>G	NG_IDRefseq	
 GFI1	G0004		pair_inconsistent_removed							GFI1_G0004	c.924+303A>G	NG_IDRefseq		inconsistent:DIFFERENT	absent
 IGLL1	G0001		pair_inconsistent_removed							IGLL1_G0001	c.488-1565C>T	NG_IDRefseq		inconsistent:DIFFERENT	absent
 IL12RB1	I0051		pair_inconsistent_removed							IL12RB1_I0051	c.587_603del	NG_IDRefseq		inconsistent:DIFFERENT	absent
-IL2RA	I0002		pair_inconsistent_removed							IL2RA_I0002	c.367+1398dup	NG_IDRefseq		inconsistent:DIFFERENT	absent
 IL2RA	I0002		pair_inconsistent_removed							IL2RA_I0002	c.65-1669C>T	NG_IDRefseq		inconsistent:DIFFERENT	absent
 IL7R	I0009		pair_inconsistent_removed							IL7R_I0009	c.*108C>T	NG_IDRefseq		inconsistent:DIFFERENT	absent
 ITGB2	A0016		pair_inconsistent_removed							ITGB2_A0016	c.2142del	NM_MANE		inconsistent:DIFFERENT	absent
@@ -552,18 +548,14 @@ PRF1	P0034		pair_inconsistent_removed							PRF1_P0034	c.1191_1192del	variantval
 PRF1	P0035		pair_inconsistent_removed							PRF1_P0035	c.1191_1192del	variantvalidator		inconsistent:DIFFERENT	absent
 PRF1	P0035		pair_inconsistent_removed							PRF1_P0035	c.308del	variantvalidator		inconsistent:FS_START_DIFF	absent
 PRF1	P0036		pair_inconsistent_removed							PRF1_P0036	c.1191_1192del	variantvalidator		inconsistent:DIFFERENT	absent
-PRKDC	P0001		pair_inconsistent_removed							PRKDC_P0001	c.5751-171_5751-169del	NG_IDRefseq		inconsistent:DIFFERENT	absent
 RAC2	R0001		pair_inconsistent_removed							RAC2_R0001	c.108-3934G>A	NG_IDRefseq		inconsistent:DIFFERENT	absent
 RAD50	R0001		pair_inconsistent_removed							RAD50_R0001	c.3037-1774C>T	NG_IDRefseq		inconsistent:DIFFERENT	absent
-RAD50	R0001		pair_inconsistent_removed							RAD50_R0001	c.3618+188A>T	NG_IDRefseq		inconsistent:DIFFERENT	absent
 RAG1	R0001		pair_inconsistent_removed							RAG1_R0001	c.-14-4003G>A	NG_IDRefseq		inconsistent:DIFFERENT	absent
-RAG1	R0006		pair_inconsistent_removed							RAG1_R0006	c.-14-4556_-14-4544del	NG_IDRefseq		inconsistent:DIFFERENT	absent
 RAG1	R0011		pair_inconsistent_removed							RAG1_R0011	c.2039_2040insAGCTCTCAGAATGTGAAAC	NM_MANE		inconsistent:DIFFERENT	absent
 RAG1	R0012		pair_inconsistent_removed							RAG1_R0012	c.1258del	variantvalidator		inconsistent:DIFFERENT	absent
 RAG1	R0018		pair_inconsistent_removed							RAG1_R0018	c.-14-4003G>A	NG_IDRefseq		inconsistent:DIFFERENT	absent
 RAG1	R0021		pair_inconsistent_removed							RAG1_R0021	c.2599_2600delinsTT	NM_MANE		inconsistent:DIFFERENT	absent
 RAG1	R0022		pair_inconsistent_removed							RAG1_R0022	c.-14-4003G>A	NG_IDRefseq		inconsistent:DIFFERENT	absent
-RAG1	R0027		pair_inconsistent_removed							RAG1_R0027	c.-14-5106del	NG_IDRefseq		inconsistent:DIFFERENT	absent
 RAG1	R0028		pair_inconsistent_removed							RAG1_R0028	c.1521_1522del	variantvalidator		inconsistent:FS_START_DIFF	absent
 RAG1	R0040		pair_inconsistent_removed							RAG1_R0040	c.631del	NM_MANE		inconsistent:DIFFERENT	absent
 RAG1	R0041		pair_inconsistent_removed							RAG1_R0041	c.887del	variantvalidator		inconsistent:DIFFERENT	absent

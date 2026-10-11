@@ -81,7 +81,6 @@ CYBB	A0832		pair_inconsistent_removed							CYBB_A0832	c.388C>T	NG_IDRefseq		inc
 CYBB	A0833		pair_inconsistent_removed							CYBB_A0833	c.388C>T	NG_IDRefseq		inconsistent:TYPE_DIFF_SAME_POS	absent
 CYBB	A0862		pair_inconsistent_removed							CYBB_A0862	c.389G>C	NG_IDRefseq		inconsistent:DIFFERENT	absent
 CYBB	A0910		pair_became_inconsistent							CYBB_A0910	c.267_275dup		NM_MANE	absent	inconsistent:TYPE_DIFF_SAME_POS
-CYBB	A0914		pair_inconsistent_removed							CYBB_A0914	c.281_282insAAAAAC	NM_MANE		inconsistent:TYPE_DIFF_SAME_POS	absent
 CYBB	A0917		pair_inconsistent_removed							CYBB_A0917	c.603del	NG_IDRefseq		inconsistent:TYPE_DIFF_SAME_POS	absent
 CYBB	A0926		pair_inconsistent_removed							CYBB_A0926	c.632T>C	NG_IDRefseq		inconsistent:DIFFERENT	absent
 CYBB	A0931		pair_inconsistent_removed							CYBB_A0931	c.665A>G	NG_IDRefseq		inconsistent:DIFFERENT	absent
