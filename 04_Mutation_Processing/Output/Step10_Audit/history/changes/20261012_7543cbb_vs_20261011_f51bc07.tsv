@@ -1,0 +1,18 @@
+gene	accession	allele	change	fate_prev	fate_now	fate_detail_prev	fate_detail_now	protein_check_prev	protein_check_now	individual_id	variant_key	track_prev	track_now	pair_label_prev	pair_label_now
+RFXAP	R0007	1+2	fate_detail_change	NOT_REGISTERED	NOT_REGISTERED	allele_absent_accession_present	mutalyzer_ok_but_absent_from_final								
+CYBB	A0108		pair_inconsistent_removed							CYBB_A0108	c.318G>A	NG_IDRefseq		inconsistent:POS_SHIFT	absent
+CYBB	A0330		pair_inconsistent_removed							CYBB_A0330	c.1578del	NG_IDRefseq		inconsistent:DIFFERENT	absent
+CYBB	A0377		pair_inconsistent_removed							CYBB_A0377	c.1271G>A	NG_IDRefseq		inconsistent:DIFFERENT	absent
+CYBB	A0465		pair_inconsistent_removed							CYBB_A0465	c.730T>C	NG_IDRefseq		inconsistent:DIFFERENT	absent
+CYBB	A0491		pair_inconsistent_removed							CYBB_A0491	c.318G>A	NG_IDRefseq		inconsistent:POS_SHIFT	absent
+CYBB	A0492		pair_inconsistent_removed							CYBB_A0492	c.318G>A	NG_IDRefseq		inconsistent:POS_SHIFT	absent
+CYBB	A0493		pair_inconsistent_removed							CYBB_A0493	c.318G>A	NG_IDRefseq		inconsistent:POS_SHIFT	absent
+CYBB	A0607		pair_inconsistent_removed							CYBB_A0607	c.1006G>T	NG_IDRefseq		inconsistent:POS_SHIFT	absent
+CYBB	A0659		pair_inconsistent_removed							CYBB_A0659	c.318G>A	NG_IDRefseq		inconsistent:POS_SHIFT	absent
+CYBB	A0869		pair_inconsistent_removed							CYBB_A0869	c.754G>T	NG_IDRefseq		inconsistent:DIFFERENT	absent
+CYBB	A1039		pair_inconsistent_removed							CYBB_A1039	c.1085C>G	NG_IDRefseq		inconsistent:DIFFERENT	absent
+CYBB	A1117		pair_inconsistent_removed							CYBB_A1117	c.1271G>A	NG_IDRefseq		inconsistent:DIFFERENT	absent
+CYBB	A1134		pair_inconsistent_removed							CYBB_A1134	c.1320C>A	NG_IDRefseq		inconsistent:DIFFERENT	absent
+CYBB	A1135		pair_inconsistent_removed							CYBB_A1135	c.1320C>A	NG_IDRefseq		inconsistent:DIFFERENT	absent
+CYBB	A1136		pair_inconsistent_removed							CYBB_A1136	c.1320C>A	NG_IDRefseq		inconsistent:DIFFERENT	absent
+RFXAP	R0007		pair_became_inconsistent							RFXAP_R0007	c.150_151insGCGGGGC	NM_IDRefseq	NM_IDRefseq	uncheckable:unlinked	inconsistent:FS_START_DIFF
