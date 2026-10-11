@@ -21,7 +21,7 @@ VARIANT_COLS = [
 ]
 
 INDIVIDUAL_COLS = [
-    "Individual/ID", "_gene", "_accession",
+    "individual_id", "Individual/ID", "_gene", "_accession",
     "Individual/Gender", "_gender_note",
     "Individual/Age", "Individual/Origin/Geographic", "Individual/Remarks",
     "Phenotype/Disease", "Phenotype/Additional",
@@ -113,7 +113,7 @@ def build_summary_sheet(ws, df_screening, df_variants, df_individuals,
     counts = [
         ("Unique genes included",        df_variants["_gene"].nunique()),
         ("Unique variants (gene+dedup_key)", len(df_variants)),
-        ("Unique individuals",           len(df_individuals)),
+        ("Unique individuals (individual_id = GENE_accession)", df_individuals["individual_id"].nunique()),
         ("Patient-variant cases (rows)", len(df_screening)),
     ]
     for label, val in counts:
@@ -217,6 +217,7 @@ def build_summary_sheet(ws, df_screening, df_variants, df_individuals,
 def main():
     df = pd.read_csv(IN_PATH, sep="\t", dtype=str).fillna("")
     df["_gender_note"] = df["Individual/Gender"].apply(classify_gender)
+    df["individual_id"] = df["_gene"].str.strip().str.upper() + "_" + df["_accession"].str.strip()
 
     variants = (
         df.drop_duplicates(["_gene", "_dedup_key"])
@@ -224,8 +225,9 @@ def main():
           .reset_index(drop=True)
     )
 
-    indiv_groups = df.groupby("Individual/ID", sort=False)
+    indiv_groups = df.groupby("individual_id", sort=False)
     indiv = indiv_groups.agg({
+        "Individual/ID":                agg_unique_join,
         "_gene":                        agg_unique_join,
         "_accession":                   agg_unique_join,
         "Individual/Gender":            agg_unique_join,

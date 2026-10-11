@@ -12,7 +12,12 @@ u <- read.delim(DISP_TSV, stringsAsFactors = FALSE)
 resolved    <- nrow(d)
 unresolved  <- nrow(u)
 pairs       <- sum(d$patient_count, na.rm = TRUE)
-individuals <- length(unique(trimws(unlist(strsplit(paste(d$accession_list, collapse = ";"), ";")))))
+individual_ids <- unlist(mapply(function(g, al) {
+  accs <- trimws(unlist(strsplit(al, ";")))
+  accs <- accs[accs != ""]
+  if (length(accs) == 0) character(0) else paste0(toupper(g), "_", accs)
+}, d$gene, d$accession_list, SIMPLIFY = FALSE, USE.NAMES = FALSE))
+individuals <- length(unique(individual_ids))
 distinct    <- resolved + unresolved
 pct_res     <- resolved / distinct * 100
 rescuable   <- sum(grepl("^RESCUABLE", u$disposition))

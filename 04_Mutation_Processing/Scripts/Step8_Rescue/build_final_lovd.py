@@ -1,8 +1,11 @@
 """
 build_final_lovd.py
 ===================
-Adds a provenance column to the rescue-deduped flat, emits lovd_flat_final.tsv,
-computes published vs final metrics, and enforces four acceptance checks.
+Adds a provenance column and an individual_id column (GENE_accession per patient,
+semicolon-joined in accession_list order, e.g. CYBB_A1416) to the rescue-deduped
+flat, emits lovd_flat_final.tsv, computes published vs final metrics, and enforces
+four acceptance checks. unique_patients counts distinct individual_id values, because
+accession IDs repeat across gene databases.
 
 Env vars
 --------
@@ -48,13 +51,16 @@ def _provenance(source_track):
     return "published"
 
 
+def _individual_ids(row):
+    gene = str(row.get("gene", "")).strip().upper()
+    accs = [a.strip() for a in str(row.get("accession_list", "")).split(";") if a.strip()]
+    return [f"{gene}_{a}" for a in accs]
+
+
 def _unique_patients(rows):
     patients = set()
     for r in rows:
-        for a in str(r.get("accession_list", "")).split(";"):
-            a = a.strip()
-            if a:
-                patients.add(a)
+        patients.update(_individual_ids(r))
     return patients
 
 
@@ -86,6 +92,7 @@ def main():
 
     for row in rescued_rows:
         row["provenance"] = _provenance(row.get("source_track", ""))
+        row["individual_id"] = ";".join(_individual_ids(row))
 
     null_prov = [r for r in rescued_rows if not r.get("provenance")]
     if null_prov:
@@ -93,9 +100,11 @@ def main():
 
     if rescued_rows:
         existing     = list(rescued_rows[0].keys())
-        final_fields = ["provenance"] + [f for f in existing if f != "provenance"]
+        final_fields = ["provenance"] + [f for f in existing if f not in ("provenance", "individual_id")]
+        anchor       = final_fields.index("accession_list") + 1 if "accession_list" in final_fields else len(final_fields)
+        final_fields.insert(anchor, "individual_id")
     else:
-        final_fields = ["provenance"]
+        final_fields = ["provenance", "individual_id"]
 
     with open(OUT_FLAT, "w", newline="", encoding="utf-8") as f:
         w = csv.DictWriter(f, fieldnames=final_fields, delimiter="\t", extrasaction="ignore")

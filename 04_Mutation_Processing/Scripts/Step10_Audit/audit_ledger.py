@@ -22,12 +22,10 @@ refused: re-score the history with the current audit script first.
 Final counts follow Step8_Rescue/build_final_lovd.py (its definitions are
 mirrored here because that module needs its pipeline environment to import):
 final_unique_variants = rows of dedup_merged_variants.rescued.tsv, final_pairs =
-sum of patient_count, final_individuals = distinct accession strings in
-accession_list. The wb_* columns are the lovd_review workbook definitions on
+sum of patient_count, final_individuals = distinct individual_id (GENE_accession)
+over accession_list. The wb_* columns are the lovd_review workbook definitions on
 lovd_flat_with_patients_final.tsv: distinct (gene, dedup_key), distinct
-Individual/ID (gene_accession), and row count. Accession IDs repeat across gene
-databases, so final_individuals undercounts patients; wb_individuals_gene_accession
-does not.
+Individual/ID (gene_accession), and row count.
 
 Usage:
     python Step10_Audit/audit_ledger.py --label "after rescue rerun"
@@ -171,7 +169,8 @@ def compute_metrics(var, meta, final, dedup, good_p, bad_p):
         m[f"protein_bad__{label}"] = int((pc == label).sum())
     m["metadata_flags"] = int((~meta["status"].isin(META_EXCLUDED)).sum()) if len(meta) else 0
     m["final_unique_variants"] = len(dedup)
-    m["final_individuals"] = len({a.strip() for s in dedup["accession_list"] for a in s.split(";") if a.strip()})
+    m["final_individuals"] = len({f"{g.strip().upper()}_{a.strip()}" for g, s in zip(dedup["gene"], dedup["accession_list"])
+                                  for a in s.split(";") if a.strip()})
     m["final_pairs"] = int(pd.to_numeric(dedup["patient_count"], errors="coerce").fillna(0).sum())
     m["wb_distinct_gene_key"] = len(final.drop_duplicates(["_gene", "_dedup_key"]))
     m["wb_individuals_gene_accession"] = int(final["Individual/ID"].nunique())

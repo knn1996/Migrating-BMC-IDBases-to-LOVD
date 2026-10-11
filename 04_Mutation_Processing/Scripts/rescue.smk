@@ -154,10 +154,12 @@ rule dedup_rescued:
     output:
         dedup=os.path.join(S8, "dedup_merged_variants.rescued.tsv"),
         stats=os.path.join(S8, "dedup_rescued_stats.txt"),
+        log=os.path.join(S8, "dedup_rescued_log.tsv"),
     conda:
         "envs/python.yaml"
     shell:
         f'INPUT_TSV="{{input}}" OUTPUT_TSV="{{output.dedup}}" STATS_TXT="{{output.stats}}" '
+        f'DEDUP_LOG="{{output.log}}" '
         f'python "{script("Step7_Merging/dedup_merged_variants.py")}"'
 
 
