@@ -1,0 +1,609 @@
+gene	accession	allele	source_systematic_name	src_g	src_c	src_p	fate	fate_detail	final_dedup_key	final_p	final_source_track	protein_check	protein_offset	n_source_alleles	stage_extracted	stage_processed
+NCF1	N0031	2	g.IVS1+1G>A	g.IVS1+1G>A			NOT_REGISTERED	allele_absent_accession_present						2	all	yes
+NCF1	N0032	2	g.IVS1+3G>T	g.IVS1+3G>T			NOT_REGISTERED	allele_absent_accession_present						2	all	yes
+ADA	A0069	1+2	g.1135C>T, c.7C>T, r.7c>u, p.Gln3X	g.1135C>T	c.7C>T	p.Gln3X	NOT_REGISTERED	accession_absent_from_final						1	all	no
+ADA	A0070	1+2	g.1135C>T, c.7C>T, r.7c>u, p.Gln3X	g.1135C>T	c.7C>T	p.Gln3X	NOT_REGISTERED	accession_absent_from_final						1	all	no
+ADA	A0071	1+2	g.1135C>T, c.7C>T, r.7c>u, p.Gln3X	g.1135C>T	c.7C>T	p.Gln3X	NOT_REGISTERED	accession_absent_from_final						1	all	no
+ADA	A0072	1+2	g.1135C>T, c.7C>T, r.7c>u, p.Gln3X	g.1135C>T	c.7C>T	p.Gln3X	NOT_REGISTERED	accession_absent_from_final						1	all	no
+ADA	A0039	2	g.IVS5+1G>A, c.EX5del, p.E121fsX131	g.IVS5+1G>A	c.EX5del	p.E121fsX131	NOT_REGISTERED	source_incomplete_notation						2	all	yes
+ADA	A0057	2	g.2430_5678del	g.2430_5678del			NOT_REGISTERED	source_incomplete_notation						3	all	yes
+ADA	A0011	2	g.IVS1+1G>C	g.IVS1+1G>C			NOT_REGISTERED	allele_absent_accession_present						2	all	yes
+ADA	A0063	1	g.29003delA, c.314delA, r.314dela, p.His105fsX28	g.29003delA	c.314delA	p.His105fsX28	NOT_REGISTERED	allele_absent_accession_present						2	all	yes
+ADA	A0056	2	g.IVS5+1G>A, c.EX5del, p.E121fsX131	g.IVS5+1G>A	c.EX5del	p.E121fsX131	NOT_REGISTERED	source_incomplete_notation						2	all	yes
+ADA	A0047	2	g.IVS5+6T>A, c.EX5del, p.E121fsX131	g.IVS5+6T>A	c.EX5del	p.E121fsX131	NOT_REGISTERED	source_incomplete_notation						2	all	yes
+ADA	A0020	2	g.IVS3-2A>G, c.EX4del, p.G74_E121del	g.IVS3-2A>G	c.EX4del	p.G74_E121del	NOT_REGISTERED	source_incomplete_notation						2	all	yes
+ADA	A0051	1	g.16510G>A, c.95+1G>A, r.190_191insATAA, p.R32fsX31	g.16510G>A	c.95+1G>A	p.R32fsX31	NOT_REGISTERED	accession_absent_from_final						2	all	no
+ADA	A0051	2	g.30081_30084delinsTGGAAGAGCAGATCTGG, c.781-3_781delinsTGGAAGAGCAGATCTGG, r.781_845del, p.Ile261fsX4	g.30081_30084delinsTGGAAGAGCAGATCTGG	c.781-3_781delinsTGGAAGAGCAGATCTGG	p.Ile261fsX4	NOT_REGISTERED	accession_absent_from_final						2	all	no
+ADA	A0041	1+2	g.IVS10-34G>A	g.IVS10-34G>A			NOT_REGISTERED	accession_absent_from_final						1	all	no
+ADA	A0067	1	g.IVS11-15T>A, c.1112-15T>A, r.1112-15u>a	g.IVS11-15T>A	c.1112-15T>A		NOT_REGISTERED	accession_absent_from_final						2	all	no
+ADA	A0067	2	g.IVS11-15TGAACCAACGAG>A, c.1112-15TGAACCAACGAG>A, r.1112-15ugaaccaacgag>a	g.IVS11-15TGAACCAACGAG>A	c.1112-15TGAACCAACGAG>A		NOT_REGISTERED	accession_absent_from_final						2	all	no
+AICDA	A0002	1+2	g.6341C>T, c.146C>T, p.R24W	g.6341C>T	c.146C>T	p.R24W	NOT_REGISTERED	accession_absent_from_final						1	all	no
+AICDA	A0003	1+2	g.6341C>T, c.146C>T, p.R24W	g.6341C>T	c.146C>T	p.R24W	NOT_REGISTERED	accession_absent_from_final						1	all	no
+AICDA	A0005	1+2	g.6341C>T, c.146C>T, p.R24W	g.6341C>T	c.146C>T	p.R24W	NOT_REGISTERED	accession_absent_from_final						1	all	no
+AICDA	A0032	2	g.7853G>A, c.279G>A, p.W68X	g.7853G>A	c.279G>A	p.W68X	NOT_REGISTERED	allele_absent_accession_present						2	all	yes
+AICDA	A0007	1+2	g.7967T>C, c.393T>C, p.L106P	g.7967T>C	c.393T>C	p.L106P	NOT_REGISTERED	accession_absent_from_final						1	all	no
+AICDA	A0028	1+2	g.7985G>A, c.411G>A, p.R112H	g.7985G>A	c.411G>A	p.R112H	NOT_REGISTERED	accession_absent_from_final						1	all	no
+AICDA	A0012	1+2	g.8384C>A, c.517C>A, p.C147X	g.8384C>A	c.517C>A	p.C147X	NOT_REGISTERED	accession_absent_from_final						1	all	no
+AICDA	A0068	1+2	g.IVS2+1G>T, c.G>T, r.g>u	g.IVS2+1G>T	c.G>T		NOT_REGISTERED	accession_absent_from_final						1	all	no
+AICDA	A0069	1+2	g.IVS2+1G>T, c.G>T, r.g>u	g.IVS2+1G>T	c.G>T		NOT_REGISTERED	accession_absent_from_final						1	all	no
+AICDA	A0045	1+2	g.IVS4-2A>G, c.A>G, r.a>g	g.IVS4-2A>G	c.A>G		NOT_REGISTERED	accession_absent_from_final						1	all	no
+AICDA	A0061	1+2	g.IVS4+1G>C, c.G>C, r.g>c	g.IVS4+1G>C	c.G>C		NOT_REGISTERED	accession_absent_from_final						1	all	no
+AIRE	A0104	2	g.4749_4750ins, c.170_171ins, p.R15fsX19	g.4749_4750ins	c.170_171ins	p.R15fsX19	NOT_REGISTERED	source_incomplete_notation						2	all	yes
+AIRE	A0106	2	g.4749_4750ins, c.170_171ins, p.R15fsX19	g.4749_4750ins	c.170_171ins	p.R15fsX19	NOT_REGISTERED	source_incomplete_notation						2	all	yes
+AIRE	A0267	2	g.9882>, c.967>, r.967>, p.Leu323Leu	g.9882>	c.967>	p.Leu323Leu	NOT_REGISTERED	allele_absent_accession_present						2	all	yes
+AIRE	A0088	2	g.IVS9-1G>A	g.IVS9-1G>A			NOT_REGISTERED	allele_absent_accession_present						2	all	yes
+AIRE	A0006	1	g.8473C>T, c.896C>T, p.R257X	g.8473C>T	c.896C>T	p.R257X	NOT_REGISTERED	accession_absent_from_final						2	all	yes
+AIRE	A0008	1	g.8473C>T, c.896C>T, p.R257X	g.8473C>T	c.896C>T	p.R257X	NOT_REGISTERED	accession_absent_from_final						2	all	no
+AIRE	A0008	2	g.16426A>T, c.1765A>T, p.546	g.16426A>T	c.1765A>T	p.546	NOT_REGISTERED	accession_absent_from_final						2	all	no
+AIRE	A0162	1	g.IVS5-7CTC>, c.653-7CTC>	g.IVS5-7CTC>	c.653-7CTC>		NOT_REGISTERED	allele_absent_accession_present						2	all	yes
+AIRE	A0081	2	g., c., p.A432fsX503	g.	c.	p.A432fsX503	NOT_REGISTERED	allele_absent_accession_present						2	all	yes
+AIRE	A0265	2	c.[(?_68)_(1567-14_?)del]		c.[(?_68)_(1567-14_?)del]		NOT_REGISTERED	allele_absent_accession_present						2	none	yes
+AIRE	A0266	2	c.[(?_68)_(1567-14_?)del]		c.[(?_68)_(1567-14_?)del]		NOT_REGISTERED	allele_absent_accession_present						2	none	yes
+AIRE	A0069	1	g.IVS3+2T>C	g.IVS3+2T>C			NOT_REGISTERED	accession_absent_from_final						1	all	no
+AIRE	A0070	1	g.IVS3+2T>C	g.IVS3+2T>C			NOT_REGISTERED	accession_absent_from_final						1	all	no
+AIRE	A0071	1	g.IVS3+2T>C	g.IVS3+2T>C			NOT_REGISTERED	accession_absent_from_final						1	all	no
+AP3B1	A0005	1+2	g.147279..155450del	g.147279..155450del			NOT_REGISTERED	source_incomplete_notation						1	all	no
+AP3B1	A0006	1+2	g.147279..155450del	g.147279..155450del			NOT_REGISTERED	source_incomplete_notation						1	all	no
+BIRC4	B0011	0	c.1100-?_1300+?del		c.1100-?_1300+?del		NOT_REGISTERED	source_incomplete_notation						1	all	no
+BIRC4	B0012	0	c.1-?_1099+?del		c.1-?_1099+?del		NOT_REGISTERED	source_incomplete_notation						1	all	no
+BIRC4	B0013	0	c.1-?_1099+?del		c.1-?_1099+?del		NOT_REGISTERED	source_incomplete_notation						1	all	no
+BLNK	B0001	1+2	g.IVS1+3A>T	g.IVS1+3A>T			NOT_REGISTERED	accession_absent_from_final						1	all	no
+C1QA	C0001	1+2	g.2687C>T, c.634C>T, p.Q208X	g.2687C>T	c.634C>T	p.Q208X	NOT_REGISTERED	mutalyzer_ok_but_absent_from_final						1	all	yes
+C1QA	C0002	1+2	g.2687C>T, c.634C>T, p.Q208X	g.2687C>T	c.634C>T	p.Q208X	NOT_REGISTERED	mutalyzer_ok_but_absent_from_final						1	all	yes
+C1QA	C0003	1+2	g.2687C>T, c.634C>T, p.Q208X	g.2687C>T	c.634C>T	p.Q208X	NOT_REGISTERED	mutalyzer_ok_but_absent_from_final						1	all	yes
+C1QA	C0004	1+2	g.2687C>T, c.634C>T, p.Q208X	g.2687C>T	c.634C>T	p.Q208X	NOT_REGISTERED	mutalyzer_ok_but_absent_from_final						1	all	yes
+C1QA	C0005	1+2	g.2687C>T, c.634C>T, p.Q208X	g.2687C>T	c.634C>T	p.Q208X	NOT_REGISTERED	mutalyzer_ok_but_absent_from_final						1	all	yes
+C1QA	C0006	1+2	g.2687C>T, c.634C>T, p.Q208X	g.2687C>T	c.634C>T	p.Q208X	NOT_REGISTERED	mutalyzer_ok_but_absent_from_final						1	all	yes
+C3	C0006	1+2	g.IVS10+1G>T, c.G>T, r.g>u	g.IVS10+1G>T	c.G>T		NOT_REGISTERED	accession_absent_from_final						1	all	no
+C3	C0010	1+2	g.IVS39-2A>G, c.A>G, r.a>g	g.IVS39-2A>G	c.A>G		NOT_REGISTERED	accession_absent_from_final						1	all	no
+C6	C0001	1	g.IVS16+2T>C	g.IVS16+2T>C			NOT_REGISTERED	accession_absent_from_final						1	all	no
+C6	C0002	1	g.IVS16+2T>C	g.IVS16+2T>C			NOT_REGISTERED	accession_absent_from_final						1	all	no
+C6	C0003	1	g.IVS16+2T>C	g.IVS16+2T>C			NOT_REGISTERED	accession_absent_from_final						1	all	no
+C7	C0013	1+2	g.41450G>A, c.1135G>A, r.1135g>a, p.Gly379Arg p.Gly379Arg	g.41450G>A	c.1135G>A	p.Gly379Arg p.Gly379Arg	NOT_REGISTERED	mutalyzer_ok_but_absent_from_final						1	partial	yes
+C7	C0034	2	g.IVS16+2T>C, c.2279+2T>C, r.2279+2u>c	g.IVS16+2T>C	c.2279+2T>C		NOT_REGISTERED	allele_absent_accession_present						2	all	yes
+C7	C0010	2	g.IVS16+2T>C	g.IVS16+2T>C			NOT_REGISTERED	allele_absent_accession_present						2	all	yes
+C7	C0003	1	g.IVS1-1G>A	g.IVS1-1G>A			NOT_REGISTERED	accession_absent_from_final						2	all	no
+C7	C0003	2	c.853-?_1207+?del		c.853-?_1207+?del		NOT_REGISTERED	source_incomplete_notation						2	all	no
+C7	C0004	1	g.IVS1-1G>A	g.IVS1-1G>A			NOT_REGISTERED	accession_absent_from_final						2	all	no
+C7	C0004	2	c.853-?_1207+?del		c.853-?_1207+?del		NOT_REGISTERED	source_incomplete_notation						2	all	no
+C7	C0020	1	g.IVS3-1G>T, c.G>T, r.g>u	g.IVS3-1G>T	c.G>T		NOT_REGISTERED	accession_absent_from_final						1	all	no
+C7	C0023	1+2	g.IVS3-1G>T, c.G>T, r.g>u	g.IVS3-1G>T	c.G>T		NOT_REGISTERED	accession_absent_from_final						1	all	no
+C7	C0035	1+2	g.IVS16+2T>C, c.2279+2T>C, r.2279+2u>c	g.IVS16+2T>C	c.2279+2T>C		NOT_REGISTERED	accession_absent_from_final						1	all	no
+C7	C0005	1+2	c.853-?_1207+?del		c.853-?_1207+?del		NOT_REGISTERED	source_incomplete_notation						1	all	no
+CD19	C0005	2	Gene deleted				NOT_REGISTERED	source_has_no_dna_notation						2	none	yes
+CD40L	C0219	0	g.1127_1128ins, c.72_73ins291, r.72_73ins, p.Met25fsX60	g.1127_1128ins	c.72_73ins291	p.Met25fsX60	NOT_REGISTERED	source_incomplete_notation						1	all	no
+CD40L	C0058	0	g.11864T>C, c.484T>C, p.K143T	g.11864T>C	c.484T>C	p.K143T	NOT_REGISTERED	accession_absent_from_final						1	all	no
+CD40L	C0194	0	g.IVS1-5AATAGATAG>, c.157-5AATAGATAG>, r.157-5aauagauag>,	g.IVS1-5AATAGATAG>	c.157-5AATAGATAG>		NOT_REGISTERED	accession_absent_from_final						1	all	no
+CD40L	C0195	0	g.IVS1-4ATAGATAG>, c.157-4ATAGATAG>, r.157-4auagauag>,	g.IVS1-4ATAGATAG>	c.157-4ATAGATAG>		NOT_REGISTERED	accession_absent_from_final						1	all	no
+CD40L	C0035	0	g.IVS2+1G>T	g.IVS2+1G>T			NOT_REGISTERED	accession_absent_from_final						1	all	no
+CD40L	C0134	0	g.IVS2+1G>A	g.IVS2+1G>A			NOT_REGISTERED	accession_absent_from_final						1	all	no
+CD40L	C0135	0	g.IVS2+1G>A	g.IVS2+1G>A			NOT_REGISTERED	accession_absent_from_final						1	all	no
+CD40L	C0136	0	g.IVS2+2T>A	g.IVS2+2T>A			NOT_REGISTERED	accession_absent_from_final						1	all	no
+CD40L	C0012	0	g.IVS3+4G>C	g.IVS3+4G>C			NOT_REGISTERED	accession_absent_from_final						1	all	no
+CD40L	C0021	0	g.IVS3+5G>T	g.IVS3+5G>T			NOT_REGISTERED	accession_absent_from_final						1	all	no
+CD40L	C0022	0	g.IVS3+5G>T	g.IVS3+5G>T			NOT_REGISTERED	accession_absent_from_final						1	all	no
+CD40L	C0023	0	g.IVS3+5G>T	g.IVS3+5G>T			NOT_REGISTERED	accession_absent_from_final						1	all	no
+CD40L	C0068	0	g.IVS3+2T>C	g.IVS3+2T>C			NOT_REGISTERED	accession_absent_from_final						1	all	no
+CD40L	C0129	0	g.IVS3+2T>C	g.IVS3+2T>C			NOT_REGISTERED	accession_absent_from_final						1	all	no
+CD40L	C0130	0	g.IVS3+5G>A	g.IVS3+5G>A			NOT_REGISTERED	accession_absent_from_final						1	all	no
+CD40L	C0166	0	g.IVS3+1G>, c.346+1G>, r.346+1g>,	g.IVS3+1G>	c.346+1G>		NOT_REGISTERED	accession_absent_from_final						1	all	no
+CD40L	C0049	0	g.IVS4+3A>T	g.IVS4+3A>T			NOT_REGISTERED	accession_absent_from_final						1	all	no
+CD40L	C0123	0	g.IVS4-1G>	g.IVS4-1G>			NOT_REGISTERED	accession_absent_from_final						1	all	no
+CD40L	C0124	0	g.IVS4+1G>C	g.IVS4+1G>C			NOT_REGISTERED	accession_absent_from_final						1	all	no
+CD40L	C0125	0	g.IVS4+1G>C	g.IVS4+1G>C			NOT_REGISTERED	accession_absent_from_final						1	all	no
+CD40L	C0126	0	g.IVS4+1G>C	g.IVS4+1G>C			NOT_REGISTERED	accession_absent_from_final						1	all	no
+CD40L	C0127	0	g.IVS4+1G>C	g.IVS4+1G>C			NOT_REGISTERED	accession_absent_from_final						1	all	no
+CD40L	C0128	0	g.IVS4+1G>C	g.IVS4+1G>C			NOT_REGISTERED	accession_absent_from_final						1	all	no
+CD40	T0003	1+2	g.58074T>C, c.294T>C, p.C83R	g.58074T>C	c.294T>C	p.C83R	NOT_REGISTERED	accession_absent_from_final						1	all	no
+CD40	T0004	1+2	g.IVS3-2A>T, c.A>T, r.a>u	g.IVS3-2A>T	c.A>T		NOT_REGISTERED	accession_absent_from_final						1	all	no
+CD79B	C0001	1+2	g.2550G>A, c.412G>A, r.412g>a, p.Gly138Ser	g.2550G>A	c.412G>A	p.Gly138Ser	NOT_REGISTERED	mutalyzer_ok_but_absent_from_final						1	all	yes
+CD8A	C0001	1+2	g.1044G>A, c.396G>A, p.G111S	g.1044G>A	c.396G>A	p.G111S	NOT_REGISTERED	mutalyzer_ok_but_absent_from_final						1	all	yes
+CD8A	C0002	1+2	g.1044G>A, c.396G>A, p.G111S	g.1044G>A	c.396G>A	p.G111S	NOT_REGISTERED	mutalyzer_ok_but_absent_from_final						1	all	yes
+CD8A	C0003	1+2	g.1044G>A, c.396G>A, p.G111S	g.1044G>A	c.396G>A	p.G111S	NOT_REGISTERED	mutalyzer_ok_but_absent_from_final						1	all	yes
+CFH	H0005	1+2	g.56043G>T, c.638G>T, p.E189X	g.56043G>T	c.638G>T	p.E189X	NOT_REGISTERED	accession_absent_from_final						1	all	no
+CFH	H0006	1+2	g.56043G>T, c.638G>T, p.E189X	g.56043G>T	c.638G>T	p.E189X	NOT_REGISTERED	accession_absent_from_final						1	all	no
+CFH	H0003	1+2	g.125619C>T, c.3645C>T, p.S1191L	g.125619C>T	c.3645C>T	p.S1191L	NOT_REGISTERED	accession_absent_from_final						1	all	no
+CFH	H0014	1	g.125675C>T, c.3701C>T, p.R1210C	g.125675C>T	c.3701C>T	p.R1210C	NOT_REGISTERED	accession_absent_from_final						1	all	no
+CFH	H0015	1	g.125675C>T, c.3701C>T, p.R1210C	g.125675C>T	c.3701C>T	p.R1210C	NOT_REGISTERED	accession_absent_from_final						1	all	no
+CFH	H0020	1	g.125690C>G, c.3716C>G, p.R1215G	g.125690C>G	c.3716C>G	p.R1215G	NOT_REGISTERED	accession_absent_from_final						1	all	no
+CFH	H0021	1	g.125690C>G, c.3716C>G, p.R1215G	g.125690C>G	c.3716C>G	p.R1215G	NOT_REGISTERED	accession_absent_from_final						1	all	no
+CFH	H0022	1	g.125690C>G, c.3716C>G, p.R1215G	g.125690C>G	c.3716C>G	p.R1215G	NOT_REGISTERED	accession_absent_from_final						1	all	no
+CFH	H0023	1	g.125690C>G, c.3716C>G, p.R1215G	g.125690C>G	c.3716C>G	p.R1215G	NOT_REGISTERED	accession_absent_from_final						1	all	no
+CIITA	M0001	2	g.IVS18+1G>A	g.IVS18+1G>A			NOT_REGISTERED	allele_absent_accession_present						2	all	yes
+CTSC	C0035	1+2	g.26356C>T, c.458C>T, r.458c>u, p.Thr153Ile	g.26356C>T	c.458C>T	p.Thr153Ile	NOT_REGISTERED	accession_absent_from_final						1	all	no
+CYBA	H0050	1+2	c.59-?_203+?del		c.59-?_203+?del		NOT_REGISTERED	source_incomplete_notation						1	all	no
+CYBA	H0065	1+2	c.129-?_585+?del		c.129-?_585+?del		NOT_REGISTERED	source_incomplete_notation						1	all	no
+CYBA	H0073	1+2	c.129-?_369+?del		c.129-?_369+?del		NOT_REGISTERED	source_incomplete_notation						1	all	no
+CYBB	A1415	0	g.16991_16992ins, c.591_592ins41, r.591_592ins41, p.Arg198fsX30	g.16991_16992ins	c.591_592ins41	p.Arg198fsX30	NOT_REGISTERED	source_incomplete_notation						1	all	no
+CYBB	A1416	0	g.[19998_19999insTGCTGGAAACCCTCCTATGGT; 20020_20027delATGTACAA; 20019_20020insTG], c.[785_786insTGCTGGAAACCCTCCTATGGT; 804+3_804+10delATGTACAA; 804+2_804+3insTG], r.[785_786insugcuggaaacccuccuauggu; 804+3_804+10delauguacaa; 804+2_804+3insug], p.[Gln261_Phe262insPheAlaGlyAsnProProMetVal;?;?]	g.[19998_19999insTGCTGGAAACCCTCCTATGGT	c.[785_786insTGCTGGAAACCCTCCTATGGT	p.[Gln261_Phe262insPheAlaGlyAsnProProMetVal	NOT_REGISTERED	allele_absent_accession_present						1	none	yes
+CYBB	A0538	0	g.[24823C>A; 24827C>G], c.[907C>A; 911C>G], r.[907c>a; 911c>g], p.[His303Asn; Pro304Arg]	g.[24823C>A	c.[907C>A	p.[His303Asn	NOT_REGISTERED	allele_absent_accession_present						1	none	yes
+CYBB	A0648	0	g.[24823C>A; 24827C>G], c.[907C>A; 911C>G], r.[907c>a; 911c>g], p.[His303Asn; Pro304Arg]	g.[24823C>A	c.[907C>A	p.[His303Asn	NOT_REGISTERED	allele_absent_accession_present						1	none	yes
+CYBB	A1100	0	g.[24838_24839insTCCTTTCA;24851_24853delTGA], c.[922_923insTCCTTTCA;935_937delTGA], r.[922_923insuccuuuca;935_937deluga], p.[Glu309fsX7;Met312del]	g.[24838_24839insTCCTTTCA	c.[922_923insTCCTTTCA	p.[Glu309fsX7	NOT_REGISTERED	allele_absent_accession_present						1	none	yes
+CYBB	A1116	0	g.[24874delG;24878T>G], c.[958delG;962T>G], r.[958delg;962u>g], p.[Glu320fsX23;Val321Gly]	g.[24874delG	c.[958delG	p.[Glu320fsX23	NOT_REGISTERED	allele_absent_accession_present						1	none	yes
+CYBB	A0377	0	g.24881G>A, c.965G>A, r.965g>a, p.Gly322Glu	g.24881G>A	c.965G>A	p.Gly322Glu	NOT_REGISTERED	mutalyzer_ok_but_absent_from_final						1	all	yes
+CYBB	A1117	0	g.24881G>A, c.965G>A, r.965g>a, p.Gly322Glu	g.24881G>A	c.965G>A	p.Gly322Glu	NOT_REGISTERED	mutalyzer_ok_but_absent_from_final						1	all	yes
+CYBB	A0330	0	g.26063delG, c.1272delG, r.1272delg, p.Trp424fsX11	g.26063delG	c.1272delG	p.Trp424fsX11	NOT_REGISTERED	mutalyzer_ok_but_absent_from_final						1	all	yes
+CYBB	A0089	0	g.946A>C, c.A>C, r.a>c	g.946A>C	c.A>C		NOT_REGISTERED	accession_absent_from_final						1	all	no
+CYBB	A0090	0	g.946A>C, c.A>C, r.a>c	g.946A>C	c.A>C		NOT_REGISTERED	accession_absent_from_final						1	all	no
+CYBB	A0166	0	g.948T>C, c.T>C, r.u>c	g.948T>C	c.T>C		NOT_REGISTERED	accession_absent_from_final						1	all	no
+CYBB	A0472	0	g.950C>T, c.C>T, r.c>u	g.950C>T	c.C>T		NOT_REGISTERED	accession_absent_from_final						1	all	no
+CYBB	A0546	0	g.951C>T, c.C>T, r.c>u	g.951C>T	c.C>T		NOT_REGISTERED	accession_absent_from_final						1	all	no
+CYBB	A0547	0	g.951C>T, c.C>T, r.c>u	g.951C>T	c.C>T		NOT_REGISTERED	accession_absent_from_final						1	all	no
+CYBB	A0646	0	g.951C>T, c.C>T, r.c>u	g.951C>T	c.C>T		NOT_REGISTERED	accession_absent_from_final						1	all	no
+CYBB	A0548	0	g.950C>T, c.C>T, r.c>u	g.950C>T	c.C>T		NOT_REGISTERED	accession_absent_from_final						1	all	no
+CYBB	A0549	0	g.950C>T, c.C>T, r.c>u	g.950C>T	c.C>T		NOT_REGISTERED	accession_absent_from_final						1	all	no
+CYBB	A0550	0	g.948T>C, c.T>C, r.u>c	g.948T>C	c.T>C		NOT_REGISTERED	accession_absent_from_final						1	all	no
+CYBB	A0551	0	g.948T>C, c.T>C, r.u>c	g.948T>C	c.T>C		NOT_REGISTERED	accession_absent_from_final						1	all	no
+CYBB	A0552	0	g.948T>C, c.T>C, r.u>c	g.948T>C	c.T>C		NOT_REGISTERED	accession_absent_from_final						1	all	no
+CYBB	A0649	0	g.948dupT, c._insT, r._insu	g.948dupT	c._insT		NOT_REGISTERED	accession_absent_from_final						1	all	no
+CYBB	A0650	0	g.948dupT, c._insT, r._insu	g.948dupT	c._insT		NOT_REGISTERED	accession_absent_from_final						1	all	no
+CYBB	A0651	0	g.951C>T, c.C>T, r.c>u	g.951C>T	c.C>T		NOT_REGISTERED	accession_absent_from_final						1	all	no
+CYBB	A0652	0	g.951C>T, c.C>T, r.c>u	g.951C>T	c.C>T		NOT_REGISTERED	accession_absent_from_final						1	all	no
+CYBB	A0224	0	g.3024G>A, c.46-1G>A, r.46-1g>a	g.3024G>A	c.46-1G>A		NOT_REGISTERED	mutalyzer_ok_but_absent_from_final						1	all	yes
+CYBB	A0500	0	g.3024G>A, c.46-1G>A, r.46-1g>a	g.3024G>A	c.46-1G>A		NOT_REGISTERED	mutalyzer_ok_but_absent_from_final						1	all	yes
+CYBB	A0593	0	g.IVS1-1G>T, c.46-1G>T, r.46-1g>u	g.IVS1-1G>T	c.46-1G>T		NOT_REGISTERED	mutalyzer_ok_but_absent_from_final						1	all	yes
+CYBB	A0625	0	g.IVS1-1G>C, c.46-1G>C, r.46-1g>c	g.IVS1-1G>C	c.46-1G>C		NOT_REGISTERED	mutalyzer_ok_but_absent_from_final						1	all	yes
+CYBB	A0005	0	g.20019T>A, c.804+2T>A, r.804+2u>a	g.20019T>A	c.804+2T>A		NOT_REGISTERED	mutalyzer_ok_but_absent_from_final						1	all	yes
+CYBB	A0236	0	g.20019T>C, c.804+2T>C, r.804+2u>c	g.20019T>C	c.804+2T>C		NOT_REGISTERED	mutalyzer_ok_but_absent_from_final						1	all	yes
+CYBB	A0237	0	g.20019T>C, c.804+2T>C, r.804+2u>c	g.20019T>C	c.804+2T>C		NOT_REGISTERED	mutalyzer_ok_but_absent_from_final						1	all	yes
+CYBB	A1046	0	g.20019T>C, c.804+2T>C, r.804+2u>c	g.20019T>C	c.804+2T>C		NOT_REGISTERED	mutalyzer_ok_but_absent_from_final						1	all	yes
+CYBB	A1047	0	g.20019T>C, c.804+2T>C, r.804+2u>c	g.20019T>C	c.804+2T>C		NOT_REGISTERED	mutalyzer_ok_but_absent_from_final						1	all	yes
+CYBB	A1434	0	g.20019T>C, c.804+2T>C, r.804+2u>c	g.20019T>C	c.804+2T>C		NOT_REGISTERED	mutalyzer_ok_but_absent_from_final						1	all	yes
+CYBB	A0572	0	g.30627_30637delAAGTAAGGAGT	g.30627_30637delAAGTAAGGAGT			NOT_REGISTERED	accession_absent_from_final						1	all	no
+CYBB	A0026	0	c.(253-?_1151+?)del		c.(253-?_1151+?)del		NOT_REGISTERED	source_incomplete_notation						1	all	no
+CYBB	A0027	0	c.(338-?_483+?)del		c.(338-?_483+?)del		NOT_REGISTERED	source_incomplete_notation						1	all	no
+CYBB	A0028	0	c.(484-?_804+?)del		c.(484-?_804+?)del		NOT_REGISTERED	source_incomplete_notation						1	all	no
+CYBB	A0030	0	c.(1-?_1710+?)del		c.(1-?_1710+?)del		NOT_REGISTERED	source_incomplete_notation						1	all	no
+CYBB	A0031	0	c.(1-?_1710+?)del		c.(1-?_1710+?)del		NOT_REGISTERED	source_incomplete_notation						1	all	no
+CYBB	A0032	0	c.(1-?_1710+?)del		c.(1-?_1710+?)del		NOT_REGISTERED	source_incomplete_notation						1	all	no
+CYBB	A0033	0	c.(1-?_1710+?)del		c.(1-?_1710+?)del		NOT_REGISTERED	source_incomplete_notation						1	all	no
+CYBB	A0034	0	c.(1-?_1710+?)del		c.(1-?_1710+?)del		NOT_REGISTERED	source_incomplete_notation						1	all	no
+CYBB	A0035	0	c.(1-?_1710+?)del		c.(1-?_1710+?)del		NOT_REGISTERED	source_incomplete_notation						1	all	no
+CYBB	A0036	0	c.(1-?_1710+?)del		c.(1-?_1710+?)del		NOT_REGISTERED	source_incomplete_notation						1	all	no
+CYBB	A0037	0	c.(1-?_1710+?)del		c.(1-?_1710+?)del		NOT_REGISTERED	source_incomplete_notation						1	all	no
+CYBB	A0038	0	c.(1-?_1710+?)del		c.(1-?_1710+?)del		NOT_REGISTERED	source_incomplete_notation						1	all	no
+CYBB	A0039	0	c.(1-?_1314+?)del		c.(1-?_1314+?)del		NOT_REGISTERED	source_incomplete_notation						1	all	no
+CYBB	A0040	0	c.(253-?_1710+?)del		c.(253-?_1710+?)del		NOT_REGISTERED	source_incomplete_notation						1	all	no
+CYBB	A0041	0	c.(253-?_1710+?)del		c.(253-?_1710+?)del		NOT_REGISTERED	source_incomplete_notation						1	all	no
+CYBB	A0042	0	c.(805-?_1710+?)del		c.(805-?_1710+?)del		NOT_REGISTERED	source_incomplete_notation						1	all	no
+CYBB	A0043	0	c.(1315-?_1710+?)del		c.(1315-?_1710+?)del		NOT_REGISTERED	source_incomplete_notation						1	all	no
+CYBB	A0044	0	c.(1462-?_1710+?)del		c.(1462-?_1710+?)del		NOT_REGISTERED	source_incomplete_notation						1	all	no
+CYBB	A0066	0	c.(1-?_1710+?)del		c.(1-?_1710+?)del		NOT_REGISTERED	source_incomplete_notation						1	all	no
+CYBB	A0119	0	c.(1-?_1710+?)del		c.(1-?_1710+?)del		NOT_REGISTERED	source_incomplete_notation						1	all	no
+CYBB	A00153	0	c.(1-?_1710+?)del		c.(1-?_1710+?)del		NOT_REGISTERED	source_incomplete_notation						1	all	no
+CYBB	A0156	0	c.(1150_1151+2)delaagt		c.(1150_1151+2)delaagt		NOT_REGISTERED	accession_absent_from_final						1	all	no
+CYBB	A0167	0	c.(1-?_1710+?)del		c.(1-?_1710+?)del		NOT_REGISTERED	source_incomplete_notation						1	all	no
+CYBB	A0169	0	c.(1-?_1710+?)del		c.(1-?_1710+?)del		NOT_REGISTERED	source_incomplete_notation						1	all	no
+CYBB	A0172	0	c.(1315-?_1710+?)del		c.(1315-?_1710+?)del		NOT_REGISTERED	source_incomplete_notation						1	all	no
+CYBB	A0173	0	c.(1315-?_1710+?)del		c.(1315-?_1710+?)del		NOT_REGISTERED	source_incomplete_notation						1	all	no
+CYBB	A0181	0	c.(482_483+4)delaggtaa		c.(482_483+4)delaggtaa		NOT_REGISTERED	accession_absent_from_final						1	all	no
+CYBB	A0201	0	c.(1-?_1710+?)del		c.(1-?_1710+?)del		NOT_REGISTERED	source_incomplete_notation						1	all	no
+CYBB	A0203	0	c.(1587-?_1710+?)del		c.(1587-?_1710+?)del		NOT_REGISTERED	source_incomplete_notation						1	all	no
+CYBB	A00204	0	c.(1-?_252+?)del		c.(1-?_252+?)del		NOT_REGISTERED	source_incomplete_notation						1	all	no
+CYBB	A0205	0	c.(675-?_804+?)del		c.(675-?_804+?)del		NOT_REGISTERED	source_incomplete_notation						1	all	no
+CYBB	A0206	0	c.(1-?_1710+?)del		c.(1-?_1710+?)del		NOT_REGISTERED	source_incomplete_notation						1	all	no
+CYBB	A0797	0	g.12033_12992+?del, c.253-875_337+~800del	g.12033_12992+?del	c.253-875_337+~800del		NOT_REGISTERED	source_incomplete_notation						1	all	no
+CYBB	A0899	0	g.16784_17365del581, c.484-100_674+291del581	g.16784_17365del581	c.484-100_674+291del581		NOT_REGISTERED	accession_absent_from_final						1	all	no
+CYBB	A0956	0	c.674+?_804+?del		c.674+?_804+?del		NOT_REGISTERED	source_incomplete_notation						1	all	no
+CYBB	A1051	0	c.805-?		c.805-?		NOT_REGISTERED	accession_absent_from_final						1	all	no
+CYBB	A1270	0	c.1461+668_1462-807del1558		c.1461+668_1462-807del1558		NOT_REGISTERED	accession_absent_from_final						1	all	no
+CYBB	A1271	0	c.1462-?		c.1462-?		NOT_REGISTERED	accession_absent_from_final						1	all	no
+CYBB	A1300	0	c.1570_1586+?del		c.1570_1586+?del		NOT_REGISTERED	source_incomplete_notation						1	all	no
+CYBB	A1331	0	1-?_45+?del				NOT_REGISTERED	source_has_no_dna_notation						1	none	no
+CYBB	A1343	0	1-?_1710+?del				NOT_REGISTERED	source_has_no_dna_notation						1	none	no
+CYBB	A1344	0	1-?_1710+?del				NOT_REGISTERED	source_has_no_dna_notation						1	none	no
+CYBB	A1345	0	1-?_1710+?del				NOT_REGISTERED	source_has_no_dna_notation						1	none	no
+CYBB	A1346	0	1-?_1710+?del				NOT_REGISTERED	source_has_no_dna_notation						1	none	no
+CYBB	A1349	0	1-?_1710+?del				NOT_REGISTERED	source_has_no_dna_notation						1	none	no
+CYBB	A1350	0	1-?_1710+?del				NOT_REGISTERED	source_has_no_dna_notation						1	none	no
+CYBB	A1351	0	1-?_1710+?del				NOT_REGISTERED	source_has_no_dna_notation						1	none	no
+CYBB	A1352	0	1-?_1710+?del				NOT_REGISTERED	source_has_no_dna_notation						1	none	no
+CYBB	A1353	0	1-?_1710+?del				NOT_REGISTERED	source_has_no_dna_notation						1	none	no
+CYBB	A1354	0	1-?_1710+?del				NOT_REGISTERED	source_has_no_dna_notation						1	none	no
+CYBB	A1355	0	1-?_1710+?del				NOT_REGISTERED	source_has_no_dna_notation						1	none	no
+CYBB	A1356	0	1-?_1710+?del				NOT_REGISTERED	source_has_no_dna_notation						1	none	no
+CYBB	A1357	0	1-?_252+?del				NOT_REGISTERED	source_has_no_dna_notation						1	none	no
+CYBB	A1358	0	1-?_1710+?del				NOT_REGISTERED	source_has_no_dna_notation						1	none	no
+CYBB	A1359	0	1-?_1710+?del				NOT_REGISTERED	source_has_no_dna_notation						1	none	no
+CYBB	A1360	0	1-?_1710+?del				NOT_REGISTERED	source_has_no_dna_notation						1	none	no
+CYBB	A1361	0	1-?_1710+?del				NOT_REGISTERED	source_has_no_dna_notation						1	none	no
+CYBB	A1362	0	1-?_1710+?del				NOT_REGISTERED	source_has_no_dna_notation						1	none	no
+CYBB	A1363	0	1-?_1710+?del				NOT_REGISTERED	source_has_no_dna_notation						1	none	no
+CYBB	A1364	0	1-?_1710+?del				NOT_REGISTERED	source_has_no_dna_notation						1	none	no
+CYBB	A1365	0	1-?_1710+?del				NOT_REGISTERED	source_has_no_dna_notation						1	none	no
+CYBB	A1366	0	1-?_1710+?del				NOT_REGISTERED	source_has_no_dna_notation						1	none	no
+CYBB	A1367	0	1-?_1710+?del				NOT_REGISTERED	source_has_no_dna_notation						1	none	no
+CYBB	A1368	0	1-?_1710+?del				NOT_REGISTERED	source_has_no_dna_notation						1	none	no
+CYBB	A1369	0	1-?_1710+?del				NOT_REGISTERED	source_has_no_dna_notation						1	none	no
+CYBB	A1370	0	1-?_1710+?del				NOT_REGISTERED	source_has_no_dna_notation						1	none	no
+CYBB	A1371	0	1-?_1710+?del				NOT_REGISTERED	source_has_no_dna_notation						1	none	no
+CYBB	A1372	0	1-?_1710+?del				NOT_REGISTERED	source_has_no_dna_notation						1	none	no
+CYBB	A1373	0	1-?_1710+?del				NOT_REGISTERED	source_has_no_dna_notation						1	none	no
+CYBB	A1374	0	1-?_1710+?del				NOT_REGISTERED	source_has_no_dna_notation						1	none	no
+CYBB	A1375	0	1-?_1710+?del				NOT_REGISTERED	source_has_no_dna_notation						1	none	no
+CYBB	A1376	0	1-?_1710+?del				NOT_REGISTERED	source_has_no_dna_notation						1	none	no
+CYBB	A1377	0	1-?_1710+?del				NOT_REGISTERED	source_has_no_dna_notation						1	none	no
+CYBB	A1378	0	1-?_1710+?del				NOT_REGISTERED	source_has_no_dna_notation						1	none	no
+CYBB	A1379	0	1-?_1710+?del				NOT_REGISTERED	source_has_no_dna_notation						1	none	no
+CYBB	A1380	0	1-?_804+?del				NOT_REGISTERED	source_has_no_dna_notation						1	none	no
+CYBB	A1381	0	1-?_1314+?del				NOT_REGISTERED	source_has_no_dna_notation						1	none	no
+CYBB	A1382	0	1-?_337+?del				NOT_REGISTERED	source_has_no_dna_notation						1	none	no
+CYBB	A1383	0	484-?_1710+?del				NOT_REGISTERED	source_has_no_dna_notation						1	none	no
+CYBB	A1384	0	484-?_1710+?del				NOT_REGISTERED	source_has_no_dna_notation						1	none	no
+CYBB	A1385	0	675-?_1710+?del				NOT_REGISTERED	source_has_no_dna_notation						1	none	no
+CYBB	A1386	0	805-?_1710+?del				NOT_REGISTERED	source_has_no_dna_notation						1	none	no
+CYBB	A1387	0	675-?_1586+?del				NOT_REGISTERED	source_has_no_dna_notation						1	none	no
+CYBB	A1388	0	898-?_1710+?del				NOT_REGISTERED	source_has_no_dna_notation						1	none	no
+CYBB	A1389	0	484-?_897+?del				NOT_REGISTERED	source_has_no_dna_notation						1	none	no
+CYBB	A1390	0	253-?_674+?del				NOT_REGISTERED	source_has_no_dna_notation						1	none	no
+CYBB	A1391	0	142-?_337+?del				NOT_REGISTERED	source_has_no_dna_notation						1	none	no
+CYBB	A1392	0	1-?_252+?del				NOT_REGISTERED	source_has_no_dna_notation						1	none	no
+CYBB	A1393	0	1315-?_1710+?del				NOT_REGISTERED	source_has_no_dna_notation						1	none	no
+CYBB	A1394	0	675-?_804+?del				NOT_REGISTERED	source_has_no_dna_notation						1	none	no
+CYBB	A1395	0	484-?_674+?del				NOT_REGISTERED	source_has_no_dna_notation						1	none	no
+CYBB	A1396	0	675-?_804+?del				NOT_REGISTERED	source_has_no_dna_notation						1	none	no
+CYBB	A1397	0	675-?_804+?del				NOT_REGISTERED	source_has_no_dna_notation						1	none	no
+CYBB	A1398	0	c.142-?_252+?del		c.142-?_252+?del		NOT_REGISTERED	source_incomplete_notation						1	all	no
+CYBB	A1399	0	c.675-?_804+?del		c.675-?_804+?del		NOT_REGISTERED	source_incomplete_notation						1	all	no
+CYBB	A1400	0	c.142-?_252+?del		c.142-?_252+?del		NOT_REGISTERED	source_incomplete_notation						1	all	no
+CYBB	A1401	0	c.1-?_45+?del		c.1-?_45+?del		NOT_REGISTERED	source_incomplete_notation						1	all	no
+CYBB	A1402	0	c.1-?_45+?del		c.1-?_45+?del		NOT_REGISTERED	source_incomplete_notation						1	all	no
+CYBB	A1403	0	c.805-?_897+?del		c.805-?_897+?del		NOT_REGISTERED	source_incomplete_notation						1	all	no
+CYBB	A1404	0	c.805-?_897+?del		c.805-?_897+?del		NOT_REGISTERED	source_incomplete_notation						1	all	no
+CYBB	A1405	0	c.1462-?_1710+?del		c.1462-?_1710+?del		NOT_REGISTERED	source_incomplete_notation						1	all	no
+CYBB	A1406	0	c.675-?_804+?del		c.675-?_804+?del		NOT_REGISTERED	source_incomplete_notation						1	all	no
+CYBB	A1407	0	c.675-?_804+?del		c.675-?_804+?del		NOT_REGISTERED	source_incomplete_notation						1	all	no
+CYBB	A1408	0	c.484-?_674+?del		c.484-?_674+?del		NOT_REGISTERED	source_incomplete_notation						1	all	no
+CYBB	A1409	0	c.484-?_674+?del		c.484-?_674+?del		NOT_REGISTERED	source_incomplete_notation						1	all	no
+CYBB	A1410	0	c.898-?_1151+?del		c.898-?_1151+?del		NOT_REGISTERED	source_incomplete_notation						1	all	no
+CYBB	A1411	0	c.898-?_1151+?del		c.898-?_1151+?del		NOT_REGISTERED	source_incomplete_notation						1	all	no
+CYBB	A1412	0	c.898-?_1151+?del		c.898-?_1151+?del		NOT_REGISTERED	source_incomplete_notation						1	all	no
+CYBB	A1413	0	c.898-?_1151+?del		c.898-?_1151+?del		NOT_REGISTERED	source_incomplete_notation						1	all	no
+CYBB	A00299	0	c.262_263ins~2100		c.262_263ins~2100		NOT_REGISTERED	accession_absent_from_final						1	all	no
+CYBB	A00301	0	c.675-24_690ins		c.675-24_690ins		NOT_REGISTERED	source_incomplete_notation						1	all	no
+CYBB	A0667	0	c.45+907_908ins~5800		c.45+907_908ins~5800		NOT_REGISTERED	accession_absent_from_final						1	all	no
+CYBB	A0898	0	g.16623_16624ins836, c.483+1880_+1881ins836	g.16623_16624ins836	c.483+1880_+1881ins836		NOT_REGISTERED	accession_absent_from_final						1	all	no
+CYBB	A0900	0	c.484-?_897+?		c.484-?_897+?		NOT_REGISTERED	accession_absent_from_final						1	all	no
+DCLRE1C	D0003	2	g.IVS10+1G>A	g.IVS10+1G>A			NOT_REGISTERED	allele_absent_accession_present						2	all	yes
+DCLRE1C	D0036	2	c.(?_-38)_246+?del		c.(?_-38)_246+?del		NOT_REGISTERED	source_incomplete_notation						2	all	yes
+DCLRE1C	D0037	2	c.(?_-38)_246+?del		c.(?_-38)_246+?del		NOT_REGISTERED	source_incomplete_notation						2	all	yes
+DCLRE1C	D0018	2	c.-84-?_246+?del		c.-84-?_246+?del		NOT_REGISTERED	source_incomplete_notation						2	all	yes
+DCLRE1C	D0019	2	c.-84-?_246+?del		c.-84-?_246+?del		NOT_REGISTERED	source_incomplete_notation						2	all	yes
+DCLRE1C	D0020	2	c.-84-?_246+?del		c.-84-?_246+?del		NOT_REGISTERED	source_incomplete_notation						2	all	yes
+DCLRE1C	D0013	1+2	c.307-?_678+?del, p.Lys103_Val227del		c.307-?_678+?del	p.Lys103_Val227del	NOT_REGISTERED	source_incomplete_notation						1	all	no
+DCLRE1C	D0017	1+2	c.781-?_1061+?del, p.Ala261fsX16		c.781-?_1061+?del	p.Ala261fsX16	NOT_REGISTERED	source_incomplete_notation						1	all	no
+DCLRE1C	D0022	1+2	c.(?_-38)_246+?del		c.(?_-38)_246+?del		NOT_REGISTERED	source_incomplete_notation						1	all	no
+DCLRE1C	D0023	1+2	c.(?_-38)_246+?del		c.(?_-38)_246+?del		NOT_REGISTERED	source_incomplete_notation						1	all	no
+DCLRE1C	D0024	1+2	c.(?_-38)_246+?del		c.(?_-38)_246+?del		NOT_REGISTERED	source_incomplete_notation						1	all	no
+DCLRE1C	D0025	1+2	c.(?_-38)_246+?del		c.(?_-38)_246+?del		NOT_REGISTERED	source_incomplete_notation						1	all	no
+DCLRE1C	D0026	1+2	c.(?_-38)_246+?del		c.(?_-38)_246+?del		NOT_REGISTERED	source_incomplete_notation						1	all	no
+DCLRE1C	D0027	1+2	c.(?_-38)_246+?del		c.(?_-38)_246+?del		NOT_REGISTERED	source_incomplete_notation						1	all	no
+DCLRE1C	D0028	1+2	c.(?_-38)_246+?del		c.(?_-38)_246+?del		NOT_REGISTERED	source_incomplete_notation						1	all	no
+DCLRE1C	D0029	1+2	c.(?_-38)_246+?del		c.(?_-38)_246+?del		NOT_REGISTERED	source_incomplete_notation						1	all	no
+DCLRE1C	D0030	1+2	c.(?_-38)_246+?del		c.(?_-38)_246+?del		NOT_REGISTERED	source_incomplete_notation						1	all	no
+DCLRE1C	D0031	1+2	c.(?_-38)_246+?del		c.(?_-38)_246+?del		NOT_REGISTERED	source_incomplete_notation						1	all	no
+DCLRE1C	D0032	1+2	c.(?_-38)_246+?del		c.(?_-38)_246+?del		NOT_REGISTERED	source_incomplete_notation						1	all	no
+DCLRE1C	D0033	1+2	c.(?_-38)_246+?del		c.(?_-38)_246+?del		NOT_REGISTERED	source_incomplete_notation						1	all	no
+DCLRE1C	D0034	1	c.(?_-38)_246+?del		c.(?_-38)_246+?del		NOT_REGISTERED	source_incomplete_notation						2	all	no
+DCLRE1C	D0034	2	c.(?_-38)_306+?del		c.(?_-38)_306+?del		NOT_REGISTERED	source_incomplete_notation						2	all	no
+DCLRE1C	D0035	1+2	c.(?_-38)_246+?del		c.(?_-38)_246+?del		NOT_REGISTERED	source_incomplete_notation						1	all	no
+DCLRE1C	D0038	1	c.(?_-38)_246+?del		c.(?_-38)_246+?del		NOT_REGISTERED	source_incomplete_notation						2	all	yes
+DCLRE1C	D0039	1+2	c.(?_-38)_246+?del		c.(?_-38)_246+?del		NOT_REGISTERED	source_incomplete_notation						1	all	no
+DCLRE1C	D0040	1	c.(?_-38)_306+?del		c.(?_-38)_306+?del		NOT_REGISTERED	source_incomplete_notation						2	all	yes
+DCLRE1C	D0052	0	c.162-?_246+?del		c.162-?_246+?del		NOT_REGISTERED	source_incomplete_notation						1	all	no
+DCLRE1C	D0053	0	c.162-?_246+?del		c.162-?_246+?del		NOT_REGISTERED	source_incomplete_notation						1	all	no
+DCLRE1C	D0054	0	c.162-?_246+?del		c.162-?_246+?del		NOT_REGISTERED	source_incomplete_notation						1	all	no
+DCLRE1C	D0055	1	c.162-?_246+?del		c.162-?_246+?del		NOT_REGISTERED	source_incomplete_notation						1	all	no
+ELA2	E0157	0	g.[1808T>G;1912T>A], c.[90T>G/194T>A], r.[90u>g/194u>a], p.[Ile30Met/Val65Asp]	g.[1808T>G	c.[90T>G/194T>A]	p.[Ile30Met/Val65Asp]	NOT_REGISTERED	accession_absent_from_final						1	none	no
+ELA2	E0108	0	g.c.r.	g.c.r.			NOT_REGISTERED	accession_absent_from_final						1	all	no
+ELA2	E0142	0	g.c.r.	g.c.r.			NOT_REGISTERED	accession_absent_from_final						1	all	no
+ELA2	E0143	0	g.c.r.	g.c.r.			NOT_REGISTERED	accession_absent_from_final						1	all	no
+ELA2	E0144	0	g.c.r.	g.c.r.			NOT_REGISTERED	accession_absent_from_final						1	all	no
+FASLG	T0001	1	g.83392_83475del, c.629_712del, p.M158_T186del	g.83392_83475del	c.629_712del	p.M158_T186del	NOT_REGISTERED	mutalyzer_ok_but_absent_from_final						1	all	yes
+FERMT3	F0021	1+2	g.[13818G>A;14557delT], c.[922G>A;1275delT], r.[922g>a;1275delu], p.[Gly308Arg;Leu425fsX4]	g.[13818G>A	c.[922G>A	p.[Gly308Arg	NOT_REGISTERED	allele_absent_accession_present						1	none	yes
+FERMT3	F0025	1+2	g.4876A>C, c.A>C, r.a>c	g.4876A>C	c.A>C		NOT_REGISTERED	accession_absent_from_final						1	all	no
+FOXN1	W0002	1+2	g.56561C>T, c.792C>T, p.R255X	g.56561C>T	c.792C>T	p.R255X	NOT_REGISTERED	accession_absent_from_final						1	all	no
+FOXP3	F0013	0	g., c., r., p.Phe373Ala	g.	c.	p.Phe373Ala	NOT_REGISTERED	accession_absent_from_final						1	all	no
+FOXP3	F0039	0	g.[76526C>T/80177T>C], c.[543C>T/970T>C], r.[543c>u/970u>c], p.[Ser181Ser/Phe324Leu]	g.[76526C>T/80177T>C]	c.[543C>T/970T>C]	p.[Ser181Ser/Phe324Leu]	NOT_REGISTERED	accession_absent_from_final						1	none	no
+FOXP3	F0003	0	g.82040_82041delCT, c.1293_1294delCT, r.1293_1294delcu, p.432fsX25	g.82040_82041delCT	c.1293_1294delCT	p.432fsX25	NOT_REGISTERED	mutalyzer_ok_but_absent_from_final						1	all	yes
+FOXP3	F0021	0	g.c.r.	g.c.r.			NOT_REGISTERED	accession_absent_from_final						1	all	no
+FOXP3	F0022	0	g.c.r.	g.c.r.			NOT_REGISTERED	accession_absent_from_final						1	all	no
+G6PC3	G0014	1+2	g.[4958C>G;6031G>C], c.[353C>G;778G>C], r.[353c>g;778g>c], p.[Thr118Arg;Gly260Arg]	g.[4958C>G	c.[353C>G	p.[Thr118Arg	NOT_REGISTERED	allele_absent_accession_present						1	none	yes
+HF1	H0011	1	g.92248delA, c.1493delA, p.474fsX479	g.92248delA	c.1493delA	p.474fsX479	NOT_REGISTERED	accession_absent_from_final						1	none	no
+HF1	H0012	1	g.92248delA, c.1493delA, p.474fsX479	g.92248delA	c.1493delA	p.474fsX479	NOT_REGISTERED	accession_absent_from_final						1	none	no
+HF1	H0024	1	g.51431_51434delAGAA, c.155_158delAGAA, p.28fsX32	g.51431_51434delAGAA	c.155_158delAGAA	p.28fsX32	NOT_REGISTERED	accession_absent_from_final						1	none	no
+HF1	H0068	1	g.125742_125745delAGAA, c.3695_3698delAGAA, r.3695_3698delagaa, p.1232fsX37	g.125742_125745delAGAA	c.3695_3698delAGAA	p.1232fsX37	NOT_REGISTERED	accession_absent_from_final						1	none	no
+HF1	H0042	1	g.51581A>G, c.232A>G, r.232a>g, p.Arg78Gly	g.51581A>G	c.232A>G	p.Arg78Gly	NOT_REGISTERED	accession_absent_from_final						1	none	no
+HF1	H0034	1	g.54439_54463delTTAATTACCGTGAATGTGACACAGA, c.371_395delTTAATTACCGTGAATGTGACACAGA, r.371_395deluuaauuaccgugaaugugacacaga, p.Ile124fsX12	g.54439_54463delTTAATTACCGTGAATGTGACACAGA	c.371_395delTTAATTACCGTGAATGTGACACAGA	p.Ile124fsX12	NOT_REGISTERED	accession_absent_from_final						1	none	no
+HF1	H0028	1+2	g.54448G>T, c.380G>T, r.380g>u, p.Arg127Leu	g.54448G>T	c.380G>T	p.Arg127Leu	NOT_REGISTERED	accession_absent_from_final						1	none	no
+HF1	H0029	1+2	g.54448G>T, c.380G>T, r.380g>u, p.Arg127Leu	g.54448G>T	c.380G>T	p.Arg127Leu	NOT_REGISTERED	accession_absent_from_final						1	none	no
+HF1	H0004	1+2	g.56043G>T, c.638G>T, p.E189X	g.56043G>T	c.638G>T	p.E189X	NOT_REGISTERED	accession_absent_from_final						1	none	no
+HF1	H0005	1+2	g.56043G>T, c.638G>T, p.E189X	g.56043G>T	c.638G>T	p.E189X	NOT_REGISTERED	accession_absent_from_final						1	none	no
+HF1	H0006	1+2	g.56043G>T, c.638G>T, p.E189X	g.56043G>T	c.638G>T	p.E189X	NOT_REGISTERED	accession_absent_from_final						1	none	no
+HF1	H0030	1+2	g.68624T>A, c.1291T>A, r.1291u>a, p.Cys431Ser	g.68624T>A	c.1291T>A	p.Cys431Ser	NOT_REGISTERED	accession_absent_from_final						1	none	no
+HF1	H0001	1	g.94109T>C, c.1679T>C, p.C536R	g.94109T>C	c.1679T>C	p.C536R	NOT_REGISTERED	accession_absent_from_final						2	none	no
+HF1	H0001	2	g.119142G>A, c.2949G>A, p.C959Y	g.119142G>A	c.2949G>A	p.C959Y	NOT_REGISTERED	accession_absent_from_final						2	none	no
+HF1	H0055	1	g.104916T>G, c.1890T>G, r.1890u>g, p.Cys630Trp	g.104916T>G	c.1890T>G	p.Cys630Trp	NOT_REGISTERED	accession_absent_from_final						1	none	no
+HF1	H0031	1+2	g.105044G>C, c.2018G>C, r.2018g>c, p.Cys673Ser	g.105044G>C	c.2018G>C	p.Cys673Ser	NOT_REGISTERED	accession_absent_from_final						1	none	no
+HF1	H0037	1	g.105044G>A, c.2018G>A, r.2018g>a, p.Cys673Tyr	g.105044G>A	c.2018G>A	p.Cys673Tyr	NOT_REGISTERED	accession_absent_from_final						1	none	no
+HF1	H0056	1	g.105275C>G, c.2141C>G, r.2141c>g, p.Ser714X	g.105275C>G	c.2141C>G	p.Ser714X	NOT_REGISTERED	accession_absent_from_final						1	none	no
+HF1	H0033	1	g.106839_106840insA, c.2300_2301insA, r.2300_2301insa, p.Asn767fsX7	g.106839_106840insA	c.2300_2301insA	p.Asn767fsX7	NOT_REGISTERED	accession_absent_from_final						1	none	no
+HF1	H0057	1	g.115388G>A, c.2548G>A, r.2548g>a, p.Glu850Lys	g.115388G>A	c.2548G>A	p.Glu850Lys	NOT_REGISTERED	accession_absent_from_final						1	none	no
+HF1	H0036	1	g.115986A>G, c.2678A>G, r.2678a>g, p.His893Arg	g.115986A>G	c.2678A>G	p.His893Arg	NOT_REGISTERED	accession_absent_from_final						1	none	no
+HF1	H0040	1	g.115986A>G, c.2678A>G, r.2678a>g, p.His893Arg	g.115986A>G	c.2678A>G	p.His893Arg	NOT_REGISTERED	accession_absent_from_final						1	none	no
+HF1	H0026	1+2	g.116005T>A, c.2697T>A, r.2697u>a, p.Tyr899X	g.116005T>A	c.2697T>A	p.Tyr899X	NOT_REGISTERED	accession_absent_from_final						1	none	no
+HF1	H0027	1+2	g.116005T>A, c.2697T>A, r.2697u>a, p.Tyr899X	g.116005T>A	c.2697T>A	p.Tyr899X	NOT_REGISTERED	accession_absent_from_final						1	none	no
+HF1	H0054	1+2	g.116005T>A, c.2697T>A, r.2697u>a, p.Tyr899X	g.116005T>A	c.2697T>A	p.Tyr899X	NOT_REGISTERED	accession_absent_from_final						1	none	no
+HF1	H0035	1	g.116051T>A, c.2743T>A, r.2743u>a, p.Cys915Ser	g.116051T>A	c.2743T>A	p.Cys915Ser	NOT_REGISTERED	accession_absent_from_final						1	none	no
+HF1	H0032	1	g.116081C>T, c.2773C>T, r.2773c>u, p.Gln925X	g.116081C>T	c.2773C>T	p.Gln925X	NOT_REGISTERED	accession_absent_from_final						1	none	no
+HF1	H0043	1	g.119116G>T, c.2850G>T, r.2850g>u, p.Gln950His	g.119116G>T	c.2850G>T	p.Gln950His	NOT_REGISTERED	accession_absent_from_final						1	none	no
+HF1	H0044	1	g.119117T>C, c.2851T>C, r.2851u>c, p.Tyr951His	g.119117T>C	c.2851T>C	p.Tyr951His	NOT_REGISTERED	accession_absent_from_final						1	none	no
+HF1	H0009	1	g.119133C>T, c.2940C>T, p.T956M	g.119133C>T	c.2940C>T	p.T956M	NOT_REGISTERED	accession_absent_from_final						1	none	no
+HF1	H0058	1	g.119200G>T, c.2934G>T, r.2934g>u, p.Trp978Cys	g.119200G>T	c.2934G>T	p.Trp978Cys	NOT_REGISTERED	accession_absent_from_final						1	none	no
+HF1	H0069	1	g.120410A>T, c.3062A>T, r.3062a>u, p.Tyr1021Phe	g.120410A>T	c.3062A>T	p.Tyr1021Phe	NOT_REGISTERED	accession_absent_from_final						2	none	no
+HF1	H0069	2	g.125675C>T, c.3628C>T, r.3628c>u, p.Arg1210Cys	g.125675C>T	c.3628C>T	p.Arg1210Cys	NOT_REGISTERED	accession_absent_from_final						2	none	no
+HF1	H0059	1	g.120475T>C, c.3127T>C, r.3127u>c, p.Cys1043Arg	g.120475T>C	c.3127T>C	p.Cys1043Arg	NOT_REGISTERED	accession_absent_from_final						1	none	no
+HF1	H0016	1	g.121974C>G, c.3299C>G, p.Q1076E	g.121974C>G	c.3299C>G	p.Q1076E	NOT_REGISTERED	accession_absent_from_final						2	none	no
+HF1	H0016	2	g.124422delA, c.3559delA, p.1162fsX1168	g.124422delA	c.3559delA	p.1162fsX1168	NOT_REGISTERED	accession_absent_from_final						2	none	no
+HF1	H0060	1	g.121974C>G, c.3226C>G, r.3226c>g, p.Gln1076Glu	g.121974C>G	c.3226C>G	p.Gln1076Glu	NOT_REGISTERED	accession_absent_from_final						1	none	no
+HF1	H0017	1	g.124292A>G, c.3429A>G, p.D1119G	g.124292A>G	c.3429A>G	p.D1119G	NOT_REGISTERED	accession_absent_from_final						1	none	no
+HF1	H0061	1	g.124337T>G, c.3401T>G, r.3401u>g, p.Val1134Gly	g.124337T>G	c.3401T>G	p.Val1134Gly	NOT_REGISTERED	accession_absent_from_final						1	none	no
+HF1	H0062	1	g.124360T>G, c.3424T>G, r.3424u>g, p.Tyr1142Asp	g.124360T>G	c.3424T>G	p.Tyr1142Asp	NOT_REGISTERED	accession_absent_from_final						1	none	no
+HF1	H0063	1	g.124405T>C, c.3469T>C, r.3469u>c, p.Trp1157Arg	g.124405T>C	c.3469T>C	p.Trp1157Arg	NOT_REGISTERED	accession_absent_from_final						1	none	no
+HF1	H0045	1	g.124425C>G, c.3489C>G, r.3489c>g, p.Cys1163Trp	g.124425C>G	c.3489C>G	p.Cys1163Trp	NOT_REGISTERED	accession_absent_from_final						1	none	no
+HF1	H0025	1	g.125561G>T, c.3587G>T, p.E1172X	g.125561G>T	c.3587G>T	p.E1172X	NOT_REGISTERED	accession_absent_from_final						1	none	no
+HF1	H0046	1	g.125561G>T, c.3514G>T, r.3514g>u, p.Glu1172X	g.125561G>T	c.3514G>T	p.Glu1172X	NOT_REGISTERED	accession_absent_from_final						1	none	no
+HF1	H0047	1	g.125561G>T, c.3514G>T, r.3514g>u, p.Glu1172X	g.125561G>T	c.3514G>T	p.Glu1172X	NOT_REGISTERED	accession_absent_from_final						1	none	no
+HF1	H0007	1	g.125595G>T, c.3621G>T, p.W1183L	g.125595G>T	c.3621G>T	p.W1183L	NOT_REGISTERED	accession_absent_from_final						1	none	no
+HF1	H0039	1	g.125595G>T, c.3548G>T, r.3548g>u, p.Trp1183Leu	g.125595G>T	c.3548G>T	p.Trp1183Leu	NOT_REGISTERED	accession_absent_from_final						1	none	no
+HF1	H0041	1	g.125594T>A, c.3547T>A, r.3547u>a, p.Trp1183Arg	g.125594T>A	c.3547T>A	p.Trp1183Arg	NOT_REGISTERED	accession_absent_from_final						1	none	no
+HF1	H0019	1	g.125598C>G, c.3624C>G, p.T1184R	g.125598C>G	c.3624C>G	p.T1184R	NOT_REGISTERED	accession_absent_from_final						1	none	no
+HF1	H0070	1	g.125612C>T, c.3565C>T, r.3565c>u, p.Leu1189Phe	g.125612C>T	c.3565C>T	p.Leu1189Phe	NOT_REGISTERED	accession_absent_from_final						1	none	no
+HF1	H0008	1	g.125613T>G, c.3639T>G, p.L1189R	g.125613T>G	c.3639T>G	p.L1189R	NOT_REGISTERED	accession_absent_from_final						1	none	no
+HF1	H0002	1+2	g.125619C>T, c.3645C>T, p.S1191L	g.125619C>T	c.3645C>T	p.S1191L	NOT_REGISTERED	accession_absent_from_final						1	none	no
+HF1	H0003	1+2	g.125619C>T, c.3645C>T, p.S1191L	g.125619C>T	c.3645C>T	p.S1191L	NOT_REGISTERED	accession_absent_from_final						1	none	no
+HF1	H0071	1	g.125619C>G, c.3572C>G, r.3572c>g, p.Ser1191Trp	g.125619C>G	c.3572C>G	p.Ser1191Trp	NOT_REGISTERED	accession_absent_from_final						1	none	no
+HF1	H0048	1	g.125628G>A, c.3581G>A, r.3581g>a, p.Gly1194Asp	g.125628G>A	c.3581G>A	p.Gly1194Asp	NOT_REGISTERED	accession_absent_from_final						1	none	no
+HF1	H0049	1	g.125628G>A, c.3581G>A, r.3581g>a, p.Gly1194Asp	g.125628G>A	c.3581G>A	p.Gly1194Asp	NOT_REGISTERED	accession_absent_from_final						1	none	no
+HF1	H0050	1	g.125637T>C, c.3590T>C, r.3590u>c, p.Val1197Ala	g.125637T>C	c.3590T>C	p.Val1197Ala	NOT_REGISTERED	accession_absent_from_final						1	none	no
+HF1	H0051	1	g.125637T>C, c.3590T>C, r.3590u>c, p.Val1197Ala	g.125637T>C	c.3590T>C	p.Val1197Ala	NOT_REGISTERED	accession_absent_from_final						1	none	no
+HF1	H0052	1	g.125640A>C, c.3593A>C, r.3593a>c, p.Glu1198Ala	g.125640A>C	c.3593A>C	p.Glu1198Ala	NOT_REGISTERED	accession_absent_from_final						1	none	no
+HF1	H0038	1	g.125643T>C, c.3596T>C, r.3596u>c, p.Phe1199Ser	g.125643T>C	c.3596T>C	p.Phe1199Ser	NOT_REGISTERED	accession_absent_from_final						1	none	no
+HF1	H0013	1	g.125675C>T, c.3701C>T, p.R1210C	g.125675C>T	c.3701C>T	p.R1210C	NOT_REGISTERED	accession_absent_from_final						1	none	no
+HF1	H0014	1	g.125675C>T, c.3701C>T, p.R1210C	g.125675C>T	c.3701C>T	p.R1210C	NOT_REGISTERED	accession_absent_from_final						1	none	no
+HF1	H0015	1	g.125675C>T, c.3701C>T, p.R1210C	g.125675C>T	c.3701C>T	p.R1210C	NOT_REGISTERED	accession_absent_from_final						1	none	no
+HF1	H0053	1	g.125675C>T, c.3628C>T, r.3628c>u, p.Arg1210Cys	g.125675C>T	c.3628C>T	p.Arg1210Cys	NOT_REGISTERED	accession_absent_from_final						1	none	no
+HF1	H0065	1	g.125675C>T, c.3628C>T, r.3628c>u, p.Arg1210Cys	g.125675C>T	c.3628C>T	p.Arg1210Cys	NOT_REGISTERED	accession_absent_from_final						1	none	no
+HF1	H0018	1	g.125690C>G, c.3716C>G, p.R1215G	g.125690C>G	c.3716C>G	p.R1215G	NOT_REGISTERED	accession_absent_from_final						1	none	no
+HF1	H0020	1	g.125690C>G, c.3716C>G, p.R1215G	g.125690C>G	c.3716C>G	p.R1215G	NOT_REGISTERED	accession_absent_from_final						1	none	no
+HF1	H0021	1	g.125690C>G, c.3716C>G, p.R1215G	g.125690C>G	c.3716C>G	p.R1215G	NOT_REGISTERED	accession_absent_from_final						1	none	no
+HF1	H0022	1	g.125690C>G, c.3716C>G, p.R1215G	g.125690C>G	c.3716C>G	p.R1215G	NOT_REGISTERED	accession_absent_from_final						1	none	no
+HF1	H0023	1	g.125690C>G, c.3716C>G, p.R1215G	g.125690C>G	c.3716C>G	p.R1215G	NOT_REGISTERED	accession_absent_from_final						1	none	no
+HF1	H0010	1	g.125691G>A, c.3717G>A, p.R1215Q	g.125691G>A	c.3717G>A	p.R1215Q	NOT_REGISTERED	accession_absent_from_final						1	none	no
+HF1	H0064	1	g.IVS21+1G>A, c.3566+1G>A, r.3566+1g>a	g.IVS21+1G>A	c.3566+1G>A		NOT_REGISTERED	accession_absent_from_final						1	none	no
+HF1	H0066	1	g.125693_125695delACA, c.3646_3648delACA, r.3646_3648delaca, p.Thr1216del	g.125693_125695delACA	c.3646_3648delACA	p.Thr1216del	NOT_REGISTERED	accession_absent_from_final						1	none	no
+HF1	H0067	1	g.125723C>T, c.3676C>T, r.3676c>u, p.Pro1226Ser	g.125723C>T	c.3676C>T	p.Pro1226Ser	NOT_REGISTERED	accession_absent_from_final						1	none	no
+ICOS	I0001	1+2	g.171583..173397del	g.171583..173397del			NOT_REGISTERED	source_incomplete_notation						1	all	no
+ICOS	I0002	1+2	g.171583..173397del	g.171583..173397del			NOT_REGISTERED	source_incomplete_notation						1	all	no
+ICOS	I0003	1+2	g.171583..173397del	g.171583..173397del			NOT_REGISTERED	source_incomplete_notation						1	all	no
+ICOS	I0004	1+2	g.171583..173397del	g.171583..173397del			NOT_REGISTERED	source_incomplete_notation						1	all	no
+ICOS	I0005	1+2	g.171583..173397del	g.171583..173397del			NOT_REGISTERED	source_incomplete_notation						1	all	no
+ICOS	I0006	1+2	g.171583..173397del	g.171583..173397del			NOT_REGISTERED	source_incomplete_notation						1	all	no
+ICOS	I0007	1+2	g.171583..173397del	g.171583..173397del			NOT_REGISTERED	source_incomplete_notation						1	all	no
+ICOS	I0008	1+2	g.171583..173397del	g.171583..173397del			NOT_REGISTERED	source_incomplete_notation						1	all	no
+ICOS	I0009	1+2	g.171583..173397del	g.171583..173397del			NOT_REGISTERED	source_incomplete_notation						1	all	no
+IGHG2	I0001	1+2	g.1795dupG, c.1247dupG, r.1247dupg, p.Lys417fsX0	g.1795dupG	c.1247dupG	p.Lys417fsX0	NOT_REGISTERED	mutalyzer_ok_but_absent_from_final						1	all	yes
+IGHG2	I0002	1+2	g.1795dupG, c.1247dupG, r.1247dupg, p.Lys417fsX0	g.1795dupG	c.1247dupG	p.Lys417fsX0	NOT_REGISTERED	mutalyzer_ok_but_absent_from_final						1	all	yes
+IGHG2	I0003	1+2	g.IVS1+4A>G, c.568+4A>G, r.568+4a>g	g.IVS1+4A>G	c.568+4A>G		NOT_REGISTERED	accession_absent_from_final						1	all	no
+IGHG2	I0004	1+2	g.IVS1+4A>G, c.568+4A>G, r.568+4a>g	g.IVS1+4A>G	c.568+4A>G		NOT_REGISTERED	accession_absent_from_final						1	all	no
+IGHG2	I0005	1+2	g.IVS1+4A>G, c.568+4A>G, r.568+4a>g	g.IVS1+4A>G	c.568+4A>G		NOT_REGISTERED	accession_absent_from_final						1	all	no
+IGHM	I0019	1+2	g.1217delA, c.1198delA, r.1198dela, p.Thr400fsX3	g.1217delA	c.1198delA	p.Thr400fsX3	NOT_REGISTERED	accession_absent_from_final						1	all	no
+IGHM	I0020	1+2	g.1217delA, c.1198delA, r.1198dela, p.Thr400fsX3	g.1217delA	c.1198delA	p.Thr400fsX3	NOT_REGISTERED	accession_absent_from_final						1	all	no
+IGHM	I0017	1	g.1255G>A, c.1308G>A, p.W412X	g.1255G>A	c.1308G>A	p.W412X	NOT_REGISTERED	accession_absent_from_final						1	all	no
+IGHM	I0012	1+2	g.738_739delAA, c.1036_1037delAA, p.P322fsX405	g.738_739delAA	c.1036_1037delAA	p.P322fsX405	NOT_REGISTERED	accession_absent_from_final						1	all	no
+IGHM	I0013	1+2	g.738_739delAA, c.1036_1037delAA, p.P322fsX405	g.738_739delAA	c.1036_1037delAA	p.P322fsX405	NOT_REGISTERED	accession_absent_from_final						1	all	no
+IGHM	I0004	1	g.1893T>G, c.1768T>G, p.C566G	g.1893T>G	c.1768T>G	p.C566G	NOT_REGISTERED	accession_absent_from_final						1	all	no
+IGHM	I0001	1+2	g.1956G>A, c.1831G>A, p.E587K	g.1956G>A	c.1831G>A	p.E587K	NOT_REGISTERED	accession_absent_from_final						1	all	no
+IGHM	I0002	1+2	g.1956G>A, c.1831G>A, p.E587K	g.1956G>A	c.1831G>A	p.E587K	NOT_REGISTERED	accession_absent_from_final						1	all	no
+IGHM	I0003	1+2	g.1956G>A, c.1831G>A, p.E587K	g.1956G>A	c.1831G>A	p.E587K	NOT_REGISTERED	accession_absent_from_final						1	all	no
+IGHM	I0005	1+2	g.1956delG, c.1831delG, p.E587K	g.1956delG	c.1831delG	p.E587K	NOT_REGISTERED	accession_absent_from_final						1	all	no
+IGHM	I0006	1+2	g.1956delG, c.1831delG, p.E587K	g.1956delG	c.1831delG	p.E587K	NOT_REGISTERED	accession_absent_from_final						1	all	no
+IGHM	I0007	1+2	g.1956delG, c.1831delG, p.E587K	g.1956delG	c.1831delG	p.E587K	NOT_REGISTERED	accession_absent_from_final						1	all	no
+IGHM	I0008	1+2	g.1956G>A, c.1831G>A, p.E587K	g.1956G>A	c.1831G>A	p.E587K	NOT_REGISTERED	accession_absent_from_final						1	all	no
+IGHM	I0009	1+2	g.1956G>A, c.1831G>A, p.E587K	g.1956G>A	c.1831G>A	p.E587K	NOT_REGISTERED	accession_absent_from_final						1	all	no
+IGHM	I0010	1+2	g.1956G>A, c.1831G>A, p.E587K	g.1956G>A	c.1831G>A	p.E587K	NOT_REGISTERED	accession_absent_from_final						1	all	no
+IGHM	I0011	1+2	g.1956G>A, c.1831G>A, p.E587K	g.1956G>A	c.1831G>A	p.E587K	NOT_REGISTERED	accession_absent_from_final						1	all	no
+IGHM	I0018	1+2	g.1956G>A, c.1759G>A, r.1759g>a, p.Glu587Lys	g.1956G>A	c.1759G>A	p.Glu587Lys	NOT_REGISTERED	accession_absent_from_final						1	all	no
+IKBKG	I0017	0	g.22187G>T, c.1435G>T, p.C417F	g.22187G>T	c.1435G>T	p.C417F	NOT_REGISTERED	accession_absent_from_final						1	all	no
+IKBKG	I0011	0	g.22186T>C, c.1434T>C, p.C417R	g.22186T>C	c.1434T>C	p.C417R	NOT_REGISTERED	accession_absent_from_final						1	all	no
+IKBKG	I0012	0	g.22186T>C, c.1434T>C, p.C417R	g.22186T>C	c.1434T>C	p.C417R	NOT_REGISTERED	accession_absent_from_final						1	all	no
+IKBKG	I0014	0	g.22186T>C, c.1434T>C, p.C417R	g.22186T>C	c.1434T>C	p.C417R	NOT_REGISTERED	accession_absent_from_final						1	all	no
+IKBKG	I0006	0	g.22196A>G, c.1444A>G, p.420	g.22196A>G	c.1444A>G	p.420	NOT_REGISTERED	accession_absent_from_final						1	all	no
+IKBKG	I0025	0	g.IVS6+5G>A, c.G>A, r.g>a,	g.IVS6+5G>A	c.G>A		NOT_REGISTERED	accession_absent_from_final						1	all	no
+IKBKG	I0026	0	g.IVS6+5G>A, c.G>A, r.g>a,	g.IVS6+5G>A	c.G>A		NOT_REGISTERED	accession_absent_from_final						1	all	no
+IKBKG	I0021	0	g.IVS8-1G>A, c.G>A, r.g>a,	g.IVS8-1G>A	c.G>A		NOT_REGISTERED	accession_absent_from_final						1	all	no
+IKBKG	I0053	0	g.IVS8-5T>C, c.T>C, r.u>c	g.IVS8-5T>C	c.T>C		NOT_REGISTERED	accession_absent_from_final						1	all	no
+IKBKG	I0058	0	c.400-?_1845+?del		c.400-?_1845+?del		NOT_REGISTERED	source_incomplete_notation						1	all	no
+IKBKG	I0059	0	c.400-?_1845+?del		c.400-?_1845+?del		NOT_REGISTERED	source_incomplete_notation						1	all	no
+IKBKG	I0060	0	c.400-?_1845+?del		c.400-?_1845+?del		NOT_REGISTERED	source_incomplete_notation						1	all	no
+IKBKG	I0061	0	c.400-?_1845+?del		c.400-?_1845+?del		NOT_REGISTERED	source_incomplete_notation						1	all	no
+IKBKG	I0062	0	c.400-?_1845+?del		c.400-?_1845+?del		NOT_REGISTERED	source_incomplete_notation						1	all	no
+IKBKG	I0063	0	c.400-?_1845+?del		c.400-?_1845+?del		NOT_REGISTERED	source_incomplete_notation						1	all	no
+IKBKG	I0064	0	c.400-?_1845+?del		c.400-?_1845+?del		NOT_REGISTERED	source_incomplete_notation						1	all	no
+IKBKG	I0066	0	c.400-?_1845+?del		c.400-?_1845+?del		NOT_REGISTERED	source_incomplete_notation						1	all	no
+IKBKG	I0067	0	c.400-?_1845+?del		c.400-?_1845+?del		NOT_REGISTERED	source_incomplete_notation						1	all	no
+IKBKG	I0068	0	c.400-?_1845+?del		c.400-?_1845+?del		NOT_REGISTERED	source_incomplete_notation						1	all	no
+IKBKG	I0069	0	c.400-?_1845+?del		c.400-?_1845+?del		NOT_REGISTERED	source_incomplete_notation						1	all	no
+IKBKG	I0070	0	c.400-?_1845+?del		c.400-?_1845+?del		NOT_REGISTERED	source_incomplete_notation						1	all	no
+IKBKG	I0071	0	c.400-?_1845+?del		c.400-?_1845+?del		NOT_REGISTERED	source_incomplete_notation						1	all	no
+IKBKG	I0072	0	c.400-?_1845+?del		c.400-?_1845+?del		NOT_REGISTERED	source_incomplete_notation						1	all	no
+IKBKG	I0073	0	c.400-?_1845+?del		c.400-?_1845+?del		NOT_REGISTERED	source_incomplete_notation						1	all	no
+IKBKG	I0074	0	c.400-?_1845+?del		c.400-?_1845+?del		NOT_REGISTERED	source_incomplete_notation						1	all	no
+IKBKG	I0075	0	c.400-?_1845+?del		c.400-?_1845+?del		NOT_REGISTERED	source_incomplete_notation						1	all	no
+IKBKG	I0077	0	c.400-?_1845+?del		c.400-?_1845+?del		NOT_REGISTERED	source_incomplete_notation						1	all	no
+IKBKG	I0078	0	c.400-?_1845+?del		c.400-?_1845+?del		NOT_REGISTERED	source_incomplete_notation						1	all	no
+IKBKG	I0079	0	c.400-?_1845+?del		c.400-?_1845+?del		NOT_REGISTERED	source_incomplete_notation						1	all	no
+IKBKG	I0080	0	c.400-?_1845+?del		c.400-?_1845+?del		NOT_REGISTERED	source_incomplete_notation						1	all	no
+IKBKG	I0081	0	c.400-?_1845+?del		c.400-?_1845+?del		NOT_REGISTERED	source_incomplete_notation						1	all	no
+IKBKG	I0082	0	c.400-?_1845+?del		c.400-?_1845+?del		NOT_REGISTERED	source_incomplete_notation						1	all	no
+IKBKG	I0083	0	c.400-?_1845+?del		c.400-?_1845+?del		NOT_REGISTERED	source_incomplete_notation						1	all	no
+IKBKG	I0084	0	c.400-?_1845+?del		c.400-?_1845+?del		NOT_REGISTERED	source_incomplete_notation						1	all	no
+IL12RB1	I0038	1	g.21529..24538del	g.21529..24538del			NOT_REGISTERED	source_incomplete_notation						2	all	yes
+IL12RB1	I0042	1+2	g.11568_11574delinsAGATATCA	g.11568_11574delinsAGATATCA			NOT_REGISTERED	accession_absent_from_final						1	all	no
+IL12RB1	I0043	1+2	g.10290_10306delGTATGGAGTGGGAGACC	g.10290_10306delGTATGGAGTGGGAGACC			NOT_REGISTERED	accession_absent_from_final						1	all	no
+IL12RB1	I0044	1+2	g.10290_10306delGTATGGAGTGGGAGACC	g.10290_10306delGTATGGAGTGGGAGACC			NOT_REGISTERED	accession_absent_from_final						1	all	no
+IL12RB1	I0037	1+2	g.12502..24667del	g.12502..24667del			NOT_REGISTERED	source_incomplete_notation						1	all	no
+IL7R	I0005	1+2	g.[5012C>T + 15134A>G], c.[219C>T + 434A>G], p.[T66I + I138V]	g.[5012C>T + 15134A>G]	c.[219C>T + 434A>G]	p.[T66I + I138V]	NOT_REGISTERED	allele_absent_accession_present						1	none	yes
+IL7R	I0004	1	g.IVS4-1G>A	g.IVS4-1G>A			NOT_REGISTERED	allele_absent_accession_present						2	all	yes
+IRAK4	I0016	2	Unknown				NOT_REGISTERED	source_has_no_dna_notation						2	none	yes
+ITGB2	A0028	2	g.[IVS6-14C>A + 32493C>T], c. [813_814ins + 1756C>T], p. [p.P247_E248insPSSQ + Arg586Trp]	g.[IVS6-14C>A + 32493C>T]	c. [813_814ins + 1756C>T]	p. [p.P247_E248insPSSQ + Arg586Trp]	NOT_REGISTERED	allele_absent_accession_present						2	none	yes
+ITGB2	A0029	2	g.[IVS6-14C>A + 32493C>T], c. [813_814ins + 1756C>T], p. [p.P247_E248insPSSQ + Arg586Trp]	g.[IVS6-14C>A + 32493C>T]	c. [813_814ins + 1756C>T]	p. [p.P247_E248insPSSQ + Arg586Trp]	NOT_REGISTERED	allele_absent_accession_present						2	none	yes
+ITGB2	A0090	2	g.33198delG, c.delG, r.delg	g.33198delG	c.delG		NOT_REGISTERED	allele_absent_accession_present						2	all	yes
+ITGB2	A0125	2	g.26924G>C, c.G>C, r.g>c	g.26924G>C	c.G>C		NOT_REGISTERED	allele_absent_accession_present						2	all	yes
+ITGB2	A0131	2	g.21571G>A, c.G>A, r.g>a	g.21571G>A	c.G>A		NOT_REGISTERED	allele_absent_accession_present						2	all	yes
+ITGB2	A0111	2	g.32393A>G, c.A>G, r.a>g	g.32393A>G	c.A>G		NOT_REGISTERED	allele_absent_accession_present						2	all	yes
+ITGB2	A0030	2	g.[IVS6-14C>A + 32493C>T], c. [813_814ins + 1756C>T], p. [p.P247_E248insPSSQ + Arg586Trp]	g.[IVS6-14C>A + 32493C>T]	c. [813_814ins + 1756C>T]	p. [p.P247_E248insPSSQ + Arg586Trp]	NOT_REGISTERED	allele_absent_accession_present						2	none	yes
+ITGB2	A0134	1+2	g.30082-149_33197+839delinsAAAA, c..1413-149_2080+839delinsAAA, r.1413-149_2080+839delinsaaa p.Cys471fsX43	g.30082-149_33197+839delinsAAAA	c..1413-149_2080+839delinsAAA		NOT_REGISTERED	accession_absent_from_final						1	all	no
+ITGB2	A0137	1+2	g.2146G>C, c.G>C, r.g>c	g.2146G>C	c.G>C		NOT_REGISTERED	accession_absent_from_final						1	all	no
+ITGB2	A0087	1	g.11508C>A, c.C>A, r.c>a	g.11508C>A	c.C>A		NOT_REGISTERED	accession_absent_from_final						1	all	no
+ITGB2	A0126	1	g.11508C>A, c.C>A, r.c>a	g.11508C>A	c.C>A		NOT_REGISTERED	accession_absent_from_final						2	all	no
+ITGB2	A0126	2	g.31272_...del27703, c.del27703, r.del27703	g.31272_...del27703	c.del27703		NOT_REGISTERED	accession_absent_from_final						2	all	no
+ITGB2	A0033	1+2	g.IVS5-12T>G	g.IVS5-12T>G			NOT_REGISTERED	accession_absent_from_final						1	all	no
+ITGB2	A0039	1+2	g.IVS7+1G>A	g.IVS7+1G>A			NOT_REGISTERED	accession_absent_from_final						1	all	no
+ITGB2	A0100	1+2	g.IVS7+1G>A	g.IVS7+1G>A			NOT_REGISTERED	accession_absent_from_final						1	all	no
+ITGB2	A0085	1	g.21571G>A, c.G>A, r.g>a	g.21571G>A	c.G>A		NOT_REGISTERED	accession_absent_from_final						2	all	no
+ITGB2	A0085	2	Deletion				NOT_REGISTERED	source_has_no_dna_notation						2	none	no
+ITGB2	A0105	1+2	g.21571G>A, c.G>A, r.g>a	g.21571G>A	c.G>A		NOT_REGISTERED	accession_absent_from_final						1	all	no
+ITGB2	A0121	1+2	g.21571G>A, c.G>A, r.g>a	g.21571G>A	c.G>A		NOT_REGISTERED	accession_absent_from_final						1	all	no
+ITGB2	A0034	1+2	g.IVS9+3G>C	g.IVS9+3G>C			NOT_REGISTERED	accession_absent_from_final						1	all	no
+ITGB2	A0035	1+2	g.IVS9+3G>C	g.IVS9+3G>C			NOT_REGISTERED	accession_absent_from_final						1	all	no
+ITGB2	A0036	1+2	g.IVS9+3G>C	g.IVS9+3G>C			NOT_REGISTERED	accession_absent_from_final						1	all	no
+ITGB2	A0037	1+2	g.IVS9+3G>C	g.IVS9+3G>C			NOT_REGISTERED	accession_absent_from_final						1	all	no
+ITGB2	A0119	1+2	g.26922G>C, c.G>C, r.g>c	g.26922G>C	c.G>C		NOT_REGISTERED	accession_absent_from_final						1	all	no
+ITGB2	A0038	1+2	g.18318..18486del	g.18318..18486del			NOT_REGISTERED	source_incomplete_notation						1	all	no
+ITGB2	A0081	1+2	c.148-?_328+?del		c.148-?_328+?del		NOT_REGISTERED	source_incomplete_notation						1	all	no
+ITGB2	A0132	1+2	g.29894-?_30081+?del, c.1225-?_1412+?del, r.1225_1412del, p.Ile409ValfsX410	g.29894-?_30081+?del	c.1225-?_1412+?del	p.Ile409ValfsX410	NOT_REGISTERED	source_incomplete_notation						1	all	yes
+LIG4	L0003	1+2	g.[4522C>T; 4540C>T; 5347G>A], c.[8C>T; 26C>T; 833G>A], r.[8c>u; 26c>; 833g>a], p.[Ala3Val; Thr9Ile; Arg278His]	g.[4522C>T	c.[8C>T	p.[Ala3Val	NOT_REGISTERED	allele_absent_accession_present						1	none	yes
+LYST	C0040	1+2	g.206889>, c.13242+1>, r.13242+1>	g.206889>	c.13242+1>		NOT_REGISTERED	accession_absent_from_final						1	all	no
+NCF2	M0004	1	g.[1307_1315delAAGAAGGAC;28280C>T], c.[55_63delAAGAAGGAC;1183C>T], r.[55_63delaagaaggac;1183c>u], p.[Lys19_Trp22del;Arg395Trp]	g.[1307_1315delAAGAAGGAC	c.[55_63delAAGAAGGAC	p.[Lys19_Trp22del	NOT_REGISTERED	allele_absent_accession_present						2	none	yes
+NCF2	M0015	1	g.[1307_1315delAAGAAGGAC; g.28280C>T], c.[55_63delAAGAAGGAC; c.1183C>T], r.[55_63delaagaaggac; r.1183c>u], p.[Lys19_Trp22del; p.Arg395Trp]	g.[1307_1315delAAGAAGGAC;g.28280C>T]	c.[55_63delAAGAAGGAC;c.1183C>T]	p.[Lys19_Trp22del	NOT_REGISTERED	allele_absent_accession_present						2	none	yes
+NCF2	M0021	1	g.[1307_1315delAAGAAGGAC; 28280C>T], c.[55_63delAAGAAGGAC; 1183C>T], r.[55_63delaagaaggac; 1183c>u], p.[Lys19_Trp22del; Arg395Trp]	g.[1307_1315delAAGAAGGAC	c.[55_63delAAGAAGGAC	p.[Lys19_Trp22del	NOT_REGISTERED	allele_absent_accession_present						2	none	yes
+NCF2	M0084	1	g.[1307_1315delAAGAAGGAC; 28280C>T], c.[55_63delAAGAAGGAC; 1183C>T], r.[55_63delaagaaggac; 1183c>u], p.[Lys19_Trp22del; Arg395Trp]	g.[1307_1315delAAGAAGGAC	c.[55_63delAAGAAGGAC	p.[Lys19_Trp22del	NOT_REGISTERED	allele_absent_accession_present						2	none	yes
+NCF2	M0047	1+2	g.[13896C>G; 17096G>C], c.[279C>G; 501+1G>C], r.[279c>g; 501+1g>c], p.[Asp93Glu; ?]	g.[13896C>G	c.[279C>G	p.[Asp93Glu	NOT_REGISTERED	allele_absent_accession_present						1	none	yes
+NCF2	M0048	1+2	g.[13896C>G; 17096G>C], c.[279C>G; 501+1G>C], r.[279c>g; 501+1g>c], p.[Asp93Glu; ?]	g.[13896C>G	c.[279C>G	p.[Asp93Glu	NOT_REGISTERED	allele_absent_accession_present						1	none	yes
+NCF2	M0049	1+2	g.[13896C>G; 17096G>C], c.[279C>G; 501+1G>C], r.[279c>g; 501+1g>c], p.[Asp93Glu; ?]	g.[13896C>G	c.[279C>G	p.[Asp93Glu	NOT_REGISTERED	allele_absent_accession_present						1	none	yes
+NCF2	M0050	1+2	g.[13896C>G; 17096G>C], c.[279C>G; 501+1G>C], r.[279c>g; 501+1g>c], p.[Asp93Glu; ?]	g.[13896C>G	c.[279C>G	p.[Asp93Glu	NOT_REGISTERED	allele_absent_accession_present						1	none	yes
+NCF2	M0012	1	g.[17073A>T; 17075A>G], c.[479A>T; 481A>G], r.[479a>u; 481a>g], p.[Asp160Val; Lys161Glu]	g.[17073A>T	c.[479A>T	p.[Asp160Val	NOT_REGISTERED	allele_absent_accession_present						1	none	yes
+NCF2	M0063	1+2	c.502-?_609+?del		c.502-?_609+?del		NOT_REGISTERED	source_incomplete_notation						1	all	no
+NCF2	M0071	1+2	c.1-?_257+?del		c.1-?_257+?del		NOT_REGISTERED	source_incomplete_notation						1	all	no
+NCF2	M0087	1	c.367-?_501+?del		c.367-?_501+?del		NOT_REGISTERED	source_incomplete_notation						1	all	no
+NCF2	M0101	1	c.175-?_257+?del		c.175-?_257+?del		NOT_REGISTERED	source_incomplete_notation						1	all	no
+NCF2	M0102	1	c.175-?_257+?del		c.175-?_257+?del		NOT_REGISTERED	source_incomplete_notation						1	all	no
+NCF2	M0103	1	c.258-?_366+?del		c.258-?_366+?del		NOT_REGISTERED	source_incomplete_notation						1	all	no
+NCF2	M0104	1	c.1-?_257+?del		c.1-?_257+?del		NOT_REGISTERED	source_incomplete_notation						1	all	no
+NCF2	M0059	1+2	c.856-?_1000+?dup		c.856-?_1000+?dup		NOT_REGISTERED	source_incomplete_notation						1	all	no
+NCF2	M0080	1	c.714-?_924+?ins		c.714-?_924+?ins		NOT_REGISTERED	source_incomplete_notation						1	all	no
+PRKDC	P0001	1+2	g.[102327_102329delGAG;140313T>G], c.[6338_6340delGAG;9185T>G], r.[6338_6340delgag;9185u>g], p.[Gly2113del;Leu3062Arg]	g.[102327_102329delGAG	c.[6338_6340delGAG	p.[Gly2113del	NOT_REGISTERED	allele_absent_accession_present						1	none	yes
+PTPN11	A0099	0	g., c., r., p.Phe71Lys	g.	c.	p.Phe71Lys	NOT_REGISTERED	accession_absent_from_final						1	all	no
+PTPN11	A0232	0	p.Glu139Asp			p.Glu139Asp	NOT_REGISTERED	source_has_no_dna_notation						1	all	no
+RAG1	R0086	1+2	g.[7038G>A;8813C>T], c.[746G>A;2521C>T], r.[746g>a;2521c>u], p.[Arg249His;Arg841Trp]	g.[7038G>A	c.[746G>A	p.[Arg249His	NOT_REGISTERED	allele_absent_accession_present						1	none	yes
+RAG1	R0088	2	g.[7811C>T;8502G>A], c.[1519C>T;2210G>A], r.[1519c>u;2210g>a], p.[Arg507Trp;Arg737His]	g.[7811C>T	c.[1519C>T	p.[Arg507Trp	NOT_REGISTERED	allele_absent_accession_present						2	none	yes
+RAG1	R0027	2	g.2727T>A, c.2727T>A, p.L872X	g.2727T>A	c.2727T>A	p.L872X	NOT_REGISTERED	allele_absent_accession_present						2	all	yes
+RAG1	R0008	1+2	g.1298C>T, c.1298C>T, p.R396C	g.1298C>T	c.1298C>T	p.R396C	NOT_REGISTERED	accession_absent_from_final						1	all	no
+RAG1	R0035	1+2	g.1298C>T, c.1298C>T, p.R396C	g.1298C>T	c.1298C>T	p.R396C	NOT_REGISTERED	accession_absent_from_final						1	all	no
+RAG1	R0038	1	g.1298C>T, c.1298C>T, p.R396C	g.1298C>T	c.1298C>T	p.R396C	NOT_REGISTERED	allele_absent_accession_present						2	all	yes
+RAG1	R0039	1	g.1298C>T, c.1298C>T, p.R396C	g.1298C>T	c.1298C>T	p.R396C	NOT_REGISTERED	allele_absent_accession_present						2	all	yes
+RAG2	S0017	2	g.1887G>A, c.1887G>A, p.R229Q	g.1887G>A	c.1887G>A	p.R229Q	NOT_REGISTERED	allele_absent_accession_present						2	all	yes
+RAG2	S0043	1+2	g.[5649C>A;5651T>G], c.[581C>A;583T>G], r.[581c>a;583u>g], p.[Ser194X;Tyr195Asp]	g.[5649C>A	c.[581C>A	p.[Ser194X	NOT_REGISTERED	allele_absent_accession_present						1	none	yes
+RAG2	S0014	1+2	g.1886C>T, c.1886C>T, p.R229W	g.1886C>T	c.1886C>T	p.R229W	NOT_REGISTERED	accession_absent_from_final						1	all	no
+RAG2	S0015	1+2	g.1886C>T, c.1886C>T, p.R229W	g.1886C>T	c.1886C>T	p.R229W	NOT_REGISTERED	accession_absent_from_final						1	all	no
+RAG2	S0008	1+2	g.1887G>A, c.1887G>A, p.R229Q	g.1887G>A	c.1887G>A	p.R229Q	NOT_REGISTERED	accession_absent_from_final						1	all	no
+RAG2	S0002	1+2	g.2634G>A, c.2634G>A, p.C478Y	g.2634G>A	c.2634G>A	p.C478Y	NOT_REGISTERED	accession_absent_from_final						1	all	no
+RASGRP2	R0002	1+2	g.IVS15-3C>A, c.1778-3C>A	g.IVS15-3C>A	c.1778-3C>A		NOT_REGISTERED	accession_absent_from_final						1	all	no
+RFX5	R0003	1+2	g.IVS2+5G>A	g.IVS2+5G>A			NOT_REGISTERED	accession_absent_from_final						1	all	no
+RFX5	R0004	1+2	g.IVS2+5G>A	g.IVS2+5G>A			NOT_REGISTERED	accession_absent_from_final						1	all	no
+RFX5	R0006	1+2	g.IVS3-1G>A	g.IVS3-1G>A			NOT_REGISTERED	accession_absent_from_final						1	all	no
+RFX5	R0002	1	g.IVS4-1G>A	g.IVS4-1G>A			NOT_REGISTERED	accession_absent_from_final						1	all	no
+RFXANK	R0024	2	g.IVS6-1G>T	g.IVS6-1G>T			NOT_REGISTERED	allele_absent_accession_present						2	all	yes
+RFXANK	R0027	1+2	g.IVS4+1G>C, c.G>C, r.g>c	g.IVS4+1G>C	c.G>C		NOT_REGISTERED	accession_absent_from_final						1	all	no
+RFXANK	R0028	1+2	g.IVS4+5G>A, c.G>A, r.g>a	g.IVS4+5G>A	c.G>A		NOT_REGISTERED	accession_absent_from_final						1	all	no
+RFXANK	R0004	1+2	g.IVS5-25GGTATTGCCCGCCTCCTCCTGCCAGG>	g.IVS5-25GGTATTGCCCGCCTCCTCCTGCCAGG>			NOT_REGISTERED	accession_absent_from_final						1	all	no
+RFXANK	R0005	1+2	g.IVS5-25GGTATTGCCCGCCTCCTCCTGCCAGG>	g.IVS5-25GGTATTGCCCGCCTCCTCCTGCCAGG>			NOT_REGISTERED	accession_absent_from_final						1	all	no
+RFXANK	R0006	1+2	g.IVS5-25GGTATTGCCCGCCTCCTCCTGCCAGG>	g.IVS5-25GGTATTGCCCGCCTCCTCCTGCCAGG>			NOT_REGISTERED	accession_absent_from_final						1	all	no
+RFXANK	R0007	1+2	g.IVS5-25GGTATTGCCCGCCTCCTCCTGCCAGG>	g.IVS5-25GGTATTGCCCGCCTCCTCCTGCCAGG>			NOT_REGISTERED	accession_absent_from_final						1	all	no
+RFXANK	R0008	1+2	g.IVS5-25GGTATTGCCCGCCTCCTCCTGCCAGG>	g.IVS5-25GGTATTGCCCGCCTCCTCCTGCCAGG>			NOT_REGISTERED	accession_absent_from_final						1	all	no
+RFXANK	R0009	1+2	g.IVS5-25GGTATTGCCCGCCTCCTCCTGCCAGG>	g.IVS5-25GGTATTGCCCGCCTCCTCCTGCCAGG>			NOT_REGISTERED	accession_absent_from_final						1	all	no
+RFXANK	R0010	1+2	g.IVS5-25GGTATTGCCCGCCTCCTCCTGCCAGG>	g.IVS5-25GGTATTGCCCGCCTCCTCCTGCCAGG>			NOT_REGISTERED	accession_absent_from_final						1	all	no
+RFXANK	R0011	1+2	g.IVS5-25GGTATTGCCCGCCTCCTCCTGCCAGG>	g.IVS5-25GGTATTGCCCGCCTCCTCCTGCCAGG>			NOT_REGISTERED	accession_absent_from_final						1	all	no
+RFXANK	R0012	1+2	g.IVS5-25GGTATTGCCCGCCTCCTCCTGCCAGG>	g.IVS5-25GGTATTGCCCGCCTCCTCCTGCCAGG>			NOT_REGISTERED	accession_absent_from_final						1	all	no
+RFXANK	R0013	1	g.IVS5-25GGTATTGCCCGCCTCCTCCTGCCAGG>	g.IVS5-25GGTATTGCCCGCCTCCTCCTGCCAGG>			NOT_REGISTERED	accession_absent_from_final						1	all	no
+RFXANK	R0014	1+2	g.IVS5-25GGTATTGCCCGCCTCCTCCTGCCAGG>	g.IVS5-25GGTATTGCCCGCCTCCTCCTGCCAGG>			NOT_REGISTERED	accession_absent_from_final						1	all	no
+RFXANK	R0015	1+2	g.IVS5-25GGTATTGCCCGCCTCCTCCTGCCAGG>	g.IVS5-25GGTATTGCCCGCCTCCTCCTGCCAGG>			NOT_REGISTERED	accession_absent_from_final						1	all	no
+RFXANK	R0016	1+2	g.IVS5-25GGTATTGCCCGCCTCCTCCTGCCAGG>	g.IVS5-25GGTATTGCCCGCCTCCTCCTGCCAGG>			NOT_REGISTERED	accession_absent_from_final						1	all	no
+RFXANK	R0017	1+2	g.IVS5-25GGTATTGCCCGCCTCCTCCTGCCAGG>	g.IVS5-25GGTATTGCCCGCCTCCTCCTGCCAGG>			NOT_REGISTERED	accession_absent_from_final						1	all	no
+RFXANK	R0018	1+2	g.IVS5-25GGTATTGCCCGCCTCCTCCTGCCAGG>	g.IVS5-25GGTATTGCCCGCCTCCTCCTGCCAGG>			NOT_REGISTERED	accession_absent_from_final						1	all	no
+RFXANK	R0019	1+2	g.IVS5-25GGTATTGCCCGCCTCCTCCTGCCAGG>	g.IVS5-25GGTATTGCCCGCCTCCTCCTGCCAGG>			NOT_REGISTERED	accession_absent_from_final						1	all	no
+RFXANK	R0020	1	g.IVS5-25GGTATTGCCCGCCTCCTCCTGCCAGG>	g.IVS5-25GGTATTGCCCGCCTCCTCCTGCCAGG>			NOT_REGISTERED	accession_absent_from_final						1	all	no
+RFXANK	R0021	1+2	g.IVS5-25GGTATTGCCCGCCTCCTCCTGCCAGG>	g.IVS5-25GGTATTGCCCGCCTCCTCCTGCCAGG>			NOT_REGISTERED	accession_absent_from_final						1	all	no
+RFXANK	R0022	1+2	g.IVS5-25GGTATTGCCCGCCTCCTCCTGCCAGG>	g.IVS5-25GGTATTGCCCGCCTCCTCCTGCCAGG>			NOT_REGISTERED	accession_absent_from_final						1	all	no
+RFXANK	R0025	1+2	g.IVS5-25GGTATTGCCCGCCTCCTCCTGCCAGG>	g.IVS5-25GGTATTGCCCGCCTCCTCCTGCCAGG>			NOT_REGISTERED	accession_absent_from_final						1	all	no
+RFXANK	R0023	1+2	g.6313_6370del	g.6313_6370del			NOT_REGISTERED	source_incomplete_notation						1	all	no
+RFXAP	R0006	1+2	g.52509_52510insGCGGGGC, c.150_151insGCGGGGC, p.P12fsX74	g.52509_52510insGCGGGGC	c.150_151insGCGGGGC	p.P12fsX74	NOT_REGISTERED	mutalyzer_ok_but_absent_from_final						1	all	yes
+RFXAP	R0007;	1+2	g.52509_52510insGCGGGGC, c.150_151insGCGGGGC, p.P12fsX74	g.52509_52510insGCGGGGC	c.150_151insGCGGGGC	p.P12fsX74	NOT_REGISTERED	mutalyzer_ok_but_absent_from_final						1	all	yes
+RFXAP	R0005	1+2	g.52638C>T, c.279C>T, p.Q55X	g.52638C>T	c.279C>T	p.Q55X	NOT_REGISTERED	accession_absent_from_final						1	all	no
+SBDS	S0180	1	g.[3354C>T; 3369A>G], c.[428C>T; 443A>G], r.[428c>u; 443a>g], p.[Ser143Leu; Lys148Arg]	g.[3354C>T	c.[428C>T	p.[Ser143Leu	NOT_REGISTERED	allele_absent_accession_present						2	none	yes
+SERPING1	S0109	0	g.IVS2-2A>, c.52-2A>, r.52-2a>,	g.IVS2-2A>	c.52-2A>		NOT_REGISTERED	accession_absent_from_final						1	all	no
+SERPING1	S0170	0	g.IVS3+3>T, c.550+3>T, r.550+3>u,	g.IVS3+3>T	c.550+3>T		NOT_REGISTERED	accession_absent_from_final						1	all	no
+SERPING1	S0221	0	g.IVS3-2A>, c.551-2A>, r.551-2a>,	g.IVS3-2A>	c.551-2A>		NOT_REGISTERED	accession_absent_from_final						1	all	no
+SERPING1	S0041	0	g.IVS6-12CTTATTTTCTAGGTGGGGCAGCTGCAGC>, c.1030-12CTTATTTTCTAGGTGGGGCAGCTGCAGC>, r.1030-12cuuauuuucuagguggggcagcugcagc>,	g.IVS6-12CTTATTTTCTAGGTGGGGCAGCTGCAGC>	c.1030-12CTTATTTTCTAGGTGGGGCAGCTGCAGC>		NOT_REGISTERED	accession_absent_from_final						1	all	no
+SERPING1	S0042	0	g.IVS6-2AGGT>GCA, c.1030-2AGGT>GCA, r.1030-2aggu>gca,	g.IVS6-2AGGT>GCA	c.1030-2AGGT>GCA		NOT_REGISTERED	accession_absent_from_final						1	all	no
+SERPING1	S0048	1+2	g.c.r.	g.c.r.			NOT_REGISTERED	accession_absent_from_final						1	all	no
+SERPING1	S0245	0	g.IVS7+2T>, c.1249+2T>, r.1249+2u>,	g.IVS7+2T>	c.1249+2T>		NOT_REGISTERED	accession_absent_from_final						1	all	no
+SERPING1	S0184	0	g.4348_6970del	g.4348_6970del			NOT_REGISTERED	source_incomplete_notation						1	all	no
+SERPING1	S0185	0	g.4271_7470del	g.4271_7470del			NOT_REGISTERED	source_incomplete_notation						1	all	no
+SMARCAL1	S0007	2	g.IVS6+1GT>, c.1334+1GT>, r.1334+1gu>	g.IVS6+1GT>	c.1334+1GT>		NOT_REGISTERED	allele_absent_accession_present						2	all	yes
+STX11	S0010	1+2	g.27357..46546del	g.27357..46546del			NOT_REGISTERED	source_incomplete_notation						1	all	no
+TAP1	T0002	1+2	g.IVS1-1G>A	g.IVS1-1G>A			NOT_REGISTERED	accession_absent_from_final						1	all	no
+TAP2	T0003	1+2	g.45870delA, c.1007delA, p.R327fsX379	g.45870delA	c.1007delA	p.R327fsX379	NOT_REGISTERED	accession_absent_from_final						1	all	no
+TAZ	T0040	0	g.1560delC, c.123delC, r.123delc, p.Leu42fsX1	g.1560delC	c.123delC	p.Leu42fsX1	NOT_REGISTERED	mutalyzer_ok_but_absent_from_final						1	all	yes
+TCIRG1	T0014	1+2	g.IVS2+1G>A	g.IVS2+1G>A			NOT_REGISTERED	accession_absent_from_final						1	all	no
+TCIRG1	T0015	1	g.IVS2+4A>T	g.IVS2+4A>T			NOT_REGISTERED	accession_absent_from_final						2	all	no
+TCIRG1	T0015	2	g.IVS6+2T>C	g.IVS6+2T>C			NOT_REGISTERED	accession_absent_from_final						2	all	no
+TCIRG1	T0004	1	g.4391C>A, [c.564_690del; c.564_574del], [p.N168fsX175; p.N168fsX182]	g.4391C>A	c.564_574del]	p.N168fsX182]	NOT_REGISTERED	allele_absent_accession_present						2	partial	yes
+TCIRG1	T0005	1	g.IVS7+1G>T	g.IVS7+1G>T			NOT_REGISTERED	allele_absent_accession_present						2	all	yes
+TCIRG1	T0023	1	g.IVS7+1G>T	g.IVS7+1G>T			NOT_REGISTERED	accession_absent_from_final						2	all	no
+TCIRG1	T0023	2	g.IVS14-1G>A	g.IVS14-1G>A			NOT_REGISTERED	accession_absent_from_final						2	all	no
+TCIRG1	T0027	1	g.IVS7+1G>T	g.IVS7+1G>T			NOT_REGISTERED	accession_absent_from_final						1	all	no
+TCIRG1	T0002	2	g.IVS14-1G>A, [c.1735_1947del; c.1735_1916del + c.1916_1917ins1916+1_1916+143]	g.IVS14-1G>A	c.1735_1916del + c.1916_1917ins1916+1_1916+143]		NOT_REGISTERED	allele_absent_accession_present						2	partial	yes
+TCIRG1	T0001	2	g.IVS14-1G>A, [c.1735_1947del; c.1735_1916del + c.1916_1917ins1916+1_1916+143]	g.IVS14-1G>A	c.1735_1916del + c.1916_1917ins1916+1_1916+143]		NOT_REGISTERED	allele_absent_accession_present						2	partial	yes
+TCIRG1	T0020	1+2	g.8590C>T, c.1357C>T, p.Q433X	g.8590C>T	c.1357C>T	p.Q433X	NOT_REGISTERED	accession_absent_from_final						1	all	no
+TCIRG1	T0026	1	g.IVS13+2T>A	g.IVS13+2T>A			NOT_REGISTERED	accession_absent_from_final						2	all	no
+TCIRG1	T0026	2	g.IVS16-8T>C	g.IVS16-8T>C			NOT_REGISTERED	accession_absent_from_final						2	all	no
+TCIRG1	T0003	1+2	g.IVS14-1G>A, [c.1735_1947del; c.1735_1916del + c.1916_1917ins1916+1_1916+143]	g.IVS14-1G>A	c.1735_1916del + c.1916_1917ins1916+1_1916+143]		NOT_REGISTERED	allele_absent_accession_present						1	partial	yes
+TCIRG1	T0011	1	g.IVS14-1G>A, [c.1735_1947del; c.1735_1916del + c.1916_1917ins1916+1_1916+143]	g.IVS14-1G>A	c.1735_1916del + c.1916_1917ins1916+1_1916+143]		NOT_REGISTERED	allele_absent_accession_present						2	partial	yes
+TCIRG1	T0024	1+2	g.IVS14-1G>A	g.IVS14-1G>A			NOT_REGISTERED	accession_absent_from_final						1	all	no
+TCIRG1	T0017	1	g.10809C>T, c.2068C>T, p.R670X	g.10809C>T	c.2068C>T	p.R670X	NOT_REGISTERED	accession_absent_from_final						2	all	no
+TCIRG1	T0017	2	g.IVS14+5G>A	g.IVS14+5G>A			NOT_REGISTERED	accession_absent_from_final						2	all	no
+TCIRG1	T0022	1+2	g.IVS18+1G>A	g.IVS18+1G>A			NOT_REGISTERED	accession_absent_from_final						1	all	no
+TCIRG1	T0030	1+2	p.G405R			p.G405R	NOT_REGISTERED	source_has_no_dna_notation						1	all	no
+TCIRG1	T0031	1+2	p.G405R			p.G405R	NOT_REGISTERED	source_has_no_dna_notation						1	all	no
+TCIRG1	T0034	1+2	p.G405R			p.G405R	NOT_REGISTERED	source_has_no_dna_notation						1	all	no
+TCIRG1	T0037	1+2	p.G405R			p.G405R	NOT_REGISTERED	source_has_no_dna_notation						1	all	no
+TCIRG1	T0032	1	p.G405R			p.G405R	NOT_REGISTERED	source_has_no_dna_notation						2	all	no
+TCIRG1	T0032	1	p.R444L			p.R444L	NOT_REGISTERED	source_has_no_dna_notation						2	all	no
+TCIRG1	T0033	1	p.G405R			p.G405R	NOT_REGISTERED	source_has_no_dna_notation						2	all	no
+TCIRG1	T0033	1	p.R444L			p.R444L	NOT_REGISTERED	source_has_no_dna_notation						2	all	no
+TCIRG1	T0036	1	p.G405R			p.G405R	NOT_REGISTERED	source_has_no_dna_notation						2	all	no
+TCIRG1	T0036	1	p.R444L			p.R444L	NOT_REGISTERED	source_has_no_dna_notation						2	all	no
+TCIRG1	T0038	1	p.G405R			p.G405R	NOT_REGISTERED	source_has_no_dna_notation						2	all	no
+TCIRG1	T0038	1	p.R444L			p.R444L	NOT_REGISTERED	source_has_no_dna_notation						2	all	no
+TCIRG1	T0035	1+2	p.R444L			p.R444L	NOT_REGISTERED	source_has_no_dna_notation						1	all	no
+TNFRSF13B	T0059	1	g.[24216T>C;32674C>A], c.[310T>C;542C>A], r.[310u>c;542c>a], p.[Cys104Arg;Ala181Glu]	g.[24216T>C	c.[310T>C	p.[Cys104Arg	NOT_REGISTERED	allele_absent_accession_present						1	none	yes
+UNC13D	U0057	1+2	g.[2473G>A;8805G>T], c.[175G>A;1061G>T], r.[175g>a;1061g>u], p.[Ala59Thr;Trp354Leu]	g.[2473G>A	c.[175G>A	p.[Ala59Thr	NOT_REGISTERED	allele_absent_accession_present						1	none	yes
+UNC13D	U0058	1+2	g.[2473G>A;8805G>T], c.[175G>A;1061G>T], r.[175g>a;1061g>u], p.[Ala59Thr;Trp354Leu]	g.[2473G>A	c.[175G>A	p.[Ala59Thr	NOT_REGISTERED	allele_absent_accession_present						1	none	yes
+WAS	W0024	0	g.31772C>T, c.155C>T, p.R41X	g.31772C>T	c.155C>T	p.R41X	NOT_REGISTERED	accession_absent_from_final						1	all	no
+WAS	W0103	0	g.[37157C>T;37200T>C], c.[1378C>T;1421T>C], r.[1378c>u;1421u>c], p.[Pro460Ser/Met474Thr]	g.[37157C>T	c.[1378C>T	p.[Pro460Ser/Met474Thr]	NOT_REGISTERED	allele_absent_accession_present						1	none	yes
+WAS	W0011	0	g.IVS11+0->A	g.IVS11+0->A			NOT_REGISTERED	accession_absent_from_final						1	all	no
+WAS	W0267	0	c.(931_932)ins250		c.(931_932)ins250		NOT_REGISTERED	accession_absent_from_final						1	all	no
+WAS	W0268	0	c.(1484_1485)ins118		c.(1484_1485)ins118		NOT_REGISTERED	accession_absent_from_final						1	all	no
+WAS	W0269	0	c.(1484_1485)ins118		c.(1484_1485)ins118		NOT_REGISTERED	accession_absent_from_final						1	all	no

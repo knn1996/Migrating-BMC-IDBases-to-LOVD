@@ -1,21 +1,26 @@
 stage	count
-unresolved_in	698
-resolved_by_MANE_remap	401
-resolved_by_VariantValidator	11
-resolved_by_VV_mismatch_probe	0
+unresolved_in	848
+resolved_by_MANE_remap	451
+resolved_by_VariantValidator	77
+resolved_by_VV_mismatch_probe	38
 resolved_by_offset_fix	0
-total_rescued	412
-remaining_genuine_errors	286
+total_rescued	566
+  of which need curator review	149
+remaining_unresolved	282
+  ref_mismatch	210
+  tx_structure	67
+  curation_loss	2
+  manual_rewrite	3
 	
 remaining_by_category	count
-ENOSELECTORFOUND/nm_not_in_ng	111
-ESEQUENCEMISMATCH/single_base_wrong	106
-ESEQUENCEMISMATCH/single_base_complement	41
-ESEQUENCEMISMATCH/completely_different	19
+ESEQUENCEMISMATCH/single_base_wrong	145
+ENOSELECTORFOUND/nm_not_in_ng	66
+ESEQUENCEMISMATCH/single_base_complement	57
+ESEQUENCEMISMATCH/completely_different	5
 ESEQUENCEMISMATCH/multibase_rc_match	2
-ESEQUENCEMISMATCH/length_mismatch	2
+EINSERTIONRANGE/non_consecutive_ins_range	2
 EINTRONIC/intronic_c_notation	1
-ESEQUENCEMISMATCH/positional_offset	1
-EINSERTIONRANGE/non_consecutive_ins_range	1
 ERANGEREVERSED/start_greater_than_end	1
 ESYNTAXUEOF/missing_inserted_sequence	1
+OTHER/uncategorised	1
+ESEQUENCEMISMATCH/positional_offset	1
