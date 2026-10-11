@@ -77,6 +77,7 @@ copy_report.csv
 # ---- Mutalyzer caches & large per-track results (regenerable) ----
 *.jsonl
 04_Mutation_Processing/Output/Step6_Mutalyzer/mutalyzer_results*.tsv
+04_Mutation_Processing/Output/cache/genbank/
 
 # ---- Removed VCF step (dead output) ----
 04_Mutation_Processing/Output/Step6_VCF/
@@ -138,6 +139,9 @@ protein_only_variants.csv
 
 # ---- README figures (tracked) ----
 !docs/figures/*.png
+
+# ---- Audit history (tracked; ledger of every audit run) ----
+!04_Mutation_Processing/Output/Step10_Audit/history/audit_trend.png
 
 # ---- Local archive of superseded / legacy material ----
 99_Archive/

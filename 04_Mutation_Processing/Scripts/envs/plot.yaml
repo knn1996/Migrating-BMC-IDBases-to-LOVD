@@ -1,0 +1,8 @@
+name: idbase-lovd-plot
+channels:
+  - conda-forge
+dependencies:
+  - python=3.11
+  - pandas=2.2
+  - pyyaml=6.0
+  - matplotlib-base=3.9
