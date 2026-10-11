@@ -494,6 +494,7 @@ rule mutalyzer_track_NM:
         mane_nm=config["dna_seq"]["mane_nm"],
         idr_nm=config["dna_seq"]["idrefseq_nm"],
         stem=lambda wc: TRACK_CACHE[wc.source],
+        alt_p=os.path.join(config["mutalyzer"]["cache_dir"], "track_a_c.jsonl"),
     wildcard_constraints:
         source="MANE|IDRefseq",
     conda:
@@ -502,7 +503,7 @@ rule mutalyzer_track_NM:
         f'INPUT_TSV="{{input}}" OUT_TSV="{{output}}" '
         f'CACHE_JSONL="{{params.cache}}/{{params.stem}}.jsonl" '
         f'LOG_PATH="{{params.logs}}/mutalyzer_run_NM_{{wildcards.source}}.log" '
-        f'MANE_NM_DIR="{{params.mane_nm}}" IDREFSEQ_NM_DIR="{{params.idr_nm}}" '
+        f'MANE_NM_DIR="{{params.mane_nm}}" IDREFSEQ_NM_DIR="{{params.idr_nm}}" ALT_P_CACHE="{{params.alt_p}}" '
         f'python "{script("Step6_Mutalyzer/run_mutalyzer_NM.py")}" --source {{wildcards.source}}'
 
 

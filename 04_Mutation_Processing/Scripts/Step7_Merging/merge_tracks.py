@@ -27,7 +27,7 @@ OUTPUT_COLS = [
     "nc_hgvs", "c_hgvs", "g_hgvs", "r_hgvs", "p_hgvs",
     "protein_pos_first", "mane_select", "mutalyzer_gene",
     "hgvs_input", "normalized", "errors",
-    "source_change_id",
+    "source_change_id", "alt_c_hgvs",
 ]
 
 CROSSCHECK_COLS = [

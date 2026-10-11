@@ -4,6 +4,7 @@ import csv
 import json
 import time
 import requests
+import re
 import urllib.parse
 from pathlib import Path
 from datetime import datetime
@@ -12,6 +13,7 @@ INPUT_TSV  = os.environ["INPUT_TSV"]
 OUT_TSV    = os.environ["OUT_TSV"]
 CACHE_JSONL      = os.environ["CACHE_JSONL"]
 LOG_PATH        = os.environ["LOG_PATH"]
+ALT_P_CACHE     = os.environ.get("ALT_P_CACHE", "")
 
 SOURCE_FASTA_DIRS = {
     "MANE":     os.environ.get("MANE_NM_DIR", ""),
@@ -71,6 +73,22 @@ def build_refseq_index(directory):
                 header = f.readline().strip()
             index[gene] = header.lstrip(">")
     return index
+
+
+RE_SELECTOR = re.compile(r"\(((?:NM|XM|NR|XR)_\d+\.\d+)\)|^((?:NM|XM|NR|XR)_\d+\.\d+):")
+
+
+def selector(description):
+    m = RE_SELECTOR.search(description or "")
+    return next((g for g in m.groups() if g), "") if m else ""
+
+
+def coherent_coding(entry, alt_p):
+    c, normalized = entry.get("c_hgvs", ""), entry.get("normalized", "")
+    if not c or ":c." not in normalized or not selector(normalized) or selector(c) == selector(normalized):
+        return c, ""
+    p = alt_p.get(c, "")
+    return normalized, f"{c} [{p.split(':', 1)[1] if ':' in p else p}]" if p else c
 
 
 def pick_mane(entries):
@@ -193,18 +211,20 @@ def main():
             break
         time.sleep(SLEEP)
 
+    alt_p = {k: v.get("p_hgvs", "") for k, v in load_cache(ALT_P_CACHE).items()} if ALT_P_CACHE else {}
     out_rows = []
     for row in rows:
         hgvs  = row.get("hgvs_input", "")
         entry = cache.get(hgvs, {})
         gene  = row.get("gene", "").upper()
+        c_hgvs, alt_c = coherent_coding(entry, alt_p)
         out_rows.append({
             **row,
             "reference_coding":  refseq_index.get(gene, ""),
             "status":            entry.get("status",             "no_hgvs"),
             "normalized":        entry.get("normalized",         ""),
             "nc_hgvs":           entry.get("nc_hgvs",           ""),
-            "c_hgvs":            entry.get("c_hgvs",            ""),
+            "c_hgvs":            c_hgvs,
             "g_hgvs":            entry.get("g_hgvs",            ""),
             "r_hgvs":            entry.get("r_hgvs",            ""),
             "p_hgvs":            entry.get("p_hgvs",            ""),
@@ -213,11 +233,12 @@ def main():
             "mutalyzer_gene":    entry.get("mutalyzer_gene",    ""),
             "errors":            entry.get("errors",            ""),
             "infos":             entry.get("infos",             ""),
+            "alt_c_hgvs":        alt_c,
         })
 
     result_fields = ["reference_coding", "status", "normalized", "nc_hgvs", "c_hgvs",
                      "g_hgvs", "r_hgvs", "p_hgvs", "protein_pos_first",
-                     "mane_select", "mutalyzer_gene", "errors", "infos"]
+                     "mane_select", "mutalyzer_gene", "errors", "infos", "alt_c_hgvs"]
     fieldnames = list(rows[0].keys()) + result_fields
 
     with open(out_tsv, "w", newline="", encoding="utf-8") as f:

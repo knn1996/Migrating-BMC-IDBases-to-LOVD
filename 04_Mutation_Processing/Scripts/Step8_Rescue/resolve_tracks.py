@@ -355,7 +355,8 @@ def main():
             pk = (f"{gene}_{a}", row["dedup_key"])
             pair_rows.append({
                 "gene": row["gene"], "accession": a, "individual_id": pk[0], "dedup_key": row["dedup_key"],
-                "confidence_tier": tier.get(pk, "A"), "alt_descriptions": " | ".join(alt.get(pk, [])),
+                "confidence_tier": tier.get(pk, "A"),
+                "alt_descriptions": " | ".join(dict.fromkeys(([row["alt_c_hgvs"]] if row.get("alt_c_hgvs") else []) + alt.get(pk, []))),
                 "source_change_ids": " ; ".join(sorted(pairs[pk]["sids"])),
             })
 
