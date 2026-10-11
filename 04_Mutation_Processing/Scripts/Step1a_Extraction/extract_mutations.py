@@ -16,6 +16,9 @@ RE_ALLELE    = re.compile(r"Allele\s+(1\s+and\s+2|\d+)\s*:\s*", re.IGNORECASE)
 RE_FEAT_HDR  = re.compile(r"^FeatureHeader\s+allele;\s*(\d+)", re.IGNORECASE)
 RE_FEAT_DNA  = re.compile(r"^Feature\s+dna;", re.IGNORECASE)
 RE_FEAT_OTHR = re.compile(r"^Feature\s+(rna|aa);", re.IGNORECASE)
+RE_FEAT_CHG  = re.compile(r"^Feature\s+/change:\s*(.*)$", re.IGNORECASE)
+RE_FEAT_REG  = re.compile(r"^Feature\s+/genomic_region:\s*(.*)$", re.IGNORECASE)
+RE_IVS_TOKEN = re.compile(r"^g\.IVS(\d+)\s*([+-])\s*(\d+)\s*(.*)$", re.IGNORECASE)
 
 VARIANT_PREFIXES = [
     ("g.", "genomic"),
@@ -81,6 +84,54 @@ def extract_pos_from_notation(notation):
     return None, None
 
 
+def ivs_change(rest):
+    rest = rest.upper()
+    s = re.match(r"^([ACGT]+)>([ACGT]*)$", rest)
+    if s and s.group(2):
+        return f"{s.group(1)}>{s.group(2)}"
+    if s:
+        return f"-{s.group(1)}"
+    d = re.match(r"^DEL([ACGT]*)", rest)
+    if d:
+        return f"-{d.group(1)}"
+    i = re.match(r"^INS([ACGT]+)", rest)
+    if i:
+        return f"+{i.group(1)}"
+    return rest
+
+
+def feature_change(change):
+    c = change.upper().replace(" ", "")
+    s = re.match(r"^([ACGT]+)->([ACGT]+)$", c)
+    return f"{s.group(1)}>{s.group(2)}" if s else c
+
+
+def own_feature_starts(notation, allele_num, features):
+    m = RE_IVS_TOKEN.match(notation)
+    if not m:
+        return None
+    intron, ch = int(m.group(1)), ivs_change(m.group(4))
+    located = [f for f in features if f["loc"] is not None]
+    pool = [f for f in located if f["allele"] == allele_num] or located
+    cand = [f for f in pool if re.search(rf"intron;\s*{intron}\b", f["region"])]
+    if not cand:
+        cand = [f for f in pool if feature_change(f["change"]) == ch]
+    if len(cand) > 1:
+        narrowed = [f for f in cand if feature_change(f["change"]) == ch
+                    or (ch and feature_change(f["change"]).endswith(ch.lstrip("+-")))]
+        cand = narrowed or cand
+    return {f["loc"][0] for f in cand}
+
+
+def position_is_own(notation, allele_num, loc, from_own_allele, loc_kind, features):
+    if loc[0] is None:
+        return True
+    starts = own_feature_starts(notation, allele_num, features)
+    if starts is None:
+        return from_own_allele or loc_kind == "dna"
+    return len(starts) == 1 and loc[0] in starts
+
+
 RE_PREF_BRACKET = re.compile(r"([gcrpnm])\.\s*\[([^\]]*)\]")
 RE_BARE_BRACKET = re.compile(r"\[([^\]]*)\]")
 
@@ -135,7 +186,7 @@ def compute_missing_flag(levels):
     return ",".join(sorted(missing)) if missing else ""
 
 
-def expand_rows(gene, accession, sysname, loc_by_allele, first_loc, stats):
+def expand_rows(gene, accession, sysname, loc_by_allele, first_loc, first_loc_kind, features, stats):
     units = split_alleles(sysname)
     distinct = {re.sub(r"\s+", " ", t.strip(" ,;")) for a, t in units if a != "both"}
     if len(distinct) > 1:
@@ -166,13 +217,17 @@ def expand_rows(gene, accession, sysname, loc_by_allele, first_loc, stats):
             stats["cis_multi"] += 1
 
         for an in allele_nums:
+            from_own_allele = an in loc_by_allele
             loc = loc_by_allele.get(an, first_loc)
+            loc_kind = "dna" if from_own_allele else first_loc_kind
             for vtype, tokens in levels.items():
                 for idx, notation in enumerate(tokens):
                     ps, pe = extract_pos_from_notation(notation)
-                    if vtype == "genomic":
-                        ps = ps if ps is not None else loc[0]
-                        pe = pe if pe is not None else loc[1]
+                    if vtype == "genomic" and ps is None:
+                        if position_is_own(notation, an, loc, from_own_allele, loc_kind, features):
+                            ps, pe = loc
+                        else:
+                            stats["position_not_own"] += 1
                     if idx < len(genomic):
                         mut_class = classify_mutation(genomic[idx])
                     elif genomic:
@@ -193,14 +248,14 @@ def parse_pub_html(pub_html_path, gene, log, stats):
     text = html.unescape(RE_STRIP.sub("", Path(pub_html_path).read_text(encoding="utf-8", errors="replace")))
     lines = text.splitlines()
 
-    state = {"acc": "", "sys": [], "loc_by_allele": {}, "first_loc": (None, None),
-             "cur_allele": None, "in_dna": False}
+    state = {}
     emitted = set()
     total   = [0]
 
     def reset(acc=""):
         state.update({"acc": acc, "sys": [], "loc_by_allele": {}, "first_loc": (None, None),
-                      "cur_allele": None, "in_dna": False})
+                      "first_loc_kind": "none", "cur_allele": None, "in_dna": False, "kind": None,
+                      "features": []})
 
     def flush():
         acc = state["acc"]
@@ -208,8 +263,10 @@ def parse_pub_html(pub_html_path, gene, log, stats):
             emitted.add(acc)
             total[0] += 1
             sysname = join_sysname_lines(state["sys"])
-            yield from expand_rows(gene, acc, sysname, state["loc_by_allele"], state["first_loc"], stats)
+            yield from expand_rows(gene, acc, sysname, state["loc_by_allele"], state["first_loc"],
+                                   state["first_loc_kind"], state["features"], stats)
 
+    reset()
     for line in lines:
         s = line.strip()
 
@@ -230,18 +287,32 @@ def parse_pub_html(pub_html_path, gene, log, stats):
         elif RE_FEAT_HDR.match(s):
             state["cur_allele"] = int(RE_FEAT_HDR.match(s).group(1))
             state["in_dna"] = False
+            state["kind"] = None
 
         elif RE_FEAT_DNA.match(s):
             state["in_dna"] = True
+            state["kind"] = "dna"
+            state["features"].append({"allele": state["cur_allele"], "loc": None, "change": "", "region": ""})
 
         elif RE_FEAT_OTHR.match(s):
             state["in_dna"] = False
+            state["kind"] = RE_FEAT_OTHR.match(s).group(1).lower()
+
+        elif state["in_dna"] and state["features"] and RE_FEAT_CHG.match(s):
+            f = state["features"][-1]
+            f["change"] = (f["change"] + " " + RE_FEAT_CHG.match(s).group(1).strip()).strip()
+
+        elif state["in_dna"] and state["features"] and RE_FEAT_REG.match(s):
+            state["features"][-1]["region"] = RE_FEAT_REG.match(s).group(1).strip()
 
         elif RE_LOC.search(s):
             m = RE_LOC.search(s)
             loc = (int(m.group(1)), int(m.group(2)) if m.group(2) else int(m.group(1)))
             if state["first_loc"] == (None, None):
                 state["first_loc"] = loc
+                state["first_loc_kind"] = state["kind"] or "none"
+            if state["in_dna"] and state["features"] and state["features"][-1]["loc"] is None:
+                state["features"][-1]["loc"] = loc
             if state["in_dna"] and state["cur_allele"] is not None:
                 state["loc_by_allele"].setdefault(state["cur_allele"], loc)
 
@@ -278,7 +349,7 @@ def main():
     rows           = []
     skipped_genes  = []
     zero_row_genes = []
-    totals = {"compound_het": 0, "glued": 0, "cis_multi": 0}
+    totals = {"compound_het": 0, "glued": 0, "cis_multi": 0, "position_not_own": 0}
 
     for folder in folders:
         gene        = re.sub(r"base$", "", folder, flags=re.IGNORECASE)
@@ -290,7 +361,7 @@ def main():
             skipped_genes.append(gene)
             continue
 
-        stats = {"compound_het": 0, "glued": 0, "cis_multi": 0}
+        stats = {"compound_het": 0, "glued": 0, "cis_multi": 0, "position_not_own": 0}
         gene_rows = list(parse_pub_html(os.path.join(folder_path, pub), gene, log, stats))
         rows.extend(gene_rows)
         for k in totals:
@@ -305,6 +376,7 @@ def main():
             + (f"  [{stats['glued']} glued_repaired]" if stats["glued"] else "")
             + (f"  [{missing_flags} missing_flag]" if missing_flags else "")
             + (f"  [{unknown_types} unknown_type]"  if unknown_types  else "")
+            + (f"  [{stats['position_not_own']} position_not_own]" if stats["position_not_own"] else "")
         )
 
         if not gene_rows:
@@ -331,6 +403,7 @@ def main():
     log.info(f"  Compound-het accessions  : {totals['compound_het']}")
     log.info(f"  Glued records repaired   : {totals['glued']}")
     log.info(f"  Alleles with cis changes : {totals['cis_multi']}")
+    log.info(f"  Positions not own (empty): {totals['position_not_own']}")
     log.info(f"  Total rows               : {len(rows)}")
     log.info(f"  Output                   : {OUT_PATH}")
     log.info(f"  Log                      : {LOG_PATH}")
