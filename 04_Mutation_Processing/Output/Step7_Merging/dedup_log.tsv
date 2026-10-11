@@ -20,7 +20,7 @@ CYBB	identical_change	c.242del [NM_000397.4]	NG_IDRefseq	c.-189del [XM_047441855
 CYBB	identical_change	c.621C>A [NM_000397.4]	NG_IDRefseq	c.315C>A [XM_047441855.1]	NM_MANE	A0012:0	0
 CYBB	identical_change	c.1223G>A [NM_000397.4]	NG_IDRefseq	c.917G>A [XM_047441855.1]	NM_MANE	A0013:0;A0016:0;A0190:0;A0191:0	0
 CYBB	identical_change	c.1012C>T [NM_000397.4]	NG_IDRefseq	c.706C>T [XM_047441855.1]	NM_MANE	A0014:0;A0084:0;A0254:0;A0397:0;A0398:0;A1128:0;A1129:0	0
-CYBB	identical_change	c.318G>A [NM_000397.4]	NG_IDRefseq	c.12G>A [XM_047441855.1]	NM_MANE	A0015:0;A0108:?;A0479:0;A0491:?;A0492:?;A0493:?;A0586:0;A0659:?	5
+CYBB	identical_change	c.318G>A [NM_000397.4]	NG_IDRefseq	c.12G>A [XM_047441855.1]	NM_MANE	A0015:0;A0108:0;A0479:0;A0491:0;A0492:0;A0493:0;A0586:0;A0659:0	5
 CYBB	identical_change	c.302A>G [NM_000397.4]	NG_IDRefseq	c.-5A>G [XM_047441855.1]	NM_MANE	A0017:0;A0248:0	0
 CYBB	identical_change	c.121del [NM_000397.4]	NG_IDRefseq	c.-1616del [XM_047441855.1]	NM_MANE	A0018:0;A0687:0	0
 CYBB	identical_change	c.1499A>G [NM_000397.4]	NG_IDRefseq	c.1193A>G [XM_047441855.1]	NM_MANE	A0019:0	0
@@ -55,7 +55,7 @@ CYBB	identical_change	c.1315del [NM_000397.4]	NG_IDRefseq	c.1009del [XM_04744185
 CYBB	identical_change	c.1625T>C [NM_000397.4]	NG_IDRefseq	c.1319T>C [XM_047441855.1]	NM_MANE	A0082:0	0
 CYBB	identical_change	c.54G>C [NM_000397.4]	NG_IDRefseq	c.-1683G>C [XM_047441855.1]	NM_MANE	A0083:0	0
 CYBB	identical_change	c.1139G>A [NM_000397.4]	NG_IDRefseq	c.833G>A [XM_047441855.1]	NM_MANE	A0086:0;A0174:0;A1182:0	0
-CYBB	identical_change	c.1006G>T [NM_000397.4]	NG_IDRefseq	c.700G>T [XM_047441855.1]	NM_MANE	A0087:0;A0088:0;A0291:0;A0607:?;A1122:0;A1123:0	1
+CYBB	identical_change	c.1006G>T [NM_000397.4]	NG_IDRefseq	c.700G>T [XM_047441855.1]	NM_MANE	A0087:0;A0088:0;A0291:0;A0607:0;A1122:0;A1123:0	1
 CYBB	identical_change	c.1313_1314delinsT [NM_000397.4]	NG_IDRefseq	c.1007_1008delinsT [XM_047441855.1]	NM_MANE	A0091:0	0
 CYBB	identical_change	c.1415del [NM_000397.4]	NG_IDRefseq	c.1109del [XM_047441855.1]	NM_MANE	A0092:0;A0093:0	0
 CYBB	identical_change	c.1548G>T [NM_000397.4]	NG_IDRefseq	c.1242G>T [XM_047441855.1]	NM_MANE	A0094:0	0
@@ -84,14 +84,14 @@ CYBB	identical_change	c.1214T>G [NM_000397.4]	NG_IDRefseq	c.908T>G [XM_047441855
 CYBB	identical_change	c.1528_1529del [NM_000397.4]	NG_IDRefseq	c.1222_1223del [XM_047441855.1]	NM_MANE	A0143:0;A1292:0;A1293:0;A1441:0	0
 CYBB	identical_change	c.1237dup [NM_000397.4]	NG_IDRefseq	c.931dup [XM_047441855.1]	NM_MANE	A0144:0;A1219:0	0
 CYBB	identical_change	c.1601T>A [NM_000397.4]	NG_IDRefseq	c.1295T>A [XM_047441855.1]	NM_MANE	A0147:0	0
-CYBB	identical_change	c.1320C>A [NM_000397.4]	NG_IDRefseq	c.1014C>A [XM_047441855.1]	NM_MANE	A0151:0;A1134:?;A1135:?;A1136:?	3
+CYBB	identical_change	c.1320C>A [NM_000397.4]	NG_IDRefseq	c.1014C>A [XM_047441855.1]	NM_MANE	A0151:0;A1134:0;A1135:0;A1136:0	3
 CYBB	identical_change	c.1682_1712del [NM_000397.4]	NG_IDRefseq	c.1376_1406del [XM_047441855.1]	NM_MANE	A0155:0;A1325:0	0
 CYBB	identical_change	c.1222G>A [NM_000397.4]	NG_IDRefseq	c.916G>A [XM_047441855.1]	NM_MANE	A0157:0;A0158:0;A1212:0	0
 CYBB	identical_change	c.159dup [NM_000397.4]	NG_IDRefseq	c.-272dup [XM_047441855.1]	NM_MANE	A0160:0	0
 CYBB	identical_change	c.943_945del [NM_000397.4]	NG_IDRefseq	c.637_639del [XM_047441855.1]	NM_MANE	A0163:0;A0208:0;A0209:0;A1114:0	0
 CYBB	identical_change	c.1455del [NM_000397.4]	NG_IDRefseq	c.1149del [XM_047441855.1]	NM_MANE	A0165:0	0
 CYBB	identical_change	c.1329G>A [NM_000397.4]	NG_IDRefseq	c.1023G>A [XM_047441855.1]	NM_MANE	A0168:0;A0485:0	0
-CYBB	identical_change	c.730T>C [NM_000397.4]	NG_IDRefseq	c.424T>C [XM_047441855.1]	NM_MANE	A0171:0;A0465:?;A1006:0	1
+CYBB	identical_change	c.730T>C [NM_000397.4]	NG_IDRefseq	c.424T>C [XM_047441855.1]	NM_MANE	A0171:0;A0465:0;A1006:0	1
 CYBB	identical_change	c.175T>C [NM_000397.4]	NG_IDRefseq	c.-256T>C [XM_047441855.1]	NM_MANE	A0175:0;A0176:0;A0719:0;A1421:0	0
 CYBB	identical_change	c.482A>G [NM_000397.4]	NG_IDRefseq	c.176A>G [XM_047441855.1]	NM_MANE	A0179:0;A0180:0	0
 CYBB	identical_change	c.555C>A [NM_000397.4]	NG_IDRefseq	c.249C>A [XM_047441855.1]	NM_MANE	A0182:0;A0358:0;A0906:0	0
@@ -154,7 +154,7 @@ CYBB	identical_change	c.1523del [NM_000397.4]	NG_IDRefseq	c.1217del [XM_04744185
 CYBB	identical_change	c.1147_1150del [NM_000397.4]	NG_IDRefseq	c.841_844del [XM_047441855.1]	NM_MANE	A0315:0	0
 CYBB	identical_change	c.797del [NM_000397.4]	NG_IDRefseq	c.491del [XM_047441855.1]	NM_MANE	A0316:0;A1041:0	0
 CYBB	identical_change	c.1016del [NM_000397.4]	NG_IDRefseq	c.710del [XM_047441855.1]	NM_MANE	A0317:0	0
-CYBB	identical_change	c.1578del [NM_000397.4]	NG_IDRefseq	c.1272del [XM_047441855.1]	NM_MANE	A0319:0;A0330:?	1
+CYBB	identical_change	c.1578del [NM_000397.4]	NG_IDRefseq	c.1272del [XM_047441855.1]	NM_MANE	A0319:0;A0330:0	1
 CYBB	identical_change	c.595del [NM_000397.4]	NG_IDRefseq	c.289del [XM_047441855.1]	NM_MANE	A0320:0	0
 CYBB	identical_change	c.871_880del [NM_000397.4]	NG_IDRefseq	c.565_574del [XM_047441855.1]	NM_MANE	A0321:0	0
 CYBB	identical_change	c.160_165del [NM_000397.4]	NG_IDRefseq	c.-271_-266del [XM_047441855.1]	NM_MANE	A0322:0;A0714:0	0
@@ -186,7 +186,7 @@ CYBB	identical_change	c.1498G>T [NM_000397.4]	NG_IDRefseq	c.1192G>T [XM_04744185
 CYBB	identical_change	c.1354G>T [NM_000397.4]	NG_IDRefseq	c.1048G>T [XM_047441855.1]	NM_MANE	A0373:0	0
 CYBB	identical_change	c.1384G>T [NM_000397.4]	NG_IDRefseq	c.1078G>T [XM_047441855.1]	NM_MANE	A0374:0;A1252:0	0
 CYBB	identical_change	c.535G>A [NM_000397.4]	NG_IDRefseq	c.229G>A [XM_047441855.1]	NM_MANE	A0375:0	0
-CYBB	identical_change	c.1271G>A [NM_000397.4]	NG_IDRefseq	c.965G>A [XM_047441855.1]	NM_MANE	A0377:?;A1117:?;A1225:0	2
+CYBB	identical_change	c.1271G>A [NM_000397.4]	NG_IDRefseq	c.965G>A [XM_047441855.1]	NM_MANE	A0377:0;A1117:0;A1225:0	2
 CYBB	identical_change	c.1076G>T [NM_000397.4]	NG_IDRefseq	c.770G>T [XM_047441855.1]	NM_MANE	A0379:0	0
 CYBB	identical_change	c.1166G>A [NM_000397.4]	NG_IDRefseq	c.860G>A [XM_047441855.1]	NM_MANE	A0380:0;A1205:0	0
 CYBB	identical_change	c.301C>T [NM_000397.4]	NG_IDRefseq	c.-6C>T [XM_047441855.1]	NM_MANE	A0381:0	0
@@ -307,7 +307,7 @@ CYBB	identical_change	c.394_406del [NM_000397.4]	NG_IDRefseq	c.88_100del [XM_047
 CYBB	identical_change	c.411T>A [NM_000397.4]	NG_IDRefseq	c.105T>A [XM_047441855.1]	NM_MANE	A0864:0	0
 CYBB	identical_change	c.412_418del [NM_000397.4]	NG_IDRefseq	c.106_112del [XM_047441855.1]	NM_MANE	A0865:0	0
 CYBB	identical_change	c.413C>A [NM_000397.4]	NG_IDRefseq	c.107C>A [XM_047441855.1]	NM_MANE	A0866:0;A0867:0	0
-CYBB	identical_change	c.754G>T [NM_000397.4]	NG_IDRefseq	c.448G>T [XM_047441855.1]	NM_MANE	A0869:?;A1031:0	1
+CYBB	identical_change	c.754G>T [NM_000397.4]	NG_IDRefseq	c.448G>T [XM_047441855.1]	NM_MANE	A0869:0;A1031:0	1
 CYBB	identical_change	c.450_451del [NM_000397.4]	NG_IDRefseq	c.144_145del [XM_047441855.1]	NM_MANE	A0870:0	0
 CYBB	identical_change	c.458T>G [NM_000397.4]	NG_IDRefseq	c.152T>G [XM_047441855.1]	NM_MANE	A0871:0;A0872:0	0
 CYBB	identical_change	c.461del [NM_000397.4]	NG_IDRefseq	c.155del [XM_047441855.1]	NM_MANE	A0873:0	0
@@ -337,7 +337,7 @@ CYBB	identical_change	c.733G>T [NM_000397.4]	NG_IDRefseq	c.427G>T [XM_047441855.
 CYBB	identical_change	c.755_756del [NM_000397.4]	NG_IDRefseq	c.449_450del [XM_047441855.1]	NM_MANE	A1034:0	0
 CYBB	identical_change	c.769T>C [NM_000397.4]	NG_IDRefseq	c.463T>C [XM_047441855.1]	NM_MANE	A1035:0;A1036:0	0
 CYBB	identical_change	c.773del [NM_000397.4]	NG_IDRefseq	c.467del [XM_047441855.1]	NM_MANE	A1037:0	0
-CYBB	identical_change	c.1085C>G [NM_000397.4]	NG_IDRefseq	c.779C>G [XM_047441855.1]	NM_MANE	A1039:?;A1173:0	1
+CYBB	identical_change	c.1085C>G [NM_000397.4]	NG_IDRefseq	c.779C>G [XM_047441855.1]	NM_MANE	A1039:0;A1173:0	1
 CYBB	identical_change	c.799_800insAA [NM_000397.4]	NG_IDRefseq	c.493_494insAA [XM_047441855.1]	NM_MANE	A1042:0	0
 CYBB	identical_change	c.811A>T [NM_000397.4]	NG_IDRefseq	c.505A>T [XM_047441855.1]	NM_MANE	A1053:0	0
 CYBB	identical_change	c.831_853del [NM_000397.4]	NG_IDRefseq	c.525_547del [XM_047441855.1]	NM_MANE	A1054:0	0
@@ -440,3 +440,23 @@ CYBB	identical_change	c.1534G>A [NM_000397.4]	NG_IDRefseq	c.1228G>A [XM_04744185
 CYBB	identical_change	c.1375del [NM_000397.4]	NG_IDRefseq	c.1069del [XM_047441855.1]	NM_MANE	A1435:0	0
 CYBB	identical_change	c.911C>A [NM_000397.4]	NG_IDRefseq	c.605C>A [XM_047441855.1]	NM_MANE	A1436:0	0
 CYBB	identical_change	c.266del [NM_000397.4]	NG_IDRefseq	c.-41del [XM_047441855.1]	NM_MANE	A1439:0	0
+CYBB	skip_different_change_same_unit	c.318G>A [NM_000397.4]	NG_IDRefseq			A0108:0	0
+CYBB	skip_different_change_same_unit	c.318G>A [NM_000397.4]	NG_IDRefseq			A0491:0	0
+CYBB	skip_different_change_same_unit	c.318G>A [NM_000397.4]	NG_IDRefseq			A0492:0	0
+CYBB	skip_different_change_same_unit	c.318G>A [NM_000397.4]	NG_IDRefseq			A0493:0	0
+CYBB	skip_different_change_same_unit	c.318G>A [NM_000397.4]	NG_IDRefseq			A0659:0	0
+CYBB	skip_different_change_same_unit	c.1578del [NM_000397.4]	NG_IDRefseq			A0330:0	0
+CYBB	skip_different_change_same_unit	c.121dup [NM_000397.4]	NG_IDRefseq			A0350:0	0
+CYBB	skip_different_change_same_unit	c.1271G>A [NM_000397.4]	NG_IDRefseq			A0377:0	0
+CYBB	skip_different_change_same_unit	c.1271G>A [NM_000397.4]	NG_IDRefseq			A1117:0	0
+CYBB	skip_different_change_same_unit	c.730T>C [NM_000397.4]	NG_IDRefseq			A0465:0	0
+CYBB	skip_different_change_same_unit	c.1006G>T [NM_000397.4]	NG_IDRefseq			A0607:0	0
+CYBB	skip_different_change_same_unit	c.754G>T [NM_000397.4]	NG_IDRefseq			A0869:0	0
+CYBB	skip_different_change_same_unit	c.1085C>G [NM_000397.4]	NG_IDRefseq			A1039:0	0
+CYBB	skip_different_change_same_unit	c.1320C>A [NM_000397.4]	NG_IDRefseq			A1134:0	0
+CYBB	skip_different_change_same_unit	c.1320C>A [NM_000397.4]	NG_IDRefseq			A1135:0	0
+CYBB	skip_different_change_same_unit	c.1320C>A [NM_000397.4]	NG_IDRefseq			A1136:0	0
+IGLL1	skip_different_change_same_unit	c.182C>T [NM_152855.3]	NM_MANE			G0001:1	0
+MASP2	skip_different_change_same_unit	g.11050597T>C	NG_IDRefseq			M0001:1	0
+RAC2	skip_different_change_same_unit	c.108-3934G>A [NM_002872.5]	NG_IDRefseq			R0001:1	0
+UNC93B1	skip_different_change_same_unit	c.393-512_393-509del [NM_030930.4]	NG_IDRefseq			U0001:1	0

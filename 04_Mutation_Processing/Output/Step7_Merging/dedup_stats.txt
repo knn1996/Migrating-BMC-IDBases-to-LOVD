@@ -6,7 +6,8 @@ Patients linked             : 4591
 Patient-variant pairs       : 5980
 
 Stage-2 dedup log by rule:
-identical_change    441
+identical_change                   441
+skip_different_change_same_unit     20
 
 Dedup key source breakdown:
 dedup_key_source
