@@ -168,6 +168,7 @@ rule resolve_tracks:
     input:
         dedup=os.path.join(S8, "dedup_merged_variants.rescued.tsv"),
         augment=os.path.join(S8, "augmented_merged_variants.tsv"),
+        dedup_log=os.path.join(S8, "dedup_rescued_log.tsv"),
         audit=os.path.join(SCRIPTS, "Step10_Audit", "audit_against_source.py"),
         pub=ancient(PUB_DIR),
     output:
@@ -178,7 +179,7 @@ rule resolve_tracks:
     conda:
         "envs/python.yaml"
     shell:
-        f'DEDUP_TSV="{{input.dedup}}" AUGMENT_TSV="{{input.augment}}" '
+        f'DEDUP_TSV="{{input.dedup}}" AUGMENT_TSV="{{input.augment}}" DEDUP_LOG="{{input.dedup_log}}" '
         f'PUB_DIR="{{input.pub}}" AUDIT_SCRIPT="{{input.audit}}" '
         f'OUT_DEDUP="{{output.dedup}}" OUT_PAIRS="{{output.pairs}}" '
         f'OUT_LOG="{{output.log}}" OUT_STATS="{{output.stats}}" '

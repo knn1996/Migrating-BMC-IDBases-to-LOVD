@@ -11,6 +11,7 @@ DEDUP_LOG  = os.environ.get("DEDUP_LOG", os.path.join(os.path.dirname(os.path.ab
 TRACK_PRIORITY = {"NM_MANE": 0, "NG_IDRefseq": 1, "NM_IDRefseq": 2}
 GENOMIC_HGVS = re.compile(r"^NC_\d+\.\d+:g\.\S+$")
 TRANSCRIPT = re.compile(r"\(((?:NM|XM|NR|XR)_\d+\.\d+)\)")
+TRANSCRIPT_ACC = re.compile(r"\(((?:NM|XM|NR|XR)_\d+)\.\d+\)")
 LOG_COLS = ["gene", "rule", "kept_record", "kept_track", "dropped_record", "dropped_track",
             "source_units", "patients_moved"]
 
@@ -58,6 +59,16 @@ def is_xm(row):
     return "XM_" in text(row.get("c_hgvs")) or "XM_" in text(row.get("nc_hgvs"))
 
 
+def transcript_acc(row):
+    m = TRANSCRIPT_ACC.search(text(row.get("c_hgvs")))
+    return m.group(1) if m else ""
+
+
+def conflicting_changes(grp):
+    sets = [g for g in (genomic_ids(r) for _, r in grp.iterrows()) if g]
+    return any(not (a & b) for i, a in enumerate(sets) for b in sets[i + 1:])
+
+
 def describe(row):
     m = TRANSCRIPT.search(text(row.get("c_hgvs")))
     tx = m.group(1) if m else ""
@@ -68,11 +79,15 @@ keys = df.apply(make_dedup_key, axis=1, result_type="expand")
 df["_dedup_key"]      = keys[0]
 df["_dedup_key_src"]  = keys[1]
 df["_track_priority"] = df["source_track"].map(TRACK_PRIORITY).fillna(99)
+df["_tx_split"] = ""
+for _, grp in df.groupby(["gene", "_dedup_key"], sort=False):
+    if conflicting_changes(grp):
+        df.loc[grp.index, "_tx_split"] = [transcript_acc(r) for _, r in grp.iterrows()]
 
 input_units = {(text(r["gene"]), text(r["accession"]), text(r["allele_num"])) for _, r in df.iterrows()}
 
 deduped_rows, units, gids, cids = [], [], [], []
-for (gene, key), grp in df.groupby(["gene", "_dedup_key"], sort=False):
+for (gene, key, _), grp in df.groupby(["gene", "_dedup_key", "_tx_split"], sort=False):
     best_idx = grp["_track_priority"].idxmin()
     rep = grp.loc[best_idx].copy()
     unique_accessions = grp["accession"].dropna().unique().tolist()
@@ -91,7 +106,7 @@ for (gene, key), grp in df.groupby(["gene", "_dedup_key"], sort=False):
     cids.append(c)
 
 result = pd.DataFrame(deduped_rows).reset_index(drop=True)
-result = result.drop(columns=["_dedup_key", "_dedup_key_src", "_track_priority"], errors="ignore")
+result = result.drop(columns=["_dedup_key", "_dedup_key_src", "_track_priority", "_tx_split"], errors="ignore")
 n_after_cnotation = len(result)
 
 xm_flag = [is_xm(result.loc[i]) for i in range(len(result))]
@@ -195,6 +210,9 @@ if output_units != input_units:
     lost = sorted(input_units - output_units)[:5]
     added = sorted(output_units - input_units)[:5]
     errors.append(f"source units changed: lost {lost} added {added}")
+duplicate_keys = result.loc[kept].duplicated(["gene", "dedup_key"], keep=False)
+if duplicate_keys.any():
+    errors.append(f"duplicate (gene, dedup_key) after stage 2: {result.loc[kept][duplicate_keys][['gene', 'dedup_key']].values.tolist()[:5]}")
 if nm_after != nm_before:
     errors.append(f"NM records changed: {nm_before} before stage 2, {nm_after} after")
 for i in kept:

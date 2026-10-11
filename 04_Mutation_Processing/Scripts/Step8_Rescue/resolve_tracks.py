@@ -5,7 +5,9 @@ Resolves conflicting track descriptions of one source change of one individual
 (rule R2) and assigns a confidence tier to every final (individual, variant) pair.
 
 A pair of the rescue-deduped table belongs to the source changes its augmented
-rows carry (source_change_id). When one source change of one individual is
+rows carry (source_change_id). An augmented row whose stage-1 record no longer
+holds its accession follows the stage-2 merges logged by dedup_merged_variants.py
+(identical_change moves the whole record, same_source_unit moves the unit). When one source change of one individual is
 described by two or more final records, one record is kept:
 
     1. protein: a record whose protein is consistent with any source protein
@@ -30,6 +32,7 @@ Env vars
 --------
 DEDUP_TSV          Step8_Rescue/dedup_merged_variants.rescued.tsv
 AUGMENT_TSV        Step8_Rescue/augmented_merged_variants.tsv (with source_change_id)
+DEDUP_LOG          Step8_Rescue/dedup_rescued_log.tsv (stage-2 merges; optional)
 PUB_DIR            IDbases pub.html directory (source protein changes)
 AUDIT_SCRIPT       Step10_Audit/audit_against_source.py (protein comparison, source parsing)
 OUT_DEDUP          Step8_Rescue/dedup_merged_variants.resolved.tsv
@@ -47,6 +50,7 @@ from pathlib import Path
 
 DEDUP_TSV    = os.environ["DEDUP_TSV"]
 AUGMENT_TSV  = os.environ["AUGMENT_TSV"]
+DEDUP_LOG    = os.environ.get("DEDUP_LOG", "")
 PUB_DIR      = os.environ["PUB_DIR"]
 AUDIT_SCRIPT = os.environ.get("AUDIT_SCRIPT", str(Path(__file__).resolve().parents[1] / "Step10_Audit" / "audit_against_source.py"))
 OUT_DEDUP    = os.environ["OUT_DEDUP"]
@@ -85,6 +89,28 @@ def write_tsv(path, fields, rows):
 
 def variant_desc(s):
     return s.rsplit(":", 1)[1] if ":" in s else s
+
+
+def allele_text(value):
+    v = str(value or "").strip()
+    return v[:-2] if v.endswith(".0") else v
+
+
+def stage2_moves(path):
+    whole, units = {}, defaultdict(list)
+    if not path or not Path(path).exists():
+        return whole, units
+    _, rows = read_tsv(path)
+    for r in rows:
+        gene = r["gene"].strip().upper()
+        kept = r["kept_record"].split(" [", 1)[0]
+        if r["rule"] == "identical_change":
+            whole[(gene, r["dropped_record"].split(" [", 1)[0])] = kept
+        elif r["rule"].startswith("same_source_unit"):
+            for u in r["source_units"].split(";"):
+                acc, allele = u.split(":", 1)
+                units[(gene, acc, "" if allele == "?" else allele)].append(kept)
+    return whole, units
 
 
 def record_key(row):
@@ -214,11 +240,22 @@ def main():
     _, augment_rows = read_tsv(AUGMENT_TSV)
     src_proteins = load_source_proteins(audit)
 
+    present = {(row["gene"].strip().upper(), a.strip(), row["dedup_key"])
+               for row in dedup_rows for a in row["accession_list"].split(";") if a.strip()}
+    whole, unit_moves = stage2_moves(DEDUP_LOG)
     sids = defaultdict(set)
     for r in augment_rows:
         sid = r.get("source_change_id", "").strip()
-        if sid:
-            sids[(r["gene"].strip().upper(), r["accession"].strip(), record_key(r))].add(sid)
+        if not sid:
+            continue
+        gene, acc, key = r["gene"].strip().upper(), r["accession"].strip(), record_key(r)
+        sids[(gene, acc, key)].add(sid)
+        if (gene, acc, key) in present:
+            continue
+        targets = [whole[(gene, key)]] if (gene, key) in whole else unit_moves.get((gene, acc, allele_text(r.get("allele_num"))), [])
+        for t in targets:
+            if (gene, acc, t) in present:
+                sids[(gene, acc, t)].add(sid)
 
     records = {}
     pairs = {}

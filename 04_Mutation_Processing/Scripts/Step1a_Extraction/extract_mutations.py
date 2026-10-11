@@ -273,11 +273,12 @@ def parse_pub_html(pub_html_path, gene, log, stats):
         if s.startswith("Accession"):
             m = re.match(r"Accession\s+(\S+)", s)
             if m:
+                acc = m.group(1).rstrip(";,.:")
                 if state["acc"] and state["acc"] not in emitted:
                     stats["glued"] += 1
-                    log.warning(f"  {gene}: record separator missing before {m.group(1)}; emitting {state['acc']} separately")
+                    log.warning(f"  {gene}: record separator missing before {acc}; emitting {state['acc']} separately")
                 yield from flush()
-                reset(m.group(1))
+                reset(acc)
 
         elif s.startswith("Systematic name"):
             m = re.match(r"Systematic name\s+(.+)", s)
