@@ -109,7 +109,7 @@ def parse_record(lines):
             refs[-1][label].append(value.strip())
             continue
         fields[label].append(value)
-    acc = " ".join(fields.get("Accession", [""])).strip().split(" ")[0]
+    acc = " ".join(fields.get("Accession", [""])).strip().split(" ")[0].rstrip(";,.:")
     return acc, fields, refs
 
 

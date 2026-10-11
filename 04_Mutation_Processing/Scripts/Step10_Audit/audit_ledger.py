@@ -76,8 +76,8 @@ in lovd_flat_with_patients_final.tsv with individual_id = GENE_accession:
 --rescore-all re-runs audit_against_source.py and the pair linkage for every recorded
 run on inputs pulled from the run's pipeline_commit with git show into a scratch
 directory, and recomputes the row. Every pre-existing column outside the precision
-columns (pairs_*, pair_consistency_pct) must reproduce exactly; if any value moves
-nothing is written. label, recorded_utc, pipeline_commit and outputs_dirty are kept
+columns (pairs_*, pair_consistency_pct) and the columns named with --allow-move must
+reproduce exactly; if any other value moves nothing is written. label, recorded_utc, pipeline_commit and outputs_dirty are kept
 from the recorded row. all_mutations.tsv is not tracked, so the current file is used
 unless --extract-tsv RUN_ID=PATH names another; it feeds stage_extracted and the
 source change ids of the linkage.
@@ -217,6 +217,7 @@ def parse_args(defaults):
     ap.add_argument("--rescore-all", action="store_true")
     ap.add_argument("--scratch-dir", type=Path, default=None)
     ap.add_argument("--extract-tsv", action="append", default=[], metavar="RUN_ID=PATH")
+    ap.add_argument("--allow-move", action="append", default=[], metavar="COL")
     args = ap.parse_args()
     if not args.rescore_all and not args.label:
         ap.error("--label is required unless --rescore-all is given")
@@ -445,7 +446,16 @@ def row_targets(ns):
     out = {}
     if "units" in ns:
         units, describe = ns["units"], ns["describe"]
-        desc = {(text(ra.at[i, "gene"]), describe(ra.loc[i])): i for i in ra.index}
+        cols = ["gene", "_dedup_key"] + (["_tx_split"] if "_tx_split" in df.columns else [])
+        group_no = df.groupby(cols, sort=False).ngroup()
+        if int(group_no.max()) + 1 != len(ra) or list(ra.index) != list(range(len(ra))):
+            raise LedgerError("dedup replay: stage-1 records do not line up with the dedup groups")
+        desc = {}
+        for i in ra.index:
+            k = (text(ra.at[i, "gene"]), describe(ra.loc[i]))
+            if k in desc:
+                raise LedgerError(f"dedup replay: two stage-1 records describe as {k}")
+            desc[k] = i
         ident, moved = {}, defaultdict(list)
         for lr in ns["log_rows"]:
             g = lr["gene"]
@@ -459,7 +469,8 @@ def row_targets(ns):
         for r in df.index:
             g = text(df.at[r, "gene"])
             u = (text(df.at[r, "accession"]), text(df.at[r, "allele_num"]))
-            i = keyidx.get((g, text(df.at[r, "_dedup_key"])))
+            n_grp = group_no.at[r]
+            i = int(n_grp) if pd.notna(n_grp) and n_grp >= 0 else None
             if i is None:
                 out[r] = []
             elif i in kept and u in units[i]:
@@ -953,14 +964,14 @@ def is_precision(col):
     return col.startswith("pairs_") or col == "pair_consistency_pct"
 
 
-def validate(old, new):
+def validate(old, new, allowed=()):
     moved, precision = [], []
     for col, old_val in old.items():
         if col in NOT_VALIDATED:
             continue
         new_val = str(new.get(col, ""))
         if str(old_val) != new_val:
-            (precision if is_precision(col) else moved).append((col, old_val, new_val))
+            (precision if is_precision(col) or col in allowed else moved).append((col, old_val, new_val))
     return moved, precision
 
 
@@ -1010,7 +1021,7 @@ def rescore_all(args, defaults, repo, audit):
         head.update({"rescored_utc": now, "audit_script_sha": audit_sha, "prev_run_id": prev_id})
         head = {k: head[k] for k in HEAD_COLS[1:]}
         row = make_row(run_id, head, metrics, counts)
-        moved, precision = validate(old, row)
+        moved, precision = validate(old, row, set(args.allow_move))
         if moved:
             failures.append((run_id, moved))
         cur = {"run_id": run_id, "row": row, "snap": snap, "pairs": pairs, "changes": changes,
