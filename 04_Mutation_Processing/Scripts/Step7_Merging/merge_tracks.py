@@ -1,11 +1,16 @@
 import os
+import re
 import csv
-from pathlib import Path
+import sys
 from collections import defaultdict
 
-TRACK_A = os.environ["TRACK_A"]
-TRACK_B = os.environ["TRACK_B"]
-TRACK_C = os.environ["TRACK_C"]
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+from source_change import SourceChanges, TRACK_A
+
+TRACK_A_PATH = os.environ["TRACK_A"]
+TRACK_B_PATH = os.environ["TRACK_B"]
+TRACK_C_PATH = os.environ["TRACK_C"]
+ALL_MUTATIONS_TSV = os.environ["ALL_MUTATIONS_TSV"]
 
 OUT_MERGED     = os.environ["OUT_MERGED"]
 OUT_UNRESOLVED = os.environ["OUT_UNRESOLVED"]
@@ -22,6 +27,7 @@ OUTPUT_COLS = [
     "nc_hgvs", "c_hgvs", "g_hgvs", "r_hgvs", "p_hgvs",
     "protein_pos_first", "mane_select", "mutalyzer_gene",
     "hgvs_input", "normalized", "errors",
+    "source_change_id",
 ]
 
 CROSSCHECK_COLS = [
@@ -32,53 +38,63 @@ CROSSCHECK_COLS = [
 
 CHECK_FIELDS = ["c_hgvs", "g_hgvs", "r_hgvs", "p_hgvs"]
 
-def normalise(row, track):
-    out = {c: "" for c in OUTPUT_COLS}
-    for col in OUTPUT_COLS:
-        out[col] = row.get(col, "").strip()
-    out["gene"]         = row.get("gene", "").strip().upper()
+
+def normalise(row, track, changes, stats):
+    out = {c: row.get(c, "").strip() for c in OUTPUT_COLS}
+    out["gene"] = row.get("gene", "").strip().upper()
     out["source_track"] = track
+    sid, allele = changes.lookup(out["gene"], out["accession"], out["allele_num"], out["sysname"], track)
+    out["source_change_id"] = sid
+    if track == TRACK_A and allele and not out["allele_num"]:
+        out["allele_num"] = allele
+        stats["allele_filled"] += 1
+    if not sid:
+        stats[f"no_source_change_{track}"] += 1
     return out
 
-def load_track(path, track_name):
+
+def load_track(path, track_name, changes, stats):
     rows = {}
     with open(path, encoding="utf-8") as f:
         for row in csv.DictReader(f, delimiter="\t"):
-            n = normalise(row, track_name)
-            key = (n["gene"], n["accession"], n["sysname"])
-            if key not in rows:
-                rows[key] = []
-            rows[key].append(n)
+            n = normalise(row, track_name, changes, stats)
+            rows.setdefault((n["gene"], n["accession"], n["sysname"]), []).append(n)
     return rows
+
 
 def best_ok(candidates):
     ok = [r for r in candidates if r["status"] == "ok"]
     return ok[0] if ok else None
 
+
 def strip_version(hgvs):
-    """Strip NM_/NC_ version numbers for loose comparison: NM_000022.4 -> NM_000022"""
-    import re
-    return re.sub(r'\.\d+', '', hgvs)
+    return re.sub(r"\.\d+", "", hgvs)
+
 
 def main():
     log_lines = []
+
     def log(msg):
         print(msg)
         log_lines.append(msg)
 
     log("Loading tracks...")
-    track_a = load_track(TRACK_A, "NG_IDRefseq")
-    track_b = load_track(TRACK_B, "NM_MANE")
-    track_c = load_track(TRACK_C, "NM_IDRefseq")
+    changes = SourceChanges(ALL_MUTATIONS_TSV)
+    stats = defaultdict(int)
+    track_a = load_track(TRACK_A_PATH, TRACK_A, changes, stats)
+    track_b = load_track(TRACK_B_PATH, "NM_MANE", changes, stats)
+    track_c = load_track(TRACK_C_PATH, "NM_IDRefseq", changes, stats)
 
     log(f"  Track A (NG_IDRefseq): {sum(len(v) for v in track_a.values())} rows, {len(track_a)} unique keys")
     log(f"  Track B (NM_MANE):     {sum(len(v) for v in track_b.values())} rows, {len(track_b)} unique keys")
     log(f"  Track C (NM_IDRefseq): {sum(len(v) for v in track_c.values())} rows, {len(track_c)} unique keys")
+    log(f"  Track A rows given allele_num from all_mutations.tsv: {stats['allele_filled']}")
+    for track in (TRACK_A, "NM_MANE", "NM_IDRefseq"):
+        log(f"  {track} rows without a source_change_id: {stats[f'no_source_change_{track}']}")
 
     all_keys = sorted(set(list(track_a.keys()) + list(track_b.keys()) + list(track_c.keys())))
     log(f"  Total unique (gene, accession, sysname) keys: {len(all_keys)}")
 
-    # ── Phase 1: Cross-check where multiple tracks have ok results ────────────
     log("\nPhase 1: Cross-checking agreement between tracks...")
     disagree_rows = []
     crosscheck_stats = defaultdict(lambda: {"compared": 0, "disagree": 0})
@@ -109,25 +125,22 @@ def main():
             ac_agree = (va_s == vc_s) if va and vc else "N/A"
             bc_agree = (vb_s == vc_s) if vb and vc else "N/A"
 
-            track_pair_names = [t for t, _ in ok_tracks]
-            all_agree = all(
-                x is True for x in [ab_agree, ac_agree, bc_agree] if x != "N/A"
-            )
+            all_agree = all(x is True for x in [ab_agree, ac_agree, bc_agree] if x != "N/A")
 
             crosscheck_stats[field]["compared"] += 1
             if not all_agree:
                 crosscheck_stats[field]["disagree"] += 1
                 disagree_rows.append({
-                    "gene":        key[0],
-                    "accession":   key[1],
-                    "sysname":     key[2],
-                    "field":       field,
+                    "gene":          key[0],
+                    "accession":     key[1],
+                    "sysname":       key[2],
+                    "field":         field,
                     "track_A_value": va,
                     "track_B_value": vb,
                     "track_C_value": vc,
-                    "AB_agree":    str(ab_agree),
-                    "AC_agree":    str(ac_agree),
-                    "BC_agree":    str(bc_agree),
+                    "AB_agree":      str(ab_agree),
+                    "AC_agree":      str(ac_agree),
+                    "BC_agree":      str(bc_agree),
                 })
 
     with open(OUT_CROSSCHECK, "w", newline="", encoding="utf-8") as f:
@@ -141,7 +154,6 @@ def main():
         log(f"    {field:<12}  compared: {s['compared']:>5}   disagreements: {s['disagree']:>4}")
     log(f"  Total disagreements written to: {OUT_CROSSCHECK}")
 
-    # ── Phase 2: Priority merge ───────────────────────────────────────────────
     log("\nPhase 2: Priority merge (NM_MANE > NG_IDRefseq > NM_IDRefseq)...")
     merged     = []
     unresolved = []
@@ -196,6 +208,7 @@ def main():
     with open(LOG_PATH, "w", encoding="utf-8") as f:
         f.write("\n".join(log_lines))
     log(f"  Log: {LOG_PATH}")
+
 
 if __name__ == "__main__":
     main()
