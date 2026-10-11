@@ -1,0 +1,32 @@
+#Deleted in new
+chrX	37523681	37523682	A0559_c.422T>C	0	+
+#Deleted in new
+chrX	37523681	37523682	A0559_r.422u>c	0	+
+#Deleted in new
+chrX	37523681	37523682	A0868_c.422T>C	0	+
+#Deleted in new
+chrX	37523681	37523682	A0868_r.422u>c	0	+
+#Deleted in new
+chrX	37523683	37523684	A0465_c.424T>C	0	+
+#Deleted in new
+chrX	37523683	37523684	A0465_r.424u>c	0	+
+#Deleted in new
+chrX	37523681	37523682	A0202_p.Ser422Pro	0	+
+#Deleted in new
+chrX	37523681	37523682	A1223_p.Ser422X	0	+
+#Deleted in new
+chrX	37523681	37523682	A1224_p.Ser422del	0	+
+#Deleted in new
+chrX	37523683	37523684	A0622_p.Trp424X	0	+
+#Deleted in new
+chrX	37523683	37523684	A0623_p.Trp424X	0	+
+#Deleted in new
+chrX	37523683	37523684	A1225_p.Trp424X	0	+
+#Deleted in new
+chrX	37523683	37523684	A1226_p.Trp424X	0	+
+#Deleted in new
+chrX	37523683	37523684	A1227_p.Trp424X	0	+
+#Deleted in new
+chrX	37523683	37523684	A0330_p.Trp424fsX11	0	+
+#Deleted in new
+chrX	37523684	37523685	A0496_p.Tyr425X	0	+

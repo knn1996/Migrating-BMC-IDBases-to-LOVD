@@ -1,6 +1,8 @@
 gene	accession	notation	reason
 ADA	A0052	c.102C>T	no NM fasta found
 ADA	A0052	c.102C>T	no NM fasta found
+ADA	A0053	c.102C>T	no NM fasta found
+ADA	A0053	c.520G>A	no NM fasta found
 ADA	A0068	c.7C>T	no NM fasta found
 ADA	A0068	c.7C>T	no NM fasta found
 ADA	A0069	c.7C>T	no NM fasta found
@@ -11,62 +13,106 @@ ADA	A0071	c.7C>T	no NM fasta found
 ADA	A0071	c.7C>T	no NM fasta found
 ADA	A0072	c.7C>T	no NM fasta found
 ADA	A0072	c.7C>T	no NM fasta found
+ADA	A0037	c.138C>G	no NM fasta found
 ADA	A0037	c.415T>C	no NM fasta found
 ADA	A0010	c.153G>A	no NM fasta found
 ADA	A0010	c.153G>A	no NM fasta found
+ADA	A0001	c.315G>T	no NM fasta found
 ADA	A0001	c.741G>A	no NM fasta found
+ADA	A0065	c.221G>A	no NM fasta found
 ADA	A0065	c.715G>A	no NM fasta found
+ADA	A0048	c.316G>T	no NM fasta found
 ADA	A0048	c.1081C>T	no NM fasta found
 ADA	A0012	c.321C>T	no NM fasta found
 ADA	A0012	c.321C>T	no NM fasta found
+ADA	A0013	c.321C>T	no NM fasta found
 ADA	A0013	c.916C>T	no NM fasta found
+ADA	A0014	c.321C>T	no NM fasta found
 ADA	A0014	c.415T>C	no NM fasta found
+ADA	A0039	c.343C>A	no NM fasta found
+ADA	A0039	c.EX5del	no NM fasta found
+ADA	A0057	c.385A>G	no NM fasta found
+ADA	A0057	c.411C>G	no NM fasta found
+ADA	A0019	c.396C>T	no NM fasta found
 ADA	A0019	c.727G>A	no NM fasta found
+ADA	A0043	c.397G>T	no NM fasta found
 ADA	A0043	c.967C>T	no NM fasta found
+ADA	A0009	c.397G>A	no NM fasta found
 ADA	A0009	c.738G>A	no NM fasta found
 ADA	A0011	c.397G>A	no NM fasta found
 ADA	A0035	c.406C>T	no NM fasta found
 ADA	A0035	c.406C>T	no NM fasta found
+ADA	A0061	c.314delA	no NM fasta found
+ADA	A0061	c.704G>A	no NM fasta found
+ADA	A0063	c.314delA	no NM fasta found
 ADA	A0063	c.929T>C	no NM fasta found
+ADA	A0015	c.415T>C	no NM fasta found
 ADA	A0015	c.726C>T	no NM fasta found
 ADA	A0029	c.415T>C	no NM fasta found
 ADA	A0030	c.415T>C	no NM fasta found
+ADA	A0064	c.355C>T	no NM fasta found
 ADA	A0064	c.704G>A	no NM fasta found
 ADA	A0005	c.462delG	no NM fasta found
 ADA	A0005	c.462delG	no NM fasta found
+ADA	A0008	c.472C>A	no NM fasta found
 ADA	A0008	c.741G>A	no NM fasta found
 ADA	A0006	c.480G>A	no NM fasta found
 ADA	A0006	c.480G>A	no NM fasta found
 ADA	A0007	c.480G>A	no NM fasta found
+ADA	A0003	c.514G>A	no NM fasta found
 ADA	A0003	c.1050_1054delGAAGA	no NM fasta found
+ADA	A0054	c.519C>T	no NM fasta found
+ADA	A0054	c.519C>T	no NM fasta found
 ADA	A0055	c.519C>T	no NM fasta found
 ADA	A0055	c.519C>T	no NM fasta found
+ADA	A0016	c.541G>A	no NM fasta found
 ADA	A0016	c.985C>A	no NM fasta found
+ADA	A0002	c.540C>T	no NM fasta found
 ADA	A0002	c.1104_1106delGAA	no NM fasta found
 ADA	A0058	c.549C>A	no NM fasta found
 ADA	A0058	c.549C>A	no NM fasta found
+ADA	A0044	c.562G>A	no NM fasta found
 ADA	A0044	c.741G>A	no NM fasta found
+ADA	A0024	c.561C>T	no NM fasta found
 ADA	A0024	c.1006T>G	no NM fasta found
+ADA	A0046	c.562G>A	no NM fasta found
 ADA	A0046	c.1050_1054delGAAGA	no NM fasta found
+ADA	A0056	c.562G>A	no NM fasta found
+ADA	A0056	c.EX5del	no NM fasta found
+ADA	A0045	c.562G>A	no NM fasta found
 ADA	A0045	c.1070_1071insATGA	no NM fasta found
+ADA	A0073	c.467G>A	no NM fasta found
 ADA	A0073	c.704delG	no NM fasta found
+ADA	A0042	c.624G>A	no NM fasta found
 ADA	A0042	c.1114_1115delAG	no NM fasta found
+ADA	A0038	c.631C>A	no NM fasta found
+ADA	A0038	c.727G>A	no NM fasta found
+ADA	A0060	c.634_635delTT	no NM fasta found
 ADA	A0060	c.702_773delGAGGCTGTGAAGAGCGGCATTCACCGTACTGTCCACGCCGGGGAGGTGGGCTCGGCCGAAGTAGTAAAAGAG	no NM fasta found
+ADA	A0004	c.691A>C	no NM fasta found
 ADA	A0004	c.741G>A	no NM fasta found
+ADA	A0021	c.727G>A	no NM fasta found
 ADA	A0021	c.1081C>T	no NM fasta found
 ADA	A0018	c.738G>A	no NM fasta found
 ADA	A0018	c.738G>A	no NM fasta found
+ADA	A0028	c.741G>A	no NM fasta found
+ADA	A0028	c.741G>A	no NM fasta found
+ADA	A0031	c.741G>A	no NM fasta found
 ADA	A0031	c.1050_1054delGAAGA	no NM fasta found
+ADA	A0047	c.741G>A	no NM fasta found
 ADA	A0047	c.EX5del	no NM fasta found
 ADA	A0049	c.744G>A	no NM fasta found
 ADA	A0059	c.793C>T	no NM fasta found
 ADA	A0059	c.793C>T	no NM fasta found
+ADA	A0062	c.704G>A	no NM fasta found
 ADA	A0062	c.929T>C	no NM fasta found
 ADA	A0040	c.853G>C	no NM fasta found
 ADA	A0040	c.853G>C	no NM fasta found
+ADA	A0027	c.855C>T	no NM fasta found
 ADA	A0027	c.1081C>T	no NM fasta found
 ADA	A0074	c.845G>A	no NM fasta found
 ADA	A0074	c.845G>A	no NM fasta found
+ADA	A0025	c.967C>T	no NM fasta found
 ADA	A0025	c.1081C>T	no NM fasta found
 ADA	A0017	c.985C>A	no NM fasta found
 ADA	A0017	c.985C>A	no NM fasta found
@@ -78,38 +124,136 @@ ADA	A0032	c.1050_1054delGAAGA	no NM fasta found
 ADA	A0034	c.1050_1054delGAAGA	no NM fasta found
 ADA	A0026	c.1081C>T	no NM fasta found
 ADA	A0026	c.1081C>T	no NM fasta found
+ADA	A0020	c.1081C>T	no NM fasta found
 ADA	A0020	c.EX4del	no NM fasta found
+ADA	A0050	c.95+1G>A	no NM fasta found
 ADA	A0050	c.781-3_781delinsTGGAAGAGCAGATCTGG	no NM fasta found
+ADA	A0051	c.95+1G>A	no NM fasta found
 ADA	A0051	c.781-3_781delinsTGGAAGAGCAGATCTGG	no NM fasta found
 ADA	A0066	c.1112-15T>A	no NM fasta found
 ADA	A0066	c.1112-15T>A	no NM fasta found
+ADA	A0067	c.1112-15T>A	no NM fasta found
 ADA	A0067	c.1112-15TGAACCAACGAG>A	no NM fasta found
+AICDA	A0037	c.21_39delCCGGAGGAAGTTTCTTTAC	no NM fasta found
+AICDA	A0037	c.21_39delCCGGAGGAAGTTTCTTTAC	no NM fasta found
+AICDA	A0059	c.31T>C	no NM fasta found
+AICDA	A0059	c.226_227insT	no NM fasta found
+AICDA	A0001	c.146C>T	no NM fasta found
+AICDA	A0001	c.146C>T	no NM fasta found
+AICDA	A0002	c.146C>T	no NM fasta found
+AICDA	A0002	c.146C>T	no NM fasta found
+AICDA	A0003	c.146C>T	no NM fasta found
+AICDA	A0003	c.146C>T	no NM fasta found
+AICDA	A0005	c.146C>T	no NM fasta found
+AICDA	A0005	c.146C>T	no NM fasta found
+AICDA	A0051	c.70C>T	no NM fasta found
+AICDA	A0051	c.70C>T	no NM fasta found
+AICDA	A0052	c.70C>T	no NM fasta found
+AICDA	A0052	c.70C>T	no NM fasta found
+AICDA	A0062	c.127T>C	no NM fasta found
+AICDA	A0062	c.127T>C	no NM fasta found
+AICDA	A0038	c.166C>T	no NM fasta found
+AICDA	A0038	c.166C>T	no NM fasta found
+AICDA	A0081	c.172G>A	no NM fasta found
 AICDA	A0081	c.259T>C	no NM fasta found
+AICDA	A0031	c.252_260delTGCTCTTCC	no NM fasta found
+AICDA	A0031	c.279G>A	no NM fasta found
+AICDA	A0032	c.252_260delTGCTCTTCC	no NM fasta found
+AICDA	A0032	c.279G>A	no NM fasta found
 AICDA	A0039	c.203G>A	no NM fasta found
 AICDA	A0039	c.203G>A	no NM fasta found
+AICDA	A0040	c.203G>A	no NM fasta found
+AICDA	A0040	c.203G>A	no NM fasta found
+AICDA	A0046	c.203G>A	no NM fasta found
+AICDA	A0047	c.203G>A	no NM fasta found
+AICDA	A0048	c.203G>A	no NM fasta found
+AICDA	A0063	c.235_243delACCTGGTTC	no NM fasta found
+AICDA	A0063	c.235_243delACCTGGTTC	no NM fasta found
 AICDA	A0004	c.314T>C	no NM fasta found
 AICDA	A0004	c.314T>C	no NM fasta found
+AICDA	A0015	c.252G>A	no NM fasta found
+AICDA	A0015	c.252G>A	no NM fasta found
+AICDA	A0029	c.252G>A	no NM fasta found
+AICDA	A0029	c.252G>A	no NM fasta found
+AICDA	A0041	c.259T>C	no NM fasta found
+AICDA	A0041	c.259T>C	no NM fasta found
+AICDA	A0064	c.259T>C	no NM fasta found
+AICDA	A0064	c.259T>C	no NM fasta found
+AICDA	A0078	c.259T>C	no NM fasta found
 AICDA	A0078	c.338T>C	no NM fasta found
+AICDA	A0079	c.259T>C	no NM fasta found
 AICDA	A0079	c.338T>C	no NM fasta found
+AICDA	A0080	c.259T>C	no NM fasta found
 AICDA	A0080	c.338T>C	no NM fasta found
+AICDA	A0082	c.259T>C	no NM fasta found
 AICDA	A0082	c.259T>C	no NM fasta found
 AICDA	A0065	c.293T>G	no NM fasta found
 AICDA	A0065	c.293T>G	no NM fasta found
+AICDA	A0006	c.393T>C	no NM fasta found
+AICDA	A0006	c.393T>C	no NM fasta found
+AICDA	A0007	c.393T>C	no NM fasta found
+AICDA	A0007	c.393T>C	no NM fasta found
+AICDA	A0013	c.410C>T	no NM fasta found
+AICDA	A0013	c.410C>T	no NM fasta found
+AICDA	A0014	c.410C>T	no NM fasta found
+AICDA	A0014	c.410C>T	no NM fasta found
 AICDA	A0030	c.410C>T	no NM fasta found
 AICDA	A0030	c.410C>T	no NM fasta found
+AICDA	A0016	c.410C>T	no NM fasta found
+AICDA	A0016	c.410C>T	no NM fasta found
+AICDA	A0017	c.410C>T	no NM fasta found
+AICDA	A0017	c.410C>T	no NM fasta found
+AICDA	A0018	c.410C>T	no NM fasta found
+AICDA	A0018	c.410C>T	no NM fasta found
 AICDA	A0019	c.410C>T	no NM fasta found
 AICDA	A0019	c.410C>T	no NM fasta found
 AICDA	A0020	c.410C>T	no NM fasta found
 AICDA	A0020	c.410C>T	no NM fasta found
+AICDA	A0021	c.410C>T	no NM fasta found
+AICDA	A0021	c.410C>T	no NM fasta found
+AICDA	A0022	c.410C>T	no NM fasta found
+AICDA	A0022	c.410C>T	no NM fasta found
+AICDA	A0023	c.410C>T	no NM fasta found
+AICDA	A0023	c.410C>T	no NM fasta found
+AICDA	A0024	c.410C>T	no NM fasta found
+AICDA	A0024	c.410C>T	no NM fasta found
 AICDA	A0025	c.410C>T	no NM fasta found
 AICDA	A0025	c.410C>T	no NM fasta found
+AICDA	A0026	c.410C>T	no NM fasta found
+AICDA	A0026	c.410C>T	no NM fasta found
+AICDA	A0058	c.334C>T	no NM fasta found
+AICDA	A0058	c.544delC	no NM fasta found
+AICDA	A0066	c.334C>T	no NM fasta found
+AICDA	A0066	c.334C>T	no NM fasta found
+AICDA	A0067	c.334C>T	no NM fasta found
+AICDA	A0067	c.334C>T	no NM fasta found
 AICDA	A0027	c.411G>A	no NM fasta found
 AICDA	A0027	c.411G>A	no NM fasta found
 AICDA	A0028	c.411G>A	no NM fasta found
 AICDA	A0028	c.411G>A	no NM fasta found
+AICDA	A0053	c.335G>A	no NM fasta found
+AICDA	A0053	c.335G>A	no NM fasta found
+AICDA	A0054	c.335G>A	no NM fasta found
+AICDA	A0054	c.335G>A	no NM fasta found
+AICDA	A0055	c.335G>A	no NM fasta found
+AICDA	A0055	c.335G>A	no NM fasta found
+AICDA	A0056	c.335G>A	no NM fasta found
+AICDA	A0056	c.335G>A	no NM fasta found
+AICDA	A0057	c.335G>A	no NM fasta found
+AICDA	A0057	c.335G>A	no NM fasta found
 AICDA	A0083	c.364G>T	no NM fasta found
+AICDA	A0060	c.407T>A	no NM fasta found
+AICDA	A0060	c.407T>A	no NM fasta found
+AICDA	A0008	c.491A>G	no NM fasta found
+AICDA	A0008	c.491A>G	no NM fasta found
+AICDA	A0011	c.517C>A	no NM fasta found
+AICDA	A0011	c.517C>A	no NM fasta found
+AICDA	A0012	c.517C>A	no NM fasta found
+AICDA	A0012	c.517C>A	no NM fasta found
 AICDA	A0009	c.528T>C	no NM fasta found
 AICDA	A0009	c.528T>C	no NM fasta found
+AICDA	A0010	c.528T>C	no NM fasta found
+AICDA	A0010	c.528T>C	no NM fasta found
 AICDA	A0042	c.522A>C	no NM fasta found
 AICDA	A0042	c.522A>C	no NM fasta found
 AICDA	A0043	c.522A>C	no NM fasta found
@@ -122,34 +266,55 @@ AICDA	A0072	c.568C>T	no NM fasta found
 AICDA	A0073	c.568C>T	no NM fasta found
 AICDA	A0074	c.568C>T	no NM fasta found
 AICDA	A0075	c.568C>T	no NM fasta found
+AICDA	A0076	c.568C>T	no NM fasta found
+AICDA	A0077	c.568C>T	no NM fasta found
 AICDA	A0068	c.G>T	no NM fasta found
 AICDA	A0068	c.G>T	no NM fasta found
 AICDA	A0069	c.G>T	no NM fasta found
 AICDA	A0069	c.G>T	no NM fasta found
 AICDA	A0045	c.A>G	no NM fasta found
 AICDA	A0045	c.A>G	no NM fasta found
+AICDA	A0061	c.G>C	no NM fasta found
+AICDA	A0061	c.G>C	no NM fasta found
+AIRE	A0176	c.1A>T	no NM fasta found
 AIRE	A0176	c.769C>T	no NM fasta found
+AIRE	A0177	c.1A>T	no NM fasta found
 AIRE	A0177	c.769C>T	no NM fasta found
 AIRE	A0247	c.1A>G	no NM fasta found
 AIRE	A0247	c.1A>G	no NM fasta found
 AIRE	A0268	c.20_21insACGCCGGCTTCTGAGGCTGCACC	no NM fasta found
 AIRE	A0268	c.20_21insACGCCGGCTTCTGAGGCTGCACC	no NM fasta found
+AIRE	A0201	c.22C>T	no NM fasta found
 AIRE	A0201	c.290T>C	no NM fasta found
+AIRE	A0203	c.22C>T	no NM fasta found
 AIRE	A0203	c.402delC	no NM fasta found
 AIRE	A0153	c.43C>T	no NM fasta found
+AIRE	A0042	c.171G>T	no NM fasta found
 AIRE	A0042	c.1094_1106del	no NM fasta found
+AIRE	A0104	c.896C>T	no NM fasta found
 AIRE	A0104	c.170_171ins	no NM fasta found
+AIRE	A0106	c.896C>T	no NM fasta found
 AIRE	A0106	c.170_171ins	no NM fasta found
+AIRE	A0159	c.43_44insACGCCGGCTTCTGAGGCTGCACC	no NM fasta found
 AIRE	A0159	c.769C>T	no NM fasta found
+AIRE	A0261	c.21_43dup	no NM fasta found
 AIRE	A0261	c.769C>T	no NM fasta found
+AIRE	A0122	c.896C>T	no NM fasta found
 AIRE	A0122	c.174C>T	no NM fasta found
+AIRE	A0157	c.47C>T	no NM fasta found
 AIRE	A0157	c.769C>T	no NM fasta found
+AIRE	A0158	c.47C>T	no NM fasta found
 AIRE	A0158	c.769C>T	no NM fasta found
+AIRE	A0267	c.62C>T	no NM fasta found
 AIRE	A0267	c.967>	no NM fasta found
+AIRE	A0155	c.232T>A	no NM fasta found
 AIRE	A0155	c.64_69delGTGGAC	no NM fasta found
+AIRE	A0046	c.210T>C	no NM fasta found
 AIRE	A0046	c.1376delC	no NM fasta found
 AIRE	A0087	c.210T>C	no NM fasta found
+AIRE	A0151	c.86T>C	no NM fasta found
 AIRE	A0151	c.1096-1G>C	no NM fasta found
+AIRE	A0152	c.86T>C	no NM fasta found
 AIRE	A0152	c.1096-1G>C	no NM fasta found
 AIRE	A0240	c.93_94insT	no NM fasta found
 AIRE	A0240	c.93_94insT	no NM fasta found
@@ -161,6 +326,7 @@ AIRE	A0243	c.93_94insT	no NM fasta found
 AIRE	A0243	c.93_94insT	no NM fasta found
 AIRE	A0244	c.93_94insT	no NM fasta found
 AIRE	A0244	c.93_94insT	no NM fasta found
+AIRE	A0082	c.1094_1106del	no NM fasta found
 AIRE	A0082	c.318_353del	no NM fasta found
 AIRE	A0089	c.335_336insCAGG	no NM fasta found
 AIRE	A0089	c.335_336insCAGG	no NM fasta found
@@ -168,7 +334,9 @@ AIRE	A0245	c.205_208dup	no NM fasta found
 AIRE	A0245	c.205_208dup	no NM fasta found
 AIRE	A0246	c.205_208dup	no NM fasta found
 AIRE	A0246	c.205_208dup	no NM fasta found
+AIRE	A0156	c.230T>C	no NM fasta found
 AIRE	A0156	c.995+5G>T	no NM fasta found
+AIRE	A0101	c.896C>T	no NM fasta found
 AIRE	A0101	c.359T>A	no NM fasta found
 AIRE	A0140	c.232T>C	no NM fasta found
 AIRE	A0140	c.232T>C	no NM fasta found
@@ -180,25 +348,39 @@ AIRE	A0143	c.232T>C	no NM fasta found
 AIRE	A0143	c.232T>C	no NM fasta found
 AIRE	A0144	c.232T>C	no NM fasta found
 AIRE	A0144	c.232T>C	no NM fasta found
+AIRE	A0145	c.232T>A	no NM fasta found
 AIRE	A0145	c.1072C>T	no NM fasta found
+AIRE	A0146	c.232T>A	no NM fasta found
 AIRE	A0146	c.1072C>T	no NM fasta found
+AIRE	A0147	c.232T>A	no NM fasta found
 AIRE	A0147	c.1072C>T	no NM fasta found
+AIRE	A0148	c.232T>A	no NM fasta found
 AIRE	A0148	c.755C>T	no NM fasta found
 AIRE	A0234	c.232T>C	no NM fasta found
 AIRE	A0234	c.232T>C	no NM fasta found
+AIRE	A0235	c.232T>C	no NM fasta found
 AIRE	A0235	c.1072C>T	no NM fasta found
+AIRE	A0236	c.232T>C	no NM fasta found
 AIRE	A0236	c.1072C>T	no NM fasta found
+AIRE	A0237	c.232T>C	no NM fasta found
 AIRE	A0237	c.1072C>T	no NM fasta found
 AIRE	A0249	c.239T>G	no NM fasta found
 AIRE	A0249	c.239T>G	no NM fasta found
 AIRE	A0250	c.239T>G	no NM fasta found
 AIRE	A0250	c.239T>G	no NM fasta found
+AIRE	A0005	c.374A>G	no NM fasta found
 AIRE	A0005	c.896C>T	no NM fasta found
+AIRE	A0043	c.896C>T	no NM fasta found
 AIRE	A0043	c.396A>G	no NM fasta found
+AIRE	A0044	c.896C>T	no NM fasta found
 AIRE	A0044	c.396A>G	no NM fasta found
+AIRE	A0214	c.274C>T	no NM fasta found
 AIRE	A0214	c.769C>T	no NM fasta found
+AIRE	A0215	c.274C>T	no NM fasta found
 AIRE	A0215	c.967_979delCTGTCCCCTCCGC	no NM fasta found
+AIRE	A0091	c.1094_1106del	no NM fasta found
 AIRE	A0091	c.405T>G	no NM fasta found
+AIRE	A0092	c.1094_1106del	no NM fasta found
 AIRE	A0092	c.405T>G	no NM fasta found
 AIRE	A0022	c.542C>T	no NM fasta found
 AIRE	A0022	c.542C>T	no NM fasta found
@@ -213,6 +395,7 @@ AIRE	A0026	c.542C>T	no NM fasta found
 AIRE	A0027	c.542C>T	no NM fasta found
 AIRE	A0028	c.542C>T	no NM fasta found
 AIRE	A0028	c.542C>T	no NM fasta found
+AIRE	A0029	c.1094_1106del	no NM fasta found
 AIRE	A0029	c.542C>T	no NM fasta found
 AIRE	A0030	c.542C>T	no NM fasta found
 AIRE	A0030	c.542C>T	no NM fasta found
@@ -234,13 +417,20 @@ AIRE	A0233	c.415C>T	no NM fasta found
 AIRE	A0233	c.415C>T	no NM fasta found
 AIRE	A0253	c.415C>T	no NM fasta found
 AIRE	A0253	c.415C>T	no NM fasta found
+AIRE	A0275	c.462A>T	no NM fasta found
 AIRE	A0275	c.769C>T	no NM fasta found
 AIRE	A0088	c.644C>T	no NM fasta found
+AIRE	A0160	c.540delG	no NM fasta found
 AIRE	A0160	c.769C>T	no NM fasta found
+AIRE	A0010	c.734C>T	no NM fasta found
 AIRE	A0010	c.896C>T	no NM fasta found
+AIRE	A0212	c.607C>T	no NM fasta found
 AIRE	A0212	c.769C>T	no NM fasta found
+AIRE	A0213	c.607C>T	no NM fasta found
 AIRE	A0213	c.769C>T	no NM fasta found
+AIRE	A0223	c.607C>T	no NM fasta found
 AIRE	A0223	c.769C>T	no NM fasta found
+AIRE	A0224	c.607C>T	no NM fasta found
 AIRE	A0224	c.769C>T	no NM fasta found
 AIRE	A0232	c.607C>T	no NM fasta found
 AIRE	A0232	c.607C>T	no NM fasta found
@@ -258,10 +448,13 @@ AIRE	A0003	c.896C>T	no NM fasta found
 AIRE	A0003	c.896C>T	no NM fasta found
 AIRE	A0004	c.896C>T	no NM fasta found
 AIRE	A0004	c.896C>T	no NM fasta found
+AIRE	A0006	c.896C>T	no NM fasta found
 AIRE	A0006	c.1765A>T	no NM fasta found
 AIRE	A0007	c.896C>T	no NM fasta found
 AIRE	A0007	c.896C>T	no NM fasta found
+AIRE	A0008	c.896C>T	no NM fasta found
 AIRE	A0008	c.1765A>T	no NM fasta found
+AIRE	A0009	c.896C>T	no NM fasta found
 AIRE	A0009	c.1094_1106del	no NM fasta found
 AIRE	A0012	c.896C>T	no NM fasta found
 AIRE	A0012	c.896C>T	no NM fasta found
@@ -271,30 +464,44 @@ AIRE	A0014	c.896C>T	no NM fasta found
 AIRE	A0014	c.896C>T	no NM fasta found
 AIRE	A0016	c.896C>T	no NM fasta found
 AIRE	A0016	c.896C>T	no NM fasta found
+AIRE	A0017	c.896C>T	no NM fasta found
 AIRE	A0017	c.1094_1106del	no NM fasta found
+AIRE	A0020	c.896C>T	no NM fasta found
 AIRE	A0020	c.1094_1106del	no NM fasta found
+AIRE	A0021	c.896C>T	no NM fasta found
 AIRE	A0021	c.1094_1106del	no NM fasta found
 AIRE	A0063	c.896C>T	no NM fasta found
 AIRE	A0063	c.896C>T	no NM fasta found
 AIRE	A0064	c.896C>T	no NM fasta found
 AIRE	A0064	c.896C>T	no NM fasta found
+AIRE	A0065	c.896C>T	no NM fasta found
 AIRE	A0065	c.1094_1106del	no NM fasta found
+AIRE	A0066	c.896C>T	no NM fasta found
 AIRE	A0066	c.1094_1106del	no NM fasta found
 AIRE	A0067	c.896C>T	no NM fasta found
+AIRE	A0072	c.1369_1370insA	no NM fasta found
 AIRE	A0072	c.896C>T	no NM fasta found
+AIRE	A0073	c.1369_1370insA	no NM fasta found
 AIRE	A0073	c.896C>T	no NM fasta found
+AIRE	A0074	c.1369_1370insA	no NM fasta found
 AIRE	A0074	c.896C>T	no NM fasta found
+AIRE	A0083	c.896C>T	no NM fasta found
 AIRE	A0083	c.1094_1106del	no NM fasta found
+AIRE	A0084	c.1094_1106del	no NM fasta found
 AIRE	A0084	c.896C>T	no NM fasta found
 AIRE	A0085	c.896C>T	no NM fasta found
 AIRE	A0085	c.896C>T	no NM fasta found
+AIRE	A0096	c.896C>T	no NM fasta found
 AIRE	A0096	c.1104C>T	no NM fasta found
+AIRE	A0097	c.896C>T	no NM fasta found
 AIRE	A0097	c.1104C>T	no NM fasta found
+AIRE	A0098	c.896C>T	no NM fasta found
 AIRE	A0098	c.1104C>T	no NM fasta found
 AIRE	A0099	c.896C>T	no NM fasta found
 AIRE	A0099	c.896C>T	no NM fasta found
 AIRE	A0100	c.896C>T	no NM fasta found
 AIRE	A0100	c.896C>T	no NM fasta found
+AIRE	A0102	c.896C>T	no NM fasta found
 AIRE	A0102	c.1094_1106del	no NM fasta found
 AIRE	A0103	c.896C>T	no NM fasta found
 AIRE	A0107	c.896C>T	no NM fasta found
@@ -336,6 +543,7 @@ AIRE	A0132	c.896C>T	no NM fasta found
 AIRE	A0132	c.896C>T	no NM fasta found
 AIRE	A0161	c.769C>T	no NM fasta found
 AIRE	A0161	c.769C>T	no NM fasta found
+AIRE	A0162	c.653-7CTC>	no NM fasta found
 AIRE	A0162	c.769C>T	no NM fasta found
 AIRE	A0165	c.769C>T	no NM fasta found
 AIRE	A0165	c.769C>T	no NM fasta found
@@ -353,21 +561,34 @@ AIRE	A0171	c.769C>T	no NM fasta found
 AIRE	A0171	c.769C>T	no NM fasta found
 AIRE	A0172	c.769C>T	no NM fasta found
 AIRE	A0172	c.769C>T	no NM fasta found
+AIRE	A0173	c.967_979delCTGTCCCCTCCGC	no NM fasta found
 AIRE	A0173	c.769C>T	no NM fasta found
+AIRE	A0174	c.132+1G>C	no NM fasta found
+AIRE	A0174	c.132+5G>	no NM fasta found
 AIRE	A0174	c.769C>T	no NM fasta found
+AIRE	A0175	c.769C>T	no NM fasta found
 AIRE	A0175	c.931delT	no NM fasta found
 AIRE	A0179	c.769C>T	no NM fasta found
 AIRE	A0180	c.769C>T	no NM fasta found
+AIRE	A0181	c.967_979delCTGTCCCCTCCGC	no NM fasta found
 AIRE	A0181	c.769C>T	no NM fasta found
+AIRE	A0182	c.967_979delCTGTCCCCTCCGC	no NM fasta found
 AIRE	A0182	c.769C>T	no NM fasta found
+AIRE	A0183	c.769C>T	no NM fasta found
 AIRE	A0183	c.1242_1243insA	no NM fasta found
+AIRE	A0184	c.769C>T	no NM fasta found
 AIRE	A0184	c.1242_1243insA	no NM fasta found
+AIRE	A0185	c.769C>T	no NM fasta found
 AIRE	A0185	c.1242_1243insA	no NM fasta found
+AIRE	A0197	c.769C>T	no NM fasta found
 AIRE	A0197	c.1336T>G	no NM fasta found
+AIRE	A0198	c.769C>T	no NM fasta found
 AIRE	A0198	c.769C>T	no NM fasta found
 AIRE	A0200	c.769C>T	no NM fasta found
 AIRE	A0200	c.769C>T	no NM fasta found
+AIRE	A0207	c.769C>T	no NM fasta found
 AIRE	A0207	c.1249dupC	no NM fasta found
+AIRE	A0208	c.769C>T	no NM fasta found
 AIRE	A0208	c.967_979delCTGTCCCCTCCGC	no NM fasta found
 AIRE	A0216	c.769C>T	no NM fasta found
 AIRE	A0216	c.769C>T	no NM fasta found
@@ -383,9 +604,13 @@ AIRE	A0221	c.769C>T	no NM fasta found
 AIRE	A0221	c.769C>T	no NM fasta found
 AIRE	A0222	c.769C>T	no NM fasta found
 AIRE	A0222	c.769C>T	no NM fasta found
+AIRE	A0225	c.769C>T	no NM fasta found
 AIRE	A0225	c.967_979delCTGTCCCCTCCGC	no NM fasta found
+AIRE	A0226	c.769C>T	no NM fasta found
 AIRE	A0226	c.967_979delCTGTCCCCTCCGC	no NM fasta found
+AIRE	A0227	c.769C>T	no NM fasta found
 AIRE	A0227	c.967_979delCTGTCCCCTCCGC	no NM fasta found
+AIRE	A0228	c.769C>T	no NM fasta found
 AIRE	A0228	c.967_979delCTGTCCCCTCCGC	no NM fasta found
 AIRE	A0252	c.769C>T	no NM fasta found
 AIRE	A0252	c.769C>T	no NM fasta found
@@ -395,8 +620,11 @@ AIRE	A0259	c.769C>T	no NM fasta found
 AIRE	A0259	c.769C>T	no NM fasta found
 AIRE	A0260	c.769C>T	no NM fasta found
 AIRE	A0260	c.769C>T	no NM fasta found
+AIRE	A0262	c.769C>T	no NM fasta found
 AIRE	A0262	c.965_977delGCCTGTCCCCTCC	no NM fasta found
+AIRE	A0263	c.769C>T	no NM fasta found
 AIRE	A0263	c.1344delC	no NM fasta found
+AIRE	A0264	c.769C>T	no NM fasta found
 AIRE	A0264	c.1344delC	no NM fasta found
 AIRE	A0269	c.769C>T	no NM fasta found
 AIRE	A0269	c.769C>T	no NM fasta found
@@ -408,14 +636,18 @@ AIRE	A0272	c.769C>T	no NM fasta found
 AIRE	A0272	c.769C>T	no NM fasta found
 AIRE	A0273	c.769C>T	no NM fasta found
 AIRE	A0273	c.769C>T	no NM fasta found
+AIRE	A0274	c.769C>T	no NM fasta found
 AIRE	A0274	c.892G>A	no NM fasta found
 AIRE	A0248	c.847dupC	no NM fasta found
 AIRE	A0248	c.847dupC	no NM fasta found
 AIRE	A0204	c.879G>A	no NM fasta found
+AIRE	A0204	c.879G>A	no NM fasta found
+AIRE	A0205	c.879G>A	no NM fasta found
 AIRE	A0205	c.879G>A	no NM fasta found
 AIRE	A0095	c.1028G>A	no NM fasta found
 AIRE	A0251	c.906T>A	no NM fasta found
 AIRE	A0251	c.906T>A	no NM fasta found
+AIRE	A0229	c.905_906delGT	no NM fasta found
 AIRE	A0229	c.967_979delCTGTCCCCTCCGC	no NM fasta found
 AIRE	A0178	c.908G>C	no NM fasta found
 AIRE	A0149	c.931delT	no NM fasta found
@@ -428,7 +660,9 @@ AIRE	A0019	c.1094_1106del	no NM fasta found
 AIRE	A0019	c.1094_1106del	no NM fasta found
 AIRE	A0036	c.1094_1106del	no NM fasta found
 AIRE	A0036	c.1094_1106del	no NM fasta found
+AIRE	A0037	c.1391delC	no NM fasta found
 AIRE	A0037	c.1094_1106del	no NM fasta found
+AIRE	A0038	c.1391delC	no NM fasta found
 AIRE	A0038	c.1094_1106del	no NM fasta found
 AIRE	A0039	c.1094_1106del	no NM fasta found
 AIRE	A0039	c.1094_1106del	no NM fasta found
@@ -480,6 +714,7 @@ AIRE	A0078	c.1094_1106del	no NM fasta found
 AIRE	A0079	c.1094_1106del	no NM fasta found
 AIRE	A0079	c.1094_1106del	no NM fasta found
 AIRE	A0080	c.1094_1106del	no NM fasta found
+AIRE	A0081	c.1094_1106del	no NM fasta found
 AIRE	A0081	c.	no NM fasta found
 AIRE	A0090	c.1094_1106del	no NM fasta found
 AIRE	A0090	c.1094_1106del	no NM fasta found
@@ -491,18 +726,30 @@ AIRE	A0131	c.1094_1106del	no NM fasta found
 AIRE	A0133	c.967_979delCTGTCCCCTCCGC	no NM fasta found
 AIRE	A0133	c.967_979delCTGTCCCCTCCGC	no NM fasta found
 AIRE	A0186	c.967_979delCTGTCCCCTCCGC	no NM fasta found
+AIRE	A0186	c.967_979delCTGTCCCCTCCGC	no NM fasta found
+AIRE	A0187	c.967_979delCTGTCCCCTCCGC	no NM fasta found
 AIRE	A0187	c.967_979delCTGTCCCCTCCGC	no NM fasta found
 AIRE	A0188	c.967_979delCTGTCCCCTCCGC	no NM fasta found
+AIRE	A0188	c.967_979delCTGTCCCCTCCGC	no NM fasta found
 AIRE	A0189	c.967_979delCTGTCCCCTCCGC	no NM fasta found
+AIRE	A0189	c.967_979delCTGTCCCCTCCGC	no NM fasta found
+AIRE	A0190	c.1163_1164insA	no NM fasta found
 AIRE	A0190	c.967_979delCTGTCCCCTCCGC	no NM fasta found
+AIRE	A0191	c.967_979delCTGTCCCCTCCGC	no NM fasta found
 AIRE	A0191	c.1249dupC	no NM fasta found
 AIRE	A0193	c.967_979delCTGTCCCCTCCGC	no NM fasta found
+AIRE	A0193	c.967_979delCTGTCCCCTCCGC	no NM fasta found
+AIRE	A0194	c.967_979delCTGTCCCCTCCGC	no NM fasta found
 AIRE	A0194	c.967_979delCTGTCCCCTCCGC	no NM fasta found
 AIRE	A0195	c.967_979delCTGTCCCCTCCGC	no NM fasta found
+AIRE	A0195	c.967_979delCTGTCCCCTCCGC	no NM fasta found
 AIRE	A0196	c.967_979delCTGTCCCCTCCGC	no NM fasta found
+AIRE	A0196	c.967_979delCTGTCCCCTCCGC	no NM fasta found
+AIRE	A0199	c.967_979delCTGTCCCCTCCGC	no NM fasta found
 AIRE	A0199	c.967_979delCTGTCCCCTCCGC	no NM fasta found
 AIRE	A0202	c.967_979delCTGTCCCCTCCGC	no NM fasta found
 AIRE	A0202	c.967_979delCTGTCCCCTCCGC	no NM fasta found
+AIRE	A0206	c.967_979delCTGTCCCCTCCGC	no NM fasta found
 AIRE	A0206	c.1249dupC	no NM fasta found
 AIRE	A0209	c.967_979delCTGTCCCCTCCGC	no NM fasta found
 AIRE	A0209	c.967_979delCTGTCCCCTCCGC	no NM fasta found
@@ -519,24 +766,32 @@ AIRE	A0256	c.967_979delCTGTCCCCTCCGC	no NM fasta found
 AIRE	A0257	c.967_979delCTGTCCCCTCCGC	no NM fasta found
 AIRE	A0257	c.967_979delCTGTCCCCTCCGC	no NM fasta found
 AIRE	A0265	c.967_979delCTGTCCCCTCCGC	no NM fasta found
+AIRE	A0265	c.(?_68)_(1567-14_?)del	no NM fasta found
 AIRE	A0266	c.967_979delCTGTCCCCTCCGC	no NM fasta found
+AIRE	A0266	c.(?_68)_(1567-14_?)del	no NM fasta found
 AIRE	A0011	c.1096_1097insCCTG	no NM fasta found
 AIRE	A0011	c.1096_1097insCCTG	no NM fasta found
 AIRE	A0163	c.1064_1068dup	no NM fasta found
+AIRE	A0093	c.1640delG	no NM fasta found
 AIRE	A0093	c.1230_1231insC	no NM fasta found
+AIRE	A0094	c.1640delG	no NM fasta found
 AIRE	A0094	c.1230_1231insC	no NM fasta found
 AIRE	A0238	c.1236_1237insGCCG	no NM fasta found
 AIRE	A0238	c.1236_1237insGCCG	no NM fasta found
 AIRE	A0239	c.1236_1237insGCCG	no NM fasta found
 AIRE	A0239	c.1236_1237insGCCG	no NM fasta found
 AIRE	A0192	c.1249dupC	no NM fasta found
+AIRE	A0192	c.1249dupC	no NM fasta found
 AIRE	A0086	c.1391delC	no NM fasta found
 AIRE	A0068	c.1421_1422insAC	no NM fasta found
 AIRE	A0210	c.1314_1326delinsGT	no NM fasta found
 AIRE	A0210	c.1314_1326delinsGT	no NM fasta found
+AIRE	A0154	c.1344delinsTT	no NM fasta found
 AIRE	A0154	c.1400+1G>A	no NM fasta found
 AIRE	A0150	c.1616C>T	no NM fasta found
 AIRE	A0150	c.1616C>T	no NM fasta found
+AIRE	A0211	c.132+1G>C	no NM fasta found
+AIRE	A0211	c.132+5G>	no NM fasta found
 AIRE	A0211	c.132+1G>C	no NM fasta found
 AIRE	A0211	c.132+5G>	no NM fasta found
 BIRC4	B0011	c.1100-?_1300+?del	unparseable c. notation
@@ -545,30 +800,39 @@ BIRC4	B0013	c.1-?_1099+?del	unparseable c. notation
 BTK	A0625	c.135G>T	out of scope
 BTK	A0800	c.135G>T	out of scope
 BTK	A0801	c.135G>T	out of scope
+BTK	A0831	c.135G>T	out of scope
 BTK	A1438	c.3G>T	out of scope
 BTK	A1440	c.3G>T	out of scope
 BTK	A1441	c.3G>T	out of scope
 BTK	A1457	c.2T>A	out of scope
+BTK	A0270	c.2T>C	out of scope
 BTK	A1081	c.2T>C	out of scope
 BTK	A1051	c.12dupG	out of scope
 BTK	A1052	c.12dupG	out of scope
 BTK	A1370	c.29T>A	out of scope
 BTK	A1070	c.32T>C	out of scope
+BTK	A0327	c.30dupT	out of scope
 BTK	A0679	c.37C>T	out of scope
 BTK	A0811	c.169C>T	out of scope
 BTK	A0853	c.169C>T	out of scope
 BTK	A0854	c.169C>T	out of scope
+BTK	A1014	c.37C>T	out of scope
 BTK	A1082	c.37C>T	out of scope
 BTK	A1310	c.37C>T	out of scope
 BTK	A1521	c.37C>T	out of scope
 BTK	A1332	c.41C>A	out of scope
+BTK	A1333	c.41C>A	out of scope
 BTK	A1083	c.43C>T	out of scope
+BTK	A1353	c.45delA	out of scope
 BTK	A0937	c.49A>G	out of scope
 BTK	A1483	c.62C>A	out of scope
 BTK	A1084	c.63delA	out of scope
 BTK	A1523	c.64C>G	out of scope
 BTK	A0840	c.214C>T	out of scope
 BTK	A0863	c.214C>T	out of scope
+BTK	A0985	c.82C>T	out of scope
+BTK	A1185	c.82C>T	out of scope
+BTK	A1206	c.82C>T	out of scope
 BTK	A1236	c.82C>T	out of scope
 BTK	A1311	c.82C>T	out of scope
 BTK	A1443	c.82C>T	out of scope
@@ -588,6 +852,7 @@ BTK	A0918	c.82C>A	out of scope
 BTK	A1334	c.82C>A	out of scope
 BTK	A1371	c.87_99delGTTTCTCTTGACC	out of scope
 BTK	A1086	c.92T>C	out of scope
+BTK	A0986	c.95T>C	out of scope
 BTK	A0987	c.95T>C	out of scope
 BTK	A0988	c.95T>C	out of scope
 BTK	A1446	c.95T>C	out of scope
@@ -602,19 +867,25 @@ BTK	A1373	c.115T>A	out of scope
 BTK	A0939	c.117C>A	out of scope
 BTK	A0940	c.117C>A	out of scope
 BTK	A0846	c.251A>G	out of scope
+BTK	A1337	c.119A>G	out of scope
 BTK	A1026	c.119_141delATGAGTATGACTTTGAACGTGGG	out of scope
 BTK	A1354	c.118_119delTA	out of scope
+BTK	A1355	c.126delT	out of scope
 BTK	A1525	c.126T>G	out of scope
 BTK	A0749	c.126_127insA	out of scope
 BTK	A1368	c.137_139delinsTT	out of scope
 BTK	A1087	c.141delG	out of scope
 BTK	A0919	c.142_147delAGAAGA	out of scope
+BTK	A1027	c.142_143delAG	out of scope
 BTK	A1028	c.156delG	out of scope
+BTK	A0127	c.153dupT	out of scope
+BTK	A0769	c.291delG	out of scope
 BTK	A0770	c.291delG	out of scope
 BTK	A0792	c.292delG	out of scope
 BTK	A0942	c.160delG	out of scope
 BTK	A1071	c.167T>C	out of scope
 BTK	A0368	c.174dupT	out of scope
+BTK	A0406	c.308_310delAGA	out of scope
 BTK	A0407	c.308_310delAGA	out of scope
 BTK	A0778	c.308_310delAGA	out of scope
 BTK	A0779	c.308_310delAGA	out of scope
@@ -627,6 +898,7 @@ BTK	A0788	c.314T>C	out of scope
 BTK	A0518	c.214_215delinsT	out of scope
 BTK	A0869	c.346_347delAA	out of scope
 BTK	A0870	c.346_347delAA	out of scope
+BTK	A1205	c.215delA	out of scope
 BTK	A0147	c.215dupA	out of scope
 BTK	A0148	c.215dupA	out of scope
 BTK	A0149	c.215dupA	out of scope
@@ -634,21 +906,32 @@ BTK	A0150	c.215dupA	out of scope
 BTK	A0228	c.215dupA	out of scope
 BTK	A0626	c.215dupA	out of scope
 BTK	A0627	c.215dupA	out of scope
+BTK	A0820	c.215dupA	out of scope
 BTK	A0871	c.215dupA	out of scope
+BTK	A1422	c.215dupA	out of scope
+BTK	A1423	c.215dupA	out of scope
 BTK	A0943	c.232C>T	out of scope
 BTK	A1089	c.232C>T	out of scope
 BTK	A0828	c.364_379del	out of scope
 BTK	A1503	c.241_309del	out of scope
+BTK	A0298	c.241_245delAGAAG	out of scope
+BTK	A0299	c.241_245delAGAAG	out of scope
 BTK	A0944	c.269delA	out of scope
 BTK	A1091	c.263_269dup	out of scope
+BTK	A1513	c.271C>T	out of scope
+BTK	A1514	c.271C>T	out of scope
 BTK	A0990	c.292T>G	out of scope
+BTK	A1451	c.298T>A	out of scope
 BTK	A1348	c.300T>G	out of scope
 BTK	A0812	c.440A>G	out of scope
 BTK	A1093	c.310_311delGT	out of scope
 BTK	A1448	c.332T>C	out of scope
+BTK	A0991	c.332T>G	out of scope
 BTK	A0945	c.334T>C	out of scope
 BTK	A1094	c.336C>G	out of scope
 BTK	A1068	c.340_347delTTCTCCCC	out of scope
+BTK	A1437	c.347C>T	out of scope
+BTK	A0992	c.349A>C	out of scope
 BTK	A0946	c.372G>T	out of scope
 BTK	A0947	c.372G>T	out of scope
 BTK	A1312	c.370T>C	out of scope
@@ -660,7 +943,10 @@ BTK	A1485	c.405delC	out of scope
 BTK	A1064	c.404_413dup	out of scope
 BTK	A1374	c.421A>T	out of scope
 BTK	A1375	c.421A>T	out of scope
+BTK	A0777	c.563delC	out of scope
+BTK	A1305	c.563delC	out of scope
 BTK	A0371	c.450dupG	out of scope
+BTK	A1212	c.455A>G	out of scope
 BTK	A0948	c.460T>G	out of scope
 BTK	A0914	c.593G>A	out of scope
 BTK	A0923	c.464G>A	out of scope
@@ -669,6 +955,7 @@ BTK	A0560	c.470dupA	out of scope
 BTK	A1030	c.472_475delACAG	out of scope
 BTK	A0111	c.477_478insT	out of scope
 BTK	A0723	c.482dupA	out of scope
+BTK	A1053	c.482dupA	out of scope
 BTK	A0921	c.494G>A	out of scope
 BTK	A0922	c.494G>A	out of scope
 BTK	A1098	c.496C>T	out of scope
@@ -678,6 +965,7 @@ BTK	A0112	c.524dupT	out of scope
 BTK	A0231	c.524dupT	out of scope
 BTK	A0696	c.524dupT	out of scope
 BTK	A1102	c.557_558delinsT	out of scope
+BTK	A0086	c.557dupA	out of scope
 BTK	A0233	c.557dupA	out of scope
 BTK	A0697	c.557dupA	out of scope
 BTK	A1463	c.579G>T	out of scope
@@ -692,11 +980,14 @@ BTK	A0874	c.740delC	out of scope
 BTK	A0486	c.608_610delinsTGGTG	out of scope
 BTK	A0834	c.744_745delTG	out of scope
 BTK	A0802	c.774_775delTG	out of scope
+BTK	A1031	c.653delA	out of scope
 BTK	A1186	c.655delG	out of scope
+BTK	A1418	c.655delG	out of scope
 BTK	A1103	c.669T>G	out of scope
 BTK	A1032	c.671delA	out of scope
 BTK	A0416	c.682delinsGT	out of scope
 BTK	A1376	c.685_694delAATGCAAATG	out of scope
+BTK	A1235	c.685_686insTTAC	out of scope
 BTK	A0849	c.832C>T	out of scope
 BTK	A0850	c.832C>T	out of scope
 BTK	A0924	c.700C>T	out of scope
@@ -707,8 +998,10 @@ BTK	A1015	c.718G>T	out of scope
 BTK	A1486	c.720delA	out of scope
 BTK	A0399	c.726dupT	out of scope
 BTK	A0949	c.740delG	out of scope
+BTK	A1349	c.753G>A	out of scope
 BTK	A1016	c.756G>A	out of scope
 BTK	A1350	c.755G>A	out of scope
+BTK	A0830	c.895C>T	out of scope
 BTK	A0875	c.895C>T	out of scope
 BTK	A0876	c.895C>T	out of scope
 BTK	A0877	c.895C>T	out of scope
@@ -721,6 +1014,8 @@ BTK	A1018	c.763C>T	out of scope
 BTK	A1019	c.763C>T	out of scope
 BTK	A1104	c.763C>T	out of scope
 BTK	A1105	c.763C>T	out of scope
+BTK	A1207	c.763C>T	out of scope
+BTK	A1208	c.763C>T	out of scope
 BTK	A1487	c.763C>T	out of scope
 BTK	A0089	c.781delinsTTA	out of scope
 BTK	A1356	c.817delG	out of scope
@@ -731,11 +1026,14 @@ BTK	A1065	c.843G>A	out of scope
 BTK	A1505	c.843_974+1del	out of scope
 BTK	A1109	c.854delA	out of scope
 BTK	A1110	c.856_857delAT	out of scope
+BTK	A1187	c.857_867delinsGGTGGTATTCCAAA	out of scope
 BTK	A1445	c.857_867delinsGGTGGTATTCCAAA	out of scope
 BTK	A0959	c.863G>A	out of scope
 BTK	A1112	c.863G>A	out of scope
 BTK	A1113	c.863G>A	out of scope
 BTK	A1338	c.863G>A	out of scope
+BTK	A1500	c.863G>A	out of scope
+BTK	A1501	c.863G>A	out of scope
 BTK	A0926	c.862C>T	out of scope
 BTK	A0927	c.862C>T	out of scope
 BTK	A0928	c.862C>T	out of scope
@@ -748,6 +1046,8 @@ BTK	A0958	c.862C>T	out of scope
 BTK	A0993	c.862C>T	out of scope
 BTK	A0994	c.862C>T	out of scope
 BTK	A1111	c.862C>T	out of scope
+BTK	A1228	c.862C>T	out of scope
+BTK	A1237	c.862C>T	out of scope
 BTK	A1481	c.862C>T	out of scope
 BTK	A1464	c.862C>T	out of scope
 BTK	A1114	c.862_865delCGGA	out of scope
@@ -756,6 +1056,7 @@ BTK	A1447	c.887delA	out of scope
 BTK	A0880	c.1021C>T	out of scope
 BTK	A1465	c.892_893insTTGCTAAAGCAACTGCTAAAGCAAG	out of scope
 BTK	A1033	c.895_974del	out of scope
+BTK	A1034	c.895_974del	out of scope
 BTK	A1504	c.896_974+1del	out of scope
 BTK	A1035	c.901_903delGAA	out of scope
 BTK	A0960	c.905G>A	out of scope
@@ -767,6 +1068,7 @@ BTK	A0995	c.919A>G	out of scope
 BTK	A0881	c.1052G>A	out of scope
 BTK	A0996	c.921A>G	out of scope
 BTK	A0961	c.922_923delGA	out of scope
+BTK	A1188	c.922_923delGA	out of scope
 BTK	A1420	c.922_923delGA	out of scope
 BTK	A1116	c.942delA	out of scope
 BTK	A1406	c.946A>G	out of scope
@@ -795,11 +1097,14 @@ BTK	A0726	c.1044dupG	out of scope
 BTK	A1317	c.1064T>A	out of scope
 BTK	A1381	c.1064T>A	out of scope
 BTK	A1382	c.1064T>A	out of scope
+BTK	A1480	c.1064T>A	out of scope
+BTK	A1482	c.1064T>A	out of scope
 BTK	A1425	c.1064T>C	out of scope
 BTK	A0963	c.1072C>T	out of scope
 BTK	A0684	c.1079delA	out of scope
 BTK	A1123	c.1081T>G	out of scope
 BTK	A1124	c.1083C>A	out of scope
+BTK	A1037	c.1081_1083delTAC	out of scope
 BTK	A1383	c.1087C>T	out of scope
 BTK	A0964	c.1088dupA	out of scope
 BTK	A1125	c.1090C>G	out of scope
@@ -809,6 +1114,7 @@ BTK	A1384	c.1100C>A	out of scope
 BTK	A1385	c.1100C>A	out of scope
 BTK	A1467	c.1103G>A	out of scope
 BTK	A1126	c.1102G>T	out of scope
+BTK	A1038	c.1103_1115delGACTCATATCCAG	out of scope
 BTK	A0966	c.1105C>T	out of scope
 BTK	A1516	c.1105C>T	out of scope
 BTK	A1512	c.1106T>C	out of scope
@@ -817,7 +1123,9 @@ BTK	A0883	c.1243T>C	out of scope
 BTK	A0884	c.1243T>C	out of scope
 BTK	A1059	c.1114A>G	out of scope
 BTK	A1524	c.1117C>A	out of scope
+BTK	A1442	c.1117C>G	out of scope
 BTK	A1238	c.1122A>C	out of scope
+BTK	A0166	c.1116_1131dup	out of scope
 BTK	A0059	c.1116_1131dup	out of scope
 BTK	A0060	c.1116_1131dup	out of scope
 BTK	A1128	c.1138C>T	out of scope
@@ -832,18 +1140,26 @@ BTK	A1131	c.1184G>A	out of scope
 BTK	A0885	c.1335_1338delCCTG	out of scope
 BTK	A0808	c.1337T>C	out of scope
 BTK	A0809	c.1337T>C	out of scope
+BTK	A1308	c.1219_1221delGAG	out of scope
 BTK	A1405	c.1223T>C	out of scope
+BTK	A1054	c.1226_1227insA	out of scope
 BTK	A0237	c.1227dupG	out of scope
 BTK	A0677	c.1227dupG	out of scope
 BTK	A0687	c.1227dupG	out of scope
+BTK	A1220	c.1256G>A	out of scope
 BTK	A1132	c.1255G>A	out of scope
 BTK	A1233	c.1263G>A	out of scope
+BTK	A0821	c.1407C>A	out of scope
 BTK	A1190	c.1278delC	out of scope
 BTK	A1421	c.1278delC	out of scope
 BTK	A0688	c.1288A>G	out of scope
+BTK	A1239	c.1288A>G	out of scope
 BTK	A1352	c.1288A>T	out of scope
 BTK	A1478	c.1321G>T	out of scope
+BTK	A1210	c.1346delT	out of scope
+BTK	A1218	c.1350G>A	out of scope
 BTK	A1040	c.1350_1631del	out of scope
+BTK	A1211	c.1219_1221delGAG	out of scope
 BTK	A1497	c.1351_2989del	out of scope
 BTK	A1502	c.1351_1566+1del	out of scope
 BTK	A1493	c.1351_1750+1del	out of scope
@@ -854,7 +1170,10 @@ BTK	A1387	c.1363G>T	out of scope
 BTK	A0968	c.1383_1384delTG	out of scope
 BTK	A0915	c.1517G>A	out of scope
 BTK	A1134	c.1385G>A	out of scope
+BTK	A1020	c.1392C>A	out of scope
+BTK	A1222	c.1392C>A	out of scope
 BTK	A1135	c.1418_1420delTCA	out of scope
+BTK	A0271	c.1426T>G	out of scope
 BTK	A0829	c.1558T>G	out of scope
 BTK	A1409	c.1427delA	out of scope
 BTK	A0819	c.1587C>A	out of scope
@@ -863,6 +1182,7 @@ BTK	A1389	c.1462G>T	out of scope
 BTK	A1390	c.1462G>T	out of scope
 BTK	A1391	c.1480C>T	out of scope
 BTK	A1392	c.1480C>T	out of scope
+BTK	A1209	c.1486C>T	out of scope
 BTK	A1468	c.1486C>T	out of scope
 BTK	A0886	c.1621C>T	out of scope
 BTK	A0887	c.1621C>T	out of scope
@@ -871,17 +1191,21 @@ BTK	A1022	c.1498G>T	out of scope
 BTK	A0842	c.1634T>C	out of scope
 BTK	A1488	c.1505G>A	out of scope
 BTK	A1136	c.1511A>T	out of scope
+BTK	A1041	c.1511delA	out of scope
 BTK	A1469	c.1514T>A	out of scope
 BTK	A1137	c.1517G>T	out of scope
 BTK	A0818	c.1659G>A	out of scope
+BTK	A0997	c.1527G>T	out of scope
 BTK	A0836	c.1658T>C	out of scope
 BTK	A1192	c.1526T>C	out of scope
 BTK	A1341	c.1526T>C	out of scope
 BTK	A1453	c.1526T>C	out of scope
 BTK	A0580	c.1525dupA	out of scope
 BTK	A1138	c.1525dupA	out of scope
+BTK	A1056	c.1531T>A	out of scope
 BTK	A1139	c.1533C>A	out of scope
 BTK	A0214	c.1528_1531dup	out of scope
+BTK	A0215	c.1528_1531dup	out of scope
 BTK	A0216	c.1528_1531dup	out of scope
 BTK	A0933	c.1535T>C	out of scope
 BTK	A0888	c.1690C>G	out of scope
@@ -897,17 +1221,23 @@ BTK	A0970	c.1558C>T	out of scope
 BTK	A1023	c.1558C>T	out of scope
 BTK	A1140	c.1558C>T	out of scope
 BTK	A1141	c.1558C>T	out of scope
+BTK	A1193	c.1558C>T	out of scope
 BTK	A1318	c.1558C>T	out of scope
 BTK	A1439	c.1558C>T	out of scope
 BTK	A1144	c.1562A>G	out of scope
 BTK	A1393	c.1565T>C	out of scope
+BTK	A1342	c.1568C>T	out of scope
+BTK	A0796	c.1567-7_1567-1dup	out of scope
+BTK	A1343	c.1570G>C	out of scope
 BTK	A0974	c.1574G>C	out of scope
+BTK	A0998	c.1574G>A	out of scope
 BTK	A1319	c.1574G>A	out of scope
 BTK	A1320	c.1574G>A	out of scope
 BTK	A1024	c.1573C>T	out of scope
 BTK	A1025	c.1573C>T	out of scope
 BTK	A1146	c.1574_1575dup	out of scope
 BTK	A1147	c.1579T>A	out of scope
+BTK	A0037	c.1581_1584delTTTG	out of scope
 BTK	A0094	c.1581_1584delTTTG	out of scope
 BTK	A0200	c.1581_1584delTTTG	out of scope
 BTK	A0524	c.1581_1584delTTTG	out of scope
@@ -921,8 +1251,11 @@ BTK	A0975	c.1622G>A	out of scope
 BTK	A0896	c.1757T>C	out of scope
 BTK	A0897	c.1757T>C	out of scope
 BTK	A1202	c.1630A>G	out of scope
+BTK	A1241	c.1630A>G	out of scope
 BTK	A1511	c.1630A>G	out of scope
 BTK	A1322	c.1631G>A	out of scope
+BTK	A1344	c.1631G>A	out of scope
+BTK	A1242	c.1632G>T	out of scope
 BTK	A1416	c.1632G>C	out of scope
 BTK	A1489	c.1632G>T	out of scope
 BTK	A1396	c.1631G>C	out of scope
@@ -931,6 +1264,7 @@ BTK	A1395	c.1630delA	out of scope
 BTK	A1042	c.1632_1788del	out of scope
 BTK	A1152	c.1637T>C	out of scope
 BTK	A1153	c.1634_1640dup	out of scope
+BTK	A1201	c.1651T>C	out of scope
 BTK	A1470	c.1661C>G	out of scope
 BTK	A0760	c.1800_1821del	out of scope
 BTK	A0761	c.1800_1821del	out of scope
@@ -941,6 +1275,8 @@ BTK	A0817	c.1816C>T	out of scope
 BTK	A0835	c.1816C>T	out of scope
 BTK	A0898	c.1816C>T	out of scope
 BTK	A0999	c.1684C>T	out of scope
+BTK	A1000	c.1684C>T	out of scope
+BTK	A1001	c.1684C>T	out of scope
 BTK	A1057	c.1684C>T	out of scope
 BTK	A1058	c.1684C>T	out of scope
 BTK	A1060	c.1684C>T	out of scope
@@ -948,6 +1284,7 @@ BTK	A1154	c.1684C>T	out of scope
 BTK	A1155	c.1684C>T	out of scope
 BTK	A1156	c.1684C>T	out of scope
 BTK	A1157	c.1684C>T	out of scope
+BTK	A1194	c.1684C>T	out of scope
 BTK	A1229	c.1684C>T	out of scope
 BTK	A1417	c.1684C>T	out of scope
 BTK	A1471	c.1684C>T	out of scope
@@ -975,20 +1312,29 @@ BTK	A1399	c.1735G>A	out of scope
 BTK	A1074	c.1736A>T	out of scope
 BTK	A0899	c.1873T>C	out of scope
 BTK	A0900	c.1873T>C	out of scope
+BTK	A1063	c.1742G>C	out of scope
 BTK	A1345	c.1745C>A	out of scope
+BTK	A1346	c.1745C>A	out of scope
+BTK	A1003	c.1745C>T	out of scope
 BTK	A1163	c.1745C>T	out of scope
 BTK	A1164	c.1745C>T	out of scope
 BTK	A1491	c.1747T>C	out of scope
 BTK	A1492	c.1747T>C	out of scope
 BTK	A0979	c.1749delT	out of scope
 BTK	A1230	c.1749delT	out of scope
+BTK	A0767	c.1882G>A	out of scope
+BTK	A0768	c.1882G>A	out of scope
 BTK	A0935	c.1750G>A	out of scope
 BTK	A0936	c.1750G>A	out of scope
 BTK	A1520	c.1754T>C	out of scope
+BTK	A1004	c.1753G>T	out of scope
 BTK	A1473	c.1753G>T	out of scope
+BTK	A0822	c.1892T>C	out of scope
 BTK	A0981	c.1764G>T	out of scope
+BTK	A1221	c.1762T>C	out of scope
 BTK	A0901	c.1895G>A	out of scope
 BTK	A1169	c.1763G>A	out of scope
+BTK	A1200	c.1764G>A	out of scope
 BTK	A1326	c.1764_1766delGGA	out of scope
 BTK	A1067	c.1768A>T	out of scope
 BTK	A0902	c.1900delA	out of scope
@@ -1006,17 +1352,25 @@ BTK	A1170	c.1789C>A	out of scope
 BTK	A1055	c.1792T>G	out of scope
 BTK	A1008	c.1793A>C	out of scope
 BTK	A1328	c.1794T>G	out of scope
+BTK	A1518	c.1802_1803delinsGC	out of scope
+BTK	A1518	c.1802_1803insC	out of scope
 BTK	A1522	c.1802_1803delinsGCC	out of scope
 BTK	A1043	c.1810_1811delAG	out of scope
+BTK	A0862	c.1942_1943delAG	out of scope
 BTK	A1454	c.1814A>G	out of scope
 BTK	A1479	c.1814A>G	out of scope
+BTK	A0342	c.1812_1813insGACAGT	out of scope
 BTK	A1171	c.1816A>C	out of scope
+BTK	A0799	c.1827_1828dup	out of scope
 BTK	A0903	c.1967A>C	out of scope
 BTK	A1061	c.1838G>C	out of scope
 BTK	A0844	c.1970G>A	out of scope
 BTK	A0845	c.1970G>A	out of scope
+BTK	A1009	c.1844G>C	out of scope
 BTK	A1172	c.1844G>C	out of scope
+BTK	A1216	c.1843C>A	out of scope
 BTK	A1173	c.1846C>T	out of scope
+BTK	A1215	c.1846C>T	out of scope
 BTK	A1329	c.1846C>T	out of scope
 BTK	A1010	c.1846C>A	out of scope
 BTK	A1400	c.1846C>G	out of scope
@@ -1033,8 +1387,10 @@ BTK	A0908	c.2000C>T	out of scope
 BTK	A1176	c.1873A>T	out of scope
 BTK	A1044	c.1876_1908del	out of scope
 BTK	A1045	c.1876_1908del	out of scope
+BTK	A1046	c.1876_1908del	out of scope
 BTK	A1047	c.1876_1908del	out of scope
 BTK	A0724	c.1879_1883delinsCAGTACATGCCAA	out of scope
+BTK	A0157	c.1881_1882insCA	out of scope
 BTK	A1177	c.1889T>C	out of scope
 BTK	A1178	c.1889T>C	out of scope
 BTK	A0066	c.1862_1887dup	out of scope
@@ -1049,6 +1405,7 @@ BTK	A1048	c.1911delA	out of scope
 BTK	A0027	c.1909-6_1909-1dup	out of scope
 BTK	A1049	c.1912_1914delGCA	out of scope
 BTK	A1415	c.1915G>T	out of scope
+BTK	A1012	c.1921C>T	out of scope
 BTK	A1183	c.1921C>T	out of scope
 BTK	A1424	c.1921C>T	out of scope
 BTK	A1401	c.1921C>G	out of scope
@@ -1056,27 +1413,44 @@ BTK	A0690	c.1922G>A	out of scope
 BTK	A1184	c.1922G>A	out of scope
 BTK	A1419	c.1922G>A	out of scope
 BTK	A1449	c.1922G>A	out of scope
+BTK	A1225	c.1921_1927delCGTCCCA	out of scope
 BTK	A1347	c.1925C>G	out of scope
+BTK	A0513	c.1925_1932delCCACTTTC	out of scope
 BTK	A1013	c.1928C>T	out of scope
 BTK	A1050	c.1929delT	out of scope
 BTK	A1402	c.1931T>A	out of scope
 BTK	A1403	c.1952T>G	out of scope
+BTK	A1199	c.1952T>C	out of scope
+BTK	A0795	c.-23dupG	out of scope
 BTK	A1428	c.-57A>G	out of scope
+BTK	A1444	c.-30_240del	out of scope
 BTK	A1078	c.-30+1G>C	out of scope
 BTK	A1079	c.-30+1G>C	out of scope
+BTK	A1203	c.-30+5G>C	out of scope
+BTK	A1204	c.-30+5G>C	out of scope
 BTK	A1251	c.-30+5G>A	out of scope
 BTK	A1360	c.-30+1G>A	out of scope
+BTK	A1476	c.-31+5G>T	out of scope
 BTK	A0941	c.141+2T>G	out of scope
 BTK	A1088	c.141+1G>C	out of scope
+BTK	A1407	c.141+11C>T	out of scope
+BTK	A1407	c.1252T>C	out of scope
 BTK	A1407	c.1873A>T	out of scope
+BTK	A1408	c.141+11C>T	out of scope
+BTK	A1408	c.1252T>C	out of scope
 BTK	A1408	c.1873A>T	out of scope
 BTK	A0823	c.240_241ins106	out of scope
 BTK	A0920	c.241-2A>G	out of scope
 BTK	A1090	c.240+2T>G	out of scope
+BTK	A1217	c.240+2T>C	out of scope
+BTK	A0838	c.309_310insTCTGTGTTTTCATCGACCCGG	out of scope
+BTK	A0011	c.309_310insTCTGTGTTTTCATCGACCCGG	out of scope
 BTK	A1092	c.310-2A>T	out of scope
+BTK	A1223	c.310-1G>A	out of scope
 BTK	A1075	c.392-2A>G	out of scope
 BTK	A1076	c.392-2A>G	out of scope
 BTK	A1077	c.392-2A>G	out of scope
+BTK	A1224	c.391+1G>A	out of scope
 BTK	A1314	c.392-2A>G	out of scope
 BTK	A1461	c.391+1G>A	out of scope
 BTK	A1462	c.391+1G>A	out of scope
@@ -1096,14 +1470,19 @@ BTK	A1455	c.895-11C>A	out of scope
 BTK	A1118	c.974+5G>T	out of scope
 BTK	A1119	c.974+5G>T	out of scope
 BTK	A1362	c.975-2A>C	out of scope
+BTK	A1363	c.974+1G>A	out of scope
 BTK	A0519	c.1102+1_1102+11delGTGAGTACCAG	out of scope
 BTK	A0965	c.1102+1G>A	out of scope
 BTK	A1127	c.1103-1G>A	out of scope
+BTK	A1198	c.1102+1G>A	out of scope
 BTK	A0932	c.1350-2A>G	out of scope
 BTK	A0967	c.1349+5G>A	out of scope
 BTK	A1145	c.1350-2A>G	out of scope
 BTK	A1191	c.1350-2A>G	out of scope
+BTK	A1213	c.1350-1G>A	out of scope
+BTK	A1214	c.1350-1G>A	out of scope
 BTK	A1309	c.1349+5G>C	out of scope
+BTK	A1364	c.1349+2T>C	out of scope
 BTK	A1506	c.1349+2T>A	out of scope
 BTK	A1507	c.1349+2T>A	out of scope
 BTK	A1508	c.1350-2A>G	out of scope
@@ -1111,6 +1490,8 @@ BTK	A1411	c.1350-2A>G	out of scope
 BTK	A0934	c.1566+1G>A	out of scope
 BTK	A0972	c.1566+1G>T	out of scope
 BTK	A0973	c.1566+1G>A	out of scope
+BTK	A1197	c.1567-12TTTG>	out of scope
+BTK	A1365	c.1567-2A>T	out of scope
 BTK	A1499	c.1567-2A>G	out of scope
 BTK	A0976	c.1631+5G>A	out of scope
 BTK	A0977	c.1632-2A>G	out of scope
@@ -1123,14 +1504,19 @@ BTK	A1165	c.1750+1G>T	out of scope
 BTK	A1166	c.1750+1G>C	out of scope
 BTK	A1167	c.1750+5>A	out of scope
 BTK	A1168	c.1751-1G>T	out of scope
+BTK	A1195	c.1750+1G>A	out of scope
+BTK	A1196	c.1751-1G>C	out of scope
 BTK	A1323	c.1751-2A>T	out of scope
 BTK	A1324	c.1751-2A>T	out of scope
 BTK	A1367	c.1751-2A>G	out of scope
 BTK	A1412	c.1750+1G>A	out of scope
+BTK	A1413	c.1751-1G>C	out of scope
 BTK	A0512	c.1908+1_1908+2insC	out of scope
 BTK	A1181	c.1908+1G>A	out of scope
 BTK	A1182	c.1909-2A>G	out of scope
 BTK	A1234	c.524-?_971+?del	out of scope
+BTK	A1226	c.-30_391dup	out of scope
+BTK	A1227	c.-30_391dup	out of scope
 C3	C0006	c.G>T	unparseable c. notation
 C3	C0006	c.G>T	unparseable c. notation
 C3	C0010	c.A>G	unparseable c. notation
@@ -1138,16 +1524,24 @@ C3	C0010	c.A>G	unparseable c. notation
 C6	C0005	c.392delC	no NM fasta found
 C6	C0010	c.977delG	no NM fasta found
 C6	C0010	c.977delG	no NM fasta found
+C6	C0012	c.977delG	no NM fasta found
 C6	C0012	c.1293delC	no NM fasta found
+C6	C0013	c.977delG	no NM fasta found
 C6	C0013	c.1293delC	no NM fasta found
+C6	C0011	c.977delG	no NM fasta found
 C6	C0011	c.2034delG	no NM fasta found
+C6	C0007	c.1293delC	no NM fasta found
 C6	C0007	c.2034delG	no NM fasta found
+C6	C0008	c.1293delC	no NM fasta found
 C6	C0008	c.2034delG	no NM fasta found
+C6	C0009	c.1293delC	no NM fasta found
 C6	C0009	c.2034delG	no NM fasta found
 C6	C0004	c.2034delG	no NM fasta found
 C6	C0004	c.2034delG	no NM fasta found
 C6	C0006	c.2034delG	no NM fasta found
 C6	C0006	c.2034delG	no NM fasta found
+C7	C0003	c.853-?_1207+?del	unparseable c. notation
+C7	C0004	c.853-?_1207+?del	unparseable c. notation
 C7	C0020	c.G>T	unparseable c. notation
 C7	C0023	c.G>T	unparseable c. notation
 C7	C0023	c.G>T	unparseable c. notation
@@ -1157,6 +1551,7 @@ CD3E	A0002	c.128_129delCC	no NM fasta found
 CD3E	A0002	c.128_129delCC	no NM fasta found
 CD40L	C0079	c.87C>T	no NM fasta found
 CD40L	C0217	c.31C>T	no NM fasta found
+CD40L	C0231	c.31C>T	no NM fasta found
 CD40L	C0232	c.31C>T	no NM fasta found
 CD40L	C0219	c.72_73ins291	no NM fasta found
 CD40L	C0156	c.78T>G	no NM fasta found
@@ -1200,6 +1595,7 @@ CD40L	C0131	c.402G>A	no NM fasta found
 CD40L	C0045	c.424C>A	no NM fasta found
 CD40L	C0046	c.424C>A	no NM fasta found
 CD40L	C0206	c.368C>A	no NM fasta found
+CD40L	C0238	c.368C>A	no NM fasta found
 CD40L	C0069	c.423delG	no NM fasta found
 CD40L	C0071	c.430A>G	no NM fasta found
 CD40L	C0062	c.433T>C	no NM fasta found
@@ -1208,6 +1604,7 @@ CD40L	C0245	c.377T>A	no NM fasta found
 CD40L	C0018	c.432_433insA	no NM fasta found
 CD40L	C0111	c.436_437insAA	no NM fasta found
 CD40L	C0203	c.384T>A	no NM fasta found
+CD40L	C0203	c.386A>G	no NM fasta found
 CD40L	C0063	c.437_438insA	no NM fasta found
 CD40L	C0114	c.437_438insG	no NM fasta found
 CD40L	C0118	c.437_438insG	no NM fasta found
@@ -1296,6 +1693,7 @@ CD40L	C0041	c.660G>T	no NM fasta found
 CD40L	C0055	c.660_661insA	no NM fasta found
 CD40L	C0056	c.660_661insA	no NM fasta found
 CD40L	C0184	c.608G>T	no NM fasta found
+CD40L	C0044	c.679C>A	no NM fasta found
 CD40L	C0110	c.692_693delCA	no NM fasta found
 CD40L	C0094	c.710C>A	no NM fasta found
 CD40L	C0185	c.654C>A	no NM fasta found
@@ -1306,6 +1704,7 @@ CD40L	C0226	c.654C>A	no NM fasta found
 CD40L	C0227	c.654C>A	no NM fasta found
 CD40L	C0228	c.654C>A	no NM fasta found
 CD40L	C0229	c.654C>A	no NM fasta found
+CD40L	C0239	c.654C>A	no NM fasta found
 CD40L	C0020	c.707_708insT	no NM fasta found
 CD40L	C0033	c.714C>T	no NM fasta found
 CD40L	C0187	c.658C>T	no NM fasta found
@@ -1327,6 +1726,7 @@ CD40L	C0104	c.750C>T	no NM fasta found
 CD40L	C0105	c.750C>T	no NM fasta found
 CD40L	C0230	c.694C>T	no NM fasta found
 CD40L	C0076	c.759G>C	no NM fasta found
+CD40L	C0108	c.763C>A	no NM fasta found
 CD40L	C0099	c.766T>A	no NM fasta found
 CD40L	C0027	c.765_766insC	no NM fasta found
 CD40L	C0060	c.782_783delTG	no NM fasta found
@@ -1337,6 +1737,9 @@ CD40L	C0078	c.817C>T	no NM fasta found
 CD40L	C0151	c.761C>T	no NM fasta found
 CD40L	C0153	c.761C>T	no NM fasta found
 CD40L	C0189	c.761C>T	no NM fasta found
+CD40L	C0235	c.761C>T	no NM fasta found
+CD40L	C0236	c.761C>T	no NM fasta found
+CD40L	C0237	c.761C>T	no NM fasta found
 CD40L	C0248	c.761C>T	no NM fasta found
 CD40L	C0013	c.826G>A	no NM fasta found
 CD40L	C0030	c.825G>A	no NM fasta found
@@ -1370,6 +1773,8 @@ CD40L	C0222	c.346+1G>T	no NM fasta found
 CD40L	C0171	c.409+1G>C	no NM fasta found
 CD40L	C0172	c.409+2T>C	no NM fasta found
 CD40L	C0207	c.409+1G>A	no NM fasta found
+CD40	T0004	c.A>T	unparseable c. notation
+CD40	T0004	c.A>T	unparseable c. notation
 CD59	C0001	c.123delC	no NM fasta found
 CD59	C0001	c.123delC	no NM fasta found
 CFH	H0024	c.155_158delAGAA	no NM fasta found
@@ -1387,13 +1792,21 @@ CFH	H0005	c.638G>T	no NM fasta found
 CFH	H0005	c.638G>T	no NM fasta found
 CFH	H0006	c.638G>T	no NM fasta found
 CFH	H0006	c.638G>T	no NM fasta found
+CFH	H0085	c.1222C>T	no NM fasta found
 CFH	H0085	c.350+6T>G	no NM fasta found
+CFH	H0086	c.1222C>T	no NM fasta found
 CFH	H0086	c.350+6T>G	no NM fasta found
+CFH	H0087	c.1222C>T	no NM fasta found
 CFH	H0087	c.350+6T>G	no NM fasta found
+CFH	H0088	c.1222C>T	no NM fasta found
 CFH	H0088	c.350+6T>G	no NM fasta found
+CFH	H0089	c.1222C>T	no NM fasta found
 CFH	H0089	c.350+6T>G	no NM fasta found
+CFH	H0090	c.1222C>T	no NM fasta found
 CFH	H0090	c.350+6T>G	no NM fasta found
+CFH	H0091	c.1222C>T	no NM fasta found
 CFH	H0091	c.350+6T>G	no NM fasta found
+CFH	H0092	c.1222C>T	no NM fasta found
 CFH	H0092	c.350+6T>G	no NM fasta found
 CFH	H0030	c.1291T>A	no NM fasta found
 CFH	H0030	c.1291T>A	no NM fasta found
@@ -1402,6 +1815,7 @@ CFH	H0072	c.1292G>A	no NM fasta found
 CFH	H0011	c.1493delA	no NM fasta found
 CFH	H0012	c.1493delA	no NM fasta found
 CFH	H0101	c.1548T>A	no NM fasta found
+CFH	H0001	c.1679T>C	no NM fasta found
 CFH	H0001	c.2949G>A	no NM fasta found
 CFH	H0055	c.1890T>G	no NM fasta found
 CFH	H0031	c.2018G>C	no NM fasta found
@@ -1409,6 +1823,7 @@ CFH	H0031	c.2018G>C	no NM fasta found
 CFH	H0037	c.2018G>A	no NM fasta found
 CFH	H0056	c.2141C>G	no NM fasta found
 CFH	H0033	c.2300_2301insA	no NM fasta found
+CFH	H0083	c.2301C>C	no NM fasta found
 CFH	H0083	c.2300_2301insA	no NM fasta found
 CFH	H0057	c.2548G>A	no NM fasta found
 CFH	H0036	c.2678A>G	no NM fasta found
@@ -1428,12 +1843,17 @@ CFH	H0102	c.2850G>T	no NM fasta found
 CFH	H0044	c.2851T>C	no NM fasta found
 CFH	H0009	c.2940C>T	no NM fasta found
 CFH	H0058	c.2934G>T	no NM fasta found
+CFH	H0069	c.3062A>T	no NM fasta found
 CFH	H0069	c.3628C>T	no NM fasta found
 CFH	H0059	c.3127T>C	no NM fasta found
+CFH	H0016	c.3299C>G	no NM fasta found
 CFH	H0016	c.3559delA	no NM fasta found
 CFH	H0060	c.3226C>G	no NM fasta found
+CFH	H0093	c.3234G>T	no NM fasta found
 CFH	H0093	c.350+6T>G	no NM fasta found
+CFH	H0094	c.3234G>T	no NM fasta found
 CFH	H0094	c.350+6T>G	no NM fasta found
+CFH	H0095	c.3234G>T	no NM fasta found
 CFH	H0095	c.350+6T>G	no NM fasta found
 CFH	H0017	c.3429A>G	no NM fasta found
 CFH	H0061	c.3401T>G	no NM fasta found
@@ -1454,13 +1874,21 @@ CFH	H0002	c.3645C>T	no NM fasta found
 CFH	H0002	c.3645C>T	no NM fasta found
 CFH	H0003	c.3645C>T	no NM fasta found
 CFH	H0003	c.3645C>T	no NM fasta found
+CFH	H0075	c.3572C>T	no NM fasta found
 CFH	H0075	c.3590T>C	no NM fasta found
+CFH	H0076	c.3572C>T	no NM fasta found
 CFH	H0076	c.3590T>C	no NM fasta found
+CFH	H0077	c.3572C>T	no NM fasta found
 CFH	H0077	c.3590T>C	no NM fasta found
+CFH	H0078	c.3572C>T	no NM fasta found
 CFH	H0078	c.3590T>C	no NM fasta found
+CFH	H0079	c.3572C>T	no NM fasta found
 CFH	H0079	c.3590T>C	no NM fasta found
+CFH	H0080	c.3572C>T	no NM fasta found
 CFH	H0080	c.3590T>C	no NM fasta found
+CFH	H0081	c.3572C>T	no NM fasta found
 CFH	H0081	c.3590T>C	no NM fasta found
+CFH	H0082	c.3572C>T	no NM fasta found
 CFH	H0082	c.3590T>C	no NM fasta found
 CFH	H0098	c.3572C>T	no NM fasta found
 CFH	H0099	c.3572C>T	no NM fasta found
@@ -1486,13 +1914,16 @@ CFH	H0021	c.3716C>G	no NM fasta found
 CFH	H0022	c.3716C>G	no NM fasta found
 CFH	H0023	c.3716C>G	no NM fasta found
 CFH	H0010	c.3717G>A	no NM fasta found
+CFH	H0073	c.3644G>A	no NM fasta found
 CFH	H0073	c.3644G>G	no NM fasta found
+CFH	H0074	c.3644G>A	no NM fasta found
 CFH	H0074	c.3644G>G	no NM fasta found
 CFH	H0066	c.3646_3648delACA	no NM fasta found
 CFH	H0067	c.3676C>T	no NM fasta found
 CFH	H0068	c.3695_3698delAGAA	no NM fasta found
 CFH	H0096	c.350+6T>G	no NM fasta found
 CFH	H0096	c.350+6T>G	no NM fasta found
+CFH	H0097	c.350+6T>G	no NM fasta found
 CFH	H0097	c.1699A>G	no NM fasta found
 CFH	H0064	c.3566+1G>A	no NM fasta found
 CTSC	C0126	c.756_757ins130	unparseable c. notation
@@ -1504,11 +1935,10 @@ CYBA	H0065	c.129-?_585+?del	unparseable c. notation
 CYBA	H0073	c.129-?_369+?del	unparseable c. notation
 CYBA	H0073	c.129-?_369+?del	unparseable c. notation
 CYBB	A1415	c.591_592ins41	unparseable c. notation
-CYBB	A1416	c.[785_786insTGCTGGAAACCCTCCTATGGT	unparseable c. notation
-CYBB	A0538	c.[907C>A	unparseable c. notation
-CYBB	A0648	c.[907C>A	unparseable c. notation
-CYBB	A1100	c.[922_923insTCCTTTCA	unparseable c. notation
-CYBB	A1116	c.[958delG	unparseable c. notation
+CYBB	A1416	c.804	unparseable c. notation
+CYBB	A1416	c.3_804	unparseable c. notation
+CYBB	A1416	c.804	unparseable c. notation
+CYBB	A1416	c.2_804	unparseable c. notation
 CYBB	A0089	c.A>C	unparseable c. notation
 CYBB	A0090	c.A>C	unparseable c. notation
 CYBB	A0166	c.T>C	unparseable c. notation
@@ -1553,6 +1983,7 @@ CYBB	A0172	c.(1315-?_1710+?)del	unparseable c. notation
 CYBB	A0173	c.(1315-?_1710+?)del	unparseable c. notation
 CYBB	A0181	c.(482_483+4)delaggtaa	unparseable c. notation
 CYBB	A0201	c.(1-?_1710+?)del	unparseable c. notation
+CYBB	A0203	c.(1587-?_1710+?)del	unparseable c. notation
 CYBB	A00204	c.(1-?_252+?)del	unparseable c. notation
 CYBB	A0205	c.(675-?_804+?)del	unparseable c. notation
 CYBB	A0206	c.(1-?_1710+?)del	unparseable c. notation
@@ -1591,7 +2022,10 @@ DCLRE1C	D0001	c.241C>T	no NM fasta found
 DCLRE1C	D0002	c.241C>T	no NM fasta found
 DCLRE1C	D0003	c.241C>T	no NM fasta found
 DCLRE1C	D0036	c.281delC	no NM fasta found
+DCLRE1C	D0036	c.(?_-38)_246+?del	no NM fasta found
 DCLRE1C	D0037	c.281delC	no NM fasta found
+DCLRE1C	D0037	c.(?_-38)_246+?del	no NM fasta found
+DCLRE1C	D0004	c.307_464del	no NM fasta found
 DCLRE1C	D0004	c.972+1G>C	no NM fasta found
 DCLRE1C	D0014	c.353G>T	no NM fasta found
 DCLRE1C	D0014	c.353G>T	no NM fasta found
@@ -1616,8 +2050,11 @@ DCLRE1C	D0048	c.1147C>T	no NM fasta found
 DCLRE1C	D0021	c.1290_1306delACAAACCCCAGGATGCT	no NM fasta found
 DCLRE1C	D0021	c.1290_1306delACAAACCCCAGGATGCT	no NM fasta found
 DCLRE1C	D0018	c.1346_1352delTTGTAGA	no NM fasta found
+DCLRE1C	D0018	c.-84-?_246+?del	no NM fasta found
 DCLRE1C	D0019	c.1346_1352delTTGTAGA	no NM fasta found
+DCLRE1C	D0019	c.-84-?_246+?del	no NM fasta found
 DCLRE1C	D0020	c.1346_1352delTTGTAGA	no NM fasta found
+DCLRE1C	D0020	c.-84-?_246+?del	no NM fasta found
 DCLRE1C	D0005	c.362+1G>T	no NM fasta found
 DCLRE1C	D0005	c.362+1G>T	no NM fasta found
 DCLRE1C	D0006	c.362+1G>T	no NM fasta found
@@ -1659,11 +2096,14 @@ DCLRE1C	D0032	c.(?_-38)_246+?del	no NM fasta found
 DCLRE1C	D0033	c.(?_-38)_246+?del	no NM fasta found
 DCLRE1C	D0033	c.(?_-38)_246+?del	no NM fasta found
 DCLRE1C	D0034	c.(?_-38)_246+?del	no NM fasta found
+DCLRE1C	D0034	c.(?_-38)_306+?del	no NM fasta found
 DCLRE1C	D0035	c.(?_-38)_246+?del	no NM fasta found
 DCLRE1C	D0035	c.(?_-38)_246+?del	no NM fasta found
+DCLRE1C	D0038	c.(?_-38)_246+?del	no NM fasta found
 DCLRE1C	D0038	c.362+5G>C	no NM fasta found
 DCLRE1C	D0039	c.(?_-38)_246+?del	no NM fasta found
 DCLRE1C	D0039	c.(?_-38)_246+?del	no NM fasta found
+DCLRE1C	D0040	c.(?_-38)_306+?del	no NM fasta found
 DCLRE1C	D0040	c.682C>A	no NM fasta found
 DCLRE1C	D0049	c.464+210_678+265del	no NM fasta found
 DCLRE1C	D0049	c.464+210_678+265del	no NM fasta found
@@ -1671,8 +2111,10 @@ DCLRE1C	D0050	c.464+210_678+265del	no NM fasta found
 DCLRE1C	D0050	c.464+210_678+265del	no NM fasta found
 DCLRE1C	D0052	c.162-?_246+?del	no NM fasta found
 DCLRE1C	D0053	c.162-?_246+?del	no NM fasta found
+DCLRE1C	D0054	c.162-?_246+?del	no NM fasta found
+DCLRE1C	D0055	c.162-?_246+?del	no NM fasta found
 ELA2	E0109	c.1A>G	no NM fasta found
-ELA2	E0157	c.[90T>G/194T>A]	no NM fasta found
+ELA2	E0157	c.90T>G/194T>A	no NM fasta found
 ELA2	E0159	c.74C>T	no NM fasta found
 ELA2	E0110	c.125C>T	no NM fasta found
 ELA2	E0111	c.129C>A	no NM fasta found
@@ -1827,14 +2269,14 @@ ELA2	E0094	c.597+1G>A	no NM fasta found
 ELA2	E0123	c.597+1G>A	no NM fasta found
 ELA2	E0124	c.597+5G>A	no NM fasta found
 ELA2	E0131	c.597+1G>A	no NM fasta found
-FERMT3	F0021	c.[922G>A	unparseable c. notation
-FERMT3	F0021	1275delT]	unparseable c. notation
 FERMT3	F0025	c.A>C	unparseable c. notation
 FERMT3	F0025	c.A>C	unparseable c. notation
 FOXP3	F0013	c.	unparseable c. notation
-FOXP3	F0039	c.[543C>T/970T>C]	unparseable c. notation
-G6PC3	G0014	c.[353C>G	unparseable c. notation
-G6PC3	G0014	778G>C]	unparseable c. notation
+FOXP3	F0039	c.543C>T/970T>C	unparseable c. notation
+ICOS	I0010	c.285delT	no NM fasta found
+ICOS	I0010	c.285delT	no NM fasta found
+ICOS	I0011	c.285delT	no NM fasta found
+ICOS	I0011	c.285delT	no NM fasta found
 IGHG2	I0001	c.1247dupG	no NM fasta found
 IGHG2	I0001	c.1247dupG	no NM fasta found
 IGHG2	I0002	c.1247dupG	no NM fasta found
@@ -1845,6 +2287,10 @@ IGHG2	I0004	c.568+4A>G	no NM fasta found
 IGHG2	I0004	c.568+4A>G	no NM fasta found
 IGHG2	I0005	c.568+4A>G	no NM fasta found
 IGHG2	I0005	c.568+4A>G	no NM fasta found
+IGHM	I0019	c.1198delA	no NM fasta found
+IGHM	I0019	c.1198delA	no NM fasta found
+IGHM	I0020	c.1198delA	no NM fasta found
+IGHM	I0020	c.1198delA	no NM fasta found
 IGHM	I0017	c.1308G>A	no NM fasta found
 IGHM	I0012	c.1036_1037delAA	no NM fasta found
 IGHM	I0012	c.1036_1037delAA	no NM fasta found
@@ -1871,6 +2317,8 @@ IGHM	I0010	c.1831G>A	no NM fasta found
 IGHM	I0010	c.1831G>A	no NM fasta found
 IGHM	I0011	c.1831G>A	no NM fasta found
 IGHM	I0011	c.1831G>A	no NM fasta found
+IGHM	I0018	c.1759G>A	no NM fasta found
+IGHM	I0018	c.1759G>A	no NM fasta found
 IKBKG	I0040	c.40G>T	no NM fasta found
 IKBKG	I0022	c.111_112insC	no NM fasta found
 IKBKG	I0041	c.169G>A	no NM fasta found
@@ -1985,7 +2433,9 @@ IL12B	I0002	c.482_854del	no NM fasta found
 IL12B	I0002	c.482_854del	no NM fasta found
 IL12RB1	I0001	c.94C>T	no NM fasta found
 IL12RB1	I0001	c.94C>T	no NM fasta found
+IL12RB1	I0022	c.94C>T	no NM fasta found
 IL12RB1	I0022	c.1623_1624delinsTT	no NM fasta found
+IL12RB1	I0023	c.94C>T	no NM fasta found
 IL12RB1	I0023	c.1623_1624delinsTT	no NM fasta found
 IL12RB1	I0024	c.94C>T	no NM fasta found
 IL12RB1	I0024	c.94C>T	no NM fasta found
@@ -1995,6 +2445,7 @@ IL12RB1	I0026	c.94C>T	no NM fasta found
 IL12RB1	I0026	c.94C>T	no NM fasta found
 IL12RB1	I0036	c.230T>C	no NM fasta found
 IL12RB1	I0036	c.230T>C	no NM fasta found
+IL12RB1	I0035	c.512A>C	no NM fasta found
 IL12RB1	I0035	c.1007_1008delinsG	no NM fasta found
 IL12RB1	I0002	c.518G>C	no NM fasta found
 IL12RB1	I0002	c.518G>C	no NM fasta found
@@ -2087,20 +2538,23 @@ IL12RB1	I0059	c.1791+2T>G	no NM fasta found
 IL12RB1	I0059	c.1791+2T>G	no NM fasta found
 IL12RB1	I0051	c.410_549del	no NM fasta found
 IL12RB1	I0051	c.410_549del	no NM fasta found
+IL2RA	I0001	c.61_64delGCAG	no NM fasta found
+IL2RA	I0001	c.61_64delGCAG	no NM fasta found
+IL2RA	I0002	c.301C>T	no NM fasta found
 IL2RA	I0002	c.692dupA	no NM fasta found
-IL7R	I0005	c.[219C>T + 434A>G]	unparseable c. notation
-ITGB2	A0028	c. [813_814ins +	unparseable c. notation
-ITGB2	A0029	c. [813_814ins +	unparseable c. notation
+ITGB2	A0028	c.813_814ins	unparseable c. notation
+ITGB2	A0029	c.813_814ins	unparseable c. notation
 ITGB2	A0090	c.delG	unparseable c. notation
 ITGB2	A0125	c.G>C	unparseable c. notation
 ITGB2	A0131	c.G>A	unparseable c. notation
 ITGB2	A0111	c.A>G	unparseable c. notation
-ITGB2	A0030	c. [813_814ins +	unparseable c. notation
+ITGB2	A0030	c.813_814ins	unparseable c. notation
 ITGB2	A0134	c..1413-149_2080+839delinsAAA	unparseable c. notation
 ITGB2	A0134	c..1413-149_2080+839delinsAAA	unparseable c. notation
 ITGB2	A0137	c.G>C	unparseable c. notation
 ITGB2	A0137	c.G>C	unparseable c. notation
 ITGB2	A0087	c.C>A	unparseable c. notation
+ITGB2	A0126	c.C>A	unparseable c. notation
 ITGB2	A0126	c.del27703	unparseable c. notation
 ITGB2	A0085	c.G>A	unparseable c. notation
 ITGB2	A0105	c.G>A	unparseable c. notation
@@ -2115,8 +2569,6 @@ ITGB2	A0132	c.1225-?_1412+?del	unparseable c. notation
 ITGB2	A0132	c.1225-?_1412+?del	unparseable c. notation
 JAK3	J0027	c.c.2960_2978del	unparseable c. notation
 JAK3	J0027	c.c.2960_2978del	unparseable c. notation
-LIG4	L0003	c.[8C>T	unparseable c. notation
-LIG4	L0003	26C>T	unparseable c. notation
 LYST	C0001	c.307_308insG	no NM fasta found
 LYST	C0009	c.307_308insG	no NM fasta found
 LYST	C0009	c.307_308insG	no NM fasta found
@@ -2125,6 +2577,7 @@ LYST	C0032	c.575dupT	no NM fasta found
 LYST	C0032	c.575dupT	no NM fasta found
 LYST	C0007	c.1656delG	no NM fasta found
 LYST	C0007	c.1656delG	no NM fasta found
+LYST	C0031	c.1540C>T	no NM fasta found
 LYST	C0031	c.9893delT	no NM fasta found
 LYST	C0005	c.2091_2092insA	no NM fasta found
 LYST	C0005	c.2091_2092insA	no NM fasta found
@@ -2141,9 +2594,12 @@ LYST	C0008	c.3499C>T	no NM fasta found
 LYST	C0011	c.3499C>T	no NM fasta found
 LYST	C0011	c.3499C>T	no NM fasta found
 LYST	C0019	c.3622_3623insA	no NM fasta found
+LYST	C0036	c.3622C>T	no NM fasta found
 LYST	C0036	c.11002G>T	no NM fasta found
 LYST	C0020	c.4241C>G	no NM fasta found
+LYST	C0023	c.4463delT	no NM fasta found
 LYST	C0023	c.8617G>A	no NM fasta found
+LYST	C0024	c.5250T>A	no NM fasta found
 LYST	C0024	c.4550C>A	no NM fasta found
 LYST	C0025	c.4877G>A	no NM fasta found
 LYST	C0025	c.4877G>A	no NM fasta found
@@ -2180,17 +2636,21 @@ LYST	C0037	c.11002G>T	no NM fasta found
 LYST	C0038	c.4000T>G	no NM fasta found
 LYST	C0038	c.4000T>G	no NM fasta found
 LYST	C0040	c.13242+1>	no NM fasta found
+LYST	C0040	c.13242+1>	no NM fasta found
 MPO	M0030	c.325delA	no NM fasta found
 MPO	M0019	c.518A>G	no NM fasta found
 MPO	M0020	c.518A>G	no NM fasta found
 MPO	M0021	c.518A>G	no NM fasta found
 MPO	M0022	c.518A>G	no NM fasta found
+MPO	M0017	c.752T>C	no NM fasta found
 MPO	M0017	c.1552_1565delCCCATGGAACCCAA	no NM fasta found
 MPO	M0027	c.752T>C	no NM fasta found
+MPO	M0032	c.752T>C	no NM fasta found
 MPO	M0032	c.1705C>T	no NM fasta found
 MPO	M0033	c.752T>C	no NM fasta found
 MPO	M0036	c.752T>C	no NM fasta found
 MPO	M0029	c.995C>T	no NM fasta found
+MPO	M0034	c.995C>T	no NM fasta found
 MPO	M0034	c.1715T>G	no NM fasta found
 MPO	M0038	c.1112A>G	no NM fasta found
 MPO	M0024	c.1495C>T	no NM fasta found
@@ -2198,11 +2658,14 @@ MPO	M0024	c.1495C>T	no NM fasta found
 MPO	M0023	c.1501G>A	no NM fasta found
 MPO	M0023	c.1501G>A	no NM fasta found
 MPO	M0018	c.1552_1565delCCCATGGAACCCAA	no NM fasta found
+MPO	M0026	c.1552_1565delCCCATGGAACCCAA	no NM fasta found
 MPO	M0026	c.1705C>T	no NM fasta found
 MPO	M0028	c.1552_1565delCCCATGGAACCCAA	no NM fasta found
 MPO	M0028	c.1552_1565delCCCATGGAACCCAA	no NM fasta found
 MPO	M0035	c.1552_1565delCCCATGGAACCCAA	no NM fasta found
+MPO	M0037	c.1552_1565delCCCATGGAACCCAA	no NM fasta found
 MPO	M0037	c.2031-2A>C	no NM fasta found
+MPO	M0039	c.1552_1565delCCCATGGAACCCAA	no NM fasta found
 MPO	M0039	c.1927T>C	no NM fasta found
 MPO	M0001	c.1705C>T	no NM fasta found
 MPO	M0001	c.1705C>T	no NM fasta found
@@ -2226,10 +2689,19 @@ MPO	M0025	c.2031-2A>C	no NM fasta found
 MPO	M0025	c.2031-2A>C	no NM fasta found
 MPO	M0031	c.2031-2A>C	no NM fasta found
 MPO	M0031	c.2031-2A>C	no NM fasta found
+NCF2	M0004	c.55_63delAAGAAGGAC	no NM fasta found
+NCF2	M0004	c.1183C>T	no NM fasta found
 NCF2	M0004	c.501+1G>A	no NM fasta found
+NCF2	M0015	c.55_63delAAGAAGGAC	no NM fasta found
+NCF2	M0015	c.1183C>T	no NM fasta found
 NCF2	M0015	c.196C>T	no NM fasta found
+NCF2	M0021	c.55_63delAAGAAGGAC	no NM fasta found
+NCF2	M0021	c.1183C>T	no NM fasta found
 NCF2	M0021	c.366+1G>A	no NM fasta found
+NCF2	M0084	c.55_63delAAGAAGGAC	no NM fasta found
+NCF2	M0084	c.1183C>T	no NM fasta found
 NCF2	M0084	c.501+1G>A	no NM fasta found
+NCF2	M0092	c.1A>G	no NM fasta found
 NCF2	M0092	c.488_501delTGGAGTGTGTCTGG	no NM fasta found
 NCF2	M0091	c.29G>A	no NM fasta found
 NCF2	M0091	c.29G>A	no NM fasta found
@@ -2254,8 +2726,11 @@ NCF2	M0053	c.196C>T	no NM fasta found
 NCF2	M0053	c.196C>T	no NM fasta found
 NCF2	M0054	c.196C>T	no NM fasta found
 NCF2	M0054	c.196C>T	no NM fasta found
+NCF2	M0016	c.230G>A	no NM fasta found
 NCF2	M0016	c.298C>T	no NM fasta found
+NCF2	M0089	c.230G>A	no NM fasta found
 NCF2	M0089	c.298C>T	no NM fasta found
+NCF2	M0096	c.230G>A	no NM fasta found
 NCF2	M0096	c.298C>T	no NM fasta found
 NCF2	M0029	c.229C>T	no NM fasta found
 NCF2	M0029	c.229C>T	no NM fasta found
@@ -2267,6 +2742,7 @@ NCF2	M0067	c.229C>T	no NM fasta found
 NCF2	M0067	c.229C>T	no NM fasta found
 NCF2	M0078	c.229C>T	no NM fasta found
 NCF2	M0078	c.229C>T	no NM fasta found
+NCF2	M0095	c.229C>T	no NM fasta found
 NCF2	M0095	c.1034dupA	no NM fasta found
 NCF2	M0002	c.233G>A	no NM fasta found
 NCF2	M0002	c.233G>A	no NM fasta found
@@ -2276,20 +2752,39 @@ NCF2	M0031	c.279C>G	no NM fasta found
 NCF2	M0031	c.279C>G	no NM fasta found
 NCF2	M0032	c.279C>G	no NM fasta found
 NCF2	M0032	c.279C>G	no NM fasta found
-NCF2	M0047	c.[279C>G	no NM fasta found
-NCF2	M0047	501+1G>C]	no NM fasta found
-NCF2	M0048	c.[279C>G	no NM fasta found
-NCF2	M0048	501+1G>C]	no NM fasta found
-NCF2	M0049	c.[279C>G	no NM fasta found
-NCF2	M0049	501+1G>C]	no NM fasta found
-NCF2	M0050	c.[279C>G	no NM fasta found
-NCF2	M0050	501+1G>C]	no NM fasta found
+NCF2	M0047	c.279C>G	no NM fasta found
+NCF2	M0047	c.501	no NM fasta found
+NCF2	M0047	c.1G>C	no NM fasta found
+NCF2	M0047	c.279C>G	no NM fasta found
+NCF2	M0047	c.501	no NM fasta found
+NCF2	M0047	c.1G>C	no NM fasta found
+NCF2	M0048	c.279C>G	no NM fasta found
+NCF2	M0048	c.501	no NM fasta found
+NCF2	M0048	c.1G>C	no NM fasta found
+NCF2	M0048	c.279C>G	no NM fasta found
+NCF2	M0048	c.501	no NM fasta found
+NCF2	M0048	c.1G>C	no NM fasta found
+NCF2	M0049	c.279C>G	no NM fasta found
+NCF2	M0049	c.501	no NM fasta found
+NCF2	M0049	c.1G>C	no NM fasta found
+NCF2	M0049	c.279C>G	no NM fasta found
+NCF2	M0049	c.501	no NM fasta found
+NCF2	M0049	c.1G>C	no NM fasta found
+NCF2	M0050	c.279C>G	no NM fasta found
+NCF2	M0050	c.501	no NM fasta found
+NCF2	M0050	c.1G>C	no NM fasta found
+NCF2	M0050	c.279C>G	no NM fasta found
+NCF2	M0050	c.501	no NM fasta found
+NCF2	M0050	c.1G>C	no NM fasta found
 NCF2	M0097	c.287_289delAAG	no NM fasta found
 NCF2	M0097	c.287_289delAAG	no NM fasta found
+NCF2	M0045	c.298C>T	no NM fasta found
 NCF2	M0045	c.419C>T	no NM fasta found
+NCF2	M0046	c.298C>T	no NM fasta found
 NCF2	M0046	c.856-1G>T	no NM fasta found
 NCF2	M0122	c.298C>T	no NM fasta found
 NCF2	M0122	c.298C>T	no NM fasta found
+NCF2	M0099	c.305G>C	no NM fasta found
 NCF2	M0099	c.1026G>A	no NM fasta found
 NCF2	M0001	c.304C>T	no NM fasta found
 NCF2	M0001	c.304C>T	no NM fasta found
@@ -2305,6 +2800,7 @@ NCF2	M0039	c.304C>T	no NM fasta found
 NCF2	M0039	c.304C>T	no NM fasta found
 NCF2	M0075	c.304C>T	no NM fasta found
 NCF2	M0075	c.304C>T	no NM fasta found
+NCF2	M0079	c.304C>T	no NM fasta found
 NCF2	M0079	c.1026G>A	no NM fasta found
 NCF2	M0098	c.304C>T	no NM fasta found
 NCF2	M0098	c.304C>T	no NM fasta found
@@ -2314,10 +2810,12 @@ NCF2	M0013	c.383C>T	no NM fasta found
 NCF2	M0013	c.383C>T	no NM fasta found
 NCF2	M0014	c.383C>T	no NM fasta found
 NCF2	M0014	c.383C>T	no NM fasta found
+NCF2	M0115	c.389T>G	no NM fasta found
 NCF2	M0115	c.550C>T	no NM fasta found
 NCF2	M0006	c.398_399dup	no NM fasta found
 NCF2	M0006	c.398_399dup	no NM fasta found
-NCF2	M0012	c.[479A>T	no NM fasta found
+NCF2	M0012	c.479A>T	no NM fasta found
+NCF2	M0012	c.481A>G	no NM fasta found
 NCF2	M0072	c.409T>A	no NM fasta found
 NCF2	M0072	c.409T>A	no NM fasta found
 NCF2	M0088	c.482delA	no NM fasta found
@@ -2340,7 +2838,9 @@ NCF2	M0043	c.605C>T	no NM fasta found
 NCF2	M0043	c.605C>T	no NM fasta found
 NCF2	M0044	c.605C>T	no NM fasta found
 NCF2	M0044	c.605C>T	no NM fasta found
+NCF2	M0026	c.728delA	no NM fasta found
 NCF2	M0026	c.366+1G>A	no NM fasta found
+NCF2	M0027	c.728delA	no NM fasta found
 NCF2	M0027	c.366+1G>A	no NM fasta found
 NCF2	M0090	c.767_768dup	no NM fasta found
 NCF2	M0090	c.767_768dup	no NM fasta found
@@ -2390,6 +2890,7 @@ NCF2	M0024	c.366+1G>A	no NM fasta found
 NCF2	M0024	c.366+1G>A	no NM fasta found
 NCF2	M0025	c.366+1G>A	no NM fasta found
 NCF2	M0025	c.366+1G>A	no NM fasta found
+NCF2	M0114	c.366+1G>A	no NM fasta found
 NCF2	M0114	c.481A>T	no NM fasta found
 NCF2	M0011	c.501+1G>A	no NM fasta found
 NCF2	M0011	c.501+1G>A	no NM fasta found
@@ -2425,12 +2926,15 @@ NCF2	M0104	c.1-?_257+?del	no NM fasta found
 NCF2	M0059	c.856-?_1000+?dup	no NM fasta found
 NCF2	M0059	c.856-?_1000+?dup	no NM fasta found
 NCF2	M0080	c.714-?_924+?ins	no NM fasta found
-PRKDC	P0001	c.[6338_6340delGAG	no NM fasta found
-PRKDC	P0001	9185T>G]	no NM fasta found
+PRKDC	P0001	c.6338_6340delGAG	no NM fasta found
+PRKDC	P0001	c.9185T>G	no NM fasta found
+PRKDC	P0001	c.6338_6340delGAG	no NM fasta found
+PRKDC	P0001	c.9185T>G	no NM fasta found
 PTPN11	A0099	c.	unparseable c. notation
-RAG1	R0086	c.[746G>A	unparseable c. notation
-RAG1	R0086	2521C>T]	unparseable c. notation
+RAG2	S0046	c.1A>G	no NM fasta found
 RAG2	S0046	c.1403_1406delATCT	no NM fasta found
+RAG2	S0025	c.46C>T	no NM fasta found
+RAG2	S0025	c.46C>T	no NM fasta found
 RAG2	S0016	c.1305G>T	no NM fasta found
 RAG2	S0016	c.1305G>T	no NM fasta found
 RAG2	S0031	c.104G>T	no NM fasta found
@@ -2441,14 +2945,32 @@ RAG2	S0034	c.104G>T	no NM fasta found
 RAG2	S0034	c.104G>T	no NM fasta found
 RAG2	S0039	c.104G>T	no NM fasta found
 RAG2	S0039	c.104G>T	no NM fasta found
+RAG2	S0017	c.1316A>G	no NM fasta found
 RAG2	S0017	c.1887G>A	no NM fasta found
+RAG2	S0018	c.115A>G	no NM fasta found
 RAG2	S0018	c.686G>A	no NM fasta found
+RAG2	S0019	c.115A>G	no NM fasta found
 RAG2	S0019	c.686G>A	no NM fasta found
+RAG2	S0004	c.1324C>G	no NM fasta found
+RAG2	S0004	c.2055T>G	no NM fasta found
+RAG2	S0044	c.230C>A	no NM fasta found
+RAG2	S0044	c.1352G>C	no NM fasta found
+RAG2	S0007	c.1484G>A	no NM fasta found
 RAG2	S0007	c.2558T>A	no NM fasta found
+RAG2	S0028	c.283G>A	no NM fasta found
 RAG2	S0028	c.685C>T	no NM fasta found
+RAG2	S0011	c.1664_1665insTGTTC	no NM fasta found
+RAG2	S0011	c.1664_1665insTGTTC	no NM fasta found
+RAG2	S0013	c.1643C>T	no NM fasta found
+RAG2	S0013	c.1818T>G	no NM fasta found
+RAG2	S0036	c.479C>T	no NM fasta found
 RAG2	S0036	c.1504A>G	no NM fasta found
-RAG2	S0043	c.[581C>A	no NM fasta found
-RAG2	S0043	583T>G]	no NM fasta found
+RAG2	S0043	c.581C>A	no NM fasta found
+RAG2	S0043	c.583T>G	no NM fasta found
+RAG2	S0043	c.581C>A	no NM fasta found
+RAG2	S0043	c.583T>G	no NM fasta found
+RAG2	S0032	c.644C>T	no NM fasta found
+RAG2	S0032	c.644C>T	no NM fasta found
 RAG2	S0045	c.686G>A	no NM fasta found
 RAG2	S0045	c.686G>A	no NM fasta found
 RAG2	S0009	c.1886C>T	no NM fasta found
@@ -2457,6 +2979,9 @@ RAG2	S0014	c.1886C>T	no NM fasta found
 RAG2	S0014	c.1886C>T	no NM fasta found
 RAG2	S0015	c.1886C>T	no NM fasta found
 RAG2	S0015	c.1886C>T	no NM fasta found
+RAG2	S0008	c.1887G>A	no NM fasta found
+RAG2	S0008	c.1887G>A	no NM fasta found
+RAG2	S0003	c.1887G>A	no NM fasta found
 RAG2	S0026	c.685C>T	no NM fasta found
 RAG2	S0026	c.685C>T	no NM fasta found
 RAG2	S0027	c.685C>T	no NM fasta found
@@ -2475,20 +3000,32 @@ RAG2	S0021	c.712delG	no NM fasta found
 RAG2	S0021	c.712delG	no NM fasta found
 RAG2	S0023	c.712delG	no NM fasta found
 RAG2	S0023	c.712delG	no NM fasta found
+RAG2	S0040	c.1320A>C	no NM fasta found
 RAG2	S0040	c.758C>G	no NM fasta found
 RAG2	S0005	c.2018_2020delATT	no NM fasta found
+RAG2	S0010	c.2122G>A	no NM fasta found
+RAG2	S0010	c.2122G>A	no NM fasta found
 RAG2	S0041	c.1219G>T	no NM fasta found
 RAG2	S0041	c.1219G>T	no NM fasta found
+RAG2	S0037	c.1247G>T	no NM fasta found
+RAG2	S0037	c.1247G>T	no NM fasta found
 RAG2	S0024	c.1357T>A	no NM fasta found
 RAG2	S0024	c.1357T>A	no NM fasta found
 RAG2	S0042	c.1366G>A	no NM fasta found
 RAG2	S0042	c.1366G>A	no NM fasta found
+RAG2	S0012	c.2622A>G	no NM fasta found
+RAG2	S0012	c.2622A>G	no NM fasta found
+RAG2	S0001	c.2634G>A	no NM fasta found
+RAG2	S0001	c.2634G>A	no NM fasta found
+RAG2	S0002	c.2634G>A	no NM fasta found
+RAG2	S0002	c.2634G>A	no NM fasta found
 RAG2	S0022	c.1442A>C	no NM fasta found
 RAG2	S0022	c.1442A>C	no NM fasta found
 RFXANK	R0027	c.G>C	unparseable c. notation
 RFXANK	R0027	c.G>C	unparseable c. notation
 RFXANK	R0028	c.G>A	unparseable c. notation
 RFXANK	R0028	c.G>A	unparseable c. notation
+RNF168	R0001	c.397_398insG	no NM fasta found
 RNF168	R0001	c.1323_1326delACAA	no NM fasta found
 SERPING1	S0280	c.674_675delinsAA	no NM fasta found
 SERPING1	S0281	c.674_675delinsAA	no NM fasta found
@@ -2701,6 +3238,7 @@ SERPING1	S0156	c.1418T>A	no NM fasta found
 SERPING1	S0134	c.1418T>G	no NM fasta found
 SERPING1	S0017	c.1417G>A	no NM fasta found
 SERPING1	S0018	c.1420C>G	no NM fasta found
+SERPING1	S0018	c.1442T>G	no NM fasta found
 SERPING1	S0019	c.1430T>C	no NM fasta found
 SERPING1	S0094	c.1435T>C	no NM fasta found
 SERPING1	S0020	c.1442T>C	no NM fasta found
@@ -2715,6 +3253,7 @@ SERPING1	S0092	c.1475T>A	no NM fasta found
 SERPING1	S0093	c.1475T>A	no NM fasta found
 SERPING1	S0138	c.1478G>A	no NM fasta found
 SERPING1	S0157	c.1478G>A	no NM fasta found
+SERPING1	S0050	c.1477G>A	no NM fasta found
 SERPING1	S0022	c.1480C>T	no NM fasta found
 SERPING1	S0023	c.1480C>T	no NM fasta found
 SERPING1	S0076	c.1480C>T	no NM fasta found
@@ -2744,6 +3283,7 @@ SERPING1	S0221	c.551-2A>	no NM fasta found
 SERPING1	S0226	c.686-3C>G	no NM fasta found
 SERPING1	S0090	c.890-2A>G	no NM fasta found
 SERPING1	S0234	c.889+2T>C	no NM fasta found
+SERPING1	S0260	c.890-1G>A	no NM fasta found
 SERPING1	S0013	c.1029+1G>T	no NM fasta found
 SERPING1	S0041	c.1030-12CTTATTTTCTAGGTGGGGCAGCTGCAGC>	no NM fasta found
 SERPING1	S0042	c.1030-2AGGT>GCA	no NM fasta found
@@ -2764,6 +3304,7 @@ SH2D1A	A0114	c.146dupG	no NM fasta found
 SH2D1A	A0105	c.161A>G	no NM fasta found
 SH2D1A	A0115	c.163C>T	no NM fasta found
 SH2D1A	A0117	c.163C>T	no NM fasta found
+SH2D1A	A0118	c.163C>T	no NM fasta found
 SH2D1A	A0119	c.163C>T	no NM fasta found
 SH2D1A	A0116	c.228T>A	no NM fasta found
 SH2D1A	A0108	c.245dupA	no NM fasta found
@@ -2783,6 +3324,7 @@ SH2D1A	A0132	c.347-32ATTTT>	no NM fasta found
 SH2	A0005	c.843G>A	out of scope
 SH2	A0006	c.854delA	out of scope
 SH2	A0007	c.856_857delAT	out of scope
+SH2	A0008	c.857_867delinsGGTGGTATTCCAAA	out of scope
 SH2	A0013	c.863G>A	out of scope
 SH2	A0014	c.863G>A	out of scope
 SH2	A0015	c.863G>A	out of scope
@@ -2801,6 +3343,7 @@ SH2	A0042	c.862C>T	out of scope
 SH2	A0044	c.862_865delCGGA	out of scope
 SH2	A0051	c.1021C>T	out of scope
 SH2	A0052	c.895_974del	out of scope
+SH2	A0053	c.895_974del	out of scope
 SH2	A0054	c.901_903delGAA	out of scope
 SH2	A0055	c.905G>A	out of scope
 SH2	A0056	c.904G>A	out of scope
@@ -2810,6 +3353,7 @@ SH2	A0067	c.919A>G	out of scope
 SH2	A0068	c.1052G>A	out of scope
 SH2	A0069	c.921A>G	out of scope
 SH2	A0072	c.922_923delGA	out of scope
+SH2	A0073	c.922_923delGA	out of scope
 SH2	A0076	c.942delA	out of scope
 SH2	A0082	c.953C>T	out of scope
 SH2	A0083	c.1084T>C	out of scope
@@ -2824,11 +3368,13 @@ SH2	A0103	c.1044dupG	out of scope
 SH2	A0106	c.1072C>T	out of scope
 SH2	A0111	c.1081T>G	out of scope
 SH2	A0113	c.1083C>A	out of scope
+SH2	A0114	c.1081_1083delTAC	out of scope
 SH2	A0117	c.1088dupA	out of scope
 SH2	A0118	c.1090C>G	out of scope
 SH2	A0120	c.1223A>C	out of scope
 SH2	A0121	c.1223A>C	out of scope
 SH2	A0123	c.1102G>T	out of scope
+SH2	A0124	c.1103_1115delGACTCATATCCAG	out of scope
 SH2	A0126	c.1105C>T	out of scope
 SH2	A0127	c.1106_1107delTC	out of scope
 SH2	A0129	c.1243T>C	out of scope
@@ -2839,6 +3385,7 @@ SH2	A0155	c.974+5G>T	out of scope
 SH2	A0156	c.974+5G>T	out of scope
 SH2	A0162	c.1102+1G>A	out of scope
 SH2	A0163	c.1103-1G>A	out of scope
+SH2	A0164	c.1102+1G>A	out of scope
 SH2	A0184	c.1226G>A	out of scope
 SH2	A0185	c.124A>G	out of scope
 SH2	A0186	c.124A>G	out of scope
@@ -3102,6 +3649,7 @@ SH2	A0461	c.146dupG	out of scope
 SH2	A0466	c.161A>G	out of scope
 SH2	A0486	c.163C>T	out of scope
 SH2	A0487	c.163C>T	out of scope
+SH2	A0488	c.163C>T	out of scope
 SH2	A0489	c.163C>T	out of scope
 SH2	A0500	c.228T>A	out of scope
 SH2	A0502	c.245dupA	out of scope
@@ -3124,8 +3672,10 @@ SH2	A0564	c.1799T>C	out of scope
 SH2	A0564	c.1799T>C	out of scope
 SH2	A0565	c.1888G>C	out of scope
 SH2	A0565	c.1888G>C	out of scope
+SH2	A0566	c.239C>A	out of scope
 SH2	A0566	c.1714A>T	out of scope
 SMARCAL1	S0007	c.1334+1GT>	unparseable c. notation
+SMARCAL1	S0020	c.1147+1GT>	unparseable c. notation
 SMARCAL1	S0020	c.1147+1GT>	unparseable c. notation
 SP110	S0006	c.40delC	no NM fasta found
 SP110	S0006	c.40delC	no NM fasta found
@@ -3139,12 +3689,15 @@ SP110	S0004	c.642delC	no NM fasta found
 SP110	S0004	c.642delC	no NM fasta found
 SP110	S0005	c.642delC	no NM fasta found
 SP110	S0005	c.642delC	no NM fasta found
+SPINK5	S0014	c.136C>T	no NM fasta found
 SPINK5	S0014	c.238dupG	no NM fasta found
 SPINK5	S0002	c.153delT	no NM fasta found
 SPINK5	S0002	c.153delT	no NM fasta found
 SPINK5	S0003	c.153delT	no NM fasta found
 SPINK5	S0003	c.153delT	no NM fasta found
+SPINK5	S0044	c.81+2T>A	no NM fasta found
 SPINK5	S0044	c.153delT	no NM fasta found
+SPINK5	S0045	c.81+2T>A	no NM fasta found
 SPINK5	S0045	c.153delT	no NM fasta found
 SPINK5	S0046	c.153delT	no NM fasta found
 SPINK5	S0046	c.153delT	no NM fasta found
@@ -3165,17 +3718,29 @@ SPINK5	S0020	c.238dupG	no NM fasta found
 SPINK5	S0021	c.238dupG	no NM fasta found
 SPINK5	S0021	c.238dupG	no NM fasta found
 SPINK5	S0036	c.238dupG	no NM fasta found
+SPINK5	S0038	c.238dupG	no NM fasta found
 SPINK5	S0038	c.649C>T	no NM fasta found
+SPINK5	S0039	c.238dupG	no NM fasta found
 SPINK5	S0039	c.649C>T	no NM fasta found
+SPINK5	S0015	c.307G>T	no NM fasta found
 SPINK5	S0015	c.2108_2117delCTCAGGTGAG	no NM fasta found
+SPINK5	S0079	c.354_357delTTGT	no NM fasta found
 SPINK5	S0079	c.1431-12G>A	no NM fasta found
+SPINK5	S0069	c.375_376delAT	no NM fasta found
 SPINK5	S0069	c.965_966insC	no NM fasta found
+SPINK5	S0051	c.377_378delAT	no NM fasta found
 SPINK5	S0051	c.2368C>T	no NM fasta found
+SPINK5	S0052	c.377_378delAT	no NM fasta found
 SPINK5	S0052	c.2368C>T	no NM fasta found
+SPINK5	S0074	c.377_378delAT	no NM fasta found
 SPINK5	S0074	c.1621G>T	no NM fasta found
+SPINK5	S0075	c.377_378delAT	no NM fasta found
 SPINK5	S0075	c.1621G>T	no NM fasta found
+SPINK5	S0076	c.377_378delAT	no NM fasta found
 SPINK5	S0076	c.715dupT	no NM fasta found
+SPINK5	S0077	c.377_378delAT	no NM fasta found
 SPINK5	S0077	c.2368C>T	no NM fasta found
+SPINK5	S0083	c.377_378delAT	no NM fasta found
 SPINK5	S0083	c.2473_2474delGA	no NM fasta found
 SPINK5	S0019	c.391_392insCGTG	no NM fasta found
 SPINK5	S0019	c.391_392insCGTG	no NM fasta found
@@ -3183,7 +3748,9 @@ SPINK5	S0022	c.389_392dup	no NM fasta found
 SPINK5	S0022	c.389_392dup	no NM fasta found
 SPINK5	S0023	c.389_392dup	no NM fasta found
 SPINK5	S0023	c.389_392dup	no NM fasta found
+SPINK5	S0057	c.399_400delTG	no NM fasta found
 SPINK5	S0057	c.2368C>T	no NM fasta found
+SPINK5	S0058	c.399_400delTG	no NM fasta found
 SPINK5	S0058	c.2368C>T	no NM fasta found
 SPINK5	S0067	c.581_582delGT	no NM fasta found
 SPINK5	S0067	c.581_582delGT	no NM fasta found
@@ -3193,7 +3760,9 @@ SPINK5	S0040	c.628C>T	no NM fasta found
 SPINK5	S0040	c.628C>T	no NM fasta found
 SPINK5	S0041	c.628C>T	no NM fasta found
 SPINK5	S0041	c.628C>T	no NM fasta found
+SPINK5	S0064	c.649C>T	no NM fasta found
 SPINK5	S0064	c.691delC	no NM fasta found
+SPINK5	S0024	c.652C>T	no NM fasta found
 SPINK5	S0024	c.2240+1G>A	no NM fasta found
 SPINK5	S0054	c.715dupT	no NM fasta found
 SPINK5	S0054	c.715dupT	no NM fasta found
@@ -3201,24 +3770,33 @@ SPINK5	S0006	c.720_721insT	no NM fasta found
 SPINK5	S0006	c.720_721insT	no NM fasta found
 SPINK5	S0071	c.800G>A	no NM fasta found
 SPINK5	S0071	c.800G>A	no NM fasta found
+SPINK5	S0028	c.1032_1036dup	no NM fasta found
 SPINK5	S0028	c.1111C>T	no NM fasta found
 SPINK5	S0078	c.1048C>T	no NM fasta found
 SPINK5	S0078	c.1048C>T	no NM fasta found
 SPINK5	S0007	c.1086_1087delAT	no NM fasta found
 SPINK5	S0007	c.1086_1087delAT	no NM fasta found
+SPINK5	S0029	c.81+2T>A	no NM fasta found
 SPINK5	S0029	c.1111C>T	no NM fasta found
+SPINK5	S0042	c.1111C>T	no NM fasta found
 SPINK5	S0042	c.2041_2042delAG	no NM fasta found
 SPINK5	S0080	c.1351dupT	no NM fasta found
 SPINK5	S0080	c.1351dupT	no NM fasta found
+SPINK5	S0085	c.2098G>T	no NM fasta found
 SPINK5	S0085	c.410+1G>A	no NM fasta found
+SPINK5	S0065	c.2137C>T	no NM fasta found
 SPINK5	S0065	c.2368C>T	no NM fasta found
+SPINK5	S0066	c.2137C>T	no NM fasta found
 SPINK5	S0066	c.2368C>T	no NM fasta found
 SPINK5	S0061	c.2260A>T	no NM fasta found
 SPINK5	S0061	c.2260A>T	no NM fasta found
 SPINK5	S0062	c.2260A>T	no NM fasta found
 SPINK5	S0062	c.2260A>T	no NM fasta found
+SPINK5	S0032	c.2263dupA	no NM fasta found
 SPINK5	S0032	c.2368C>T	no NM fasta found
+SPINK5	S0063	c.1220+1G>C	no NM fasta found
 SPINK5	S0063	c.2368C>T	no NM fasta found
+SPINK5	S0070	c.2368C>T	no NM fasta found
 SPINK5	S0070	c.2423C>T	no NM fasta found
 SPINK5	S0073	c.2368C>T	no NM fasta found
 SPINK5	S0073	c.2368C>T	no NM fasta found
@@ -3226,15 +3804,19 @@ SPINK5	S0030	c.2468delA	no NM fasta found
 SPINK5	S0031	c.2468delA	no NM fasta found
 SPINK5	S0025	c.1150_1151delGA	no NM fasta found
 SPINK5	S0026	c.1150_1151delGA	no NM fasta found
+SPINK5	S0001	c.81G>A	no NM fasta found
 SPINK5	S0001	c.2258dupG	no NM fasta found
+SPINK5	S0017	c.475-2A>G	no NM fasta found
 SPINK5	S0017	c.2264dupA	no NM fasta found
 SPINK5	S0010	c.2368C>T	no NM fasta found
 SPINK5	S0010	c.2368C>T	no NM fasta found
+SPINK5	S0035	c.1608-1G>A	no NM fasta found
 SPINK5	S0035	c.2468delA	no NM fasta found
 SPINK5	S0081	c.2468delA	no NM fasta found
 SPINK5	S0081	c.2468delA	no NM fasta found
 SPINK5	S0084	c.2468delA	no NM fasta found
 SPINK5	S0084	c.2468delA	no NM fasta found
+SPINK5	S0005	c.283-2A>T	no NM fasta found
 SPINK5	S0005	c.2468dupA	no NM fasta found
 SPINK5	S0011	c.2468dupA	no NM fasta found
 SPINK5	S0011	c.2468dupA	no NM fasta found
@@ -3246,10 +3828,13 @@ SPINK5	S0043	c.2468dupA	no NM fasta found
 SPINK5	S0043	c.2468dupA	no NM fasta found
 SPINK5	S0059	c.2468dupA	no NM fasta found
 SPINK5	S0059	c.2468dupA	no NM fasta found
+SPINK5	S0060	c.1431-12G>A	no NM fasta found
 SPINK5	S0060	c.2468dupA	no NM fasta found
+SPINK5	S0016	c.1888-1G>A	no NM fasta found
 SPINK5	S0016	c.2579delA	no NM fasta found
 SPINK5	S0018	c.81+2T>A	no NM fasta found
 SPINK5	S0018	c.81+2T>A	no NM fasta found
+SPINK5	S0034	c.81+5G>A	no NM fasta found
 SPINK5	S0034	c.2240+1G>A	no NM fasta found
 SPINK5	S0055	c.1431-12G>A	no NM fasta found
 SPINK5	S0055	c.1431-12G>A	no NM fasta found
@@ -3272,44 +3857,56 @@ SPINK5	S0087	c.2441+3_2441+6delGAGT	no NM fasta found
 SPINK5	S0087	c.2441+3_2441+6delGAGT	no NM fasta found
 TCIRG1	T0010	c.136_177del	no NM fasta found
 TCIRG1	T0010	c.136_177del	no NM fasta found
+TCIRG1	T0004	c.564_690del	no NM fasta found
+TCIRG1	T0004	c.564_574del	no NM fasta found
 TCIRG1	T0004	c.691_732del	no NM fasta found
-TCIRG1	T0018	c.748C&gt	no NM fasta found
-TCIRG1	T0018	T	no NM fasta found
+TCIRG1	T0018	c.748C>T	no NM fasta found
+TCIRG1	T0018	c.748C>T	no NM fasta found
 TCIRG1	T0005	c.2433_2436delGGAG	no NM fasta found
-TCIRG1	T0029	c.1174C&gt	no NM fasta found
-TCIRG1	T0002	c.1280C&gt	no NM fasta found
+TCIRG1	T0029	c.1174C>T	no NM fasta found
+TCIRG1	T0002	c.1280C>A	no NM fasta found
+TCIRG1	T0002	c.1735_1947del	no NM fasta found
+TCIRG1	T0002	c.1735_1916del	no NM fasta found
+TCIRG1	T0002	c.1916_1917ins1916	no NM fasta found
 TCIRG1	T0001	c.982delC	no NM fasta found
+TCIRG1	T0001	c.1735_1947del	no NM fasta found
+TCIRG1	T0001	c.1735_1916del	no NM fasta found
+TCIRG1	T0001	c.1916_1917ins1916	no NM fasta found
 TCIRG1	T0025	c.1030_1031insG	no NM fasta found
 TCIRG1	T0025	c.1030_1031insG	no NM fasta found
-TCIRG1	T0006	c.1084G&gt	no NM fasta found
-TCIRG1	T0006	T	no NM fasta found
+TCIRG1	T0006	c.1084G>T	no NM fasta found
+TCIRG1	T0006	c.1084G>T	no NM fasta found
 TCIRG1	T0028	c.1230_1231insA	no NM fasta found
-TCIRG1	T0019	c.1357C&gt	no NM fasta found
-TCIRG1	T0019	T	no NM fasta found
-TCIRG1	T0020	c.1357C&gt	no NM fasta found
-TCIRG1	T0020	T	no NM fasta found
+TCIRG1	T0019	c.1357C>T	no NM fasta found
+TCIRG1	T0019	c.1357C>T	no NM fasta found
+TCIRG1	T0020	c.1357C>T	no NM fasta found
+TCIRG1	T0020	c.1357C>T	no NM fasta found
 TCIRG1	T0013	c.1442_1444delACA	no NM fasta found
 TCIRG1	T0013	c.1442_1444delACA	no NM fasta found
 TCIRG1	T0009	c.1498_1499delGC	no NM fasta found
 TCIRG1	T0009	c.1498_1499delGC	no NM fasta found
+TCIRG1	T0003	c.1735_1947del	no NM fasta found
+TCIRG1	T0003	c.1735_1916del	no NM fasta found
+TCIRG1	T0003	c.1916_1917ins1916	no NM fasta found
+TCIRG1	T0003	c.1735_1947del	no NM fasta found
+TCIRG1	T0003	c.1735_1916del	no NM fasta found
+TCIRG1	T0003	c.1916_1917ins1916	no NM fasta found
+TCIRG1	T0011	c.1735_1947del	no NM fasta found
+TCIRG1	T0011	c.1735_1916del	no NM fasta found
+TCIRG1	T0011	c.1916_1917ins1916	no NM fasta found
 TCIRG1	T0011	c.2388_2396delCTTTGCCGC	no NM fasta found
-TCIRG1	T0008	c.1848G&gt	no NM fasta found
-TCIRG1	T0008	A	no NM fasta found
-TCIRG1	T0016	c.2068C&gt	no NM fasta found
-TCIRG1	T0016	T	no NM fasta found
-TCIRG1	T0017	c.2068C&gt	no NM fasta found
+TCIRG1	T0008	c.1848G>A	no NM fasta found
+TCIRG1	T0008	c.1848G>A	no NM fasta found
+TCIRG1	T0016	c.2068C>T	no NM fasta found
+TCIRG1	T0016	c.2068C>T	no NM fasta found
+TCIRG1	T0017	c.2068C>T	no NM fasta found
 TCIRG1	T0021	c.2174_2248del	no NM fasta found
 TCIRG1	T0021	c.2174_2248del	no NM fasta found
-TCIRG1	T0012	c.2384C&gt	no NM fasta found
-TCIRG1	T0012	G	no NM fasta found
-TCIRG1	T0007	c.2475G&gt	no NM fasta found
-TNFRSF13B	T0059	c.[310T>C	unparseable c. notation
+TCIRG1	T0012	c.2384C>G	no NM fasta found
+TCIRG1	T0012	c.2384C>G	no NM fasta found
+TCIRG1	T0007	c.2475G>A	no NM fasta found
 TYK2	T0001	c.209_212delGCTT	no NM fasta found
 TYK2	T0001	c.209_212delGCTT	no NM fasta found
-UNC13D	U0057	c.[175G>A	unparseable c. notation
-UNC13D	U0057	1061G>T]	unparseable c. notation
-UNC13D	U0058	c.[175G>A	unparseable c. notation
-UNC13D	U0058	1061G>T]	unparseable c. notation
 WAS	W0124	c.5G>C	no NM fasta found
 WAS	W0123	c.11delG	no NM fasta found
 WAS	W0125	c.18G>A	no NM fasta found
@@ -3512,7 +4109,8 @@ WAS	W0115	c.1151dupC	no NM fasta found
 WAS	W0116	c.1242dupA	no NM fasta found
 WAS	W0041	c.1292_1295delGGGG	no NM fasta found
 WAS	W0054	c.1378C>T	no NM fasta found
-WAS	W0103	c.[1378C>T	no NM fasta found
+WAS	W0103	c.1378C>T	no NM fasta found
+WAS	W0103	c.1421T>C	no NM fasta found
 WAS	W0237	c.1430G>A	no NM fasta found
 WAS	W0238	c.1442T>A	no NM fasta found
 WAS	W0239	c.1442T>A	no NM fasta found
@@ -3523,6 +4121,7 @@ WAS	W0117	c.1453G>A	no NM fasta found
 WAS	W0240	c.1453G>A	no NM fasta found
 WAS	W0241	c.1508G>C	no NM fasta found
 WAS	W0242	c.1508G>C	no NM fasta found
+WAS	W0033	c.133-1G>C	no NM fasta found
 WAS	W0101	c.133-1G>C	no NM fasta found
 WAS	W0118	c.132+1G>T	no NM fasta found
 WAS	W0120	c.360+1G>A	no NM fasta found

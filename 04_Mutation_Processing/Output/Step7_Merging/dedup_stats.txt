@@ -1,64 +1,65 @@
-Input rows                  : 7776
-After c.-notation dedup     : 2661
-XM/NM duplicate rows removed : 421
-Unique variants (final)     : 2240
-Patients linked             : 2730
-Patient-variant pairs       : 5773
+Input rows                  : 9055
+After c.-notation dedup     : 2871
+XM/NM duplicate rows removed : 428
+Unique variants (final)     : 2443
+Patients linked             : 2760
+Patient-variant pairs       : 6319
 
 Dedup key source breakdown:
 dedup_key_source
-c_hgvs        2059
-normalized     181
+c_hgvs        2246
+normalized     197
 
 Representative track chosen:
 source_track
-NM_MANE        1187
-NG_IDRefseq     951
-NM_IDRefseq     102
+NM_MANE        1475
+NG_IDRefseq     859
+NM_IDRefseq     109
 
 Track coverage (variants resolved by N distinct tracks):
 tracks_merged
-1    1377
-2     863
+1    1263
+2    1180
 
 Patient-sharing distribution (patients per unique variant):
 patient_count
-1      1393
-2       401
-3       156
-4        76
-5        63
-6        34
-7        22
-8        13
-9        17
-10       10
-11        9
+1      1542
+2       427
+3       166
+4        79
+5        65
+6        42
+7        21
+8        15
+9        14
+10       13
+11       12
 12        1
 13        3
 14        2
 16        3
-17        5
-18        2
+17        4
+18        3
 19        3
 20        3
-21        1
-23        1
-25        2
+22        1
+24        1
+25        1
 26        1
-27        1
+27        2
 31        1
-32        2
+32        1
 38        1
-39        2
+39        1
+40        2
 41        2
-45        1
 46        1
-47        1
+51        1
 55        1
-56        1
+56        2
 62        1
-74        1
-117       1
-158       1
-212       1
+85        1
+122       1
+147       1
+160       1
+218       1
