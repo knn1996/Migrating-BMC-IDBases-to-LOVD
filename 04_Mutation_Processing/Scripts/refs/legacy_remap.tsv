@@ -113,3 +113,96 @@ WAS	W0018	c.665C>T	c.631C>T	-34	substitution	NM_000377.3
 WAS	W0020	c.665C>T	c.631C>T	-34	substitution	NM_000377.3
 WAS	W0019	c.741C>G	c.707C>G	-34	substitution	NM_000377.3
 WAS	W0009	c.907delC	c.873delC	-34	frameshift_start	NM_000377.3
+ADA	A0024	c.1006T>G	c.911T>G	-95	substitution	NM_000022.4
+ADA	A0052	c.102C>T	c.7C>T	-95	substitution	NM_000022.4
+ADA	A0053	c.102C>T	c.7C>T	-95	substitution	NM_000022.4
+ADA	A0003	c.1050_1054delGAAGA	c.955_959delGAAGA	-95	frameshift_start	NM_000022.4
+ADA	A0031	c.1050_1054delGAAGA	c.955_959delGAAGA	-95	frameshift_start	NM_000022.4
+ADA	A0032	c.1050_1054delGAAGA	c.955_959delGAAGA	-95	frameshift_start	NM_000022.4
+ADA	A0033	c.1050_1054delGAAGA	c.955_959delGAAGA	-95	frameshift_start	NM_000022.4
+ADA	A0034	c.1050_1054delGAAGA	c.955_959delGAAGA	-95	frameshift_start	NM_000022.4
+ADA	A0036	c.1050_1054delGAAGA	c.955_959delGAAGA	-95	frameshift_start	NM_000022.4
+ADA	A0046	c.1050_1054delGAAGA	c.955_959delGAAGA	-95	frameshift_start	NM_000022.4
+ADA	A0045	c.1070_1071insATGA	c.975_976insATGA	-95	frameshift_start	NM_000022.4
+ADA	A0020	c.1081C>T	c.986C>T	-95	substitution	NM_000022.4
+ADA	A0021	c.1081C>T	c.986C>T	-95	substitution	NM_000022.4
+ADA	A0025	c.1081C>T	c.986C>T	-95	substitution	NM_000022.4
+ADA	A0026	c.1081C>T	c.986C>T	-95	substitution	NM_000022.4
+ADA	A0027	c.1081C>T	c.986C>T	-95	substitution	NM_000022.4
+ADA	A0048	c.1081C>T	c.986C>T	-95	substitution	NM_000022.4
+ADA	A0002	c.1104_1106delGAA	c.1009_1011delGAA	-95	inframe_indel	NM_000022.4
+ADA	A0037	c.138C>G	c.43C>G	-95	substitution	NM_000022.4
+ADA	A0010	c.153G>A	c.58G>A	-95	substitution	NM_000022.4
+ADA	A0001	c.315G>T	c.220G>T	-95	substitution	NM_000022.4
+ADA	A0048	c.316G>T	c.221G>T	-95	substitution	NM_000022.4
+ADA	A0012	c.321C>T	c.226C>T	-95	substitution	NM_000022.4
+ADA	A0013	c.321C>T	c.226C>T	-95	substitution	NM_000022.4
+ADA	A0014	c.321C>T	c.226C>T	-95	substitution	NM_000022.4
+ADA	A0039	c.343C>A	c.248C>A	-95	substitution	NM_000022.4
+ADA	A0057	c.385A>G	c.290A>G	-95	substitution	NM_000022.4
+ADA	A0019	c.396C>T	c.301C>T	-95	substitution	NM_000022.4
+ADA	A0009	c.397G>A	c.302G>A	-95	substitution	NM_000022.4
+ADA	A0011	c.397G>A	c.302G>A	-95	substitution	NM_000022.4
+ADA	A0043	c.397G>T	c.302G>T	-95	substitution	NM_000022.4
+ADA	A0035	c.406C>T	c.311C>T	-95	substitution	NM_000022.4
+ADA	A0057	c.411C>G	c.316C>G	-95	substitution	NM_000022.4
+ADA	A0014	c.415T>C	c.320T>C	-95	substitution	NM_000022.4
+ADA	A0015	c.415T>C	c.320T>C	-95	substitution	NM_000022.4
+ADA	A0029	c.415T>C	c.320T>C	-95	substitution	NM_000022.4
+ADA	A0030	c.415T>C	c.320T>C	-95	substitution	NM_000022.4
+ADA	A0037	c.415T>C	c.320T>C	-95	substitution	NM_000022.4
+ADA	A0005	c.462delG	c.367delG	-95	frameshift_start	NM_000022.4
+ADA	A0008	c.472C>A	c.377C>A	-95	substitution	NM_000022.4
+ADA	A0006	c.480G>A	c.385G>A	-95	substitution	NM_000022.4
+ADA	A0007	c.480G>A	c.385G>A	-95	substitution	NM_000022.4
+ADA	A0003	c.514G>A	c.419G>A	-95	substitution	NM_000022.4
+ADA	A0054	c.519C>T	c.424C>T	-95	substitution	NM_000022.4
+ADA	A0055	c.519C>T	c.424C>T	-95	substitution	NM_000022.4
+ADA	A0053	c.520G>A	c.425G>A	-95	substitution	NM_000022.4
+ADA	A0002	c.540C>T	c.445C>T	-95	substitution	NM_000022.4
+ADA	A0016	c.541G>A	c.446G>A	-95	substitution	NM_000022.4
+ADA	A0058	c.549C>A	c.454C>A	-95	substitution	NM_000022.4
+ADA	A0024	c.561C>T	c.466C>T	-95	substitution	NM_000022.4
+ADA	A0044	c.562G>A	c.467G>A	-95	substitution	NM_000022.4
+ADA	A0045	c.562G>A	c.467G>A	-95	substitution	NM_000022.4
+ADA	A0046	c.562G>A	c.467G>A	-95	substitution	NM_000022.4
+ADA	A0056	c.562G>A	c.467G>A	-95	substitution	NM_000022.4
+ADA	A0042	c.624G>A	c.529G>A	-95	substitution	NM_000022.4
+ADA	A0038	c.631C>A	c.536C>A	-95	substitution	NM_000022.4
+ADA	A0060	c.634_635delTT	c.539_540delTT	-95	frameshift_start	NM_000022.4
+ADA	A0004	c.691A>C	c.596A>C	-95	substitution	NM_000022.4
+ADA	A0060	c.702_773delGAGGCTGTGAAGAGCGGCATTCACCGTACTGTCCACGCCGGGGAGGTGGGCTCGGCCGAAGTAGTAAAAGAG	c.607_678delGAGGCTGTGAAGAGCGGCATTCACCGTACTGTCCACGCCGGGGAGGTGGGCTCGGCCGAAGTAGTAAAAGAG	-95	inframe_indel	NM_000022.4
+ADA	A0015	c.726C>T	c.631C>T	-95	substitution	NM_000022.4
+ADA	A0019	c.727G>A	c.632G>A	-95	substitution	NM_000022.4
+ADA	A0021	c.727G>A	c.632G>A	-95	substitution	NM_000022.4
+ADA	A0038	c.727G>A	c.632G>A	-95	substitution	NM_000022.4
+ADA	A0009	c.738G>A	c.643G>A	-95	substitution	NM_000022.4
+ADA	A0018	c.738G>A	c.643G>A	-95	substitution	NM_000022.4
+ADA	A0001	c.741G>A	c.646G>A	-95	substitution	NM_000022.4
+ADA	A0004	c.741G>A	c.646G>A	-95	substitution	NM_000022.4
+ADA	A0008	c.741G>A	c.646G>A	-95	substitution	NM_000022.4
+ADA	A0028	c.741G>A	c.646G>A	-95	substitution	NM_000022.4
+ADA	A0031	c.741G>A	c.646G>A	-95	substitution	NM_000022.4
+ADA	A0044	c.741G>A	c.646G>A	-95	substitution	NM_000022.4
+ADA	A0047	c.741G>A	c.646G>A	-95	substitution	NM_000022.4
+ADA	A0049	c.744G>A	c.649G>A	-95	substitution	NM_000022.4
+ADA	A0059	c.793C>T	c.698C>T	-95	substitution	NM_000022.4
+ADA	A0040	c.853G>C	c.758G>C	-95	substitution	NM_000022.4
+ADA	A0027	c.855C>T	c.760C>T	-95	substitution	NM_000022.4
+ADA	A0013	c.916C>T	c.821C>T	-95	substitution	NM_000022.4
+ADA	A0025	c.967C>T	c.872C>T	-95	substitution	NM_000022.4
+ADA	A0043	c.967C>T	c.872C>T	-95	substitution	NM_000022.4
+ADA	A0016	c.985C>A	c.890C>A	-95	substitution	NM_000022.4
+ADA	A0017	c.985C>A	c.890C>A	-95	substitution	NM_000022.4
+ADA	A0020	c.EX4del			exclude: untestable intronic/exon-level legacy change	NM_000022.4
+ADA	A0039	c.EX5del			exclude: untestable intronic/exon-level legacy change	NM_000022.4
+ADA	A0042	c.1114_1115delAG	c.1019_1020delAG	-95	shift: pair evidence; literal lies past the CDS end	NM_000022.4
+ADA	A0047	c.EX5del			exclude: untestable intronic/exon-level legacy change	NM_000022.4
+ADA	A0050	c.95+1G>A			exclude: untestable intronic/exon-level legacy change	NM_000022.4
+ADA	A0050	c.781-3_781delinsTGGAAGAGCAGATCTGG			exclude: untestable intronic/exon-level legacy change	NM_000022.4
+ADA	A0051	c.95+1G>A			exclude: untestable intronic/exon-level legacy change	NM_000022.4
+ADA	A0051	c.781-3_781delinsTGGAAGAGCAGATCTGG			exclude: untestable intronic/exon-level legacy change	NM_000022.4
+ADA	A0056	c.EX5del			exclude: untestable intronic/exon-level legacy change	NM_000022.4
+ADA	A0066	c.1112-15T>A			exclude: untestable intronic/exon-level legacy change	NM_000022.4
+ADA	A0067	c.1112-15T>A			exclude: untestable intronic/exon-level legacy change	NM_000022.4
+ADA	A0067	c.1112-15TGAACCAACGAG>A			exclude: untestable intronic/exon-level legacy change	NM_000022.4

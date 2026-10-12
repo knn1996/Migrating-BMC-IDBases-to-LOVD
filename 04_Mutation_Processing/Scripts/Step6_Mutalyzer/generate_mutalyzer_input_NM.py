@@ -25,8 +25,6 @@ SOURCE_NG_DIRS = {
 
 EXCLUDE_GENES = {"BTK", "SH2"}
 
-CODING_OFFSET = {"ADA": -95}
-
 NM_ONLY_GENES = {"ORAI1"}
 
 os.makedirs(os.path.dirname(OUT_TSV), exist_ok=True)
@@ -73,23 +71,6 @@ def build_bed_index(bed_dir):
     return index
 
 
-def apply_coding_offset(c_notation, offset):
-    if not c_notation.startswith("c."):
-        return c_notation
-
-    def repl(m):
-        sign = m.group("sign")
-        if sign in ("-", "*"):
-            return m.group(0)
-        new = int(m.group("num")) + offset
-        if new <= 0:
-            new -= 1
-        return f"{new}{m.group('intron') or ''}"
-
-    pattern = re.compile(r"(?P<sign>[-*]?)(?P<num>\d+)(?P<intron>[+-]\d+)?")
-    return "c." + pattern.sub(repl, c_notation[2:])
-
-
 def parse_c_notation(notation):
     notation = notation.strip()
 
@@ -132,18 +113,15 @@ def main():
     ng_index  = build_acc_index(ng_dir)
     bed_index = build_bed_index(BED_DIR)
 
-    apply_offsets = CODING_OFFSET if args.source == "MANE" else {}
     legacy = load_remap(LEGACY_REMAP_TSV) if args.source == "MANE" else {}
 
     print(f"Source      : {args.source} -> {fasta_dir}")
     print(f"Scope       : {len(nm_index)} genes with an NM FASTA, minus excluded {sorted(EXCLUDE_GENES)}")
     print(f"NG reference: {len(ng_index)} genes ({ng_dir})")
-    print(f"Coding offset corrections applied: {apply_offsets}")
     print(f"Legacy remap entries: {len(legacy)}")
 
     out_rows     = []
     skipped_rows = []
-    n_offset_applied = 0
     n_legacy = 0
 
     with open(ALL_MUTATIONS_TSV, encoding="utf-8") as f:
@@ -168,11 +146,9 @@ def main():
             if c_notation is None:
                 skip("unparseable c. notation"); continue
 
-            if gene in apply_offsets:
-                c_notation = apply_coding_offset(c_notation, apply_offsets[gene])
-                n_offset_applied += 1
-
             remapped = remap(legacy, gene, accession, notation) if legacy else None
+            if remapped == "":
+                skip("legacy remap: excluded"); continue
             if remapped:
                 c_notation = remapped
                 n_legacy += 1
@@ -226,7 +202,6 @@ def main():
     via_nm = len(out_rows) - via_nc - via_ng
     print(f"Written : {len(out_rows)} rows  -> {out_tsv}")
     print(f"Skipped : {len(skipped_rows)} rows  -> {log_tsv}")
-    print(f"Offset-corrected rows: {n_offset_applied}")
     print(f"Legacy-remapped rows : {n_legacy}")
     print(f"  reference used: NC_(NM_)={via_nc}  NG_(NM_)={via_ng}  NM_only={via_nm}")
 

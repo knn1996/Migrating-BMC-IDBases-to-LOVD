@@ -18,11 +18,19 @@ legacy_remap.tsv for each accession whose inconsistent pair carries it. The per-
 evidence (every supporting change and its evidence type, the decision and its reason)
 goes to legacy_shift_evidence.tsv.
 
+--all-changes [GENE ...] tests every source change of the named genes (all genes when
+none are named) from all_mutations.tsv, whether or not its pair is inconsistent; a change
+that reconciles at k = 0 is neither a support nor remapped. --base-dir keeps the rows of
+an existing table for the genes that are not rebuilt. --manual adds reviewed decisions
+(gene, accession, source_c, action shift|exclude, shift, reason); an exclude row has an
+empty remapped_c and drops the change from the c. track inputs.
+
 MANE CDS: GenBank cache record of the MANE Select NM (MANE v1.5 GFF); otherwise the
 MANE NM FASTA with the CDS start from coding_offset_scan_MANE.csv, else the longest ORF.
 
 Usage:
     python Utilities/build_legacy_remap.py --out-dir <dir> [--exclude JAK3 C1QB CYBB ADA] [--max-shift 1500]
+    python Utilities/build_legacy_remap.py --out-dir <dir> --all-changes ADA --base-dir refs --manual <tsv>
 """
 
 import argparse
@@ -40,8 +48,10 @@ import yaml
 SCRIPTS = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(SCRIPTS / "Utilities"))
 sys.path.insert(0, str(SCRIPTS / "Step10_Audit"))
+sys.path.insert(0, str(SCRIPTS / "Step7_Merging"))
 import legacy_remap as R
 import audit_ledger as L
+from source_change import SourceChanges
 
 MANE_GFF = Path("01_Reference_Genomes") / "GRCh38_MANE" / "MANE.GRCh38.v1.5.ensembl_genomic.gff.gz"
 EVIDENCE_COLS = ["gene", "mane_nm", "cds_source", "status", "reason", "shift", "n_support", "n_substitution",
@@ -119,6 +129,9 @@ def main():
     ap.add_argument("--out-dir", type=Path, required=True)
     ap.add_argument("--exclude", nargs="*", default=[])
     ap.add_argument("--max-shift", type=int, default=1500)
+    ap.add_argument("--all-changes", nargs="*", default=None, metavar="GENE")
+    ap.add_argument("--base-dir", type=Path, default=None)
+    ap.add_argument("--manual", type=Path, default=None)
     args = ap.parse_args()
     with open(os.environ.get("CONFIG", SCRIPTS / "config" / "config.yaml"), encoding="utf-8") as f:
         cfg = yaml.safe_load(f)
@@ -142,13 +155,22 @@ def main():
             scan = {r["gene"].upper(): r.get("cds_start", "") for r in csv.DictReader(f)}
 
     changes = defaultdict(set)
-    for iid, sids, label in zip(pairs.individual_id, pairs.source_change_ids, pairs.label):
-        if not label.startswith("inconsistent:"):
-            continue
-        for sid in (s.strip() for s in sids.split(" ; ") if s.strip()):
+    all_mode = args.all_changes is not None
+    scope = {g.upper() for g in args.all_changes} if args.all_changes else None
+    if all_mode:
+        source = SourceChanges(str(out_root / "Step1a_Extraction" / "all_mutations.tsv"))
+        for key, (sid, _) in source.by_coding.items():
             gene, acc, _, _, ctok = sid.split("|", 4)
-            if ctok != "-":
+            if ctok != "-" and (scope is None or gene in scope):
                 changes[(gene, ctok, tuple(proteins.of(sid)))].add(acc)
+    else:
+        for iid, sids, label in zip(pairs.individual_id, pairs.source_change_ids, pairs.label):
+            if not label.startswith("inconsistent:"):
+                continue
+            for sid in (s.strip() for s in sids.split(" ; ") if s.strip()):
+                gene, acc, _, _, ctok = sid.split("|", 4)
+                if ctok != "-":
+                    changes[(gene, ctok, tuple(proteins.of(sid)))].add(acc)
 
     by_gene = defaultdict(list)
     for key in changes:
@@ -178,6 +200,9 @@ def main():
             if not change or not prots:
                 continue
             found = {}
+            if all_mode and any(R.reconcile(seq, cds0, change, p, 0) for p in prots):
+                hits[key] = found
+                continue
             for k in range(-args.max_shift, args.max_shift + 1):
                 if k == 0:
                     continue
@@ -209,6 +234,29 @@ def main():
                 remap_rows.append({"gene": gene, "accession": acc, "source_c": key[1], "remapped_c": new,
                                    "shift": f"{shift:+d}", "evidence": ev, "mane_nm": nm})
 
+    if args.manual:
+        rebuilt = {r["gene"] for r in evidence_rows}
+        with open(args.manual, encoding="utf-8") as f:
+            for m in csv.DictReader(f, delimiter="\t"):
+                gene = m["gene"].strip().upper()
+                nm = mane.get(symbol.get(gene, gene), "")
+                remap_rows = [r for r in remap_rows if (r["gene"], r["accession"], r["source_c"]) != (gene, m["accession"], m["source_c"])]
+                if m["action"].strip() == "exclude":
+                    new, shift = "", ""
+                else:
+                    shift = f"{int(m['shift']):+d}"
+                    new = R.shift_notation(m["source_c"], int(m["shift"])) or ""
+                remap_rows.append({"gene": gene, "accession": m["accession"].strip(), "source_c": m["source_c"].strip(),
+                                   "remapped_c": new, "shift": shift, "evidence": f"{m['action'].strip()}: {m['reason'].strip()}",
+                                   "mane_nm": nm})
+                rebuilt.add(gene)
+    if args.base_dir:
+        rebuilt = {r["gene"] for r in evidence_rows} | {r["gene"] for r in remap_rows}
+        base_remap = pd.read_csv(args.base_dir / "legacy_remap.tsv", sep="\t", dtype=str, keep_default_na=False)
+        base_ev = pd.read_csv(args.base_dir / "legacy_shift_evidence.tsv", sep="\t", dtype=str, keep_default_na=False)
+        remap_rows = base_remap[~base_remap.gene.isin(rebuilt)].to_dict("records") + remap_rows
+        evidence_rows = base_ev[~base_ev.gene.isin(rebuilt)].to_dict("records") + evidence_rows
+        evidence_rows.sort(key=lambda r: r["gene"])
     args.out_dir.mkdir(parents=True, exist_ok=True)
     pd.DataFrame(evidence_rows, columns=EVIDENCE_COLS).to_csv(args.out_dir / "legacy_shift_evidence.tsv", sep="\t", index=False)
     pd.DataFrame(remap_rows, columns=R.REMAP_COLS).to_csv(args.out_dir / "legacy_remap.tsv", sep="\t", index=False)

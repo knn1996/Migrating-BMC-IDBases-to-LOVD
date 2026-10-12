@@ -135,6 +135,9 @@ def main():
 
         sysname = row.get("sysname", "").strip()
         remapped = remap(legacy, gene, row.get("accession", ""), sysname) if legacy and c_notation == sysname else None
+        if remapped == "":
+            skip_rows.append({"gene": gene, "hgvs_input": row.get("hgvs_input", ""), "reason": "legacy remap: excluded"})
+            continue
         if remapped:
             c_notation = remapped
             n_legacy += 1

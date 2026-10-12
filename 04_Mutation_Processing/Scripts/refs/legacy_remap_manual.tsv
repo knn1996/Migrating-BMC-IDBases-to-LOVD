@@ -1,0 +1,13 @@
+gene	accession	source_c	action	shift	reason
+ADA	A0020	c.EX4del	exclude		untestable intronic/exon-level legacy change
+ADA	A0039	c.EX5del	exclude		untestable intronic/exon-level legacy change
+ADA	A0042	c.1114_1115delAG	shift	-95	pair evidence; literal lies past the CDS end
+ADA	A0047	c.EX5del	exclude		untestable intronic/exon-level legacy change
+ADA	A0050	c.95+1G>A	exclude		untestable intronic/exon-level legacy change
+ADA	A0050	c.781-3_781delinsTGGAAGAGCAGATCTGG	exclude		untestable intronic/exon-level legacy change
+ADA	A0051	c.95+1G>A	exclude		untestable intronic/exon-level legacy change
+ADA	A0051	c.781-3_781delinsTGGAAGAGCAGATCTGG	exclude		untestable intronic/exon-level legacy change
+ADA	A0056	c.EX5del	exclude		untestable intronic/exon-level legacy change
+ADA	A0066	c.1112-15T>A	exclude		untestable intronic/exon-level legacy change
+ADA	A0067	c.1112-15T>A	exclude		untestable intronic/exon-level legacy change
+ADA	A0067	c.1112-15TGAACCAACGAG>A	exclude		untestable intronic/exon-level legacy change
