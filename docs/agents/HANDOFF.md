@@ -80,9 +80,17 @@ Measurement: count definitions, precision metric, own-source-change ruler, c./p.
 - Token hygiene: /clear both sessions after each recorded run.
 - Committed: 12945a1 (rescue grouping fix; 77 augmented allele labels corrected, finals unchanged), f786738 (Run 8 code). Primary: 56 live Track B Mutalyzer queries approved.
 
+## Full numbering scan (2026-10-12, scratch/run8/scan/scan_changes.tsv, scan_genes.tsv)
+- Cause: IDbases stores c. as published; pre-HGVS papers counted from the cDNA record start (offset = that record's 5' UTR length). Same coding sequence, different origin. p. style tracks it (one-letter = old, three-letter = HGVS) in every mixed gene except CYBB.
+- 7,920 source changes / 133 genes: k0 4,216, shift 701, both 3, isoform 63, unverified 226, neither 360, untestable 2,351. 28 genes with a verified shift (18 mixed, 10 pure).
+- New mixed genes: AIRE −127 (188/157), C1S −202, CD40L −56 (85/98), CYBB −14 (doubtful), IKBKG −185, PRF1 −101, RFXANK −417, TAP2 −28. New pure-shift: CD40 −47, CFP −242, NCF1 −12 (doubtful).
+- 110 recoverable not-in-final units (CFH 20, RAG1 19, AICDA 14, IKBKG 13, RAG2 13, WAS 11, TCIRG1 9, ...). 1 wrong-kept Track A record (AIRE). 14 shift-class changes still inconsistent. Isoform PTPN11 −71 codons: all consistent, no action.
+- Most shift-class units in mixed genes are already right via Track A genomic mapping.
+
 ## Next after Run 8
-0. ADA over-remap (NEXT): hard-coded CODING_OFFSET {"ADA": -95} in generate_mutalyzer_input_NM.py shifts source c. that is already MANE numbering (6 pairs, 4 changes).
-1. Run 8 — Legacy c. numbering remap (~70 pairs; RAG1 +112, AICDA +76, CFH +73, TCIRG1 +60, WAS 34–36, LYST 190, RFXAP 116) + ADA over-remap. Needs Utilities/translation_test.py (draft, uncommitted): forecast missing transcripts first (fetch = network step), per-gene shift verified when ≥2 independent changes reconcile (C1QB −2 codons, RFX5 −40 codons are isoform numbering), include small frameshifts/in-frame indels, one shared remap function for c. tracks and rescue. ~25 queries + transcripts. Also yields source_error flags.
+0. ADA over-remap (IN PROGRESS; 7 pending-query regressions accepted; budget Track B ≤4, rescue Mutalyzer ≤12, VV ≤24): hard-coded CODING_OFFSET {"ADA": -95} in generate_mutalyzer_input_NM.py shifts source c. that is already MANE numbering (6 pairs, 4 changes).
+0b. Run 10 candidate: extend the legacy remap with the full scan (110 recoverable units, new mixed genes, AIRE Track A record).
+1. (done) Run 8 — Legacy c. numbering remap (~70 pairs; RAG1 +112, AICDA +76, CFH +73, TCIRG1 +60, WAS 34–36, LYST 190, RFXAP 116) + ADA over-remap. Needs Utilities/translation_test.py (draft, uncommitted): forecast missing transcripts first (fetch = network step), per-gene shift verified when ≥2 independent changes reconcile (C1QB −2 codons, RFX5 −40 codons are isoform numbering), include small frameshifts/in-frame indels, one shared remap function for c. tracks and rescue. ~25 queries + transcripts. Also yields source_error flags.
 2. Run 9 — MANE normalization of the ~200 records still off exact MANE after Run 7 (Track A on pick_mane fallback transcripts, Track C non-MANE NMs, VariantValidator/rescue). Recompute scope and forecast. First find why pick_mane never matches MANE_SELECT (needs 1 live raw Mutalyzer response; user runs it). Only IGHG2 has no MANE Select (ELA2 = ELANE NM_001972.4). Keep originals in alt_descriptions.
 3. Patient metadata: extract_patient_metadata.py glued-record bug (metadata flags ~3,147).
 4. Canonical export table; then the LOVD format mapping once the director's format is known.
