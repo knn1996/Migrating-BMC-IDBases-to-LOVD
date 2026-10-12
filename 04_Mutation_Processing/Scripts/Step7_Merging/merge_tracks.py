@@ -6,6 +6,8 @@ from collections import defaultdict
 
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 from source_change import SourceChanges, TRACK_A
+sys.path.insert(0, os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))), "Utilities"))
+from legacy_remap import load_remap, remap
 
 TRACK_A_PATH = os.environ["TRACK_A"]
 TRACK_B_PATH = os.environ["TRACK_B"]
@@ -16,6 +18,7 @@ OUT_MERGED     = os.environ["OUT_MERGED"]
 OUT_UNRESOLVED = os.environ["OUT_UNRESOLVED"]
 OUT_CROSSCHECK = os.environ["OUT_CROSSCHECK"]
 LOG_PATH       = os.environ["LOG_PATH"]
+LEGACY_REMAP_TSV = os.environ.get("LEGACY_REMAP_TSV", "")
 
 for _d in (OUT_MERGED, LOG_PATH):
     os.makedirs(os.path.dirname(_d), exist_ok=True)
@@ -154,7 +157,10 @@ def main():
         log(f"    {field:<12}  compared: {s['compared']:>5}   disagreements: {s['disagree']:>4}")
     log(f"  Total disagreements written to: {OUT_CROSSCHECK}")
 
+    legacy = load_remap(LEGACY_REMAP_TSV)
     log("\nPhase 2: Priority merge (NM_MANE > NG_IDRefseq > NM_IDRefseq)...")
+    log(f"  Legacy remap entries: {len(legacy)} (their literal Track C records are not eligible)")
+    n_literal_c = 0
     merged     = []
     unresolved = []
     source_counts = {"NM_MANE": 0, "NG_IDRefseq": 0, "NM_IDRefseq": 0, "unresolved": 0}
@@ -163,6 +169,9 @@ def main():
         ok_b = best_ok(track_b.get(key, []))
         ok_a = best_ok(track_a.get(key, []))
         ok_c = best_ok(track_c.get(key, []))
+        if ok_c and not ok_b and not ok_a and remap(legacy, key[0], key[1], key[2]) is not None:
+            ok_c = None
+            n_literal_c += 1
 
         if ok_b:
             merged.append(ok_b)
@@ -201,6 +210,7 @@ def main():
     log(f"    from NG_IDRefseq (priority 2):   {source_counts['NG_IDRefseq']}")
     log(f"    from NM_IDRefseq (priority 3):   {source_counts['NM_IDRefseq']}")
     log(f"  Unresolved (all tracks failed):    {source_counts['unresolved']}")
+    log(f"    of which literal Track C of a remapped change: {n_literal_c}")
     log(f"  Merged written to:    {OUT_MERGED}")
     log(f"  Unresolved written to: {OUT_UNRESOLVED}")
     log(f"  Crosscheck written to: {OUT_CROSSCHECK}")

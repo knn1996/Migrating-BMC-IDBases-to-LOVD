@@ -514,6 +514,7 @@ rule merge_tracks:
         b=os.path.join(S6, "mutalyzer_results_NM_MANE.tsv"),
         c=os.path.join(S6, "mutalyzer_results_NM_IDRefseq.tsv"),
         mut=os.path.join(S1A, "all_mutations.tsv"),
+        legacy=os.path.join(SCRIPTS, "refs", "legacy_remap.tsv"),
     output:
         merged=os.path.join(S7, "merged_variants.tsv"),
         unresolved=os.path.join(S7, "unresolved_variants.tsv"),
@@ -525,7 +526,7 @@ rule merge_tracks:
     shell:
         f'TRACK_A="{{input.a}}" TRACK_B="{{input.b}}" TRACK_C="{{input.c}}" ALL_MUTATIONS_TSV="{{input.mut}}" '
         f'OUT_MERGED="{{output.merged}}" OUT_UNRESOLVED="{{output.unresolved}}" OUT_CROSSCHECK="{{output.crosscheck}}" '
-        f'LOG_PATH="{{params.logs}}/merge_tracks.log" '
+        f'LOG_PATH="{{params.logs}}/merge_tracks.log" LEGACY_REMAP_TSV="{{input.legacy}}" '
         f'python "{script("Step7_Merging/merge_tracks.py")}"'
 
 
