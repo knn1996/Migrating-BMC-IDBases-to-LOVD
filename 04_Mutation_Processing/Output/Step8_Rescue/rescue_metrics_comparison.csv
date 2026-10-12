@@ -1,5 +1,5 @@
 metric,published,final
-distinct_variants,2387,2698
-patient_variant_pairs,5898,6562
-unique_patients,4613,5713
-resolution_rate,0.7775,0.8788
+distinct_variants,2386,2698
+patient_variant_pairs,5896,6562
+unique_patients,4611,5713
+resolution_rate,0.7772,0.8788

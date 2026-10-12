@@ -1792,7 +1792,6 @@ RFXANK	c.469C>T	NM_003721.4	c.469C>T	r.(469c>u)	p.(Arg157Ter)	nonsense	ok	469	15
 RFXANK	c.383del	NM_003721.4	c.383del	r.(383del)	p.(Leu128ProfsTer76)	frameshift		608	203	203	yes	105	NMD_predicted		r.0?	p.0?
 RFXANK	c.634C>T	NM_003721.4	c.634C>T	r.(634c>u)	p.(Arg212Ter)	nonsense	ok	634	212	212	yes	79	NMD_predicted		r.0?	p.0?
 RFXANK	c.362A>T	NM_003721.4	c.362A>T	r.(362a>u)	p.(Asp121Val)								not_ptc		r.(362a>u)	p.(Asp121Val)
-RFXAP	c.150_151insGCGGGGC	NM_000538.3	c.150_151insGCGGGGC	r.(150_151insgcggggc)	p.(Pro51AlafsTer24)	frameshift		213	74	74	yes	496	NMD_predicted		r.0?	p.0?
 RNF168	c.1323_1326del	NM_152617.4	c.1323_1326del	r.(1323_1326del)	p.(Gln442LysfsTer45)	frameshift		1460	486	486	yes	-693	NMD_escape_last_exon		r.(1323_1326del)	p.(Gln442LysfsTer45)
 RNF168	c.397dup	NM_152617.4	c.397dup	r.(397dup)	p.(Ala133GlyfsTer11)	frameshift		426	143	143	yes	337	NMD_predicted		r.0?	p.0?
 SBDS	c.101dup	NM_016038.4	c.101dup	r.(101dup)	p.(Asn34LysfsTer16)	frameshift		144	49	49	yes	481	NMD_predicted	start_proximal	r.0?	p.0?
@@ -2411,6 +2410,7 @@ MPO	c.1927T>C	NM_000250.2	c.1927T>C	r.(1927u>c)	p.(Trp643Arg)								not_ptc		r.
 RAG1	c.1723_1735del	NM_000448.3	c.1723_1735del		p.(Glu575LysfsTer3)	frameshift		1742	577	577	yes	-1742	NMD_escape_last_exon			p.(Glu575LysfsTer3)
 RFXAP	c.368del	NM_000538.4	c.368del	r.(368del)	p.(Ser123ThrfsTer15)	frameshift		410	137	137	yes	299	NMD_predicted		r.0?	p.0?
 RFXAP	c.163C>T	NM_000538.4	c.163C>T	r.(163c>u)	p.(Gln55Ter)	nonsense	ok	163	55	55	yes	546	NMD_predicted		r.0?	p.0?
+RFXAP	c.28_34dup	NM_000538.4	c.28_34dup	r.(28_34dup)	p.(Pro12ArgfsTer63)	frameshift		213	74	74	yes	496	NMD_predicted		r.0?	p.0?
 SERPING1	c.1396C>T	NM_000062.3	c.1396C>T	r.(1396c>u)	p.(Arg466Cys)								not_ptc		r.(1396c>u)	p.(Arg466Cys)
 SERPING1	c.1397G>A	NM_000062.3	c.1397G>A	r.(1397g>a)	p.(Arg466His)								not_ptc		r.(1397g>a)	p.(Arg466His)
 SERPING1	c.1030_1249del	NM_000062.3	c.1030_1249del	r.(1030_1249del)	p.(Val344AsnfsTer14)	frameshift		1289	357	357	yes	-39	NMD_escape_last_exon		r.(1030_1249del)	p.(Val344AsnfsTer14)

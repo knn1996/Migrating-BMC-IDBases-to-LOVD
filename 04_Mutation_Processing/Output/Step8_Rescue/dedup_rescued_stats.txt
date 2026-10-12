@@ -11,15 +11,15 @@ identical_change                    6
 
 Dedup key source breakdown:
 dedup_key_source
-c_hgvs        2764
-normalized     197
+c_hgvs        2765
+normalized     196
 
 Representative track chosen:
 source_track
 NM_MANE             1984
-mane_remap           489
+mane_remap           490
 NG_IDRefseq          294
-NM_IDRefseq          109
+NM_IDRefseq          108
 variantvalidator      85
 
 Track coverage (variants resolved by N distinct tracks):

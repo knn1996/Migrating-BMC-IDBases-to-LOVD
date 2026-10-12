@@ -1,10 +1,10 @@
 stage	count
-unresolved_in	683
-resolved_by_MANE_remap	491
+unresolved_in	684
+resolved_by_MANE_remap	492
 resolved_by_VariantValidator	71
 resolved_by_VV_mismatch_probe	18
 resolved_by_offset_fix	0
-total_rescued	580
+total_rescued	581
   of which need curator review	131
 remaining_unresolved	103
   ref_mismatch	87

@@ -1,9 +1,9 @@
 ## Resolution of Unresolved Variants
 
-Of the 683 distinct variants that failed all three Mutalyzer
-processing tracks (NG\_IDRefseq, NM\_MANE, and NM\_IDRefseq), **580
+Of the 684 distinct variants that failed all three Mutalyzer
+processing tracks (NG\_IDRefseq, NM\_MANE, and NM\_IDRefseq), **581
 (84.9%)** were automatically resolved by the rescue layer:
-491 via MANE Select NM\_ re-mapping (correcting obsolete transcript
+492 via MANE Select NM\_ re-mapping (correcting obsolete transcript
 version references), 71 via VariantValidator against the current GRCh38
 build (intronic and IVS-notation variants), 18 via a
 VariantValidator probe of reference-mismatch candidates, and
@@ -23,8 +23,8 @@ against the primary literature before deposition.
 Resolution rates are reported on a distinct-variant basis in
 `rescue_metrics_comparison.csv`; patient-level row counts before and after
 augmentation are reported in `augment_stats.txt` and `dedup_rescued_stats.txt`.
-The pre-rescue pool contained 9355 patient-variant rows, which is
-not directly comparable with the 683 distinct unresolved variants
+The pre-rescue pool contained 9353 patient-variant rows, which is
+not directly comparable with the 684 distinct unresolved variants
 above and is therefore not combined into a single ratio here.
 
 The residual **103** variants fall into three mechanistically

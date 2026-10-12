@@ -1792,7 +1792,6 @@ Individual/Gender	Individual/Origin/Geographic	Individual/Age	Individual/Remarks
 							19	NC_000019.10:g.19197566del						NM_003721.4	c.383del	r.(383del)	p.(Leu128ProfsTer76)	RFXANK	c.383del	1	R0024	MANE Select	NM_MANE	ok	deletion
 							19	NC_000019.10:g.19199156C>T						NM_003721.4	c.634C>T	r.(634c>u)	p.(Arg212Ter)	RFXANK	c.634C>T	1	R0029	MANE Select	NM_MANE	ok	substitution
 							19	NC_000019.10:g.19197545A>T						NM_003721.4	c.362A>T	r.(362a>u)	p.(Asp121Val)	RFXANK	c.362A>T	1	R0030	MANE Select	NM_MANE	ok	substitution
-														NM_000538.3	c.150_151insGCGGGGC	r.(150_151insgcggggc)	p.(Pro51AlafsTer24)	RFXAP	c.150_151insGCGGGGC	2	R0006;R0007		NM_IDRefseq	ok	insertion
 							3	NC_000003.12:g.196472211_196472214del						NM_152617.4	c.1323_1326del	r.(1323_1326del)	p.(Gln442LysfsTer45)	RNF168	c.1323_1326del	1	R0001	MANE Select	NM_MANE	ok	deletion
 							3	NC_000003.12:g.196487562dup						NM_152617.4	c.397dup	r.(397dup)	p.(Ala133GlyfsTer11)	RNF168	c.397dup	1	R0001	MANE Select	NM_MANE	ok	duplication
 							7	NC_000007.14:g.66995321dup						NM_016038.4	c.101dup	r.(101dup)	p.(Asn34LysfsTer16)	SBDS	c.101dup	1	S0001	MANE Select	NM_MANE	ok	duplication
@@ -2411,6 +2410,7 @@ Individual/Gender	Individual/Origin/Geographic	Individual/Age	Individual/Remarks
 							11	NC_000011.10:g.36575027_36575039del						NM_000448.3	c.1723_1735del		p.(Glu575LysfsTer3)	RAG1	c.1723_1735del	1	R0006	NM_000448.3:c.1723_1735del	variantvalidator	ok	deletion
 							13	NC_000013.11:g.36819725del						NM_000538.4	c.368del	r.(368del)	p.(Ser123ThrfsTer15)	RFXAP	c.368del	3	R0001;R0003;R0004	NM_000538.4:c.368del	mane_remap	ok	deletion
 							13	NC_000013.11:g.36819520C>T						NM_000538.4	c.163C>T	r.(163c>u)	p.(Gln55Ter)	RFXAP	c.163C>T	2	R0002;R0005	NM_000538.4:c.163C>T	mane_remap	ok	substitution
+							13	NC_000013.11:g.36819385_36819391dup						NM_000538.4	c.28_34dup	r.(28_34dup)	p.(Pro12ArgfsTer63)	RFXAP	c.28_34dup	2	R0006;R0007	NM_000538.4:c.28_34dup	mane_remap	ok	duplication
 							11	NC_000011.10:g.57614474C>T						NM_000062.3	c.1396C>T	r.(1396c>u)	p.(Arg466Cys)	SERPING1	c.1396C>T	15	S0001;S0002;S0103;S0104;S0118;S0126;S0127;S0128;S0129;S0153;S0154;S0155;S0265;S0266;S0267	NM_000062.3:c.1396C>T	mane_remap	ok	substitution
 							11	NC_000011.10:g.57614475G>A						NM_000062.3	c.1397G>A	r.(1397g>a)	p.(Arg466His)	SERPING1	c.1397G>A	10	S0003;S0004;S0074;S0105;S0106;S0130;S0131;S0171;S0172;S0195	NM_000062.3:c.1397G>A	mane_remap	ok	substitution
 														NM_000062.3	c.1030_1249del	r.(1030_1249del)	p.(Val344AsnfsTer14)	SERPING1	c.1030_1249del	1	S0005	NM_000062.3:c.1030_1249del	mane_remap	ok	deletion
