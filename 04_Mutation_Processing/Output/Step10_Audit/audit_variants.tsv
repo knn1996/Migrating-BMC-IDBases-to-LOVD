@@ -195,9 +195,9 @@ AICDA	A0062	1+2	g.6398T>C, c.127T>C, r.127u>c, p.Ser43Pro	g.6398T>C	c.127T>C	p.S
 AICDA	A0038	1+2	g.7816C>T, c.166C>T, r.166c>u, p.His56Tyr	g.7816C>T	c.166C>T	p.His56Tyr	IN_FINAL	traced_through_pipeline	c.166C>T	p.(His56Tyr)	mane_remap	MATCH	0	1	all	yes
 AICDA	A0081	1	g.7822G>A, c.172G>A, r.172g>a, p.Glu58Lys	g.7822G>A	c.172G>A	p.Glu58Lys	IN_FINAL	traced_through_pipeline	c.172G>A	p.(Glu58Lys)	mane_remap	MATCH	0	2	all	yes
 AICDA	A0081	2	g.7909T>C, c.259T>C, r.259u>c, p.Cys87Arg	g.7909T>C	c.259T>C	p.Cys87Arg	IN_FINAL	traced_through_pipeline	c.259T>C	p.(Cys87Arg)	mane_remap	MATCH	0	2	all	yes
-AICDA	A0031	1	g.7826_7834delTGCTCTTCC, c.252_260delTGCTCTTCC, p.L59del	g.7826_7834delTGCTCTTCC	c.252_260delTGCTCTTCC	p.L59del	IN_FINAL	traced_through_pipeline	c.252_260del	p.(Trp84_Pro86del)	variantvalidator	POS_SHIFT	25	2	all	yes
+AICDA	A0031	1	g.7826_7834delTGCTCTTCC, c.252_260delTGCTCTTCC, p.L59del	g.7826_7834delTGCTCTTCC	c.252_260delTGCTCTTCC	p.L59del	IN_FINAL	traced_through_pipeline	c.177_185del	p.(Leu59_Leu62delinsPhe)	mane_remap	TYPE_DIFF_SAME_POS	0	2	all	yes
 AICDA	A0031	2	g.7853G>A, c.279G>A, p.W68X	g.7853G>A	c.279G>A	p.W68X	KNOWN_UNRESOLVED	RESCUABLE_AUTO:ENOSELECTORFOUND						2	all	yes
-AICDA	A0032	1	g.7826_7834delTGCTCTTCC, c.252_260delTGCTCTTCC, p.L59del	g.7826_7834delTGCTCTTCC	c.252_260delTGCTCTTCC	p.L59del	IN_FINAL	traced_through_pipeline	c.252_260del	p.(Trp84_Pro86del)	variantvalidator	POS_SHIFT	25	2	all	yes
+AICDA	A0032	1	g.7826_7834delTGCTCTTCC, c.252_260delTGCTCTTCC, p.L59del	g.7826_7834delTGCTCTTCC	c.252_260delTGCTCTTCC	p.L59del	IN_FINAL	traced_through_pipeline	c.177_185del	p.(Leu59_Leu62delinsPhe)	mane_remap	TYPE_DIFF_SAME_POS	0	2	all	yes
 AICDA	A0032	2	g.7853G>A, c.279G>A, p.W68X	g.7853G>A	c.279G>A	p.W68X	NOT_REGISTERED	allele_absent_accession_present						2	all	yes
 AICDA	A0039	1+2	g.7853G>A, c.203G>A, r.203g>a, p.Trp68X	g.7853G>A	c.203G>A	p.Trp68X	IN_FINAL	traced_through_pipeline	c.203G>A	p.(Trp68Ter)	mane_remap	MATCH	0	1	all	yes
 AICDA	A0040	1+2	g.7853G>A, c.203G>A, r.203g>a, p.Trp68X	g.7853G>A	c.203G>A	p.Trp68X	IN_FINAL	traced_through_pipeline	c.203G>A	p.(Trp68Ter)	mane_remap	MATCH	0	1	all	yes
@@ -220,20 +220,20 @@ AICDA	A0082	1+2	g.7909T>C, c.259T>C, r.259u>c, p.Cys87Arg	g.7909T>C	c.259T>C	p.C
 AICDA	A0065	1+2	g.7943T>G, c.293T>G, r.293u>g, p.Leu98Arg	g.7943T>G	c.293T>G	p.Leu98Arg	IN_FINAL	traced_through_pipeline	c.293T>G	p.(Leu98Arg)	mane_remap	MATCH	0	1	all	yes
 AICDA	A0006	1+2	g.7967T>C, c.393T>C, p.L106P	g.7967T>C	c.393T>C	p.L106P	KNOWN_UNRESOLVED	RESCUABLE_AUTO:ENOSELECTORFOUND						1	all	yes
 AICDA	A0007	1+2	g.7967T>C, c.393T>C, p.L106P	g.7967T>C	c.393T>C	p.L106P	NOT_REGISTERED	accession_absent_from_final						1	all	no
-AICDA	A0013	1+2	g.7984C>T, c.410C>T, p.R112C	g.7984C>T	c.410C>T	p.R112C	IN_FINAL	traced_through_pipeline	c.410C>T	p.(Ala137Val)	mane_remap	DIFFERENT		1	all	yes
-AICDA	A0014	1+2	g.7984C>T, c.410C>T, p.R112C	g.7984C>T	c.410C>T	p.R112C	IN_FINAL	traced_through_pipeline	c.410C>T	p.(Ala137Val)	mane_remap	DIFFERENT		1	all	yes
-AICDA	A0030	1+2	g.7984C>T, c.410C>T, p.R112C	g.7984C>T	c.410C>T	p.R112C	IN_FINAL	traced_through_pipeline	c.410C>T	p.(Ala137Val)	mane_remap	DIFFERENT		1	all	yes
-AICDA	A0016	1+2	g.7984C>T, c.410C>T, p.R112C	g.7984C>T	c.410C>T	p.R112C	IN_FINAL	traced_through_pipeline	c.410C>T	p.(Ala137Val)	mane_remap	DIFFERENT		1	all	yes
-AICDA	A0017	1+2	g.7984C>T, c.410C>T, p.R112C	g.7984C>T	c.410C>T	p.R112C	IN_FINAL	traced_through_pipeline	c.410C>T	p.(Ala137Val)	mane_remap	DIFFERENT		1	all	yes
-AICDA	A0018	1+2	g.7984C>T, c.410C>T, p.R112C	g.7984C>T	c.410C>T	p.R112C	IN_FINAL	traced_through_pipeline	c.410C>T	p.(Ala137Val)	mane_remap	DIFFERENT		1	all	yes
-AICDA	A0019	1+2	g.7984C>T, c.410C>T, p.R112C	g.7984C>T	c.410C>T	p.R112C	IN_FINAL	traced_through_pipeline	c.410C>T	p.(Ala137Val)	mane_remap	DIFFERENT		1	all	yes
-AICDA	A0020	1+2	g.7984C>T, c.410C>T, p.R112C	g.7984C>T	c.410C>T	p.R112C	IN_FINAL	traced_through_pipeline	c.410C>T	p.(Ala137Val)	mane_remap	DIFFERENT		1	all	yes
-AICDA	A0021	1+2	g.7984C>T, c.410C>T, p.R112C	g.7984C>T	c.410C>T	p.R112C	IN_FINAL	traced_through_pipeline	c.410C>T	p.(Ala137Val)	mane_remap	DIFFERENT		1	all	yes
-AICDA	A0022	1+2	g.7984C>T, c.410C>T, p.R112C	g.7984C>T	c.410C>T	p.R112C	IN_FINAL	traced_through_pipeline	c.410C>T	p.(Ala137Val)	mane_remap	DIFFERENT		1	all	yes
-AICDA	A0023	1+2	g.7984C>T, c.410C>T, p.R112C	g.7984C>T	c.410C>T	p.R112C	IN_FINAL	traced_through_pipeline	c.410C>T	p.(Ala137Val)	mane_remap	DIFFERENT		1	all	yes
-AICDA	A0024	1+2	g.7984C>T, c.410C>T, p.R112C	g.7984C>T	c.410C>T	p.R112C	IN_FINAL	traced_through_pipeline	c.410C>T	p.(Ala137Val)	mane_remap	DIFFERENT		1	all	yes
-AICDA	A0025	1+2	g.7984C>T, c.410C>T, p.R112C	g.7984C>T	c.410C>T	p.R112C	IN_FINAL	traced_through_pipeline	c.410C>T	p.(Ala137Val)	mane_remap	DIFFERENT		1	all	yes
-AICDA	A0026	1+2	g.7984C>T, c.410C>T, p.R112C	g.7984C>T	c.410C>T	p.R112C	IN_FINAL	traced_through_pipeline	c.410C>T	p.(Ala137Val)	mane_remap	DIFFERENT		1	all	yes
+AICDA	A0013	1+2	g.7984C>T, c.410C>T, p.R112C	g.7984C>T	c.410C>T	p.R112C	IN_FINAL	traced_through_pipeline	c.334C>T	p.(Arg112Cys)	mane_remap	MATCH	0	1	all	yes
+AICDA	A0014	1+2	g.7984C>T, c.410C>T, p.R112C	g.7984C>T	c.410C>T	p.R112C	IN_FINAL	traced_through_pipeline	c.334C>T	p.(Arg112Cys)	mane_remap	MATCH	0	1	all	yes
+AICDA	A0030	1+2	g.7984C>T, c.410C>T, p.R112C	g.7984C>T	c.410C>T	p.R112C	IN_FINAL	traced_through_pipeline	c.334C>T	p.(Arg112Cys)	mane_remap	MATCH	0	1	all	yes
+AICDA	A0016	1+2	g.7984C>T, c.410C>T, p.R112C	g.7984C>T	c.410C>T	p.R112C	IN_FINAL	traced_through_pipeline	c.334C>T	p.(Arg112Cys)	mane_remap	MATCH	0	1	all	yes
+AICDA	A0017	1+2	g.7984C>T, c.410C>T, p.R112C	g.7984C>T	c.410C>T	p.R112C	IN_FINAL	traced_through_pipeline	c.334C>T	p.(Arg112Cys)	mane_remap	MATCH	0	1	all	yes
+AICDA	A0018	1+2	g.7984C>T, c.410C>T, p.R112C	g.7984C>T	c.410C>T	p.R112C	IN_FINAL	traced_through_pipeline	c.334C>T	p.(Arg112Cys)	mane_remap	MATCH	0	1	all	yes
+AICDA	A0019	1+2	g.7984C>T, c.410C>T, p.R112C	g.7984C>T	c.410C>T	p.R112C	IN_FINAL	traced_through_pipeline	c.334C>T	p.(Arg112Cys)	mane_remap	MATCH	0	1	all	yes
+AICDA	A0020	1+2	g.7984C>T, c.410C>T, p.R112C	g.7984C>T	c.410C>T	p.R112C	IN_FINAL	traced_through_pipeline	c.334C>T	p.(Arg112Cys)	mane_remap	MATCH	0	1	all	yes
+AICDA	A0021	1+2	g.7984C>T, c.410C>T, p.R112C	g.7984C>T	c.410C>T	p.R112C	IN_FINAL	traced_through_pipeline	c.334C>T	p.(Arg112Cys)	mane_remap	MATCH	0	1	all	yes
+AICDA	A0022	1+2	g.7984C>T, c.410C>T, p.R112C	g.7984C>T	c.410C>T	p.R112C	IN_FINAL	traced_through_pipeline	c.334C>T	p.(Arg112Cys)	mane_remap	MATCH	0	1	all	yes
+AICDA	A0023	1+2	g.7984C>T, c.410C>T, p.R112C	g.7984C>T	c.410C>T	p.R112C	IN_FINAL	traced_through_pipeline	c.334C>T	p.(Arg112Cys)	mane_remap	MATCH	0	1	all	yes
+AICDA	A0024	1+2	g.7984C>T, c.410C>T, p.R112C	g.7984C>T	c.410C>T	p.R112C	IN_FINAL	traced_through_pipeline	c.334C>T	p.(Arg112Cys)	mane_remap	MATCH	0	1	all	yes
+AICDA	A0025	1+2	g.7984C>T, c.410C>T, p.R112C	g.7984C>T	c.410C>T	p.R112C	IN_FINAL	traced_through_pipeline	c.334C>T	p.(Arg112Cys)	mane_remap	MATCH	0	1	all	yes
+AICDA	A0026	1+2	g.7984C>T, c.410C>T, p.R112C	g.7984C>T	c.410C>T	p.R112C	IN_FINAL	traced_through_pipeline	c.334C>T	p.(Arg112Cys)	mane_remap	MATCH	0	1	all	yes
 AICDA	A0058	1	g.7984C>T, c.334C>T, r.334c>u, p.Arg112Cys	g.7984C>T	c.334C>T	p.Arg112Cys	IN_FINAL	traced_through_pipeline	c.334C>T	p.(Arg112Cys)	mane_remap	MATCH	0	2	all	yes
 AICDA	A0058	2	g.8956delC, c.544delC, r.544delc, p.Pro182fsX28	g.8956delC	c.544delC	p.Pro182fsX28	IN_FINAL	traced_through_pipeline	c.547del	p.(Leu183CysfsTer27)	mane_remap	MATCH_FS	1	2	all	yes
 AICDA	A0066	1+2	g.7984C>T, c.334C>T, r.334c>u, p.Arg112Cys	g.7984C>T	c.334C>T	p.Arg112Cys	IN_FINAL	traced_through_pipeline	c.334C>T	p.(Arg112Cys)	mane_remap	MATCH	0	1	all	yes
@@ -250,8 +250,8 @@ AICDA	A0060	1+2	g.8057T>A, c.407T>A, r.407u>a, p.Ile136Lys	g.8057T>A	c.407T>A	p.
 AICDA	A0008	1+2	g.8065A>G, c.491A>G, p.M139V	g.8065A>G	c.491A>G	p.M139V	KNOWN_UNRESOLVED	RESCUABLE_AUTO:ENOSELECTORFOUND						1	all	yes
 AICDA	A0011	1+2	g.8384C>A, c.517C>A, p.C147X	g.8384C>A	c.517C>A	p.C147X	KNOWN_UNRESOLVED	RESCUABLE_AUTO:ENOSELECTORFOUND						1	all	yes
 AICDA	A0012	1+2	g.8384C>A, c.517C>A, p.C147X	g.8384C>A	c.517C>A	p.C147X	NOT_REGISTERED	accession_absent_from_final						1	all	no
-AICDA	A0009	1+2	g.8395T>C, c.528T>C, p.F151S	g.8395T>C	c.528T>C	p.F151S	IN_FINAL	traced_through_pipeline	c.528T>C	p.(=)	mane_remap	DIFFERENT		1	all	yes
-AICDA	A0010	1+2	g.8395T>C, c.528T>C, p.F151S	g.8395T>C	c.528T>C	p.F151S	IN_FINAL	traced_through_pipeline	c.528T>C	p.(=)	mane_remap	DIFFERENT		1	all	yes
+AICDA	A0009	1+2	g.8395T>C, c.528T>C, p.F151S	g.8395T>C	c.528T>C	p.F151S	IN_FINAL	traced_through_pipeline	c.452T>C	p.(Phe151Ser)	mane_remap	MATCH	0	1	all	yes
+AICDA	A0010	1+2	g.8395T>C, c.528T>C, p.F151S	g.8395T>C	c.528T>C	p.F151S	IN_FINAL	traced_through_pipeline	c.452T>C	p.(Phe151Ser)	mane_remap	MATCH	0	1	all	yes
 AICDA	A0042	1+2	g.8465A>C, c.522A>C, r.522a>c, p.Arg174Ser	g.8465A>C	c.522A>C	p.Arg174Ser	IN_FINAL	traced_through_pipeline	c.522A>C	p.(Arg174Ser)	mane_remap	MATCH	0	1	all	yes
 AICDA	A0043	1+2	g.8465A>C, c.522A>C, r.522a>c, p.Arg174Ser	g.8465A>C	c.522A>C	p.Arg174Ser	IN_FINAL	traced_through_pipeline	c.522A>C	p.(Arg174Ser)	mane_remap	MATCH	0	1	all	yes
 AICDA	A0044	1+2	g.8465A>C, c.522A>C, r.522a>c, p.Arg174Ser	g.8465A>C	c.522A>C	p.Arg174Ser	IN_FINAL	traced_through_pipeline	c.522A>C	p.(Arg174Ser)	mane_remap	MATCH	0	1	all	yes
@@ -874,36 +874,36 @@ C1S	C0004	1	g.10626G>T, c.1789G>T, r.1789g>u, p.Glu597X	g.10626G>T	c.1789G>T	p.G
 C1S	C0004	2	g.10726G>A, c.1889G>A, r.1889g>a, p.Gly630Glu	g.10726G>A	c.1889G>A	p.Gly630Glu	IN_FINAL	traced_through_pipeline	c.1889G>A	p.(Gly630Glu)	NM_MANE	MATCH	0	2	all	yes
 C1S	C0005	1	g.10626G>T, c.1789G>T, r.1789g>u, p.Glu597X	g.10626G>T	c.1789G>T	p.Glu597X	IN_FINAL	traced_through_pipeline	c.1789G>T	p.(Glu597Ter)	NM_MANE	MATCH	0	2	all	yes
 C1S	C0005	2	g.10726G>A, c.1889G>A, r.1889g>a, p.Gly630Glu	g.10726G>A	c.1889G>A	p.Gly630Glu	IN_FINAL	traced_through_pipeline	c.1889G>A	p.(Gly630Glu)	NM_MANE	MATCH	0	2	all	yes
-C2	C0001	1	g.2151G>A, c.428G>A, p.C131Y	g.2151G>A	c.428G>A	p.C131Y	IN_FINAL	traced_through_pipeline	c.-63-8962G>A	p.(=)	NG_IDRefseq	DIFFERENT		2	all	yes
-C2	C0001	2	g.9059G>C, c.990G>C, p.E318D	g.9059G>C	c.990G>C	p.E318D	IN_FINAL	traced_through_pipeline	c.-63-2054G>C	p.(=)	NG_IDRefseq	DIFFERENT		2	all	yes
-C2	C0002	1	g.7326_7353del, c.877_904del, p.V281fsX282	g.7326_7353del	c.877_904del	p.V281fsX282	IN_FINAL	traced_through_pipeline	c.877_904del	p.(Val293ProfsTer8)	NM_MANE	DIFFERENT	12	2	all	yes
-C2	C0002	2	g.16300G>A, c.1426G>A, p.G464R	g.16300G>A	c.1426G>A	p.G464R	IN_FINAL	traced_through_pipeline	c.1426G>A	p.(Glu476Lys)	NM_MANE	DIFFERENT		2	all	yes
-C2	C0003	1	g.7326_7353del, c.877_904del, p.V281fsX282	g.7326_7353del	c.877_904del	p.V281fsX282	IN_FINAL	traced_through_pipeline	c.877_904del	p.(Val293ProfsTer8)	NM_MANE	DIFFERENT	12	2	all	yes
-C2	C0003	2	g.16300G>A, c.1426G>A, p.G464R	g.16300G>A	c.1426G>A	p.G464R	IN_FINAL	traced_through_pipeline	c.1426G>A	p.(Glu476Lys)	NM_MANE	DIFFERENT		2	all	yes
+C2	C0001	1	g.2151G>A, c.428G>A, p.C131Y	g.2151G>A	c.428G>A	p.C131Y	IN_FINAL	traced_through_pipeline	c.392G>A	p.(Cys131Tyr)	NM_MANE	MATCH	0	2	all	yes
+C2	C0001	2	g.9059G>C, c.990G>C, p.E318D	g.9059G>C	c.990G>C	p.E318D	IN_FINAL	traced_through_pipeline	c.954G>C	p.(Glu318Asp)	NM_MANE	MATCH	0	2	all	yes
+C2	C0002	1	g.7326_7353del, c.877_904del, p.V281fsX282	g.7326_7353del	c.877_904del	p.V281fsX282	IN_FINAL	traced_through_pipeline	c.841_868del	p.(Val281MetfsTer2)	NM_MANE	MATCH_FS	0	2	all	yes
+C2	C0002	2	g.16300G>A, c.1426G>A, p.G464R	g.16300G>A	c.1426G>A	p.G464R	IN_FINAL	traced_through_pipeline	c.1390G>A	p.(Gly464Arg)	NM_MANE	MATCH	0	2	all	yes
+C2	C0003	1	g.7326_7353del, c.877_904del, p.V281fsX282	g.7326_7353del	c.877_904del	p.V281fsX282	IN_FINAL	traced_through_pipeline	c.841_868del	p.(Val281MetfsTer2)	NM_MANE	MATCH_FS	0	2	all	yes
+C2	C0003	2	g.16300G>A, c.1426G>A, p.G464R	g.16300G>A	c.1426G>A	p.G464R	IN_FINAL	traced_through_pipeline	c.1390G>A	p.(Gly464Arg)	NM_MANE	MATCH	0	2	all	yes
 C3	C0008	1	g.10970G>A, c.1645G>A, r.1645g>a, p.Asp549Asn	g.10970G>A	c.1645G>A	p.Asp549Asn	IN_FINAL	traced_through_pipeline	c.1645G>A	p.(Asp549Asn)	NM_MANE	MATCH	0	1	all	yes
 C3	C0014	1+2	g.10973T>C, c.1648T>C, r.1648u>c, p.Ser550Pro	g.10973T>C	c.1648T>C	p.Ser550Pro	IN_FINAL	traced_through_pipeline	c.1648T>C	p.(Ser550Pro)	NM_MANE	MATCH	0	1	all	yes
 C3	C0007	1+2	g.10981G>A, c.1656G>A, r.1656g>a, p.Trp552X	g.10981G>A	c.1656G>A	p.Trp552X	IN_FINAL	traced_through_pipeline	c.1656G>A	p.(Trp552Ter)	NM_MANE	MATCH	0	1	all	yes
 C3	C0013	1	g.11896G>A, c.1775G>A, r.1775g>a, p.Arg592Gln	g.11896G>A	c.1775G>A	p.Arg592Gln	IN_FINAL	traced_through_pipeline	c.1775G>A	p.(Arg592Gln)	NM_MANE	MATCH	0	1	all	yes
 C3	C0003	1+2	g.19119_19179del, c.2354_2414del, p.S765fsX771	g.19119_19179del	c.2354_2414del	p.S765fsX771	IN_FINAL	traced_through_pipeline	c.2354+2_2416del		NM_MANE	FINAL_NO_P		1	all	yes
 C3	C0009	1+2	g.23958C>T, c.2542C>T, r.2542c>u, p.Arg848X	g.23958C>T	c.2542C>T	p.Arg848X	IN_FINAL	traced_through_pipeline	c.2542C>T	p.(Arg848Ter)	NM_MANE	MATCH	0	1	all	yes
-C3	C0004	1+2	g.?, c.2857_3010del, p.P933fsX939	g.?	c.2857_3010del	p.P933fsX939	IN_FINAL	traced_through_pipeline	c.2857_3010del	p.(Gly953LeufsTer2)	NM_MANE	DIFFERENT	20	1	all	yes
+C3	C0004	1+2	g.?, c.2857_3010del, p.P933fsX939	g.?	c.2857_3010del	p.P933fsX939	IN_FINAL	traced_through_pipeline	c.2797_2950del		NM_MANE	FINAL_NO_P		1	all	yes
 C3	C0011	1	g.27182_27183insT, c.3116_3117insT, r.3116_3117insu, p.Glu1040fsX66	g.27182_27183insT	c.3116_3117insT	p.Glu1040fsX66	IN_FINAL	traced_through_pipeline	c.3116dup	p.(Glu1040ArgfsTer66)	NM_MANE	MATCH_FS	0	2	all	yes
 C3	C0011	2	g.28580C>G, c.3243C>G, r.3243c>g, p.Tyr1081X	g.28580C>G	c.3243C>G	p.Tyr1081X	IN_FINAL	traced_through_pipeline	c.3243C>G	p.(Tyr1081Ter)	NM_MANE	MATCH	0	2	all	yes
 C3	C0012	1	g.28185_28186insT, c.3176_3177insT, r.3176_3177insu, p.Arg1060fsX46	g.28185_28186insT	c.3176_3177insT	p.Arg1060fsX46	IN_FINAL	traced_through_pipeline	c.3176dup	p.(Arg1060GlnfsTer46)	NM_MANE	MATCH_FS	0	2	all	yes
 C3	C0012	2	g.28580C>G, c.3243C>G, r.3243c>g, p.Tyr1081X	g.28580C>G	c.3243C>G	p.Tyr1081X	IN_FINAL	traced_through_pipeline	c.3243C>G	p.(Tyr1081Ter)	NM_MANE	MATCH	0	2	all	yes
-C3	C0001	1+2	g.28580C>G, c.3303C>G, p.Y1081X	g.28580C>G	c.3303C>G	p.Y1081X	IN_FINAL	traced_through_pipeline	c.3303C>G	p.(Cys1101Trp)	NM_MANE	DIFFERENT		1	all	yes
-C3	C0002	1+2	g.28580C>G, c.3303C>G, p.Y1081X	g.28580C>G	c.3303C>G	p.Y1081X	IN_FINAL	traced_through_pipeline	c.3303C>G	p.(Cys1101Trp)	NM_MANE	DIFFERENT		1	all	yes
+C3	C0001	1+2	g.28580C>G, c.3303C>G, p.Y1081X	g.28580C>G	c.3303C>G	p.Y1081X	IN_FINAL	traced_through_pipeline	c.3243C>G	p.(Tyr1081Ter)	NM_MANE	MATCH	0	1	all	yes
+C3	C0002	1+2	g.28580C>G, c.3303C>G, p.Y1081X	g.28580C>G	c.3303C>G	p.Y1081X	IN_FINAL	traced_through_pipeline	c.3243C>G	p.(Tyr1081Ter)	NM_MANE	MATCH	0	1	all	yes
 C3	C0006	1+2	g.IVS10+1G>T, c.G>T, r.g>u	g.IVS10+1G>T	c.G>T		NOT_REGISTERED	accession_absent_from_final						1	all	no
 C3	C0010	1+2	g.IVS39-2A>G, c.A>G, r.a>g	g.IVS39-2A>G	c.A>G		NOT_REGISTERED	accession_absent_from_final						1	all	no
-C5	C0001	1	g.1067C>T, c.67C>T, p.Q19X	g.1067C>T	c.67C>T	p.Q19X	IN_FINAL	traced_through_pipeline	c.84-6457C>T	p.(=)	NG_IDRefseq	DIFFERENT		1	all	yes
-C5	C0002	1	g.1067C>T, c.67C>T, p.Q19X	g.1067C>T	c.67C>T	p.Q19X	IN_FINAL	traced_through_pipeline	c.84-6457C>T	p.(=)	NG_IDRefseq	DIFFERENT		1	all	yes
+C5	C0001	1	g.1067C>T, c.67C>T, p.Q19X	g.1067C>T	c.67C>T	p.Q19X	IN_FINAL	traced_through_pipeline	c.55C>T	p.(Gln19Ter)	NM_MANE	MATCH	0	1	all	yes
+C5	C0002	1	g.1067C>T, c.67C>T, p.Q19X	g.1067C>T	c.67C>T	p.Q19X	IN_FINAL	traced_through_pipeline	c.55C>T	p.(Gln19Ter)	NM_MANE	MATCH	0	1	all	yes
 C5	C0007	1+2	g.25679C>T, c.892C>T, r.892c>u, p.Gln298X	g.25679C>T	c.892C>T	p.Gln298X	IN_FINAL	traced_through_pipeline	c.892C>T	p.(Gln298Ter)	NM_MANE	MATCH	0	1	all	yes
 C5	C0008	1+2	g.25679C>T, c.892C>T, r.892c>u, p.Gln298X	g.25679C>T	c.892C>T	p.Gln298X	IN_FINAL	traced_through_pipeline	c.892C>T	p.(Gln298Ter)	NM_MANE	MATCH	0	1	all	yes
 C5	C0005	1+2	g.27854A>G, c.1115A>G, r.1115a>g, p.Lys372Arg	g.27854A>G	c.1115A>G	p.Lys372Arg	IN_FINAL	traced_through_pipeline	c.1115A>G	p.(Lys372Arg)	NM_MANE	MATCH	0	1	all	yes
 C5	C0006	1	g.33896_33897delinsCTCT, c.1883_1884delinsCTCT, r.1883_1884delinscucu, p.Glu628fsX22	g.33896_33897delinsCTCT	c.1883_1884delinsCTCT	p.Glu628fsX22	IN_FINAL	traced_through_pipeline	c.1883_1884delinsCTCT	p.(Glu628AlafsTer22)	NM_MANE	MATCH_FS	0	2	all	yes
 C5	C0006	2	g.45296T>C, c.2536T>C, r.2536u>c, p.Tyr846His	g.45296T>C	c.2536T>C	p.Tyr846His	IN_FINAL	traced_through_pipeline	c.2536T>C	p.(Tyr846His)	NM_MANE	MATCH	0	2	all	yes
-C5	C0003	1	g.88510C>T, c.4438C>T, p.R1476X	g.88510C>T	c.4438C>T	p.R1476X	IN_FINAL	traced_through_pipeline	c.4239-1659C>T	p.(=)	NG_IDRefseq	DIFFERENT		1	all	yes
-C5	C0004	1	g.88510C>T, c.4438C>T, p.R1476X	g.88510C>T	c.4438C>T	p.R1476X	IN_FINAL	traced_through_pipeline	c.4239-1659C>T	p.(=)	NG_IDRefseq	DIFFERENT		1	all	yes
+C5	C0003	1	g.88510C>T, c.4438C>T, p.R1476X	g.88510C>T	c.4438C>T	p.R1476X	IN_FINAL	traced_through_pipeline	c.4426C>T	p.(Arg1476Ter)	NM_MANE	MATCH	0	1	all	yes
+C5	C0004	1	g.88510C>T, c.4438C>T, p.R1476X	g.88510C>T	c.4438C>T	p.R1476X	IN_FINAL	traced_through_pipeline	c.4426C>T	p.(Arg1476Ter)	NM_MANE	MATCH	0	1	all	yes
 C6	C0005	1	g.18158delC, c.392delC, p.P79fsX122	g.18158delC	c.392delC	p.P79fsX122	IN_FINAL	traced_through_pipeline	c.7+19944del	p.(=)	NG_IDRefseq	NOT_COMPARABLE		1	all	yes
 C6	C0010	1+2	g.40140delG, c.977delG, p.Q274fsX319	g.40140delG	c.977delG	p.Q274fsX319	IN_FINAL	traced_through_pipeline	c.8-16018del	p.(=)	NG_IDRefseq	NOT_COMPARABLE		1	all	yes
 C6	C0012	1	g.40140delG, c.977delG, p.Q274fsX319	g.40140delG	c.977delG	p.Q274fsX319	IN_FINAL	traced_through_pipeline	c.8-16018del	p.(=)	NG_IDRefseq	NOT_COMPARABLE		2	all	yes
@@ -1043,19 +1043,19 @@ C8B	C0043	1+2	g.26012C>T, c.1282C>T, r.1282c>u, p.Arg428X	g.26012C>T	c.1282C>T	p
 C8B	C0044	1+2	g.26012C>T, c.1282C>T, r.1282c>u, p.Arg428X	g.26012C>T	c.1282C>T	p.Arg428X	IN_FINAL	traced_through_pipeline	c.1282C>T	p.(Arg428Ter)	NM_MANE	MATCH	0	1	all	yes
 C8B	C0058	1+2	g.26012C>T, c.1282C>T, r.1282c>u, p.Arg428X	g.26012C>T	c.1282C>T	p.Arg428X	IN_FINAL	traced_through_pipeline	c.1282C>T	p.(Arg428Ter)	NM_MANE	MATCH	0	1	all	yes
 C8B	C0059	1+2	g.26012C>T, c.1282C>T, r.1282c>u, p.Arg428X	g.26012C>T	c.1282C>T	p.Arg428X	IN_FINAL	traced_through_pipeline	c.1282C>T	p.(Arg428Ter)	NM_MANE	MATCH	0	1	all	yes
-C9	C0001	1	g.23357C>A, c.166C>A, p.C54X	g.23357C>A	c.166C>A	p.C54X	IN_FINAL	traced_through_pipeline	c.166C>A	p.(Pro56Thr)	NM_MANE	DIFFERENT		2	all	yes
-C9	C0001	2	g.24307C>T, c.464C>T, p.R154X	g.24307C>T	c.464C>T	p.R154X	IN_FINAL	traced_through_pipeline	c.464C>T	p.(Thr155Ile)	NM_MANE	DIFFERENT		2	all	yes
-C9	C0009	1	g.23357C>A, c.166C>A, p.C54X	g.23357C>A	c.166C>A	p.C54X	IN_FINAL	traced_through_pipeline	c.166C>A	p.(Pro56Thr)	NM_MANE	DIFFERENT		2	all	yes
-C9	C0009	2	g.24307C>T, c.464C>T, p.R154X	g.24307C>T	c.464C>T	p.R154X	IN_FINAL	traced_through_pipeline	c.464C>T	p.(Thr155Ile)	NM_MANE	DIFFERENT		2	all	yes
-C9	C0002	1	g.23357C>A, c.166C>A, p.C54X	g.23357C>A	c.166C>A	p.C54X	IN_FINAL	traced_through_pipeline	c.166C>A	p.(Pro56Thr)	NM_MANE	DIFFERENT		2	all	yes
-C9	C0002	2	g.24193C>T, c.350C>T, p.R116X	g.24193C>T	c.350C>T	p.R116X	IN_FINAL	traced_through_pipeline	c.78-2332C>T	p.(=)	NG_IDRefseq	DIFFERENT		2	all	yes
-C9	C0004	1+2	g.24193C>T, c.350C>T, p.R116X	g.24193C>T	c.350C>T	p.R116X	IN_FINAL	traced_through_pipeline	c.78-2332C>T	p.(=)	NG_IDRefseq	DIFFERENT		1	all	yes
-C9	C0005	1+2	g.24193C>T, c.350C>T, p.R116X	g.24193C>T	c.350C>T	p.R116X	IN_FINAL	traced_through_pipeline	c.78-2332C>T	p.(=)	NG_IDRefseq	DIFFERENT		1	all	yes
-C9	C0006	1+2	g.24193C>T, c.350C>T, p.R116X	g.24193C>T	c.350C>T	p.R116X	IN_FINAL	traced_through_pipeline	c.78-2332C>T	p.(=)	NG_IDRefseq	DIFFERENT		1	all	yes
-C9	C0007	1+2	g.24193C>T, c.350C>T, p.R116X	g.24193C>T	c.350C>T	p.R116X	IN_FINAL	traced_through_pipeline	c.78-2332C>T	p.(=)	NG_IDRefseq	DIFFERENT		1	all	yes
-C9	C0008	1+2	g.24193C>T, c.350C>T, p.R116X	g.24193C>T	c.350C>T	p.R116X	IN_FINAL	traced_through_pipeline	c.78-2332C>T	p.(=)	NG_IDRefseq	DIFFERENT		1	all	yes
-C9	C0003	1	g.24202T>G, c.359T>G, p.C119G	g.24202T>G	c.359T>G	p.C119G	IN_FINAL	traced_through_pipeline	c.78-2323T>G	p.(=)	NG_IDRefseq	DIFFERENT		2	all	yes
-C9	C0003	2	g.58679C>G, c.1284C>G, p.S427X	g.58679C>G	c.1284C>G	p.S427X	IN_FINAL	traced_through_pipeline	c.1284C>G	p.(=)	NM_MANE	DIFFERENT		2	all	yes
+C9	C0001	1	g.23357C>A, c.166C>A, p.C54X	g.23357C>A	c.166C>A	p.C54X	IN_FINAL	traced_through_pipeline	c.162C>A	p.(Cys54Ter)	NM_MANE	MATCH	0	2	all	yes
+C9	C0001	2	g.24307C>T, c.464C>T, p.R154X	g.24307C>T	c.464C>T	p.R154X	IN_FINAL	traced_through_pipeline	c.460C>T	p.(Arg154Ter)	NM_MANE	MATCH	0	2	all	yes
+C9	C0009	1	g.23357C>A, c.166C>A, p.C54X	g.23357C>A	c.166C>A	p.C54X	IN_FINAL	traced_through_pipeline	c.162C>A	p.(Cys54Ter)	NM_MANE	MATCH	0	2	all	yes
+C9	C0009	2	g.24307C>T, c.464C>T, p.R154X	g.24307C>T	c.464C>T	p.R154X	IN_FINAL	traced_through_pipeline	c.460C>T	p.(Arg154Ter)	NM_MANE	MATCH	0	2	all	yes
+C9	C0002	1	g.23357C>A, c.166C>A, p.C54X	g.23357C>A	c.166C>A	p.C54X	IN_FINAL	traced_through_pipeline	c.162C>A	p.(Cys54Ter)	NM_MANE	MATCH	0	2	all	yes
+C9	C0002	2	g.24193C>T, c.350C>T, p.R116X	g.24193C>T	c.350C>T	p.R116X	IN_FINAL	traced_through_pipeline	c.346C>T	p.(Arg116Ter)	NM_MANE	MATCH	0	2	all	yes
+C9	C0004	1+2	g.24193C>T, c.350C>T, p.R116X	g.24193C>T	c.350C>T	p.R116X	IN_FINAL	traced_through_pipeline	c.346C>T	p.(Arg116Ter)	NM_MANE	MATCH	0	1	all	yes
+C9	C0005	1+2	g.24193C>T, c.350C>T, p.R116X	g.24193C>T	c.350C>T	p.R116X	IN_FINAL	traced_through_pipeline	c.346C>T	p.(Arg116Ter)	NM_MANE	MATCH	0	1	all	yes
+C9	C0006	1+2	g.24193C>T, c.350C>T, p.R116X	g.24193C>T	c.350C>T	p.R116X	IN_FINAL	traced_through_pipeline	c.346C>T	p.(Arg116Ter)	NM_MANE	MATCH	0	1	all	yes
+C9	C0007	1+2	g.24193C>T, c.350C>T, p.R116X	g.24193C>T	c.350C>T	p.R116X	IN_FINAL	traced_through_pipeline	c.346C>T	p.(Arg116Ter)	NM_MANE	MATCH	0	1	all	yes
+C9	C0008	1+2	g.24193C>T, c.350C>T, p.R116X	g.24193C>T	c.350C>T	p.R116X	IN_FINAL	traced_through_pipeline	c.346C>T	p.(Arg116Ter)	NM_MANE	MATCH	0	1	all	yes
+C9	C0003	1	g.24202T>G, c.359T>G, p.C119G	g.24202T>G	c.359T>G	p.C119G	IN_FINAL	traced_through_pipeline	c.355T>G	p.(Cys119Gly)	NM_MANE	MATCH	0	2	all	yes
+C9	C0003	2	g.58679C>G, c.1284C>G, p.S427X	g.58679C>G	c.1284C>G	p.S427X	IN_FINAL	traced_through_pipeline	c.1280C>G	p.(Ser427Ter)	NM_MANE	MATCH	0	2	all	yes
 CARD9	C0001	1+2	g.4320C>T, c.883C>T, r.883c>u, p.Gln295X	g.4320C>T	c.883C>T	p.Gln295X	IN_FINAL	protein_matched_key_changed	c.883C>T	p.(Gln295Ter)	NM_IDRefseq	MATCH	0	1	all	yes
 CARD9	C0002	1+2	g.4320C>T, c.883C>T, r.883c>u, p.Gln295X	g.4320C>T	c.883C>T	p.Gln295X	IN_FINAL	protein_matched_key_changed	c.883C>T	p.(Gln295Ter)	NM_IDRefseq	MATCH	0	1	all	yes
 CARD9	C0003	1+2	g.4320C>T, c.883C>T, r.883c>u, p.Gln295X	g.4320C>T	c.883C>T	p.Gln295X	IN_FINAL	protein_matched_key_changed	c.883C>T	p.(Gln295Ter)	NM_IDRefseq	MATCH	0	1	all	yes
@@ -1406,12 +1406,12 @@ CFH	H0032	1	g.116081C>T, c.2773C>T, r.2773c>u, p.Gln925X	g.116081C>T	c.2773C>T	p
 CFH	H0043	1	g.119116G>T, c.2850G>T, r.2850g>u, p.Gln950His	g.119116G>T	c.2850G>T	p.Gln950His	IN_FINAL	traced_through_pipeline	c.2850G>T	p.(Gln950His)	mane_remap	MATCH	0	1	all	yes
 CFH	H0102	1	g.119116G>T, c.2850G>T, r.2850g>u, p.Gln950His	g.119116G>T	c.2850G>T	p.Gln950His	IN_FINAL	traced_through_pipeline	c.2850G>T	p.(Gln950His)	mane_remap	MATCH	0	1	all	yes
 CFH	H0044	1	g.119117T>C, c.2851T>C, r.2851u>c, p.Tyr951His	g.119117T>C	c.2851T>C	p.Tyr951His	IN_FINAL	traced_through_pipeline	c.2851T>C	p.(Tyr951His)	mane_remap	MATCH	0	1	all	yes
-CFH	H0009	1	g.119133C>T, c.2940C>T, p.T956M	g.119133C>T	c.2940C>T	p.T956M	IN_FINAL	traced_through_pipeline	c.2940C>T	p.(=)	mane_remap	DIFFERENT		1	all	yes
+CFH	H0009	1	g.119133C>T, c.2940C>T, p.T956M	g.119133C>T	c.2940C>T	p.T956M	IN_FINAL	traced_through_pipeline	c.2867C>T	p.(Thr956Met)	mane_remap	MATCH	0	1	all	yes
 CFH	H0058	1	g.119200G>T, c.2934G>T, r.2934g>u, p.Trp978Cys	g.119200G>T	c.2934G>T	p.Trp978Cys	IN_FINAL	traced_through_pipeline	c.2934G>T	p.(Trp978Cys)	mane_remap	MATCH	0	1	all	yes
 CFH	H0069	1	g.120410A>T, c.3062A>T, r.3062a>u, p.Tyr1021Phe	g.120410A>T	c.3062A>T	p.Tyr1021Phe	IN_FINAL	traced_through_pipeline	c.3062A>T	p.(Tyr1021Phe)	mane_remap	MATCH	0	2	all	yes
 CFH	H0069	2	g.125675C>T, c.3628C>T, r.3628c>u, p.Arg1210Cys	g.125675C>T	c.3628C>T	p.Arg1210Cys	IN_FINAL	traced_through_pipeline	c.3628C>T	p.(Arg1210Cys)	mane_remap	MATCH	0	2	all	yes
 CFH	H0059	1	g.120475T>C, c.3127T>C, r.3127u>c, p.Cys1043Arg	g.120475T>C	c.3127T>C	p.Cys1043Arg	IN_FINAL	traced_through_pipeline	c.3127T>C	p.(Cys1043Arg)	mane_remap	MATCH	0	1	all	yes
-CFH	H0016	1	g.121974C>G, c.3299C>G, p.Q1076E	g.121974C>G	c.3299C>G	p.Q1076E	IN_FINAL	traced_through_pipeline	c.3299C>G	p.(Pro1100Arg)	mane_remap	DIFFERENT		2	all	yes
+CFH	H0016	1	g.121974C>G, c.3299C>G, p.Q1076E	g.121974C>G	c.3299C>G	p.Q1076E	IN_FINAL	traced_through_pipeline	c.3226C>G	p.(Gln1076Glu)	mane_remap	MATCH	0	2	all	yes
 CFH	H0016	2	g.124422delA, c.3559delA, p.1162fsX1168	g.124422delA	c.3559delA	p.1162fsX1168	IN_FINAL	traced_through_pipeline	c.3559del	p.(Gln1187ArgfsTer84)	variantvalidator	NOT_COMPARABLE		2	all	yes
 CFH	H0060	1	g.121974C>G, c.3226C>G, r.3226c>g, p.Gln1076Glu	g.121974C>G	c.3226C>G	p.Gln1076Glu	IN_FINAL	traced_through_pipeline	c.3226C>G	p.(Gln1076Glu)	mane_remap	MATCH	0	1	all	yes
 CFH	H0093	1	g.121982G>T, c.3234G>T, r.3234g>u, p.Arg1078Ser	g.121982G>T	c.3234G>T	p.Arg1078Ser	IN_FINAL	traced_through_pipeline	c.3234G>T	p.(Arg1078Ser)	mane_remap	MATCH	0	2	all	yes
@@ -1420,7 +1420,7 @@ CFH	H0094	1	g.121982G>T, c.3234G>T, r.3234g>u, p.Arg1078Ser	g.121982G>T	c.3234G>
 CFH	H0094	2	g.IVS3+6T>G, c.350+6T>G, r.350+6u>g	g.IVS3+6T>G	c.350+6T>G		IN_FINAL	traced_through_pipeline	c.350+6T>G	p.?	variantvalidator	SOURCE_NO_P		2	all	yes
 CFH	H0095	1	g.121982G>T, c.3234G>T, r.3234g>u, p.Arg1078Ser	g.121982G>T	c.3234G>T	p.Arg1078Ser	IN_FINAL	traced_through_pipeline	c.3234G>T	p.(Arg1078Ser)	mane_remap	MATCH	0	2	all	yes
 CFH	H0095	2	g.IVS3+6T>G, c.350+6T>G, r.350+6u>g	g.IVS3+6T>G	c.350+6T>G		IN_FINAL	traced_through_pipeline	c.350+6T>G	p.?	variantvalidator	SOURCE_NO_P		2	all	yes
-CFH	H0017	1	g.124292A>G, c.3429A>G, p.D1119G	g.124292A>G	c.3429A>G	p.D1119G	IN_FINAL	traced_through_pipeline	c.3429A>G	p.(=)	mane_remap	DIFFERENT		1	all	yes
+CFH	H0017	1	g.124292A>G, c.3429A>G, p.D1119G	g.124292A>G	c.3429A>G	p.D1119G	IN_FINAL	traced_through_pipeline	c.3356A>G	p.(Asp1119Gly)	mane_remap	MATCH	0	1	all	yes
 CFH	H0061	1	g.124337T>G, c.3401T>G, r.3401u>g, p.Val1134Gly	g.124337T>G	c.3401T>G	p.Val1134Gly	IN_FINAL	traced_through_pipeline	c.3401T>G	p.(Val1134Gly)	mane_remap	MATCH	0	1	all	yes
 CFH	H0062	1	g.124360T>G, c.3424T>G, r.3424u>g, p.Tyr1142Asp	g.124360T>G	c.3424T>G	p.Tyr1142Asp	IN_FINAL	traced_through_pipeline	c.3424T>G	p.(Tyr1142Asp)	mane_remap	MATCH	0	1	all	yes
 CFH	H0063	1	g.124405T>C, c.3469T>C, r.3469u>c, p.Trp1157Arg	g.124405T>C	c.3469T>C	p.Trp1157Arg	IN_FINAL	traced_through_pipeline	c.3469T>C	p.(Trp1157Arg)	mane_remap	MATCH	0	1	all	yes
@@ -1548,12 +1548,12 @@ CFP	P0024	0	g.5553G>C, c.1204G>C, p.W321S	g.5553G>C	c.1204G>C	p.W321S	IN_FINAL	t
 CFP	P0025	0	g.5553G>C, c.1204G>C, p.W321S	g.5553G>C	c.1204G>C	p.W321S	IN_FINAL	traced_through_pipeline	c.962G>C	p.(Trp321Ser)	NG_IDRefseq	MATCH	0	1	all	yes
 CFP	P0011	0	g.5619A>G, c.1270A>G, p.Q343R	g.5619A>G	c.1270A>G	p.Q343R	IN_FINAL	traced_through_pipeline	c.1028A>G	p.(Gln343Arg)	NG_IDRefseq	MATCH	0	1	all	yes
 CFP	P0035	0	g.5627C>T, c.1278C>T, p.R346C	g.5627C>T	c.1278C>T	p.R346C	IN_FINAL	traced_through_pipeline	c.1036C>T	p.(Arg346Cys)	NG_IDRefseq	MATCH	0	1	all	yes
-CIITA	M0001	1	g.31469G>T, c.1279G>T, p.E381X	g.31469G>T	c.1279G>T	p.E381X	IN_FINAL	traced_through_pipeline	c.1234+413G>T	p.(=)	NG_IDRefseq	DIFFERENT		2	all	yes
+CIITA	M0001	1	g.31469G>T, c.1279G>T, p.E381X	g.31469G>T	c.1279G>T	p.E381X	IN_FINAL	traced_through_pipeline	c.1141G>T	p.(Glu381Ter)	NM_MANE	MATCH	0	2	all	yes
 CIITA	M0001	2	g.IVS18+1G>A	g.IVS18+1G>A			NOT_REGISTERED	allele_absent_accession_present						2	all	yes
-CIITA	M0003	1+2	g.31734T>C, c.1544T>C, p.L469P	g.31734T>C	c.1544T>C	p.L469P	IN_FINAL	traced_through_pipeline	c.1235-171T>C	p.(=)	NG_IDRefseq	DIFFERENT		1	all	yes
-CIITA	M0004	1+2	g.31734T>C, c.1544T>C, p.L469P	g.31734T>C	c.1544T>C	p.L469P	IN_FINAL	traced_through_pipeline	c.1235-171T>C	p.(=)	NG_IDRefseq	DIFFERENT		1	all	yes
-CIITA	M0005	1+2	g.31734T>C, c.1544T>C, p.L469P	g.31734T>C	c.1544T>C	p.L469P	IN_FINAL	traced_through_pipeline	c.1235-171T>C	p.(=)	NG_IDRefseq	DIFFERENT		1	all	yes
-CIITA	M0007	1	g.32391G>A, c.2201G>A, p.W688X	g.32391G>A	c.2201G>A	p.W688X	IN_FINAL	traced_through_pipeline	c.1303+418G>A	p.(=)	NG_IDRefseq	DIFFERENT		1	all	yes
+CIITA	M0003	1+2	g.31734T>C, c.1544T>C, p.L469P	g.31734T>C	c.1544T>C	p.L469P	IN_FINAL	traced_through_pipeline	c.1406T>C	p.(Leu469Pro)	NM_MANE	MATCH	0	1	all	yes
+CIITA	M0004	1+2	g.31734T>C, c.1544T>C, p.L469P	g.31734T>C	c.1544T>C	p.L469P	IN_FINAL	traced_through_pipeline	c.1406T>C	p.(Leu469Pro)	NM_MANE	MATCH	0	1	all	yes
+CIITA	M0005	1+2	g.31734T>C, c.1544T>C, p.L469P	g.31734T>C	c.1544T>C	p.L469P	IN_FINAL	traced_through_pipeline	c.1406T>C	p.(Leu469Pro)	NM_MANE	MATCH	0	1	all	yes
+CIITA	M0007	1	g.32391G>A, c.2201G>A, p.W688X	g.32391G>A	c.2201G>A	p.W688X	IN_FINAL	traced_through_pipeline	c.2063G>A	p.(Trp688Ter)	NM_MANE	MATCH	0	1	all	yes
 CIITA	M0006	1+2	g.35092T>C, c.3023T>C, p.F962S	g.35092T>C	c.3023T>C	p.F962S	KNOWN_UNRESOLVED	UNRESCUABLE_DATA_ERROR:ESEQUENCEMISMATCH						1	all	yes
 CIITA	M0008	1	g.40423_40503del, c.3027_3107del, p.A963del	g.40423_40503del	c.3027_3107del	p.A963del	IN_FINAL	traced_through_pipeline	c.3186-2306_3186-2226del	p.(=)	NG_IDRefseq	NOT_COMPARABLE		2	all	yes
 CIITA	M0008	2	g.43309_43311delCAT, c.3216_3218delCAT, p.N1026del	g.43309_43311delCAT	c.3216_3218delCAT	p.N1026del	IN_FINAL	traced_through_pipeline	c.3267-216_3267-214del	p.(=)	NG_IDRefseq	NOT_COMPARABLE		2	all	yes
@@ -3842,8 +3842,8 @@ IGHM	I0009	1+2	g.1956G>A, c.1831G>A, p.E587K	g.1956G>A	c.1831G>A	p.E587K	NOT_REG
 IGHM	I0010	1+2	g.1956G>A, c.1831G>A, p.E587K	g.1956G>A	c.1831G>A	p.E587K	NOT_REGISTERED	accession_absent_from_final						1	all	no
 IGHM	I0011	1+2	g.1956G>A, c.1831G>A, p.E587K	g.1956G>A	c.1831G>A	p.E587K	NOT_REGISTERED	accession_absent_from_final						1	all	no
 IGHM	I0018	1+2	g.1956G>A, c.1759G>A, r.1759g>a, p.Glu587Lys	g.1956G>A	c.1759G>A	p.Glu587Lys	NOT_REGISTERED	accession_absent_from_final						1	all	no
-IGLL1	G0001	1	g.258C>T, c.182C>T, p.Q22X	g.258C>T	c.182C>T	p.Q22X	IN_FINAL	traced_through_pipeline	c.182C>T	p.(Ser61Phe)	NM_MANE	DIFFERENT		2	all	yes
-IGLL1	G0001	2	g.6904C>T, c.543C>T, p.P142L	g.6904C>T	c.543C>T	p.P142L	IN_FINAL	traced_through_pipeline	c.206+1588C>T	p.(=)	NG_IDRefseq	DIFFERENT		2	all	yes
+IGLL1	G0001	1	g.258C>T, c.182C>T, p.Q22X	g.258C>T	c.182C>T	p.Q22X	IN_FINAL	traced_through_pipeline	c.64C>T	p.(Gln22Ter)	NM_MANE	MATCH	0	2	all	yes
+IGLL1	G0001	2	g.6904C>T, c.543C>T, p.P142L	g.6904C>T	c.543C>T	p.P142L	IN_FINAL	traced_through_pipeline	c.425C>T	p.(Pro142Leu)	NM_MANE	MATCH	0	2	all	yes
 IKBKG	I0040	0	g.9771G>T, c.40G>T, r.40g>u, p.Val14Leu	g.9771G>T	c.40G>T	p.Val14Leu	IN_FINAL	traced_through_pipeline	c.40G>T	p.(Val14Leu)	mane_remap	MATCH	0	1	all	yes
 IKBKG	I0022	0	g.9842_9843insC, c.111_112insC, r.111_112insc, p.Met38fsX12	g.9842_9843insC	c.111_112insC	p.Met38fsX12	IN_FINAL	traced_through_pipeline	c.111dup	p.(Met38HisfsTer12)	mane_remap	MATCH_FS	0	1	all	yes
 IKBKG	I0041	0	g.9900G>A, c.169G>A, r.169g>a, p.Glu57Lys	g.9900G>A	c.169G>A	p.Glu57Lys	IN_FINAL	traced_through_pipeline	c.169G>A	p.(Glu57Lys)	mane_remap	MATCH	0	1	all	yes
@@ -4009,12 +4009,12 @@ IL2RA	I0002	1	g.39016C>T, c.301C>T, r.301c>u, p.Gln101X	g.39016C>T	c.301C>T	p.Gl
 IL2RA	I0002	2	g.43863dupA, c.692dupA, r.692dupa, p.Thr232fsX38	g.43863dupA	c.692dupA	p.Thr232fsX38	IN_FINAL	traced_through_pipeline	c.692dup	p.(Thr232AspfsTer38)	NM_MANE	MATCH_FS	0	2	all	yes
 IL7R	I0005	1+2	g.[5012C>T + 15134A>G], c.[219C>T + 434A>G], p.[T66I + I138V]	g.[5012C>T + 15134A>G]	c.[219C>T + 434A>G]	p.[T66I + I138V]	NOT_REGISTERED	allele_absent_accession_present						1	none	yes
 IL7R	I0010	1+2	g.11505G>A, c.375G>A, r.375g>a, p.Thr125Thr	g.11505G>A	c.375G>A	p.Thr125Thr	IN_FINAL	traced_through_pipeline	c.380-1439G>A	p.(=)	NG_IDRefseq	MATCH	0	1	all	yes
-IL7R	I0001	1+2	g.15116C>T, c.416C>T, p.P132S	g.15116C>T	c.416C>T	p.P132S	IN_FINAL	traced_through_pipeline	c.538-252C>T	p.(=)	NG_IDRefseq	DIFFERENT		1	all	yes
-IL7R	I0002	1+2	g.15116C>T, c.416C>T, p.P132S	g.15116C>T	c.416C>T	p.P132S	IN_FINAL	traced_through_pipeline	c.538-252C>T	p.(=)	NG_IDRefseq	DIFFERENT		1	all	yes
-IL7R	I0003	1+2	g.15116C>T, c.416C>T, p.P132S	g.15116C>T	c.416C>T	p.P132S	IN_FINAL	traced_through_pipeline	c.538-252C>T	p.(=)	NG_IDRefseq	DIFFERENT		1	all	yes
+IL7R	I0001	1+2	g.15116C>T, c.416C>T, p.P132S	g.15116C>T	c.416C>T	p.P132S	IN_FINAL	traced_through_pipeline	c.394C>T	p.(Pro132Ser)	NM_MANE	MATCH	0	1	all	yes
+IL7R	I0002	1+2	g.15116C>T, c.416C>T, p.P132S	g.15116C>T	c.416C>T	p.P132S	IN_FINAL	traced_through_pipeline	c.394C>T	p.(Pro132Ser)	NM_MANE	MATCH	0	1	all	yes
+IL7R	I0003	1+2	g.15116C>T, c.416C>T, p.P132S	g.15116C>T	c.416C>T	p.P132S	IN_FINAL	traced_through_pipeline	c.394C>T	p.(Pro132Ser)	NM_MANE	MATCH	0	1	all	yes
 IL7R	I0009	1+2	g.17604C>T, c.616C>T, r.616c>u, p.Arg206X	g.17604C>T	c.616C>T	p.Arg206X	IN_FINAL	traced_through_pipeline	c.616C>T	p.(Arg206Ter)	NM_MANE	MATCH	0	1	all	yes
 IL7R	I0004	1	g.IVS4-1G>A	g.IVS4-1G>A			NOT_REGISTERED	allele_absent_accession_present						2	all	yes
-IL7R	I0004	2	g.17639G>A, c.673G>A, p.W217X	g.17639G>A	c.673G>A	p.W217X	IN_FINAL	traced_through_pipeline	c.*143G>A	p.(=)	NG_IDRefseq	DIFFERENT		2	all	yes
+IL7R	I0004	2	g.17639G>A, c.673G>A, p.W217X	g.17639G>A	c.673G>A	p.W217X	IN_FINAL	traced_through_pipeline	c.651G>A	p.(Trp217Ter)	NM_MANE	MATCH	0	2	all	yes
 IRAK4	I0015	1	g.11082C>T, c.34C>T, r.34c>u, p.Arg12Cys	g.11082C>T	c.34C>T	p.Arg12Cys	IN_FINAL	traced_through_pipeline	c.34C>T	p.(Arg12Cys)	NM_MANE	MATCH	0	3	all	yes
 IRAK4	I0015	1	g.26645G>A, c.1172G>A, r.1172g>a, p.Arg391His	g.26645G>A	c.1172G>A	p.Arg391His	IN_FINAL	traced_through_pipeline	c.1172G>A	p.(Arg391His)	NM_MANE	MATCH	0	3	all	yes
 IRAK4	I0015	2	g.IVS7+5G>T, c.831+5G>T, r.831+5g>u	g.IVS7+5G>T	c.831+5G>T		IN_FINAL	traced_through_pipeline	c.831+5G>T		NM_MANE	SOURCE_NO_P		3	all	yes
@@ -4300,7 +4300,7 @@ LYST	C0036	1	g.64928C>T, c.3622C>T, r.3622c>u, p.Gln1208X	g.64928C>T	c.3622C>T	p
 LYST	C0036	2	g.190799G>T, c.11002G>T, r.11002g>u, p.Glu3668X	g.190799G>T	c.11002G>T	p.Glu3668X	IN_FINAL	traced_through_pipeline	c.11002G>T	p.(Glu3668Ter)	NM_MANE	MATCH	0	2	all	yes
 LYST	C0020	1	g.74359C>G, c.4241C>G, p.S1351X	g.74359C>G	c.4241C>G	p.S1351X	IN_FINAL	traced_through_pipeline	c.4052C>G	p.(Ser1351Ter)	NG_IDRefseq	MATCH	0	1	all	yes
 LYST	C0023	1	g.75958delT, c.4463delT, p.L1425fsX1426	g.75958delT	c.4463delT	p.L1425fsX1426	IN_FINAL	traced_through_pipeline	c.4274del	p.(Leu1425TyrfsTer2)	NG_IDRefseq	MATCH_FS	0	2	all	yes
-LYST	C0023	2	g.133336G>A, c.8617G>A, p.E2810K	g.133336G>A	c.8617G>A	p.E2810K	IN_FINAL	traced_through_pipeline	c.8590G>A	p.(Glu2864Lys)	NG_IDRefseq	POS_SHIFT	54	2	all	yes
+LYST	C0023	2	g.133336G>A, c.8617G>A, p.E2810K	g.133336G>A	c.8617G>A	p.E2810K	IN_FINAL	traced_through_pipeline	c.8428G>A	p.(Glu2810Lys)	NM_MANE	MATCH	0	2	all	yes
 LYST	C0024	1	g.86908T>A, c.5250T>A, p.Y1687X	g.86908T>A	c.5250T>A	p.Y1687X	IN_FINAL	traced_through_pipeline	c.5061T>A	p.(Tyr1687Ter)	NG_IDRefseq	MATCH	0	2	all	yes
 LYST	C0024	2	g.76045C>A, c.4550C>A, p.A1454D	g.76045C>A	c.4550C>A	p.A1454D	IN_FINAL	traced_through_pipeline	c.4361C>A	p.(Ala1454Asp)	NG_IDRefseq	MATCH	0	2	all	yes
 LYST	C0025	1+2	g.79225G>A, c.4877G>A, p.R1563H	g.79225G>A	c.4877G>A	p.R1563H	IN_FINAL	traced_through_pipeline	c.4688G>A	p.(Arg1563His)	NG_IDRefseq	MATCH	0	1	all	yes
@@ -4313,8 +4313,8 @@ LYST	C0021	1+2	g.101804C>A, c.6267C>A, p.Y2026X	g.101804C>A	c.6267C>A	p.Y2026X	I
 LYST	C0022	1+2	g.101804C>A, c.6267C>A, p.Y2026X	g.101804C>A	c.6267C>A	p.Y2026X	IN_FINAL	traced_through_pipeline	c.6078C>A	p.(Tyr2026Ter)	NG_IDRefseq	MATCH	0	1	all	yes
 LYST	C0013	1+2	g.112279_112285delCTATTAG, c.7249_7255delCTATTAG, p.L2354fsX2369	g.112279_112285delCTATTAG	c.7249_7255delCTATTAG	p.L2354fsX2369	IN_FINAL	traced_through_pipeline	c.7060_7066del		NG_IDRefseq	FINAL_NO_P		1	all	yes
 LYST	C0012	1+2	g.115849delT, c.7744delT, p.Y2519fsX2528	g.115849delT	c.7744delT	p.Y2519fsX2528	IN_FINAL	traced_through_pipeline	c.7555del	p.(Tyr2519IlefsTer10)	NG_IDRefseq	MATCH_FS	0	1	all	yes
-LYST	C0027	1	g.134067G>A, c.8772G>A, p.W2861X	g.134067G>A	c.8772G>A	p.W2861X	IN_FINAL	traced_through_pipeline	c.8772G>A	p.(=)	NM_MANE	DIFFERENT		1	all	yes
-LYST	C0028	1	g.134067G>A, c.8772G>A, p.W2861X	g.134067G>A	c.8772G>A	p.W2861X	IN_FINAL	traced_through_pipeline	c.8772G>A	p.(=)	NM_MANE	DIFFERENT		1	all	yes
+LYST	C0027	1	g.134067G>A, c.8772G>A, p.W2861X	g.134067G>A	c.8772G>A	p.W2861X	IN_FINAL	traced_through_pipeline	c.8583G>A	p.(Trp2861Ter)	NM_MANE	MATCH	0	1	all	yes
+LYST	C0028	1	g.134067G>A, c.8772G>A, p.W2861X	g.134067G>A	c.8772G>A	p.W2861X	IN_FINAL	traced_through_pipeline	c.8583G>A	p.(Trp2861Ter)	NM_MANE	MATCH	0	1	all	yes
 LYST	C0014	1+2	g.138330_138384del, c.9295_9349del, p.G3036fsX3064	g.138330_138384del	c.9295_9349del	p.G3036fsX3064	IN_FINAL	traced_through_pipeline	c.9268_9268+54del		NG_IDRefseq	FINAL_NO_P		1	all	yes
 LYST	C0006	1+2	g.151177delA, c.9779delA, p.Y3197fsX3258	g.151177delA	c.9779delA	p.Y3197fsX3258	IN_FINAL	protein_matched_key_changed	c.9590del	p.(Tyr3197LeufsTer62)	NM_MANE	MATCH_FS	0	1	all	yes
 LYST	C0015	1+2	g.151177delA, c.9779delA, p.Y3197fsX3258	g.151177delA	c.9779delA	p.Y3197fsX3258	IN_FINAL	protein_matched_key_changed	c.9590del	p.(Tyr3197LeufsTer62)	NM_MANE	MATCH_FS	0	1	all	yes
@@ -5098,13 +5098,13 @@ RAG1	R0065	2	g.8438C>T, c.2146C>T, r.2146c>u, p.Arg716Trp	g.8438C>T	c.2146C>T	p.
 RAG1	R0080	1	g.6546_6548delCTA, c.254_256delCTA, r.254_256delcua, p.Pro85del	g.6546_6548delCTA	c.254_256delCTA	p.Pro85del	IN_FINAL	traced_through_pipeline	c.254_256del	p.(Pro85_Lys86delinsGln)	NM_MANE	TYPE_DIFF_SAME_POS	0	1	all	yes
 RAG1	R0019	1+2	g.368_369delAA, c.368_369delAA, p.K86fsX118	g.368_369delAA	c.368_369delAA	p.K86fsX118	IN_FINAL	traced_through_pipeline	c.-14-5911_-14-5910del	p.(=)	NG_IDRefseq	NOT_COMPARABLE		1	all	yes
 RAG1	R0007	1	g.368_369delAA, c.368_369delAA, p.K86fsX118	g.368_369delAA	c.368_369delAA	p.K86fsX118	IN_FINAL	traced_through_pipeline	c.-14-5911_-14-5910del	p.(=)	NG_IDRefseq	NOT_COMPARABLE		2	all	yes
-RAG1	R0007	2	g.1398A>G, c.1398A>G, p.D429G	g.1398A>G	c.1398A>G	p.D429G	IN_FINAL	traced_through_pipeline	c.-14-4881A>G	p.(=)	NG_IDRefseq	DIFFERENT		2	all	yes
+RAG1	R0007	2	g.1398A>G, c.1398A>G, p.D429G	g.1398A>G	c.1398A>G	p.D429G	IN_FINAL	traced_through_pipeline	c.1286A>G	p.(Asp429Gly)	NM_MANE	MATCH	0	2	all	yes
 RAG1	R0036	1	g.368_369delAA, c.368_369delAA, p.K86fsX118	g.368_369delAA	c.368_369delAA	p.K86fsX118	IN_FINAL	traced_through_pipeline	c.-14-5911_-14-5910del	p.(=)	NG_IDRefseq	NOT_COMPARABLE		2	all	yes
 RAG1	R0036	2	g.1982C>T, c.1982C>T, p.R624C	g.1982C>T	c.1982C>T	p.R624C	KNOWN_UNRESOLVED	UNRESCUABLE_DATA_ERROR:ESEQUENCEMISMATCH						2	all	yes
 RAG1	R0011	1	g.368_369delAA, c.368_369delAA, p.K86fsX118	g.368_369delAA	c.368_369delAA	p.K86fsX118	IN_FINAL	traced_through_pipeline	c.-14-5911_-14-5910del	p.(=)	NG_IDRefseq	NOT_COMPARABLE		2	all	yes
 RAG1	R0011	2	g.2038_2039insCAGCTCTCAGAATGTGAAA, c.2038_2039insCAGCTCTCAGAATGTGAAA, p.V643fsX651	g.2038_2039insCAGCTCTCAGAATGTGAAA	c.2038_2039insCAGCTCTCAGAATGTGAAA	p.V643fsX651	IN_FINAL	traced_through_pipeline	c.-14-4241_-14-4240insCAGCTCTCAGAATGTGAAA	p.(=)	NG_IDRefseq	NOT_COMPARABLE		2	all	yes
 RAG1	R0022	1	g.368_369delAA, c.368_369delAA, p.K86fsX118	g.368_369delAA	c.368_369delAA	p.K86fsX118	IN_FINAL	traced_through_pipeline	c.-14-5911_-14-5910del	p.(=)	NG_IDRefseq	NOT_COMPARABLE		2	all	yes
-RAG1	R0022	2	g.2276G>A, c.2276G>A, p.E722K	g.2276G>A	c.2276G>A	p.E722K	IN_FINAL	traced_through_pipeline	c.2276G>A	p.(Arg759His)	NM_MANE	DIFFERENT		2	all	yes
+RAG1	R0022	2	g.2276G>A, c.2276G>A, p.E722K	g.2276G>A	c.2276G>A	p.E722K	IN_FINAL	traced_through_pipeline	c.2164G>A	p.(Glu722Lys)	NM_MANE	MATCH	0	2	all	yes
 RAG1	R0021	1	g.368_369delAA, c.368_369delAA, p.K86fsX118	g.368_369delAA	c.368_369delAA	p.K86fsX118	IN_FINAL	traced_through_pipeline	c.-14-5911_-14-5910del	p.(=)	NG_IDRefseq	NOT_COMPARABLE		2	all	yes
 RAG1	R0021	2	g.2599_2600delGAinsTT, c.2599_2600delGAinsTT, p.R829_K830delinsSX	g.2599_2600delGAinsTT	c.2599_2600delGAinsTT	p.R829_K830delinsSX	IN_FINAL	traced_through_pipeline	c.-14-3680_-14-3679del	p.(=)	NG_IDRefseq	NOT_COMPARABLE		2	all	yes
 RAG1	R0049	1	g.6548_6549delAA, c.256_257delAA, r.256_257delaa, p.Lys86fsX33	g.6548_6549delAA	c.256_257delAA	p.Lys86fsX33	IN_FINAL	traced_through_pipeline	c.256_257del	p.(Lys86ValfsTer33)	NM_MANE	MATCH_FS	0	2	all	yes
@@ -5128,9 +5128,9 @@ RAG1	R0074	2	g.7503G>A, c.1211G>A, r.1211g>a, p.Arg404Gln	g.7503G>A	c.1211G>A	p.
 RAG1	R0041	1+2	g.887delA, c.887delA, p.S259fsX263	g.887delA	c.887delA	p.S259fsX263	IN_FINAL	traced_through_pipeline	c.-14-5391del	p.(=)	NG_IDRefseq	NOT_COMPARABLE		1	all	yes
 RAG1	R0088	1	g.7232C>T, c.940C>T, r.940c>u, p.Arg314Trp	g.7232C>T	c.940C>T	p.Arg314Trp	IN_FINAL	traced_through_pipeline	c.940C>T	p.(Arg314Trp)	NM_MANE	MATCH	0	2	all	yes
 RAG1	R0088	2	g.[7811C>T;8502G>A], c.[1519C>T;2210G>A], r.[1519c>u;2210g>a], p.[Arg507Trp;Arg737His]	g.[7811C>T	c.[1519C>T	p.[Arg507Trp	NOT_REGISTERED	allele_absent_accession_present						2	none	yes
-RAG1	R0023	1+2	g.1095G>A, c.1095G>A, p.C328Y	g.1095G>A	c.1095G>A	p.C328Y	IN_FINAL	traced_through_pipeline	c.1095G>A	p.(=)	NM_MANE	DIFFERENT		1	all	yes
+RAG1	R0023	1+2	g.1095G>A, c.1095G>A, p.C328Y	g.1095G>A	c.1095G>A	p.C328Y	IN_FINAL	traced_through_pipeline	c.983G>A	p.(Cys328Tyr)	NM_MANE	MATCH	0	1	all	yes
 RAG1	R0099	1+2	g.7279delC, c.987delC, r.987delc, p.Ser330fsX15	g.7279delC	c.987delC	p.Ser330fsX15	IN_FINAL	traced_through_pipeline	c.987del	p.(Ser330LeufsTer15)	NM_MANE	MATCH_FS	0	1	all	yes
-RAG1	R0027	1	g.1173delT, c.1173delT, p.L354fsX356	g.1173delT	c.1173delT	p.L354fsX356	IN_FINAL	traced_through_pipeline	c.1173del	p.(Gly393AlafsTer10)	variantvalidator	DIFFERENT	39	2	all	yes
+RAG1	R0027	1	g.1173delT, c.1173delT, p.L354fsX356	g.1173delT	c.1173delT	p.L354fsX356	IN_FINAL	traced_through_pipeline	c.1061del	p.(Leu354ArgfsTer3)	NM_MANE	MATCH_FS	0	2	all	yes
 RAG1	R0027	2	g.2727T>A, c.2727T>A, p.L872X	g.2727T>A	c.2727T>A	p.L872X	NOT_REGISTERED	allele_absent_accession_present						2	all	yes
 RAG1	R0012	1+2	g.1258delA, c.1258delA, p.S382fsX402	g.1258delA	c.1258delA	p.S382fsX402	IN_FINAL	traced_through_pipeline	c.-14-5021del	p.(=)	NG_IDRefseq	NOT_COMPARABLE		1	all	yes
 RAG1	R0063	1+2	g.7472C>T, c.1180C>T, r.1180c>u, p.Arg394Trp	g.7472C>T	c.1180C>T	p.Arg394Trp	IN_FINAL	traced_through_pipeline	c.1180C>T	p.(Arg394Trp)	NM_MANE	MATCH	0	1	all	yes
@@ -5138,21 +5138,21 @@ RAG1	R0075	1+2	g.7472C>T, c.1180C>T, r.1180c>u, p.Arg394Trp	g.7472C>T	c.1180C>T	
 RAG1	R0008	1+2	g.1298C>T, c.1298C>T, p.R396C	g.1298C>T	c.1298C>T	p.R396C	NOT_REGISTERED	accession_absent_from_final						1	all	no
 RAG1	R0035	1+2	g.1298C>T, c.1298C>T, p.R396C	g.1298C>T	c.1298C>T	p.R396C	NOT_REGISTERED	accession_absent_from_final						1	all	no
 RAG1	R0038	1	g.1298C>T, c.1298C>T, p.R396C	g.1298C>T	c.1298C>T	p.R396C	NOT_REGISTERED	allele_absent_accession_present						2	all	yes
-RAG1	R0038	2	g.2766T>G, c.2766T>G, p.L885R	g.2766T>G	c.2766T>G	p.L885R	IN_FINAL	traced_through_pipeline	c.-14-3513T>G	p.(=)	NG_IDRefseq	DIFFERENT		2	all	yes
+RAG1	R0038	2	g.2766T>G, c.2766T>G, p.L885R	g.2766T>G	c.2766T>G	p.L885R	IN_FINAL	traced_through_pipeline	c.2654T>G	p.(Leu885Arg)	NM_MANE	MATCH	0	2	all	yes
 RAG1	R0039	1	g.1298C>T, c.1298C>T, p.R396C	g.1298C>T	c.1298C>T	p.R396C	NOT_REGISTERED	allele_absent_accession_present						2	all	yes
-RAG1	R0039	2	g.2766T>G, c.2766T>G, p.L885R	g.2766T>G	c.2766T>G	p.L885R	IN_FINAL	traced_through_pipeline	c.-14-3513T>G	p.(=)	NG_IDRefseq	DIFFERENT		2	all	yes
+RAG1	R0039	2	g.2766T>G, c.2766T>G, p.L885R	g.2766T>G	c.2766T>G	p.L885R	IN_FINAL	traced_through_pipeline	c.2654T>G	p.(Leu885Arg)	NM_MANE	MATCH	0	2	all	yes
 RAG1	R0005	1	g.1298C>T, c.1298C>T, p.R396C	g.1298C>T	c.1298C>T	p.R396C	KNOWN_UNRESOLVED	UNRESCUABLE_DATA_ERROR:ESEQUENCEMISMATCH						2	all	yes
-RAG1	R0005	2	g.2847A>G, c.2847A>G, p.Y912C	g.2847A>G	c.2847A>G	p.Y912C	IN_FINAL	traced_through_pipeline	c.-14-3432A>G	p.(=)	NG_IDRefseq	DIFFERENT		2	all	yes
+RAG1	R0005	2	g.2847A>G, c.2847A>G, p.Y912C	g.2847A>G	c.2847A>G	p.Y912C	IN_FINAL	traced_through_pipeline	c.2735A>G	p.(Tyr912Cys)	NM_MANE	MATCH	0	2	all	yes
 RAG1	R0090	1	g.7478C>T, c.1186C>T, r.1186c>u, p.Arg396Cys	g.7478C>T	c.1186C>T	p.Arg396Cys	IN_FINAL	traced_through_pipeline	c.1186C>T	p.(Arg396Cys)	NM_MANE	MATCH	0	2	all	yes
 RAG1	R0090	2	g.8946T>G, c.2654T>G, r.2654u>g, p.Leu885Arg	g.8946T>G	c.2654T>G	p.Leu885Arg	IN_FINAL	traced_through_pipeline	c.2654T>G	p.(Leu885Arg)	NM_MANE	MATCH	0	2	all	yes
 RAG1	R0091	1	g.7478C>T, c.1186C>T, r.1186c>u, p.Arg396Cys	g.7478C>T	c.1186C>T	p.Arg396Cys	IN_FINAL	traced_through_pipeline	c.1186C>T	p.(Arg396Cys)	NM_MANE	MATCH	0	2	all	yes
 RAG1	R0091	2	g.8946T>G, c.2654T>G, r.2654u>g, p.Leu885Arg	g.8946T>G	c.2654T>G	p.Leu885Arg	IN_FINAL	traced_through_pipeline	c.2654T>G	p.(Leu885Arg)	NM_MANE	MATCH	0	2	all	yes
-RAG1	R0006	1	g.1299G>A, c.1299G>A, p.R396H	g.1299G>A	c.1299G>A	p.R396H	IN_FINAL	traced_through_pipeline	c.1299G>A	p.(=)	NM_MANE	DIFFERENT		2	all	yes
+RAG1	R0006	1	g.1299G>A, c.1299G>A, p.R396H	g.1299G>A	c.1299G>A	p.R396H	IN_FINAL	traced_through_pipeline	c.1187G>A	p.(Arg396His)	NM_MANE	MATCH	0	2	all	yes
 RAG1	R0006	2	g.1723_1735delTATTGATGGGCTG, c.1723_1735delTATTGATGGGCTG, p.I537fsX566	g.1723_1735delTATTGATGGGCTG	c.1723_1735delTATTGATGGGCTG	p.I537fsX566	IN_FINAL	traced_through_pipeline	c.1723_1735del	p.(Glu575LysfsTer3)	variantvalidator	DIFFERENT	38	2	all	yes
 RAG1	R0081	1+2	g.7479G>A, c.1187G>A, r.1187g>a, p.Arg396His	g.7479G>A	c.1187G>A	p.Arg396His	IN_FINAL	traced_through_pipeline	c.1187G>A	p.(Arg396His)	NM_MANE	MATCH	0	1	all	yes
-RAG1	R0034	1	g.1299G>T, c.1299G>T, p.R396L	g.1299G>T	c.1299G>T	p.R396L	IN_FINAL	traced_through_pipeline	c.1299G>T	p.(=)	NM_MANE	DIFFERENT		2	all	yes
+RAG1	R0034	1	g.1299G>T, c.1299G>T, p.R396L	g.1299G>T	c.1299G>T	p.R396L	IN_FINAL	traced_through_pipeline	c.1187G>T	p.(Arg396Leu)	NM_MANE	MATCH	0	2	all	yes
 RAG1	R0034	2	g.3036G>A, c.3036G>A, p.R975Q	g.3036G>A	c.3036G>A	p.R975Q	KNOWN_UNRESOLVED	UNRESCUABLE_DATA_ERROR:ESEQUENCEMISMATCH						2	all	yes
-RAG1	R0020	1+2	g.1313T>C, c.1313T>C, p.S401P	g.1313T>C	c.1313T>C	p.S401P	IN_FINAL	traced_through_pipeline	c.1313T>C	p.(Phe438Ser)	NM_MANE	DIFFERENT		1	all	yes
+RAG1	R0020	1+2	g.1313T>C, c.1313T>C, p.S401P	g.1313T>C	c.1313T>C	p.S401P	IN_FINAL	traced_through_pipeline	c.1201T>C	p.(Ser401Pro)	NM_MANE	MATCH	0	1	all	yes
 RAG1	R0053	1+2	g.7503G>A, c.1211G>A, r.1211g>a, p.Arg404Gln	g.7503G>A	c.1211G>A	p.Arg404Gln	IN_FINAL	traced_through_pipeline	c.1211G>A	p.(Arg404Gln)	NM_MANE	MATCH	0	1	all	yes
 RAG1	R0054	1+2	g.7503G>A, c.1211G>A, r.1211g>a, p.Arg404Gln	g.7503G>A	c.1211G>A	p.Arg404Gln	IN_FINAL	traced_through_pipeline	c.1211G>A	p.(Arg404Gln)	NM_MANE	MATCH	0	1	all	yes
 RAG1	R0100	1	g.7505A>G, c.1213A>G, r.1213a>g, p.Arg405Gly	g.7505A>G	c.1213A>G	p.Arg405Gly	IN_FINAL	traced_through_pipeline	c.1213A>G	p.(Arg405Gly)	NM_MANE	MATCH	0	2	all	yes
@@ -5161,18 +5161,18 @@ RAG1	R0076	1	g.7973C>T, c.1681C>T, r.1681c>u, p.Arg561Cys	g.7973C>T	c.1681C>T	p.
 RAG1	R0076	2	g.7503G>A, c.1211G>A, r.1211g>a, p.Arg404Gln	g.7503G>A	c.1211G>A	p.Arg404Gln	IN_FINAL	traced_through_pipeline	c.1211G>A	p.(Arg404Gln)	NM_MANE	MATCH	0	2	all	yes
 RAG1	R0045	1	g.7502C>T, c.1210C>T, r.1210c>u, p.Arg404Trp	g.7502C>T	c.1210C>T	p.Arg404Trp	IN_FINAL	traced_through_pipeline	c.1210C>T	p.(Arg404Trp)	NM_MANE	MATCH	0	2	all	yes
 RAG1	R0045	2	g.8915delT, c.2623delT, r.2623delu, p.Ser875fsX8	g.8915delT	c.2623delT	p.Ser875fsX8	IN_FINAL	traced_through_pipeline	c.2623del	p.(Ser875ProfsTer8)	NM_MANE	MATCH_FS	0	2	all	yes
-RAG1	R0014	1	g.1341G>A, c.1341G>A, p.R410Q	g.1341G>A	c.1341G>A	p.R410Q	IN_FINAL	traced_through_pipeline	c.1341G>A	p.(=)	NM_MANE	DIFFERENT		2	all	yes
+RAG1	R0014	1	g.1341G>A, c.1341G>A, p.R410Q	g.1341G>A	c.1341G>A	p.R410Q	IN_FINAL	traced_through_pipeline	c.1229G>A	p.(Arg410Gln)	NM_MANE	MATCH	0	2	all	yes
 RAG1	R0014	2	g.2633C>T, c.2633C>T, p.R841W	g.2633C>T	c.2633C>T	p.R841W	KNOWN_UNRESOLVED	UNRESCUABLE_DATA_ERROR:ESEQUENCEMISMATCH						2	all	yes
-RAG1	R0031	1	g.1409G>A, c.1409G>A, p.V433M	g.1409G>A	c.1409G>A	p.V433M	IN_FINAL	traced_through_pipeline	c.1409G>A	p.(Cys470Tyr)	NM_MANE	DIFFERENT		2	all	yes
-RAG1	R0031	2	g.1443C>T, c.1443C>T, p.A444V	g.1443C>T	c.1443C>T	p.A444V	IN_FINAL	traced_through_pipeline	c.1443C>T	p.(=)	NM_MANE	DIFFERENT		2	all	yes
-RAG1	R0037	1	g.1415A>G, c.1415A>G, p.M435V	g.1415A>G	c.1415A>G	p.M435V	IN_FINAL	traced_through_pipeline	c.-14-4864A>G	p.(=)	NG_IDRefseq	DIFFERENT		2	all	yes
-RAG1	R0037	2	g.1789G>T, c.1789G>T, p.R559S	g.1789G>T	c.1789G>T	p.R559S	IN_FINAL	traced_through_pipeline	c.1789G>T	p.(Val597Leu)	NM_MANE	DIFFERENT		2	all	yes
-RAG1	R0013	1+2	g.1443C>T, c.1443C>T, p.A444V	g.1443C>T	c.1443C>T	p.A444V	IN_FINAL	traced_through_pipeline	c.1443C>T	p.(=)	NM_MANE	DIFFERENT		1	all	yes
-RAG1	R0032	1+2	g.1443C>T, c.1443C>T, p.A444V	g.1443C>T	c.1443C>T	p.A444V	IN_FINAL	traced_through_pipeline	c.1443C>T	p.(=)	NM_MANE	DIFFERENT		1	all	yes
+RAG1	R0031	1	g.1409G>A, c.1409G>A, p.V433M	g.1409G>A	c.1409G>A	p.V433M	IN_FINAL	traced_through_pipeline	c.1297G>A	p.(Val433Met)	NM_MANE	MATCH	0	2	all	yes
+RAG1	R0031	2	g.1443C>T, c.1443C>T, p.A444V	g.1443C>T	c.1443C>T	p.A444V	IN_FINAL	traced_through_pipeline	c.1331C>T	p.(Ala444Val)	NM_MANE	MATCH	0	2	all	yes
+RAG1	R0037	1	g.1415A>G, c.1415A>G, p.M435V	g.1415A>G	c.1415A>G	p.M435V	IN_FINAL	traced_through_pipeline	c.1303A>G	p.(Met435Val)	NM_MANE	MATCH	0	2	all	yes
+RAG1	R0037	2	g.1789G>T, c.1789G>T, p.R559S	g.1789G>T	c.1789G>T	p.R559S	IN_FINAL	traced_through_pipeline	c.1677G>T	p.(Arg559Ser)	NM_MANE	MATCH	0	2	all	yes
+RAG1	R0013	1+2	g.1443C>T, c.1443C>T, p.A444V	g.1443C>T	c.1443C>T	p.A444V	IN_FINAL	traced_through_pipeline	c.1331C>T	p.(Ala444Val)	NM_MANE	MATCH	0	1	all	yes
+RAG1	R0032	1+2	g.1443C>T, c.1443C>T, p.A444V	g.1443C>T	c.1443C>T	p.A444V	IN_FINAL	traced_through_pipeline	c.1331C>T	p.(Ala444Val)	NM_MANE	MATCH	0	1	all	yes
 RAG1	R0078	1+2	g.7638G>A, c.1346G>A, r.1346g>a, p.Arg449Lys	g.7638G>A	c.1346G>A	p.Arg449Lys	IN_FINAL	traced_through_pipeline	c.1346G>A	p.(Arg449Lys)	NM_MANE	MATCH	0	1	all	yes
 RAG1	R0028	1+2	g.1521_1522delGC, c.1521_1522delGC, p.C470fsX509	g.1521_1522delGC	c.1521_1522delGC	p.C470fsX509	IN_FINAL	traced_through_pipeline	c.-14-4758_-14-4757del	p.(=)	NG_IDRefseq	NOT_COMPARABLE		1	all	yes
-RAG1	R0030	1	g.1533G>A, c.1533G>A, p.R474H	g.1533G>A	c.1533G>A	p.R474H	IN_FINAL	traced_through_pipeline	c.1533G>A	p.(=)	NM_MANE	DIFFERENT		2	all	yes
-RAG1	R0030	2	g.2370A>T, c.2370A>T, p.H753L	g.2370A>T	c.2370A>T	p.H753L	IN_FINAL	traced_through_pipeline	c.2370A>T	p.(=)	NM_MANE	DIFFERENT		2	all	yes
+RAG1	R0030	1	g.1533G>A, c.1533G>A, p.R474H	g.1533G>A	c.1533G>A	p.R474H	IN_FINAL	traced_through_pipeline	c.1421G>A	p.(Arg474His)	NM_MANE	MATCH	0	2	all	yes
+RAG1	R0030	2	g.2370A>T, c.2370A>T, p.H753L	g.2370A>T	c.2370A>T	p.H753L	IN_FINAL	traced_through_pipeline	c.2258A>T	p.(His753Leu)	NM_MANE	MATCH	0	2	all	yes
 RAG1	R0047	1	g.7713G>A, c.1421G>A, r.1421g>a, p.Arg474His	g.7713G>A	c.1421G>A	p.Arg474His	IN_FINAL	traced_through_pipeline	c.1421G>A	p.(Arg474His)	NM_MANE	MATCH	0	2	all	yes
 RAG1	R0047	2	g.8481G>T, c.2189G>T, r.2189g>u, p.Cys730Phe	g.8481G>T	c.2189G>T	p.Cys730Phe	IN_FINAL	traced_through_pipeline	c.2189G>T	p.(Cys730Phe)	NM_MANE	MATCH	0	2	all	yes
 RAG1	R0087	1	g.7713G>A, c.1421G>A, r.1421g>a, p.Arg474His	g.7713G>A	c.1421G>A	p.Arg474His	IN_FINAL	traced_through_pipeline	c.1421G>A	p.(Arg474His)	NM_MANE	MATCH	0	2	all	yes
@@ -5180,17 +5180,17 @@ RAG1	R0087	2	g.8162C>T, c.1870C>T, r.1870c>u, p.Arg624Cys	g.8162C>T	c.1870C>T	p.
 RAG1	R0071	1	g.7712C>A, c.1420C>A, r.1420c>a, p.Arg474Ser	g.7712C>A	c.1420C>A	p.Arg474Ser	IN_FINAL	traced_through_pipeline	c.1420C>A	p.(Arg474Ser)	NM_MANE	MATCH	0	2	all	yes
 RAG1	R0071	2	g.8156G>C, c.1864G>C, r.1864g>c, p.Ala622Pro	g.8156G>C	c.1864G>C	p.Ala622Pro	IN_FINAL	traced_through_pipeline	c.1864G>C	p.(Ala622Pro)	NM_MANE	MATCH	0	2	all	yes
 RAG1	R0024	1	g.1631C>T, c.1631C>T, p.R507W	g.1631C>T	c.1631C>T	p.R507W	KNOWN_UNRESOLVED	UNRESCUABLE_DATA_ERROR:ESEQUENCEMISMATCH						2	all	yes
-RAG1	R0024	2	g.1793C>T, c.1793C>T, p.R561C	g.1793C>T	c.1793C>T	p.R561C	IN_FINAL	traced_through_pipeline	c.-14-4486C>T	p.(=)	NG_IDRefseq	DIFFERENT		2	all	yes
+RAG1	R0024	2	g.1793C>T, c.1793C>T, p.R561C	g.1793C>T	c.1793C>T	p.R561C	IN_FINAL	traced_through_pipeline	c.1681C>T	p.(Arg561Cys)	NM_MANE	MATCH	0	2	all	yes
 RAG1	R0018	1	g.1678G>T, c.1678G>T, p.W522C	g.1678G>T	c.1678G>T	p.W522C	KNOWN_UNRESOLVED	UNRESCUABLE_DATA_ERROR:ESEQUENCEMISMATCH						2	all	yes
-RAG1	R0018	2	g.2276G>A, c.2276G>A, p.E722K	g.2276G>A	c.2276G>A	p.E722K	IN_FINAL	traced_through_pipeline	c.2276G>A	p.(Arg759His)	NM_MANE	DIFFERENT		2	all	yes
+RAG1	R0018	2	g.2276G>A, c.2276G>A, p.E722K	g.2276G>A	c.2276G>A	p.E722K	IN_FINAL	traced_through_pipeline	c.2164G>A	p.(Glu722Lys)	NM_MANE	MATCH	0	2	all	yes
 RAG1	R0094	1	g.7858G>T, c.1566G>T, r.1566g>u, p.Trp522Cys	g.7858G>T	c.1566G>T	p.Trp522Cys	IN_FINAL	traced_through_pipeline	c.1566G>T	p.(Trp522Cys)	NM_MANE	MATCH	0	2	all	yes
 RAG1	R0094	2	g.9209C>T, c.2917C>T, r.2917c>u, p.Arg973Cys	g.9209C>T	c.2917C>T	p.Arg973Cys	IN_FINAL	traced_through_pipeline	c.2917C>T	p.(Arg973Cys)	NM_MANE	MATCH	0	2	all	yes
 RAG1	R0052	1	g.7969G>T, c.1677G>T, r.1677g>u, p.Arg559Ser	g.7969G>T	c.1677G>T	p.Arg559Ser	IN_FINAL	traced_through_pipeline	c.1677G>T	p.(Arg559Ser)	NM_MANE	MATCH	0	2	all	yes
 RAG1	R0052	2	g.8981C>T, c.2689C>T, r.2689c>u, p.Arg897X	g.8981C>T	c.2689C>T	p.Arg897X	IN_FINAL	traced_through_pipeline	c.2689C>T	p.(Arg897Ter)	NM_MANE	MATCH	0	2	all	yes
 RAG1	R0092	1	g.7969G>T, c.1677G>T, r.1677g>u, p.Arg559Ser	g.7969G>T	c.1677G>T	p.Arg559Ser	IN_FINAL	traced_through_pipeline	c.1677G>T	p.(Arg559Ser)	NM_MANE	MATCH	0	2	all	yes
 RAG1	R0092	2	g.8981C>T, c.2689C>T, r.2689c>u, p.Arg897X	g.8981C>T	c.2689C>T	p.Arg897X	IN_FINAL	traced_through_pipeline	c.2689C>T	p.(Arg897Ter)	NM_MANE	MATCH	0	2	all	yes
-RAG1	R0004	1+2	g.1794G>A, c.1794G>A, p.R561H	g.1794G>A	c.1794G>A	p.R561H	IN_FINAL	traced_through_pipeline	c.1794G>A	p.(=)	NM_MANE	DIFFERENT		1	all	yes
-RAG1	R0009	1	g.1793C>T, c.1793C>T, p.R561C	g.1793C>T	c.1793C>T	p.R561C	IN_FINAL	traced_through_pipeline	c.-14-4486C>T	p.(=)	NG_IDRefseq	DIFFERENT		2	all	yes
+RAG1	R0004	1+2	g.1794G>A, c.1794G>A, p.R561H	g.1794G>A	c.1794G>A	p.R561H	IN_FINAL	traced_through_pipeline	c.1682G>A	p.(Arg561His)	NM_MANE	MATCH	0	1	all	yes
+RAG1	R0009	1	g.1793C>T, c.1793C>T, p.R561C	g.1793C>T	c.1793C>T	p.R561C	IN_FINAL	traced_through_pipeline	c.1681C>T	p.(Arg561Cys)	NM_MANE	MATCH	0	2	all	yes
 RAG1	R0009	2	g.2322G>A, c.2322G>A, p.R737H	g.2322G>A	c.2322G>A	p.R737H	KNOWN_UNRESOLVED	UNRESCUABLE_DATA_ERROR:ESEQUENCEMISMATCH						2	all	yes
 RAG1	R0050	1+2	g.7974G>A, c.1682G>A, r.1682g>a, p.Arg561His	g.7974G>A	c.1682G>A	p.Arg561His	IN_FINAL	traced_through_pipeline	c.1682G>A	p.(Arg561His)	NM_MANE	MATCH	0	1	all	yes
 RAG1	R0058	1+2	g.7974G>A, c.1682G>A, r.1682g>a, p.Arg561His	g.7974G>A	c.1682G>A	p.Arg561His	IN_FINAL	traced_through_pipeline	c.1682G>A	p.(Arg561His)	NM_MANE	MATCH	0	1	all	yes
@@ -5202,19 +5202,19 @@ RAG1	R0095	1	g.8107G>C, c.1815G>C, r.1815g>c, p.Met605Ile	g.8107G>C	c.1815G>C	p.
 RAG1	R0095	2	g.7973C>T, c.1681C>T, r.1681c>u, p.Arg561Cys	g.7973C>T	c.1681C>T	p.Arg561Cys	IN_FINAL	traced_through_pipeline	c.1681C>T	p.(Arg561Cys)	NM_MANE	MATCH	0	2	all	yes
 RAG1	R0097	1	g.8155delG, c.1863delG, r.1863delg, p.Ala622fsX9	g.8155delG	c.1863delG	p.Ala622fsX9	IN_FINAL	traced_through_pipeline	c.1864del	p.(Ala622GlnfsTer9)	NM_MANE	MATCH_FS	0	2	all	yes
 RAG1	R0097	2	g.7521G>A, c.1229G>A, r.1229g>a, p.Arg410Gln	g.7521G>A	c.1229G>A	p.Arg410Gln	IN_FINAL	traced_through_pipeline	c.1229G>A	p.(Arg410Gln)	NM_MANE	MATCH	0	2	all	yes
-RAG1	R0003	1	g.1983G>A, c.1983G>A, p.R624H	g.1983G>A	c.1983G>A	p.R624H	IN_FINAL	traced_through_pipeline	c.1983G>A	p.(Met661Ile)	NM_MANE	DIFFERENT		2	all	yes
+RAG1	R0003	1	g.1983G>A, c.1983G>A, p.R624H	g.1983G>A	c.1983G>A	p.R624H	IN_FINAL	traced_through_pipeline	c.1871G>A	p.(Arg624His)	NM_MANE	MATCH	0	2	all	yes
 RAG1	R0003	2	g.2801C>T, c.2801C>T, p.R897X	g.2801C>T	c.2801C>T	p.R897X	KNOWN_UNRESOLVED	UNRESCUABLE_DATA_ERROR:ESEQUENCEMISMATCH						2	all	yes
 RAG1	R0048	1	g.8163G>A, c.1871G>A, r.1871g>a, p.Arg624His	g.8163G>A	c.1871G>A	p.Arg624His	IN_FINAL	traced_through_pipeline	c.1871G>A	p.(Arg624His)	NM_MANE	MATCH	0	2	all	yes
 RAG1	R0048	2	g.9266A>G, c.2974A>G, r.2974a>g, p.Lys992Glu	g.9266A>G	c.2974A>G	p.Lys992Glu	IN_FINAL	traced_through_pipeline	c.2974A>G	p.(Lys992Glu)	NM_MANE	MATCH	0	2	all	yes
 RAG1	R0070	1	g.8239delT, c.1947delT, r.1947delu, p.Asn650fsX22	g.8239delT	c.1947delT	p.Asn650fsX22	IN_FINAL	traced_through_pipeline	c.1947del	p.(Asn650ThrfsTer22)	NM_MANE	MATCH_FS	0	1	all	yes
 RAG1	R0056	1+2	g.8294delC, c.2002delC, r.2002delc, p.His668fsX4	g.8294delC	c.2002delC	p.His668fsX4	IN_FINAL	traced_through_pipeline	c.2002del	p.(His668ThrfsTer4)	NM_MANE	MATCH_FS	0	1	all	yes
 RAG1	R0033	1	g.2118A>G, c.2118A>G, p.E669G	g.2118A>G	c.2118A>G	p.E669G	KNOWN_UNRESOLVED	UNRESCUABLE_DATA_ERROR:ESEQUENCEMISMATCH						2	all	yes
-RAG1	R0033	2	g.2812C>A, c.2812C>A, p.C900X	g.2812C>A	c.2812C>A	p.C900X	IN_FINAL	traced_through_pipeline	c.-14-3467C>A	p.(=)	NG_IDRefseq	DIFFERENT		2	all	yes
+RAG1	R0033	2	g.2812C>A, c.2812C>A, p.C900X	g.2812C>A	c.2812C>A	p.C900X	IN_FINAL	traced_through_pipeline	c.2700C>A	p.(Cys900Ter)	NM_MANE	MATCH	0	2	all	yes
 RAG1	R0017	1+2	g.2182_2189delAATGCTTG, c.2182_2189delAATGCTTG, p.L690fsX708	g.2182_2189delAATGCTTG	c.2182_2189delAATGCTTG	p.L690fsX708	IN_FINAL	traced_through_pipeline	c.-14-4097_-14-4090del	p.(=)	NG_IDRefseq	NOT_COMPARABLE		1	all	yes
 RAG1	R0104	1	g.8411G>C, c.2119G>C, r.2119g>c, p.Gly707Arg	g.8411G>C	c.2119G>C	p.Gly707Arg	IN_FINAL	traced_through_pipeline	c.2119G>C	p.(Gly707Arg)	NM_MANE	MATCH	0	2	all	yes
 RAG1	R0104	2	g.6811delT, c.519delT, r.519delu, p.Glu174fsX27	g.6811delT	c.519delT	p.Glu174fsX27	IN_FINAL	traced_through_pipeline	c.519del	p.(Glu174SerfsTer27)	NM_MANE	MATCH_FS	0	2	all	yes
 RAG1	R0068	1+2	g.8418G>A, c.2126G>A, r.2126g>a, p.Gly709Asp	g.8418G>A	c.2126G>A	p.Gly709Asp	IN_FINAL	traced_through_pipeline	c.2126G>A	p.(Gly709Asp)	NM_MANE	MATCH	0	1	all	yes
-RAG1	R0001	1	g.2276G>A, c.2276G>A, p.E722K	g.2276G>A	c.2276G>A	p.E722K	IN_FINAL	traced_through_pipeline	c.2276G>A	p.(Arg759His)	NM_MANE	DIFFERENT		2	all	yes
+RAG1	R0001	1	g.2276G>A, c.2276G>A, p.E722K	g.2276G>A	c.2276G>A	p.E722K	IN_FINAL	traced_through_pipeline	c.2164G>A	p.(Glu722Lys)	NM_MANE	MATCH	0	2	all	yes
 RAG1	R0001	2	g.2432G>T, c.2432G>T, p.E774X	g.2432G>T	c.2432G>T	p.E774X	KNOWN_UNRESOLVED	UNRESCUABLE_DATA_ERROR:ESEQUENCEMISMATCH						2	all	yes
 RAG1	R0102	1	g.8474T>C, c.2182T>C, r.2182u>c, p.Tyr728His	g.8474T>C	c.2182T>C	p.Tyr728His	IN_FINAL	traced_through_pipeline	c.2182T>C	p.(Tyr728His)	NM_MANE	MATCH	0	2	all	yes
 RAG1	R0102	2	g.8163G>A, c.1871G>A, r.1871g>a, p.Arg624His	g.8163G>A	c.1871G>A	p.Arg624His	IN_FINAL	traced_through_pipeline	c.1871G>A	p.(Arg624His)	NM_MANE	MATCH	0	2	all	yes
@@ -5233,7 +5233,7 @@ RAG1	R0010	1+2	g.2727T>A, c.2727T>A, p.L872X	g.2727T>A	c.2727T>A	p.L872X	KNOWN_U
 RAG1	R0055	1+2	g.8978T>C, c.2686T>C, r.2686u>c, p.Trp896Arg	g.8978T>C	c.2686T>C	p.Trp896Arg	IN_FINAL	traced_through_pipeline	c.2686T>C	p.(Trp896Arg)	NM_MANE	MATCH	0	1	all	yes
 RAG1	R0002	1+2	g.2926T>G, c.2926T>G, p.Y938X	g.2926T>G	c.2926T>G	p.Y938X	KNOWN_UNRESOLVED	UNRESCUABLE_DATA_ERROR:ESEQUENCEMISMATCH						1	all	yes
 RAG1	R0067	1+2	g.9159T>C, c.2867T>C, r.2867u>c, p.Ile956Thr	g.9159T>C	c.2867T>C	p.Ile956Thr	IN_FINAL	traced_through_pipeline	c.2867T>C	p.(Ile956Thr)	NM_MANE	MATCH	0	1	all	yes
-RAG1	R0016	1+2	g.2988G>A, c.2988G>A, p.W959X	g.2988G>A	c.2988G>A	p.W959X	IN_FINAL	traced_through_pipeline	c.2988G>A	p.(=)	NM_MANE	DIFFERENT		1	all	yes
+RAG1	R0016	1+2	g.2988G>A, c.2988G>A, p.W959X	g.2988G>A	c.2988G>A	p.W959X	IN_FINAL	traced_through_pipeline	c.2876G>A	p.(Trp959Ter)	NM_MANE	MATCH	0	1	all	yes
 RAG1	R0043	1+2	g.9210G>A, c.2918G>A, r.2918g>a, p.Arg973His	g.9210G>A	c.2918G>A	p.Arg973His	IN_FINAL	traced_through_pipeline	c.2918G>A	p.(Arg973His)	NM_MANE	MATCH	0	1	all	yes
 RAG1	R0060	1+2	g.9234A>C, c.2942A>C, r.2942a>c, p.Gln981Pro	g.9234A>C	c.2942A>C	p.Gln981Pro	IN_FINAL	traced_through_pipeline	c.2942A>C	p.(Gln981Pro)	NM_MANE	MATCH	0	1	all	yes
 RAG2	S0046	1	g.5069A>G, c.1A>G, r.1a>g, p.Met1Val	g.5069A>G	c.1A>G	p.Met1Val	IN_FINAL	traced_through_pipeline	c.1A>G	p.?	NM_MANE	MATCH_START_LOSS	0	2	all	yes
@@ -5244,7 +5244,7 @@ RAG2	S0031	1+2	g.5172G>T, c.104G>T, r.104g>u, p.Gly35Val	g.5172G>T	c.104G>T	p.Gl
 RAG2	S0033	1+2	g.5172G>T, c.104G>T, r.104g>u, p.Gly35Val	g.5172G>T	c.104G>T	p.Gly35Val	IN_FINAL	traced_through_pipeline	c.104G>T	p.(Gly35Val)	NM_MANE	MATCH	0	1	all	yes
 RAG2	S0034	1+2	g.5172G>T, c.104G>T, r.104g>u, p.Gly35Val	g.5172G>T	c.104G>T	p.Gly35Val	IN_FINAL	traced_through_pipeline	c.104G>T	p.(Gly35Val)	NM_MANE	MATCH	0	1	all	yes
 RAG2	S0039	1+2	g.5172G>T, c.104G>T, r.104g>u, p.Gly35Val	g.5172G>T	c.104G>T	p.Gly35Val	IN_FINAL	traced_through_pipeline	c.104G>T	p.(Gly35Val)	NM_MANE	MATCH	0	1	all	yes
-RAG2	S0017	1	g.1316A>G, c.1316A>G, p.R39G	g.1316A>G	c.1316A>G	p.R39G	IN_FINAL	traced_through_pipeline	c.1316A>G	p.(Asn439Ser)	NM_MANE	DIFFERENT		2	all	yes
+RAG2	S0017	1	g.1316A>G, c.1316A>G, p.R39G	g.1316A>G	c.1316A>G	p.R39G	IN_FINAL	traced_through_pipeline	c.115A>G	p.(Arg39Gly)	NM_MANE	MATCH	0	2	all	yes
 RAG2	S0017	2	g.1887G>A, c.1887G>A, p.R229Q	g.1887G>A	c.1887G>A	p.R229Q	NOT_REGISTERED	allele_absent_accession_present						2	all	yes
 RAG2	S0018	1	g.5183A>G, c.115A>G, r.115a>g, p.Arg39Gly	g.5183A>G	c.115A>G	p.Arg39Gly	IN_FINAL	traced_through_pipeline	c.115A>G	p.(Arg39Gly)	NM_MANE	MATCH	0	2	all	yes
 RAG2	S0018	2	g.5754G>A, c.686G>A, r.686g>a, p.Arg229Gln	g.5754G>A	c.686G>A	p.Arg229Gln	IN_FINAL	traced_through_pipeline	c.686G>A	p.(Arg229Gln)	NM_MANE	MATCH	0	2	all	yes
@@ -5255,12 +5255,12 @@ RAG2	S0004	2	g.2055T>G, c.2055T>G, p.M285R	g.2055T>G	c.2055T>G	p.M285R	KNOWN_UNR
 RAG2	S0044	1	g.5298C>A, c.230C>A, r.230c>a, p.Thr77Asn	g.5298C>A	c.230C>A	p.Thr77Asn	IN_FINAL	traced_through_pipeline	c.230C>A	p.(Thr77Asn)	NM_MANE	MATCH	0	2	all	yes
 RAG2	S0044	2	g.6420G>C, c.1352G>C, r.1352g>c, p.Gly451Ala	g.6420G>C	c.1352G>C	p.Gly451Ala	IN_FINAL	traced_through_pipeline	c.1352G>C	p.(Gly451Ala)	NM_MANE	MATCH	0	2	all	yes
 RAG2	S0007	1	g.1484G>A, c.1484G>A, p.G95R	g.1484G>A	c.1484G>A	p.G95R	KNOWN_UNRESOLVED	UNRESCUABLE_DATA_ERROR:ESEQUENCEMISMATCH						2	all	yes
-RAG2	S0007	2	g.2558T>A, c.2558T>A, p.W453R	g.2558T>A	c.2558T>A	p.W453R	IN_FINAL	traced_through_pipeline	c.*974T>A	p.(=)	NM_MANE	DIFFERENT		2	all	yes
+RAG2	S0007	2	g.2558T>A, c.2558T>A, p.W453R	g.2558T>A	c.2558T>A	p.W453R	IN_FINAL	traced_through_pipeline	c.1357T>A	p.(Trp453Arg)	NM_MANE	MATCH	0	2	all	yes
 RAG2	S0028	1	g.5351G>A, c.283G>A, r.283g>a, p.Gly95Arg	g.5351G>A	c.283G>A	p.Gly95Arg	IN_FINAL	traced_through_pipeline	c.283G>A	p.(Gly95Arg)	NM_MANE	MATCH	0	2	all	yes
 RAG2	S0028	2	g.5753C>T, c.685C>T, r.685c>u, p.Arg229Trp	g.5753C>T	c.685C>T	p.Arg229Trp	IN_FINAL	traced_through_pipeline	c.685C>T	p.(Arg229Trp)	NM_MANE	MATCH	0	2	all	yes
 RAG2	S0011	1+2	g.1664_1665insTGTTC, c.1664_1665insTGTTC, p.L155fsX177	g.1664_1665insTGTTC	c.1664_1665insTGTTC	p.L155fsX177	IN_FINAL	traced_through_pipeline	c.*80_*81insTGTTC	p.(=)	NM_MANE	NOT_COMPARABLE		1	all	yes
-RAG2	S0013	1	g.1643C>T, c.1643C>T, p.R148X	g.1643C>T	c.1643C>T	p.R148X	IN_FINAL	traced_through_pipeline	c.-1028+508C>T	p.(=)	NG_IDRefseq	DIFFERENT		2	all	yes
-RAG2	S0013	2	g.1818T>G, c.1818T>G, p.F206C	g.1818T>G	c.1818T>G	p.F206C	IN_FINAL	traced_through_pipeline	c.*234T>G	p.(=)	NM_MANE	DIFFERENT		2	all	yes
+RAG2	S0013	1	g.1643C>T, c.1643C>T, p.R148X	g.1643C>T	c.1643C>T	p.R148X	IN_FINAL	traced_through_pipeline	c.442C>T	p.(Arg148Ter)	NM_MANE	MATCH	0	2	all	yes
+RAG2	S0013	2	g.1818T>G, c.1818T>G, p.F206C	g.1818T>G	c.1818T>G	p.F206C	IN_FINAL	traced_through_pipeline	c.617T>G	p.(Phe206Cys)	NM_MANE	MATCH	0	2	all	yes
 RAG2	S0036	1	g.5547C>T, c.479C>T, r.479c>u, p.Ser160Leu	g.5547C>T	c.479C>T	p.Ser160Leu	IN_FINAL	traced_through_pipeline	c.479C>T	p.(Ser160Leu)	NM_MANE	MATCH	0	2	all	yes
 RAG2	S0036	2	g.6572A>G, c.1504A>G, r.1504a>g, p.Met502Val	g.6572A>G	c.1504A>G	p.Met502Val	IN_FINAL	traced_through_pipeline	c.1504A>G	p.(Met502Val)	NM_MANE	MATCH	0	2	all	yes
 RAG2	S0043	1+2	g.[5649C>A;5651T>G], c.[581C>A;583T>G], r.[581c>a;583u>g], p.[Ser194X;Tyr195Asp]	g.[5649C>A	c.[581C>A	p.[Ser194X	NOT_REGISTERED	allele_absent_accession_present						1	none	yes
@@ -5283,7 +5283,7 @@ RAG2	S0023	1+2	g.5780delG, c.712delG, r.712delg, p.Val238fsX10	g.5780delG	c.712d
 RAG2	S0040	1	g.6388A>C, c.1320A>C, r.1320a>c, p.Lys440Asn	g.6388A>C	c.1320A>C	p.Lys440Asn	IN_FINAL	traced_through_pipeline	c.1320A>C	p.(Lys440Asn)	NM_MANE	MATCH	0	2	all	yes
 RAG2	S0040	2	g.5826C>G, c.758C>G, r.758c>g, p.Pro253Arg	g.5826C>G	c.758C>G	p.Pro253Arg	IN_FINAL	traced_through_pipeline	c.758C>G	p.(Pro253Arg)	NM_MANE	MATCH	0	2	all	yes
 RAG2	S0005	1	g.2018_2020delATT, c.2018_2020delATT, p.I273del	g.2018_2020delATT	c.2018_2020delATT	p.I273del	IN_FINAL	traced_through_pipeline	c.-1028+883_-1028+885del	p.(=)	NG_IDRefseq	NOT_COMPARABLE		1	all	yes
-RAG2	S0010	1+2	g.2122G>A, c.2122G>A, p.W307X	g.2122G>A	c.2122G>A	p.W307X	IN_FINAL	traced_through_pipeline	c.-1028+987G>A	p.(=)	NG_IDRefseq	DIFFERENT		1	all	yes
+RAG2	S0010	1+2	g.2122G>A, c.2122G>A, p.W307X	g.2122G>A	c.2122G>A	p.W307X	IN_FINAL	traced_through_pipeline	c.921G>A	p.(Trp307Ter)	NM_MANE	MATCH	0	1	all	yes
 RAG2	S0041	1+2	g.6287G>T, c.1219G>T, r.1219g>u, p.Glu407X	g.6287G>T	c.1219G>T	p.Glu407X	IN_FINAL	traced_through_pipeline	c.1219G>T	p.(Glu407Ter)	NM_MANE	MATCH	0	1	all	yes
 RAG2	S0037	1+2	g.6315G>T, c.1247G>T, r.1247g>u, p.Trp416Leu	g.6315G>T	c.1247G>T	p.Trp416Leu	IN_FINAL	traced_through_pipeline	c.1247G>T	p.(Trp416Leu)	NM_MANE	MATCH	0	1	all	yes
 RAG2	S0024	1+2	g.6425T>A, c.1357T>A, r.1357u>a, p.Trp453Arg	g.6425T>A	c.1357T>A	p.Trp453Arg	IN_FINAL	traced_through_pipeline	c.1357T>A	p.(Trp453Arg)	NM_MANE	MATCH	0	1	all	yes
@@ -5297,10 +5297,10 @@ RASA1	A0002	0	g.82422A>G, c.1198A>G, r.1198a>g, p.Lys400Glu	g.82422A>G	c.1198A>G
 RASA1	A0003	0	g.82425A>G, c.1201A>G, r.1201a>g, p.Ile401Val	g.82425A>G	c.1201A>G	p.Ile401Val	IN_FINAL	traced_through_pipeline	c.1201A>G	p.(Ile401Val)	NM_MANE	MATCH	0	1	all	yes
 RASGRP2	R0001	1+2	g.IVS15-3C>A, c.1778-3C>A	g.IVS15-3C>A	c.1778-3C>A		KNOWN_UNRESOLVED	RESCUABLE_AUTO:ENOSELECTORFOUND						1	all	yes
 RASGRP2	R0002	1+2	g.IVS15-3C>A, c.1778-3C>A	g.IVS15-3C>A	c.1778-3C>A		NOT_REGISTERED	accession_absent_from_final						1	all	no
-RFX5	R0007	1+2	g.32168G>A, c.607G>A, p.R149Q	g.32168G>A	c.607G>A	p.R149Q	IN_FINAL	traced_through_pipeline	c.607G>A	p.(Ala203Thr)	NM_MANE	DIFFERENT		1	all	yes
-RFX5	R0008	1+2	g.32168G>A, c.607G>A, p.R149Q	g.32168G>A	c.607G>A	p.R149Q	IN_FINAL	traced_through_pipeline	c.607G>A	p.(Ala203Thr)	NM_MANE	DIFFERENT		1	all	yes
-RFX5	R0001	1+2	g.33455C>T, c.1041C>T, p.R294X	g.33455C>T	c.1041C>T	p.R294X	IN_FINAL	traced_through_pipeline	c.760C>T	p.(Arg254Ter)	NG_IDRefseq	POS_SHIFT	-40	1	all	yes
-RFX5	R0005	1+2	g.33536C>T, c.1122C>T, p.Q321X	g.33536C>T	c.1122C>T	p.Q321X	IN_FINAL	traced_through_pipeline	c.1122C>T	p.(=)	NM_MANE	DIFFERENT		1	all	yes
+RFX5	R0007	1+2	g.32168G>A, c.607G>A, p.R149Q	g.32168G>A	c.607G>A	p.R149Q	IN_FINAL	traced_through_pipeline	c.446G>A	p.(Arg149Gln)	NM_MANE	MATCH	0	1	all	yes
+RFX5	R0008	1+2	g.32168G>A, c.607G>A, p.R149Q	g.32168G>A	c.607G>A	p.R149Q	IN_FINAL	traced_through_pipeline	c.446G>A	p.(Arg149Gln)	NM_MANE	MATCH	0	1	all	yes
+RFX5	R0001	1+2	g.33455C>T, c.1041C>T, p.R294X	g.33455C>T	c.1041C>T	p.R294X	IN_FINAL	traced_through_pipeline	c.880C>T	p.(Arg294Ter)	NM_MANE	MATCH	0	1	all	yes
+RFX5	R0005	1+2	g.33536C>T, c.1122C>T, p.Q321X	g.33536C>T	c.1122C>T	p.Q321X	IN_FINAL	traced_through_pipeline	c.961C>T	p.(Gln321Ter)	NM_MANE	MATCH	0	1	all	yes
 RFX5	R0003	1+2	g.IVS2+5G>A	g.IVS2+5G>A			NOT_REGISTERED	accession_absent_from_final						1	all	no
 RFX5	R0004	1+2	g.IVS2+5G>A	g.IVS2+5G>A			NOT_REGISTERED	accession_absent_from_final						1	all	no
 RFX5	R0006	1+2	g.IVS3-1G>A	g.IVS3-1G>A			NOT_REGISTERED	accession_absent_from_final						1	all	no
@@ -6490,7 +6490,7 @@ TAZ	T0064	0	g.IVS8-1G>C, c.647-1G>C, r.647-1g>c,	g.IVS8-1G>C	c.647-1G>C		IN_FINA
 TAZ	T0065	0	g.IVS8-1G>C, c.647-1G>C, r.647-1g>c,	g.IVS8-1G>C	c.647-1G>C		IN_FINAL	traced_through_pipeline	c.647-1G>C	p.?	variantvalidator	SOURCE_NO_P		1	all	yes
 TAZ	T0039	0	g.IVS10+2T>A, c.777+2T>A, r.777+2u>a,	g.IVS10+2T>A	c.777+2T>A		IN_FINAL	traced_through_pipeline	c.777+2T>A	p.?	variantvalidator	SOURCE_NO_P		1	all	yes
 TAZ	T0072	0	g.IVS10+2T>A, c.777+2T>A, r.777+2u>a	g.IVS10+2T>A	c.777+2T>A		IN_FINAL	traced_through_pipeline	c.777+2T>A	p.?	variantvalidator	SOURCE_NO_P		1	all	yes
-TCIRG1	T0010	1+2	g.IVS2+4A>T, c.136_177del, p.V26_L40del	g.IVS2+4A>T	c.136_177del	p.V26_L40del	IN_FINAL	traced_through_pipeline	c.137_178del	p.(Ala46_Glu59del)	mane_remap	POS_SHIFT	20	1	all	yes
+TCIRG1	T0010	1+2	g.IVS2+4A>T, c.136_177del, p.V26_L40del	g.IVS2+4A>T	c.136_177del	p.V26_L40del	IN_FINAL	traced_through_pipeline	c.76_117del	p.(Val26_Asp39del)	mane_remap	MATCH_INFRAME	0	1	all	yes
 TCIRG1	T0014	1+2	g.IVS2+1G>A	g.IVS2+1G>A			NOT_REGISTERED	accession_absent_from_final						1	all	no
 TCIRG1	T0015	1	g.IVS2+4A>T	g.IVS2+4A>T			NOT_REGISTERED	accession_absent_from_final						2	all	no
 TCIRG1	T0015	2	g.IVS6+2T>C	g.IVS6+2T>C			NOT_REGISTERED	accession_absent_from_final						2	all	no
@@ -6505,15 +6505,15 @@ TCIRG1	T0027	1	g.IVS7+1G>T	g.IVS7+1G>T			NOT_REGISTERED	accession_absent_from_fi
 TCIRG1	T0029	1	g.6078C>T, c.1174C>T, p.Q372X	g.6078C>T	c.1174C>T	p.Q372X	KNOWN_UNRESOLVED	RESCUABLE_AUTO:ENOSELECTORFOUND						1	all	yes
 TCIRG1	T0002	1	g.8759C>A, c.1280C>A, p.C248X	g.8759C>A	c.1280C>A	p.C248X	IN_FINAL	traced_through_pipeline	c.1280C>A	p.(Pro427Gln)	mane_remap	DIFFERENT		2	all	yes
 TCIRG1	T0002	2	g.IVS14-1G>A, [c.1735_1947del; c.1735_1916del + c.1916_1917ins1916+1_1916+143]	g.IVS14-1G>A	c.1735_1916del + c.1916_1917ins1916+1_1916+143]		NOT_REGISTERED	allele_absent_accession_present						2	partial	yes
-TCIRG1	T0001	1	g.5272delC, c.982delC, p.Q308fsX311	g.5272delC	c.982delC	p.Q308fsX311	IN_FINAL	traced_through_pipeline	c.982del	p.(Asp328ThrfsTer18)	variantvalidator	DIFFERENT	20	2	all	yes
+TCIRG1	T0001	1	g.5272delC, c.982delC, p.Q308fsX311	g.5272delC	c.982delC	p.Q308fsX311	IN_FINAL	traced_through_pipeline	c.922del	p.(Gln308SerfsTer4)	mane_remap	MATCH_FS	0	2	all	yes
 TCIRG1	T0001	2	g.IVS14-1G>A, [c.1735_1947del; c.1735_1916del + c.1916_1917ins1916+1_1916+143]	g.IVS14-1G>A	c.1735_1916del + c.1916_1917ins1916+1_1916+143]		NOT_REGISTERED	allele_absent_accession_present						2	partial	yes
-TCIRG1	T0025	1+2	g.5320_5321insG, c.1030_1031insG, p.C324fsX489	g.5320_5321insG	c.1030_1031insG	p.C324fsX489	IN_FINAL	traced_through_pipeline	c.1031dup	p.(Val345SerfsTer145)	mane_remap	FS_START_DIFF	21	1	all	yes
+TCIRG1	T0025	1+2	g.5320_5321insG, c.1030_1031insG, p.C324fsX489	g.5320_5321insG	c.1030_1031insG	p.C324fsX489	IN_FINAL	traced_through_pipeline	c.971dup	p.(Cys324TrpfsTer166)	mane_remap	MATCH_FS	0	1	all	yes
 TCIRG1	T0006	1+2	g.5988G>T, c.1084G>T, p.E342X	g.5988G>T	c.1084G>T	p.E342X	KNOWN_UNRESOLVED	RESCUABLE_AUTO:ENOSELECTORFOUND						1	all	yes
-TCIRG1	T0028	1	g.8463_8464insA, c.1230_1231insA, p.Y391fsX489	g.8463_8464insA	c.1230_1231insA	p.Y391fsX489	IN_FINAL	traced_through_pipeline	c.1230_1231insA	p.(Leu411ThrfsTer79)	mane_remap	FS_START_DIFF	20	1	all	yes
+TCIRG1	T0028	1	g.8463_8464insA, c.1230_1231insA, p.Y391fsX489	g.8463_8464insA	c.1230_1231insA	p.Y391fsX489	IN_FINAL	traced_through_pipeline	c.1170_1171insA	p.(Tyr391IlefsTer99)	mane_remap	MATCH_FS	0	1	all	yes
 TCIRG1	T0019	1+2	g.8590C>T, c.1357C>T, p.Q433X	g.8590C>T	c.1357C>T	p.Q433X	KNOWN_UNRESOLVED	RESCUABLE_AUTO:ENOSELECTORFOUND						1	all	yes
 TCIRG1	T0020	1+2	g.8590C>T, c.1357C>T, p.Q433X	g.8590C>T	c.1357C>T	p.Q433X	NOT_REGISTERED	accession_absent_from_final						1	all	no
 TCIRG1	T0013	1+2	g.8749_8751delACA, c.1442_1444delACA, p.Y461del	g.8749_8751delACA	c.1442_1444delACA	p.Y461del	IN_FINAL	traced_through_pipeline	c.1442_1444del	p.(Met481_Ala482delinsThr)	variantvalidator	DIFFERENT	20	1	all	yes
-TCIRG1	T0009	1+2	g.8805_8806delGC, c.1498_1499delGC, p.A480fsX488	g.8805_8806delGC	c.1498_1499delGC	p.A480fsX488	IN_FINAL	traced_through_pipeline	c.1498_1499del	p.(Leu500GlyfsTer169)	variantvalidator	DIFFERENT	20	1	all	yes
+TCIRG1	T0009	1+2	g.8805_8806delGC, c.1498_1499delGC, p.A480fsX488	g.8805_8806delGC	c.1498_1499delGC	p.A480fsX488	IN_FINAL	traced_through_pipeline	c.1438_1439del	p.(Ala480HisfsTer9)	mane_remap	MATCH_FS	0	1	all	yes
 TCIRG1	T0026	1	g.IVS13+2T>A	g.IVS13+2T>A			NOT_REGISTERED	accession_absent_from_final						2	all	no
 TCIRG1	T0026	2	g.IVS16-8T>C	g.IVS16-8T>C			NOT_REGISTERED	accession_absent_from_final						2	all	no
 TCIRG1	T0003	1+2	g.IVS14-1G>A, [c.1735_1947del; c.1735_1916del + c.1916_1917ins1916+1_1916+143]	g.IVS14-1G>A	c.1735_1916del + c.1916_1917ins1916+1_1916+143]		NOT_REGISTERED	allele_absent_accession_present						1	partial	yes
@@ -6524,9 +6524,9 @@ TCIRG1	T0008	1+2	g.10220G>A, c.1848G>A, p.W596X	g.10220G>A	c.1848G>A	p.W596X	KNO
 TCIRG1	T0016	1+2	g.10809C>T, c.2068C>T, p.R670X	g.10809C>T	c.2068C>T	p.R670X	KNOWN_UNRESOLVED	RESCUABLE_AUTO:ENOSELECTORFOUND						1	all	yes
 TCIRG1	T0017	1	g.10809C>T, c.2068C>T, p.R670X	g.10809C>T	c.2068C>T	p.R670X	NOT_REGISTERED	accession_absent_from_final						2	all	no
 TCIRG1	T0017	2	g.IVS14+5G>A	g.IVS14+5G>A			NOT_REGISTERED	accession_absent_from_final						2	all	no
-TCIRG1	T0021	1+2	g.11086_11160del, c.2174_2248del, p.A705del	g.11086_11160del	c.2174_2248del	p.A705del	IN_FINAL	traced_through_pipeline	c.2175_2249del	p.(Gly726_Val750del)	mane_remap	POS_SHIFT	21	1	all	yes
+TCIRG1	T0021	1+2	g.11086_11160del, c.2174_2248del, p.A705del	g.11086_11160del	c.2174_2248del	p.A705del	IN_FINAL	traced_through_pipeline	c.2114_2188del	p.(Ala705_Asn730delinsAsp)	mane_remap	TYPE_DIFF_SAME_POS	0	1	all	yes
 TCIRG1	T0022	1+2	g.IVS18+1G>A	g.IVS18+1G>A			NOT_REGISTERED	accession_absent_from_final						1	all	no
-TCIRG1	T0012	1+2	g.11598C>G, c.2384C>G, p.P775R	g.11598C>G	c.2384C>G	p.P775R	IN_FINAL	traced_through_pipeline	c.2384C>G	p.(Ser795Ter)	mane_remap	DIFFERENT		1	all	yes
+TCIRG1	T0012	1+2	g.11598C>G, c.2384C>G, p.P775R	g.11598C>G	c.2384C>G	p.P775R	IN_FINAL	traced_through_pipeline	c.2324C>G	p.(Pro775Arg)	mane_remap	MATCH	0	1	all	yes
 TCIRG1	T0007	1	g.11765G>A, c.2475G>A, p.W805X	g.11765G>A	c.2475G>A	p.W805X	KNOWN_UNRESOLVED	RESCUABLE_AUTO:ENOSELECTORFOUND						1	all	yes
 TCIRG1	T0030	1+2	p.G405R			p.G405R	NOT_REGISTERED	source_has_no_dna_notation						1	all	no
 TCIRG1	T0031	1+2	p.G405R			p.G405R	NOT_REGISTERED	source_has_no_dna_notation						1	all	no
@@ -6787,8 +6787,8 @@ WAS	W0043	0	g.31742G>A, c.91G>A, r.91g>a, p.Glu31Lys	g.31742G>A	c.91G>A	p.Glu31L
 WAS	W0093	0	g.31742G>A, c.91G>A, r.91g>a, p.Glu31Lys	g.31742G>A	c.91G>A	p.Glu31Lys	IN_FINAL	traced_through_pipeline	c.91G>A	p.(Glu31Lys)	mane_remap	MATCH	0	1	all	yes
 WAS	W0094	0	g.31742G>A, c.91G>A, r.91g>a, p.Glu31Lys	g.31742G>A	c.91G>A	p.Glu31Lys	IN_FINAL	traced_through_pipeline	c.91G>A	p.(Glu31Lys)	mane_remap	MATCH	0	1	all	yes
 WAS	W0104	0	g.31758_31759delTT, c.107_108delTT, r.107_108deluu, p.Phe36X	g.31758_31759delTT	c.107_108delTT	p.Phe36X	IN_FINAL	traced_through_pipeline	c.107_108del	p.(Phe36Ter)	mane_remap	MATCH	0	1	all	yes
-WAS	W0001	0	g.31767T>C, c.150T>C, p.L39P	g.31767T>C	c.150T>C	p.L39P	IN_FINAL	traced_through_pipeline	c.150T>C	p.(=)	mane_remap	DIFFERENT		1	all	yes
-WAS	W0002	0	g.31767T>C, c.150T>C, p.L39P	g.31767T>C	c.150T>C	p.L39P	IN_FINAL	traced_through_pipeline	c.150T>C	p.(=)	mane_remap	DIFFERENT		1	all	yes
+WAS	W0001	0	g.31767T>C, c.150T>C, p.L39P	g.31767T>C	c.150T>C	p.L39P	IN_FINAL	traced_through_pipeline	c.116T>C	p.(Leu39Pro)	mane_remap	MATCH	0	1	all	yes
+WAS	W0002	0	g.31767T>C, c.150T>C, p.L39P	g.31767T>C	c.150T>C	p.L39P	IN_FINAL	traced_through_pipeline	c.116T>C	p.(Leu39Pro)	mane_remap	MATCH	0	1	all	yes
 WAS	W0134	0	g.31767T>C, c.116T>C, r.116u>c, p.Leu39Pro	g.31767T>C	c.116T>C	p.Leu39Pro	IN_FINAL	traced_through_pipeline	c.116T>C	p.(Leu39Pro)	mane_remap	MATCH	0	1	all	yes
 WAS	W0135	0	g.31767T>C, c.116T>C, r.116u>c, p.Leu39Pro	g.31767T>C	c.116T>C	p.Leu39Pro	IN_FINAL	traced_through_pipeline	c.116T>C	p.(Leu39Pro)	mane_remap	MATCH	0	1	all	yes
 WAS	W0136	0	g.31767T>C, c.116T>C, r.116u>c, p.Leu39Pro	g.31767T>C	c.116T>C	p.Leu39Pro	IN_FINAL	traced_through_pipeline	c.116T>C	p.(Leu39Pro)	mane_remap	MATCH	0	1	all	yes
@@ -6922,15 +6922,15 @@ WAS	W0067	0	g.33613dupA, c.442dupA, r.442dupa, p.Arg148fsX21	g.33613dupA	c.442du
 WAS	W0224	0	g.33785G>T, c.505G>T, r.505g>u, p.Glu169X	g.33785G>T	c.505G>T	p.Glu169X	IN_FINAL	traced_through_pipeline	c.505G>T	p.(Glu169Ter)	mane_remap	MATCH	0	1	all	yes
 WAS	W0068	0	g.33904delG, c.531delG, r.531delg, p.Leu179fsX82	g.33904delG	c.531delG	p.Leu179fsX82	IN_FINAL	traced_through_pipeline	c.531del	p.(Leu179CysfsTer82)	mane_remap	MATCH_FS	0	1	all	yes
 WAS	W0225	0	g.33911C>A, c.538C>A, r.538c>a, p.His180Asn	g.33911C>A	c.538C>A	p.His180Asn	IN_FINAL	traced_through_pipeline	c.538C>A	p.(His180Asn)	mane_remap	MATCH	0	1	all	yes
-WAS	W0012	0	g.34650C>T, c.665C>T, p.R211X	g.34650C>T	c.665C>T	p.R211X	IN_FINAL	traced_through_pipeline	c.665C>T	p.(Pro222Leu)	mane_remap	DIFFERENT		1	all	yes
-WAS	W0018	0	g.34650C>T, c.665C>T, p.R211X	g.34650C>T	c.665C>T	p.R211X	IN_FINAL	traced_through_pipeline	c.665C>T	p.(Pro222Leu)	mane_remap	DIFFERENT		1	all	yes
-WAS	W0020	0	g.34650C>T, c.665C>T, p.R211X	g.34650C>T	c.665C>T	p.R211X	IN_FINAL	traced_through_pipeline	c.665C>T	p.(Pro222Leu)	mane_remap	DIFFERENT		1	all	yes
+WAS	W0012	0	g.34650C>T, c.665C>T, p.R211X	g.34650C>T	c.665C>T	p.R211X	IN_FINAL	traced_through_pipeline	c.631C>T	p.(Arg211Ter)	mane_remap	MATCH	0	1	all	yes
+WAS	W0018	0	g.34650C>T, c.665C>T, p.R211X	g.34650C>T	c.665C>T	p.R211X	IN_FINAL	traced_through_pipeline	c.631C>T	p.(Arg211Ter)	mane_remap	MATCH	0	1	all	yes
+WAS	W0020	0	g.34650C>T, c.665C>T, p.R211X	g.34650C>T	c.665C>T	p.R211X	IN_FINAL	traced_through_pipeline	c.631C>T	p.(Arg211Ter)	mane_remap	MATCH	0	1	all	yes
 WAS	W0058	0	g.34650C>T, c.631C>T, r.631c>u, p.Arg211X	g.34650C>T	c.631C>T	p.Arg211X	IN_FINAL	traced_through_pipeline	c.631C>T	p.(Arg211Ter)	mane_remap	MATCH	0	1	all	yes
 WAS	W0059	0	g.34650C>T, c.631C>T, r.631c>u, p.Arg211X	g.34650C>T	c.631C>T	p.Arg211X	IN_FINAL	traced_through_pipeline	c.631C>T	p.(Arg211Ter)	mane_remap	MATCH	0	1	all	yes
 WAS	W0060	0	g.34650C>T, c.631C>T, r.631c>u, p.Arg211X	g.34650C>T	c.631C>T	p.Arg211X	IN_FINAL	traced_through_pipeline	c.631C>T	p.(Arg211Ter)	mane_remap	MATCH	0	1	all	yes
 WAS	W0112	0	g.34650C>T, c.631C>T, r.631c>u, p.Arg211X	g.34650C>T	c.631C>T	p.Arg211X	IN_FINAL	traced_through_pipeline	c.631C>T	p.(Arg211Ter)	mane_remap	MATCH	0	1	all	yes
 WAS	W0113	0	g.34650C>T, c.631C>T, r.631c>u, p.Arg211X	g.34650C>T	c.631C>T	p.Arg211X	IN_FINAL	traced_through_pipeline	c.631C>T	p.(Arg211Ter)	mane_remap	MATCH	0	1	all	yes
-WAS	W0019	0	g.34726C>G, c.741C>G, p.A236G	g.34726C>G	c.741C>G	p.A236G	IN_FINAL	traced_through_pipeline	c.741C>G	p.(=)	mane_remap	DIFFERENT		1	all	yes
+WAS	W0019	0	g.34726C>G, c.741C>G, p.A236G	g.34726C>G	c.741C>G	p.A236G	IN_FINAL	traced_through_pipeline	c.707C>G	p.(Ala236Gly)	mane_remap	MATCH	0	1	all	yes
 WAS	W0111	0	g.34732delT, c.713delT, r.713delu, p.Ile238fsX23	g.34732delT	c.713delT	p.Ile238fsX23	IN_FINAL	traced_through_pipeline	c.714del	p.(Ile238MetfsTer23)	mane_remap	MATCH_FS	0	1	all	yes
 WAS	W0226	0	g.34743A>T, c.724A>T, r.724a>u, p.Ser242Cys	g.34743A>T	c.724A>T	p.Ser242Cys	IN_FINAL	traced_through_pipeline	c.724A>T	p.(Ser242Cys)	mane_remap	MATCH	0	1	all	yes
 WAS	W0114	0	g.35880delC, c.763delC, r.763delc, p.Gln255fsX6	g.35880delC	c.763delC	p.Gln255fsX6	IN_FINAL	traced_through_pipeline	c.763del	p.(Gln255ArgfsTer6)	mane_remap	MATCH_FS	0	1	all	yes
@@ -6938,7 +6938,7 @@ WAS	W0084	0	g.36134T>C, c.814T>C, r.814u>c, p.Ser272Pro	g.36134T>C	c.814T>C	p.Se
 WAS	W0023	0	g.36173G>T, c.887G>T, p.E285X	g.36173G>T	c.887G>T	p.E285X	KNOWN_UNRESOLVED	RESCUABLE_AUTO:ENOSELECTORFOUND						1	all	yes
 WAS	W0227	0	g.36175dupG, c.855dupG, r.855dupg, p.Thr286fsX3	g.36175dupG	c.855dupG	p.Thr286fsX3	IN_FINAL	traced_through_pipeline	c.855dup	p.(Thr286AspfsTer3)	mane_remap	MATCH_FS	0	1	all	yes
 WAS	W0228	0	g.36175dupG, c.855dupG, r.855dupg, p.Thr286fsX3	g.36175dupG	c.855dupG	p.Thr286fsX3	IN_FINAL	traced_through_pipeline	c.855dup	p.(Thr286AspfsTer3)	mane_remap	MATCH_FS	0	1	all	yes
-WAS	W0009	0	g.36193delC, c.907delC, p.Y291fsX291	g.36193delC	c.907delC	p.Y291fsX291	IN_FINAL	traced_through_pipeline	c.907del	p.(Val303CysfsTer5)	variantvalidator	DIFFERENT	12	1	all	yes
+WAS	W0009	0	g.36193delC, c.907delC, p.Y291fsX291	g.36193delC	c.907delC	p.Y291fsX291	IN_FINAL	traced_through_pipeline	c.873del	p.(Tyr291Ter)	mane_remap	TYPE_DIFF_SAME_POS	0	1	all	yes
 WAS	W0083	0	g.36201T>C, c.881T>C, r.881u>c, p.Ile294Thr	g.36201T>C	c.881T>C	p.Ile294Thr	IN_FINAL	traced_through_pipeline	c.881T>C	p.(Ile294Thr)	mane_remap	MATCH	0	1	all	yes
 WAS	W0091	0	g.36201T>C, c.881T>C, r.881u>c, p.Ile294Thr	g.36201T>C	c.881T>C	p.Ile294Thr	IN_FINAL	traced_through_pipeline	c.881T>C	p.(Ile294Thr)	mane_remap	MATCH	0	1	all	yes
 WAS	W0061	0	g.36233C>T, c.913C>T, r.913c>u, p.Gln305X	g.36233C>T	c.913C>T	p.Gln305X	IN_FINAL	traced_through_pipeline	c.913C>T	p.(Gln305Ter)	mane_remap	MATCH	0	1	all	yes
@@ -6959,7 +6959,7 @@ WAS	W0234	0	g.36605delC, c.1079delC, r.1079delc, p.Pro360fsX85	g.36605delC	c.107
 WAS	W0062	0	g.36616C>T, c.1090C>T, r.1090c>u, p.Arg364X	g.36616C>T	c.1090C>T	p.Arg364X	IN_FINAL	traced_through_pipeline	c.1090C>T	p.(Arg364Ter)	mane_remap	MATCH	0	1	all	yes
 WAS	W0235	0	g.36616C>T, c.1090C>T, r.1090c>u, p.Arg364X	g.36616C>T	c.1090C>T	p.Arg364X	IN_FINAL	traced_through_pipeline	c.1090C>T	p.(Arg364Ter)	mane_remap	MATCH	0	1	all	yes
 WAS	W0236	0	g.36616C>T, c.1090C>T, r.1090c>u, p.Arg364X	g.36616C>T	c.1090C>T	p.Arg364X	IN_FINAL	traced_through_pipeline	c.1090C>T	p.(Arg364Ter)	mane_remap	MATCH	0	1	all	yes
-WAS	W0007	0	g.36677delC, c.1185delC, p.P384fsX444	g.36677delC	c.1185delC	p.P384fsX444	IN_FINAL	traced_through_pipeline	c.1185del	p.(Pro396HisfsTer49)	variantvalidator	FS_START_DIFF	12	1	all	yes
+WAS	W0007	0	g.36677delC, c.1185delC, p.P384fsX444	g.36677delC	c.1185delC	p.P384fsX444	IN_FINAL	traced_through_pipeline	c.1151del	p.(Pro384HisfsTer61)	mane_remap	MATCH_FS	0	1	all	yes
 WAS	W0115	0	g.36677dupC, c.1151dupC, r.1151dupc, p.Pro385fsX110	g.36677dupC	c.1151dupC	p.Pro385fsX110	IN_FINAL	traced_through_pipeline	c.1151dup	p.(Pro385ThrfsTer110)	mane_remap	MATCH_FS	0	1	all	yes
 WAS	W0116	0	g.36768dupA, c.1242dupA, r.1242dupa, p.Leu415fsX80	g.36768dupA	c.1242dupA	p.Leu415fsX80	IN_FINAL	traced_through_pipeline	c.1242dup	p.(Leu415ThrfsTer80)	mane_remap	MATCH_FS	0	1	all	yes
 WAS	W0041	0	g.36818_36821delGGGG, c.1292_1295delGGGG, r.1292_1295delgggg, p.Arg431fsX13	g.36818_36821delGGGG	c.1292_1295delGGGG	p.Arg431fsX13	IN_FINAL	traced_through_pipeline	c.1292_1295del	p.(Arg431GlnfsTer13)	mane_remap	MATCH_FS	0	1	all	yes

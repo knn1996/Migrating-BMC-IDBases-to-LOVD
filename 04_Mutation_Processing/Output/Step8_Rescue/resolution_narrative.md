@@ -1,16 +1,16 @@
 ## Resolution of Unresolved Variants
 
-Of the 848 distinct variants that failed all three Mutalyzer
-processing tracks (NG\_IDRefseq, NM\_MANE, and NM\_IDRefseq), **566
-(66.7%)** were automatically resolved by the rescue layer:
-451 via MANE Select NM\_ re-mapping (correcting obsolete transcript
-version references), 77 via VariantValidator against the current GRCh38
-build (intronic and IVS-notation variants), 38 via a
+Of the 821 distinct variants that failed all three Mutalyzer
+processing tracks (NG\_IDRefseq, NM\_MANE, and NM\_IDRefseq), **561
+(68.3%)** were automatically resolved by the rescue layer:
+452 via MANE Select NM\_ re-mapping (correcting obsolete transcript
+version references), 72 via VariantValidator against the current GRCh38
+build (intronic and IVS-notation variants), 37 via a
 VariantValidator probe of reference-mismatch candidates, and
 0 via empirical coordinate-offset correction (±1 c.\ position
 shift confirmed against GRCh38).
 
-Of these, **149 require curator review before submission.** These are
+Of these, **148 require curator review before submission.** These are
 descriptions that spelled out the deleted or duplicated sequence in the
 deprecated pre-2016 style (e.g. c.1293delC rather than c.1293del). Shortening
 the description discards the source record's assertion about which base was
@@ -23,14 +23,14 @@ against the primary literature before deposition.
 Resolution rates are reported on a distinct-variant basis in
 `rescue_metrics_comparison.csv`; patient-level row counts before and after
 augmentation are reported in `augment_stats.txt` and `dedup_rescued_stats.txt`.
-The pre-rescue pool contained 9064 patient-variant rows, which is
-not directly comparable with the 848 distinct unresolved variants
+The pre-rescue pool contained 9100 patient-variant rows, which is
+not directly comparable with the 821 distinct unresolved variants
 above and is therefore not combined into a single ratio here.
 
-The residual **282** variants fall into three mechanistically
+The residual **260** variants fall into three mechanistically
 distinct groups:
 
-- **210 reference-sequence mismatches.** The base asserted by the
+- **188 reference-sequence mismatches.** The base asserted by the
   source record disagrees with GRCh38 at the stated position, either through
   strand-orientation error in the original curation or through a legacy
   reference sequence that diverges from the current assembly. These cannot be

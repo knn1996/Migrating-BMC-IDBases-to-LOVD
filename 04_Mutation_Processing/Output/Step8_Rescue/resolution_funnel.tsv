@@ -1,21 +1,21 @@
 stage	count
-unresolved_in	848
-resolved_by_MANE_remap	451
-resolved_by_VariantValidator	77
-resolved_by_VV_mismatch_probe	38
+unresolved_in	821
+resolved_by_MANE_remap	452
+resolved_by_VariantValidator	72
+resolved_by_VV_mismatch_probe	37
 resolved_by_offset_fix	0
-total_rescued	566
-  of which need curator review	149
-remaining_unresolved	282
-  ref_mismatch	210
+total_rescued	561
+  of which need curator review	148
+remaining_unresolved	260
+  ref_mismatch	188
   tx_structure	67
   curation_loss	2
   manual_rewrite	3
 	
 remaining_by_category	count
-ESEQUENCEMISMATCH/single_base_wrong	145
+ESEQUENCEMISMATCH/single_base_wrong	127
 ENOSELECTORFOUND/nm_not_in_ng	66
-ESEQUENCEMISMATCH/single_base_complement	57
+ESEQUENCEMISMATCH/single_base_complement	53
 ESEQUENCEMISMATCH/completely_different	5
 ESEQUENCEMISMATCH/multibase_rc_match	2
 EINSERTIONRANGE/non_consecutive_ins_range	2

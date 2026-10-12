@@ -1,19 +1,27 @@
 gene	rule	kept_record	kept_track	dropped_record	dropped_track	source_units	patients_moved
 C6	skip_different_change_same_unit	c.2034del	variantvalidator			C0004:1	0
 C6	skip_different_change_same_unit	c.2034del	variantvalidator			C0006:1	0
+C6	skip_different_change_same_unit	c.2034del	variantvalidator			C0007:2	0
+C6	skip_different_change_same_unit	c.2034del	variantvalidator			C0008:2	0
+C6	skip_different_change_same_unit	c.2034del	variantvalidator			C0009:2	0
+C6	skip_different_change_same_unit	c.2034del	variantvalidator			C0011:2	0
 C6	skip_different_change_same_unit	c.392del	variantvalidator			C0005:1	0
-C6	skip_different_change_same_unit	c.2034del	variantvalidator			C0007:1	0
-C6	skip_different_change_same_unit	c.2034del	variantvalidator			C0008:1	0
-C6	skip_different_change_same_unit	c.2034del	variantvalidator			C0009:1	0
 C6	skip_different_change_same_unit	c.977del	variantvalidator			C0010:1	0
-C6	skip_in_cis_multi_record					C0011:1	0
+C6	skip_different_change_same_unit	c.977del	variantvalidator			C0011:1	0
 C6	skip_different_change_same_unit	c.977del	variantvalidator			C0012:1	0
 C6	skip_different_change_same_unit	c.977del	variantvalidator			C0013:1	0
+CIITA	skip_different_change_same_unit	c.1141G>T [NM_000246.4]	NM_MANE			M0001:1	0
 CIITA	skip_different_change_same_unit	c.3367_3378del [NM_000246.4]	NM_MANE			M0002:1	0
+CIITA	skip_different_change_same_unit	c.1406T>C [NM_000246.4]	NM_MANE			M0003:1	0
+CIITA	skip_different_change_same_unit	c.1406T>C [NM_000246.4]	NM_MANE			M0004:1	0
+CIITA	skip_different_change_same_unit	c.1406T>C [NM_000246.4]	NM_MANE			M0005:1	0
+CIITA	skip_different_change_same_unit	c.2063G>A [NM_000246.4]	NM_MANE			M0007:1	0
 CIITA	skip_different_change_same_unit	c.3028_3108del [NM_000246.4]	NM_MANE			M0008:1	0
 CIITA	skip_different_change_same_unit	c.3216_3218del	variantvalidator			M0008:2	0
-IGLL1	skip_different_change_same_unit	c.182C>T [NM_020070.4]	NM_MANE			G0001:1	0
+IGLL1	skip_different_change_same_unit	c.64C>T [NM_020070.4]	NM_MANE			G0001:1	0
 LYST	identical_change	c.9590del [NM_000081.4]	NM_MANE	c.9752del [XM_011544032.2]	NG_IDRefseq	C0006:1;C0015:1;C0035:1	2
+LYST	identical_change	c.8428G>A [NM_000081.4]	NM_MANE	c.8590G>A [XM_011544032.2]	NG_IDRefseq	C0023:2	0
+LYST	identical_change	c.8583G>A [NM_000081.4]	NM_MANE	c.8745G>A [XM_011544032.2]	NG_IDRefseq	C0027:1;C0028:1	0
 LYST	identical_change	c.9893del [NM_000081.4]	NM_MANE	c.10055del [XM_011544032.2]	NG_IDRefseq	C0031:2	0
 LYST	identical_change	c.11002G>T [NM_000081.4]	NM_MANE	c.11164G>T [XM_011544032.2]	NG_IDRefseq	C0036:2;C0037:1	0
 LYST	skip_different_change_same_unit	c.307dup [NM_000081.4]	NM_MANE			C0001:1	0
@@ -30,14 +38,14 @@ LYST	skip_different_change_same_unit	c.10584del	variantvalidator			C0017:1	0
 LYST	skip_different_change_same_unit	c.3623dup [NM_000081.4]	NM_MANE			C0019:1	0
 LYST	skip_different_change_same_unit	c.4463del	variantvalidator			C0023:1	0
 LYST	skip_different_change_same_unit	c.5250T>A [NM_000081.4]	NM_MANE			C0024:1	0
-LYST	skip_different_change_same_unit	c.8772G>A [NM_000081.4]	NM_MANE			C0027:1	0
-LYST	skip_different_change_same_unit	c.8772G>A [NM_000081.4]	NM_MANE			C0028:1	0
 LYST	skip_different_change_same_unit	c.5506del	variantvalidator			C0029:1	0
 LYST	skip_different_change_same_unit	c.5506del	variantvalidator			C0030:1	0
 MYO5A	skip_different_change_same_unit	c.3736C>T [NM_001382347.1]	NM_MANE			M0001:1	0
 MYO5A	skip_different_change_same_unit	c.2332C>T [NM_001382347.1]	NM_MANE			M0002:1	0
 PTPRC	skip_different_change_same_unit	c.1082_1087del	variantvalidator			P0002:1	0
+RAG2	skip_different_change_same_unit	c.921G>A [NM_000536.4]	NM_MANE			S0010:1	0
 RAG2	skip_different_change_same_unit	c.*80_*81insTGTTC [NM_000536.4]	NM_MANE			S0011:1	0
+RAG2	skip_different_change_same_unit	c.442C>T [NM_000536.4]	NM_MANE			S0013:1	0
 SP110	skip_different_change_same_unit	c.642del [NM_080424.4]	NM_MANE			S0001:1	0
 SP110	skip_different_change_same_unit	c.642del [NM_080424.4]	NM_MANE			S0002:1	0
 SP110	skip_different_change_same_unit	c.642del [NM_080424.4]	NM_MANE			S0003:1	0

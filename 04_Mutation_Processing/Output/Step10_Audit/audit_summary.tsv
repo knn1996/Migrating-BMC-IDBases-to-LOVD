@@ -43,18 +43,18 @@ not_registered_stage:extracted=partial:processed=yes	6
 all_units_extracted:all	6875
 all_units_extracted:none	165
 all_units_extracted:partial	7
-protein:MATCH	3892
-protein:MATCH_FS	1176
+protein:MATCH	3990
+protein:MATCH_FS	1184
 protein:SOURCE_NO_P	818
-protein:DIFFERENT	137
-protein:MATCH_INFRAME	96
+protein:MATCH_INFRAME	97
 protein:NOT_COMPARABLE	66
-protein:TYPE_DIFF_SAME_POS	51
-protein:FINAL_NO_P	32
+protein:TYPE_DIFF_SAME_POS	55
+protein:DIFFERENT	34
+protein:FINAL_NO_P	33
 protein:MATCH_START_LOSS	30
-protein:POS_SHIFT	7
 protein:FS_STOP_DIFF	6
-protein:FS_START_DIFF	5
+protein:FS_START_DIFF	2
+protein:POS_SHIFT	1
 meta:Individual/Age:EXTRA_IN_FINAL	16
 meta:Individual/Age:MISSING_IN_FINAL	31
 meta:Individual/Age:PARTIAL_SUPERSET	10
@@ -97,7 +97,4 @@ meta:VariantOnGenome/Remarks:MISSING_IN_FINAL	122
 meta:VariantOnGenome/Remarks:PARTIAL_SUBSET	1
 meta:VariantOnGenome/Remarks:PARTIAL_SUPERSET	68
 meta:accessions_with_extra_refs	494
-pos_shift_offsets:AICDA	[(25, 2)]
-pos_shift_offsets:LYST	[(54, 1)]
-pos_shift_offsets:RFX5	[(-40, 1)]
-pos_shift_offsets:TCIRG1	[(20, 2), (21, 1)]
+pos_shift_offsets:TCIRG1	[(20, 1)]

@@ -63,12 +63,12 @@ AICDA	A0001	1	c.146C>T	NM_020661.4:c.146C>T	substitution	C	T			+
 AICDA	A0004	1	c.314T>C	NM_020661.4:c.314T>C	substitution	T	C			+
 AICDA	A0006	1	c.393T>C	NM_020661.4:c.393T>C	substitution	T	C			+
 AICDA	A0008	1	c.491A>G	NM_020661.4:c.491A>G	substitution	A	G			+
-AICDA	A0009	1	c.528T>C	NM_020661.4:c.528T>C	substitution	T	C			+
+AICDA	A0009	1	c.528T>C	NM_020661.4:c.452T>C	substitution	T	C			+
 AICDA	A0011	1	c.517C>A	NM_020661.4:c.517C>A	substitution	C	A			+
-AICDA	A0013	1	c.410C>T	NM_020661.4:c.410C>T	substitution	C	T			+
+AICDA	A0013	1	c.410C>T	NM_020661.4:c.334C>T	substitution	C	T			+
 AICDA	A0015	1	c.252G>A	NM_020661.4:c.252G>A	substitution	G	A			+
 AICDA	A0027	1	c.411G>A	NM_020661.4:c.411G>A	substitution	G	A			+
-AICDA	A0031	1	c.252_260delTGCTCTTCC	NM_020661.4:c.252_260delTGCTCTTCC	deletion	TGCTCTTCC				+
+AICDA	A0031	1	c.252_260delTGCTCTTCC	NM_020661.4:c.176_184delTGCTCTTCC	deletion	TGCTCTTCC				+
 AICDA	A0031	2	c.279G>A	NM_020661.4:c.279G>A	substitution	G	A			+
 AICDA	A0037	1	c.21_39delCCGGAGGAAGTTTCTTTAC	NM_020661.4:c.21_39delCCGGAGGAAGTTTCTTTAC	deletion	CCGGAGGAAGTTTCTTTAC				+
 AICDA	A0038	1	c.166C>T	NM_020661.4:c.166C>T	substitution	C	T			+
@@ -77,7 +77,6 @@ AICDA	A0041	1	c.259T>C	NM_020661.4:c.259T>C	substitution	T	C			+
 AICDA	A0042	1	c.522A>C	NM_020661.4:c.522A>C	substitution	A	C			+
 AICDA	A0051	1	c.70C>T	NM_020661.4:c.70C>T	substitution	C	T			+
 AICDA	A0053	1	c.335G>A	NM_020661.4:c.335G>A	substitution	G	A			+
-AICDA	A0058	1	c.334C>T	NM_020661.4:c.334C>T	substitution	C	T			+
 AICDA	A0058	2	c.544delC	NM_020661.4:c.544delC	deletion	C				+
 AICDA	A0059	2	c.226_227insT	NM_020661.4:c.226_227insT	insertion		T			+
 AICDA	A0059	1	c.31T>C	NM_020661.4:c.31T>C	substitution	T	C			+
@@ -99,13 +98,13 @@ CFH	H0002	1	c.3645C>T	NM_000186.4:c.3645C>T	substitution	C	T			+
 CFH	H0004	1	c.638G>T	NM_000186.4:c.638G>T	substitution	G	T			+
 CFH	H0007	1	c.3621G>T	NM_000186.4:c.3621G>T	substitution	G	T			+
 CFH	H0008	1	c.3639T>G	NM_000186.4:c.3639T>G	substitution	T	G			+
-CFH	H0009	1	c.2940C>T	NM_000186.4:c.2940C>T	substitution	C	T			+
+CFH	H0009	1	c.2940C>T	NM_000186.4:c.2867C>T	substitution	C	T			+
 CFH	H0010	1	c.3717G>A	NM_000186.4:c.3717G>A	substitution	G	A			+
 CFH	H0011	1	c.1493delA	NM_000186.4:c.1493delA	deletion	A				+
 CFH	H0013	1	c.3701C>T	NM_000186.4:c.3701C>T	substitution	C	T			+
-CFH	H0016	1	c.3299C>G	NM_000186.4:c.3299C>G	substitution	C	G			+
+CFH	H0016	1	c.3299C>G	NM_000186.4:c.3226C>G	substitution	C	G			+
 CFH	H0016	2	c.3559delA	NM_000186.4:c.3559delA	deletion	A				+
-CFH	H0017	1	c.3429A>G	NM_000186.4:c.3429A>G	substitution	A	G			+
+CFH	H0017	1	c.3429A>G	NM_000186.4:c.3356A>G	substitution	A	G			+
 CFH	H0018	1	c.3716C>G	NM_000186.4:c.3716C>G	substitution	C	G			+
 CFH	H0019	1	c.3624C>G	NM_000186.4:c.3624C>G	substitution	C	G			+
 CFH	H0024	1	c.155_158delAGAA	NM_000186.4:c.155_158delAGAA	deletion	AGAA				+
@@ -137,7 +136,6 @@ CFH	H0056	1	c.2141C>G	NM_000186.4:c.2141C>G	substitution	C	G			+
 CFH	H0057	1	c.2548G>A	NM_000186.4:c.2548G>A	substitution	G	A			+
 CFH	H0058	1	c.2934G>T	NM_000186.4:c.2934G>T	substitution	G	T			+
 CFH	H0059	1	c.3127T>C	NM_000186.4:c.3127T>C	substitution	T	C			+
-CFH	H0060	1	c.3226C>G	NM_000186.4:c.3226C>G	substitution	C	G			+
 CFH	H0061	1	c.3401T>G	NM_000186.4:c.3401T>G	substitution	T	G			+
 CFH	H0062	1	c.3424T>G	NM_000186.4:c.3424T>G	substitution	T	G			+
 CFH	H0063	1	c.3469T>C	NM_000186.4:c.3469T>C	substitution	T	C			+
@@ -442,44 +440,44 @@ SERPING1	S0284	0	c.1445G>A	NM_000062.3:c.1445G>A	substitution	G	A			+
 SERPING1	S0287	0	c.1A>G	NM_000062.3:c.1A>G	substitution	A	G			+
 TCIRG1	T0001	2	c.1735_1916del	NM_006019.4:c.1735_1916del	deletion					+
 TCIRG1	T0001	2	c.1735_1947del	NM_006019.4:c.1735_1947del	deletion					+
-TCIRG1	T0001	1	c.982delC	NM_006019.4:c.982delC	deletion	C				+
+TCIRG1	T0001	1	c.982delC	NM_006019.4:c.922delC	deletion	C				+
 TCIRG1	T0002	1	c.1280C>A	NM_006019.4:c.1280C>A	substitution	C	A			+
-TCIRG1	T0004	1	c.564_574del	NM_006019.4:c.564_574del	deletion					+
-TCIRG1	T0004	1	c.564_690del	NM_006019.4:c.564_690del	deletion					+
+TCIRG1	T0004	1	c.564_574del	NM_006019.4:c.504_514del	deletion					+
+TCIRG1	T0004	1	c.564_690del	NM_006019.4:c.504_630del	deletion					+
 TCIRG1	T0004	2	c.691_732del	NM_006019.4:c.691_732del	deletion					+
 TCIRG1	T0005	2	c.2433_2436delGGAG	NM_006019.4:c.2433_2436delGGAG	deletion	GGAG				+
 TCIRG1	T0006	1	c.1084G>T	NM_006019.4:c.1084G>T	substitution	G	T			+
 TCIRG1	T0007	1	c.2475G>A	NM_006019.4:c.2475G>A	substitution	G	A			+
 TCIRG1	T0008	1	c.1848G>A	NM_006019.4:c.1848G>A	substitution	G	A			+
-TCIRG1	T0009	1	c.1498_1499delGC	NM_006019.4:c.1498_1499delGC	deletion	GC				+
-TCIRG1	T0010	1	c.136_177del	NM_006019.4:c.136_177del	deletion					+
+TCIRG1	T0009	1	c.1498_1499delGC	NM_006019.4:c.1438_1439delGC	deletion	GC				+
+TCIRG1	T0010	1	c.136_177del	NM_006019.4:c.76_117del	deletion					+
 TCIRG1	T0011	2	c.2388_2396delCTTTGCCGC	NM_006019.4:c.2388_2396delCTTTGCCGC	deletion	CTTTGCCGC				+
-TCIRG1	T0012	1	c.2384C>G	NM_006019.4:c.2384C>G	substitution	C	G			+
+TCIRG1	T0012	1	c.2384C>G	NM_006019.4:c.2324C>G	substitution	C	G			+
 TCIRG1	T0013	1	c.1442_1444delACA	NM_006019.4:c.1442_1444delACA	deletion	ACA				+
 TCIRG1	T0016	1	c.2068C>T	NM_006019.4:c.2068C>T	substitution	C	T			+
 TCIRG1	T0018	1	c.748C>T	NM_006019.4:c.748C>T	substitution	C	T			+
 TCIRG1	T0019	1	c.1357C>T	NM_006019.4:c.1357C>T	substitution	C	T			+
-TCIRG1	T0021	1	c.2174_2248del	NM_006019.4:c.2174_2248del	deletion					+
-TCIRG1	T0025	1	c.1030_1031insG	NM_006019.4:c.1030_1031insG	insertion		G			+
-TCIRG1	T0028	1	c.1230_1231insA	NM_006019.4:c.1230_1231insA	insertion		A			+
+TCIRG1	T0021	1	c.2174_2248del	NM_006019.4:c.2114_2188del	deletion					+
+TCIRG1	T0025	1	c.1030_1031insG	NM_006019.4:c.970_971insG	insertion		G			+
+TCIRG1	T0028	1	c.1230_1231insA	NM_006019.4:c.1170_1171insA	insertion		A			+
 TCIRG1	T0029	1	c.1174C>T	NM_006019.4:c.1174C>T	substitution	C	T			+
 TCN2	T0001	1	c.427+2T>G	NM_000355.4:c.427+2T>G	substitution	T	G			+
 TCN2	T0007	1	c.580+1G>C	NM_000355.4:c.580+1G>C	substitution	G	C			+
-WAS	W0001	0	c.150T>C	NM_000377.3:c.150T>C	substitution	T	C			+
+WAS	W0001	0	c.150T>C	NM_000377.3:c.116T>C	substitution	T	C			+
 WAS	W0003	0	c.125G>A	NM_000377.3:c.125G>A	substitution	G	A			+
 WAS	W0004	0	c.252G>A	NM_000377.3:c.252G>A	substitution	G	A			+
 WAS	W0005	0	c.364delC	NM_000377.3:c.364delC	deletion	C				+
 WAS	W0006	0	c.264A>G	NM_000377.3:c.264A>G	substitution	A	G			+
-WAS	W0007	0	c.1185delC	NM_000377.3:c.1185delC	deletion	C				+
+WAS	W0007	0	c.1185delC	NM_000377.3:c.1151delC	deletion	C				+
 WAS	W0008	0	c.1339-3delC	NM_000377.3:c.1339-3delC	deletion	C				+
-WAS	W0009	0	c.907delC	NM_000377.3:c.907delC	deletion	C				+
+WAS	W0009	0	c.907delC	NM_000377.3:c.873delC	deletion	C				+
 WAS	W0010	0	c.1339-2A>T	NM_000377.3:c.1339-2A>T	substitution	A	T			+
-WAS	W0012	0	c.665C>T	NM_000377.3:c.665C>T	substitution	C	T			+
+WAS	W0012	0	c.665C>T	NM_000377.3:c.631C>T	substitution	C	T			+
 WAS	W0013	0	c.734+1G>T	NM_000377.3:c.734+1G>T	substitution	G	T			+
 WAS	W0015	0	c.1028delG	NM_000377.3:c.1028delG	deletion	G				+
 WAS	W0016	0	c.155C>T	NM_000377.3:c.155C>T	substitution	C	T			+
 WAS	W0017	0	c.263G>C	NM_000377.3:c.263G>C	substitution	G	C			+
-WAS	W0019	0	c.741C>G	NM_000377.3:c.741C>G	substitution	C	G			+
+WAS	W0019	0	c.741C>G	NM_000377.3:c.707C>G	substitution	C	G			+
 WAS	W0021	0	c.348T>C	NM_000377.3:c.348T>C	substitution	T	C			+
 WAS	W0023	0	c.887G>T	NM_000377.3:c.887G>T	substitution	G	T			+
 WAS	W0026	0	c.201C>T	NM_000377.3:c.201C>T	substitution	C	T			+
@@ -505,7 +503,6 @@ WAS	W0048	0	c.218G>A	NM_000377.3:c.218G>A	substitution	G	A			+
 WAS	W0052	0	c.257G>A	NM_000377.3:c.257G>A	substitution	G	A			+
 WAS	W0054	0	c.1378C>T	NM_000377.3:c.1378C>T	substitution	C	T			+
 WAS	W0057	0	c.295C>T	NM_000377.3:c.295C>T	substitution	C	T			+
-WAS	W0058	0	c.631C>T	NM_000377.3:c.631C>T	substitution	C	T			+
 WAS	W0061	0	c.913C>T	NM_000377.3:c.913C>T	substitution	C	T			+
 WAS	W0062	0	c.1090C>T	NM_000377.3:c.1090C>T	substitution	C	T			+
 WAS	W0063	0	c.57delG	NM_000377.3:c.57delG	deletion	G				+
@@ -544,7 +541,6 @@ WAS	W0124	0	c.5G>C	NM_000377.3:c.5G>C	substitution	G	C			+
 WAS	W0125	0	c.18G>A	NM_000377.3:c.18G>A	substitution	G	A			+
 WAS	W0128	0	c.79C>T	NM_000377.3:c.79C>T	substitution	C	T			+
 WAS	W0129	0	c.88_90delCAC	NM_000377.3:c.88_90delCAC	deletion	CAC				+
-WAS	W0134	0	c.116T>C	NM_000377.3:c.116T>C	substitution	T	C			+
 WAS	W0150	0	c.140C>A	NM_000377.3:c.140C>A	substitution	C	A			+
 WAS	W0151	0	c.142A>G	NM_000377.3:c.142A>G	substitution	A	G			+
 WAS	W0152	0	c.143C>T	NM_000377.3:c.143C>T	substitution	C	T			+

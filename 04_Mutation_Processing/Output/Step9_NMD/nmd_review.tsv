@@ -7,6 +7,8 @@ AK2	c.118del	NM_001625.4	c.118del	r.(118del)	p.(Cys40ValfsTer5)	frameshift		131	
 AP3B1	c.1167+3_1230+2del	NM_003664.5	c.1167+3_1230+2del			frameshift_candidate							not_assessable_noncoding_or_intronic			
 AP3B1	c.2077+696_2078-883del	NM_003664.5	c.2077+696_2078-883del	r.(=)	p.(=)	frameshift_candidate							not_assessable_noncoding_or_intronic		r.(=)	p.(=)
 C3	c.2354+2_2416del	NM_000064.4	c.2354+2_2416del			frameshift_candidate							not_assessable_noncoding_or_intronic			
+C3	c.2797_2950del	NM_000064.4	c.2797_2950del			frameshift_candidate		2969	939			1882	NMD_predicted		r.0?	p.0?
+C5	c.55C>T	NM_001735.3	c.55C>T	r.(55c>u)	p.(Gln19Ter)	nonsense	ok	55	19	19	yes	4847	NMD_predicted	start_proximal	r.0?	p.0?
 C6	c.170+6564del		c.170+6564del	r.(=)	p.(=)	frameshift_candidate							not_assessable_noncoding_or_intronic		r.(=)	p.(=)
 C6	c.7+19944del		c.7+19944del	r.(=)	p.(=)	frameshift_candidate							not_assessable_noncoding_or_intronic		r.(=)	p.(=)
 C6	c.8-11016del		c.8-11016del	r.(=)	p.(=)	frameshift_candidate							not_assessable_noncoding_or_intronic		r.(=)	p.(=)
@@ -89,6 +91,7 @@ IFNGR1	c.25del	NM_000416.2	c.25del	r.(25del)	p.(Val10SerfsTer5)	frameshift		41	1
 IFNGR1	c.104_107dup	NM_000416.2	c.104_107dup	r.(104_107dup)	p.(Ile37TyrfsTer3)	frameshift		111	39	39	yes	751	NMD_predicted	start_proximal	r.0?	p.0?
 IFNGR1	c.105dup	NM_000416.2	c.105dup	r.(105delinsuu)	p.(Thr36TyrfsTer3)	frameshift		111	38	38	yes	751	NMD_predicted	start_proximal	r.0?	p.0?
 IFNGR1	c.106_107insT	NM_000416.2	c.106_107insT	r.(106_107insu)	p.(Thr36IlefsTer3)	frameshift		111	38	38	yes	751	NMD_predicted	start_proximal	r.0?	p.0?
+IGLL1	c.64C>T	NM_020070.4	c.64C>T	r.(64c>u)	p.(Gln22Ter)	nonsense	ok	64	22	22	yes	259	NMD_predicted	start_proximal	r.0?	p.0?
 IL12B	c.482+3_855+2del	NM_002187.3	c.482+3_855+2del			frameshift_candidate							not_assessable_noncoding_or_intronic			
 IL12RB1	c.94C>T	NM_005535.3	c.94C>T	r.(94c>u)	p.(Gln32Ter)	nonsense	ok	94	32	32	yes	1890	NMD_predicted	start_proximal	r.0?	p.0?
 IL12RB1	c.410_549del	NM_005535.3	c.410_549del			frameshift_candidate		570	144			1414	NMD_predicted		r.0?	p.0?
