@@ -236,8 +236,8 @@ rule normalize_mane:
         results=os.path.join(S8, "mane_norm_results.tsv"),
         gff=ancient(MANE_GFF),
     output:
-        dedup=os.path.join(S8, "dedup_merged_variants.resolved.tsv"),
-        pairs=os.path.join(S8, "resolution_pairs.tsv"),
+        dedup=os.path.join(S8, "dedup_merged_variants.mane.tsv"),
+        pairs=os.path.join(S8, "resolution_pairs.mane.tsv"),
         log=os.path.join(S8, "mane_norm_log.tsv"),
     params:
         mane_nm=DNA_SEQ["mane_nm"],
@@ -249,6 +249,30 @@ rule normalize_mane:
         f'OUT_DEDUP="{{output.dedup}}" OUT_PAIRS="{{output.pairs}}" OUT_LOG="{{output.log}}" '
         f'MANE_NM_DIR="{{params.mane_nm}}" IDREFSEQ_NM_DIR="{{params.idr_nm}}" '
         f'python "{script("Step8_Rescue/normalize_mane.py")}" --stage apply'
+
+
+rule flag_review:
+    input:
+        dedup=os.path.join(S8, "dedup_merged_variants.mane.tsv"),
+        pairs=os.path.join(S8, "resolution_pairs.mane.tsv"),
+        shifts=os.path.join(SCRIPTS, "refs", "legacy_shift_evidence.tsv"),
+        audit=os.path.join(SCRIPTS, "Step10_Audit", "audit_against_source.py"),
+        gff=ancient(MANE_GFF),
+        pub=ancient(PUB_DIR),
+    output:
+        dedup=os.path.join(S8, "dedup_merged_variants.resolved.tsv"),
+        pairs=os.path.join(S8, "resolution_pairs.tsv"),
+        log=os.path.join(S8, "review_log.tsv"),
+    params:
+        mane_nm=DNA_SEQ["mane_nm"],
+        gb=GB_CACHE,
+    conda:
+        "envs/python.yaml"
+    shell:
+        f'IN_DEDUP="{{input.dedup}}" IN_PAIRS="{{input.pairs}}" OUT_DEDUP="{{output.dedup}}" OUT_PAIRS="{{output.pairs}}" '
+        f'OUT_LOG="{{output.log}}" MANE_GFF="{{input.gff}}" MANE_NM_DIR="{{params.mane_nm}}" GB_CACHE="{{params.gb}}" '
+        f'SHIFT_EVIDENCE="{{input.shifts}}" PUB_DIR="{{input.pub}}" AUDIT_SCRIPT="{{input.audit}}" '
+        f'python "{script("Step8_Rescue/flag_review.py")}"'
 
 
 rule build_final_lovd:

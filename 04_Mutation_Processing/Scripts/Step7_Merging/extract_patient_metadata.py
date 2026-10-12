@@ -10,7 +10,7 @@ LOG_PATH       = os.environ["LOG_PATH"]
 PAIR_ANNOT_TSV = os.environ.get("PAIR_ANNOT_TSV", "")
 LOG_DIR        = os.path.dirname(LOG_PATH)
 
-PAIR_ANNOT_COLS = ["confidence_tier", "alt_descriptions"]
+PAIR_ANNOT_COLS = ["confidence_tier", "alt_descriptions", "review_reason"]
 
 RE_HTML       = re.compile(r"<[^>]+>")
 RE_FIELD      = re.compile(r"^([A-Z][A-Za-z][A-Za-z /]*?)(\s{2,})(.+?)\s*$", re.MULTILINE)
@@ -129,6 +129,9 @@ def add_pair_annotations(exploded):
                          _accession=annot["accession"].str.strip(),
                          _dedup_key=annot["dedup_key"])
     annot = annot.drop_duplicates(["_gene_key", "_accession", "_dedup_key"])
+    for col in PAIR_ANNOT_COLS:
+        if col not in annot.columns:
+            annot[col] = ""
     exploded = exploded.assign(_gene_key=exploded["_gene"].str.strip().str.upper())
     merged = exploded.merge(annot[["_gene_key", "_accession", "_dedup_key"] + PAIR_ANNOT_COLS],
                             on=["_gene_key", "_accession", "_dedup_key"], how="left")
