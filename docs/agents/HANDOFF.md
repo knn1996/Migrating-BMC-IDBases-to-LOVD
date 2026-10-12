@@ -1,4 +1,4 @@
-# Handoff — IDbases → LOVD pipeline (source of truth; updated 2026-10-12, after Run 7)
+# Handoff — IDbases → LOVD pipeline (source of truth; updated 2026-10-12, after Run 10)
 
 This file is the single source of truth. The planner (`thesis-plan`) updates it after each recorded run. The older copy in the claude.ai project (claude/handoff_2026-10-11.md) is frozen and may be stale.
 
@@ -40,7 +40,8 @@ Pipeline (Snakemake 9.27, env `snakemake`, run from 04_Mutation_Processing/Scrip
 | 7 | Track B c./p. coherence | 89.98% | 96.20% | 96.65% | 8 | 6,441 | 100.00% |
 | 8 | legacy c. numbering remap | 89.98% | 98.19% | 98.66% | 8 | 6,441 | 100.00% |
 | 9 | ADA per-change remap | 90.14% | 98.33% | 98.8% | 8 | 6,452 | 100.00% |
-Coherence ruler: 3fc3b8a (code), 4c7c6b1 (history). Run 6: dcde390, 9e0e2b7, f6de49d, d82a5c5, 7543cbb (rescue), aa6c043 (history). Run 7: 0c255fe (code), 1e12fd6 (primary), d6b09bb (rescue), 3b4cc34 (history, run_id 20261012_d6b09bb). Run 8: 12945a1 (rescue grouping fix), f786738 (code), 50833c3 (primary), f64272c (rescue), 3de036a (history, run_id 20261012_f64272c). Run 9: bdc9ac4 (code), d1879a9 (primary), 30fdf51 (rescue), 9c4c1f9 (history, run_id 20261012_30fdf51). Nothing pushed.
+| 10 | full-scan legacy remap | 91.71% | 98.42% | 98.88% | 8 | 6,562 | 100.00% |
+Coherence ruler: 3fc3b8a (code), 4c7c6b1 (history). Run 6: dcde390, 9e0e2b7, f6de49d, d82a5c5, 7543cbb (rescue), aa6c043 (history). Run 7: 0c255fe (code), 1e12fd6 (primary), d6b09bb (rescue), 3b4cc34 (history, run_id 20261012_d6b09bb). Run 8: 12945a1 (rescue grouping fix), f786738 (code), 50833c3 (primary), f64272c (rescue), 3de036a (history, run_id 20261012_f64272c). Run 9: bdc9ac4 (code), d1879a9 (primary), 30fdf51 (rescue), 9c4c1f9 (history, run_id 20261012_30fdf51). Run 10: 1bb3eda (code), 78b539b (primary), a3fe960 (rescue), a216ed4 (history, run_id 20261012_a3fe960). Nothing pushed.
 
 ## Fixed so far
 1. Extraction: compound-het alleles, glued records, brackets (Run 1)
@@ -90,11 +91,35 @@ Measurement: count definitions, precision metric, own-source-change ruler, c./p.
 
 ## Next after Run 8
 0. (done, Run 9) ADA: CODING_OFFSET removed; 81 −95 entries + 1 manual + 11 excluded in legacy_remap. Gains 11, BAD→GOOD 7, regressions 0, consistency 98.80%. Live: 3+8 Mutalyzer, 16 VV.
-0b. NEXT — Run 10 candidate: extend the legacy remap with the full scan (110 recoverable units, new mixed genes, AIRE Track A record).
+0b. (done, Run 10) Extend the legacy remap with the full scan. Result: +110 in_final (exactly the 110 scan-recoverable units: CFH 20, RAG1 19, AICDA 14, IKBKG 13, RAG2 13, WAS 11, TCIRG1 9, CD40 3, TAP2 3, AIRE 2, RFXAP 2, CIITA 1), regressions 0, GOOD→BAD 0, BAD→GOOD 3 (RFXAP c.484del → c.368del), new inconsistent 0, 17 pairs re-keyed (0 lost), CD40 −47 confirmed (3/3 MATCH). Live: 170 Track B + 36 rescue Mutalyzer, VV, 1 GenBank (CD40). Procedure: throwaway ledger dirties audit_pairs.tsv; restore it to HEAD before the recording ledger.
+   Original plan: extend the legacy remap with the full scan (110 recoverable units, new mixed genes, AIRE Track A record).
+   Scoping (2026-10-12, partial; executor hit usage limit): scratch 99_Archive/04_Mutation_Processing/scratch/run10/ (table_main = 694 rows, keeps all 207 existing rows; table_all adds CYBB/NCF1). Sim copy: planner job tmp sim_main (temporary).
+   - 509 shift units not yet in remap, 19 genes, all verified. Builder gotcha: ADA must be in --all-changes.
+   - Cached-only sim (table_main): in_final 6327 → 6367, protein_good 98.39%, consistency 98.86%, excess 8, coherence 100%. Gains 44 (RAG1 12, AICDA 8, CFH 8, RAG2 8, WAS 6, AIRE 2), GOOD→BAD 0, BAD→GOOD 0.
+   - 4 regressions (RFXAP R0001/R0003/R0004, IKBKG I0018) = uncached Track B queries (no_hgvs offline). Planner verified offline: remapped c. reproduces source p. exactly (RFXAP c.368delG → p.S123fsX137, c.163C>T → p.Q55X; IKBKG c.1217_1218insA → p.D406fsX419). The 3 RFXAP pairs removed were wrong in Run 9 (VV c.484del, DIFFERENT).
+   - Forecast: 171 distinct uncached Track B Mutalyzer queries (CD40L 51, LYST 19, AIRE 16, PRF1 13, CFP 11, IKBKG 10, RAG1 9, TCIRG1 7, CFH 6, RAG2 5, WAS 5, AICDA 4, RFXANK 3, RFXAP 3, C1S 2, CD40 2, CIITA 2, TAP2 2, C3 1); Track C 0. Rescue re-forecast after the primary run. NMD GenBank: ≤1 (CD40 NM_001250.6 not cached).
+   - CYBB/NCF1: exclude (no gain at cached level; CYBB doubtful, NCF1 residual is FS_STOP_DIFF).
+   - AIRE A0082/2: Track A c.191_226del is right (= source −127); the source p.S64del is wrong for a 36-nt deletion → source_error candidate, stays inconsistent. The remap removes the wrong Track B alternative c.319_354del.
+   - Committed 1bb3eda (refs/legacy_remap.tsv 694 rows = 207 old identical + 487 new; legacy_shift_evidence.tsv). Installed-table replay = sim_main byte for byte.
+   - Forecast tools gap: check_mutalyzer_cache.py / check_rescue_cache.py ignore the remap unless LEGACY_REMAP_TSV=$PWD/refs/legacy_remap.tsv is exported (otherwise 21 false ADA hits, 171 missed). Fix as a separate commit after Run 10.
+   - Primary: `snakemake -s Snakefile --use-conda --cores 1 -R mutalyzer_input_NM` (171 live Track B). Then commit primary, re-forecast rescue (≤36 Mutalyzer, VV 0 + ≤36 anchors) for separate approval.
+   - Expected: 4 regressions back GOOD, in_final ≥ 6,371, GOOD→BAD 0, excess ≤ 8, coherence 100%, no new inconsistent pairs. Gate: new inconsistency or ESEQUENCEMISMATCH in RFXAP/TAP2/C3/CD40 → drop that gene's rows and rerun before committing primary. CD40 CDS from longest ORF (no GenBank): review its records.
+   - translation_test.py stays uncommitted until source_error work.
+   - Primary live run done; committed 78b539b. 170 new Track B queries: 133 ok, 36 ENOSELECTORFOUND (to rescue), 1 ESEQUENCEMISMATCH (CD40L C0047: source c. range crosses the exon 4 / intron boundary; Track A c.409_409+9del is correct and kept; log as a source notation issue).
+   - Cached-only rescue projection: in_final 6383, protein_good 98.40%, consistency 98.86%, excess 8, pairs 6508, coherence 100%. Gains 60 (RAG1 19, RAG2 13, AICDA 8, CFH 8, WAS 6, TAP2 3, AIRE 2, CIITA 1), regressions 4 (pending uncached rescue), GOOD→BAD 0, new inconsistent 0; 13 pairs re-keyed (bogus intronic keys → coding keys).
+   - Rescue forecast: 36 Mutalyzer, 36 VV probe, 0–37 VV resolve, ≤1 GenBank (CD40). Expected: in_final ≥ 6387, 4 pending back GOOD, GOOD→BAD 0, excess ≤ 8.
 1. (done) Run 8 — Legacy c. numbering remap (~70 pairs; RAG1 +112, AICDA +76, CFH +73, TCIRG1 +60, WAS 34–36, LYST 190, RFXAP 116) + ADA over-remap. Needs Utilities/translation_test.py (draft, uncommitted): forecast missing transcripts first (fetch = network step), per-gene shift verified when ≥2 independent changes reconcile (C1QB −2 codons, RFX5 −40 codons are isoform numbering), include small frameshifts/in-frame indels, one shared remap function for c. tracks and rescue. ~25 queries + transcripts. Also yields source_error flags.
 2. Run 9 — MANE normalization of the ~200 records still off exact MANE after Run 7 (Track A on pick_mane fallback transcripts, Track C non-MANE NMs, VariantValidator/rescue). Recompute scope and forecast. First find why pick_mane never matches MANE_SELECT (needs 1 live raw Mutalyzer response; user runs it). Only IGHG2 has no MANE Select (ELA2 = ELANE NM_001972.4). Keep originals in alt_descriptions.
 3. Patient metadata: extract_patient_metadata.py glued-record bug (metadata flags ~3,147).
 4. Canonical export table; then the LOVD format mapping once the director's format is known.
+
+## Next after Run 10
+- (a) Small separate commit: forecast tools default LEGACY_REMAP_TSV to refs/legacy_remap.tsv.
+- (b) source_error flag (Run 11 candidate): residuals AIRE A0082/2 (p.S64del for 36-nt deletion), CD40L C0047 (c. range across exon 4 boundary), AICDA A0031/A0032, TCIRG1 (long in-frame indels), plus the 29-change / 41-pair candidate list from Run 8 scoping. Utilities/translation_test.py belongs here.
+- (c) MANE normalization of records off exact MANE (item 2 below), then patient metadata, then the canonical export table.
+
+## README update (living draft)
+- docs/agents/README_update_draft.md: post-thesis correctness section for the root README.md. After each recorded run the planner adds the run row and any new finding (figures from audit_history.tsv). Merge into README.md only when the user calls the stopping point; at merge also fix the outdated ADA −95 limitation and the thesis-era vs source-unit counting note.
 
 ## Backlog
 - Track A offset errors (C8B, NHEJ1, C1QB, C5, IL7R, C2, CASP8, RAG2, CASP10, IGLL1): ~21 pairs left after R2.
