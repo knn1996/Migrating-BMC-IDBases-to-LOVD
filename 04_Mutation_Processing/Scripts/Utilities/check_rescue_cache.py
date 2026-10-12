@@ -23,6 +23,7 @@ Usage:
 Environment:
     SCRIPTS_DIR  pipeline Scripts directory  (default: parent of this file's folder)
     CONFIG       path to config.yaml         (default: SCRIPTS_DIR/config/config.yaml)
+    LEGACY_REMAP_TSV  legacy c. remap table  (default: SCRIPTS_DIR/refs/legacy_remap.tsv)
     WORK_DIR     scratch directory to use    (default: a new temporary directory)
     KEEP_WORK    set to 1 to keep WORK_DIR after the run
 """
@@ -43,6 +44,7 @@ import yaml
 
 SCRIPTS = Path(os.environ.get("SCRIPTS_DIR", Path(__file__).resolve().parents[1]))
 CONFIG = Path(os.environ.get("CONFIG", SCRIPTS / "config" / "config.yaml"))
+LEGACY_REMAP_TSV = Path(os.environ.get("LEGACY_REMAP_TSV", SCRIPTS / "refs" / "legacy_remap.tsv"))
 sys.path.insert(0, str(SCRIPTS / "Step8_Rescue"))
 from hgvs_norm import normalize_hgvs_query
 
@@ -159,7 +161,7 @@ def main():
         run("generate_rescue_input", "Step8_Rescue/generate_rescue_input.py",
             {"IN_DISPOSITION": disp_path, "LRG_NM_CSV": out / "Step1b_RSG_Mapping" / "LRG_with_NM.csv",
              "MANE_NM_DIR": cfg["dna_seq"]["mane_nm"], "OUT_TSV": resc_path,
-             "LOG_TSV": work / "rescue_mutalyzer_skipped.tsv"}, work)
+             "LOG_TSV": work / "rescue_mutalyzer_skipped.tsv", "LEGACY_REMAP_TSV": LEGACY_REMAP_TSV}, work)
 
         disp = read_rows(disp_path)
         old_disp_path = out / "Step8_Rescue" / "unresolved_disposition.tsv"

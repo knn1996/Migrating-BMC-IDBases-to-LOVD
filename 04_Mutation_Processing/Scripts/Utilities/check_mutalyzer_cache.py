@@ -20,6 +20,7 @@ Usage:
 Environment:
     SCRIPTS_DIR  pipeline Scripts directory  (default: parent of this file's folder)
     CONFIG       path to config.yaml         (default: SCRIPTS_DIR/config/config.yaml)
+    LEGACY_REMAP_TSV  legacy c. remap table  (default: SCRIPTS_DIR/refs/legacy_remap.tsv)
     WORK_DIR     scratch directory to use    (default: a new temporary directory)
     KEEP_WORK    set to 1 to keep WORK_DIR after the run
 """
@@ -40,6 +41,7 @@ import yaml
 
 SCRIPTS = Path(os.environ.get("SCRIPTS_DIR", Path(__file__).resolve().parents[1]))
 CONFIG = Path(os.environ.get("CONFIG", SCRIPTS / "config" / "config.yaml"))
+LEGACY_REMAP_TSV = Path(os.environ.get("LEGACY_REMAP_TSV", SCRIPTS / "refs" / "legacy_remap.tsv"))
 DEFAULT_SEC_PER_QUERY = 3.0
 SLEEP_FLOOR = 0.5
 
@@ -108,7 +110,7 @@ def rebuild_inputs(p, work):
             {"ALL_MUTATIONS_TSV": p["mut"], "BED_DIR": s5, "MANE_NM_DIR": p["mane_nm"],
              "IDREFSEQ_NM_DIR": p["idr_nm"], "MANE_NG_DIR": p["mane_ng"],
              "OUT_TSV": s6 / f"mutalyzer_input_NM_{source}.tsv",
-             "LOG_TSV": s6 / f"mutalyzer_input_NM_skipped_{source}.tsv"}, work)
+             "LOG_TSV": s6 / f"mutalyzer_input_NM_skipped_{source}.tsv", "LEGACY_REMAP_TSV": LEGACY_REMAP_TSV}, work)
     return s6
 
 
