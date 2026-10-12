@@ -80,6 +80,13 @@ in lovd_flat_with_patients_final.tsv with individual_id = GENE_accession:
                   n = start (absolute stop numbering) equals final p.(XnTer).
                   E2 insertion as dup: an ins whose right flank is the dup start, with the
                   dup length and the dup end residues as first and last inserted residues.
+    source error  refs/source_errors.tsv (Utilities/build_source_errors.py) lists suspected IDbases
+                  source errors by source_change_id. It never changes a pair label: a pair whose
+                  source changes are all listed counts in pairs_source_error (split by category and
+                  severity, and pairs_source_error_our_record_wrong when our kept record is also
+                  wrong). pair_consistency_excl_source_error_pct leaves out of numerator and
+                  denominator the listed pairs whose record is not wrong. protein_source_error counts
+                  source units in BAD_P whose (gene, accession, c.) is listed with our record not wrong.
 
 --rescore-all re-runs audit_against_source.py and the pair linkage for every recorded
 run on inputs pulled from the run's pipeline_commit with git show into a scratch
@@ -145,6 +152,9 @@ COUNT_KEYS = ["gains", "regressions", "protein_good_to_bad", "protein_bad_to_goo
 UNCHECKABLE = ["no_final_p", "unlinked", "source_error", "no_source_p", "not_comparable"]
 EQUIVALENCES = ["E1", "E2"]
 SOURCE_ERRORS = frozenset()
+SOURCE_ERRORS_TSV = SCRIPTS / "refs" / "source_errors.tsv"
+SOURCE_ERROR_CATEGORIES = ["notation", "c_p_mismatch", "g_c_mismatch", "exon_boundary", "ref_base_mismatch"]
+SOURCE_ERROR_SEVERITIES = ["high", "low"]
 DEDUP_CAPTURE = (
     ("result = result.loc[kept]", "result_all = result.copy()\nresult = result.loc[kept]"),
     ("result = result.drop(index=drop_idx)", "result_all = result.copy()\nresult = result.drop(index=drop_idx)"),
@@ -642,6 +652,41 @@ def build_pairs(var, final, audit, links, coherence):
     return pairs.sort_values(["individual_id", "variant_key"]).reset_index(drop=True)
 
 
+def load_source_errors(path):
+    if not Path(path).exists():
+        return {}
+    t = read_tsv(path)
+    return {r["source_change_id"]: r for r in t.to_dict("records")}
+
+
+def source_error_metrics(var, pairs, table, bad_p):
+    m = {}
+    flagged, excluded = [], []
+    for sids, label in zip(pairs["source_change_ids"], pairs["label"]):
+        ids = [s.strip() for s in sids.split(" ; ") if s.strip()]
+        rows = [table[s] for s in ids if s in table]
+        hit = bool(ids) and len(rows) == len(ids)
+        flagged.append(rows[0] if hit else None)
+        excluded.append(hit and all(r["our_record_wrong"] == "no" for r in rows))
+    rows = [r for r in flagged if r is not None]
+    m["pairs_source_error"] = len(rows)
+    for cat in SOURCE_ERROR_CATEGORIES:
+        m[f"pairs_source_error__{cat}"] = sum(r["category"] == cat for r in rows)
+    for sev in SOURCE_ERROR_SEVERITIES:
+        m[f"pairs_source_error__{sev}"] = sum(r["severity"] == sev for r in rows)
+    m["pairs_source_error_our_record_wrong"] = sum(1 for r, e in zip(flagged, excluded) if r is not None and not e)
+    lab = pairs["label"].reset_index(drop=True)
+    keep = ~pd.Series(excluded)
+    cons = int(((lab == "consistent") & keep).sum())
+    checkable = cons + int((lab.str.startswith("inconsistent:") & keep).sum())
+    m["pair_consistency_excl_source_error_pct"] = round(100 * cons / checkable, 2) if checkable else 0.0
+    units = {(r["gene"].strip().upper(), r["accession"].strip(), r["source_c"].strip(" []"))
+             for r in table.values() if r["our_record_wrong"] == "no"}
+    m["protein_source_error"] = int(sum(1 for g, a, c, pc in zip(var["gene"], var["accession"], var["src_c"], var["protein_check"])
+                                        if pc in bad_p and (g.strip().upper(), a.strip(), c.strip(" []")) in units))
+    return m
+
+
 def excess_metrics(var, pairs):
     expected = defaultdict(set)
     for iid, txt in zip(individual_ids(var["gene"], var["accession"]), var["source_systematic_name"]):
@@ -713,6 +758,7 @@ def compute_metrics(var, meta, final, dedup, pairs, audit, link_stats):
     m["wb_rows"] = len(final)
     m.update(excess_metrics(var, pairs))
     m.update(pair_metrics(pairs, bad_p, link_stats))
+    m.update(source_error_metrics(var, pairs, audit.source_errors, bad_p))
     if len(pairs) != m["final_pairs"]:
         print(f"WARNING: {len(pairs)} distinct (individual, variant) pairs in the final table "
               f"vs final_pairs {m['final_pairs']} from the dedup table")
@@ -1136,6 +1182,7 @@ def main():
     out = defaults["output_root"]
     audit.protein_map = ProteinMap(out / "cache" / "genbank", out / "cache" / "mutalyzer",
                                    defaults["thesis_dir"] / MANE_GFF)
+    audit.source_errors = load_source_errors(SOURCE_ERRORS_TSV)
     if args.rescore_all:
         rescore_all(args, defaults, repo, audit)
     else:
