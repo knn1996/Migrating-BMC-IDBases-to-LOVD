@@ -1,0 +1,52 @@
+gene	dedup_key	individual_id	rule	tier_before	reason
+C1QA	g.22634470C>T	C1QA_C0001	genomic	A	genomic record NC_000001.11:g.22634470C>T lies outside the MANE transcript on NM_015991.4, the source c. (c.634C>T) is exonic
+C1QA	g.22634470C>T	C1QA_C0002	genomic	A	genomic record NC_000001.11:g.22634470C>T lies outside the MANE transcript on NM_015991.4, the source c. (c.634C>T) is exonic
+C1QA	g.22634470C>T	C1QA_C0003	genomic	A	genomic record NC_000001.11:g.22634470C>T lies outside the MANE transcript on NM_015991.4, the source c. (c.634C>T) is exonic
+C1QA	g.22634470C>T	C1QA_C0004	genomic	A	genomic record NC_000001.11:g.22634470C>T lies outside the MANE transcript on NM_015991.4, the source c. (c.634C>T) is exonic
+C1QA	g.22634470C>T	C1QA_C0005	genomic	A	genomic record NC_000001.11:g.22634470C>T lies outside the MANE transcript on NM_015991.4, the source c. (c.634C>T) is exonic
+C1QA	g.22634470C>T	C1QA_C0006	genomic	A	genomic record NC_000001.11:g.22634470C>T lies outside the MANE transcript on NM_015991.4, the source c. (c.634C>T) is exonic
+C1QB	c.-23-2228C>T	C1QB_C0001	genomic	A	genomic record NC_000001.11:g.22657212C>T lies deep intronic on NM_001378156.1, the source c. (c.529C>T) is exonic
+C1QB	c.-24+1480G>A	C1QB_C0002	genomic	A	genomic record NC_000001.11:g.22655640G>A lies deep intronic on NM_001378156.1, the source c. (c.125G>A) is exonic
+C1QB	c.-24+1480G>A	C1QB_C0003	genomic	A	genomic record NC_000001.11:g.22655640G>A lies deep intronic on NM_001378156.1, the source c. (c.125G>A) is exonic
+C1QB	c.-24+1480G>A	C1QB_C0004	genomic	A	genomic record NC_000001.11:g.22655640G>A lies deep intronic on NM_001378156.1, the source c. (c.125G>A) is exonic
+C1QB	c.-23-2027G>A	C1QB_C0007	genomic	A	genomic record NC_000001.11:g.22657413G>A lies deep intronic on NM_001378156.1, the source c. (c.730G>A) is exonic
+C6	c.170+6564del	C6_C0004	genomic	A	genomic record NC_000005.10:g.41196524del lies deep intronic on NM_000065.5, the source c. (c.2034delG) is exonic
+C6	c.170+6564del	C6_C0006	genomic	A	genomic record NC_000005.10:g.41196524del lies deep intronic on NM_000065.5, the source c. (c.2034delG) is exonic
+C6	c.170+6564del	C6_C0007	genomic	A	genomic record NC_000005.10:g.41196524del lies deep intronic on NM_000065.5, the source c. (c.2034delG) is exonic
+C6	c.170+6564del	C6_C0008	genomic	A	genomic record NC_000005.10:g.41196524del lies deep intronic on NM_000065.5, the source c. (c.2034delG) is exonic
+C6	c.170+6564del	C6_C0009	genomic	A	genomic record NC_000005.10:g.41196524del lies deep intronic on NM_000065.5, the source c. (c.2034delG) is exonic
+C6	c.170+6564del	C6_C0011	genomic	A	genomic record NC_000005.10:g.41196524del lies deep intronic on NM_000065.5, the source c. (c.2034delG) is exonic
+C6	c.7+19944del	C6_C0005	genomic	A	genomic record NC_000005.10:g.41241251del lies outside the MANE transcript on NM_000065.5, the source c. (c.392delC) is exonic
+C6	c.8-11016del	C6_C0007	genomic	A	genomic record NC_000005.10:g.41214266del lies outside the MANE transcript on NM_000065.5, the source c. (c.1293delC) is exonic
+C6	c.8-11016del	C6_C0008	genomic	A	genomic record NC_000005.10:g.41214266del lies outside the MANE transcript on NM_000065.5, the source c. (c.1293delC) is exonic
+C6	c.8-11016del	C6_C0009	genomic	A	genomic record NC_000005.10:g.41214266del lies outside the MANE transcript on NM_000065.5, the source c. (c.1293delC) is exonic
+C6	c.8-11016del	C6_C0012	genomic	A	genomic record NC_000005.10:g.41214266del lies outside the MANE transcript on NM_000065.5, the source c. (c.1293delC) is exonic
+C6	c.8-11016del	C6_C0013	genomic	A	genomic record NC_000005.10:g.41214266del lies outside the MANE transcript on NM_000065.5, the source c. (c.1293delC) is exonic
+C6	c.8-16018del	C6_C0010	genomic	A	genomic record NC_000005.10:g.41219268del lies outside the MANE transcript on NM_000065.5, the source c. (c.977delG) is exonic
+C6	c.8-16018del	C6_C0011	genomic	A	genomic record NC_000005.10:g.41219268del lies outside the MANE transcript on NM_000065.5, the source c. (c.977delG) is exonic
+C6	c.8-16018del	C6_C0012	genomic	A	genomic record NC_000005.10:g.41219268del lies outside the MANE transcript on NM_000065.5, the source c. (c.977delG) is exonic
+C6	c.8-16018del	C6_C0013	genomic	A	genomic record NC_000005.10:g.41219268del lies outside the MANE transcript on NM_000065.5, the source c. (c.977delG) is exonic
+CASP10	c.721+318C>T	CASP10_C0001	genomic	A	genomic record NC_000002.12:g.201204084C>T lies deep intronic on NM_032977.4, the source c. (c.871C>T) is exonic
+CASP8	c.-27+14137C>T	CASP8_C0001	genomic	A	genomic record NC_000002.12:g.201248249C>T lies outside the MANE transcript on NM_001372051.1, the source c. (c.1033C>T) is exonic
+CASP8	c.-27+14137C>T	CASP8_C0002	genomic	A	genomic record NC_000002.12:g.201248249C>T lies outside the MANE transcript on NM_001372051.1, the source c. (c.1033C>T) is exonic
+CD79B	g.63934794C>T	CD79B_C0001	genomic	A	genomic record NC_000017.11:g.63934794C>T lies outside the MANE transcript on NM_000626.4, the source c. (c.412G>A) is exonic
+CD8A	g.86812337C>T	CD8A_C0001	genomic	A	genomic record NC_000002.12:g.86812337C>T lies outside the MANE transcript on NM_001768.7, the source c. (c.396G>A) is exonic
+CD8A	g.86812337C>T	CD8A_C0002	genomic	A	genomic record NC_000002.12:g.86812337C>T lies outside the MANE transcript on NM_001768.7, the source c. (c.396G>A) is exonic
+CD8A	g.86812337C>T	CD8A_C0003	genomic	A	genomic record NC_000002.12:g.86812337C>T lies outside the MANE transcript on NM_001768.7, the source c. (c.396G>A) is exonic
+CIITA	c.3186-2306_3186-2226del	CIITA_M0008	genomic	A	genomic record NC_000016.10:g.10913264_10913344del lies deep intronic on NM_000246.4, the source c. (c.3027_3107del) is exonic
+CIITA	c.3267-216_3267-214del	CIITA_M0008	genomic	A	genomic record NC_000016.10:g.10916151_10916153del lies deep intronic on NM_000246.4, the source c. (c.3216_3218delCAT) is exonic
+CYBB	c.=	CYBB_A1432	no_change	A	no change described (c.=)
+IL7R	c.380-1439G>A	IL7R_I0010	genomic	A	genomic record NC_000005.10:g.35869617G>A lies deep intronic on NM_002185.5, the source c. (c.375G>A) is exonic
+RAG1	c.-14-5021del	RAG1_R0012	genomic	A	genomic record NC_000011.10:g.36568270del lies deep intronic on NM_000448.3, the source c. (c.1258delA) is exonic
+RAG1	c.-14-4097_-14-4090del	RAG1_R0017	genomic	A	genomic record NC_000011.10:g.36569194_36569201del lies deep intronic on NM_000448.3, the source c. (c.2182_2189delAATGCTTG) is exonic
+RAG1	c.-14-3680_-14-3679del	RAG1_R0021	genomic	A	genomic record NC_000011.10:g.36569611_36569612del lies deep intronic on NM_000448.3, the source c. (c.2599_2600delGAinsTT) is exonic
+RAG1	c.-14-5648del	RAG1_R0040	genomic	A	genomic record NC_000011.10:g.36567643del lies outside the MANE transcript on NM_000448.3, the source c. (c.631delT) is exonic
+CFH	c.=	CFH_H0073	no_change	A	no change described (c.=)
+CFH	c.=	CFH_H0074	no_change	A	no change described (c.=)
+CFH	c.=	CFH_H0083	no_change	A	no change described (c.=)
+IKBKG	c.1115_1116insA	IKBKG_I0007	literal	A	record keeps the literal source numbering c.1115_1116insA; at the IKBKG legacy shift -185 the expected c. is c.930_931insA
+RAG1	c.1723_1735del	RAG1_R0006	literal	Review	record keeps the literal source numbering c.1723_1735delTATTGATGGGCTG; at the RAG1 legacy shift -112 the expected c. is c.1611_1623delTATTGATGGGCTG
+TCIRG1	c.691_732del	TCIRG1_T0004	literal	A	record keeps the literal source numbering c.691_732del; at the TCIRG1 legacy shift -60 the expected c. is c.631_672del
+TCIRG1	c.2433_2436del	TCIRG1_T0005	literal	A	record keeps the literal source numbering c.2433_2436delGGAG; at the TCIRG1 legacy shift -60 the expected c. is c.2373_2376delGGAG
+TCIRG1	c.1442_1444del	TCIRG1_T0013	literal	A	record keeps the literal source numbering c.1442_1444delACA; at the TCIRG1 legacy shift -60 the expected c. is c.1382_1384delACA
+WAS	c.364del	WAS_W0005	literal	A	record keeps the literal source numbering c.364delC; at the WAS legacy shift -34 the expected c. is c.330delC
