@@ -2,7 +2,8 @@
 build_source_errors.py
 ======================
 Classifies the source changes behind the inconsistent final pairs (Step10_Audit/audit_pairs.tsv),
-plus the named residuals, as suspected IDbases source errors and writes refs/source_errors.tsv.
+plus the named residuals, as suspected IDbases source errors and writes private/source_errors.tsv
+(git-ignored: record-level candidates are not published until the curator has reviewed them).
 
 Each distinct source change (gene, g., c., p.) is tested on the gene's MANE Select CDS at shift 0
 and at the gene's verified legacy shift (refs/legacy_shift_evidence.tsv), and on every cached
@@ -23,11 +24,11 @@ or g./c. type conflict is a source error regardless. our_record_wrong marks a li
 a verified-shift gene whose source c. at that shift places the source p. position. severity is low
 when only the frameshift stop count or only the source g. differs, high otherwise.
 
-refs/source_errors.tsv holds the candidates for review (status candidate): every source change of
+private/source_errors.tsv holds the candidates for review (status candidate): every source change of
 the rows with a genuine source issue (pipeline_fault_possible no, or an intrinsic conflict).
 
 Usage:
-    python Utilities/build_source_errors.py --scan <scan_changes.tsv> [--out refs/source_errors.tsv] [--report-dir <dir>]
+    python Utilities/build_source_errors.py --scan <scan_changes.tsv> [--out private/source_errors.tsv] [--report-dir <dir>]
 """
 
 import argparse
@@ -71,7 +72,7 @@ def transcript_store(genbank_dir):
 
 ap = argparse.ArgumentParser(description=__doc__.split("\n\n")[0])
 ap.add_argument("--scan", type=Path, required=True)
-ap.add_argument("--out", type=Path, default=SC / "refs" / "source_errors.tsv")
+ap.add_argument("--out", type=Path, default=SC.parents[1] / "private" / "source_errors.tsv")
 ap.add_argument("--report-dir", type=Path, default=None)
 args = ap.parse_args()
 with open(os.environ.get("CONFIG", SC / "config" / "config.yaml"), encoding="utf-8") as f:

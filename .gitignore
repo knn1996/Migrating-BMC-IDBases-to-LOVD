@@ -145,3 +145,6 @@ protein_only_variants.csv
 
 # ---- Local archive of superseded / legacy material ----
 99_Archive/
+
+# ---- Private curator material (record-level, not published) ----
+private/

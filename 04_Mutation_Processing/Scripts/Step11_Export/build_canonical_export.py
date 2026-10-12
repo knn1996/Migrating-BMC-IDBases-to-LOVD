@@ -9,7 +9,7 @@ canonical_export.tsv   one row per final patient-variant pair (lovd_flat_with_pa
                        (c.=)"). Values copied from the final table are byte-equal to it.
 review_workbook_for_mauno.xlsx
                        README, Review_tier (every Review pair), Suspected_source_errors
-                       (docs/agents/source_errors_for_mauno.csv) and Counts.
+                       (private/source_errors_for_mauno.csv) and Counts.
 
 Allele, phase and zygosity come from the pair's own source change (source_change_id: gene |
 accession | allele | g. | c.) and the source units of the individual (audit_variants.tsv):
@@ -147,7 +147,8 @@ def build(out_dir):
     for f in final:
         if f["transcriptid"] in mane_name:
             gene_name.setdefault(f["_gene"].strip().upper(), mane_name[f["transcriptid"]])
-    se = {r["source_change_id"]: r for r in read_tsv(SCRIPTS / "refs" / "source_errors.tsv")}
+    se_path = REPO / "private" / "source_errors.tsv"
+    se = {r["source_change_id"]: r for r in read_tsv(se_path) if r.get("status") == "confirmed"} if se_path.exists() else {}
     rows, checks = [], Counter()
     for f in final:
         if f["review_reason"] == NO_CHANGE:
@@ -175,7 +176,7 @@ def build(out_dir):
             "allele": sid.split("|")[2] if sid else "", "zygosity": zyg, "phase": phase, "phase_partners": partners,
             "assembly": "GRCh38", "nmd_call": nmd.get((f["_gene"], f["_dedup_key"]), ""),
             "published_as": unit["source_systematic_name"] if unit else "",
-            "source_error": "candidate" if e else "", "source_error_category": e.get("category", ""),
+            "source_error": "confirmed" if e else "", "source_error_category": e.get("category", ""),
             "source_error_severity": e.get("severity", ""),
             "genetic_origin": "", "effect": "",
             "metadata_flag": "" if f["Individual/Gender"].strip() in ("", "M", "F") else "sex field garbled (multi-individual string)",
@@ -253,7 +254,7 @@ def workbook(out_dir, final, rows, units):
                        u["src_g"] if u else "", u["src_c"] if u else "", u["src_p"] if u else "",
                        f["transcriptid"], f["VariantOnTranscript/DNA"], f["VariantOnTranscript/Protein"],
                        plain_reason(f, log), ""])
-    src_all = list(csv.reader(open(REPO / "docs" / "agents" / "source_errors_for_mauno.csv", encoding="utf-8-sig")))
+    src_all = list(csv.reader(open(REPO / "private" / "source_errors_for_mauno.csv", encoding="utf-8-sig")))
     head = src_all[0]
     by_change = defaultdict(set)
     for r in rows:

@@ -80,7 +80,8 @@ in lovd_flat_with_patients_final.tsv with individual_id = GENE_accession:
                   n = start (absolute stop numbering) equals final p.(XnTer).
                   E2 insertion as dup: an ins whose right flank is the dup start, with the
                   dup length and the dup end residues as first and last inserted residues.
-    source error  refs/source_errors.tsv (Utilities/build_source_errors.py) lists suspected IDbases
+    source error  private/source_errors.tsv (Utilities/build_source_errors.py; git-ignored, absent
+                  in a fresh clone, when every source-error column is left empty) lists suspected IDbases
                   source errors by source_change_id. It never changes a pair label: a pair whose
                   source changes are all listed counts in pairs_source_error (split by category and
                   severity, and pairs_source_error_our_record_wrong when our kept record is also
@@ -152,7 +153,7 @@ COUNT_KEYS = ["gains", "regressions", "protein_good_to_bad", "protein_bad_to_goo
 UNCHECKABLE = ["no_final_p", "unlinked", "source_error", "no_source_p", "not_comparable"]
 EQUIVALENCES = ["E1", "E2"]
 SOURCE_ERRORS = frozenset()
-SOURCE_ERRORS_TSV = SCRIPTS / "refs" / "source_errors.tsv"
+SOURCE_ERRORS_TSV = SCRIPTS.parents[1] / "private" / "source_errors.tsv"
 SOURCE_ERROR_CATEGORIES = ["notation", "c_p_mismatch", "g_c_mismatch", "exon_boundary", "ref_base_mismatch"]
 SOURCE_ERROR_SEVERITIES = ["high", "low"]
 DEDUP_CAPTURE = (
@@ -654,12 +655,20 @@ def build_pairs(var, final, audit, links, coherence):
 
 def load_source_errors(path):
     if not Path(path).exists():
-        return {}
+        print(f"note: {path} not found; source_error columns are left empty")
+        return None
     t = read_tsv(path)
     return {r["source_change_id"]: r for r in t.to_dict("records")}
 
 
+SOURCE_ERROR_COLS = (["pairs_source_error"] + [f"pairs_source_error__{c}" for c in SOURCE_ERROR_CATEGORIES]
+                     + [f"pairs_source_error__{s}" for s in SOURCE_ERROR_SEVERITIES]
+                     + ["pairs_source_error_our_record_wrong", "pair_consistency_excl_source_error_pct", "protein_source_error"])
+
+
 def source_error_metrics(var, pairs, table, bad_p):
+    if table is None:
+        return {c: "" for c in SOURCE_ERROR_COLS}
     m = {}
     flagged, excluded = [], []
     for sids, label in zip(pairs["source_change_ids"], pairs["label"]):
