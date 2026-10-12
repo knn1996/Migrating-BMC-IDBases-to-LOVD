@@ -38,7 +38,8 @@ Pipeline (Snakemake 9.27, env `snakemake`, run from 04_Mutation_Processing/Scrip
 | 5 | R2 track resolution | 89.98% | 96.20% | 96.41% | 23 | 6,456 | 73.69% |
 | 6 | dedup transcript split + stage-2 links + accession fix | 89.98% | 96.20% | 96.65% | 8 | 6,441 | 73.69% |
 | 7 | Track B c./p. coherence | 89.98% | 96.20% | 96.65% | 8 | 6,441 | 100.00% |
-Coherence ruler: 3fc3b8a (code), 4c7c6b1 (history). Run 6: dcde390, 9e0e2b7, f6de49d, d82a5c5, 7543cbb (rescue), aa6c043 (history). Run 7: 0c255fe (code), 1e12fd6 (primary), d6b09bb (rescue), 3b4cc34 (history, run_id 20261012_d6b09bb). Nothing pushed.
+| 8 | legacy c. numbering remap | 89.98% | 98.19% | 98.66% | 8 | 6,441 | 100.00% |
+Coherence ruler: 3fc3b8a (code), 4c7c6b1 (history). Run 6: dcde390, 9e0e2b7, f6de49d, d82a5c5, 7543cbb (rescue), aa6c043 (history). Run 7: 0c255fe (code), 1e12fd6 (primary), d6b09bb (rescue), 3b4cc34 (history, run_id 20261012_d6b09bb). Run 8: 12945a1 (rescue grouping fix), f786738 (code), 50833c3 (primary), f64272c (rescue), 3de036a (history, run_id 20261012_f64272c). Nothing pushed.
 
 ## Fixed so far
 1. Extraction: compound-het alleles, glued records, brackets (Run 1)
@@ -60,7 +61,11 @@ Measurement: count definitions, precision metric, own-source-change ruler, c./p.
 - NMD fetched 59 GenBank records (146 → 205 files). Real outputs = offline replay byte for byte.
 - Note: lovd_review_final.xlsx needs openpyxl (missing in the base env; only affects offline replays).
 
-## Run 8 scoping (report-only, 2026-10-12; scratch /tmp/claude-1000/run8_*)
+## Run 8 — DONE (legacy c. numbering remap)
+- Result: BAD→GOOD 107, regressions 0, inconsistent 183 → 73, 114 pairs re-keyed (0 lost). Live: 56 Track B + 16 rescue Mutalyzer, 32 VV.
+- Accepted residuals: AICDA A0031/A0032, TCIRG1 T0021 (source p. for long in-frame indels → source_error candidates); TCIRG1 T0004 FS_STOP_DIFF; WAS W0009 consistent by E1 at pair level but unit-level protein_check ignores equivalences (ledger gap).
+
+### Run 8 scoping notes (report-only, 2026-10-12; scratch /tmp/claude-1000/run8_*)
 - 114 of 183 inconsistent pairs (80 changes) fixable by a verified gene-wide shift (≥2 independent changes; MANE pos = source c. + k): AICDA −76, RAG1 −112, TCIRG1 −60, WAS −34, C9 −4, RAG2 −1201, CIITA −138, RFXAP −116, C2 −36, RFX5 −161, CFH −73, C3 −60, C5 −12, LYST −189, IL7R −22, CD40L −59, IGLL1 −118. 72 pairs carry the literal legacy c.; 41 come from Track A errors.
 - ADA (6 pairs): over-remap. Source c. is already MANE; the pipeline's offset path shifts it by −95. A different bug.
 - Excluded: JAK3 isoform (−167 codons), C1QB (no common shift on MANE), CYBB band artifact, 4 k=0 stop/type cases.
@@ -75,7 +80,8 @@ Measurement: count definitions, precision metric, own-source-change ruler, c./p.
 - Token hygiene: /clear both sessions after each recorded run.
 - Committed: 12945a1 (rescue grouping fix; 77 augmented allele labels corrected, finals unchanged), f786738 (Run 8 code). Primary: 56 live Track B Mutalyzer queries approved.
 
-## Next after Run 7
+## Next after Run 8
+0. ADA over-remap (NEXT): hard-coded CODING_OFFSET {"ADA": -95} in generate_mutalyzer_input_NM.py shifts source c. that is already MANE numbering (6 pairs, 4 changes).
 1. Run 8 — Legacy c. numbering remap (~70 pairs; RAG1 +112, AICDA +76, CFH +73, TCIRG1 +60, WAS 34–36, LYST 190, RFXAP 116) + ADA over-remap. Needs Utilities/translation_test.py (draft, uncommitted): forecast missing transcripts first (fetch = network step), per-gene shift verified when ≥2 independent changes reconcile (C1QB −2 codons, RFX5 −40 codons are isoform numbering), include small frameshifts/in-frame indels, one shared remap function for c. tracks and rescue. ~25 queries + transcripts. Also yields source_error flags.
 2. Run 9 — MANE normalization of the ~200 records still off exact MANE after Run 7 (Track A on pick_mane fallback transcripts, Track C non-MANE NMs, VariantValidator/rescue). Recompute scope and forecast. First find why pick_mane never matches MANE_SELECT (needs 1 live raw Mutalyzer response; user runs it). Only IGHG2 has no MANE Select (ELA2 = ELANE NM_001972.4). Keep originals in alt_descriptions.
 3. Patient metadata: extract_patient_metadata.py glued-record bug (metadata flags ~3,147).
