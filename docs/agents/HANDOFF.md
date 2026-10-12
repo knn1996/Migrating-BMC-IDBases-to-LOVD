@@ -73,6 +73,7 @@ Measurement: count definitions, precision metric, own-source-change ruler, c./p.
 - User decisions: grouping fix is a separate code commit first (byte-identical on Run 7); queries staged: 56 Track B Mutalyzer in the primary run, then re-forecast rescue (≤16 Mutalyzer, ≤16 VV) for separate approval.
 - ADA −95 comes from hard-coded CODING_OFFSET in generate_mutalyzer_input_NM.py (for the ADA run).
 - Token hygiene: /clear both sessions after each recorded run.
+- Committed: 12945a1 (rescue grouping fix; 77 augmented allele labels corrected, finals unchanged), f786738 (Run 8 code). Primary: 56 live Track B Mutalyzer queries approved.
 
 ## Next after Run 7
 1. Run 8 — Legacy c. numbering remap (~70 pairs; RAG1 +112, AICDA +76, CFH +73, TCIRG1 +60, WAS 34–36, LYST 190, RFXAP 116) + ADA over-remap. Needs Utilities/translation_test.py (draft, uncommitted): forecast missing transcripts first (fetch = network step), per-gene shift verified when ≥2 independent changes reconcile (C1QB −2 codons, RFX5 −40 codons are isoform numbering), include small frameshifts/in-frame indels, one shared remap function for c. tracks and rescue. ~25 queries + transcripts. Also yields source_error flags.
@@ -90,6 +91,7 @@ Measurement: count definitions, precision metric, own-source-change ruler, c./p.
 - Track C (NM_IDRefseq): KEEP — only track for 10 genes, 403 units at ~99% consistency.
 - Infrastructure: scripts as rule inputs; audit_pairs.tsv in the rescue audit rule.
 - VariO frameshift term; remove hard-coded "131 IDbases".
+- Export allele: final tables carry no allele (dedup keeps the representative's allele_num; build_lovd_flat drops it). Take per-pair allele from augmented_merged_variants via source_change_id.
 - Export fields: Screening (?/DNA), Genetic_origin, Effect, r.(?), Published as (source bracket notation), allele field from phase_group + phase-known (cis/trans/unknown; LOVD stores in-cis changes as separate variants linked by allele), individual_id, alt_descriptions, confidence_tier, OMIM.
 
 ## Questions for Mauno
