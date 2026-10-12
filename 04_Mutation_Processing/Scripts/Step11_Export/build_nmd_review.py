@@ -30,7 +30,9 @@ CALLS = {
 }
 COLS = ["gene", "mane_transcript", "c_hgvs", "source_c", "source_p", "mutalyzer_p", "ptc_codon",
         "last_coding_exon_junction_c", "distance_to_junction_nt", "nmd_call", "proposed_r", "proposed_p",
-        "flags", "n_patients", "accessions"]
+        "flags", "n_patients", "accessions", "confidence_tier", "review_note"]
+TIER_RANK = {"A": 0, "B": 1, "Review": 2}
+LITERAL_NOTE = "; the NMD call is computed on our c., which is probably wrong."
 E_THRESHOLD = 50
 BORDERLINE = 5
 START_PROXIMAL = 150
@@ -47,6 +49,9 @@ def main():
     pairs = {(r["individual_id"], r["dedup_key"]): r for r in E.read_tsv(E.OUT_ROOT / "Step8_Rescue" / "resolution_pairs.tsv")}
     units = E.Units(E.read_tsv(E.OUT_ROOT / "Step10_Audit" / "audit_variants.tsv"))
     alias = {r["gene"].strip().upper(): r["alias"].strip() for r in csv.DictReader(open(E.OUT_ROOT / "alias.csv", encoding="utf-8"))}
+    log = {}
+    for x in E.read_tsv(E.OUT_ROOT / "Step8_Rescue" / "resolution_log.tsv"):
+        log.setdefault((x["individual_id"], x["kept"]), x)
     members = defaultdict(list)
     for f in final:
         members[(f["_gene"], f["_dedup_key"])].append(f)
@@ -74,6 +79,15 @@ def main():
         if r["ptc_c"] and int(float(r["ptc_c"])) <= START_PROXIMAL and "start_proximal" not in flags:
             flags.append("start_proximal")
         predicted = call == "NMD_predicted"
+        tiers = [f["confidence_tier"] for f in fs if f["confidence_tier"]]
+        tier = max(tiers, key=TIER_RANK.get) if tiers else ""
+        notes = []
+        for f in fs:
+            if f["confidence_tier"] == "Review":
+                n = E.plain_reason(f, log)
+                if f["review_reason"].startswith("record keeps the literal"):
+                    n += LITERAL_NOTE
+                notes.append(n)
         rows.append({
             "gene": alias.get(r["_gene"].strip().upper(), r["_gene"]),
             "mane_transcript": r["transcriptid"], "c_hgvs": r["VariantOnTranscript/DNA"],
@@ -85,6 +99,7 @@ def main():
             "proposed_p": "p.0?" if predicted else r["protein_current"],
             "flags": ";".join(flags), "n_patients": len({f["Individual/ID"] for f in fs}),
             "accessions": ";".join(sorted({f["Individual/ID"].split("_", 1)[1] for f in fs})),
+            "confidence_tier": tier, "review_note": " | ".join(dict.fromkeys(notes)),
             "_order": 0 if predicted else 1,
         })
     rows.sort(key=lambda x: (x["_order"], x["gene"], x["c_hgvs"]))
@@ -94,6 +109,7 @@ def main():
         w.writeheader()
         w.writerows(rows)
     print(f"rows {len(rows)}:", dict(Counter(x["nmd_call"] for x in rows)))
+    print("tiers:", dict(Counter(x["confidence_tier"] for x in rows)), "| literal-numbering rows:", sum(LITERAL_NOTE.strip() in x["review_note"] for x in rows))
     print("borderline:", sum("borderline" in x["flags"] for x in rows), "| start_proximal:", sum("start_proximal" in x["flags"] for x in rows))
     print("PTC variants not assessable (not listed):", dict(skipped))
 
