@@ -1,0 +1,134 @@
+gene	accession	allele	change	fate_prev	fate_now	fate_detail_prev	fate_detail_now	protein_check_prev	protein_check_now	individual_id	variant_key	track_prev	track_now	pair_label_prev	pair_label_now
+AICDA	A0001	1+2	gain;protein_check_change	KNOWN_UNRESOLVED	IN_FINAL	RESCUABLE_AUTO:ENOSELECTORFOUND	traced_through_pipeline		MATCH						
+AICDA	A0002	1+2	gain;protein_check_change	NOT_REGISTERED	IN_FINAL	accession_absent_from_final	traced_through_pipeline		MATCH						
+AICDA	A0003	1+2	gain;protein_check_change	NOT_REGISTERED	IN_FINAL	accession_absent_from_final	traced_through_pipeline		MATCH						
+AICDA	A0004	1+2	gain;protein_check_change	KNOWN_UNRESOLVED	IN_FINAL	RESCUABLE_AUTO:ENOSELECTORFOUND	traced_through_pipeline		MATCH						
+AICDA	A0005	1+2	gain;protein_check_change	NOT_REGISTERED	IN_FINAL	accession_absent_from_final	traced_through_pipeline		MATCH						
+AICDA	A0006	1+2	gain;protein_check_change	KNOWN_UNRESOLVED	IN_FINAL	RESCUABLE_AUTO:ENOSELECTORFOUND	traced_through_pipeline		MATCH						
+AICDA	A0007	1+2	gain;protein_check_change	NOT_REGISTERED	IN_FINAL	accession_absent_from_final	traced_through_pipeline		MATCH						
+AICDA	A0008	1+2	gain;protein_check_change	KNOWN_UNRESOLVED	IN_FINAL	RESCUABLE_AUTO:ENOSELECTORFOUND	traced_through_pipeline		MATCH						
+AICDA	A0011	1+2	gain;protein_check_change	KNOWN_UNRESOLVED	IN_FINAL	RESCUABLE_AUTO:ENOSELECTORFOUND	traced_through_pipeline		MATCH						
+AICDA	A0012	1+2	gain;protein_check_change	NOT_REGISTERED	IN_FINAL	accession_absent_from_final	traced_through_pipeline		MATCH						
+AICDA	A0027	1+2	gain;protein_check_change	KNOWN_UNRESOLVED	IN_FINAL	RESCUABLE_AUTO:ENOSELECTORFOUND	traced_through_pipeline		MATCH						
+AICDA	A0028	1+2	gain;protein_check_change	NOT_REGISTERED	IN_FINAL	accession_absent_from_final	traced_through_pipeline		MATCH						
+AICDA	A0031	2	gain;protein_check_change	KNOWN_UNRESOLVED	IN_FINAL	RESCUABLE_AUTO:ENOSELECTORFOUND	traced_through_pipeline		MATCH						
+AICDA	A0032	2	gain;protein_check_change	NOT_REGISTERED	IN_FINAL	allele_absent_accession_present	traced_through_pipeline		MATCH						
+AIRE	A0006	1	gain;protein_check_change	NOT_REGISTERED	IN_FINAL	accession_absent_from_final	traced_through_pipeline		MATCH						
+AIRE	A0008	1	gain;protein_check_change	NOT_REGISTERED	IN_FINAL	accession_absent_from_final	traced_through_pipeline		MATCH						
+AIRE	A0008	2	fate_detail_change	NOT_REGISTERED	NOT_REGISTERED	accession_absent_from_final	allele_absent_accession_present								
+CD40	T0001	1+2	gain;protein_check_change	KNOWN_UNRESOLVED	IN_FINAL	RESCUABLE_AUTO:ENOSELECTORFOUND	traced_through_pipeline		MATCH						
+CD40	T0002	1+2	gain;protein_check_change	KNOWN_UNRESOLVED	IN_FINAL	RESCUABLE_AUTO:ENOSELECTORFOUND	traced_through_pipeline		MATCH						
+CD40	T0003	1+2	gain;protein_check_change	NOT_REGISTERED	IN_FINAL	accession_absent_from_final	traced_through_pipeline		MATCH						
+CFH	H0001	1	gain;protein_check_change	KNOWN_UNRESOLVED	IN_FINAL	RESCUABLE_AUTO:ENOSELECTORFOUND	traced_through_pipeline		MATCH						
+CFH	H0001	2	gain;protein_check_change	KNOWN_UNRESOLVED	IN_FINAL	RESCUABLE_AUTO:ENOSELECTORFOUND	traced_through_pipeline		MATCH						
+CFH	H0002	1+2	gain;protein_check_change	KNOWN_UNRESOLVED	IN_FINAL	RESCUABLE_AUTO:ENOSELECTORFOUND	traced_through_pipeline		MATCH						
+CFH	H0003	1+2	gain;protein_check_change	NOT_REGISTERED	IN_FINAL	accession_absent_from_final	traced_through_pipeline		MATCH						
+CFH	H0004	1+2	gain;protein_check_change	KNOWN_UNRESOLVED	IN_FINAL	RESCUABLE_AUTO:ENOSELECTORFOUND	traced_through_pipeline		MATCH						
+CFH	H0005	1+2	gain;protein_check_change	NOT_REGISTERED	IN_FINAL	accession_absent_from_final	traced_through_pipeline		MATCH						
+CFH	H0006	1+2	gain;protein_check_change	NOT_REGISTERED	IN_FINAL	accession_absent_from_final	traced_through_pipeline		MATCH						
+CFH	H0007	1	gain;protein_check_change	KNOWN_UNRESOLVED	IN_FINAL	RESCUABLE_AUTO:ENOSELECTORFOUND	traced_through_pipeline		MATCH						
+CFH	H0008	1	gain;protein_check_change	KNOWN_UNRESOLVED	IN_FINAL	RESCUABLE_AUTO:ENOSELECTORFOUND	traced_through_pipeline		MATCH						
+CFH	H0010	1	gain;protein_check_change	KNOWN_UNRESOLVED	IN_FINAL	RESCUABLE_AUTO:ENOSELECTORFOUND	traced_through_pipeline		MATCH						
+CFH	H0013	1	gain;protein_check_change	KNOWN_UNRESOLVED	IN_FINAL	RESCUABLE_AUTO:ENOSELECTORFOUND	traced_through_pipeline		MATCH						
+CFH	H0014	1	gain;protein_check_change	NOT_REGISTERED	IN_FINAL	accession_absent_from_final	traced_through_pipeline		MATCH						
+CFH	H0015	1	gain;protein_check_change	NOT_REGISTERED	IN_FINAL	accession_absent_from_final	traced_through_pipeline		MATCH						
+CFH	H0018	1	gain;protein_check_change	KNOWN_UNRESOLVED	IN_FINAL	RESCUABLE_AUTO:ENOSELECTORFOUND	traced_through_pipeline		MATCH						
+CFH	H0019	1	gain;protein_check_change	KNOWN_UNRESOLVED	IN_FINAL	RESCUABLE_AUTO:ENOSELECTORFOUND	traced_through_pipeline		MATCH						
+CFH	H0020	1	gain;protein_check_change	NOT_REGISTERED	IN_FINAL	accession_absent_from_final	traced_through_pipeline		MATCH						
+CFH	H0021	1	gain;protein_check_change	NOT_REGISTERED	IN_FINAL	accession_absent_from_final	traced_through_pipeline		MATCH						
+CFH	H0022	1	gain;protein_check_change	NOT_REGISTERED	IN_FINAL	accession_absent_from_final	traced_through_pipeline		MATCH						
+CFH	H0023	1	gain;protein_check_change	NOT_REGISTERED	IN_FINAL	accession_absent_from_final	traced_through_pipeline		MATCH						
+CFH	H0025	1	gain;protein_check_change	KNOWN_UNRESOLVED	IN_FINAL	RESCUABLE_AUTO:ENOSELECTORFOUND	traced_through_pipeline		MATCH						
+CIITA	M0002	1+2	protein_check_change	IN_FINAL	IN_FINAL	traced_through_pipeline	traced_through_pipeline	NOT_COMPARABLE	MATCH_INFRAME						
+CIITA	M0006	1+2	gain;protein_check_change	KNOWN_UNRESOLVED	IN_FINAL	UNRESCUABLE_DATA_ERROR:ESEQUENCEMISMATCH	traced_through_pipeline		MATCH						
+IKBKG	I0001	0	gain;protein_check_change	KNOWN_UNRESOLVED	IN_FINAL	RESCUABLE_AUTO:ENOSELECTORFOUND	traced_through_pipeline		MATCH						
+IKBKG	I0002	0	gain;protein_check_change	KNOWN_UNRESOLVED	IN_FINAL	RESCUABLE_AUTO:ENOSELECTORFOUND	traced_through_pipeline		MATCH						
+IKBKG	I0003	0	gain;protein_check_change	KNOWN_UNRESOLVED	IN_FINAL	RESCUABLE_AUTO:ENOSELECTORFOUND	traced_through_pipeline		MATCH						
+IKBKG	I0004	0	gain;protein_check_change	KNOWN_UNRESOLVED	IN_FINAL	RESCUABLE_AUTO:ENOSELECTORFOUND	traced_through_pipeline		MATCH						
+IKBKG	I0008	0	gain;protein_check_change	KNOWN_UNRESOLVED	IN_FINAL	RESCUABLE_AUTO:ENOSELECTORFOUND	traced_through_pipeline		MATCH						
+IKBKG	I0009	0	gain;protein_check_change	KNOWN_UNRESOLVED	IN_FINAL	RESCUABLE_AUTO:ENOSELECTORFOUND	traced_through_pipeline		MATCH						
+IKBKG	I0010	0	gain;protein_check_change	KNOWN_UNRESOLVED	IN_FINAL	RESCUABLE_AUTO:ENOSELECTORFOUND	traced_through_pipeline		MATCH						
+IKBKG	I0011	0	gain;protein_check_change	NOT_REGISTERED	IN_FINAL	accession_absent_from_final	traced_through_pipeline		MATCH						
+IKBKG	I0012	0	gain;protein_check_change	NOT_REGISTERED	IN_FINAL	accession_absent_from_final	traced_through_pipeline		MATCH						
+IKBKG	I0013	0	gain;protein_check_change	KNOWN_UNRESOLVED	IN_FINAL	RESCUABLE_AUTO:ENOSELECTORFOUND	traced_through_pipeline		MATCH						
+IKBKG	I0014	0	gain;protein_check_change	NOT_REGISTERED	IN_FINAL	accession_absent_from_final	traced_through_pipeline		MATCH						
+IKBKG	I0015	0	gain;protein_check_change	KNOWN_UNRESOLVED	IN_FINAL	RESCUABLE_AUTO:ENOSELECTORFOUND	traced_through_pipeline		MATCH						
+IKBKG	I0017	0	gain;protein_check_change	NOT_REGISTERED	IN_FINAL	accession_absent_from_final	traced_through_pipeline		MATCH						
+IKBKG	I0018	0	protein_check_change	IN_FINAL	IN_FINAL	traced_through_pipeline	traced_through_pipeline	NOT_COMPARABLE	MATCH_FS						
+LYST	C0006	1+2	fate_detail_change	IN_FINAL	IN_FINAL	protein_matched_key_changed	traced_through_pipeline	MATCH_FS	MATCH_FS						
+LYST	C0014	1+2	protein_check_change	IN_FINAL	IN_FINAL	traced_through_pipeline	traced_through_pipeline	FINAL_NO_P	MATCH_FS						
+LYST	C0015	1+2	fate_detail_change	IN_FINAL	IN_FINAL	protein_matched_key_changed	traced_through_pipeline	MATCH_FS	MATCH_FS						
+RAG1	R0001	2	gain;protein_check_change	KNOWN_UNRESOLVED	IN_FINAL	UNRESCUABLE_DATA_ERROR:ESEQUENCEMISMATCH	traced_through_pipeline		MATCH						
+RAG1	R0002	1+2	gain;protein_check_change	KNOWN_UNRESOLVED	IN_FINAL	UNRESCUABLE_DATA_ERROR:ESEQUENCEMISMATCH	traced_through_pipeline		MATCH						
+RAG1	R0003	2	gain;protein_check_change	KNOWN_UNRESOLVED	IN_FINAL	UNRESCUABLE_DATA_ERROR:ESEQUENCEMISMATCH	traced_through_pipeline		MATCH						
+RAG1	R0005	1	gain;protein_check_change	KNOWN_UNRESOLVED	IN_FINAL	UNRESCUABLE_DATA_ERROR:ESEQUENCEMISMATCH	traced_through_pipeline		MATCH						
+RAG1	R0007	1	protein_check_change	IN_FINAL	IN_FINAL	traced_through_pipeline	traced_through_pipeline	NOT_COMPARABLE	MATCH_FS						
+RAG1	R0008	1+2	gain;protein_check_change	NOT_REGISTERED	IN_FINAL	accession_absent_from_final	traced_through_pipeline		MATCH						
+RAG1	R0009	2	gain;protein_check_change	KNOWN_UNRESOLVED	IN_FINAL	UNRESCUABLE_DATA_ERROR:ESEQUENCEMISMATCH	traced_through_pipeline		MATCH						
+RAG1	R0010	1+2	gain;protein_check_change	KNOWN_UNRESOLVED	IN_FINAL	UNRESCUABLE_DATA_ERROR:ESEQUENCEMISMATCH	traced_through_pipeline		MATCH						
+RAG1	R0011	1	protein_check_change	IN_FINAL	IN_FINAL	traced_through_pipeline	traced_through_pipeline	NOT_COMPARABLE	MATCH_FS						
+RAG1	R0011	2	protein_check_change	IN_FINAL	IN_FINAL	traced_through_pipeline	traced_through_pipeline	NOT_COMPARABLE	MATCH_FS						
+RAG1	R0014	2	gain;protein_check_change	KNOWN_UNRESOLVED	IN_FINAL	UNRESCUABLE_DATA_ERROR:ESEQUENCEMISMATCH	traced_through_pipeline		MATCH						
+RAG1	R0018	1	gain;protein_check_change	KNOWN_UNRESOLVED	IN_FINAL	UNRESCUABLE_DATA_ERROR:ESEQUENCEMISMATCH	traced_through_pipeline		MATCH						
+RAG1	R0019	1+2	protein_check_change	IN_FINAL	IN_FINAL	traced_through_pipeline	traced_through_pipeline	NOT_COMPARABLE	MATCH_FS						
+RAG1	R0021	1	protein_check_change	IN_FINAL	IN_FINAL	traced_through_pipeline	traced_through_pipeline	NOT_COMPARABLE	MATCH_FS						
+RAG1	R0022	1	protein_check_change	IN_FINAL	IN_FINAL	traced_through_pipeline	traced_through_pipeline	NOT_COMPARABLE	MATCH_FS						
+RAG1	R0024	1	gain;protein_check_change	KNOWN_UNRESOLVED	IN_FINAL	UNRESCUABLE_DATA_ERROR:ESEQUENCEMISMATCH	traced_through_pipeline		MATCH						
+RAG1	R0026	1+2	gain;protein_check_change	KNOWN_UNRESOLVED	IN_FINAL	UNRESCUABLE_DATA_ERROR:ESEQUENCEMISMATCH	traced_through_pipeline		MATCH						
+RAG1	R0027	2	gain;protein_check_change	NOT_REGISTERED	IN_FINAL	allele_absent_accession_present	traced_through_pipeline		MATCH						
+RAG1	R0028	1+2	protein_check_change	IN_FINAL	IN_FINAL	traced_through_pipeline	traced_through_pipeline	NOT_COMPARABLE	MATCH_FS						
+RAG1	R0029	1+2	gain;protein_check_change	KNOWN_UNRESOLVED	IN_FINAL	UNRESCUABLE_DATA_ERROR:ESEQUENCEMISMATCH	traced_through_pipeline		MATCH						
+RAG1	R0033	1	gain;protein_check_change	KNOWN_UNRESOLVED	IN_FINAL	UNRESCUABLE_DATA_ERROR:ESEQUENCEMISMATCH	traced_through_pipeline		MATCH						
+RAG1	R0034	2	gain;protein_check_change	KNOWN_UNRESOLVED	IN_FINAL	UNRESCUABLE_DATA_ERROR:ESEQUENCEMISMATCH	traced_through_pipeline		MATCH						
+RAG1	R0035	1+2	gain;protein_check_change	NOT_REGISTERED	IN_FINAL	accession_absent_from_final	traced_through_pipeline		MATCH						
+RAG1	R0036	1	protein_check_change	IN_FINAL	IN_FINAL	traced_through_pipeline	traced_through_pipeline	NOT_COMPARABLE	MATCH_FS						
+RAG1	R0036	2	gain;protein_check_change	KNOWN_UNRESOLVED	IN_FINAL	UNRESCUABLE_DATA_ERROR:ESEQUENCEMISMATCH	traced_through_pipeline		MATCH						
+RAG1	R0038	1	gain;protein_check_change	NOT_REGISTERED	IN_FINAL	allele_absent_accession_present	traced_through_pipeline		MATCH						
+RAG1	R0039	1	gain;protein_check_change	NOT_REGISTERED	IN_FINAL	allele_absent_accession_present	traced_through_pipeline		MATCH						
+RAG1	R0041	1+2	protein_check_change	IN_FINAL	IN_FINAL	traced_through_pipeline	traced_through_pipeline	NOT_COMPARABLE	MATCH_FS						
+RAG2	S0001	1+2	gain;protein_check_change	KNOWN_UNRESOLVED	IN_FINAL	UNRESCUABLE_DATA_ERROR:ESEQUENCEMISMATCH	traced_through_pipeline		MATCH						
+RAG2	S0002	1+2	gain;protein_check_change	NOT_REGISTERED	IN_FINAL	accession_absent_from_final	traced_through_pipeline		MATCH						
+RAG2	S0003	1	gain;protein_check_change	KNOWN_UNRESOLVED	IN_FINAL	UNRESCUABLE_DATA_ERROR:ESEQUENCEMISMATCH	traced_through_pipeline		MATCH						
+RAG2	S0004	1	gain;protein_check_change	KNOWN_UNRESOLVED	IN_FINAL	UNRESCUABLE_DATA_ERROR:ESEQUENCEMISMATCH	traced_through_pipeline		MATCH						
+RAG2	S0004	2	gain;protein_check_change	KNOWN_UNRESOLVED	IN_FINAL	UNRESCUABLE_DATA_ERROR:ESEQUENCEMISMATCH	traced_through_pipeline		MATCH						
+RAG2	S0005	1	protein_check_change	IN_FINAL	IN_FINAL	traced_through_pipeline	traced_through_pipeline	NOT_COMPARABLE	MATCH_INFRAME						
+RAG2	S0007	1	gain;protein_check_change	KNOWN_UNRESOLVED	IN_FINAL	UNRESCUABLE_DATA_ERROR:ESEQUENCEMISMATCH	traced_through_pipeline		MATCH						
+RAG2	S0008	1+2	gain;protein_check_change	NOT_REGISTERED	IN_FINAL	accession_absent_from_final	traced_through_pipeline		MATCH						
+RAG2	S0009	1+2	gain;protein_check_change	KNOWN_UNRESOLVED	IN_FINAL	UNRESCUABLE_DATA_ERROR:ESEQUENCEMISMATCH	traced_through_pipeline		MATCH						
+RAG2	S0012	1+2	gain;protein_check_change	KNOWN_UNRESOLVED	IN_FINAL	UNRESCUABLE_DATA_ERROR:ESEQUENCEMISMATCH	traced_through_pipeline		MATCH						
+RAG2	S0014	1+2	gain;protein_check_change	NOT_REGISTERED	IN_FINAL	accession_absent_from_final	traced_through_pipeline		MATCH						
+RAG2	S0015	1+2	gain;protein_check_change	NOT_REGISTERED	IN_FINAL	accession_absent_from_final	traced_through_pipeline		MATCH						
+RAG2	S0016	1+2	gain;protein_check_change	KNOWN_UNRESOLVED	IN_FINAL	UNRESCUABLE_DATA_ERROR:ESEQUENCEMISMATCH	traced_through_pipeline		MATCH						
+RAG2	S0017	2	gain;protein_check_change	NOT_REGISTERED	IN_FINAL	allele_absent_accession_present	traced_through_pipeline		MATCH						
+RFXAP	R0001	1+2	protein_bad_to_good	IN_FINAL	IN_FINAL	traced_through_pipeline	traced_through_pipeline	DIFFERENT	MATCH_FS						
+RFXAP	R0002	1+2	gain;protein_check_change	KNOWN_UNRESOLVED	IN_FINAL	RESCUABLE_AUTO:ENOSELECTORFOUND	traced_through_pipeline		MATCH						
+RFXAP	R0003	1+2	protein_bad_to_good	IN_FINAL	IN_FINAL	traced_through_pipeline	traced_through_pipeline	DIFFERENT	MATCH_FS						
+RFXAP	R0004	1+2	protein_bad_to_good	IN_FINAL	IN_FINAL	traced_through_pipeline	traced_through_pipeline	DIFFERENT	MATCH_FS						
+RFXAP	R0005	1+2	gain;protein_check_change	NOT_REGISTERED	IN_FINAL	accession_absent_from_final	traced_through_pipeline		MATCH						
+TAP2	T0001	1+2	gain;protein_check_change	KNOWN_UNRESOLVED	IN_FINAL	UNRESCUABLE_DATA_ERROR:ESEQUENCEMISMATCH	traced_through_pipeline		MATCH						
+TAP2	T0002	1+2	gain;protein_check_change	KNOWN_UNRESOLVED	IN_FINAL	UNRESCUABLE_DATA_ERROR:ESEQUENCEMISMATCH	traced_through_pipeline		MATCH_FS						
+TAP2	T0003	1+2	gain;protein_check_change	NOT_REGISTERED	IN_FINAL	accession_absent_from_final	traced_through_pipeline		MATCH_FS						
+TCIRG1	T0006	1+2	gain;protein_check_change	KNOWN_UNRESOLVED	IN_FINAL	RESCUABLE_AUTO:ENOSELECTORFOUND	traced_through_pipeline		MATCH						
+TCIRG1	T0007	1	gain;protein_check_change	KNOWN_UNRESOLVED	IN_FINAL	RESCUABLE_AUTO:ENOSELECTORFOUND	traced_through_pipeline		MATCH						
+TCIRG1	T0008	1+2	gain;protein_check_change	KNOWN_UNRESOLVED	IN_FINAL	RESCUABLE_AUTO:ENOSELECTORFOUND	traced_through_pipeline		MATCH						
+TCIRG1	T0016	1+2	gain;protein_check_change	KNOWN_UNRESOLVED	IN_FINAL	RESCUABLE_AUTO:ENOSELECTORFOUND	traced_through_pipeline		MATCH						
+TCIRG1	T0017	1	gain;protein_check_change	NOT_REGISTERED	IN_FINAL	accession_absent_from_final	traced_through_pipeline		MATCH						
+TCIRG1	T0017	2	fate_detail_change	NOT_REGISTERED	NOT_REGISTERED	accession_absent_from_final	allele_absent_accession_present								
+TCIRG1	T0018	1+2	gain;protein_check_change	KNOWN_UNRESOLVED	IN_FINAL	RESCUABLE_AUTO:ENOSELECTORFOUND	traced_through_pipeline		MATCH						
+TCIRG1	T0019	1+2	gain;protein_check_change	KNOWN_UNRESOLVED	IN_FINAL	RESCUABLE_AUTO:ENOSELECTORFOUND	traced_through_pipeline		MATCH						
+TCIRG1	T0020	1+2	gain;protein_check_change	NOT_REGISTERED	IN_FINAL	accession_absent_from_final	traced_through_pipeline		MATCH						
+TCIRG1	T0029	1	gain;protein_check_change	KNOWN_UNRESOLVED	IN_FINAL	RESCUABLE_AUTO:ENOSELECTORFOUND	traced_through_pipeline		MATCH						
+WAS	W0003	0	gain;protein_check_change	KNOWN_UNRESOLVED	IN_FINAL	RESCUABLE_AUTO:ENOSELECTORFOUND	traced_through_pipeline		MATCH						
+WAS	W0004	0	gain;protein_check_change	KNOWN_UNRESOLVED	IN_FINAL	RESCUABLE_AUTO:ENOSELECTORFOUND	traced_through_pipeline		MATCH						
+WAS	W0006	0	gain;protein_check_change	KNOWN_UNRESOLVED	IN_FINAL	RESCUABLE_AUTO:ENOSELECTORFOUND	traced_through_pipeline		MATCH						
+WAS	W0015	0	gain;protein_check_change	KNOWN_UNRESOLVED	IN_FINAL	RESCUABLE_AUTO:ENOSELECTORFOUND	traced_through_pipeline		MATCH_FS						
+WAS	W0016	0	gain;protein_check_change	KNOWN_UNRESOLVED	IN_FINAL	RESCUABLE_AUTO:ENOSELECTORFOUND	traced_through_pipeline		MATCH						
+WAS	W0017	0	gain;protein_check_change	KNOWN_UNRESOLVED	IN_FINAL	RESCUABLE_AUTO:ENOSELECTORFOUND	traced_through_pipeline		MATCH						
+WAS	W0021	0	gain;protein_check_change	KNOWN_UNRESOLVED	IN_FINAL	RESCUABLE_AUTO:ENOSELECTORFOUND	traced_through_pipeline		MATCH						
+WAS	W0023	0	gain;protein_check_change	KNOWN_UNRESOLVED	IN_FINAL	RESCUABLE_AUTO:ENOSELECTORFOUND	traced_through_pipeline		MATCH						
+WAS	W0024	0	gain;protein_check_change	NOT_REGISTERED	IN_FINAL	accession_absent_from_final	traced_through_pipeline		MATCH						
+WAS	W0026	0	gain;protein_check_change	KNOWN_UNRESOLVED	IN_FINAL	RESCUABLE_AUTO:ENOSELECTORFOUND	traced_through_pipeline		MATCH						
+WAS	W0027	0	gain;protein_check_change	KNOWN_UNRESOLVED	IN_FINAL	RESCUABLE_AUTO:ENOSELECTORFOUND	traced_through_pipeline		MATCH						
+RFXAP	R0001		pair_inconsistent_removed							RFXAP_R0001	c.484del	variantvalidator		inconsistent:DIFFERENT	absent
+RFXAP	R0003		pair_inconsistent_removed							RFXAP_R0003	c.484del	variantvalidator		inconsistent:DIFFERENT	absent
+RFXAP	R0004		pair_inconsistent_removed							RFXAP_R0004	c.484del	variantvalidator		inconsistent:DIFFERENT	absent
