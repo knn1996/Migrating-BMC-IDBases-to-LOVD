@@ -39,7 +39,8 @@ Pipeline (Snakemake 9.27, env `snakemake`, run from 04_Mutation_Processing/Scrip
 | 6 | dedup transcript split + stage-2 links + accession fix | 89.98% | 96.20% | 96.65% | 8 | 6,441 | 73.69% |
 | 7 | Track B c./p. coherence | 89.98% | 96.20% | 96.65% | 8 | 6,441 | 100.00% |
 | 8 | legacy c. numbering remap | 89.98% | 98.19% | 98.66% | 8 | 6,441 | 100.00% |
-Coherence ruler: 3fc3b8a (code), 4c7c6b1 (history). Run 6: dcde390, 9e0e2b7, f6de49d, d82a5c5, 7543cbb (rescue), aa6c043 (history). Run 7: 0c255fe (code), 1e12fd6 (primary), d6b09bb (rescue), 3b4cc34 (history, run_id 20261012_d6b09bb). Run 8: 12945a1 (rescue grouping fix), f786738 (code), 50833c3 (primary), f64272c (rescue), 3de036a (history, run_id 20261012_f64272c). Nothing pushed.
+| 9 | ADA per-change remap | 90.14% | 98.33% | 98.8% | 8 | 6,452 | 100.00% |
+Coherence ruler: 3fc3b8a (code), 4c7c6b1 (history). Run 6: dcde390, 9e0e2b7, f6de49d, d82a5c5, 7543cbb (rescue), aa6c043 (history). Run 7: 0c255fe (code), 1e12fd6 (primary), d6b09bb (rescue), 3b4cc34 (history, run_id 20261012_d6b09bb). Run 8: 12945a1 (rescue grouping fix), f786738 (code), 50833c3 (primary), f64272c (rescue), 3de036a (history, run_id 20261012_f64272c). Run 9: bdc9ac4 (code), d1879a9 (primary), 30fdf51 (rescue), 9c4c1f9 (history, run_id 20261012_30fdf51). Nothing pushed.
 
 ## Fixed so far
 1. Extraction: compound-het alleles, glued records, brackets (Run 1)
@@ -88,8 +89,8 @@ Measurement: count definitions, precision metric, own-source-change ruler, c./p.
 - Most shift-class units in mixed genes are already right via Track A genomic mapping.
 
 ## Next after Run 8
-0. ADA over-remap (IN PROGRESS; 7 pending-query regressions accepted; budget Track B ≤4, rescue Mutalyzer ≤12, VV ≤24): hard-coded CODING_OFFSET {"ADA": -95} in generate_mutalyzer_input_NM.py shifts source c. that is already MANE numbering (6 pairs, 4 changes).
-0b. Run 10 candidate: extend the legacy remap with the full scan (110 recoverable units, new mixed genes, AIRE Track A record).
+0. (done, Run 9) ADA: CODING_OFFSET removed; 81 −95 entries + 1 manual + 11 excluded in legacy_remap. Gains 11, BAD→GOOD 7, regressions 0, consistency 98.80%. Live: 3+8 Mutalyzer, 16 VV.
+0b. NEXT — Run 10 candidate: extend the legacy remap with the full scan (110 recoverable units, new mixed genes, AIRE Track A record).
 1. (done) Run 8 — Legacy c. numbering remap (~70 pairs; RAG1 +112, AICDA +76, CFH +73, TCIRG1 +60, WAS 34–36, LYST 190, RFXAP 116) + ADA over-remap. Needs Utilities/translation_test.py (draft, uncommitted): forecast missing transcripts first (fetch = network step), per-gene shift verified when ≥2 independent changes reconcile (C1QB −2 codons, RFX5 −40 codons are isoform numbering), include small frameshifts/in-frame indels, one shared remap function for c. tracks and rescue. ~25 queries + transcripts. Also yields source_error flags.
 2. Run 9 — MANE normalization of the ~200 records still off exact MANE after Run 7 (Track A on pick_mane fallback transcripts, Track C non-MANE NMs, VariantValidator/rescue). Recompute scope and forecast. First find why pick_mane never matches MANE_SELECT (needs 1 live raw Mutalyzer response; user runs it). Only IGHG2 has no MANE Select (ELA2 = ELANE NM_001972.4). Keep originals in alt_descriptions.
 3. Patient metadata: extract_patient_metadata.py glued-record bug (metadata flags ~3,147).
