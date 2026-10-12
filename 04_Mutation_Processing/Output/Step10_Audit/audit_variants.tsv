@@ -71,18 +71,18 @@ SH2D1A	A0132	0	g.IVS3-32ATTTT>, c.347-32ATTTT>, r.347-32_347-1ins	g.IVS3-32ATTTT
 ADA	A0052	1+2	g.4037C>T, c.102C>T, p.Q3X	g.4037C>T	c.102C>T	p.Q3X	IN_FINAL	traced_through_pipeline	c.7C>T	p.(Gln3Ter)	mane_remap	MATCH	0	1	all	yes
 ADA	A0053	1	g.4037C>T, c.102C>T, p.Q3X	g.4037C>T	c.102C>T	p.Q3X	IN_FINAL	traced_through_pipeline	c.7C>T	p.(Gln3Ter)	mane_remap	MATCH	0	2	all	yes
 ADA	A0053	2	g.29885G>A, c.520G>A, p.R142Q	g.29885G>A	c.520G>A	p.R142Q	IN_FINAL	traced_through_pipeline	c.425G>A	p.(Arg142Gln)	mane_remap	MATCH	0	2	all	yes
-ADA	A0068	1+2	g.1135C>T, c.7C>T, r.7c>u, p.Gln3X	g.1135C>T	c.7C>T	p.Gln3X	KNOWN_UNRESOLVED	RESCUABLE_AUTO:ENOSELECTORFOUND						1	all	yes
-ADA	A0069	1+2	g.1135C>T, c.7C>T, r.7c>u, p.Gln3X	g.1135C>T	c.7C>T	p.Gln3X	NOT_REGISTERED	accession_absent_from_final						1	all	no
-ADA	A0070	1+2	g.1135C>T, c.7C>T, r.7c>u, p.Gln3X	g.1135C>T	c.7C>T	p.Gln3X	NOT_REGISTERED	accession_absent_from_final						1	all	no
-ADA	A0071	1+2	g.1135C>T, c.7C>T, r.7c>u, p.Gln3X	g.1135C>T	c.7C>T	p.Gln3X	NOT_REGISTERED	accession_absent_from_final						1	all	no
-ADA	A0072	1+2	g.1135C>T, c.7C>T, r.7c>u, p.Gln3X	g.1135C>T	c.7C>T	p.Gln3X	NOT_REGISTERED	accession_absent_from_final						1	all	no
+ADA	A0068	1+2	g.1135C>T, c.7C>T, r.7c>u, p.Gln3X	g.1135C>T	c.7C>T	p.Gln3X	IN_FINAL	traced_through_pipeline	c.7C>T	p.(Gln3Ter)	mane_remap	MATCH	0	1	all	yes
+ADA	A0069	1+2	g.1135C>T, c.7C>T, r.7c>u, p.Gln3X	g.1135C>T	c.7C>T	p.Gln3X	IN_FINAL	traced_through_pipeline	c.7C>T	p.(Gln3Ter)	mane_remap	MATCH	0	1	all	yes
+ADA	A0070	1+2	g.1135C>T, c.7C>T, r.7c>u, p.Gln3X	g.1135C>T	c.7C>T	p.Gln3X	IN_FINAL	traced_through_pipeline	c.7C>T	p.(Gln3Ter)	mane_remap	MATCH	0	1	all	yes
+ADA	A0071	1+2	g.1135C>T, c.7C>T, r.7c>u, p.Gln3X	g.1135C>T	c.7C>T	p.Gln3X	IN_FINAL	traced_through_pipeline	c.7C>T	p.(Gln3Ter)	mane_remap	MATCH	0	1	all	yes
+ADA	A0072	1+2	g.1135C>T, c.7C>T, r.7c>u, p.Gln3X	g.1135C>T	c.7C>T	p.Gln3X	IN_FINAL	traced_through_pipeline	c.7C>T	p.(Gln3Ter)	mane_remap	MATCH	0	1	all	yes
 ADA	A0037	1	g.19239C>G, c.138C>G, p.H15D	g.19239C>G	c.138C>G	p.H15D	IN_FINAL	traced_through_pipeline	c.43C>G	p.(His15Asp)	mane_remap	MATCH	0	2	all	yes
 ADA	A0037	2	g.29009T>C, c.415T>C, p.L107P	g.29009T>C	c.415T>C	p.L107P	IN_FINAL	traced_through_pipeline	c.320T>C	p.(Leu107Pro)	mane_remap	MATCH	0	2	all	yes
 ADA	A0010	1+2	g.19254G>A, c.153G>A, p.G20R	g.19254G>A	c.153G>A	p.G20R	IN_FINAL	traced_through_pipeline	c.58G>A	p.(Gly20Arg)	mane_remap	MATCH	0	1	all	yes
 ADA	A0001	1	g.28909G>T, c.315G>T, p.G74C	g.28909G>T	c.315G>T	p.G74C	IN_FINAL	traced_through_pipeline	c.220G>T	p.(Gly74Cys)	mane_remap	MATCH	0	2	all	yes
 ADA	A0001	2	g.32464G>A, c.741G>A, p.G216R	g.32464G>A	c.741G>A	p.G216R	IN_FINAL	traced_through_pipeline	c.646G>A	p.(Gly216Arg)	mane_remap	MATCH	0	2	all	yes
-ADA	A0065	1	g.28910G>A, c.221G>A, r.221g>a, p.Gly74Asp	g.28910G>A	c.221G>A	p.Gly74Asp	KNOWN_UNRESOLVED	RESCUABLE_AUTO:ENOSELECTORFOUND						2	all	yes
-ADA	A0065	2	g.32609G>A, c.715G>A, r.715g>a, p.Gly239Ser	g.32609G>A	c.715G>A	p.Gly239Ser	IN_FINAL	traced_through_pipeline	c.620G>A	p.(Ser207Asn)	mane_remap	DIFFERENT		2	all	yes
+ADA	A0065	1	g.28910G>A, c.221G>A, r.221g>a, p.Gly74Asp	g.28910G>A	c.221G>A	p.Gly74Asp	IN_FINAL	traced_through_pipeline	c.221G>A	p.(Gly74Asp)	mane_remap	MATCH	0	2	all	yes
+ADA	A0065	2	g.32609G>A, c.715G>A, r.715g>a, p.Gly239Ser	g.32609G>A	c.715G>A	p.Gly239Ser	IN_FINAL	traced_through_pipeline	c.715G>A	p.(Gly239Ser)	mane_remap	MATCH	0	2	all	yes
 ADA	A0048	1	g.28910G>T, c.316G>T, p.G74V	g.28910G>T	c.316G>T	p.G74V	IN_FINAL	traced_through_pipeline	c.221G>T	p.(Gly74Val)	mane_remap	MATCH	0	2	all	yes
 ADA	A0048	2	g.35110C>T, c.1081C>T, p.A329V	g.35110C>T	c.1081C>T	p.A329V	IN_FINAL	traced_through_pipeline	c.986C>T	p.(Ala329Val)	mane_remap	MATCH	0	2	all	yes
 ADA	A0012	1+2	g.28915C>T, c.321C>T, p.R76W	g.28915C>T	c.321C>T	p.R76W	IN_FINAL	traced_through_pipeline	c.226C>T	p.(Arg76Trp)	mane_remap	MATCH	0	1	all	yes
@@ -104,16 +104,16 @@ ADA	A0009	2	g.32461G>A, c.738G>A, p.A215T	g.32461G>A	c.738G>A	p.A215T	IN_FINAL	t
 ADA	A0011	1	g.28991G>A, c.397G>A, p.R101Q	g.28991G>A	c.397G>A	p.R101Q	IN_FINAL	traced_through_pipeline	c.302G>A	p.(Arg101Gln)	mane_remap	MATCH	0	2	all	yes
 ADA	A0011	2	g.IVS1+1G>C	g.IVS1+1G>C			NOT_REGISTERED	allele_absent_accession_present						2	all	yes
 ADA	A0035	1+2	g.29000C>T, c.406C>T, p.P104L	g.29000C>T	c.406C>T	p.P104L	IN_FINAL	traced_through_pipeline	c.311C>T	p.(Pro104Leu)	mane_remap	MATCH	0	1	all	yes
-ADA	A0061	1	g.29003delA, c.314delA, r.314dela, p.His105fsX28	g.29003delA	c.314delA	p.His105fsX28	KNOWN_UNRESOLVED	RESCUABLE_AUTO:ENOSELECTORFOUND						2	all	yes
-ADA	A0061	2	g.32598G>A, c.704G>A, r.704g>a, p.Arg235Gln	g.32598G>A	c.704G>A	p.Arg235Gln	IN_FINAL	traced_through_pipeline	c.609G>A	p.(=)	mane_remap	DIFFERENT		2	all	yes
-ADA	A0063	1	g.29003delA, c.314delA, r.314dela, p.His105fsX28	g.29003delA	c.314delA	p.His105fsX28	NOT_REGISTERED	allele_absent_accession_present						2	all	yes
-ADA	A0063	2	g.34437T>C, c.929T>C, r.929u>c, p.Met310Thr	g.34437T>C	c.929T>C	p.Met310Thr	IN_FINAL	traced_through_pipeline	c.834T>C	p.(=)	mane_remap	DIFFERENT		2	all	yes
+ADA	A0061	1	g.29003delA, c.314delA, r.314dela, p.His105fsX28	g.29003delA	c.314delA	p.His105fsX28	IN_FINAL	traced_through_pipeline	c.314del	p.(His105ProfsTer28)	mane_remap	MATCH_FS	0	2	all	yes
+ADA	A0061	2	g.32598G>A, c.704G>A, r.704g>a, p.Arg235Gln	g.32598G>A	c.704G>A	p.Arg235Gln	IN_FINAL	traced_through_pipeline	c.704G>A	p.(Arg235Gln)	mane_remap	MATCH	0	2	all	yes
+ADA	A0063	1	g.29003delA, c.314delA, r.314dela, p.His105fsX28	g.29003delA	c.314delA	p.His105fsX28	IN_FINAL	traced_through_pipeline	c.314del	p.(His105ProfsTer28)	mane_remap	MATCH_FS	0	2	all	yes
+ADA	A0063	2	g.34437T>C, c.929T>C, r.929u>c, p.Met310Thr	g.34437T>C	c.929T>C	p.Met310Thr	IN_FINAL	traced_through_pipeline	c.929T>C	p.(Met310Thr)	mane_remap	MATCH	0	2	all	yes
 ADA	A0015	1	g.29009T>C, c.415T>C, p.L107P	g.29009T>C	c.415T>C	p.L107P	IN_FINAL	traced_through_pipeline	c.320T>C	p.(Leu107Pro)	mane_remap	MATCH	0	2	all	yes
 ADA	A0015	2	g.32449C>T, c.726C>T, p.R211C	g.32449C>T	c.726C>T	p.R211C	IN_FINAL	traced_through_pipeline	c.631C>T	p.(Arg211Cys)	mane_remap	MATCH	0	2	all	yes
 ADA	A0029	1	g.29009T>C, c.415T>C, p.L107P	g.29009T>C	c.415T>C	p.L107P	IN_FINAL	traced_through_pipeline	c.320T>C	p.(Leu107Pro)	mane_remap	MATCH	0	1	all	yes
 ADA	A0030	1	g.29009T>C, c.415T>C, p.L107P	g.29009T>C	c.415T>C	p.L107P	IN_FINAL	traced_through_pipeline	c.320T>C	p.(Leu107Pro)	mane_remap	MATCH	0	1	all	yes
-ADA	A0064	1	g.29044C>T, c.355C>T, r.355c>u, p.Gln119X	g.29044C>T	c.355C>T	p.Gln119X	KNOWN_UNRESOLVED	RESCUABLE_AUTO:ENOSELECTORFOUND						2	all	yes
-ADA	A0064	2	g.32598G>A, c.704G>A, r.704g>a, p.Arg235Gln	g.32598G>A	c.704G>A	p.Arg235Gln	IN_FINAL	traced_through_pipeline	c.609G>A	p.(=)	mane_remap	DIFFERENT		2	all	yes
+ADA	A0064	1	g.29044C>T, c.355C>T, r.355c>u, p.Gln119X	g.29044C>T	c.355C>T	p.Gln119X	IN_FINAL	traced_through_pipeline	c.355C>T	p.(Gln119Ter)	mane_remap	MATCH	0	2	all	yes
+ADA	A0064	2	g.32598G>A, c.704G>A, r.704g>a, p.Arg235Gln	g.32598G>A	c.704G>A	p.Arg235Gln	IN_FINAL	traced_through_pipeline	c.704G>A	p.(Arg235Gln)	mane_remap	MATCH	0	2	all	yes
 ADA	A0005	1+2	g.29827delG, c.462delG, p.D123fsX132	g.29827delG	c.462delG	p.D123fsX132	IN_FINAL	traced_through_pipeline	c.367del	p.(Asp123ThrfsTer10)	mane_remap	MATCH_FS	0	1	all	yes
 ADA	A0008	1	g.29837C>A, c.472C>A, p.P126Q	g.29837C>A	c.472C>A	p.P126Q	IN_FINAL	traced_through_pipeline	c.377C>A	p.(Pro126Gln)	mane_remap	MATCH	0	2	all	yes
 ADA	A0008	2	g.32464G>A, c.741G>A, p.G216R	g.32464G>A	c.741G>A	p.G216R	IN_FINAL	traced_through_pipeline	c.646G>A	p.(Gly216Arg)	mane_remap	MATCH	0	2	all	yes
@@ -138,8 +138,8 @@ ADA	A0056	1	g.29927G>A, c.562G>A, p.R156H	g.29927G>A	c.562G>A	p.R156H	IN_FINAL	t
 ADA	A0056	2	g.IVS5+1G>A, c.EX5del, p.E121fsX131	g.IVS5+1G>A	c.EX5del	p.E121fsX131	NOT_REGISTERED	source_incomplete_notation						2	all	yes
 ADA	A0045	1	g.29927G>A, c.562G>A, p.R156H	g.29927G>A	c.562G>A	p.R156H	IN_FINAL	traced_through_pipeline	c.467G>A	p.(Arg156His)	mane_remap	MATCH	0	2	all	yes
 ADA	A0045	2	g.34484G>A, c.1070_1071insATGA, p.N326fsX334	g.34484G>A	c.1070_1071insATGA	p.N326fsX334	IN_FINAL	traced_through_pipeline	c.976_977insTGAA	p.(Asn326MetfsTer9)	mane_remap	MATCH_FS	0	2	all	yes
-ADA	A0073	1	g.27156G>A, c.467G>A, r.467g>a, p.Arg156His	g.27156G>A	c.467G>A	p.Arg156His	KNOWN_UNRESOLVED	RESCUABLE_AUTO:ENOSELECTORFOUND						2	all	yes
-ADA	A0073	2	g.29831delG, c.704delG, r.704delg, p.Leu236fsX75	g.29831delG	c.704delG	p.Leu236fsX75	IN_FINAL	traced_through_pipeline	c.610del	p.(Ala204LeufsTer2)	mane_remap	DIFFERENT	-32	2	all	yes
+ADA	A0073	1	g.27156G>A, c.467G>A, r.467g>a, p.Arg156His	g.27156G>A	c.467G>A	p.Arg156His	IN_FINAL	traced_through_pipeline	c.467G>A	p.(Arg156His)	mane_remap	MATCH	0	2	all	yes
+ADA	A0073	2	g.29831delG, c.704delG, r.704delg, p.Leu236fsX75	g.29831delG	c.704delG	p.Leu236fsX75	IN_FINAL	traced_through_pipeline	c.705del	p.(Leu236TrpfsTer75)	mane_remap	MATCH_FS	0	2	all	yes
 ADA	A0042	1	g.31226G>A, c.624G>A, p.V177M	g.31226G>A	c.624G>A	p.V177M	IN_FINAL	traced_through_pipeline	c.529G>A	p.(Val177Met)	mane_remap	MATCH	0	2	all	yes
 ADA	A0042	2	g.35143_35144delAG, c.1114_1115delAG, p.K340fsX348	g.35143_35144delAG	c.1114_1115delAG	p.K340fsX348	IN_FINAL	traced_through_pipeline	c.1021_1022del	p.(Arg341GlyfsTer8)	mane_remap	MATCH_FS	1	2	all	yes
 ADA	A0038	1	g.31233C>A, c.631C>A, p.A179D	g.31233C>A	c.631C>A	p.A179D	IN_FINAL	traced_through_pipeline	c.536C>A	p.(Ala179Asp)	mane_remap	MATCH	0	2	all	yes
@@ -158,12 +158,12 @@ ADA	A0047	1	g.32464G>A, c.741G>A, p.G216R	g.32464G>A	c.741G>A	p.G216R	IN_FINAL	t
 ADA	A0047	2	g.IVS5+6T>A, c.EX5del, p.E121fsX131	g.IVS5+6T>A	c.EX5del	p.E121fsX131	NOT_REGISTERED	source_incomplete_notation						2	all	yes
 ADA	A0049	1	g.32467G>A, c.744G>A, p.E217K	g.32467G>A	c.744G>A	p.E217K	IN_FINAL	traced_through_pipeline	c.649G>A	p.(Glu217Lys)	mane_remap	MATCH	0	1	all	yes
 ADA	A0059	1+2	g.32592C>T, c.793C>T, p.T233I	g.32592C>T	c.793C>T	p.T233I	IN_FINAL	traced_through_pipeline	c.698C>T	p.(Thr233Ile)	mane_remap	MATCH	0	1	all	yes
-ADA	A0062	1	g.32598G>A, c.704G>A, r.704g>a, p.Arg235Gln	g.32598G>A	c.704G>A	p.Arg235Gln	IN_FINAL	traced_through_pipeline	c.609G>A	p.(=)	mane_remap	DIFFERENT		2	all	yes
-ADA	A0062	2	g.34437T>C, c.929T>C, r.929u>c, p.Met310Thr	g.34437T>C	c.929T>C	p.Met310Thr	IN_FINAL	traced_through_pipeline	c.834T>C	p.(=)	mane_remap	DIFFERENT		2	all	yes
+ADA	A0062	1	g.32598G>A, c.704G>A, r.704g>a, p.Arg235Gln	g.32598G>A	c.704G>A	p.Arg235Gln	IN_FINAL	traced_through_pipeline	c.704G>A	p.(Arg235Gln)	mane_remap	MATCH	0	2	all	yes
+ADA	A0062	2	g.34437T>C, c.929T>C, r.929u>c, p.Met310Thr	g.34437T>C	c.929T>C	p.Met310Thr	IN_FINAL	traced_through_pipeline	c.929T>C	p.(Met310Thr)	mane_remap	MATCH	0	2	all	yes
 ADA	A0040	1+2	g.32652G>C, c.853G>C, p.R253P	g.32652G>C	c.853G>C	p.R253P	IN_FINAL	traced_through_pipeline	c.758G>C	p.(Arg253Pro)	mane_remap	MATCH	0	1	all	yes
 ADA	A0027	1	g.32654C>T, c.855C>T, p.Q254X	g.32654C>T	c.855C>T	p.Q254X	IN_FINAL	traced_through_pipeline	c.760C>T	p.(Gln254Ter)	mane_remap	MATCH	0	2	all	yes
 ADA	A0027	2	g.35110C>T, c.1081C>T, p.A329V	g.35110C>T	c.1081C>T	p.A329V	IN_FINAL	traced_through_pipeline	c.986C>T	p.(Ala329Val)	mane_remap	MATCH	0	2	all	yes
-ADA	A0074	1+2	g.30148G>A, c.845G>A, r.845g>a, p.Arg282Gln	g.30148G>A	c.845G>A	p.Arg282Gln	KNOWN_UNRESOLVED	RESCUABLE_AUTO:ENOSELECTORFOUND						1	all	yes
+ADA	A0074	1+2	g.30148G>A, c.845G>A, r.845g>a, p.Arg282Gln	g.30148G>A	c.845G>A	p.Arg282Gln	IN_FINAL	traced_through_pipeline	c.845G>A	p.(Arg282Gln)	mane_remap	MATCH	0	1	all	yes
 ADA	A0025	1	g.34380C>T, c.967C>T, p.S291L	g.34380C>T	c.967C>T	p.S291L	IN_FINAL	traced_through_pipeline	c.872C>T	p.(Ser291Leu)	mane_remap	MATCH	0	2	all	yes
 ADA	A0025	2	g.35110C>T, c.1081C>T, p.A329V	g.35110C>T	c.1081C>T	p.A329V	IN_FINAL	traced_through_pipeline	c.986C>T	p.(Ala329Val)	mane_remap	MATCH	0	2	all	yes
 ADA	A0017	1+2	g.34398C>A, c.985C>A, p.P297Q	g.34398C>A	c.985C>A	p.P297Q	IN_FINAL	traced_through_pipeline	c.890C>A	p.(Pro297Gln)	mane_remap	MATCH	0	1	all	yes
@@ -174,12 +174,12 @@ ADA	A0034	1	g.34463_34467delGAAGA, c.1050_1054delGAAGA, p.E319fsX321	g.34463_344
 ADA	A0026	1+2	g.35110C>T, c.1081C>T, p.A329V	g.35110C>T	c.1081C>T	p.A329V	IN_FINAL	traced_through_pipeline	c.986C>T	p.(Ala329Val)	mane_remap	MATCH	0	1	all	yes
 ADA	A0020	1	g.35110C>T, c.1081C>T, p.A329V	g.35110C>T	c.1081C>T	p.A329V	IN_FINAL	traced_through_pipeline	c.986C>T	p.(Ala329Val)	mane_remap	MATCH	0	2	all	yes
 ADA	A0020	2	g.IVS3-2A>G, c.EX4del, p.G74_E121del	g.IVS3-2A>G	c.EX4del	p.G74_E121del	NOT_REGISTERED	source_incomplete_notation						2	all	yes
-ADA	A0050	1	g.16510G>A, c.95+1G>A, r.190_191insATAA, p.R32fsX31	g.16510G>A	c.95+1G>A	p.R32fsX31	KNOWN_UNRESOLVED	RESCUABLE_AUTO:ENOSELECTORFOUND						2	all	yes
-ADA	A0050	2	g.30081_30084delinsTGGAAGAGCAGATCTGG, c.781-3_781delinsTGGAAGAGCAGATCTGG, r.781_845del, p.Ile261fsX4	g.30081_30084delinsTGGAAGAGCAGATCTGG	c.781-3_781delinsTGGAAGAGCAGATCTGG	p.Ile261fsX4	KNOWN_UNRESOLVED	RESCUABLE_AUTO:ENOSELECTORFOUND						2	all	yes
+ADA	A0050	1	g.16510G>A, c.95+1G>A, r.190_191insATAA, p.R32fsX31	g.16510G>A	c.95+1G>A	p.R32fsX31	NOT_REGISTERED	accession_absent_from_final						2	all	no
+ADA	A0050	2	g.30081_30084delinsTGGAAGAGCAGATCTGG, c.781-3_781delinsTGGAAGAGCAGATCTGG, r.781_845del, p.Ile261fsX4	g.30081_30084delinsTGGAAGAGCAGATCTGG	c.781-3_781delinsTGGAAGAGCAGATCTGG	p.Ile261fsX4	NOT_REGISTERED	accession_absent_from_final						2	all	no
 ADA	A0051	1	g.16510G>A, c.95+1G>A, r.190_191insATAA, p.R32fsX31	g.16510G>A	c.95+1G>A	p.R32fsX31	NOT_REGISTERED	accession_absent_from_final						2	all	no
 ADA	A0051	2	g.30081_30084delinsTGGAAGAGCAGATCTGG, c.781-3_781delinsTGGAAGAGCAGATCTGG, r.781_845del, p.Ile261fsX4	g.30081_30084delinsTGGAAGAGCAGATCTGG	c.781-3_781delinsTGGAAGAGCAGATCTGG	p.Ile261fsX4	NOT_REGISTERED	accession_absent_from_final						2	all	no
 ADA	A0041	1+2	g.IVS10-34G>A	g.IVS10-34G>A			NOT_REGISTERED	accession_absent_from_final						1	all	no
-ADA	A0066	1+2	g.IVS11-15T>A, c.1112-15T>A, r.1112-15u>a	g.IVS11-15T>A	c.1112-15T>A		KNOWN_UNRESOLVED	RESCUABLE_AUTO:ENOSELECTORFOUND						1	all	yes
+ADA	A0066	1+2	g.IVS11-15T>A, c.1112-15T>A, r.1112-15u>a	g.IVS11-15T>A	c.1112-15T>A		NOT_REGISTERED	accession_absent_from_final						1	all	no
 ADA	A0067	1	g.IVS11-15T>A, c.1112-15T>A, r.1112-15u>a	g.IVS11-15T>A	c.1112-15T>A		NOT_REGISTERED	accession_absent_from_final						2	all	no
 ADA	A0067	2	g.IVS11-15TGAACCAACGAG>A, c.1112-15TGAACCAACGAG>A, r.1112-15ugaaccaacgag>a	g.IVS11-15TGAACCAACGAG>A	c.1112-15TGAACCAACGAG>A		NOT_REGISTERED	accession_absent_from_final						2	all	no
 AICDA	A0037	1+2	g.6292_6310delCCGGAGGAAGTTTCTTTAC, c.21_39delCCGGAGGAAGTTTCTTTAC, r.21_39delccggaggaaguuucuuuac, p.Arg8fsX19	g.6292_6310delCCGGAGGAAGTTTCTTTAC	c.21_39delCCGGAGGAAGTTTCTTTAC	p.Arg8fsX19	IN_FINAL	traced_through_pipeline	c.22_40del	p.(Arg8AsnfsTer19)	mane_remap	MATCH_FS	0	1	all	yes

@@ -1,20 +1,18 @@
 gene	accession	allele	source_systematic_name	src_g	src_c	src_p	fate	fate_detail	final_dedup_key	final_p	final_source_track	protein_check	protein_offset	n_source_alleles	stage_extracted	stage_processed
 NCF1	N0031	2	g.IVS1+1G>A	g.IVS1+1G>A			NOT_REGISTERED	allele_absent_accession_present						2	all	yes
 NCF1	N0032	2	g.IVS1+3G>T	g.IVS1+3G>T			NOT_REGISTERED	allele_absent_accession_present						2	all	yes
-ADA	A0069	1+2	g.1135C>T, c.7C>T, r.7c>u, p.Gln3X	g.1135C>T	c.7C>T	p.Gln3X	NOT_REGISTERED	accession_absent_from_final						1	all	no
-ADA	A0070	1+2	g.1135C>T, c.7C>T, r.7c>u, p.Gln3X	g.1135C>T	c.7C>T	p.Gln3X	NOT_REGISTERED	accession_absent_from_final						1	all	no
-ADA	A0071	1+2	g.1135C>T, c.7C>T, r.7c>u, p.Gln3X	g.1135C>T	c.7C>T	p.Gln3X	NOT_REGISTERED	accession_absent_from_final						1	all	no
-ADA	A0072	1+2	g.1135C>T, c.7C>T, r.7c>u, p.Gln3X	g.1135C>T	c.7C>T	p.Gln3X	NOT_REGISTERED	accession_absent_from_final						1	all	no
 ADA	A0039	2	g.IVS5+1G>A, c.EX5del, p.E121fsX131	g.IVS5+1G>A	c.EX5del	p.E121fsX131	NOT_REGISTERED	source_incomplete_notation						2	all	yes
 ADA	A0057	2	g.2430_5678del	g.2430_5678del			NOT_REGISTERED	source_incomplete_notation						3	all	yes
 ADA	A0011	2	g.IVS1+1G>C	g.IVS1+1G>C			NOT_REGISTERED	allele_absent_accession_present						2	all	yes
-ADA	A0063	1	g.29003delA, c.314delA, r.314dela, p.His105fsX28	g.29003delA	c.314delA	p.His105fsX28	NOT_REGISTERED	allele_absent_accession_present						2	all	yes
 ADA	A0056	2	g.IVS5+1G>A, c.EX5del, p.E121fsX131	g.IVS5+1G>A	c.EX5del	p.E121fsX131	NOT_REGISTERED	source_incomplete_notation						2	all	yes
 ADA	A0047	2	g.IVS5+6T>A, c.EX5del, p.E121fsX131	g.IVS5+6T>A	c.EX5del	p.E121fsX131	NOT_REGISTERED	source_incomplete_notation						2	all	yes
 ADA	A0020	2	g.IVS3-2A>G, c.EX4del, p.G74_E121del	g.IVS3-2A>G	c.EX4del	p.G74_E121del	NOT_REGISTERED	source_incomplete_notation						2	all	yes
+ADA	A0050	1	g.16510G>A, c.95+1G>A, r.190_191insATAA, p.R32fsX31	g.16510G>A	c.95+1G>A	p.R32fsX31	NOT_REGISTERED	accession_absent_from_final						2	all	no
+ADA	A0050	2	g.30081_30084delinsTGGAAGAGCAGATCTGG, c.781-3_781delinsTGGAAGAGCAGATCTGG, r.781_845del, p.Ile261fsX4	g.30081_30084delinsTGGAAGAGCAGATCTGG	c.781-3_781delinsTGGAAGAGCAGATCTGG	p.Ile261fsX4	NOT_REGISTERED	accession_absent_from_final						2	all	no
 ADA	A0051	1	g.16510G>A, c.95+1G>A, r.190_191insATAA, p.R32fsX31	g.16510G>A	c.95+1G>A	p.R32fsX31	NOT_REGISTERED	accession_absent_from_final						2	all	no
 ADA	A0051	2	g.30081_30084delinsTGGAAGAGCAGATCTGG, c.781-3_781delinsTGGAAGAGCAGATCTGG, r.781_845del, p.Ile261fsX4	g.30081_30084delinsTGGAAGAGCAGATCTGG	c.781-3_781delinsTGGAAGAGCAGATCTGG	p.Ile261fsX4	NOT_REGISTERED	accession_absent_from_final						2	all	no
 ADA	A0041	1+2	g.IVS10-34G>A	g.IVS10-34G>A			NOT_REGISTERED	accession_absent_from_final						1	all	no
+ADA	A0066	1+2	g.IVS11-15T>A, c.1112-15T>A, r.1112-15u>a	g.IVS11-15T>A	c.1112-15T>A		NOT_REGISTERED	accession_absent_from_final						1	all	no
 ADA	A0067	1	g.IVS11-15T>A, c.1112-15T>A, r.1112-15u>a	g.IVS11-15T>A	c.1112-15T>A		NOT_REGISTERED	accession_absent_from_final						2	all	no
 ADA	A0067	2	g.IVS11-15TGAACCAACGAG>A, c.1112-15TGAACCAACGAG>A, r.1112-15ugaaccaacgag>a	g.IVS11-15TGAACCAACGAG>A	c.1112-15TGAACCAACGAG>A		NOT_REGISTERED	accession_absent_from_final						2	all	no
 AICDA	A0002	1+2	g.6341C>T, c.146C>T, p.R24W	g.6341C>T	c.146C>T	p.R24W	NOT_REGISTERED	accession_absent_from_final						1	all	no

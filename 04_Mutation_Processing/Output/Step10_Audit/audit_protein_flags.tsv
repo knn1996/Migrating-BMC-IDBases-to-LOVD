@@ -1,12 +1,5 @@
 gene	accession	allele	source_systematic_name	src_g	src_c	src_p	fate	fate_detail	final_dedup_key	final_p	final_source_track	protein_check	protein_offset	n_source_alleles	stage_extracted	stage_processed
 NCF1	N0002	1	g.9966delG, c.514delG, p.E168fsX198	g.9966delG	c.514delG	p.E168fsX198	IN_FINAL	traced_through_pipeline	c.502del	p.(Glu168ArgfsTer19)	NG_IDRefseq	FS_STOP_DIFF	0	2	all	yes
-ADA	A0065	2	g.32609G>A, c.715G>A, r.715g>a, p.Gly239Ser	g.32609G>A	c.715G>A	p.Gly239Ser	IN_FINAL	traced_through_pipeline	c.620G>A	p.(Ser207Asn)	mane_remap	DIFFERENT		2	all	yes
-ADA	A0061	2	g.32598G>A, c.704G>A, r.704g>a, p.Arg235Gln	g.32598G>A	c.704G>A	p.Arg235Gln	IN_FINAL	traced_through_pipeline	c.609G>A	p.(=)	mane_remap	DIFFERENT		2	all	yes
-ADA	A0063	2	g.34437T>C, c.929T>C, r.929u>c, p.Met310Thr	g.34437T>C	c.929T>C	p.Met310Thr	IN_FINAL	traced_through_pipeline	c.834T>C	p.(=)	mane_remap	DIFFERENT		2	all	yes
-ADA	A0064	2	g.32598G>A, c.704G>A, r.704g>a, p.Arg235Gln	g.32598G>A	c.704G>A	p.Arg235Gln	IN_FINAL	traced_through_pipeline	c.609G>A	p.(=)	mane_remap	DIFFERENT		2	all	yes
-ADA	A0073	2	g.29831delG, c.704delG, r.704delg, p.Leu236fsX75	g.29831delG	c.704delG	p.Leu236fsX75	IN_FINAL	traced_through_pipeline	c.610del	p.(Ala204LeufsTer2)	mane_remap	DIFFERENT	-32	2	all	yes
-ADA	A0062	1	g.32598G>A, c.704G>A, r.704g>a, p.Arg235Gln	g.32598G>A	c.704G>A	p.Arg235Gln	IN_FINAL	traced_through_pipeline	c.609G>A	p.(=)	mane_remap	DIFFERENT		2	all	yes
-ADA	A0062	2	g.34437T>C, c.929T>C, r.929u>c, p.Met310Thr	g.34437T>C	c.929T>C	p.Met310Thr	IN_FINAL	traced_through_pipeline	c.834T>C	p.(=)	mane_remap	DIFFERENT		2	all	yes
 AICDA	A0031	1	g.7826_7834delTGCTCTTCC, c.252_260delTGCTCTTCC, p.L59del	g.7826_7834delTGCTCTTCC	c.252_260delTGCTCTTCC	p.L59del	IN_FINAL	traced_through_pipeline	c.177_185del	p.(Leu59_Leu62delinsPhe)	mane_remap	TYPE_DIFF_SAME_POS	0	2	all	yes
 AICDA	A0032	1	g.7826_7834delTGCTCTTCC, c.252_260delTGCTCTTCC, p.L59del	g.7826_7834delTGCTCTTCC	c.252_260delTGCTCTTCC	p.L59del	IN_FINAL	traced_through_pipeline	c.177_185del	p.(Leu59_Leu62delinsPhe)	mane_remap	TYPE_DIFF_SAME_POS	0	2	all	yes
 AIRE	A0082	2	g.5315_5350del, c.318_353del, p.S64del	g.5315_5350del	c.318_353del	p.S64del	IN_FINAL	traced_through_pipeline	c.191_226del	p.(Ser64_Asp76delinsTyr)	NG_IDRefseq	TYPE_DIFF_SAME_POS	0	2	all	yes

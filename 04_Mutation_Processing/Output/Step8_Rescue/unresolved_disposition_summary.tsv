@@ -1,6 +1,6 @@
 category	subcategory	count	pct_of_unresolved
-ENOSELECTORFOUND	nm_not_in_ng	578	70.4%
-ESEQUENCEMISMATCH	single_base_wrong	139	16.9%
+ENOSELECTORFOUND	nm_not_in_ng	573	70.2%
+ESEQUENCEMISMATCH	single_base_wrong	139	17.0%
 ESEQUENCEMISMATCH	single_base_complement	59	7.2%
 ESEQUENCEMISMATCH	completely_different	21	2.6%
 EINTRONIC	intronic_c_notation	12	1.5%
@@ -13,8 +13,8 @@ ESYNTAXUEOF	missing_inserted_sequence	1	0.1%
 OTHER	uncategorised	1	0.1%
 
 disposition		count	pct_of_unresolved
-RESCUABLE_AUTO		592	72.1%
-UNRESCUABLE_DATA_ERROR		222	27.0%
+RESCUABLE_AUTO		587	71.9%
+UNRESCUABLE_DATA_ERROR		222	27.2%
 RESCUABLE_MANUAL		5	0.6%
 UNRESCUABLE		1	0.1%
 UNKNOWN		1	0.1%
