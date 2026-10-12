@@ -1,36 +1,28 @@
 Individual/Gender	Individual/Origin/Geographic	Individual/Age	Individual/Remarks	Phenotype/Disease	Phenotype/Additional	Screening/Technique	chromosome	VariantOnGenome/DNA	VariantOnGenome/Remarks	Reference/PubMed_ID	Reference/Authors	Reference/Title	Reference/Location	transcriptid	VariantOnTranscript/DNA	VariantOnTranscript/RNA	VariantOnTranscript/Protein	_gene	_dedup_key	_patient_count	_accession_list	_mane_select	_source_track	_status	_variant_class
-							21	NC_000021.9:g.44289773C>T						NM_000383.4	c.769C>T	r.(769c>u)	p.(Arg257Ter)	AIRE	c.769C>T	122	A0001;A0002;A0003;A0004;A0005;A0007;A0009;A0010;A0012;A0013;A0014;A0016;A0017;A0020;A0021;A0043;A0044;A0063;A0064;A0065;A0066;A0067;A0072;A0073;A0074;A0083;A0084;A0085;A0096;A0097;A0098;A0099;A0100;A0101;A0102;A0103;A0104;A0106;A0107;A0108;A0109;A0110;A0111;A0112;A0113;A0114;A0115;A0116;A0117;A0118;A0119;A0120;A0121;A0122;A0126;A0127;A0128;A0129;A0130;A0132;A0157;A0158;A0159;A0160;A0161;A0162;A0165;A0166;A0167;A0168;A0169;A0170;A0171;A0172;A0173;A0174;A0175;A0176;A0177;A0179;A0180;A0181;A0182;A0183;A0184;A0185;A0197;A0198;A0200;A0207;A0208;A0212;A0213;A0214;A0216;A0217;A0218;A0219;A0220;A0221;A0222;A0223;A0224;A0225;A0226;A0227;A0228;A0252;A0258;A0259;A0260;A0261;A0262;A0263;A0264;A0269;A0270;A0271;A0272;A0273;A0274;A0275	MANE Select	NM_MANE	ok	substitution
-							21	NC_000021.9:g.44286671A>G						NM_000383.4	c.247A>G	r.(247a>g)	p.(Lys83Glu)	AIRE	c.247A>G	1	A0005	MANE Select	NG_IDRefseq	ok	substitution
-							21	NC_000021.9:g.44292400_44293003del						NM_000383.4	c.1094_1106del	r.(1094_1106del)	p.(Pro365ArgfsTer9)	AIRE	c.1094_1106del	51	A0009;A0015;A0017;A0018;A0019;A0020;A0021;A0029;A0036;A0037;A0038;A0039;A0040;A0041;A0042;A0045;A0047;A0048;A0049;A0050;A0051;A0052;A0053;A0054;A0055;A0056;A0057;A0058;A0059;A0060;A0061;A0062;A0065;A0066;A0075;A0076;A0077;A0078;A0079;A0080;A0081;A0082;A0083;A0084;A0090;A0091;A0092;A0102;A0105;A0124;A0131	MANE Select	NM_MANE	ok	deletion
+							21	NC_000021.9:g.44289773C>T						NM_000383.4	c.769C>T	r.(769c>u)	p.(Arg257Ter)	AIRE	c.769C>T	124	A0001;A0002;A0003;A0004;A0005;A0006;A0007;A0008;A0009;A0010;A0012;A0013;A0014;A0016;A0017;A0020;A0021;A0043;A0044;A0063;A0064;A0065;A0066;A0067;A0072;A0073;A0074;A0083;A0084;A0085;A0096;A0097;A0098;A0099;A0100;A0101;A0102;A0103;A0104;A0106;A0107;A0108;A0109;A0110;A0111;A0112;A0113;A0114;A0115;A0116;A0117;A0118;A0119;A0120;A0121;A0122;A0126;A0127;A0128;A0129;A0130;A0132;A0157;A0158;A0159;A0160;A0161;A0162;A0165;A0166;A0167;A0168;A0169;A0170;A0171;A0172;A0173;A0174;A0175;A0176;A0177;A0179;A0180;A0181;A0182;A0183;A0184;A0185;A0197;A0198;A0200;A0207;A0208;A0212;A0213;A0214;A0216;A0217;A0218;A0219;A0220;A0221;A0222;A0223;A0224;A0225;A0226;A0227;A0228;A0252;A0258;A0259;A0260;A0261;A0262;A0263;A0264;A0269;A0270;A0271;A0272;A0273;A0274;A0275	MANE Select	NM_MANE	ok	substitution
+							21	NC_000021.9:g.44286671A>G						NM_000383.4	c.247A>G	r.(247a>g)	p.(Lys83Glu)	AIRE	c.247A>G	1	A0005	MANE Select	NM_MANE	ok	substitution
 							21	NC_000021.9:g.44291182_44291194del						NM_000383.4	c.967_979del	r.(967_979del)	p.(Leu323SerfsTer51)	AIRE	c.967_979del	85	A0009;A0015;A0017;A0018;A0019;A0020;A0021;A0029;A0036;A0037;A0038;A0039;A0040;A0041;A0042;A0045;A0047;A0048;A0049;A0050;A0051;A0052;A0053;A0054;A0055;A0056;A0057;A0058;A0059;A0060;A0061;A0062;A0065;A0066;A0075;A0076;A0077;A0078;A0079;A0080;A0081;A0082;A0083;A0084;A0090;A0091;A0092;A0102;A0105;A0124;A0131;A0133;A0173;A0181;A0182;A0186;A0187;A0188;A0189;A0190;A0191;A0193;A0194;A0195;A0196;A0199;A0202;A0206;A0208;A0209;A0215;A0225;A0226;A0227;A0228;A0229;A0230;A0231;A0254;A0255;A0256;A0257;A0262;A0265;A0266	MANE Select	NM_MANE	ok	deletion
 							21	NC_000021.9:g.44288413C>T						NM_000383.4	c.607C>T	r.(607c>u)	p.(Arg203Ter)	AIRE	c.607C>T	6	A0010;A0212;A0213;A0223;A0224;A0232	MANE Select	NM_MANE	ok	substitution
-							21	NC_000021.9:g.44292993_44292994insCCTG						NM_000383.4	c.1096_1097insCCTG	r.(1096_1097insccug)	p.(Leu366ProfsTer7)	AIRE	c.1096_1097insCCTG	1	A0011	MANE Select	NM_MANE	ok	insertion
-							21	NC_000021.9:g.44291181_44291184dup						NM_000383.4	c.966_969dup	r.(966_969delinsccugccug)	p.(Ser324ProfsTer49)	AIRE	c.966_969dup	1	A0011	MANE Select	NG_IDRefseq	ok	duplication
+							21	NC_000021.9:g.44291181_44291184dup						NM_000383.4	c.966_969dup	r.(966_969dup)	p.(Ser324ProfsTer49)	AIRE	c.966_969dup	1	A0011	MANE Select	NM_MANE	ok	duplication
 							21	NC_000021.9:g.44287085C>T						NM_000383.4	c.415C>T	r.(415c>u)	p.(Arg139Ter)	AIRE	c.415C>T	18	A0022;A0023;A0024;A0025;A0026;A0027;A0028;A0029;A0030;A0031;A0032;A0033;A0034;A0035;A0125;A0164;A0233;A0253	MANE Select	NM_MANE	ok	substitution
-							21	NC_000021.9:g.44293903del						NM_000383.4	c.1393del	r.(1393del)	p.(Arg465GlyfsTer15)	AIRE	c.1393del	3	A0037;A0038;A0086	MANE Select	NM_MANE	ok	deletion
-							21	NC_000021.9:g.44293162del						NM_000383.4	c.1265del	r.(1265del)	p.(Pro422LeufsTer58)	AIRE	c.1265del	3	A0037;A0038;A0086	MANE Select	NG_IDRefseq	ok	deletion
-							21	NC_000021.9:g.44286595G>T						NM_000383.4	c.171G>T	r.(171g>u)	p.(Gln57His)	AIRE	c.171G>T	1	A0042	MANE Select	NM_MANE	ok	substitution
-							21	NC_000021.9:g.44286050G>T						NM_000383.4	c.44G>T	r.(44g>u)	p.(Arg15Leu)	AIRE	c.44G>T	1	A0042	MANE Select	NG_IDRefseq	ok	substitution
-							21	NC_000021.9:g.44286693A>G						NM_000383.4	c.269A>G	r.(269a>g)	p.(Tyr90Cys)	AIRE	c.269A>G	2	A0043;A0044	MANE Select	NG_IDRefseq	ok	substitution
-							21	NC_000021.9:g.44293146del						NM_000383.4	c.1249del	r.(1249del)	p.(Leu417TyrfsTer63)	AIRE	c.1249del	1	A0046	MANE Select	NG_IDRefseq	ok	deletion
-							21	NC_000021.9:g.44286089T>C						NM_000383.4	c.83T>C	r.(83u>c)	p.(Leu28Pro)	AIRE	c.83T>C	2	A0046;A0087	MANE Select	NG_IDRefseq	ok	substitution
-							21	NC_000021.9:g.44294421_44294422insAC						NM_000383.4	c.1421_1422insAC	r.(1421_1422insac)	p.(Cys475ProfsTer6)	AIRE	c.1421_1422insAC	1	A0068	MANE Select	NM_MANE	ok	insertion
-							21	NC_000021.9:g.44293804_44293805insAC						NM_000383.4	c.1294_1295insAC	r.(1294_1295insac)	p.(Ala432AspfsTer49)	AIRE	c.1294_1295insAC	1	A0068	MANE Select	NG_IDRefseq	ok	insertion
-							21	NC_000021.9:g.44293879_44293880insA						NM_000383.4	c.1369_1370insA	r.(1369_1370insa)	p.(Cys457Ter)	AIRE	c.1369_1370insA	3	A0072;A0073;A0074	MANE Select	NM_MANE	ok	insertion
+							21	NC_000021.9:g.44293162del						NM_000383.4	c.1265del	r.(1265del)	p.(Pro422LeufsTer58)	AIRE	c.1265del	3	A0037;A0038;A0086	MANE Select	NM_MANE	ok	deletion
+							21	NC_000021.9:g.44286050G>T						NM_000383.4	c.44G>T	r.(44g>u)	p.(Arg15Leu)	AIRE	c.44G>T	1	A0042	MANE Select	NM_MANE	ok	substitution
+							21	NC_000021.9:g.44286693A>G						NM_000383.4	c.269A>G	r.(269a>g)	p.(Tyr90Cys)	AIRE	c.269A>G	2	A0043;A0044	MANE Select	NM_MANE	ok	substitution
+							21	NC_000021.9:g.44293146del						NM_000383.4	c.1249del	r.(1249del)	p.(Leu417TyrfsTer63)	AIRE	c.1249del	1	A0046	MANE Select	NM_MANE	ok	deletion
+							21	NC_000021.9:g.44286089T>C						NM_000383.4	c.83T>C	r.(83u>c)	p.(Leu28Pro)	AIRE	c.83T>C	2	A0046;A0087	MANE Select	NM_MANE	ok	substitution
+							21	NC_000021.9:g.44293804_44293805insAC						NM_000383.4	c.1294_1295insAC	r.(1294_1295insac)	p.(Ala432AspfsTer49)	AIRE	c.1294_1295insAC	1	A0068	MANE Select	NM_MANE	ok	insertion
 							21	NC_000021.9:g.44293139_44293140insA						NM_000383.4	c.1242_1243insA	r.(1242_1243insa)	p.(His415ThrfsTer9)	AIRE	c.1242_1243insA	6	A0072;A0073;A0074;A0183;A0184;A0185	MANE Select	NM_MANE	ok	insertion
-							21	NC_000021.9:g.44286989_44287024del						NM_000383.4	c.319_354del	r.(319_354del)	p.(Ser107_Val118del)	AIRE	c.319_354del	1	A0082	MANE Select	NM_MANE	ok	deletion
-							21	NC_000021.9:g.44286615_44286650del						NM_000383.4	c.191_226del	r.(191_226del)	p.(Ser64_Asp76delinsTyr)	AIRE	c.191_226del	1	A0082	MANE Select	NG_IDRefseq	ok	deletion
-							21	NC_000021.9:g.44287570C>T						NM_000383.4	c.517C>T	r.(517c>u)	p.(Gln173Ter)	AIRE	c.517C>T	1	A0088	MANE Select	NG_IDRefseq	ok	substitution
-							21	NC_000021.9:g.44287005_44287006insCAGG						NM_000383.4	c.335_336insCAGG	r.(335_336inscagg)	p.(Lys114GlufsTer104)	AIRE	c.335_336insCAGG	1	A0089	MANE Select	NM_MANE	ok	insertion
-							21	NC_000021.9:g.44286629_44286632dup						NM_000383.4	c.205_208dup	r.(205_208delinscaggcagg)	p.(Asp70AlafsTer148)	AIRE	c.205_208dup	3	A0089;A0245;A0246	MANE Select	NM_MANE	ok	duplication
-							21	NC_000021.9:g.44286702T>G						NM_000383.4	c.278T>G	r.(278u>g)	p.(Leu93Arg)	AIRE	c.278T>G	2	A0091;A0092	MANE Select	NG_IDRefseq	ok	substitution
+							21	NC_000021.9:g.44286615_44286650del						NM_000383.4	c.191_226del	r.(191_226del)	p.(Ser64_Asp76delinsTyr)	AIRE	c.191_226del	1	A0082	MANE Select	NM_MANE	ok	deletion
+							21	NC_000021.9:g.44287570C>T						NM_000383.4	c.517C>T	r.(517c>u)	p.(Gln173Ter)	AIRE	c.517C>T	1	A0088	MANE Select	NM_MANE	ok	substitution
+							21	NC_000021.9:g.44286629_44286632dup						NM_000383.4	c.205_208dup	r.(205_208dup)	p.(Asp70AlafsTer148)	AIRE	c.205_208dup	3	A0089;A0245;A0246	MANE Select	NM_MANE	ok	duplication
+							21	NC_000021.9:g.44286702T>G						NM_000383.4	c.278T>G	r.(278u>g)	p.(Leu93Arg)	AIRE	c.278T>G	2	A0091;A0092	MANE Select	NM_MANE	ok	substitution
 							21	NC_000021.9:g.44293127dup						NM_000383.4	c.1230dup	r.(1230delinscc)	p.(Ser411LeufsTer13)	AIRE	c.1230dup	2	A0093;A0094	MANE Select	NM_MANE	ok	duplication
+							21	NC_000021.9:g.44296392del						NM_000383.4	c.1513del	r.(1513del)	p.(Ala505ProfsTer16)	AIRE	c.1513del	2	A0093;A0094	MANE Select	NM_MANE	ok	deletion
 							21	NC_000021.9:g.44293000dup						NM_000383.4	c.1103dup	r.(1103dup)	p.(Leu370AlafsTer2)	AIRE	c.1103dup	2	A0093;A0094	MANE Select	NG_IDRefseq	ok	duplication
 							21	NC_000021.9:g.44296391del						NM_000383.4	c.1512del	r.(1512del)	p.(Ala505ProfsTer16)	AIRE	c.1512del	2	A0093;A0094	MANE Select	NG_IDRefseq	ok	deletion
-							21	NC_000021.9:g.44291116G>A						NM_000383.4	c.901G>A	r.(901g>a)	p.(Val301Met)	AIRE	c.901G>A	1	A0095	MANE Select	NG_IDRefseq	ok	substitution
-							21	NC_000021.9:g.44291192C>T						NM_000383.4	c.977C>T	r.(977c>u)	p.(Pro326Leu)	AIRE	c.977C>T	3	A0096;A0097;A0098	MANE Select	NG_IDRefseq	ok	substitution
+							21	NC_000021.9:g.44291116G>A						NM_000383.4	c.901G>A	r.(901g>a)	p.(Val301Met)	AIRE	c.901G>A	1	A0095	MANE Select	NM_MANE	ok	substitution
+							21	NC_000021.9:g.44291192C>T						NM_000383.4	c.977C>T	r.(977c>u)	p.(Pro326Leu)	AIRE	c.977C>T	3	A0096;A0097;A0098	MANE Select	NM_MANE	ok	substitution
 							21	NC_000021.9:g.44286656T>A						NM_000383.4	c.232T>A	r.(232u>a)	p.(Trp78Arg)	AIRE	c.232T>A	6	A0101;A0145;A0146;A0147;A0148;A0155	MANE Select	NM_MANE	ok	substitution
-							21	NC_000021.9:g.44286598C>T						NM_000383.4	c.174C>T	r.(174c>u)	p.(=)	AIRE	c.174C>T	1	A0122	MANE Select	NM_MANE	ok	substitution
 							21	NC_000021.9:g.44286053C>T						NM_000383.4	c.47C>T	r.(47c>u)	p.(Thr16Met)	AIRE	c.47C>T	3	A0122;A0157;A0158	MANE Select	NM_MANE	ok	substitution
 							21	NC_000021.9:g.44289686G>T						NM_000383.4	c.682G>T	r.(682g>u)	p.(Gly228Trp)	AIRE	c.682G>T	6	A0134;A0135;A0136;A0137;A0138;A0139	MANE Select	NM_MANE	ok	substitution
 							21	NC_000021.9:g.44286656T>C						NM_000383.4	c.232T>C	r.(232u>c)	p.(Trp78Arg)	AIRE	c.232T>C	9	A0140;A0141;A0142;A0143;A0144;A0234;A0235;A0236;A0237	MANE Select	NM_MANE	ok	substitution
@@ -193,10 +185,9 @@ Individual/Gender	Individual/Origin/Geographic	Individual/Age	Individual/Remarks
 							1	NC_000001.11:g.22643408C>T										C1QC	g.22643408C>T	2	C0003;C0004		NG_IDRefseq	ok	substitution
 							1	NC_000001.11:g.22647271G>A						NM_172369.5	c.226G>A	r.(226g>a)	p.(Gly76Arg)	C1QC	c.226G>A	1	C0005	MANE Select	NM_MANE	ok	substitution
 							1	NC_000001.11:g.22643429G>A										C1QC	g.22643429G>A	1	C0005		NG_IDRefseq	ok	substitution
-							12	NC_000012.12:g.7067708_7067711del						NM_201442.4	c.1132_1135del	r.(1132_1135del)	p.(Phe378ValfsTer32)	C1S	c.1132_1135del	2	C0001;C0002		NG_IDRefseq	ok	deletion
+							12	NC_000012.12:g.7067708_7067711del						NM_001734.5	c.1132_1135del	r.(1132_1135del)	p.(Phe378ValfsTer32)	C1S	c.1132_1135del	2	C0001;C0002	MANE Select	NM_MANE	ok	deletion
 							12	NC_000012.12:g.7070373G>T						NM_001734.5	c.1789G>T	r.(1789g>u)	p.(Glu597Ter)	C1S	c.1789G>T	3	C0002;C0004;C0005	MANE Select	NM_MANE	ok	substitution
-							12	NC_000012.12:g.7070353C>T						NM_001734.5	c.1769C>T	r.(1769c>u)	p.(Ala590Val)	C1S	c.1769C>T	1	C0003	MANE Select	NM_MANE	ok	substitution
-							12	NC_000012.12:g.7070151C>T						NM_201442.4	c.1567C>T	r.(1567c>u)	p.(Arg523Ter)	C1S	c.1567C>T	1	C0003		NG_IDRefseq	ok	substitution
+							12	NC_000012.12:g.7070151C>T						NM_001734.5	c.1567C>T	r.(1567c>u)	p.(Arg523Ter)	C1S	c.1567C>T	1	C0003	MANE Select	NM_MANE	ok	substitution
 							12	NC_000012.12:g.7070473G>A						NM_001734.5	c.1889G>A	r.(1889g>a)	p.(Gly630Glu)	C1S	c.1889G>A	2	C0004;C0005	MANE Select	NM_MANE	ok	substitution
 							12	NC_000012.12:g.7065194C>G						NM_001734.5	c.612C>G	r.(612c>g)	p.(Tyr204Ter)	C1S	c.612C>G	2	C0006;C0007	MANE Select	NM_MANE	ok	substitution
 							6	NC_000006.12:g.31928867G>A						NM_000063.6	c.392G>A	r.(392g>a)	p.(Cys131Tyr)	C2	c.392G>A	1	C0001	MANE Select	NM_MANE	ok	substitution
@@ -208,8 +199,7 @@ Individual/Gender	Individual/Origin/Geographic	Individual/Age	Individual/Remarks
 							6	NC_000006.12:g.31938797G>A						NM_001282457.2	c.392-434G>A	r.(=)	p.(=)	C2	c.392-434G>A	2	C0002;C0003		NG_IDRefseq	ok	substitution
 							6	NC_000006.12:g.31929823_31929850del						NM_001282457.2	c.-63-3787_-63-3760del	r.(=)	p.(=)	C2	c.-63-3787_-63-3760del	2	C0002;C0003		NG_IDRefseq	ok	deletion
 							19	NC_000019.10:g.6693071G>C						NM_000064.4	c.3243C>G	r.(3243c>g)	p.(Tyr1081Ter)	C3	c.3243C>G	4	C0001;C0002;C0011;C0012	MANE Select	NM_MANE	ok	substitution
-							19	NC_000019.10:g.6702153_6702471del						NM_000064.4	c.2354+2_2416del			C3	c.2354+2_2416del	1	C0003	MANE Select	NM_MANE	ok	deletion
-							19	NC_000019.10:g.6702471_6702531del						NM_000064.4	c.2296_2354+2del			C3	c.2296_2354+2del	1	C0003	MANE Select	NG_IDRefseq	ok	deletion
+							19	NC_000019.10:g.6702471_6702531del						NM_000064.4	c.2296_2354+2del			C3	c.2296_2354+2del	1	C0003	MANE Select	NM_MANE	ok	deletion
 							19	NC_000019.10:g.6696381_6696661del						NM_000064.4	c.2797_2950del			C3	c.2797_2950del	1	C0004	MANE Select	NM_MANE	ok	deletion
 							19	NC_000019.10:g.6710669C>T						NM_000064.4	c.1656G>A	r.(1656g>a)	p.(Trp552Ter)	C3	c.1656G>A	1	C0007	MANE Select	NM_MANE	ok	substitution
 							19	NC_000019.10:g.6710680C>T						NM_000064.4	c.1645G>A	r.(1645g>a)	p.(Asp549Asn)	C3	c.1645G>A	1	C0008	MANE Select	NM_MANE	ok	substitution
@@ -303,110 +293,85 @@ Individual/Gender	Individual/Origin/Geographic	Individual/Age	Individual/Remarks
 							11	NC_000011.10:g.118349868A>T						NM_000073.3	c.205A>T	r.(205a>u)	p.(Lys69Ter)	CD3G	c.205A>T	1	A0004	MANE Select	NM_MANE	ok	substitution
 							11	NC_000011.10:g.118345829A>T						NM_000073.3	c.55+1351A>T	r.(=)	p.(=)	CD3G	c.55+1351A>T	1	A0004	MANE Select	NG_IDRefseq	ok	substitution
 							X	NC_000023.11:g.136659093T>C						NM_000074.3	c.464T>C	r.(464u>c)	p.(Leu155Pro)	CD40L	c.464T>C	6	C0001;C0101;C0102;C0155;C0210;C0241	MANE Select	NM_MANE	ok	substitution
-							X	NC_000023.11:g.136650375_136650376insT						NM_000074.3	c.266_267insT	r.(266_267insu)	p.(Gln90ProfsTer3)	CD40L	c.266_267insT	1	C0002	MANE Select	NM_MANE	ok	insertion
-							X	NC_000023.11:g.136650319_136650320insT						NM_000074.3	c.210_211insT	r.(210_211insu)	p.(Arg71Ter)	CD40L	c.210_211insT	1	C0002	MANE Select	NG_IDRefseq	ok	insertion
+							X	NC_000023.11:g.136650319_136650320insT						NM_000074.3	c.210_211insT	r.(210_211insu)	p.(Arg71Ter)	CD40L	c.210_211insT	1	C0002	MANE Select	NM_MANE	ok	insertion
 							X	NC_000023.11:g.136650267_136650270del						NM_000074.3	c.158_161del			CD40L	c.158_161del	6	C0003;C0112;C0145;C0146;C0196;C0244	MANE Select	NM_MANE	ok	deletion
-							X	NC_000023.11:g.136659048G>A						NM_000074.3	c.419G>A	r.(419g>a)	p.(Trp140Ter)	CD40L	c.419G>A	5	C0004;C0005;C0006;C0092;C0093	MANE Select	NG_IDRefseq	ok	substitution
-							X	NC_000023.11:g.136654430G>C						NM_000074.3	c.346G>C	r.(346g>c)	p.(Gly116Arg)	CD40L	c.346G>C	1	C0007	MANE Select	NG_IDRefseq	ok	substitution
-							X	NC_000023.11:g.136654383dup						NM_000074.3	c.299dup	r.(299delinsuu)	p.(Leu100PhefsTer13)	CD40L	c.299dup	2	C0008;C0009	MANE Select	NM_MANE	ok	duplication
-							X	NC_000023.11:g.136650351dup						NM_000074.3	c.242dup	r.(242delinsuu)	p.(Leu81PhefsTer5)	CD40L	c.242dup	3	C0008;C0009;C0152	MANE Select	NM_MANE	ok	duplication
+							X	NC_000023.11:g.136659048G>A						NM_000074.3	c.419G>A	r.(419g>a)	p.(Trp140Ter)	CD40L	c.419G>A	5	C0004;C0005;C0006;C0092;C0093	MANE Select	NM_MANE	ok	substitution
+							X	NC_000023.11:g.136654430G>C						NM_000074.3	c.346G>C	r.(346g>c)	p.(Gly116Arg)	CD40L	c.346G>C	1	C0007	MANE Select	NM_MANE	ok	substitution
+							X	NC_000023.11:g.136650351dup						NM_000074.3	c.242dup	r.(242dup)	p.(Leu81PhefsTer5)	CD40L	c.242dup	3	C0008;C0009;C0152	MANE Select	NM_MANE	ok	duplication
 							X	NC_000023.11:g.136656359del						NM_000074.3	c.350del	r.(350del)	p.(Asp117ValfsTer11)	CD40L	c.350del	1	C0010	MANE Select	NM_MANE	ok	deletion
 							X	NC_000023.11:g.136654379del						NM_000074.3	c.295del	r.(295del)	p.(Met99CysfsTer2)	CD40L	c.295del	1	C0010	MANE Select	NG_IDRefseq	ok	deletion
-							X	NC_000023.11:g.136654404_136654410del						NM_000074.3	c.320_326del	r.(320_326del)	p.(Lys107ThrfsTer19)	CD40L	c.320_326del	1	C0011	MANE Select	NG_IDRefseq	ok	deletion
-							X	NC_000023.11:g.136659455G>A						NM_000074.3	c.*40G>A	r.(*40g>a)	p.(=)	CD40L	c.*40G>A	1	C0013	MANE Select	NM_MANE	ok	substitution
-							X	NC_000023.11:g.136659399G>A						NM_000074.3	c.770G>A	r.(770g>a)	p.(Gly257Asp)	CD40L	c.770G>A	1	C0013	MANE Select	NG_IDRefseq	ok	substitution
-							X	NC_000023.11:g.136659306G>C						NM_000074.3	c.677G>C	r.(677g>c)	p.(Gly226Ala)	CD40L	c.677G>C	2	C0014;C0015	MANE Select	NG_IDRefseq	ok	substitution
-							X	NC_000023.11:g.136659147C>A						NM_000074.3	c.518C>A	r.(518c>a)	p.(Ala173Asp)	CD40L	c.518C>A	2	C0016;C0017	MANE Select	NG_IDRefseq	ok	substitution
-							X	NC_000023.11:g.136659061dup						NM_000074.3	c.432dup	r.(432delinsaa)	p.(Tyr145IlefsTer20)	CD40L	c.432dup	1	C0018	MANE Select	NM_MANE	ok	duplication
-							X	NC_000023.11:g.136656385_136656386insA						NM_000074.3	c.376_377insA	r.(376_377insa)	p.(Val126AspfsTer4)	CD40L	c.376_377insA	1	C0018	MANE Select	NG_IDRefseq	ok	insertion
+							X	NC_000023.11:g.136654404_136654410del						NM_000074.3	c.320_326del	r.(320_326del)	p.(Lys107ThrfsTer19)	CD40L	c.320_326del	1	C0011	MANE Select	NM_MANE	ok	deletion
+							X	NC_000023.11:g.136659399G>A						NM_000074.3	c.770G>A	r.(770g>a)	p.(Gly257Asp)	CD40L	c.770G>A	1	C0013	MANE Select	NM_MANE	ok	substitution
+							X	NC_000023.11:g.136659306G>C						NM_000074.3	c.677G>C	r.(677g>c)	p.(Gly226Ala)	CD40L	c.677G>C	2	C0014;C0015	MANE Select	NM_MANE	ok	substitution
+							X	NC_000023.11:g.136659147C>A						NM_000074.3	c.518C>A	r.(518c>a)	p.(Ala173Asp)	CD40L	c.518C>A	2	C0016;C0017	MANE Select	NM_MANE	ok	substitution
+							X	NC_000023.11:g.136656385_136656386insA						NM_000074.3	c.376_377insA	r.(376_377insa)	p.(Val126AspfsTer4)	CD40L	c.376_377insA	1	C0018	MANE Select	NM_MANE	ok	insertion
 							X	NC_000023.11:g.136659390C>T						NM_000074.3	c.761C>T	r.(761c>u)	p.(Thr254Met)	CD40L	c.761C>T	10	C0019;C0077;C0078;C0151;C0153;C0189;C0235;C0236;C0237;C0248	MANE Select	NM_MANE	ok	substitution
-							X	NC_000023.11:g.136659336_136659337insT						NM_000074.3	c.707_708insT	r.(707_708insu)	p.(Val237GlyfsTer7)	CD40L	c.707_708insT	1	C0020	MANE Select	NM_MANE	ok	insertion
-							X	NC_000023.11:g.136659281dup						NM_000074.3	c.652dup	r.(652delinsuu)	p.(Cys218LeufsTer13)	CD40L	c.652dup	1	C0020	MANE Select	NG_IDRefseq	ok	duplication
-							X	NC_000023.11:g.136659180C>A						NM_000074.3	c.551C>A	r.(551c>a)	p.(Ser184Ter)	CD40L	c.551C>A	2	C0024;C0098	MANE Select	NG_IDRefseq	ok	substitution
-							X	NC_000023.11:g.136659124del						NM_000074.3	c.495del	r.(495del)	p.(Arg165SerfsTer26)	CD40L	c.495del	2	C0025;C0026	MANE Select	NG_IDRefseq	ok	deletion
-							X	NC_000023.11:g.136659394dup						NM_000074.3	c.765dup	r.(765delinscc)	p.(Phe256LeufsTer30)	CD40L	c.765dup	1	C0027	MANE Select	NM_MANE	ok	duplication
-							X	NC_000023.11:g.136659338_136659339insC						NM_000074.3	c.709_710insC	r.(709_710insc)	p.(Val237AlafsTer7)	CD40L	c.709_710insC	1	C0027	MANE Select	NG_IDRefseq	ok	insertion
-							X	NC_000023.11:g.136648360G>C						NM_000074.3	c.112G>C	r.(112g>c)	p.(Gly38Arg)	CD40L	c.112G>C	2	C0028;C0042	MANE Select	NG_IDRefseq	ok	substitution
-							X	NC_000023.11:g.136659073_136659077del						NM_000074.3	c.444_448del	r.(444_448del)	p.(Met148IlefsTer15)	CD40L	c.444_448del	1	C0029	MANE Select	NG_IDRefseq	ok	deletion
-							X	NC_000023.11:g.136659454G>A						NM_000074.3	c.*39G>A	r.(*39g>a)	p.(=)	CD40L	c.*39G>A	1	C0030	MANE Select	NM_MANE	ok	substitution
-							X	NC_000023.11:g.136659398G>A						NM_000074.3	c.769G>A	r.(769g>a)	p.(Gly257Ser)	CD40L	c.769G>A	1	C0030	MANE Select	NG_IDRefseq	ok	substitution
-							X	NC_000023.11:g.136659047T>C						NM_000074.3	c.418T>C	r.(418u>c)	p.(Trp140Arg)	CD40L	c.418T>C	2	C0031;C0109	MANE Select	NG_IDRefseq	ok	substitution
-							X	NC_000023.11:g.136659116G>A						NM_000074.3	c.487G>A	r.(487g>a)	p.(Val163Ile)	CD40L	c.487G>A	1	C0032	MANE Select	NM_MANE	ok	substitution
+							X	NC_000023.11:g.136659281dup						NM_000074.3	c.652dup	r.(652dup)	p.(Cys218LeufsTer13)	CD40L	c.652dup	1	C0020	MANE Select	NM_MANE	ok	duplication
+							X	NC_000023.11:g.136659180C>A						NM_000074.3	c.551C>A	r.(551c>a)	p.(Ser184Ter)	CD40L	c.551C>A	2	C0024;C0098	MANE Select	NM_MANE	ok	substitution
+							X	NC_000023.11:g.136659124del						NM_000074.3	c.495del	r.(495del)	p.(Arg165SerfsTer26)	CD40L	c.495del	2	C0025;C0026	MANE Select	NM_MANE	ok	deletion
+							X	NC_000023.11:g.136659338_136659339insC						NM_000074.3	c.709_710insC	r.(709_710insc)	p.(Val237AlafsTer7)	CD40L	c.709_710insC	1	C0027	MANE Select	NM_MANE	ok	insertion
+							X	NC_000023.11:g.136648360G>C						NM_000074.3	c.112G>C	r.(112g>c)	p.(Gly38Arg)	CD40L	c.112G>C	2	C0028;C0042	MANE Select	NM_MANE	ok	substitution
+							X	NC_000023.11:g.136659073_136659077del						NM_000074.3	c.444_448del	r.(444_448del)	p.(Met148IlefsTer15)	CD40L	c.444_448del	1	C0029	MANE Select	NM_MANE	ok	deletion
+							X	NC_000023.11:g.136659398G>A						NM_000074.3	c.769G>A	r.(769g>a)	p.(Gly257Ser)	CD40L	c.769G>A	1	C0030	MANE Select	NM_MANE	ok	substitution
+							X	NC_000023.11:g.136659047T>C						NM_000074.3	c.418T>C	r.(418u>c)	p.(Trp140Arg)	CD40L	c.418T>C	2	C0031;C0109	MANE Select	NM_MANE	ok	substitution
 							X	NC_000023.11:g.136659060G>A						NM_000074.3	c.431G>A	r.(431g>a)	p.(Gly144Glu)	CD40L	c.431G>A	2	C0032;C0209	MANE Select	NM_MANE	ok	substitution
 							X	NC_000023.11:g.136659287C>T						NM_000074.3	c.658C>T	r.(658c>u)	p.(Gln220Ter)	CD40L	c.658C>T	3	C0033;C0187;C0188	MANE Select	NM_MANE	ok	substitution
-							X	NC_000023.11:g.136659212C>T						NM_000074.3	c.583C>T	r.(583c>u)	p.(=)	CD40L	c.583C>T	1	C0034	MANE Select	NM_MANE	ok	substitution
-							X	NC_000023.11:g.136659156C>T						NM_000074.3	c.527C>T	r.(527c>u)	p.(Thr176Ile)	CD40L	c.527C>T	1	C0034	MANE Select	NG_IDRefseq	ok	substitution
+							X	NC_000023.11:g.136659156C>T						NM_000074.3	c.527C>T	r.(527c>u)	p.(Thr176Ile)	CD40L	c.527C>T	1	C0034	MANE Select	NM_MANE	ok	substitution
 							X	NC_000023.11:g.136659368_136659369insATT						NM_000074.3	c.739_740insATT	r.(739_740insauu)	p.(Val247delinsAspLeu)	CD40L	c.739_740insATT	1	C0036	MANE Select	NM_MANE	ok	insertion
 							X	NC_000023.11:g.136659313_136659315dup						NM_000074.3	c.684_686dup	r.(684_686delinsauuauu)	p.(Val228_Phe229insLeu)	CD40L	c.684_686dup	1	C0036	MANE Select	NG_IDRefseq	ok	duplication
-							X	NC_000023.11:g.136648364C>A						NM_000074.3	c.116C>A	r.(116c>a)	p.(Ser39Ter)	CD40L	c.116C>A	1	C0037	MANE Select	NG_IDRefseq	ok	substitution
+							X	NC_000023.11:g.136648364C>A						NM_000074.3	c.116C>A	r.(116c>a)	p.(Ser39Ter)	CD40L	c.116C>A	1	C0037	MANE Select	NM_MANE	ok	substitution
 							X	NC_000023.11:g.136659150A>G						NM_000074.3	c.521A>G	r.(521a>g)	p.(Gln174Arg)	CD40L	c.521A>G	4	C0038;C0150;C0213;C0224	MANE Select	NM_MANE	ok	substitution
-							X	NC_000023.11:g.136659269T>C						NM_000074.3	c.640T>C	r.(640u>c)	p.(Ser214Pro)	CD40L	c.640T>C	1	C0039	MANE Select	NM_MANE	ok	substitution
-							X	NC_000023.11:g.136659213T>C						NM_000074.3	c.584T>C	r.(584u>c)	p.(Leu195Pro)	CD40L	c.584T>C	1	C0039	MANE Select	NG_IDRefseq	ok	substitution
-							X	NC_000023.11:g.136659233G>T						NM_000074.3	c.604G>T	r.(604g>u)	p.(Glu202Ter)	CD40L	c.604G>T	2	C0040;C0041	MANE Select	NG_IDRefseq	ok	substitution
-							X	NC_000023.11:g.136650335G>T						NM_000074.3	c.226G>T	r.(226g>u)	p.(Glu76Ter)	CD40L	c.226G>T	2	C0043;C0073	MANE Select	NG_IDRefseq	ok	substitution
-							X	NC_000023.11:g.136659252C>A						NM_000074.3	c.623C>A	r.(623c>a)	p.(Ala208Asp)	CD40L	c.623C>A	1	C0044	MANE Select	NG_IDRefseq	ok	substitution
+							X	NC_000023.11:g.136659213T>C						NM_000074.3	c.584T>C	r.(584u>c)	p.(Leu195Pro)	CD40L	c.584T>C	1	C0039	MANE Select	NM_MANE	ok	substitution
+							X	NC_000023.11:g.136659233G>T						NM_000074.3	c.604G>T	r.(604g>u)	p.(Glu202Ter)	CD40L	c.604G>T	2	C0040;C0041	MANE Select	NM_MANE	ok	substitution
+							X	NC_000023.11:g.136650335G>T						NM_000074.3	c.226G>T	r.(226g>u)	p.(Glu76Ter)	CD40L	c.226G>T	2	C0043;C0073	MANE Select	NM_MANE	ok	substitution
+							X	NC_000023.11:g.136659252C>A						NM_000074.3	c.623C>A	r.(623c>a)	p.(Ala208Asp)	CD40L	c.623C>A	1	C0044	MANE Select	NM_MANE	ok	substitution
 							X	NC_000023.11:g.136656377C>A						NM_000074.3	c.368C>A	r.(368c>a)	p.(Ala123Glu)	CD40L	c.368C>A	4	C0045;C0046;C0206;C0238	MANE Select	NM_MANE	ok	substitution
 							X	NC_000023.11:g.136656418_136656427del						NM_000074.3	c.409_409+9del			CD40L	c.409_409+9del	1	C0047	MANE Select	NG_IDRefseq	ok	deletion
-							X	NC_000023.11:g.136650321G>A						NM_000074.3	c.212G>A	r.(212g>a)	p.(Arg71Lys)	CD40L	c.212G>A	1	C0050	MANE Select	NM_MANE	ok	substitution
-							X	NC_000023.11:g.136648404G>A						NM_000074.3	c.156G>A	r.(156g>a)	p.(=)	CD40L	c.156G>A	1	C0050	MANE Select	NG_IDRefseq	ok	substitution
-							X	NC_000023.11:g.136659461del						NM_000074.3	c.*46del	r.(*46del)	p.(=)	CD40L	c.*46del	1	C0051	MANE Select	NM_MANE	ok	deletion
-							X	NC_000023.11:g.136659405del						NM_000074.3	c.776del	r.(776del)	p.(Leu259ProfsTer54)	CD40L	c.776del	1	C0051	MANE Select	NG_IDRefseq	ok	deletion
+							X	NC_000023.11:g.136648404G>A						NM_000074.3	c.156G>A	r.(156g>a)	p.(=)	CD40L	c.156G>A	1	C0050	MANE Select	NM_MANE	ok	substitution
+							X	NC_000023.11:g.136659405del						NM_000074.3	c.776del	r.(776del)	p.(Leu259ProfsTer54)	CD40L	c.776del	1	C0051	MANE Select	NM_MANE	ok	deletion
 							X	NC_000023.11:g.136659103del						NM_000074.3	c.474del	r.(474del)	p.(Lys159AsnfsTer3)	CD40L	c.474del	1	C0053	MANE Select	NG_IDRefseq	ok	deletion
-							X	NC_000023.11:g.136659346C>T						NM_000074.3	c.717C>T	r.(717c>u)	p.(=)	CD40L	c.717C>T	2	C0054;C0082	MANE Select	NM_MANE	ok	substitution
-							X	NC_000023.11:g.136659290C>T						NM_000074.3	c.661C>T	r.(661c>u)	p.(Gln221Ter)	CD40L	c.661C>T	2	C0054;C0082	MANE Select	NG_IDRefseq	ok	substitution
+							X	NC_000023.11:g.136659290C>T						NM_000074.3	c.661C>T	r.(661c>u)	p.(Gln221Ter)	CD40L	c.661C>T	2	C0054;C0082	MANE Select	NM_MANE	ok	substitution
 							X	NC_000023.11:g.136659289dup						NM_000074.3	c.660dup	r.(660delinsaa)	p.(Gln221ThrfsTer10)	CD40L	c.660dup	2	C0055;C0056	MANE Select	NM_MANE	ok	duplication
 							X	NC_000023.11:g.136659234dup						NM_000074.3	c.605dup	r.(605delinsaa)	p.(Arg203GlufsTer28)	CD40L	c.605dup	2	C0055;C0056	MANE Select	NG_IDRefseq	ok	duplication
-							X	NC_000023.11:g.136659231_136659232insATA						NM_000074.3	c.602_603insATA	r.(602_603insaua)	p.(Phe201delinsLeuTyr)	CD40L	c.602_603insATA	1	C0059	MANE Select	NM_MANE	ok	insertion
-							X	NC_000023.11:g.136659175_136659176insATA						NM_000074.3	c.546_547insATA	r.(546_547insaua)	p.(Glu182_Ala183insIle)	CD40L	c.546_547insATA	1	C0059	MANE Select	NG_IDRefseq	ok	insertion
+							X	NC_000023.11:g.136659175_136659176insATA						NM_000074.3	c.546_547insATA	r.(546_547insaua)	p.(Glu182_Ala183insIle)	CD40L	c.546_547insATA	1	C0059	MANE Select	NM_MANE	ok	insertion
 							X	NC_000023.11:g.136659355_136659356del						NM_000074.3	c.726_727del	r.(726_727del)	p.(Asp243SerfsTer42)	CD40L	c.726_727del	1	C0060	MANE Select	NG_IDRefseq	ok	deletion
-							X	NC_000023.11:g.136648390A>T						NM_000074.3	c.142A>T	r.(142a>u)	p.(Arg48Ter)	CD40L	c.142A>T	1	C0061	MANE Select	NG_IDRefseq	ok	substitution
-							X	NC_000023.11:g.136659062T>C						NM_000074.3	c.433T>C	r.(433u>c)	p.(Tyr145His)	CD40L	c.433T>C	1	C0062	MANE Select	NM_MANE	ok	substitution
-							X	NC_000023.11:g.136656386T>C						NM_000074.3	c.377T>C	r.(377u>c)	p.(Val126Ala)	CD40L	c.377T>C	1	C0062	MANE Select	NG_IDRefseq	ok	substitution
-							X	NC_000023.11:g.136659066dup						NM_000074.3	c.437dup	r.(437delinsaa)	p.(Tyr146Ter)	CD40L	c.437dup	1	C0063	MANE Select	NM_MANE	ok	duplication
-							X	NC_000023.11:g.136656391dup						NM_000074.3	c.382dup	r.(382delinsaa)	p.(Ser128LysfsTer2)	CD40L	c.382dup	1	C0063	MANE Select	NG_IDRefseq	ok	duplication
+							X	NC_000023.11:g.136648390A>T						NM_000074.3	c.142A>T	r.(142a>u)	p.(Arg48Ter)	CD40L	c.142A>T	1	C0061	MANE Select	NM_MANE	ok	substitution
+							X	NC_000023.11:g.136656386T>C						NM_000074.3	c.377T>C	r.(377u>c)	p.(Val126Ala)	CD40L	c.377T>C	1	C0062	MANE Select	NM_MANE	ok	substitution
+							X	NC_000023.11:g.136656391dup						NM_000074.3	c.382dup	r.(382dup)	p.(Ser128LysfsTer2)	CD40L	c.382dup	1	C0063	MANE Select	NM_MANE	ok	duplication
 							X	NC_000023.11:g.136659095del						NM_000074.3	c.466del	r.(466del)	p.(Glu156LysfsTer6)	CD40L	c.466del	3	C0064;C0065;C0066	MANE Select	NM_MANE	ok	deletion
 							X	NC_000023.11:g.136656419del						NM_000074.3	c.409+1del			CD40L	c.409+1del	3	C0064;C0065;C0066	MANE Select	NG_IDRefseq	ok	deletion
-							X	NC_000023.11:g.136659263_136659264insTC						NM_000074.3	c.634_635insTC	r.(634_635insuc)	p.(His212LeufsTer31)	CD40L	c.634_635insTC	1	C0067	MANE Select	NM_MANE	ok	insertion
-							X	NC_000023.11:g.136659206_136659207insCT						NM_000074.3	c.577_578insCT	r.(577_578inscu)	p.(Leu193ProfsTer4)	CD40L	c.577_578insCT	1	C0067	MANE Select	NG_IDRefseq	ok	insertion
-							X	NC_000023.11:g.136656376del						NM_000074.3	c.367del	r.(367del)	p.(Ala123ArgfsTer5)	CD40L	c.367del	1	C0069	MANE Select	NG_IDRefseq	ok	deletion
+							X	NC_000023.11:g.136659206_136659207insCT						NM_000074.3	c.577_578insCT	r.(577_578inscu)	p.(Leu193ProfsTer4)	CD40L	c.577_578insCT	1	C0067	MANE Select	NM_MANE	ok	insertion
+							X	NC_000023.11:g.136656376del						NM_000074.3	c.367del	r.(367del)	p.(Ala123ArgfsTer5)	CD40L	c.367del	1	C0069	MANE Select	NM_MANE	ok	deletion
 							X	NC_000023.11:g.136659047T>G						NM_000074.3	c.418T>G	r.(418u>g)	p.(Trp140Gly)	CD40L	c.418T>G	2	C0070;C0142	MANE Select	NM_MANE	ok	substitution
-							X	NC_000023.11:g.136656383A>G						NM_000074.3	c.374A>G	r.(374a>g)	p.(His125Arg)	CD40L	c.374A>G	1	C0071	MANE Select	NG_IDRefseq	ok	substitution
-							X	NC_000023.11:g.136659140_136659142del						NM_000074.3	c.511_513del	r.(511_513del)	p.(Ile171del)	CD40L	c.511_513del	1	C0072	MANE Select	NG_IDRefseq	ok	deletion
-							X	NC_000023.11:g.136659125C>A						NM_000074.3	c.496C>A	r.(496c>a)	p.(Gln166Lys)	CD40L	c.496C>A	1	C0074	MANE Select	NM_MANE	ok	substitution
-							X	NC_000023.11:g.136659069C>A						NM_000074.3	c.440C>A	r.(440c>a)	p.(Thr147Asn)	CD40L	c.440C>A	1	C0074	MANE Select	NG_IDRefseq	ok	substitution
-							X	NC_000023.11:g.136659309G>T						NM_000074.3	c.680G>T	r.(680g>u)	p.(Gly227Val)	CD40L	c.680G>T	1	C0075	MANE Select	NG_IDRefseq	ok	substitution
-							X	NC_000023.11:g.136659332G>C						NM_000074.3	c.703G>C	r.(703g>c)	p.(Ala235Pro)	CD40L	c.703G>C	1	C0076	MANE Select	NG_IDRefseq	ok	substitution
+							X	NC_000023.11:g.136656383A>G						NM_000074.3	c.374A>G	r.(374a>g)	p.(His125Arg)	CD40L	c.374A>G	1	C0071	MANE Select	NM_MANE	ok	substitution
+							X	NC_000023.11:g.136659140_136659142del						NM_000074.3	c.511_513del	r.(511_513del)	p.(Ile171del)	CD40L	c.511_513del	1	C0072	MANE Select	NM_MANE	ok	deletion
+							X	NC_000023.11:g.136659069C>A						NM_000074.3	c.440C>A	r.(440c>a)	p.(Thr147Asn)	CD40L	c.440C>A	1	C0074	MANE Select	NM_MANE	ok	substitution
+							X	NC_000023.11:g.136659309G>T						NM_000074.3	c.680G>T	r.(680g>u)	p.(Gly227Val)	CD40L	c.680G>T	1	C0075	MANE Select	NM_MANE	ok	substitution
+							X	NC_000023.11:g.136659332G>C						NM_000074.3	c.703G>C	r.(703g>c)	p.(Ala235Pro)	CD40L	c.703G>C	1	C0076	MANE Select	NM_MANE	ok	substitution
 							X	NC_000023.11:g.136648279C>T						NM_000074.3	c.31C>T	r.(31c>u)	p.(Arg11Ter)	CD40L	c.31C>T	4	C0079;C0217;C0231;C0232	MANE Select	NM_MANE	ok	substitution
-							X	NC_000023.11:g.136650275G>T						NM_000074.3	c.166G>T	r.(166g>u)	p.(Glu56Ter)	CD40L	c.166G>T	1	C0080	MANE Select	NG_IDRefseq	ok	substitution
-							X	NC_000023.11:g.136659241C>T						NM_000074.3	c.612C>T	r.(612c>u)	p.(=)	CD40L	c.612C>T	1	C0081	MANE Select	NM_MANE	ok	substitution
+							X	NC_000023.11:g.136650275G>T						NM_000074.3	c.166G>T	r.(166g>u)	p.(Glu56Ter)	CD40L	c.166G>T	1	C0080	MANE Select	NM_MANE	ok	substitution
 							X	NC_000023.11:g.136659185C>T						NM_000074.3	c.556C>T	r.(556c>u)	p.(Gln186Ter)	CD40L	c.556C>T	2	C0081;C0181	MANE Select	NM_MANE	ok	substitution
-							X	NC_000023.11:g.136659321T>C						NM_000074.3	c.692T>C	r.(692u>c)	p.(Leu231Ser)	CD40L	c.692T>C	2	C0083;C0084	MANE Select	NG_IDRefseq	ok	substitution
+							X	NC_000023.11:g.136659321T>C						NM_000074.3	c.692T>C	r.(692u>c)	p.(Leu231Ser)	CD40L	c.692T>C	2	C0083;C0084	MANE Select	NM_MANE	ok	substitution
 							X	NC_000023.11:g.136659138A>G						NM_000074.3	c.509A>G	r.(509a>g)	p.(Tyr170Cys)	CD40L	c.509A>G	3	C0085;C0086;C0242	MANE Select	NM_MANE	ok	substitution
-							X	NC_000023.11:g.136659458T>C						NM_000074.3	c.*43T>C	r.(*43u>c)	p.(=)	CD40L	c.*43T>C	5	C0087;C0088;C0089;C0090;C0091	MANE Select	NM_MANE	ok	substitution
-							X	NC_000023.11:g.136659402T>C						NM_000074.3	c.773T>C	r.(773u>c)	p.(Leu258Ser)	CD40L	c.773T>C	5	C0087;C0088;C0089;C0090;C0091	MANE Select	NG_IDRefseq	ok	substitution
+							X	NC_000023.11:g.136659402T>C						NM_000074.3	c.773T>C	r.(773u>c)	p.(Leu258Ser)	CD40L	c.773T>C	5	C0087;C0088;C0089;C0090;C0091	MANE Select	NM_MANE	ok	substitution
 							X	NC_000023.11:g.136659283C>A						NM_000074.3	c.654C>A	r.(654c>a)	p.(Cys218Ter)	CD40L	c.654C>A	10	C0094;C0185;C0186;C0214;C0225;C0226;C0227;C0228;C0229;C0239	MANE Select	NM_MANE	ok	substitution
-							X	NC_000023.11:g.136648355T>G						NM_000074.3	c.107T>G	r.(107u>g)	p.(Met36Arg)	CD40L	c.107T>G	2	C0095;C0096	MANE Select	NG_IDRefseq	ok	substitution
+							X	NC_000023.11:g.136648355T>G						NM_000074.3	c.107T>G	r.(107u>g)	p.(Met36Arg)	CD40L	c.107T>G	2	C0095;C0096	MANE Select	NM_MANE	ok	substitution
 							X	NC_000023.11:g.136659049G>T						NM_000074.3	c.420G>T	r.(420g>u)	p.(Trp140Cys)	CD40L	c.420G>T	2	C0097;C0208	MANE Select	NM_MANE	ok	substitution
-							X	NC_000023.11:g.136659395T>A						NM_000074.3	c.766T>A	r.(766u>a)	p.(Phe256Ile)	CD40L	c.766T>A	1	C0099	MANE Select	NM_MANE	ok	substitution
-							X	NC_000023.11:g.136659339T>A						NM_000074.3	c.710T>A	r.(710u>a)	p.(Val237Glu)	CD40L	c.710T>A	1	C0099	MANE Select	NG_IDRefseq	ok	substitution
+							X	NC_000023.11:g.136659339T>A						NM_000074.3	c.710T>A	r.(710u>a)	p.(Val237Glu)	CD40L	c.710T>A	1	C0099	MANE Select	NM_MANE	ok	substitution
 							X	NC_000023.11:g.136659227A>T						NM_000074.3	c.598A>T	r.(598a>u)	p.(Arg200Ter)	CD40L	c.598A>T	3	C0103;C0182;C0183	MANE Select	NM_MANE	ok	substitution
-							X	NC_000023.11:g.136659379C>T						NM_000074.3	c.750C>T	r.(750c>u)	p.(=)	CD40L	c.750C>T	2	C0104;C0105	MANE Select	NM_MANE	ok	substitution
 							X	NC_000023.11:g.136659323C>T						NM_000074.3	c.694C>T	r.(694c>u)	p.(Gln232Ter)	CD40L	c.694C>T	3	C0104;C0105;C0230	MANE Select	NM_MANE	ok	substitution
 							X	NC_000023.11:g.136650325C>A						NM_000074.3	c.216C>A	r.(216c>a)	p.(Cys72Ter)	CD40L	c.216C>A	3	C0106;C0220;C0221	MANE Select	NM_MANE	ok	substitution
-							X	NC_000023.11:g.136659336C>A						NM_000074.3	c.707C>A	r.(707c>a)	p.(Ser236Ter)	CD40L	c.707C>A	1	C0108	MANE Select	NG_IDRefseq	ok	substitution
-							X	NC_000023.11:g.136659265_136659266del						NM_000074.3	c.636_637del	r.(636_637del)	p.(His212GlnfsTer18)	CD40L	c.636_637del	1	C0110	MANE Select	NG_IDRefseq	ok	deletion
+							X	NC_000023.11:g.136659336C>A						NM_000074.3	c.707C>A	r.(707c>a)	p.(Ser236Ter)	CD40L	c.707C>A	1	C0108	MANE Select	NM_MANE	ok	substitution
+							X	NC_000023.11:g.136659265_136659266del						NM_000074.3	c.636_637del	r.(636_637del)	p.(His212GlnfsTer18)	CD40L	c.636_637del	1	C0110	MANE Select	NM_MANE	ok	deletion
 							X	NC_000023.11:g.136659066A[3]						NM_000074.3	c.437A[3]	r.(437delinsaaa)	p.(Tyr146Ter)	CD40L	c.437A[3]	1	C0111	MANE Select	NM_MANE	ok	repeat
 							X	NC_000023.11:g.136656390_136656391A[4]						NM_000074.3	c.381_382A[4]	r.(381_382delinsaaaa)	p.(Ser128LysfsTer22)	CD40L	c.381_382A[4]	1	C0111	MANE Select	NG_IDRefseq	ok	repeat
-							X	NC_000023.11:g.136659309_136659311del						NM_000074.3	c.680_682del	r.(680_682del)	p.(Gly227del)	CD40L	c.680_682del	1	C0113	MANE Select	NG_IDRefseq	ok	deletion
-							X	NC_000023.11:g.136659066_136659067insG						NM_000074.3	c.437_438insG	r.(437_438insg)	p.(Tyr146Ter)	CD40L	c.437_438insG	3	C0114;C0118;C0119	MANE Select	NM_MANE	ok	insertion
-							X	NC_000023.11:g.136656390_136656391insG						NM_000074.3	c.381_382insG	r.(381_382insg)	p.(Ser128GlufsTer2)	CD40L	c.381_382insG	3	C0114;C0118;C0119	MANE Select	NG_IDRefseq	ok	insertion
+							X	NC_000023.11:g.136659309_136659311del						NM_000074.3	c.680_682del	r.(680_682del)	p.(Gly227del)	CD40L	c.680_682del	1	C0113	MANE Select	NM_MANE	ok	deletion
+							X	NC_000023.11:g.136656390_136656391insG						NM_000074.3	c.381_382insG	r.(381_382insg)	p.(Ser128GlufsTer2)	CD40L	c.381_382insG	3	C0114;C0118;C0119	MANE Select	NM_MANE	ok	insertion
 							X	NC_000023.11:g.136648405G>T						NM_000074.3	c.156+1G>T			CD40L	c.156+1G>T	5	C0115;C0116;C0117;C0159;C0160	MANE Select	NM_MANE	ok	substitution
-							X	NC_000023.11:g.136659114_136659115insA						NM_000074.3	c.485_486insA	r.(485_486insa)	p.(Val163ArgfsTer2)	CD40L	c.485_486insA	1	C0120	MANE Select	NM_MANE	ok	insertion
-							X	NC_000023.11:g.136659058dup						NM_000074.3	c.429dup	r.(429delinsaa)	p.(Gly144ArgfsTer21)	CD40L	c.429dup	1	C0120	MANE Select	NG_IDRefseq	ok	duplication
-							X	NC_000023.11:g.136659264_136659265insGCCCA						NM_000074.3	c.635_636insGCCCA	r.(635_636insgccca)	p.(His212GlnfsTer32)	CD40L	c.635_636insGCCCA	2	C0121;C0122	MANE Select	NM_MANE	ok	insertion
-							X	NC_000023.11:g.136659202_136659206dup						NM_000074.3	c.573_577dup	r.(573_577delinscagcccagcc)	p.(Leu193ProfsTer5)	CD40L	c.573_577dup	2	C0121;C0122	MANE Select	NG_IDRefseq	ok	duplication
-							X	NC_000023.11:g.136654430G>A						NM_000074.3	c.346G>A	r.(346g>a)	p.(Gly116Ser)	CD40L	c.346G>A	1	C0131	MANE Select	NG_IDRefseq	ok	substitution
-							X	NC_000023.11:g.136659294C>T						NM_000074.3	c.665C>T	r.(665c>u)	p.(Ser222Phe)	CD40L	c.665C>T	1	C0139	MANE Select	NG_IDRefseq	ok	substitution
+							X	NC_000023.11:g.136659058dup						NM_000074.3	c.429dup	r.(429dup)	p.(Gly144ArgfsTer21)	CD40L	c.429dup	1	C0120	MANE Select	NM_MANE	ok	duplication
+							X	NC_000023.11:g.136659202_136659206dup						NM_000074.3	c.573_577dup	r.(573_577dup)	p.(Leu193ProfsTer5)	CD40L	c.573_577dup	2	C0121;C0122	MANE Select	NM_MANE	ok	duplication
+							X	NC_000023.11:g.136654430G>A						NM_000074.3	c.346G>A	r.(346g>a)	p.(Gly116Ser)	CD40L	c.346G>A	1	C0131	MANE Select	NM_MANE	ok	substitution
+							X	NC_000023.11:g.136659294C>T						NM_000074.3	c.665C>T	r.(665c>u)	p.(Ser222Phe)	CD40L	c.665C>T	1	C0139	MANE Select	NM_MANE	ok	substitution
 							X	NC_000023.11:g.136654418G>T						NM_000074.3	c.334G>T	r.(334g>u)	p.(Glu112Ter)	CD40L	c.334G>T	1	C0140	MANE Select	NM_MANE	ok	substitution
 							X	NC_000023.11:g.136656355G>A						NM_000074.3	c.347-1G>A			CD40L	c.347-1G>A	3	C0141;C0167;C0168	MANE Select	NM_MANE	ok	substitution
 							X	NC_000023.11:g.136654386dup						NM_000074.3	c.302dup	r.(302delinsaa)	p.(Asn101LysfsTer12)	CD40L	c.302dup	1	C0143	MANE Select	NM_MANE	ok	duplication
@@ -497,29 +462,25 @@ Individual/Gender	Individual/Origin/Geographic	Individual/Age	Individual/Remarks
 							4	NC_000004.12:g.109742486C>A						NM_000204.5	c.1534+5G>T			CFI	c.1534+5G>T	1	I0017	MANE Select	NM_MANE	ok	substitution
 							4	NC_000004.12:g.109749260T>G						NM_000204.5	c.1106A>C	r.(1106a>c)	p.(Tyr369Ser)	CFI	c.1106A>C	1	I0018	MANE Select	NM_MANE	ok	substitution
 							4	NC_000004.12:g.109749260T>G						NM_001375282.1	c.1085A>C	r.(1085a>c)	p.(Tyr362Ser)	CFI	c.1085A>C	1	I0018		NG_IDRefseq	ok	substitution
-							X	NC_000023.11:g.47627564G>A						NM_001145252.3	c.481C>T	r.(481c>u)	p.(Arg161Ter)	CFP	c.481C>T	2	P0001;P0002	MANE Select	NG_IDRefseq	ok	substitution
-							X	NC_000023.11:g.47627568G>A						NM_001145252.3	c.477C>T	r.(477c>u)	p.(=)	CFP	c.477C>T	5	P0003;P0004;P0005;P0006;P0012	MANE Select	NM_MANE	ok	substitution
-							X	NC_000023.11:g.47628270G>A						NM_001145252.3	c.235C>T	r.(235c>u)	p.(Arg79Ter)	CFP	c.235C>T	5	P0003;P0004;P0005;P0006;P0012	MANE Select	NG_IDRefseq	ok	substitution
-							X	NC_000023.11:g.47628207G>A						NM_001145252.3	c.298C>T	r.(298c>u)	p.(Arg100Trp)	CFP	c.298C>T	2	P0007;P0008	MANE Select	NG_IDRefseq	ok	substitution
-							X	NC_000023.11:g.47626099A>C						NM_001145252.3	c.1203T>G	r.(1203u>g)	p.(=)	CFP	c.1203T>G	8	P0009;P0028;P0029;P0030;P0031;P0032;P0033;P0034	MANE Select	NM_MANE	ok	substitution
-							X	NC_000023.11:g.47626499A>C						NM_001145252.3	c.961T>G	r.(961u>g)	p.(Trp321Gly)	CFP	c.961T>G	8	P0009;P0028;P0029;P0030;P0031;P0032;P0033;P0034	MANE Select	NG_IDRefseq	ok	substitution
-							X	NC_000023.11:g.47627237_47627238del						NM_001145252.3	c.671_672del	r.(671_672del)	p.(Cys224PhefsTer4)	CFP	c.671_672del	1	P0010	MANE Select	NG_IDRefseq	ok	deletion
-							X	NC_000023.11:g.47626432T>C						NM_001145252.3	c.1028A>G	r.(1028a>g)	p.(Gln343Arg)	CFP	c.1028A>G	1	P0011	MANE Select	NG_IDRefseq	ok	substitution
-							X	NC_000023.11:g.47626854G>C						NM_001145252.3	c.859C>G	r.(859c>g)	p.(Pro287Ala)	CFP	c.859C>G	2	P0013;P0014	MANE Select	NM_MANE	ok	substitution
-							X	NC_000023.11:g.47627290G>C						NM_001145252.3	c.617C>G	r.(617c>g)	p.(Ser206Ter)	CFP	c.617C>G	2	P0013;P0014	MANE Select	NG_IDRefseq	ok	substitution
+							X	NC_000023.11:g.47627564G>A						NM_001145252.3	c.481C>T	r.(481c>u)	p.(Arg161Ter)	CFP	c.481C>T	2	P0001;P0002	MANE Select	NM_MANE	ok	substitution
+							X	NC_000023.11:g.47628270G>A						NM_001145252.3	c.235C>T	r.(235c>u)	p.(Arg79Ter)	CFP	c.235C>T	5	P0003;P0004;P0005;P0006;P0012	MANE Select	NM_MANE	ok	substitution
+							X	NC_000023.11:g.47628207G>A						NM_001145252.3	c.298C>T	r.(298c>u)	p.(Arg100Trp)	CFP	c.298C>T	2	P0007;P0008	MANE Select	NM_MANE	ok	substitution
+							X	NC_000023.11:g.47626499A>C						NM_001145252.3	c.961T>G	r.(961u>g)	p.(Trp321Gly)	CFP	c.961T>G	8	P0009;P0028;P0029;P0030;P0031;P0032;P0033;P0034	MANE Select	NM_MANE	ok	substitution
+							X	NC_000023.11:g.47627237_47627238del						NM_001145252.3	c.671_672del	r.(671_672del)	p.(Cys224PhefsTer4)	CFP	c.671_672del	1	P0010	MANE Select	NM_MANE	ok	deletion
+							X	NC_000023.11:g.47626432T>C						NM_001145252.3	c.1028A>G	r.(1028a>g)	p.(Gln343Arg)	CFP	c.1028A>G	1	P0011	MANE Select	NM_MANE	ok	substitution
+							X	NC_000023.11:g.47627290G>C						NM_001145252.3	c.617C>G	r.(617c>g)	p.(Ser206Ter)	CFP	c.617C>G	2	P0013;P0014	MANE Select	NM_MANE	ok	substitution
 							X	NC_000023.11:g.47626926_47626933del						NM_001145252.3	c.786_793del	r.(786_793del)	p.(Trp263CysfsTer91)	CFP	c.786_793del	6	P0015;P0016;P0017;P0018;P0019;P0020	MANE Select	NG_IDRefseq	ok	deletion
-							X	NC_000023.11:g.47626098C>G						NM_001145252.3	c.1204G>C	r.(1204g>c)	p.(Ala402Pro)	CFP	c.1204G>C	5	P0021;P0022;P0023;P0024;P0025	MANE Select	NM_MANE	ok	substitution
-							X	NC_000023.11:g.47626498C>G						NM_001145252.3	c.962G>C	r.(962g>c)	p.(Trp321Ser)	CFP	c.962G>C	5	P0021;P0022;P0023;P0024;P0025	MANE Select	NG_IDRefseq	ok	substitution
-							X	NC_000023.11:g.47626820C>A						NM_001145252.3	c.893G>T	r.(893g>u)	p.(Gly298Val)	CFP	c.893G>T	2	P0026;P0027	MANE Select	NG_IDRefseq	ok	substitution
-							X	NC_000023.11:g.47626424G>A						NM_001145252.3	c.1036C>T	r.(1036c>u)	p.(Arg346Cys)	CFP	c.1036C>T	1	P0035	MANE Select	NG_IDRefseq	ok	substitution
-							X	NC_000023.11:g.47626912G>A						NM_001145252.3	c.801C>T	r.(801c>u)	p.(=)	CFP	c.801C>T	1	P0036	MANE Select	NM_MANE	ok	substitution
-							X	NC_000023.11:g.47627486G>A						NM_001145252.3	c.559C>T	r.(559c>u)	p.(Gln187Ter)	CFP	c.559C>T	1	P0036	MANE Select	NG_IDRefseq	ok	substitution
+							X	NC_000023.11:g.47626498C>G						NM_001145252.3	c.962G>C	r.(962g>c)	p.(Trp321Ser)	CFP	c.962G>C	5	P0021;P0022;P0023;P0024;P0025	MANE Select	NM_MANE	ok	substitution
+							X	NC_000023.11:g.47626820C>A						NM_001145252.3	c.893G>T	r.(893g>u)	p.(Gly298Val)	CFP	c.893G>T	2	P0026;P0027	MANE Select	NM_MANE	ok	substitution
+							X	NC_000023.11:g.47626424G>A						NM_001145252.3	c.1036C>T	r.(1036c>u)	p.(Arg346Cys)	CFP	c.1036C>T	1	P0035	MANE Select	NM_MANE	ok	substitution
+							X	NC_000023.11:g.47627486G>A						NM_001145252.3	c.559C>T	r.(559c>u)	p.(Gln187Ter)	CFP	c.559C>T	1	P0036	MANE Select	NM_MANE	ok	substitution
 							16	NC_000016.10:g.10906633G>T						NM_000246.4	c.1141G>T	r.(1141g>u)	p.(Glu381Ter)	CIITA	c.1141G>T	1	M0001	MANE Select	NM_MANE	ok	substitution
 							16	NC_000016.10:g.10904308G>T							c.1234+413G>T	r.(=)	p.(=)	CIITA	c.1234+413G>T	1	M0001		NG_IDRefseq	ok	substitution
-							16	NC_000016.10:g.10923277_10923288del						NM_000246.4	c.3367_3378del	r.(3367_3378del)	p.(Gln1123_Arg1126del)	CIITA	c.3367_3378del	1	M0002	MANE Select	NM_MANE	ok	deletion
+							16	NC_000016.10:g.10922246_10922413del						NM_000246.4	c.3229_3240del	r.(3229_3240del)	p.(Met1077_Gln1080del)	CIITA	c.3229_3240del	1	M0002	MANE Select	NM_MANE	ok	deletion
 							16	NC_000016.10:g.10919948_10919959del							c.3446+1422_3446+1433del	r.(=)	p.(=)	CIITA	c.3446+1422_3446+1433del	1	M0002		NG_IDRefseq	ok	deletion
 							16	NC_000016.10:g.10906898T>C						NM_000246.4	c.1406T>C	r.(1406u>c)	p.(Leu469Pro)	CIITA	c.1406T>C	3	M0003;M0004;M0005	MANE Select	NM_MANE	ok	substitution
 							16	NC_000016.10:g.10904573T>C							c.1235-171T>C	r.(=)	p.(=)	CIITA	c.1235-171T>C	3	M0003;M0004;M0005		NG_IDRefseq	ok	substitution
+							16	NC_000016.10:g.10910256T>C						NM_000246.4	c.2885T>C	r.(2885u>c)	p.(Phe962Ser)	CIITA	c.2885T>C	1	M0006	MANE Select	NM_MANE	ok	substitution
 							16	NC_000016.10:g.10907555G>A						NM_000246.4	c.2063G>A	r.(2063g>a)	p.(Trp688Ter)	CIITA	c.2063G>A	1	M0007	MANE Select	NM_MANE	ok	substitution
 							16	NC_000016.10:g.10905230G>A							c.1303+418G>A	r.(=)	p.(=)	CIITA	c.1303+418G>A	1	M0007		NG_IDRefseq	ok	substitution
 							16	NC_000016.10:g.10916425_10918485del						NM_000246.4	c.3028_3108del	r.(3028_3108del)	p.(Thr1010_Ala1036del)	CIITA	c.3028_3108del	1	M0008	MANE Select	NM_MANE	ok	deletion
@@ -1549,44 +1510,38 @@ Individual/Gender	Individual/Origin/Geographic	Individual/Age	Individual/Remarks
 							13	NC_000013.11:g.108210430T>C						NM_206937.2	c.839A>G	r.(839a>g)	p.(Gln280Arg)	LIG4	c.839A>G	2	L0007;L0008	MANE Select	NM_MANE	ok	substitution
 							13	NC_000013.11:g.108210424T>A						NM_206937.2	c.845A>T	r.(845a>u)	p.(His282Leu)	LIG4	c.845A>T	2	L0010;L0011	MANE Select	NM_MANE	ok	substitution
 							13	NC_000013.11:g.108210524T>C						NM_206937.2	c.745A>G	r.(745a>g)	p.(Met249Val)	LIG4	c.745A>G	1	L0012	MANE Select	NM_MANE	ok	substitution
-							1	NC_000001.11:g.235810511dup						NM_000081.4	c.307dup	r.(307delinsgg)	p.(Asp103GlyfsTer29)	LYST	c.307dup	2	C0001;C0009	MANE Select	NM_MANE	ok	duplication
-							1	NC_000001.11:g.235830301dup							c.118dup	r.(117delinsgg)	p.(Ala40GlyfsTer24)	LYST	c.118dup	2	C0001;C0009		NG_IDRefseq	ok	duplication
-							1	NC_000001.11:g.235806063_235806064del							c.3073_3074del	r.(3073_3074del)	p.(Asn1025GlnfsTer6)	LYST	c.3073_3074del	1	C0002		NG_IDRefseq	ok	deletion
-							1	NC_000001.11:g.235806051G>A							c.3085C>T	r.(3085c>u)	p.(Gln1029Ter)	LYST	c.3085C>T	1	C0003		NG_IDRefseq	ok	substitution
-							1	NC_000001.11:g.235830270G>A							c.148C>T	r.(148c>u)	p.(Arg50Ter)	LYST	c.148C>T	1	C0004		NG_IDRefseq	ok	substitution
-							1	NC_000001.11:g.235808726dup						NM_000081.4	c.2093dup	r.(2092delinsaa)	p.(Asn698LysfsTer5)	LYST	c.2093dup	1	C0005	MANE Select	NM_MANE	ok	duplication
-							1	NC_000001.11:g.235808921dup							c.1902dup	r.(1897delinsaa)	p.(Ala635SerfsTer4)	LYST	c.1902dup	1	C0005		NG_IDRefseq	ok	duplication
-							1	NC_000001.11:g.235715206del						NM_000081.4	c.9779del	r.(9779del)	p.(Tyr3260PhefsTer28)	LYST	c.9779del	2	C0006;C0015	MANE Select	NM_MANE	ok	deletion
-							1	NC_000001.11:g.235809162del						NM_000081.4	c.1656del	r.(1656del)	p.(Cys553ValfsTer14)	LYST	c.1656del	1	C0007	MANE Select	NM_MANE	ok	deletion
-							1	NC_000001.11:g.235809351del							c.1467del	r.(1467del)	p.(Glu489AspfsTer78)	LYST	c.1467del	1	C0007		NG_IDRefseq	ok	deletion
-							1	NC_000001.11:g.235805826G>A							c.3310C>T	r.(3310c>u)	p.(Arg1104Ter)	LYST	c.3310C>T	2	C0008;C0011		NG_IDRefseq	ok	substitution
+							1	NC_000001.11:g.235830301dup						NM_000081.4	c.118dup	r.(118dup)	p.(Ala40GlyfsTer24)	LYST	c.118dup	2	C0001;C0009	MANE Select	NM_MANE	ok	duplication
+							1	NC_000001.11:g.235806063_235806064del						NM_000081.4	c.3073_3074del	r.(3073_3074del)	p.(Asn1025GlnfsTer6)	LYST	c.3073_3074del	1	C0002	MANE Select	NM_MANE	ok	deletion
+							1	NC_000001.11:g.235806051G>A						NM_000081.4	c.3085C>T	r.(3085c>u)	p.(Gln1029Ter)	LYST	c.3085C>T	1	C0003	MANE Select	NM_MANE	ok	substitution
+							1	NC_000001.11:g.235830270G>A						NM_000081.4	c.148C>T	r.(148c>u)	p.(Arg50Ter)	LYST	c.148C>T	1	C0004	MANE Select	NM_MANE	ok	substitution
+							1	NC_000001.11:g.235808921dup						NM_000081.4	c.1902dup	r.(1902dup)	p.(Ala635SerfsTer4)	LYST	c.1902dup	1	C0005	MANE Select	NM_MANE	ok	duplication
+							1	NC_000001.11:g.235716749del						NM_000081.4	c.9590del	r.(9590del)	p.(Tyr3197LeufsTer62)	LYST	c.9590del	3	C0006;C0015;C0035	MANE Select	NM_MANE	ok	deletion
+							1	NC_000001.11:g.235809351del						NM_000081.4	c.1467del	r.(1467del)	p.(Glu489AspfsTer78)	LYST	c.1467del	1	C0007	MANE Select	NM_MANE	ok	deletion
+							1	NC_000001.11:g.235805826G>A						NM_000081.4	c.3310C>T	r.(3310c>u)	p.(Arg1104Ter)	LYST	c.3310C>T	2	C0008;C0011	MANE Select	NM_MANE	ok	substitution
 							1	NC_000001.11:g.235806328del						NM_000081.4	c.2810del	r.(2810del)	p.(Leu937Ter)	LYST	c.2810del	2	C0010;C0016	MANE Select	NM_MANE	ok	deletion
 							1	NC_000001.11:g.235806516del							c.2623del	r.(2623del)	p.(Tyr875MetfsTer24)	LYST	c.2623del	2	C0010;C0016		NG_IDRefseq	ok	deletion
-							1	NC_000001.11:g.235752077del							c.7555del	r.(7555del)	p.(Tyr2519IlefsTer10)	LYST	c.7555del	1	C0012		NG_IDRefseq	ok	deletion
-							1	NC_000001.11:g.235755645_235755651del							c.7060_7066del			LYST	c.7060_7066del	1	C0013		NG_IDRefseq	ok	deletion
-							1	NC_000001.11:g.235720872_235724048del						NM_000081.4	c.9295_9349del	r.(9295_9349del)	p.(Leu3099IlefsTer15)	LYST	c.9295_9349del	1	C0014	MANE Select	NM_MANE	ok	deletion
+							1	NC_000001.11:g.235752077del						NM_000081.4	c.7555del	r.(7555del)	p.(Tyr2519IlefsTer10)	LYST	c.7555del	1	C0012	MANE Select	NM_MANE	ok	deletion
+							1	NC_000001.11:g.235755645_235755651del						NM_000081.4	c.7060_7066del			LYST	c.7060_7066del	1	C0013	MANE Select	NM_MANE	ok	deletion
+							1	NC_000001.11:g.235728078_235729596del						NM_000081.4	c.9106_9160del	r.(9106_9160del)	p.(Gly3036ArgfsTer29)	LYST	c.9106_9160del	1	C0014	MANE Select	NM_MANE	ok	deletion
 							1	NC_000001.11:g.235729542_235729596del							c.9268_9268+54del			LYST	c.9268_9268+54del	1	C0014		NG_IDRefseq	ok	deletion
 							1	NC_000001.11:g.235697255del							c.10557del	r.(10557del)	p.(Gly3520AlafsTer2)	LYST	c.10557del	1	C0017		NG_IDRefseq	ok	deletion
 							1	NC_000001.11:g.235806685del							c.2454del	r.(2454del)	p.(Ala819HisfsTer5)	LYST	c.2454del	1	C0018		NG_IDRefseq	ok	deletion
-							1	NC_000001.11:g.235802997dup						NM_000081.4	c.3623dup	r.(3623delinsaa)	p.(Cys1209ValfsTer3)	LYST	c.3623dup	1	C0019	MANE Select	NM_MANE	ok	duplication
-							1	NC_000001.11:g.235804625dup							c.3434dup	r.(3434delinsaa)	p.(His1145GlnfsTer9)	LYST	c.3434dup	1	C0019		NG_IDRefseq	ok	duplication
-							1	NC_000001.11:g.235793567G>C							c.4052C>G	r.(4052c>g)	p.(Ser1351Ter)	LYST	c.4052C>G	1	C0020		NG_IDRefseq	ok	substitution
-							1	NC_000001.11:g.235766122G>T							c.6078C>A	r.(6078c>a)	p.(Tyr2026Ter)	LYST	c.6078C>A	2	C0021;C0022		NG_IDRefseq	ok	substitution
+							1	NC_000001.11:g.235804625dup						NM_000081.4	c.3434dup	r.(3434dup)	p.(His1145GlnfsTer9)	LYST	c.3434dup	1	C0019	MANE Select	NM_MANE	ok	duplication
+							1	NC_000001.11:g.235793567G>C						NM_000081.4	c.4052C>G	r.(4052c>g)	p.(Ser1351Ter)	LYST	c.4052C>G	1	C0020	MANE Select	NM_MANE	ok	substitution
+							1	NC_000001.11:g.235766122G>T						NM_000081.4	c.6078C>A	r.(6078c>a)	p.(Tyr2026Ter)	LYST	c.6078C>A	2	C0021;C0022	MANE Select	NM_MANE	ok	substitution
+							1	NC_000001.11:g.235791970del						NM_000081.4	c.4274del	r.(4274del)	p.(Leu1425TyrfsTer2)	LYST	c.4274del	1	C0023	MANE Select	NM_MANE	ok	deletion
 							1	NC_000001.11:g.235734590C>T						NM_000081.4	c.8428G>A	r.(8428g>a)	p.(Glu2810Lys)	LYST	c.8428G>A	1	C0023	MANE Select	NM_MANE	ok	substitution
-							1	NC_000001.11:g.235791970del							c.4274del	r.(4274del)	p.(Leu1425TyrfsTer2)	LYST	c.4274del	1	C0023		NG_IDRefseq	ok	deletion
-							1	NC_000001.11:g.235777273A>T						NM_000081.4	c.5250T>A	r.(5250u>a)	p.(=)	LYST	c.5250T>A	1	C0024	MANE Select	NM_MANE	ok	substitution
-							1	NC_000001.11:g.235791881G>T							c.4361C>A	r.(4361c>a)	p.(Ala1454Asp)	LYST	c.4361C>A	1	C0024		NG_IDRefseq	ok	substitution
-							1	NC_000001.11:g.235781018A>T							c.5061T>A	r.(5061u>a)	p.(Tyr1687Ter)	LYST	c.5061T>A	1	C0024		NG_IDRefseq	ok	substitution
-							1	NC_000001.11:g.235788701C>T							c.4688G>A	r.(4688g>a)	p.(Arg1563His)	LYST	c.4688G>A	1	C0025		NG_IDRefseq	ok	substitution
-							1	NC_000001.11:g.235766204A>T							c.5996T>A	r.(5996u>a)	p.(Val1999Asp)	LYST	c.5996T>A	1	C0026		NG_IDRefseq	ok	substitution
+							1	NC_000001.11:g.235791881G>T						NM_000081.4	c.4361C>A	r.(4361c>a)	p.(Ala1454Asp)	LYST	c.4361C>A	1	C0024	MANE Select	NM_MANE	ok	substitution
+							1	NC_000001.11:g.235781018A>T						NM_000081.4	c.5061T>A	r.(5061u>a)	p.(Tyr1687Ter)	LYST	c.5061T>A	1	C0024	MANE Select	NM_MANE	ok	substitution
+							1	NC_000001.11:g.235788701C>T						NM_000081.4	c.4688G>A	r.(4688g>a)	p.(Arg1563His)	LYST	c.4688G>A	1	C0025	MANE Select	NM_MANE	ok	substitution
+							1	NC_000001.11:g.235766204A>T						NM_000081.4	c.5996T>A	r.(5996u>a)	p.(Val1999Asp)	LYST	c.5996T>A	1	C0026	MANE Select	NM_MANE	ok	substitution
 							1	NC_000001.11:g.235733859C>T						NM_000081.4	c.8583G>A	r.(8583g>a)	p.(Trp2861Ter)	LYST	c.8583G>A	2	C0027;C0028	MANE Select	NM_MANE	ok	substitution
-							1	NC_000001.11:g.235777208del							c.5317del	r.(5317del)	p.(Arg1773AspfsTer13)	LYST	c.5317del	2	C0029;C0030		NG_IDRefseq	ok	deletion
+							1	NC_000001.11:g.235777208del						NM_000081.4	c.5317del	r.(5317del)	p.(Arg1773AspfsTer13)	LYST	c.5317del	2	C0029;C0030	MANE Select	NM_MANE	ok	deletion
 							1	NC_000001.11:g.235809278G>A						NM_000081.4	c.1540C>T	r.(1540c>u)	p.(Arg514Ter)	LYST	c.1540C>T	1	C0031	MANE Select	NM_MANE	ok	substitution
 							1	NC_000001.11:g.235712093del						NM_000081.4	c.9893del	r.(9893del)	p.(Phe3298SerfsTer7)	LYST	c.9893del	1	C0031	MANE Select	NM_MANE	ok	deletion
 							1	NC_000001.11:g.235810248dup						NM_000081.4	c.575dup	r.(570delinsuu)	p.(Leu192PhefsTer6)	LYST	c.575dup	1	C0032	MANE Select	NM_MANE	ok	duplication
 							1	NC_000001.11:g.235781946del						NM_000081.4	c.5006del	r.(5006del)	p.(Asn1669IlefsTer28)	LYST	c.5006del	1	C0033	MANE Select	NM_MANE	ok	deletion
 							1	NC_000001.11:g.235775028del						NM_000081.4	c.5519del	r.(5519del)	p.(Ser1840TyrfsTer2)	LYST	c.5519del	1	C0034	MANE Select	NM_MANE	ok	deletion
-							1	NC_000001.11:g.235716749del						NM_000081.4	c.9590del	r.(9590del)	p.(Tyr3197LeufsTer62)	LYST	c.9590del	3	C0006;C0015;C0035	MANE Select	NM_MANE	ok	deletion
 							1	NC_000001.11:g.235677127C>A						NM_000081.4	c.11002G>T	r.(11002g>u)	p.(Glu3668Ter)	LYST	c.11002G>T	2	C0036;C0037	MANE Select	NM_MANE	ok	substitution
 							1	NC_000001.11:g.235802998G>A						NM_000081.4	c.3622C>T	r.(3622c>u)	p.(Gln1208Ter)	LYST	c.3622C>T	1	C0036	MANE Select	NM_MANE	ok	substitution
 							1	NC_000001.11:g.235800326A>C						NM_000081.4	c.4000T>G	r.(4000u>g)	p.(Phe1334Val)	LYST	c.4000T>G	1	C0038	MANE Select	NM_MANE	ok	substitution
@@ -1727,41 +1682,31 @@ Individual/Gender	Individual/Origin/Geographic	Individual/Age	Individual/Remarks
 							12	NC_000012.12:g.121636767C>A						NM_032790.3	c.307-4274C>A	r.(=)	p.(=)	ORAI1	c.307-4274C>A	1	T0004		NG_IDRefseq	ok	substitution
 								NG_012849.2:g.82655G>A						NM_181523.3	c.1226G>A	r.(1226g>a)	p.(Arg409Gln)	PIK3R1	c.1226G>A	1	A0001		NM_MANE	ok	substitution
 							10	NC_000010.11:g.70600853del						NM_001083116.3	c.50del	r.(50del)	p.(Leu17ArgfsTer34)	PRF1	c.50del	16	P0001;P0016;P0039;P0040;P0044;P0046;P0047;P0048;P0050;P0051;P0052;P0053;P0054;P0070;P0071;P0085	MANE Select	NM_MANE	ok	deletion
-							10	NC_000010.11:g.70598498C>T						NM_001083116.3	c.1223G>A	r.(1223g>a)	p.(Cys408Tyr)	PRF1	c.1223G>A	11	P0002;P0004;P0009;P0010;P0011;P0012;P0022;P0023;P0024;P0025;P0029	MANE Select	NM_MANE	ok	substitution
 							10	NC_000010.11:g.70598599C>T						NM_001083116.3	c.1122G>A	r.(1122g>a)	p.(Trp374Ter)	PRF1	c.1122G>A	26	P0002;P0004;P0009;P0010;P0011;P0012;P0022;P0023;P0024;P0025;P0029;P0062;P0063;P0068;P0084;P0120;P0121;P0122;P0123;P0124;P0125;P0126;P0127;P0150;P0151;P0152	MANE Select	NM_MANE	ok	substitution
-							10	NC_000010.11:g.70600612G>A						NM_001083116.3	c.291C>T	r.(291c>u)	p.(=)	PRF1	c.291C>T	1	P0003	MANE Select	NM_MANE	ok	substitution
-							10	NC_000010.11:g.70600713G>A						NM_005041.6	c.190C>T	r.(190c>u)	p.(Gln64Ter)	PRF1	c.190C>T	1	P0003		NG_IDRefseq	ok	substitution
-							10	NC_000010.11:g.70598334C>T						NM_001083116.3	c.1387G>A	r.(1387g>a)	p.(Val463Met)	PRF1	c.1387G>A	1	P0005	MANE Select	NM_MANE	ok	substitution
+							10	NC_000010.11:g.70600713G>A						NM_001083116.3	c.190C>T	r.(190c>u)	p.(Gln64Ter)	PRF1	c.190C>T	1	P0003	MANE Select	NM_MANE	ok	substitution
+							10	NC_000010.11:g.70598435C>T						NM_001083116.3	c.1286G>A	r.(1286g>a)	p.(Gly429Glu)	PRF1	c.1286G>A	1	P0005	MANE Select	NM_MANE	ok	substitution
 							10	NC_000010.11:g.70599048G>A						NM_001083116.3	c.673C>T	r.(673c>u)	p.(Arg225Trp)	PRF1	c.673C>T	6	P0005;P0020;P0055;P0058;P0059;P0136	MANE Select	NM_MANE	ok	substitution
-							10	NC_000010.11:g.70598435C>T						NM_005041.6	c.1286G>A	r.(1286g>a)	p.(Gly429Glu)	PRF1	c.1286G>A	1	P0005		NG_IDRefseq	ok	substitution
-							10	NC_000010.11:g.70598586G>A						NM_001083116.3	c.1135C>T	r.(1135c>u)	p.(Arg379Trp)	PRF1	c.1135C>T	1	P0006	MANE Select	NM_MANE	ok	substitution
-							10	NC_000010.11:g.70598687G>A						NM_005041.6	c.1034C>T	r.(1034c>u)	p.(Pro345Leu)	PRF1	c.1034C>T	1	P0006		NG_IDRefseq	ok	substitution
-							10	NC_000010.11:g.70599072A>C						NM_001083116.3	c.649T>G	r.(649u>g)	p.(Ser217Ala)	PRF1	c.649T>G	1	P0007	MANE Select	NM_MANE	ok	substitution
-							10	NC_000010.11:g.70598784C>T						NM_001083116.3	c.937G>A	r.(937g>a)	p.(Asp313Asn)	PRF1	c.937G>A	1	P0007	MANE Select	NM_MANE	ok	substitution
-							10	NC_000010.11:g.70599173A>C						NM_005041.6	c.548T>G	r.(548u>g)	p.(Val183Gly)	PRF1	c.548T>G	1	P0007		NG_IDRefseq	ok	substitution
-							10	NC_000010.11:g.70598885C>T						NM_005041.6	c.836G>A	r.(836g>a)	p.(Cys279Tyr)	PRF1	c.836G>A	1	P0007		NG_IDRefseq	ok	substitution
+							10	NC_000010.11:g.70598687G>A						NM_001083116.3	c.1034C>T	r.(1034c>u)	p.(Pro345Leu)	PRF1	c.1034C>T	1	P0006	MANE Select	NM_MANE	ok	substitution
+							10	NC_000010.11:g.70599173A>C						NM_001083116.3	c.548T>G	r.(548u>g)	p.(Val183Gly)	PRF1	c.548T>G	1	P0007	MANE Select	NM_MANE	ok	substitution
+							10	NC_000010.11:g.70598885C>T						NM_001083116.3	c.836G>A	r.(836g>a)	p.(Cys279Tyr)	PRF1	c.836G>A	1	P0007	MANE Select	NM_MANE	ok	substitution
 							10	NC_000010.11:g.70598966T>C						NM_001083116.3	c.755A>G	r.(755a>g)	p.(Asn252Ser)	PRF1	c.755A>G	4	P0008;P0092;P0137;P0138	MANE Select	NM_MANE	ok	substitution
-							10	NC_000010.11:g.70599050A>T						NM_005041.6	c.671T>A	r.(671u>a)	p.(Ile224Asn)	PRF1	c.671T>A	1	P0013		NG_IDRefseq	ok	substitution
+							10	NC_000010.11:g.70599050A>T						NM_001083116.3	c.671T>A	r.(671u>a)	p.(Ile224Asn)	PRF1	c.671T>A	1	P0013	MANE Select	NM_MANE	ok	substitution
 							10	NC_000010.11:g.70600755C>T						NM_001083116.3	c.148G>A	r.(148g>a)	p.(Val50Met)	PRF1	c.148G>A	2	P0014;P0060	MANE Select	NM_MANE	ok	substitution
-							10	NC_000010.11:g.70599064G>T						NM_005041.6	c.657C>A	r.(657c>a)	p.(Tyr219Ter)	PRF1	c.657C>A	2	P0014;P0018		NG_IDRefseq	ok	substitution
+							10	NC_000010.11:g.70599064G>T						NM_001083116.3	c.657C>A	r.(657c>a)	p.(Tyr219Ter)	PRF1	c.657C>A	2	P0014;P0018	MANE Select	NM_MANE	ok	substitution
 							10	NC_000010.11:g.70598877_70598879del						NM_001083116.3	c.853_855del	r.(853_855del)	p.(Lys285del)	PRF1	c.853_855del	2	P0015;P0101	MANE Select	NM_MANE	ok	deletion
-							10	NC_000010.11:g.70600620A>G						NM_005041.6	c.283T>C	r.(283u>c)	p.(Trp95Arg)	PRF1	c.283T>C	1	P0017		NG_IDRefseq	ok	substitution
-							10	NC_000010.11:g.70598962C>T						NM_001083116.3	c.759G>A	r.(759g>a)	p.(=)	PRF1	c.759G>A	1	P0019	MANE Select	NM_MANE	ok	substitution
+							10	NC_000010.11:g.70600620A>G						NM_001083116.3	c.283T>C	r.(283u>c)	p.(Trp95Arg)	PRF1	c.283T>C	1	P0017	MANE Select	NM_MANE	ok	substitution
 							10	NC_000010.11:g.70599063C>T						NM_001083116.3	c.658G>A	r.(658g>a)	p.(Gly220Ser)	PRF1	c.658G>A	4	P0019;P0071;P0133;P0134	MANE Select	NM_MANE	ok	substitution
-							10	NC_000010.11:g.70599059G>A						NM_005041.6	c.662C>T	r.(662c>u)	p.(Thr221Ile)	PRF1	c.662C>T	1	P0020		NG_IDRefseq	ok	substitution
-							10	NC_000010.11:g.70598439dup						NM_001083116.3	c.1282dup	r.(1282delinsuu)	p.(Trp428LeufsTer30)	PRF1	c.1282dup	1	P0021	MANE Select	NM_MANE	ok	duplication
-							10	NC_000010.11:g.70598926G>A						NM_001083116.3	c.795C>T	r.(795c>u)	p.(=)	PRF1	c.795C>T	1	P0021	MANE Select	NM_MANE	ok	substitution
+							10	NC_000010.11:g.70599059G>A						NM_001083116.3	c.662C>T	r.(662c>u)	p.(Thr221Ile)	PRF1	c.662C>T	1	P0020	MANE Select	NM_MANE	ok	substitution
+							10	NC_000010.11:g.70598539_70598540insA						NM_001083116.3	c.1181_1182insT	r.(1181_1182insu)	p.(Gln394HisfsTer64)	PRF1	c.1181_1182insT	1	P0021	MANE Select	NM_MANE	ok	insertion
 							10	NC_000010.11:g.70599027G>A						NM_001083116.3	c.694C>T	r.(694c>u)	p.(Arg232Cys)	PRF1	c.694C>T	2	P0021;P0038	MANE Select	NM_MANE	ok	substitution
-							10	NC_000010.11:g.70598539_70598540insA						NM_005041.6	c.1181_1182insT	r.(1181_1182insu)	p.(Gln394HisfsTer64)	PRF1	c.1181_1182insT	1	P0021		NG_IDRefseq	ok	insertion
 							10	NC_000010.11:g.70598537del						NM_001083116.3	c.1184del	r.(1184del)	p.(Cys395LeufsTer25)	PRF1	c.1184del	3	P0026;P0027;P0028	MANE Select	NM_MANE	ok	deletion
+							10	NC_000010.11:g.70598230A>T						NM_001083116.3	c.1491T>A	r.(1491u>a)	p.(Cys497Ter)	PRF1	c.1491T>A	3	P0026;P0027;P0028	MANE Select	NM_MANE	ok	substitution
 							10	NC_000010.11:g.70598639del						NM_005041.6	c.1083del	r.(1083del)	p.(Arg362GlyfsTer3)	PRF1	c.1083del	3	P0026;P0027;P0028		NG_IDRefseq	ok	deletion
-							10	NC_000010.11:g.70598230A>T						NM_005041.6	c.1491T>A	r.(1491u>a)	p.(Cys497Ter)	PRF1	c.1491T>A	3	P0026;P0027;P0028		NG_IDRefseq	ok	substitution
 							10	NC_000010.11:g.70600698del						NM_001083116.3	c.207del	r.(207del)	p.(Asp70ThrfsTer37)	PRF1	c.207del	5	P0029;P0033;P0035;P0077;P0078	MANE Select	NM_MANE	ok	deletion
 							10	NC_000010.11:g.70598630_70598631del						NM_001083116.3	c.1090_1091del	r.(1090_1091del)	p.(Leu364GlufsTer93)	PRF1	c.1090_1091del	10	P0030;P0031;P0033;P0034;P0035;P0036;P0076;P0077;P0140;P0142	MANE Select	NM_MANE	ok	deletion
-							10	NC_000010.11:g.70598671C>T						NM_001083116.3	c.1050G>A	r.(1050g>a)	p.(=)	PRF1	c.1050G>A	1	P0032	MANE Select	NM_MANE	ok	substitution
-							10	NC_000010.11:g.70600902T>C						NM_005041.6	c.1A>G	r.(1a>g)	p.?	PRF1	c.1A>G	1	P0032		NG_IDRefseq	ok	substitution
+							10	NC_000010.11:g.70600902T>C						NM_001083116.3	c.1A>G	r.(1a>g)	p.?	PRF1	c.1A>G	1	P0032	MANE Select	NM_MANE	ok	substitution
 							10	NC_000010.11:g.70598772C>T						NM_001083116.3	c.949G>A	r.(949g>a)	p.(Gly317Arg)	PRF1	c.949G>A	2	P0032;P0141	MANE Select	NM_MANE	ok	substitution
-							10	NC_000010.11:g.70598475G>A						NM_005041.6	c.1246C>T	r.(1246c>u)	p.(Gln416Ter)	PRF1	c.1246C>T	1	P0034		NG_IDRefseq	ok	substitution
+							10	NC_000010.11:g.70598475G>A						NM_001083116.3	c.1246C>T	r.(1246c>u)	p.(Gln416Ter)	PRF1	c.1246C>T	1	P0034	MANE Select	NM_MANE	ok	substitution
 							10	NC_000010.11:g.70598492C>G						NM_001083116.3	c.1229G>C	r.(1229g>c)	p.(Arg410Pro)	PRF1	c.1229G>C	1	P0037	MANE Select	NM_MANE	ok	substitution
 							10	NC_000010.11:g.70599144A>G						NM_001083116.3	c.577T>C	r.(577u>c)	p.(Phe193Leu)	PRF1	c.577T>C	1	P0037	MANE Select	NM_MANE	ok	substitution
 							10	NC_000010.11:g.70598538_70598539dup						NM_001083116.3	c.1189_1190dup	r.(1182_1183delinsgugu)	p.(His398AlafsTer23)	PRF1	c.1189_1190dup	1	P0038	MANE Select	NM_MANE	ok	duplication
@@ -1879,38 +1824,54 @@ Individual/Gender	Individual/Origin/Geographic	Individual/Age	Individual/Remarks
 							5	NC_000005.10:g.132614229C>T						NM_005732.4	c.3037-1774C>T	r.(=)	p.(=)	RAD50	c.3037-1774C>T	1	R0001	MANE Select	NG_IDRefseq	ok	substitution
 							5	NC_000005.10:g.132638411A>T						NM_005732.4	c.3618+188A>T	r.(=)	p.(=)	RAD50	c.3618+188A>T	1	R0001	MANE Select	NG_IDRefseq	ok	substitution
 							11	NC_000011.10:g.36575468G>A						NM_000448.3	c.2164G>A	r.(2164g>a)	p.(Glu722Lys)	RAG1	c.2164G>A	3	R0001;R0018;R0022	MANE Select	NM_MANE	ok	substitution
+							11	NC_000011.10:g.36575624G>T						NM_000448.3	c.2320G>T	r.(2320g>u)	p.(Glu774Ter)	RAG1	c.2320G>T	1	R0001	MANE Select	NM_MANE	ok	substitution
 							11	NC_000011.10:g.36569288G>A						NM_001440489.1	c.-14-4003G>A	r.(=)	p.(=)	RAG1	c.-14-4003G>A	3	R0001;R0018;R0022		NG_IDRefseq	ok	substitution
+							11	NC_000011.10:g.36576118T>G						NM_000448.3	c.2814T>G	r.(2814u>g)	p.(Tyr938Ter)	RAG1	c.2814T>G	1	R0002	MANE Select	NM_MANE	ok	substitution
 							11	NC_000011.10:g.36575175G>A						NM_000448.3	c.1871G>A	r.(1871g>a)	p.(Arg624His)	RAG1	c.1871G>A	4	R0003;R0048;R0100;R0102	MANE Select	NM_MANE	ok	substitution
+							11	NC_000011.10:g.36575993C>T						NM_000448.3	c.2689C>T	r.(2689c>u)	p.(Arg897Ter)	RAG1	c.2689C>T	3	R0003;R0052;R0092	MANE Select	NM_MANE	ok	substitution
 							11	NC_000011.10:g.36574986G>A						NM_000448.3	c.1682G>A	r.(1682g>a)	p.(Arg561His)	RAG1	c.1682G>A	3	R0004;R0050;R0058	MANE Select	NM_MANE	ok	substitution
+							11	NC_000011.10:g.36574490C>T						NM_000448.3	c.1186C>T	r.(1186c>u)	p.(Arg396Cys)	RAG1	c.1186C>T	7	R0005;R0008;R0035;R0038;R0039;R0090;R0091	MANE Select	NM_MANE	ok	substitution
 							11	NC_000011.10:g.36576039A>G						NM_000448.3	c.2735A>G	r.(2735a>g)	p.(Tyr912Cys)	RAG1	c.2735A>G	1	R0005	MANE Select	NM_MANE	ok	substitution
 							11	NC_000011.10:g.36569859A>G						NM_001440489.1	c.-14-3432A>G	r.(=)	p.(=)	RAG1	c.-14-3432A>G	1	R0005		NG_IDRefseq	ok	substitution
 							11	NC_000011.10:g.36574491G>A						NM_000448.3	c.1187G>A	r.(1187g>a)	p.(Arg396His)	RAG1	c.1187G>A	3	R0006;R0081;R0093	MANE Select	NM_MANE	ok	substitution
 							11	NC_000011.10:g.36568735_36568747del						NM_001440489.1	c.-14-4556_-14-4544del	r.(=)	p.(=)	RAG1	c.-14-4556_-14-4544del	1	R0006		NG_IDRefseq	ok	deletion
 							11	NC_000011.10:g.36574590A>G						NM_000448.3	c.1286A>G	r.(1286a>g)	p.(Asp429Gly)	RAG1	c.1286A>G	1	R0007	MANE Select	NM_MANE	ok	substitution
+							11	NC_000011.10:g.36573560_36573561del						NM_000448.3	c.256_257del	r.(256_257del)	p.(Lys86ValfsTer33)	RAG1	c.256_257del	9	R0007;R0011;R0019;R0021;R0022;R0036;R0049;R0062;R0084	MANE Select	NM_MANE	ok	deletion
 							11	NC_000011.10:g.36568410A>G						NM_001440489.1	c.-14-4881A>G	r.(=)	p.(=)	RAG1	c.-14-4881A>G	1	R0007		NG_IDRefseq	ok	substitution
 							11	NC_000011.10:g.36567380_36567381del						NM_001440489.1	c.-14-5911_-14-5910del	r.(=)	p.(=)	RAG1	c.-14-5911_-14-5910del	6	R0007;R0011;R0019;R0021;R0022;R0036		NG_IDRefseq	ok	deletion
 							11	NC_000011.10:g.36574985C>T						NM_000448.3	c.1681C>T	r.(1681c>u)	p.(Arg561Cys)	RAG1	c.1681C>T	4	R0009;R0024;R0076;R0095	MANE Select	NM_MANE	ok	substitution
+							11	NC_000011.10:g.36575514G>A						NM_000448.3	c.2210G>A	r.(2210g>a)	p.(Arg737His)	RAG1	c.2210G>A	2	R0009;R0088	MANE Select	NM_MANE	ok	substitution
 							11	NC_000011.10:g.36568805C>T						NM_001440489.1	c.-14-4486C>T	r.(=)	p.(=)	RAG1	c.-14-4486C>T	2	R0009;R0024		NG_IDRefseq	ok	substitution
-							11	NC_000011.10:g.36575343_36575344insAGCTCTCAGAATGTGAAAC						NM_000448.3	c.2039_2040insAGCTCTCAGAATGTGAAAC	r.(2039_2040insagcucucagaaugugaaac)	p.(Glu681AlafsTer5)	RAG1	c.2039_2040insAGCTCTCAGAATGTGAAAC	1	R0011	MANE Select	NM_MANE	ok	insertion
+							11	NC_000011.10:g.36575919T>A						NM_000448.3	c.2615T>A	r.(2615u>a)	p.(Leu872Ter)	RAG1	c.2615T>A	2	R0010;R0027	MANE Select	NM_MANE	ok	substitution
+							11	NC_000011.10:g.36575212_36575230dup						NM_000448.3	c.1908_1926dup	r.(1908_1926dup)	p.(Val643GlnfsTer9)	RAG1	c.1908_1926dup	1	R0011	MANE Select	NM_MANE	ok	duplication
 							11	NC_000011.10:g.36569050_36569051insCAGCTCTCAGAATGTGAAA						NM_001440489.1	c.-14-4241_-14-4240insCAGCTCTCAGAATGTGAAA	r.(=)	p.(=)	RAG1	c.-14-4241_-14-4240insCAGCTCTCAGAATGTGAAA	1	R0011		NG_IDRefseq	ok	insertion
 							11	NC_000011.10:g.36568270del						NM_001440489.1	c.-14-5021del	r.(=)	p.(=)	RAG1	c.-14-5021del	1	R0012		NG_IDRefseq	ok	deletion
 							11	NC_000011.10:g.36574635C>T						NM_000448.3	c.1331C>T	r.(1331c>u)	p.(Ala444Val)	RAG1	c.1331C>T	3	R0013;R0031;R0032	MANE Select	NM_MANE	ok	substitution
 							11	NC_000011.10:g.36574533G>A						NM_000448.3	c.1229G>A	r.(1229g>a)	p.(Arg410Gln)	RAG1	c.1229G>A	2	R0014;R0097	MANE Select	NM_MANE	ok	substitution
+							11	NC_000011.10:g.36575825C>T						NM_000448.3	c.2521C>T	r.(2521c>u)	p.(Arg841Trp)	RAG1	c.2521C>T	4	R0014;R0061;R0085;R0086	MANE Select	NM_MANE	ok	substitution
 							11	NC_000011.10:g.36576180G>A						NM_000448.3	c.2876G>A	r.(2876g>a)	p.(Trp959Ter)	RAG1	c.2876G>A	1	R0016	MANE Select	NM_MANE	ok	substitution
 							11	NC_000011.10:g.36569194_36569201del						NM_001440489.1	c.-14-4097_-14-4090del	r.(=)	p.(=)	RAG1	c.-14-4097_-14-4090del	1	R0017		NG_IDRefseq	ok	deletion
+							11	NC_000011.10:g.36574870G>T						NM_000448.3	c.1566G>T	r.(1566g>u)	p.(Trp522Cys)	RAG1	c.1566G>T	2	R0018;R0094	MANE Select	NM_MANE	ok	substitution
 							11	NC_000011.10:g.36574505T>C						NM_000448.3	c.1201T>C	r.(1201u>c)	p.(Ser401Pro)	RAG1	c.1201T>C	1	R0020	MANE Select	NM_MANE	ok	substitution
 							11	NC_000011.10:g.36575903_36575904delinsTT						NM_000448.3	c.2599_2600delinsTT	r.(2599_2600delinsuu)	p.(Asp867Phe)	RAG1	c.2599_2600delinsTT	1	R0021	MANE Select	NM_MANE	ok	delins
 							11	NC_000011.10:g.36569611_36569612del						NM_001440489.1	c.-14-3680_-14-3679del	r.(=)	p.(=)	RAG1	c.-14-3680_-14-3679del	1	R0021		NG_IDRefseq	ok	deletion
 							11	NC_000011.10:g.36574287G>A						NM_000448.3	c.983G>A	r.(983g>a)	p.(Cys328Tyr)	RAG1	c.983G>A	1	R0023	MANE Select	NM_MANE	ok	substitution
+							11	NC_000011.10:g.36574823C>T						NM_000448.3	c.1519C>T	r.(1519c>u)	p.(Arg507Trp)	RAG1	c.1519C>T	2	R0024;R0088	MANE Select	NM_MANE	ok	substitution
+							11	NC_000011.10:g.36575071C>G						NM_000448.3	c.1767C>G	r.(1767c>g)	p.(Tyr589Ter)	RAG1	c.1767C>G	2	R0026;R0069	MANE Select	NM_MANE	ok	substitution
 							11	NC_000011.10:g.36574365del						NM_000448.3	c.1061del	r.(1061del)	p.(Leu354ArgfsTer3)	RAG1	c.1061del	1	R0027	MANE Select	NM_MANE	ok	deletion
 							11	NC_000011.10:g.36568185del						NM_001440489.1	c.-14-5106del	r.(=)	p.(=)	RAG1	c.-14-5106del	1	R0027		NG_IDRefseq	ok	deletion
+							11	NC_000011.10:g.36574713_36574714del						NM_000448.3	c.1409_1410del	r.(1409_1410del)	p.(Cys470PhefsTer40)	RAG1	c.1409_1410del	1	R0028	MANE Select	NM_MANE	ok	deletion
 							11	NC_000011.10:g.36568533_36568534del						NM_001440489.1	c.-14-4758_-14-4757del	r.(=)	p.(=)	RAG1	c.-14-4758_-14-4757del	1	R0028		NG_IDRefseq	ok	deletion
+							11	NC_000011.10:g.36575868A>T						NM_000448.3	c.2564A>T	r.(2564a>u)	p.(Asn855Ile)	RAG1	c.2564A>T	1	R0029	MANE Select	NM_MANE	ok	substitution
 							11	NC_000011.10:g.36574725G>A						NM_000448.3	c.1421G>A	r.(1421g>a)	p.(Arg474His)	RAG1	c.1421G>A	3	R0030;R0047;R0087	MANE Select	NM_MANE	ok	substitution
 							11	NC_000011.10:g.36575562A>T						NM_000448.3	c.2258A>T	r.(2258a>u)	p.(His753Leu)	RAG1	c.2258A>T	1	R0030	MANE Select	NM_MANE	ok	substitution
 							11	NC_000011.10:g.36574601G>A						NM_000448.3	c.1297G>A	r.(1297g>a)	p.(Val433Met)	RAG1	c.1297G>A	1	R0031	MANE Select	NM_MANE	ok	substitution
+							11	NC_000011.10:g.36575310A>G						NM_000448.3	c.2006A>G	r.(2006a>g)	p.(Glu669Gly)	RAG1	c.2006A>G	1	R0033	MANE Select	NM_MANE	ok	substitution
 							11	NC_000011.10:g.36576004C>A						NM_000448.3	c.2700C>A	r.(2700c>a)	p.(Cys900Ter)	RAG1	c.2700C>A	1	R0033	MANE Select	NM_MANE	ok	substitution
 							11	NC_000011.10:g.36569824C>A						NM_001440489.1	c.-14-3467C>A	r.(=)	p.(=)	RAG1	c.-14-3467C>A	1	R0033		NG_IDRefseq	ok	substitution
 							11	NC_000011.10:g.36574491G>T						NM_000448.3	c.1187G>T	r.(1187g>u)	p.(Arg396Leu)	RAG1	c.1187G>T	1	R0034	MANE Select	NM_MANE	ok	substitution
+							11	NC_000011.10:g.36576228G>A						NM_000448.3	c.2924G>A	r.(2924g>a)	p.(Arg975Gln)	RAG1	c.2924G>A	1	R0034	MANE Select	NM_MANE	ok	substitution
+							11	NC_000011.10:g.36575174C>T						NM_000448.3	c.1870C>T	r.(1870c>u)	p.(Arg624Cys)	RAG1	c.1870C>T	2	R0036;R0087	MANE Select	NM_MANE	ok	substitution
 							11	NC_000011.10:g.36574607A>G						NM_000448.3	c.1303A>G	r.(1303a>g)	p.(Met435Val)	RAG1	c.1303A>G	1	R0037	MANE Select	NM_MANE	ok	substitution
 							11	NC_000011.10:g.36574981G>T						NM_000448.3	c.1677G>T	r.(1677g>u)	p.(Arg559Ser)	RAG1	c.1677G>T	3	R0037;R0052;R0092	MANE Select	NM_MANE	ok	substitution
 							11	NC_000011.10:g.36568427A>G						NM_001440489.1	c.-14-4864A>G	r.(=)	p.(=)	RAG1	c.-14-4864A>G	1	R0037		NG_IDRefseq	ok	substitution
@@ -1918,6 +1879,7 @@ Individual/Gender	Individual/Origin/Geographic	Individual/Age	Individual/Remarks
 							11	NC_000011.10:g.36569778T>G						NM_001440489.1	c.-14-3513T>G	r.(=)	p.(=)	RAG1	c.-14-3513T>G	2	R0038;R0039		NG_IDRefseq	ok	substitution
 							11	NC_000011.10:g.36573935del						NM_000448.3	c.631del	r.(631del)	p.(Cys211ValfsTer53)	RAG1	c.631del	1	R0040	MANE Select	NM_MANE	ok	deletion
 							11	NC_000011.10:g.36567643del						NM_001440489.1	c.-14-5648del	r.(=)	p.(=)	RAG1	c.-14-5648del	1	R0040		NG_IDRefseq	ok	deletion
+							11	NC_000011.10:g.36574079del						NM_000448.3	c.775del	r.(775del)	p.(Ser259AlafsTer5)	RAG1	c.775del	1	R0041	MANE Select	NM_MANE	ok	deletion
 							11	NC_000011.10:g.36567900del						NM_001440489.1	c.-14-5391del	r.(=)	p.(=)	RAG1	c.-14-5391del	1	R0041		NG_IDRefseq	ok	deletion
 							11	NC_000011.10:g.36575498C>T						NM_000448.3	c.2194C>T	r.(2194c>u)	p.(Leu732Phe)	RAG1	c.2194C>T	1	R0042	MANE Select	NM_MANE	ok	substitution
 							11	NC_000011.10:g.36576222G>A						NM_000448.3	c.2918G>A	r.(2918g>a)	p.(Arg973His)	RAG1	c.2918G>A	1	R0043	MANE Select	NM_MANE	ok	substitution
@@ -1926,14 +1888,11 @@ Individual/Gender	Individual/Origin/Geographic	Individual/Age	Individual/Remarks
 							11	NC_000011.10:g.36575927del						NM_000448.3	c.2623del	r.(2623del)	p.(Ser875ProfsTer8)	RAG1	c.2623del	1	R0045	MANE Select	NM_MANE	ok	deletion
 							11	NC_000011.10:g.36575493G>T						NM_000448.3	c.2189G>T	r.(2189g>u)	p.(Cys730Phe)	RAG1	c.2189G>T	1	R0047	MANE Select	NM_MANE	ok	substitution
 							11	NC_000011.10:g.36576278A>G						NM_000448.3	c.2974A>G	r.(2974a>g)	p.(Lys992Glu)	RAG1	c.2974A>G	1	R0048	MANE Select	NM_MANE	ok	substitution
-							11	NC_000011.10:g.36573560_36573561del						NM_000448.3	c.256_257del	r.(256_257del)	p.(Lys86ValfsTer33)	RAG1	c.256_257del	3	R0049;R0062;R0084	MANE Select	NM_MANE	ok	deletion
 							11	NC_000011.10:g.36574303T>A						NM_000448.3	c.999T>A	r.(999u>a)	p.(Tyr333Ter)	RAG1	c.999T>A	1	R0049	MANE Select	NM_MANE	ok	substitution
-							11	NC_000011.10:g.36575993C>T						NM_000448.3	c.2689C>T	r.(2689c>u)	p.(Arg897Ter)	RAG1	c.2689C>T	2	R0052;R0092	MANE Select	NM_MANE	ok	substitution
 							11	NC_000011.10:g.36574515G>A						NM_000448.3	c.1211G>A	r.(1211g>a)	p.(Arg404Gln)	RAG1	c.1211G>A	4	R0053;R0054;R0074;R0076	MANE Select	NM_MANE	ok	substitution
 							11	NC_000011.10:g.36575990T>C						NM_000448.3	c.2686T>C	r.(2686u>c)	p.(Trp896Arg)	RAG1	c.2686T>C	1	R0055	MANE Select	NM_MANE	ok	substitution
 							11	NC_000011.10:g.36575306del						NM_000448.3	c.2002del	r.(2002del)	p.(His668ThrfsTer4)	RAG1	c.2002del	1	R0056	MANE Select	NM_MANE	ok	deletion
 							11	NC_000011.10:g.36576246A>C						NM_000448.3	c.2942A>C	r.(2942a>c)	p.(Gln981Pro)	RAG1	c.2942A>C	1	R0060	MANE Select	NM_MANE	ok	substitution
-							11	NC_000011.10:g.36575825C>T						NM_000448.3	c.2521C>T	r.(2521c>u)	p.(Arg841Trp)	RAG1	c.2521C>T	3	R0061;R0085;R0086	MANE Select	NM_MANE	ok	substitution
 							11	NC_000011.10:g.36574484C>T						NM_000448.3	c.1180C>T	r.(1180c>u)	p.(Arg394Trp)	RAG1	c.1180C>T	2	R0063;R0075	MANE Select	NM_MANE	ok	substitution
 							11	NC_000011.10:g.36574046C>T						NM_000448.3	c.742C>T	r.(742c>u)	p.(Gln248Ter)	RAG1	c.742C>T	1	R0064	MANE Select	NM_MANE	ok	substitution
 							11	NC_000011.10:g.36575450C>T						NM_000448.3	c.2146C>T	r.(2146c>u)	p.(Arg716Trp)	RAG1	c.2146C>T	1	R0065	MANE Select	NM_MANE	ok	substitution
@@ -1942,7 +1901,6 @@ Individual/Gender	Individual/Origin/Geographic	Individual/Age	Individual/Remarks
 							11	NC_000011.10:g.36573879G>A						NM_000448.3	c.575G>A	r.(575g>a)	p.(Cys192Tyr)	RAG1	c.575G>A	1	R0066	MANE Select	NM_MANE	ok	substitution
 							11	NC_000011.10:g.36576171T>C						NM_000448.3	c.2867T>C	r.(2867u>c)	p.(Ile956Thr)	RAG1	c.2867T>C	1	R0067	MANE Select	NM_MANE	ok	substitution
 							11	NC_000011.10:g.36575430G>A						NM_000448.3	c.2126G>A	r.(2126g>a)	p.(Gly709Asp)	RAG1	c.2126G>A	1	R0068	MANE Select	NM_MANE	ok	substitution
-							11	NC_000011.10:g.36575071C>G						NM_000448.3	c.1767C>G	r.(1767c>g)	p.(Tyr589Ter)	RAG1	c.1767C>G	1	R0069	MANE Select	NM_MANE	ok	substitution
 							11	NC_000011.10:g.36575251del						NM_000448.3	c.1947del	r.(1947del)	p.(Asn650ThrfsTer22)	RAG1	c.1947del	1	R0070	MANE Select	NM_MANE	ok	deletion
 							11	NC_000011.10:g.36574724C>A						NM_000448.3	c.1420C>A	r.(1420c>a)	p.(Arg474Ser)	RAG1	c.1420C>A	1	R0071	MANE Select	NM_MANE	ok	substitution
 							11	NC_000011.10:g.36575168G>C						NM_000448.3	c.1864G>C	r.(1864g>c)	p.(Ala622Pro)	RAG1	c.1864G>C	1	R0071	MANE Select	NM_MANE	ok	substitution
@@ -1954,15 +1912,10 @@ Individual/Gender	Individual/Origin/Geographic	Individual/Age	Individual/Remarks
 							11	NC_000011.10:g.36575110T>G						NM_000448.3	c.1806T>G	r.(1806u>g)	p.(Cys602Trp)	RAG1	c.1806T>G	1	R0079	MANE Select	NM_MANE	ok	substitution
 							11	NC_000011.10:g.36575631G>A						NM_000448.3	c.2327G>A	r.(2327g>a)	p.(Arg776Gln)	RAG1	c.2327G>A	1	R0083	MANE Select	NM_MANE	ok	substitution
 							11	NC_000011.10:g.36576239_36576241del						NM_000448.3	c.2935_2937del	r.(2935_2937del)	p.(Ala979del)	RAG1	c.2935_2937del	1	R0083	MANE Select	NM_MANE	ok	deletion
-							11	NC_000011.10:g.36575174C>T						NM_000448.3	c.1870C>T	r.(1870c>u)	p.(Arg624Cys)	RAG1	c.1870C>T	1	R0087	MANE Select	NM_MANE	ok	substitution
-							11	NC_000011.10:g.36574823C>T						NM_000448.3	c.1519C>T	r.(1519c>u)	p.(Arg507Trp)	RAG1	c.1519C>T	1	R0088	MANE Select	NM_MANE	ok	substitution
-							11	NC_000011.10:g.36575514G>A						NM_000448.3	c.2210G>A	r.(2210g>a)	p.(Arg737His)	RAG1	c.2210G>A	1	R0088	MANE Select	NM_MANE	ok	substitution
 							11	NC_000011.10:g.36574244C>T						NM_000448.3	c.940C>T	r.(940c>u)	p.(Arg314Trp)	RAG1	c.940C>T	1	R0088	MANE Select	NM_MANE	ok	substitution
 							11	NC_000011.10:g.36575637G>A						NM_000448.3	c.2333G>A	r.(2333g>a)	p.(Arg778Gln)	RAG1	c.2333G>A	1	R0089	MANE Select	NM_MANE	ok	substitution
 							11	NC_000011.10:g.36576227C>T						NM_000448.3	c.2923C>T	r.(2923c>u)	p.(Arg975Trp)	RAG1	c.2923C>T	1	R0089	MANE Select	NM_MANE	ok	substitution
-							11	NC_000011.10:g.36574490C>T						NM_000448.3	c.1186C>T	r.(1186c>u)	p.(Arg396Cys)	RAG1	c.1186C>T	2	R0090;R0091	MANE Select	NM_MANE	ok	substitution
 							11	NC_000011.10:g.36573728C>T						NM_000448.3	c.424C>T	r.(424c>u)	p.(Arg142Ter)	RAG1	c.424C>T	1	R0093	MANE Select	NM_MANE	ok	substitution
-							11	NC_000011.10:g.36574870G>T						NM_000448.3	c.1566G>T	r.(1566g>u)	p.(Trp522Cys)	RAG1	c.1566G>T	1	R0094	MANE Select	NM_MANE	ok	substitution
 							11	NC_000011.10:g.36576221C>T						NM_000448.3	c.2917C>T	r.(2917c>u)	p.(Arg973Cys)	RAG1	c.2917C>T	1	R0094	MANE Select	NM_MANE	ok	substitution
 							11	NC_000011.10:g.36575119G>C						NM_000448.3	c.1815G>C	r.(1815g>c)	p.(Met605Ile)	RAG1	c.1815G>C	1	R0095	MANE Select	NM_MANE	ok	substitution
 							11	NC_000011.10:g.36575168del						NM_000448.3	c.1864del	r.(1864del)	p.(Ala622GlnfsTer9)	RAG1	c.1864del	1	R0097	MANE Select	NM_MANE	ok	deletion
@@ -1970,23 +1923,28 @@ Individual/Gender	Individual/Origin/Geographic	Individual/Age	Individual/Remarks
 							11	NC_000011.10:g.36574517A>G						NM_000448.3	c.1213A>G	r.(1213a>g)	p.(Arg405Gly)	RAG1	c.1213A>G	1	R0100	MANE Select	NM_MANE	ok	substitution
 							11	NC_000011.10:g.36575486T>C						NM_000448.3	c.2182T>C	r.(2182u>c)	p.(Tyr728His)	RAG1	c.2182T>C	1	R0102	MANE Select	NM_MANE	ok	substitution
 							11	NC_000011.10:g.36575423G>C						NM_000448.3	c.2119G>C	r.(2119g>c)	p.(Gly707Arg)	RAG1	c.2119G>C	1	R0104	MANE Select	NM_MANE	ok	substitution
+							11	NC_000011.10:g.36592736C>T						NM_000536.4	c.1433G>A	r.(1433g>a)	p.(Cys478Tyr)	RAG2	c.1433G>A	2	S0001;S0002	MANE Select	NM_MANE	ok	substitution
+							11	NC_000011.10:g.36593483C>T						NM_000536.4	c.686G>A	r.(686g>a)	p.(Arg229Gln)	RAG2	c.686G>A	6	S0003;S0008;S0017;S0018;S0019;S0045	MANE Select	NM_MANE	ok	substitution
+							11	NC_000011.10:g.36594046G>C						NM_000536.4	c.123C>G	r.(123c>g)	p.(Cys41Trp)	RAG2	c.123C>G	1	S0004	MANE Select	NM_MANE	ok	substitution
+							11	NC_000011.10:g.36593315A>C						NM_000536.4	c.854T>G	r.(854u>g)	p.(Met285Arg)	RAG2	c.854T>G	1	S0004	MANE Select	NM_MANE	ok	substitution
+							11	NC_000011.10:g.36593352_36593354del						NM_000536.4	c.817_819del	r.(817_819del)	p.(Ile273del)	RAG2	c.817_819del	1	S0005	MANE Select	NM_MANE	ok	deletion
 							11	NC_000011.10:g.36597217_36597219del							c.-1028+883_-1028+885del	r.(=)	p.(=)	RAG2	c.-1028+883_-1028+885del	1	S0005		NG_IDRefseq	ok	deletion
+							11	NC_000011.10:g.36593886C>T						NM_000536.4	c.283G>A	r.(283g>a)	p.(Gly95Arg)	RAG2	c.283G>A	2	S0007;S0028	MANE Select	NM_MANE	ok	substitution
 							11	NC_000011.10:g.36592812A>T						NM_000536.4	c.1357T>A	r.(1357u>a)	p.(Trp453Arg)	RAG2	c.1357T>A	2	S0007;S0024	MANE Select	NM_MANE	ok	substitution
+							11	NC_000011.10:g.36593484G>A						NM_000536.4	c.685C>T	r.(685c>u)	p.(Arg229Trp)	RAG2	c.685C>T	10	S0009;S0014;S0015;S0026;S0027;S0028;S0029;S0030;S0035;S0038	MANE Select	NM_MANE	ok	substitution
 							11	NC_000011.10:g.36593248C>T						NM_000536.4	c.921G>A	r.(921g>a)	p.(Trp307Ter)	RAG2	c.921G>A	1	S0010	MANE Select	NM_MANE	ok	substitution
 							11	NC_000011.10:g.36597115C>T							c.-1028+987G>A	r.(=)	p.(=)	RAG2	c.-1028+987G>A	1	S0010		NG_IDRefseq	ok	substitution
 							11	NC_000011.10:g.36592505_36592506insAACAG						NM_000536.4	c.*80_*81insTGTTC	r.(*80_*81insuguuc)	p.(=)	RAG2	c.*80_*81insTGTTC	1	S0011	MANE Select	NM_MANE	ok	insertion
 							11	NC_000011.10:g.36597572_36597573insGAACA							c.-1028+530_-1028+531insGTTCT	r.(=)	p.(=)	RAG2	c.-1028+530_-1028+531insGTTCT	1	S0011		NG_IDRefseq	ok	insertion
+							11	NC_000011.10:g.36592748T>C						NM_000536.4	c.1421A>G	r.(1421a>g)	p.(Asn474Ser)	RAG2	c.1421A>G	1	S0012	MANE Select	NM_MANE	ok	substitution
 							11	NC_000011.10:g.36593727G>A						NM_000536.4	c.442C>T	r.(442c>u)	p.(Arg148Ter)	RAG2	c.442C>T	1	S0013	MANE Select	NM_MANE	ok	substitution
 							11	NC_000011.10:g.36593552A>C						NM_000536.4	c.617T>G	r.(617u>g)	p.(Phe206Cys)	RAG2	c.617T>G	1	S0013	MANE Select	NM_MANE	ok	substitution
 							11	NC_000011.10:g.36597594G>A							c.-1028+508C>T	r.(=)	p.(=)	RAG2	c.-1028+508C>T	1	S0013		NG_IDRefseq	ok	substitution
+							11	NC_000011.10:g.36594065C>A						NM_000536.4	c.104G>T	r.(104g>u)	p.(Gly35Val)	RAG2	c.104G>T	5	S0016;S0031;S0033;S0034;S0039	MANE Select	NM_MANE	ok	substitution
 							11	NC_000011.10:g.36594054T>C						NM_000536.4	c.115A>G	r.(115a>g)	p.(Arg39Gly)	RAG2	c.115A>G	3	S0017;S0018;S0019	MANE Select	NM_MANE	ok	substitution
-							11	NC_000011.10:g.36593483C>T						NM_000536.4	c.686G>A	r.(686g>a)	p.(Arg229Gln)	RAG2	c.686G>A	3	S0018;S0019;S0045	MANE Select	NM_MANE	ok	substitution
 							11	NC_000011.10:g.36593459del						NM_000536.4	c.712del	r.(712del)	p.(Val238LeufsTer10)	RAG2	c.712del	3	S0020;S0021;S0023	MANE Select	NM_MANE	ok	deletion
 							11	NC_000011.10:g.36592727T>G						NM_000536.4	c.1442A>C	r.(1442a>c)	p.(His481Pro)	RAG2	c.1442A>C	1	S0022	MANE Select	NM_MANE	ok	substitution
 							11	NC_000011.10:g.36594123G>A						NM_000536.4	c.46C>T	r.(46c>u)	p.(Gln16Ter)	RAG2	c.46C>T	1	S0025	MANE Select	NM_MANE	ok	substitution
-							11	NC_000011.10:g.36593484G>A						NM_000536.4	c.685C>T	r.(685c>u)	p.(Arg229Trp)	RAG2	c.685C>T	7	S0026;S0027;S0028;S0029;S0030;S0035;S0038	MANE Select	NM_MANE	ok	substitution
-							11	NC_000011.10:g.36593886C>T						NM_000536.4	c.283G>A	r.(283g>a)	p.(Gly95Arg)	RAG2	c.283G>A	1	S0028	MANE Select	NM_MANE	ok	substitution
-							11	NC_000011.10:g.36594065C>A						NM_000536.4	c.104G>T	r.(104g>u)	p.(Gly35Val)	RAG2	c.104G>T	4	S0031;S0033;S0034;S0039	MANE Select	NM_MANE	ok	substitution
 							11	NC_000011.10:g.36593525G>A						NM_000536.4	c.644C>T	r.(644c>u)	p.(Thr215Ile)	RAG2	c.644C>T	1	S0032	MANE Select	NM_MANE	ok	substitution
 							11	NC_000011.10:g.36592665T>C						NM_000536.4	c.1504A>G	r.(1504a>g)	p.(Met502Val)	RAG2	c.1504A>G	1	S0036	MANE Select	NM_MANE	ok	substitution
 							11	NC_000011.10:g.36593690G>A						NM_000536.4	c.479C>T	r.(479c>u)	p.(Ser160Leu)	RAG2	c.479C>T	1	S0036	MANE Select	NM_MANE	ok	substitution
@@ -2010,11 +1968,10 @@ Individual/Gender	Individual/Origin/Geographic	Individual/Age	Individual/Remarks
 							1	NC_000001.11:g.151343076G>A						NM_001379419.1	c.841C>T	r.(841c>u)	p.(Gln281Ter)	RFX5	c.841C>T	1	R0005		NG_IDRefseq	ok	substitution
 							1	NC_000001.11:g.151344444C>T						NM_001025603.2	c.446G>A	r.(446g>a)	p.(Arg149Gln)	RFX5	c.446G>A	2	R0007;R0008	MANE Select	NM_MANE	ok	substitution
 							1	NC_000001.11:g.151344444C>T						NM_001379419.1	c.326G>A	r.(326g>a)	p.(Arg109Gln)	RFX5	c.326G>A	2	R0007;R0008		NG_IDRefseq	ok	substitution
-							19	NC_000019.10:g.19201657G>T						NM_003721.4	c.721G>T	r.(721g>u)	p.(Val241Leu)	RFXANK	c.721G>T	1	R0001	MANE Select	NM_MANE	ok	substitution
 							19	NC_000019.10:g.19197218G>T						NM_003721.4	c.304G>T	r.(304g>u)	p.(Glu102Ter)	RFXANK	c.304G>T	2	R0001;R0026	MANE Select	NM_MANE	ok	substitution
-							19	NC_000019.10:g.19198676T>C							c.584T>C	r.(584u>c)	p.(Leu195Pro)	RFXANK	c.584T>C	1	R0002		NG_IDRefseq	ok	substitution
-							19	NC_000019.10:g.19198137C>T							c.469C>T	r.(469c>u)	p.(Arg157Ter)	RFXANK	c.469C>T	1	R0003		NG_IDRefseq	ok	substitution
-							19	NC_000019.10:g.19197566del							c.383del	r.(383del)	p.(Leu128ProfsTer76)	RFXANK	c.383del	1	R0024		NG_IDRefseq	ok	deletion
+							19	NC_000019.10:g.19198676T>C						NM_003721.4	c.584T>C	r.(584u>c)	p.(Leu195Pro)	RFXANK	c.584T>C	1	R0002	MANE Select	NM_MANE	ok	substitution
+							19	NC_000019.10:g.19198137C>T						NM_003721.4	c.469C>T	r.(469c>u)	p.(Arg157Ter)	RFXANK	c.469C>T	1	R0003	MANE Select	NM_MANE	ok	substitution
+							19	NC_000019.10:g.19197566del						NM_003721.4	c.383del	r.(383del)	p.(Leu128ProfsTer76)	RFXANK	c.383del	1	R0024	MANE Select	NM_MANE	ok	deletion
 							19	NC_000019.10:g.19199156C>T						NM_003721.4	c.634C>T	r.(634c>u)	p.(Arg212Ter)	RFXANK	c.634C>T	1	R0029	MANE Select	NM_MANE	ok	substitution
 							19	NC_000019.10:g.19197545A>T						NM_003721.4	c.362A>T	r.(362a>u)	p.(Asp121Val)	RFXANK	c.362A>T	1	R0030	MANE Select	NM_MANE	ok	substitution
 														NM_000538.3	c.150_151insGCGGGGC	r.(150_151insgcggggc)	p.(Pro51AlafsTer24)	RFXAP	c.150_151insGCGGGGC	2	R0006;R0007		NM_IDRefseq	ok	insertion
@@ -2280,6 +2237,8 @@ Individual/Gender	Individual/Origin/Geographic	Individual/Age	Individual/Remarks
 								NG_011759.1:g.6510del						NM_000593.6	c.639del	r.(639del)	p.(Trp214GlyfsTer15)	TAP1	c.639del	1	T0001		NM_MANE	ok	deletion
 								NG_011759.1:g.8536C>T						NM_000593.6	c.1132C>T	r.(1132c>u)	p.(Arg378Ter)	TAP1	c.1132C>T	2	T0003;T0004		NM_MANE	ok	substitution
 								NG_011759.1:g.10318C>T						NM_000593.6	c.1564C>T	r.(1564c>u)	p.(Gln522Ter)	TAP1	c.1564C>T	2	T0005;T0006		NM_MANE	ok	substitution
+								NG_009793.4:g.8047C>T						NM_001290043.2	c.658C>T	r.(658c>u)	p.(Arg220Ter)	TAP2	c.658C>T	1	T0001		NM_MANE	ok	substitution
+								NG_009793.4:g.10980del						NM_001290043.2	c.979del	r.(979del)	p.(Arg327GlyfsTer53)	TAP2	c.979del	2	T0002;T0003		NM_MANE	ok	deletion
 								NG_009793.4:g.8017C>T						NM_001290043.2	c.628C>T	r.(628c>u)	p.(Arg210Ter)	TAP2	c.628C>T	1	T0004		NM_MANE	ok	substitution
 														NM_000116.5	c.153C>G	r.(153c>g)	p.(Tyr51Ter)	TAZ	c.153C>G	5	T0001;T0002;T0003;T0075;T0083		NM_MANE	ok	substitution
 														NM_000116.5	c.580dup	r.(580delinsuu)	p.(Trp194LeufsTer9)	TAZ	c.580dup	4	T0007;T0008;T0009;T0079		NM_MANE	ok	duplication
