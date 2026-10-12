@@ -189,13 +189,25 @@ From Run 0 to Run 13:
 - Protein BAD→GOOD totalled 460 units, with all GOOD→BAD (18) in Run 1.
 - c./p. coherence rose from 75.34% to 100% of checkable pairs.
 
+![Heatmap of each fix run's share of the total Run 0 to Run 13 improvement, for five measures (rows) and Runs 1 to 13 (columns). Gains are blue and losses orange. Each measure improves in a few runs: recovery mostly in Run 1 (77%) and Run 10 (19%); protein matches in Runs 1, 5 and 8 (26%, 40%, 26%); pair consistency in Runs 3, 5 and 8 (29%, 54%, 17%) after a loss in Run 1 (−13%); excess pairs in Run 5 (110%) after Run 1 added excess (−64%); c./p. coherence in Run 7 (107%). Runs 11 to 13 are outlined as a plateau where every share is below 1%.](docs/figures/fig09_gain_heatmap.png)
+
+*Where each measure's improvement came from: every measure has its own decisive runs, and from Run 11
+on none moves.*
+
 ### Knowing when to stop
 
-Each run fixed less than the one before (from Run 8 onwards, about 0.1 point of consistency per run), and later candidates increasingly needed rules tailored to single records. To avoid fitting the pipeline to its own audit, a stopping rule was set:
+Each run fixed less than the one before (each measure reached its plateau at a different run — coherence at Run 7, consistency after the legacy remap in Run 8, recovery after Run 10 — and from Run 11 on no measure moved by more than 0.03 points), and later candidates increasingly needed rules tailored to single records. To avoid fitting the pipeline to its own audit, a stopping rule was set:
 - A run must fix a whole class of records, covering at least 0.5% of in-scope source units (35), or remove records known to be wrong.
 - Smaller or one-off cases go to a Review workbook for the curator instead of into the code.
 
-The pipeline was frozen after Run 13. Run 13 changes no record content. It moves records the audit cannot vouch for to the Review tier, with a stated reason: genomic positions that land deep in an intron or outside the gene while the source describes an exonic change (41 pairs), records still in legacy numbering (6), and source entries that describe no change (4).
+The pipeline was frozen after Run 13. Run 13 changes no record content. It moves records the audit cannot vouch for to the Review tier, with a stated reason: genomic positions that land deep in an intron or outside the gene while the source describes an exonic change (41 pairs), records still in legacy numbering (6), and source entries that describe no change (4). The pipeline stays frozen: a new fix run is made only if a major problem is found that meets the stopping rule, for example from the curator's review. Curator-given annotation rules, such as the NMD rule below, are applied outside the audit runs.
+
+**NMD rule applied after the freeze.** The curator's rule marks a premature stop more than 50 nt
+before the junction of the last protein-coding exon as predicted nonsense-mediated decay. Only
+protein-coding exons count, so a last exon that is entirely 3′ UTR is ignored. In the canonical
+export the 2,378 pairs with a predicted-NMD record are annotated `r.0?` / `p.0?`, and the Mutalyzer
+r. and p. descriptions are kept in `alt_descriptions`. The audit still compares the Mutalyzer
+protein with the source, so it keeps testing the c. mapping itself.
 
 ### Traceability and resolution policy
 
