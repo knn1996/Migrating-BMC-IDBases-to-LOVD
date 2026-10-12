@@ -1,4 +1,4 @@
-# Handoff — IDbases → LOVD pipeline (source of truth; updated 2026-10-12, after Run 10)
+# Handoff — IDbases → LOVD pipeline (source of truth; updated 2026-10-12, after Run 11)
 
 This file is the single source of truth. The planner (`thesis-plan`) updates it after each recorded run. The older copy in the claude.ai project (claude/handoff_2026-10-11.md) is frozen and may be stale.
 
@@ -41,7 +41,8 @@ Pipeline (Snakemake 9.27, env `snakemake`, run from 04_Mutation_Processing/Scrip
 | 8 | legacy c. numbering remap | 89.98% | 98.19% | 98.66% | 8 | 6,441 | 100.00% |
 | 9 | ADA per-change remap | 90.14% | 98.33% | 98.8% | 8 | 6,452 | 100.00% |
 | 10 | full-scan legacy remap | 91.71% | 98.42% | 98.88% | 8 | 6,562 | 100.00% |
-Coherence ruler: 3fc3b8a (code), 4c7c6b1 (history). Run 6: dcde390, 9e0e2b7, f6de49d, d82a5c5, 7543cbb (rescue), aa6c043 (history). Run 7: 0c255fe (code), 1e12fd6 (primary), d6b09bb (rescue), 3b4cc34 (history, run_id 20261012_d6b09bb). Run 8: 12945a1 (rescue grouping fix), f786738 (code), 50833c3 (primary), f64272c (rescue), 3de036a (history, run_id 20261012_f64272c). Run 9: bdc9ac4 (code), d1879a9 (primary), 30fdf51 (rescue), 9c4c1f9 (history, run_id 20261012_30fdf51). Run 10: 1bb3eda (code), 78b539b (primary), a3fe960 (rescue), a216ed4 (history, run_id 20261012_a3fe960). Nothing pushed.
+| 11 | literal remapped records not eligible | 91.74% | 98.42% | 98.91% | 8 | 6,562 | 100.00% |
+Coherence ruler: 3fc3b8a (code), 4c7c6b1 (history). Run 6: dcde390, 9e0e2b7, f6de49d, d82a5c5, 7543cbb (rescue), aa6c043 (history). Run 7: 0c255fe (code), 1e12fd6 (primary), d6b09bb (rescue), 3b4cc34 (history, run_id 20261012_d6b09bb). Run 8: 12945a1 (rescue grouping fix), f786738 (code), 50833c3 (primary), f64272c (rescue), 3de036a (history, run_id 20261012_f64272c). Run 9: bdc9ac4 (code), d1879a9 (primary), 30fdf51 (rescue), 9c4c1f9 (history, run_id 20261012_30fdf51). Run 10: 1bb3eda (code), 78b539b (primary), a3fe960 (rescue), a216ed4 (history, run_id 20261012_a3fe960). Run 11: 2d9d79c (code), 98bdc7d (primary), 62c8f01 (rescue), 4ee52a4 (history, run_id 20261012_62c8f01). Nothing pushed.
 
 ## Fixed so far
 1. Extraction: compound-het alleles, glued records, brackets (Run 1)
@@ -113,10 +114,26 @@ Measurement: count definitions, precision metric, own-source-change ruler, c./p.
 3. Patient metadata: extract_patient_metadata.py glued-record bug (metadata flags ~3,147).
 4. Canonical export table; then the LOVD format mapping once the director's format is known.
 
+## Stopping rule (user decision, 2026-10-12)
+Guard against overfitting the pipeline to the audit ruler.
+1. Known-wrong records in final must be resolved: repaired by a general rule, or demoted to Review tier / dropped. Prefer demotion when a repair needs special cases.
+2. A pipeline run needs a general fix (whole class: verified gene-wide shift, step bug) that fixes ≥ 0.5% of in-scope units (≥ 35 of 7,019) or removes known-wrong records. Smaller or one-off cases go to the Review workbook for Mauno.
+3. No per-unit patches beyond the evidence-backed legacy_remap table (≥2 independent changes per gene).
+4. FREEZE after Run 13. Remaining items (35 possibly-ours inconsistent pairs, C1QB isoform, CYBB, VV rescue quality, residual excess, AIRE Bug 2, NMD validation) go to the Review workbook unless they pass rule 2.
+Remaining runs: audit option A (DONE: e921821 code+refs, e078d72 history; all pre-existing columns byte-identical across 11 runs; Run 10 pairs_source_error 29, consistency excl. source errors 99.34% = 5538/5575; our_record_wrong pairs stay inconsistent) → Run 11 DONE (RFXAP R0006/R0007 → NM_000538.4:c.28_34dup, consistent; gains 2, regressions 0, inconsistent 61, excl-SE consistency 99.37%; procedure note: rescue refuses until primary is committed — give the rescue command only after the primary commit is confirmed) (scoped: a general positional remap would fix ≤9 units, below the 35 threshold → rejected. Run 11 = rule (a): a literal record of a legacy_remap change is not eligible, so the unit goes to the remapped rescue; hits RFXAP R0006/R0007 only, 1 rescue Mutalyzer + ≤2 VV. Rule (b): demote the 6 other our_record_wrong changes (IKBKG I0007, TCIRG1 T0004/2, T0005, T0013, WAS W0005, RAG1 R0006) to Review, folded into Run 13) → Run 12 (MANE normalization + pick_mane fix) → Run 13 (blind-spot check 2026-10-12, scratch …/mane_norm/blind.py: 43 tier-A pairs whose g. projects deep intronic (19), flank (14) or outside the gene (10) while the source c. is exonic; 34 invisible to the consistency ruler; cause resolve_tracks tier.get(pk, "A") for single-track records. Demote these 43 to Review, never remap; drop the 4 c.=/g.= records (source REF = ALT: CFH H0073/H0074, H0083, CYBB A1432, added to the Mauno CSV); scope a global single-track-uncheckable → B change as report only) → FREEZE → canonical export table + Review xlsx → merge README section.
+
 ## Next after Run 10
 - (a) Small separate commit: forecast tools default LEGACY_REMAP_TSV to refs/legacy_remap.tsv.
 - (b) source_error flag (Run 11 candidate): residuals AIRE A0082/2 (p.S64del for 36-nt deletion), CD40L C0047 (c. range across exon 4 boundary), AICDA A0031/A0032, TCIRG1 (long in-frame indels), plus the 29-change / 41-pair candidate list from Run 8 scoping. Utilities/translation_test.py belongs here.
+   Scoping done (2026-10-12, scratch 99_Archive/04_Mutation_Processing/scratch/source_error/, classify.py). 63 inconsistent pairs → 28 explained by source errors (24 changes; Mauno file = docs/agents/source_errors_for_mauno.csv, 16 high / 8 low). 7 changes / 8 pairs have a wrong record of ours (literal numbering in a verified-shift gene): IKBKG I0007, TCIRG1 T0004/2, T0005, T0013, WAS W0005, RAG1 R0006, RFXAP R0006/R0007 → Run 11 candidate: the remap does not reach Track C / VV / surviving literal records. Audit change: option A approved by the user (new columns, existing columns frozen; source_errors.tsv status = candidate until Mauno reviews). translation_test.py: archive approved. Mauno CSV is source-only (gene, accessions, allele, source g/c/p, issue, severity, why_flagged).
 - (c) MANE normalization of records off exact MANE (item 2 below), then patient metadata, then the canonical export table.
+   MANE scoping done (2026-10-12, scratch …/scratch/mane_norm/). 2,509/2,698 final records (5,949/6,562 pairs) already on exact MANE; ELA2 ×52 are on ELANE MANE (alias only). Off-MANE 137 records / 460 pairs:
+   - Track C old version of same NM: 109 / 405 pairs, 10 genes; CDS identical (planner re-verified all 10) → offline relabel, 1 FOXP3 3′UTR query.
+   - Track A on pick_mane fallback: 7 CDS/splice records worth normalizing (≤7 queries); 16 project deep intronic/UTR = Track A mapping errors.
+   - No c.: C1QA ×6, CD79B, CD8A ×3 project 2–21 kb upstream yet tier A (precision blind spot: uncheckable in the audit); IGHG2 ×2 (to drop); CYBB_A1432 c.= record in final.
+   - pick_mane ROOT CAUSE (raw AK2 response, 99_Archive/ak2_raw.json): the API marks MANE as entry["tag"]["details"] == "MANE Select"; both pick_mane functions test "MANE_SELECT" in entry["selector"]["tags"], which never exists → always entries[0]. Fix folded into Run 12's code commit (byte-identical on cached data; cache stores parsed fields). User approved the recommended Run 12 scope (Track C relabel + FOXP3 + 7 Track A CDS records).
+   - Forecast: ≤8 Mutalyzer, 0 VV, 6 GenBank (CARD9, DNMT3B, PTPN11, NRAS, CFD, FASLG MANE NMs), + 1 raw query.
+   - Order: audit option A → Run 11 (remap reaches Track C/VV literal records; must precede the relabel, RFXAP R0006/R0007 is Track C) → Run 12 MANE normalization → Run 13 Track A mapping errors (26 records: demote tier / drop; audit should treat upstream/intronic Track A as a flag).
 
 ## README update (living draft)
 - docs/agents/README_update_draft.md: post-thesis correctness section for the root README.md. After each recorded run the planner adds the run row and any new finding (figures from audit_history.tsv). Merge into README.md only when the user calls the stopping point; at merge also fix the outdated ADA −95 limitation and the thesis-era vs source-unit counting note.
@@ -133,6 +150,11 @@ Measurement: count definitions, precision metric, own-source-change ruler, c./p.
 - VariO frameshift term; remove hard-coded "131 IDbases".
 - Export allele: final tables carry no allele (dedup keeps the representative's allele_num; build_lovd_flat drops it). Take per-pair allele from augmented_merged_variants via source_change_id.
 - Export fields: Screening (?/DNA), Genetic_origin, Effect, r.(?), Published as (source bracket notation), allele field from phase_group + phase-known (cis/trans/unknown; LOVD stores in-cis changes as separate variants linked by allele), individual_id, alt_descriptions, confidence_tier, OMIM.
+
+## User decisions (2026-10-12)
+- Accessions are unique only within a gene database (data agrees: 1,865 of 3,516 accessions occur in more than one gene, e.g. A0052 in ADA, AICDA, AIRE, CYBB, ITGB2, PTPN11, SH2). GENE_accession stands; dropped from the Mauno questions.
+- Review-tier records go out as an xlsx review workbook, like the thesis-era lovd_review(_final).xlsx.
+- IGHG2: the heavy-chain reference Mauno brought over from the BTKbase migration; he said dropping it is OK. User confirms IGHG2 and SH2 with Mauno this week.
 
 ## Questions for Mauno
 - Submission format from the LOVD director (pending).

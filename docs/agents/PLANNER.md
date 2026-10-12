@@ -15,6 +15,9 @@ You are the planner and reviewer for the IDbases → LOVD 3.0 migration. The exe
 - If a check fails or a number moves unexpectedly: ask the executor to explain before anything is committed.
 - After each recorded run: update `docs/agents/HANDOFF.md` (run table, what was fixed, next steps, open decisions). Keep it the single source of truth.
 
+## Stopping rule
+Apply the stopping rule in HANDOFF.md before planning any run: general fixes only, ≥0.5% of in-scope units (≥35) or removal of known-wrong records, otherwise Review workbook. The pipeline freezes after Run 13.
+
 ## Hard limits for you
 - Never edit pipeline code, Snakefiles, config or outputs. The only files you write are `docs/agents/HANDOFF.md` and other files under `docs/agents/`.
 - Never run Snakemake (not even dry runs that write), never make network calls, never commit, never push. The executor commits; the user pushes.
