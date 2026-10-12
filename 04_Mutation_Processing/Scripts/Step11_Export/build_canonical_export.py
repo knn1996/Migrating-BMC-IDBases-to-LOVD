@@ -22,6 +22,10 @@ accession | allele | g. | c.) and the source units of the individual (audit_vari
 Gene symbol: Output/alias.csv for renamed IDbases symbols, else the gene name of the gene's
 MANE Select transcript (MANE v1.5 GFF), else the IDbases symbol (checked against the MANE v1.5
 gene names). metadata_flag marks a sex field that is not M, F or empty (multi-individual strings).
+For pairs whose record is NMD_predicted (Step9_NMD) r_hgvs and p_hgvs are r.0? and p.0?, the
+Mutalyzer r. and p. move into alt_descriptions, and nmd_rule_applied says so; every other copied
+value is byte-equal to the final table. The workbook's Suspected_source_errors sheet leaves out
+the source changes whose kept record is NMD_predicted, since their protein is not described.
 
 Usage:
     python Step11_Export/build_canonical_export.py [--out-dir Output/Step11_Export]
@@ -48,8 +52,9 @@ EXPORT_COLS = [
     "source_error_severity",
     "sex", "geographic_origin", "age", "individual_remarks", "phenotype", "phenotype_additional",
     "genome_remarks", "pubmed_id", "reference_authors", "reference_title", "reference_location",
-    "screening", "genetic_origin", "effect", "metadata_flag",
+    "screening", "genetic_origin", "effect", "metadata_flag", "nmd_rule_applied",
 ]
+NMD_RULE = "predicted NMD: stop more than 50 nt before the last coding exon junction; r. and p. set to r.0? and p.0?"
 COPIED = {
     "individual_id": "Individual/ID", "chromosome": "chromosome", "genomic_hgvs": "VariantOnGenome/DNA",
     "transcript": "transcriptid", "c_hgvs": "VariantOnTranscript/DNA", "r_hgvs": "VariantOnTranscript/RNA",
@@ -174,11 +179,19 @@ def build(out_dir):
             "source_error_severity": e.get("severity", ""),
             "genetic_origin": "", "effect": "",
             "metadata_flag": "" if f["Individual/Gender"].strip() in ("", "M", "F") else "sex field garbled (multi-individual string)",
+            "nmd_rule_applied": "",
         })
+        if row["nmd_call"] == "NMD_predicted":
+            moved = " ".join(x for x in (f["VariantOnTranscript/RNA"], f["VariantOnTranscript/Protein"]) if x)
+            row["alt_descriptions"] = " | ".join(x for x in (f["alt_descriptions"], f"Mutalyzer {moved}" if moved else "") if x)
+            row["r_hgvs"], row["p_hgvs"], row["nmd_rule_applied"] = "r.0?", "p.0?", NMD_RULE
+            checks["nmd_rule_rows"] += 1
         rows.append(row)
         checks["no_sid"] += not sid
         checks["no_unit"] += unit is None
-        checks["copy_mismatch"] += sum(row[k] != f[v] for k, v in COPIED.items())
+        nmd_cols = {"r_hgvs", "p_hgvs", "alt_descriptions"} if row["nmd_rule_applied"] else set()
+        checks["copy_mismatch"] += sum(row[k] != f[v] for k, v in COPIED.items() if k not in nmd_cols)
+        checks["nmd_alt_not_prefix"] += bool(nmd_cols) and not row["alt_descriptions"].startswith(f["alt_descriptions"])
     out_dir.mkdir(parents=True, exist_ok=True)
     with open(out_dir / "canonical_export.tsv", "w", newline="", encoding="utf-8") as fh:
         w = csv.DictWriter(fh, fieldnames=EXPORT_COLS, delimiter="\t", lineterminator="\n")
@@ -240,7 +253,19 @@ def workbook(out_dir, final, rows, units):
                        u["src_g"] if u else "", u["src_c"] if u else "", u["src_p"] if u else "",
                        f["transcriptid"], f["VariantOnTranscript/DNA"], f["VariantOnTranscript/Protein"],
                        plain_reason(f, log), ""])
-    src_err = list(csv.reader(open(REPO / "docs" / "agents" / "source_errors_for_mauno.csv", encoding="utf-8-sig")))
+    src_all = list(csv.reader(open(REPO / "docs" / "agents" / "source_errors_for_mauno.csv", encoding="utf-8-sig")))
+    head = src_all[0]
+    by_change = defaultdict(set)
+    for r in rows:
+        if r["source_change_id"]:
+            g, acc, _, _, c = r["source_change_id"].split("|", 4)
+            by_change[(g, acc, c)].add(r["nmd_call"])
+            by_change[(r["gene_symbol"].upper(), acc, c)].add(r["nmd_call"])
+    src_err, dropped = [head], []
+    for x in src_all[1:]:
+        d = dict(zip(head, x))
+        calls = set().union(*[by_change.get((d["gene"].strip().upper(), a.strip(), d["source_c"].strip()), set()) for a in d["accessions"].split(";")])
+        (dropped if calls == {"NMD_predicted"} else src_err).append(x)
     readme = [
         ["Review workbook for the IDbases migration to LOVD 3.0 (GRCh38, MANE Select, HGVS)."],
         ["Review_tier: patient-variant pairs we will not submit as confirmed. Each row says why (column review_reason)."],
@@ -266,14 +291,16 @@ def workbook(out_dir, final, rows, units):
                     "no change" if f["review_reason"] == NO_CHANGE else "track conflict"
                     for f in final if f["confidence_tier"] == "Review")
     counts += [[f"  of which {k}", v] for k, v in sorted(kinds.items())]
-    counts += [["Suspected_source_errors rows", len(src_err) - 1], ["Canonical export rows", len(rows)]]
+    counts += [["Suspected_source_errors rows", len(src_err) - 1],
+               ["  left out: kept record predicted NMD (protein not described)", len(dropped)],
+               ["Canonical export rows", len(rows)]]
     sheet(wb.create_sheet("Counts"), ["item", "n"], counts)
     for name in ("Review_tier", "Suspected_source_errors"):
         for row in wb[name].iter_rows(min_row=2):
             for c in row:
                 c.alignment = Alignment(wrap_text=False, vertical="top")
     wb.save(out_dir / "review_workbook_for_mauno.xlsx")
-    return review, counts
+    return review, counts, [dict(zip(head, x)) for x in dropped]
 
 
 def main():
@@ -281,9 +308,11 @@ def main():
     ap.add_argument("--out-dir", type=Path, default=OUT_ROOT / "Step11_Export")
     args = ap.parse_args()
     final, rows, checks, units = build(args.out_dir)
-    review, counts = workbook(args.out_dir, final, rows, units)
+    review, counts, dropped = workbook(args.out_dir, final, rows, units)
     print(f"final pairs {len(final)}; excluded (no change) {checks['excluded_no_change']}; export rows {len(rows)}")
     print(f"rows without source_change_id {checks['no_sid']}; without source unit {checks['no_unit']}; copied-value mismatches {checks['copy_mismatch']}")
+    print(f"NMD rule applied to {checks['nmd_rule_rows']} pairs; alt_descriptions not extending the original: {checks['nmd_alt_not_prefix']}")
+    print("source-error rows left out (kept record NMD_predicted):", [(d["gene"], d["accessions"], d["source_c"]) for d in dropped])
     print("tiers:", dict(Counter(r["confidence_tier"] for r in rows)), "tracks:", dict(Counter(r["source_track"] for r in rows)))
     print("zygosity:", dict(Counter(r["zygosity"] for r in rows)), "phase:", dict(Counter(r["phase"] for r in rows)))
     dup = Counter((r["individual_id"], r["c_hgvs"]) for r in rows)
