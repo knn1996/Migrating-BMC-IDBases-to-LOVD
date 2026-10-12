@@ -21,6 +21,7 @@ CD40L	c.409+1del	NM_000074.3	c.409+1del			frameshift_candidate							not_assessa
 CD40L	c.31C>T	NM_000074.3	c.31C>T	r.(31c>u)	p.(Arg11Ter)	nonsense	ok	31	11	11	yes	379	NMD_predicted	start_proximal	r.0?	p.0?
 CD40L	c.78T>G	NM_000074.3	c.78T>G	r.(78u>g)	p.(Tyr26Ter)	nonsense	ok	76	26	26	yes	334	NMD_predicted	start_proximal	r.0?	p.0?
 CD40L	c.87del	NM_000074.3	c.87del	r.(87del)	p.(Val30PhefsTer7)	frameshift		107	36	36	yes	303	NMD_predicted	start_proximal	r.0?	p.0?
+CFD	c.125C>A	NM_001928.4	c.125C>A	r.(125c>a)	p.(Ser42Ter)	nonsense	ok	124	42	42	yes	492	NMD_predicted	start_proximal	r.0?	p.0?
 CIITA	c.3186-2306_3186-2226del		c.3186-2306_3186-2226del	r.(=)	p.(=)	frameshift_candidate							not_assessable_noncoding_or_intronic		r.(=)	p.(=)
 CIITA	c.3267-216_3267-214del		c.3267-216_3267-214del	r.(=)	p.(=)	frameshift_candidate							not_assessable_noncoding_or_intronic		r.(=)	p.(=)
 CTSC	c.72C>A	NM_001814.6	c.72C>A	r.(72c>a)	p.(Cys24Ter)	nonsense	ok	70	24	24	yes	820	NMD_predicted	start_proximal	r.0?	p.0?
@@ -80,16 +81,16 @@ CYBB	c.804+2_804+3insTG	NM_000397.4	c.804+2_804+3insTG			frameshift_candidate			
 CYBB	c.804+3_804+10del	NM_000397.4	c.804+3_804+10del			frameshift_candidate							not_assessable_noncoding_or_intronic			
 CYBB	c.94dup	NM_000397.4	c.94dup	r.(94delinsgg)	p.(Val32GlyfsTer3)	frameshift		99	34	34	yes	1488	NMD_predicted	start_proximal	r.0?	p.0?
 DKC1	c.166_167delinsTC	NM_001363.5	c.166_167delinsTC	r.(166_167delinsuc)	p.(Leu56Ser)	frameshift_candidate		1543					no_PTC_stop_at_or_beyond_normal		r.(166_167delinsuc)	p.(Leu56Ser)
-DNMT3B	c.88C>T	NM_006892.3	c.88C>T	r.(88c>u)	p.(Gln30Ter)	nonsense	ok	88	30	30	yes	2333	NMD_predicted	start_proximal	r.0?	p.0?
+DNMT3B	c.88C>T	NM_006892.4	c.88C>T	r.(88c>u)	p.(Gln30Ter)	nonsense	ok	88	30	30	yes	2333	NMD_predicted	start_proximal	r.0?	p.0?
 FERMT3	c.48G>A	NM_031471.6	c.48G>A	r.(48g>a)	p.(Trp16Ter)	nonsense	ok	46	16	16	yes	1767	NMD_predicted	start_proximal	r.0?	p.0?
-FOXP3	c.1293_1294del	NM_014009.3	c.1293_1294del	r.(1293_1294del)	p.(Ter432ThrextTer25)	frameshift_candidate		1371					no_PTC_stop_at_or_beyond_normal		r.(1293_1294del)	p.(Ter432ThrextTer25)
+FOXP3	c.1293_1294del	NM_014009.4	c.1293_1294del	r.(1293_1294del)	p.(Ter432ThrextTer25)	frameshift_candidate		1371					no_PTC_stop_at_or_beyond_normal		r.(1293_1294del)	p.(Ter432ThrextTer25)
 G6PC3	c.141C>G	NM_138387.4	c.141C>G	r.(141c>g)	p.(Tyr47Ter)	nonsense	ok	139	47	47	yes	539	NMD_predicted	start_proximal	r.0?	p.0?
 G6PC3	c.144C>A	NM_138387.4	c.144C>A	r.(144c>a)	p.(Tyr48Ter)	nonsense	ok	142	48	48	yes	536	NMD_predicted	start_proximal	r.0?	p.0?
 HAX1	c.130_131insA	NM_006118.4	c.130_131insA	r.(130_131insa)	p.(Trp44Ter)	nonsense		130	44	44	yes	626	NMD_predicted	start_proximal	r.0?	p.0?
-IFNGR1	c.25del	NM_000416.2	c.25del	r.(25del)	p.(Val10SerfsTer5)	frameshift		41	14	14	yes	821	NMD_predicted	start_proximal	r.0?	p.0?
-IFNGR1	c.104_107dup	NM_000416.2	c.104_107dup	r.(104_107dup)	p.(Ile37TyrfsTer3)	frameshift		111	39	39	yes	751	NMD_predicted	start_proximal	r.0?	p.0?
-IFNGR1	c.105dup	NM_000416.2	c.105dup	r.(105delinsuu)	p.(Thr36TyrfsTer3)	frameshift		111	38	38	yes	751	NMD_predicted	start_proximal	r.0?	p.0?
-IFNGR1	c.106_107insT	NM_000416.2	c.106_107insT	r.(106_107insu)	p.(Thr36IlefsTer3)	frameshift		111	38	38	yes	751	NMD_predicted	start_proximal	r.0?	p.0?
+IFNGR1	c.25del	NM_000416.3	c.25del	r.(25del)	p.(Val10SerfsTer5)	frameshift		41	14	14	yes	821	NMD_predicted	start_proximal	r.0?	p.0?
+IFNGR1	c.104_107dup	NM_000416.3	c.104_107dup	r.(104_107dup)	p.(Ile37TyrfsTer3)	frameshift		111	39	39	yes	751	NMD_predicted	start_proximal	r.0?	p.0?
+IFNGR1	c.105dup	NM_000416.3	c.105dup	r.(105delinsuu)	p.(Thr36TyrfsTer3)	frameshift		111	38	38	yes	751	NMD_predicted	start_proximal	r.0?	p.0?
+IFNGR1	c.106_107insT	NM_000416.3	c.106_107insT	r.(106_107insu)	p.(Thr36IlefsTer3)	frameshift		111	38	38	yes	751	NMD_predicted	start_proximal	r.0?	p.0?
 IGLL1	c.64C>T	NM_020070.4	c.64C>T	r.(64c>u)	p.(Gln22Ter)	nonsense	ok	64	22	22	yes	259	NMD_predicted	start_proximal	r.0?	p.0?
 IL12B	c.482+3_855+2del	NM_002187.3	c.482+3_855+2del			frameshift_candidate							not_assessable_noncoding_or_intronic			
 IL12RB1	c.94C>T	NM_005535.3	c.94C>T	r.(94c>u)	p.(Gln32Ter)	nonsense	ok	94	32	32	yes	1890	NMD_predicted	start_proximal	r.0?	p.0?
@@ -105,7 +106,7 @@ ITGB2	c.49del	NM_000211.5	c.49del	r.(49del)	p.(Leu17SerfsTer33)	frameshift		146	
 ITGB2	c.[1388del;1390T>A]	NM_000211.5	c.[1388del;1390T>A]	r.([1388del;1390u>a])	p.?	frameshift_candidate							not_assessable_not_assessable_position		r.([1388del;1390u>a])	p.?
 ITGB2	c.995_1004del	NM_000211.5	c.995_1004del			frameshift_candidate		1133	375			1115	NMD_predicted		r.0?	p.0?
 ITGB2	c.120del	NM_000211.5	c.120del	r.(120del)	p.(Gly42AlafsTer8)	frameshift		146	49	49	yes	2102	NMD_predicted	start_proximal	r.0?	p.0?
-ITGB2	c.1225_1412del	NM_001127491.3	c.1225_1412del			frameshift_candidate		1416	410			832	NMD_predicted		r.0?	p.0?
+ITGB2	c.1225_1412del	NM_000211.5	c.1225_1412del			frameshift_candidate		1416	410			832	NMD_predicted		r.0?	p.0?
 JAK3	c.2200_2350del	NM_000215.4	c.2200_2350del			frameshift_candidate		2531	794			677	NMD_predicted		r.0?	p.0?
 JAK3	c.1767_1786+1del	NM_000215.4	c.1767_1786+1del			frameshift_candidate							not_assessable_noncoding_or_intronic			
 JAK3	c.1442_1446del	NM_000215.4	c.1442_1446del			frameshift_candidate		1554	517			1654	NMD_predicted		r.0?	p.0?

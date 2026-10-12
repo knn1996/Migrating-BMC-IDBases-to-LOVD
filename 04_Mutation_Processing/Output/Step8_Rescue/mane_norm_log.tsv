@@ -1,0 +1,132 @@
+gene	dedup_key	action	reason	old_description	new_description	query
+C1QB	c.-23-2228C>T	kept	deep intronic on MANE	NC_000001.11(NM_001371184.3):c.-23-2228C>T		
+C1QB	c.-24+1480G>A	kept	deep intronic on MANE	NC_000001.11(NM_001371184.3):c.-24+1480G>A		
+C1QB	c.-23-2027G>A	kept	deep intronic on MANE	NC_000001.11(NM_001371184.3):c.-23-2027G>A		
+C6	c.170+6564del	kept	deep intronic on MANE	NC_000005.10(XM_047417689.1):c.170+6564del		
+C6	c.7+19944del	kept	outside the MANE transcript	NC_000005.10(XM_047417689.1):c.7+19944del		
+C6	c.8-11016del	kept	outside the MANE transcript	NC_000005.10(XM_047417689.1):c.8-11016del		
+C6	c.8-16018del	kept	outside the MANE transcript	NC_000005.10(XM_047417689.1):c.8-16018del		
+CARD9	c.883C>T	relabel	same CDS, coding c.	NM_052813.4:c.883C>T	NM_052813.5:c.883C>T	
+CASP10	c.721+318C>T	kept	deep intronic on MANE	NC_000002.12(NM_032974.5):c.721+318C>T		
+CASP8	c.-27+14137C>T	kept	outside the MANE transcript	NC_000002.12(NM_001228.5):c.-27+14137C>T		
+CFD	c.125C>A	relabel	same CDS, coding c.	NM_001928.2:c.125C>A	NM_001928.4:c.125C>A	
+CFD	c.638T>G	relabel	same CDS, coding c.	NM_001928.2:c.638T>G	NM_001928.4:c.638T>G	
+CFD	c.640T>C	relabel	same CDS, coding c.	NM_001928.2:c.640T>C	NM_001928.4:c.640T>C	
+CIITA	c.3186-2306_3186-2226del	kept	deep intronic on MANE	NC_000016.10(XM_011522485.3):c.3186-2306_3186-2226del		
+CIITA	c.3267-216_3267-214del	kept	deep intronic on MANE	NC_000016.10(XM_011522485.3):c.3267-216_3267-214del		
+DNMT3B	c.2519G>A	relabel	same CDS, coding c.	NM_006892.3:c.2519G>A	NM_006892.4:c.2519G>A	
+DNMT3B	c.88C>T	relabel	same CDS, coding c.	NM_006892.3:c.88C>T	NM_006892.4:c.88C>T	
+DNMT3B	c.808T>C	relabel	same CDS, coding c.	NM_006892.3:c.808T>C	NM_006892.4:c.808T>C	
+DNMT3B	c.2296G>C	relabel	same CDS, coding c.	NM_006892.3:c.2296G>C	NM_006892.4:c.2296G>C	
+DNMT3B	c.2441A>G	relabel	same CDS, coding c.	NM_006892.3:c.2441A>G	NM_006892.4:c.2441A>G	
+DNMT3B	c.2452G>A	relabel	same CDS, coding c.	NM_006892.3:c.2452G>A	NM_006892.4:c.2452G>A	
+FASLG	c.629_712del	relabel	same CDS, coding c.	NM_000639.1:c.629_712del	NM_000639.3:c.629_712del	
+FASLG	c.740C>A	relabel	same CDS, coding c.	NM_000639.1:c.740C>A	NM_000639.3:c.740C>A	
+FOXP3	c.1150G>A	relabel	same CDS, coding c.	NM_014009.3:c.1150G>A	NM_014009.4:c.1150G>A	
+FOXP3	c.1293_1294del	relabel	same CDS, coding c.	NM_014009.3:c.1293_1294del	NM_014009.4:c.1293_1294del	
+FOXP3	c.1189C>T	relabel	same CDS, coding c.	NM_014009.3:c.1189C>T	NM_014009.4:c.1189C>T	
+FOXP3	c.1290_*12delinsTG	normalized	MANE response, same change	NM_014009.3:c.1290_*12delinsTG	NC_000023.11(NM_014009.4):c.1290_*12delinsTG	NC_000023.11(NM_014009.4):c.1290_*12delinsTG
+FOXP3	c.227del	relabel	same CDS, coding c.	NM_014009.3:c.227del	NM_014009.4:c.227del	
+FOXP3	c.1087A>G	relabel	same CDS, coding c.	NM_014009.3:c.1087A>G	NM_014009.4:c.1087A>G	
+FOXP3	c.1040G>A	relabel	same CDS, coding c.	NM_014009.3:c.1040G>A	NM_014009.4:c.1040G>A	
+FOXP3	c.748_750del	relabel	same CDS, coding c.	NM_014009.3:c.748_750del	NM_014009.4:c.748_750del	
+FOXP3	c.970T>C	relabel	same CDS, coding c.	NM_014009.3:c.970T>C	NM_014009.4:c.970T>C	
+FOXP3	c.3G>A	relabel	same CDS, coding c.	NM_014009.3:c.3G>A	NM_014009.4:c.3G>A	
+FOXP3	c.304_305del	relabel	same CDS, coding c.	NM_014009.3:c.304_305del	NM_014009.4:c.304_305del	
+FOXP3	c.1117T>G	relabel	same CDS, coding c.	NM_014009.3:c.1117T>G	NM_014009.4:c.1117T>G	
+FOXP3	c.1099T>C	relabel	same CDS, coding c.	NM_014009.3:c.1099T>C	NM_014009.4:c.1099T>C	
+FOXP3	c.1139C>T	relabel	same CDS, coding c.	NM_014009.3:c.1139C>T	NM_014009.4:c.1139C>T	
+FOXP3	c.1112T>G	relabel	same CDS, coding c.	NM_014009.3:c.1112T>G	NM_014009.4:c.1112T>G	
+FOXP3	c.1101C>G	relabel	same CDS, coding c.	NM_014009.3:c.1101C>G	NM_014009.4:c.1101C>G	
+FOXP3	c.560C>T	relabel	same CDS, coding c.	NM_014009.3:c.560C>T	NM_014009.4:c.560C>T	
+FOXP3	c.1121T>G	relabel	same CDS, coding c.	NM_014009.3:c.1121T>G	NM_014009.4:c.1121T>G	
+FOXP3	c.751_753del	relabel	same CDS, coding c.	NM_014009.3:c.751_753del	NM_014009.4:c.751_753del	
+FOXP3	c.1222G>A	relabel	same CDS, coding c.	NM_014009.3:c.1222G>A	NM_014009.4:c.1222G>A	
+FOXP3	c.1010G>A	relabel	same CDS, coding c.	NM_014009.3:c.1010G>A	NM_014009.4:c.1010G>A	
+FOXP3	c.1015C>G	relabel	same CDS, coding c.	NM_014009.3:c.1015C>G	NM_014009.4:c.1015C>G	
+FOXP3	c.2T>C	relabel	same CDS, coding c.	NM_014009.3:c.2T>C	NM_014009.4:c.2T>C	
+FOXP3	c.543C>T	relabel	same CDS, coding c.	NM_014009.3:c.543C>T	NM_014009.4:c.543C>T	
+FOXP3	c.725T>C	relabel	same CDS, coding c.	NM_014009.3:c.725T>C	NM_014009.4:c.725T>C	
+IFNGR1	c.347C>A	relabel	same CDS, coding c.	NM_000416.2:c.347C>A	NM_000416.3:c.347C>A	
+IFNGR1	c.131del	relabel	same CDS, coding c.	NM_000416.2:c.131del	NM_000416.3:c.131del	
+IFNGR1	c.260T>C	relabel	same CDS, coding c.	NM_000416.2:c.260T>C	NM_000416.3:c.260T>C	
+IFNGR1	c.25del	relabel	same CDS, coding c.	NM_000416.2:c.25del	NM_000416.3:c.25del	
+IFNGR1	c.104_107dup	relabel	same CDS, coding c.	NM_000416.2:c.104_107dup	NM_000416.3:c.104_107dup	
+IFNGR1	c.295_306del	relabel	same CDS, coding c.	NM_000416.2:c.295_306del	NM_000416.3:c.295_306del	
+IFNGR1	c.230G>A	relabel	same CDS, coding c.	NM_000416.2:c.230G>A	NM_000416.3:c.230G>A	
+IFNGR1	c.182T>A	relabel	same CDS, coding c.	NM_000416.2:c.182T>A	NM_000416.3:c.182T>A	
+IFNGR1	c.653_655del	relabel	same CDS, coding c.	NM_000416.2:c.653_655del	NM_000416.3:c.653_655del	
+IFNGR1	c.563_566del	relabel	same CDS, coding c.	NM_000416.2:c.563_566del	NM_000416.3:c.563_566del	
+IFNGR1	c.817dup	relabel	same CDS, coding c.	NM_000416.2:c.817dup	NM_000416.3:c.817dup	
+IFNGR1	c.819_822del	relabel	same CDS, coding c.	NM_000416.2:c.819_822del	NM_000416.3:c.819_822del	
+IFNGR1	c.819del	relabel	same CDS, coding c.	NM_000416.2:c.819del	NM_000416.3:c.819del	
+IFNGR1	c.188T>G	relabel	same CDS, coding c.	NM_000416.2:c.188T>G	NM_000416.3:c.188T>G	
+IFNGR1	c.832G>T	relabel	same CDS, coding c.	NM_000416.2:c.832G>T	NM_000416.3:c.832G>T	
+IFNGR1	c.813_816del	relabel	same CDS, coding c.	NM_000416.2:c.813_816del	NM_000416.3:c.813_816del	
+IFNGR1	c.523del	relabel	same CDS, coding c.	NM_000416.2:c.523del	NM_000416.3:c.523del	
+IFNGR1	c.105dup	relabel	same CDS, coding c.	NM_000416.2:c.105dup	NM_000416.3:c.105dup	
+IFNGR1	c.170del	relabel	same CDS, coding c.	NM_000416.2:c.170del	NM_000416.3:c.170del	
+IFNGR1	c.106_107insT	relabel	same CDS, coding c.	NM_000416.2:c.106_107insT	NM_000416.3:c.106_107insT	
+IFNGR1	c.197A>G	relabel	same CDS, coding c.	NM_000416.2:c.197A>G	NM_000416.3:c.197A>G	
+IFNGR1	c.774_777del	relabel	same CDS, coding c.	NM_000416.2:c.774_777del	NM_000416.3:c.774_777del	
+IFNGR1	c.254G>A	relabel	same CDS, coding c.	NM_000416.2:c.254G>A	NM_000416.3:c.254G>A	
+IFNGR1	c.2T>A	relabel	same CDS, coding c.	NM_000416.2:c.2T>A	NM_000416.3:c.2T>A	
+IFNGR1	c.1400T>C	relabel	same CDS, coding c.	NM_000416.2:c.1400T>C	NM_000416.3:c.1400T>C	
+IL7R	c.380-1439G>A	kept	deep intronic on MANE	NC_000005.10(NM_001437964.1):c.380-1439G>A		
+ITGB2	c.1225_1412del	normalized	MANE response, same change	NC_000021.9(NM_001127491.3):c.1225_1412del	NC_000021.9(NM_000211.5):c.1225_1412del	NC_000021.9(NM_000211.5):c.1225-6_1406del
+LYST	c.2623del	normalized	MANE response, same change	NC_000001.11(XM_011544032.2):c.2623del	NC_000001.11(NM_000081.4):c.2623del	NC_000001.11(NM_000081.4):c.2620del
+LYST	c.10557del	normalized	MANE response, same change	NC_000001.11(XM_011544032.2):c.10557del	NC_000001.11(NM_000081.4):c.10395del	NC_000001.11(NM_000081.4):c.10392del
+LYST	c.2454del	normalized	MANE response, same change	NC_000001.11(XM_011544032.2):c.2454del	NC_000001.11(NM_000081.4):c.2454del	NC_000001.11(NM_000081.4):c.2451del
+NRAS	c.38G>A	relabel	same CDS, coding c.	NM_002524.3:c.38G>A	NM_002524.5:c.38G>A	
+PRF1	c.1083del	normalized	MANE response, same change	NC_000010.11(NM_005041.6):c.1083del	NC_000010.11(NM_001083116.3):c.1083del	NC_000010.11(NM_001083116.3):c.1082del
+PTPN11	c.124A>G	relabel	same CDS, coding c.	NM_002834.3:c.124A>G	NM_002834.5:c.124A>G	
+PTPN11	c.172A>G	relabel	same CDS, coding c.	NM_002834.3:c.172A>G	NM_002834.5:c.172A>G	
+PTPN11	c.174C>G	relabel	same CDS, coding c.	NM_002834.3:c.174C>G	NM_002834.5:c.174C>G	
+PTPN11	c.172A>T	relabel	same CDS, coding c.	NM_002834.3:c.172A>T	NM_002834.5:c.172A>T	
+PTPN11	c.179G>C	relabel	same CDS, coding c.	NM_002834.3:c.179G>C	NM_002834.5:c.179G>C	
+PTPN11	c.179G>T	relabel	same CDS, coding c.	NM_002834.3:c.179G>T	NM_002834.5:c.179G>T	
+PTPN11	c.178G>C	relabel	same CDS, coding c.	NM_002834.3:c.178G>C	NM_002834.5:c.178G>C	
+PTPN11	c.182A>G	relabel	same CDS, coding c.	NM_002834.3:c.182A>G	NM_002834.5:c.182A>G	
+PTPN11	c.182A>T	relabel	same CDS, coding c.	NM_002834.3:c.182A>T	NM_002834.5:c.182A>T	
+PTPN11	c.181G>T	relabel	same CDS, coding c.	NM_002834.3:c.181G>T	NM_002834.5:c.181G>T	
+PTPN11	c.181G>A	relabel	same CDS, coding c.	NM_002834.3:c.181G>A	NM_002834.5:c.181G>A	
+PTPN11	c.184T>G	relabel	same CDS, coding c.	NM_002834.3:c.184T>G	NM_002834.5:c.184T>G	
+PTPN11	c.188A>G	relabel	same CDS, coding c.	NM_002834.3:c.188A>G	NM_002834.5:c.188A>G	
+PTPN11	c.205G>A	relabel	same CDS, coding c.	NM_002834.3:c.205G>A	NM_002834.5:c.205G>A	
+PTPN11	c.205G>C	relabel	same CDS, coding c.	NM_002834.3:c.205G>C	NM_002834.5:c.205G>C	
+PTPN11	c.213T>A	relabel	same CDS, coding c.	NM_002834.3:c.213T>A	NM_002834.5:c.213T>A	
+PTPN11	c.215C>G	relabel	same CDS, coding c.	NM_002834.3:c.215C>G	NM_002834.5:c.215C>G	
+PTPN11	c.215C>A	relabel	same CDS, coding c.	NM_002834.3:c.215C>A	NM_002834.5:c.215C>A	
+PTPN11	c.214G>T	relabel	same CDS, coding c.	NM_002834.3:c.214G>T	NM_002834.5:c.214G>T	
+PTPN11	c.214G>A	relabel	same CDS, coding c.	NM_002834.3:c.214G>A	NM_002834.5:c.214G>A	
+PTPN11	c.215C>T	relabel	same CDS, coding c.	NM_002834.3:c.215C>T	NM_002834.5:c.215C>T	
+PTPN11	c.218C>T	relabel	same CDS, coding c.	NM_002834.3:c.218C>T	NM_002834.5:c.218C>T	
+PTPN11	c.227A>C	relabel	same CDS, coding c.	NM_002834.3:c.227A>C	NM_002834.5:c.227A>C	
+PTPN11	c.228G>C	relabel	same CDS, coding c.	NM_002834.3:c.228G>C	NM_002834.5:c.228G>C	
+PTPN11	c.228G>T	relabel	same CDS, coding c.	NM_002834.3:c.228G>T	NM_002834.5:c.228G>T	
+PTPN11	c.227A>G	relabel	same CDS, coding c.	NM_002834.3:c.227A>G	NM_002834.5:c.227A>G	
+PTPN11	c.226G>A	relabel	same CDS, coding c.	NM_002834.3:c.226G>A	NM_002834.5:c.226G>A	
+PTPN11	c.226G>C	relabel	same CDS, coding c.	NM_002834.3:c.226G>C	NM_002834.5:c.226G>C	
+PTPN11	c.227A>T	relabel	same CDS, coding c.	NM_002834.3:c.227A>T	NM_002834.5:c.227A>T	
+PTPN11	c.236A>C	relabel	same CDS, coding c.	NM_002834.3:c.236A>C	NM_002834.5:c.236A>C	
+PTPN11	c.236A>G	relabel	same CDS, coding c.	NM_002834.3:c.236A>G	NM_002834.5:c.236A>G	
+PTPN11	c.417G>C	relabel	same CDS, coding c.	NM_002834.3:c.417G>C	NM_002834.5:c.417G>C	
+PTPN11	c.417G>T	relabel	same CDS, coding c.	NM_002834.3:c.417G>T	NM_002834.5:c.417G>T	
+PTPN11	c.455G>A	relabel	same CDS, coding c.	NM_002834.3:c.455G>A	NM_002834.5:c.455G>A	
+PTPN11	c.211T>C	relabel	same CDS, coding c.	NM_002834.3:c.211T>C	NM_002834.5:c.211T>C	
+PTPRC	c.1090_1095del	normalized	MANE response, same change	NC_000001.11(XM_047426381.1):c.1090_1095del	NC_000001.11(NM_002838.5):c.1090_1095del	NC_000001.11(NM_002838.5):c.1090_1095del
+RAG1	c.-14-5021del	kept	deep intronic on MANE	NC_000011.10(NM_001440489.1):c.-14-5021del		
+RAG1	c.-14-4097_-14-4090del	kept	deep intronic on MANE	NC_000011.10(NM_001440489.1):c.-14-4097_-14-4090del		
+RAG1	c.-14-3680_-14-3679del	kept	deep intronic on MANE	NC_000011.10(NM_001440489.1):c.-14-3680_-14-3679del		
+RAG1	c.-14-5648del	kept	outside the MANE transcript	NC_000011.10(NM_001440489.1):c.-14-5648del		
+STAT1	c.2117T>C	normalized	MANE response, same change	NC_000002.12(NM_001437284.1):c.2117T>C	NC_000002.12(NM_007315.4):c.2117T>C	NC_000002.12(NM_007315.4):c.2117T>C
+TCN2	c.172del	relabel	same CDS, coding c.	NM_000355.2:c.172del	NM_000355.4:c.172del	
+TCN2	c.1110T>G	relabel	same CDS, coding c.	NM_000355.2:c.1110T>G	NM_000355.4:c.1110T>G	
+TCN2	c.387del	relabel	same CDS, coding c.	NM_000355.2:c.387del	NM_000355.4:c.387del	
+TCN2	c.927_930del	relabel	same CDS, coding c.	NM_000355.2:c.927_930del	NM_000355.4:c.927_930del	
+TCN2	c.1236_1237del	relabel	same CDS, coding c.	NM_000355.2:c.1236_1237del	NM_000355.4:c.1236_1237del	
+TCN2	c.1139dup	relabel	same CDS, coding c.	NM_000355.2:c.1139dup	NM_000355.4:c.1139dup	
+TCN2	c.497_498del	relabel	same CDS, coding c.	NM_000355.2:c.497_498del	NM_000355.4:c.497_498del	
+TCN2	c.1117_1118del	relabel	same CDS, coding c.	NM_000355.2:c.1117_1118del	NM_000355.4:c.1117_1118del	
+TCN2	c.501_503del	relabel	same CDS, coding c.	NM_000355.2:c.501_503del	NM_000355.4:c.501_503del	
+TCN2	c.1195C>T	relabel	same CDS, coding c.	NM_000355.2:c.1195C>T	NM_000355.4:c.1195C>T	

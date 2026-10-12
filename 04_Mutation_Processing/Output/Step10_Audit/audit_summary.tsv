@@ -44,14 +44,14 @@ all_units_extracted:all	6875
 all_units_extracted:none	165
 all_units_extracted:partial	7
 protein:MATCH	4112
-protein:MATCH_FS	1206
+protein:MATCH_FS	1207
 protein:SOURCE_NO_P	818
 protein:MATCH_INFRAME	99
 protein:TYPE_DIFF_SAME_POS	55
 protein:NOT_COMPARABLE	54
 protein:FINAL_NO_P	32
 protein:MATCH_START_LOSS	30
-protein:DIFFERENT	24
+protein:DIFFERENT	23
 protein:FS_STOP_DIFF	6
 protein:FS_START_DIFF	2
 protein:POS_SHIFT	1

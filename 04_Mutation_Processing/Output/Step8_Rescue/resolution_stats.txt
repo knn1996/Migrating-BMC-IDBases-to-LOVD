@@ -17,4 +17,4 @@ resolve_tracks summary
   output records / pairs               : 2698 / 6562
   pairs with alt_descriptions          : 4724
   confidence_tier A / B / Review       : 6532 / 4 / 26
-  output                               : /mnt/d/Assignment/Thesis/04_Mutation_Processing/Output/Step8_Rescue/dedup_merged_variants.resolved.tsv
+  output                               : /mnt/d/Assignment/Thesis/04_Mutation_Processing/Output/Step8_Rescue/dedup_merged_variants.tracks.tsv

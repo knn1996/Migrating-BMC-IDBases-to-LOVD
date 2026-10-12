@@ -4319,7 +4319,7 @@ LYST	C0014	1+2	g.138330_138384del, c.9295_9349del, p.G3036fsX3064	g.138330_13838
 LYST	C0006	1+2	g.151177delA, c.9779delA, p.Y3197fsX3258	g.151177delA	c.9779delA	p.Y3197fsX3258	IN_FINAL	traced_through_pipeline	c.9590del	p.(Tyr3197LeufsTer62)	NM_MANE	MATCH_FS	0	1	all	yes
 LYST	C0015	1+2	g.151177delA, c.9779delA, p.Y3197fsX3258	g.151177delA	c.9779delA	p.Y3197fsX3258	IN_FINAL	traced_through_pipeline	c.9590del	p.(Tyr3197LeufsTer62)	NM_MANE	MATCH_FS	0	1	all	yes
 LYST	C0035	1+2	g.151177delA, c.9590delA, r.9590dela, p.Tyr3197fsX62	g.151177delA	c.9590delA	p.Tyr3197fsX62	IN_FINAL	traced_through_pipeline	c.9590del	p.(Tyr3197LeufsTer62)	NM_MANE	MATCH_FS	0	1	all	yes
-LYST	C0017	1+2	g.170674delA, c.10584delA, p.K3465fsX3467	g.170674delA	c.10584delA	p.K3465fsX3467	IN_FINAL	traced_through_pipeline	c.10557del	p.(Gly3520AlafsTer2)	NG_IDRefseq	DIFFERENT	55	1	all	yes
+LYST	C0017	1+2	g.170674delA, c.10584delA, p.K3465fsX3467	g.170674delA	c.10584delA	p.K3465fsX3467	IN_FINAL	traced_through_pipeline	c.10557del	p.(Gly3466AlafsTer2)	NG_IDRefseq	MATCH_FS	1	1	all	yes
 LYST	C0037	1+2	g.190799G>T, c.11002G>T, r.11002g>u, p.Glu3668X	g.190799G>T	c.11002G>T	p.Glu3668X	IN_FINAL	traced_through_pipeline	c.11002G>T	p.(Glu3668Ter)	NM_MANE	MATCH	0	1	all	yes
 LYST	C0038	1+2	g.67600T>G, c.4000T>G, r.4000u>g, p.Phe1334Val	g.67600T>G	c.4000T>G	p.Phe1334Val	IN_FINAL	traced_through_pipeline	c.4000T>G	p.(Phe1334Val)	NM_MANE	MATCH	0	1	all	yes
 LYST	C0040	1+2	g.206889>, c.13242+1>, r.13242+1>	g.206889>	c.13242+1>		NOT_REGISTERED	accession_absent_from_final						1	all	no

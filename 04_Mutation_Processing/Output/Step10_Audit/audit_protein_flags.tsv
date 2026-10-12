@@ -37,7 +37,6 @@ IKBKG	I0007	0	g.21312_21313insA, c.1115_1116insA, p.D311N	g.21312_21313insA	c.11
 JAK3	J0004	2	g.11084_11428del, c.1442_1786del, r.1442_1786del, p.Glu481_Ser596del	g.11084_11428del	c.1442_1786del	p.Glu481_Ser596del	IN_FINAL	traced_through_pipeline	c.1442_1786del	p.(Glu481_Ser596delinsGly)	NM_MANE	TYPE_DIFF_SAME_POS	0	2	all	yes
 JAK3	J0008	1+2	g.12303C>T, [c.1744C>T; c.1744C>T + c.1797_2009del; c.1744C>T + c.1702_1786del], [p.R582W; p.Ser568_Glu639del; p.Ser568fsX13]	g.12303C>T	c.1744C>T + c.1797_2009del;c.1744C>T + c.1702_1786del]	p.Ser568_Glu639del	IN_FINAL	traced_through_pipeline	c.1744C>T	p.(Arg582Trp)	NM_MANE	DIFFERENT	14	1	partial	yes
 JAK3	J0029	1+2	g.17782delT, c.2787delT, r.2787delu, p.Tyr929X	g.17782delT	c.2787delT	p.Tyr929X	IN_FINAL	traced_through_pipeline	c.2788del	p.(Ser930ProfsTer41)	NM_MANE	TYPE_DIFF_SAME_POS	0	1	all	yes
-LYST	C0017	1+2	g.170674delA, c.10584delA, p.K3465fsX3467	g.170674delA	c.10584delA	p.K3465fsX3467	IN_FINAL	traced_through_pipeline	c.10557del	p.(Gly3520AlafsTer2)	NG_IDRefseq	DIFFERENT	55	1	all	yes
 PTPRC	P0004	1	g.58693C>G, c.171C>G, r.171c>g, p.Pro57Pro	g.58693C>G	c.171C>G	p.Pro57Pro	IN_FINAL	traced_through_pipeline	c.171C>G	p.(Phe57Leu)	NM_MANE	DIFFERENT		1	all	yes
 PTPRC	P0005	1	g.58693C>G, c.171C>G, r.171c>g, p.Pro57Pro	g.58693C>G	c.171C>G	p.Pro57Pro	IN_FINAL	traced_through_pipeline	c.171C>G	p.(Phe57Leu)	NM_MANE	DIFFERENT		1	all	yes
 PTPRC	P0006	1	g.58693C>G, c.171C>G, r.171c>g, p.Pro57Pro	g.58693C>G	c.171C>G	p.Pro57Pro	IN_FINAL	traced_through_pipeline	c.171C>G	p.(Phe57Leu)	NM_MANE	DIFFERENT		1	all	yes
