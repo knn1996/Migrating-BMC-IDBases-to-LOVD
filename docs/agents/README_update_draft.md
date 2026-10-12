@@ -1,7 +1,7 @@
 # Draft: README section "Post-thesis correctness work"
 
 Status: living draft. The planner extends it after every recorded run; it is merged into the root README.md once the user judges the work at a satisfactory stopping point.
-Figures come from Output/Step10_Audit/history/audit_history.tsv (currently Runs 0–12). Recompute them from the history after each run; never hard-code.
+Figures come from Output/Step10_Audit/history/audit_history.tsv (currently Runs 0–13; pipeline frozen after Run 13). Recompute them from the history after each run; never hard-code.
 
 ---
 
@@ -65,14 +65,23 @@ Each fix is checked against units that were already correct (regressions, GOOD�
 | 10 | Legacy remap extended to the full numbering scan | 91.71% | 98.42% | 98.88% | 8 | 100% |
 | 11 | Old-numbering records of remapped changes not eligible | 91.74% | 98.42% | 98.91% | 8 | 100% |
 | 12 | MANE Select normalization; transcript-picker fix | 91.74% | 98.43% | 98.93% | 8 | 100% |
+| 13 | Known-wrong and unverifiable records demoted to Review | 91.74% | 98.43% | 98.93% | 8 | 100% |
 
-From Run 0 to Run 12:
+From Run 0 to Run 13:
 - Recovery rose from 5,849 to 6,439 source units (83.33% → 91.74%).
 - Inconsistent pairs fell from 745 to 60.
 - 6,518 of 6,562 final pairs (99.3%) are on the exact MANE Select transcript; the rest are flagged records or have no MANE Select (IGHG2).
 - Excess pairs fell from 653 to 8.
 - Protein BAD→GOOD totalled 460 units, with all GOOD→BAD (18) in Run 1.
 - c./p. coherence rose from 75.34% to 100% of checkable pairs.
+
+### Knowing when to stop
+
+Each run fixed less than the one before (from Run 8 onwards, about 0.1 point of consistency per run), and later candidates increasingly needed rules tailored to single records. To avoid fitting the pipeline to its own audit, a stopping rule was set:
+- A run must fix a whole class of records, covering at least 0.5% of in-scope source units (35), or remove records known to be wrong.
+- Smaller or one-off cases go to a Review workbook for the curator instead of into the code.
+
+The pipeline was frozen after Run 13. Run 13 changes no record content. It moves records the audit cannot vouch for to the Review tier, with a stated reason: genomic positions that land deep in an intron or outside the gene while the source describes an exonic change (41 pairs), records still in legacy numbering (6), and source entries that describe no change (4).
 
 ### Traceability and resolution policy
 
