@@ -137,6 +137,7 @@ rule augment_merged:
     input:
         resolved=os.path.join(S8, "resolved_unresolved.tsv"),
         merged=os.path.join(S7, "merged_variants.tsv"),
+        unresolved=os.path.join(S7, "unresolved_variants.tsv"),
         mut=os.path.join(S1A, "all_mutations.tsv"),
     output:
         tsv=os.path.join(S8, "augmented_merged_variants.tsv"),
@@ -145,6 +146,7 @@ rule augment_merged:
         "envs/python.yaml"
     shell:
         f'MERGED_TSV="{{input.merged}}" RESOLVED_TSV="{{input.resolved}}" ALL_MUTATIONS_TSV="{{input.mut}}" '
+        f'UNRESOLVED_TSV="{{input.unresolved}}" '
         f'OUT_TSV="{{output.tsv}}" STATS_TXT="{{output.stats}}" '
         f'python "{script("Step8_Rescue/merge_with_rescued.py")}"'
 
