@@ -1,0 +1,29 @@
+gene	accession	allele	change	fate_prev	fate_now	fate_detail_prev	fate_detail_now	protein_check_prev	protein_check_now	individual_id	variant_key	track_prev	track_now	pair_label_prev	pair_label_now
+ADA	A0050	1	fate_detail_change	KNOWN_UNRESOLVED	NOT_REGISTERED	RESCUABLE_AUTO:ENOSELECTORFOUND	accession_absent_from_final								
+ADA	A0050	2	fate_detail_change	KNOWN_UNRESOLVED	NOT_REGISTERED	RESCUABLE_AUTO:ENOSELECTORFOUND	accession_absent_from_final								
+ADA	A0061	1	gain;protein_check_change	KNOWN_UNRESOLVED	IN_FINAL	RESCUABLE_AUTO:ENOSELECTORFOUND	traced_through_pipeline		MATCH_FS						
+ADA	A0061	2	protein_bad_to_good	IN_FINAL	IN_FINAL	traced_through_pipeline	traced_through_pipeline	DIFFERENT	MATCH						
+ADA	A0062	1	protein_bad_to_good	IN_FINAL	IN_FINAL	traced_through_pipeline	traced_through_pipeline	DIFFERENT	MATCH						
+ADA	A0062	2	protein_bad_to_good	IN_FINAL	IN_FINAL	traced_through_pipeline	traced_through_pipeline	DIFFERENT	MATCH						
+ADA	A0063	1	gain;protein_check_change	NOT_REGISTERED	IN_FINAL	allele_absent_accession_present	traced_through_pipeline		MATCH_FS						
+ADA	A0063	2	protein_bad_to_good	IN_FINAL	IN_FINAL	traced_through_pipeline	traced_through_pipeline	DIFFERENT	MATCH						
+ADA	A0064	1	gain;protein_check_change	KNOWN_UNRESOLVED	IN_FINAL	RESCUABLE_AUTO:ENOSELECTORFOUND	traced_through_pipeline		MATCH						
+ADA	A0064	2	protein_bad_to_good	IN_FINAL	IN_FINAL	traced_through_pipeline	traced_through_pipeline	DIFFERENT	MATCH						
+ADA	A0065	1	gain;protein_check_change	KNOWN_UNRESOLVED	IN_FINAL	RESCUABLE_AUTO:ENOSELECTORFOUND	traced_through_pipeline		MATCH						
+ADA	A0065	2	protein_bad_to_good	IN_FINAL	IN_FINAL	traced_through_pipeline	traced_through_pipeline	DIFFERENT	MATCH						
+ADA	A0066	1+2	fate_detail_change	KNOWN_UNRESOLVED	NOT_REGISTERED	RESCUABLE_AUTO:ENOSELECTORFOUND	accession_absent_from_final								
+ADA	A0068	1+2	gain;protein_check_change	KNOWN_UNRESOLVED	IN_FINAL	RESCUABLE_AUTO:ENOSELECTORFOUND	traced_through_pipeline		MATCH						
+ADA	A0069	1+2	gain;protein_check_change	NOT_REGISTERED	IN_FINAL	accession_absent_from_final	traced_through_pipeline		MATCH						
+ADA	A0070	1+2	gain;protein_check_change	NOT_REGISTERED	IN_FINAL	accession_absent_from_final	traced_through_pipeline		MATCH						
+ADA	A0071	1+2	gain;protein_check_change	NOT_REGISTERED	IN_FINAL	accession_absent_from_final	traced_through_pipeline		MATCH						
+ADA	A0072	1+2	gain;protein_check_change	NOT_REGISTERED	IN_FINAL	accession_absent_from_final	traced_through_pipeline		MATCH						
+ADA	A0073	1	gain;protein_check_change	KNOWN_UNRESOLVED	IN_FINAL	RESCUABLE_AUTO:ENOSELECTORFOUND	traced_through_pipeline		MATCH						
+ADA	A0073	2	protein_bad_to_good	IN_FINAL	IN_FINAL	traced_through_pipeline	traced_through_pipeline	DIFFERENT	MATCH_FS						
+ADA	A0074	1+2	gain;protein_check_change	KNOWN_UNRESOLVED	IN_FINAL	RESCUABLE_AUTO:ENOSELECTORFOUND	traced_through_pipeline		MATCH						
+ADA	A0061		pair_inconsistent_removed							ADA_A0061	c.609G>A	mane_remap		inconsistent:DIFFERENT	absent
+ADA	A0062		pair_inconsistent_removed							ADA_A0062	c.609G>A	mane_remap		inconsistent:DIFFERENT	absent
+ADA	A0062		pair_inconsistent_removed							ADA_A0062	c.834T>C	mane_remap		inconsistent:DIFFERENT	absent
+ADA	A0063		pair_inconsistent_removed							ADA_A0063	c.834T>C	mane_remap		inconsistent:DIFFERENT	absent
+ADA	A0064		pair_inconsistent_removed							ADA_A0064	c.609G>A	mane_remap		inconsistent:DIFFERENT	absent
+ADA	A0065		pair_inconsistent_removed							ADA_A0065	c.620G>A	mane_remap		inconsistent:DIFFERENT	absent
+ADA	A0073		pair_inconsistent_removed							ADA_A0073	c.610del	mane_remap		inconsistent:DIFFERENT	absent
