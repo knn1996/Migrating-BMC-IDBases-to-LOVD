@@ -176,6 +176,10 @@ Remaining runs: audit option A (DONE: e921821 code+refs, e078d72 history; all pr
 - Review-tier records go out as an xlsx review workbook, like the thesis-era lovd_review(_final).xlsx.
 - IGHG2: the heavy-chain reference Mauno brought over from the BTKbase migration; he said dropping it is OK. User confirms IGHG2 and SH2 with Mauno this week.
 
+## Note for a future pipeline optimization (user, 2026-10-12)
+- The lovd_* builders (Step7 build_lovd_flat.py, build_lovd_review_xlsx.py; Step8 build_final_lovd.py) sit mid-pipeline only because the LOVD table was the end of the thesis pipeline; post-thesis steps (VariO, patient metadata, NMD, audit) were added after it. If the pipeline is ever reworked: make the audited final variant table the end of the core pipeline and keep every export (LOVD tables, review workbooks, the canonical export) at the end, in Step11_Export. Consider reusing build_lovd_review_xlsx.py's writer there.
+- Step11_Export stays as is (user decision); README 9d3a90e stands.
+
 ## Questions for Mauno
 - Submission format from the LOVD director (pending).
 - Accession IDs per gene database (confirms GENE_accession)?
