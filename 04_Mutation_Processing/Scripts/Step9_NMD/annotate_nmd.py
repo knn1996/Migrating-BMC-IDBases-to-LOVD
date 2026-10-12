@@ -62,6 +62,10 @@ def parse_genbank(txt):
     return sorted(exons), cds, seq
 
 
+def last_coding_exon(exons, cds):
+    return max(i for i, (a, b) in enumerate(exons) if a <= cds[1])
+
+
 def translate_stop(seq, start):
     i = start
     while i + 3 <= len(seq):
@@ -184,7 +188,7 @@ def assess(row, tx):
     if len(exons) == 1:
         out["nmd_call"] = "NMD_escape_single_exon"
         return out
-    last_start0 = exons[-1][0] - 1
+    last_start0 = exons[last_coding_exon(exons, cds)][0] - 1
     last_start_mut0 = last_start0 + delta if vpos0 < last_start0 else last_start0
     junction_mut0 = last_start_mut0 - 1
     if mstop0 >= last_start_mut0:
@@ -223,7 +227,7 @@ def main():
         trig = False
         info = {"transcriptid": acc, "status": "ok" if ok else "no_structure", "n_exons": len(exons)}
         if ok:
-            last_start = exons[-1][0]
+            last_start = exons[last_coding_exon(exons, cds)][0]
             junction = last_start - 1
             ref_stop_first = cds[1] - 2
             trig = len(exons) > 1 and ref_stop_first < last_start and (junction - ref_stop_first + 1) > NMD_THRESHOLD
