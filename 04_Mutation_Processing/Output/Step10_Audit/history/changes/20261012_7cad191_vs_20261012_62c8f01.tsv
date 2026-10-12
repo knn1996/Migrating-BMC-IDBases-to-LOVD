@@ -1,0 +1,3 @@
+gene	accession	allele	change	fate_prev	fate_now	fate_detail_prev	fate_detail_now	protein_check_prev	protein_check_now	individual_id	variant_key	track_prev	track_now	pair_label_prev	pair_label_now
+LYST	C0017	1+2	protein_bad_to_good	IN_FINAL	IN_FINAL	traced_through_pipeline	traced_through_pipeline	DIFFERENT	MATCH_FS						
+LYST	C0017		pair_became_consistent							LYST_C0017	c.10557del	NG_IDRefseq	NG_IDRefseq	inconsistent:DIFFERENT	consistent
