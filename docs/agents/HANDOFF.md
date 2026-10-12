@@ -60,6 +60,20 @@ Measurement: count definitions, precision metric, own-source-change ruler, c./p.
 - NMD fetched 59 GenBank records (146 → 205 files). Real outputs = offline replay byte for byte.
 - Note: lovd_review_final.xlsx needs openpyxl (missing in the base env; only affects offline replays).
 
+## Run 8 scoping (report-only, 2026-10-12; scratch /tmp/claude-1000/run8_*)
+- 114 of 183 inconsistent pairs (80 changes) fixable by a verified gene-wide shift (≥2 independent changes; MANE pos = source c. + k): AICDA −76, RAG1 −112, TCIRG1 −60, WAS −34, C9 −4, RAG2 −1201, CIITA −138, RFXAP −116, C2 −36, RFX5 −161, CFH −73, C3 −60, C5 −12, LYST −189, IL7R −22, CD40L −59, IGLL1 −118. 72 pairs carry the literal legacy c.; 41 come from Track A errors.
+- ADA (6 pairs): over-remap. Source c. is already MANE; the pipeline's offset path shifts it by −95. A different bug.
+- Excluded: JAK3 isoform (−167 codons), C1QB (no common shift on MANE), CYBB band artifact, 4 k=0 stop/type cases.
+- Forecast: about 61 uncached Mutalyzer queries (upper bound), 0 VV, 0 GenBank for the fix genes.
+- source_error candidates: 29 changes / 41 pairs (13 irreconcilable, 15 single-change, 1 untestable).
+- Design: shared remap module + committed per-gene shift table; targeted hooks in generate_mutalyzer_input_NM.py, the rescue input generator and resolve_unresolved (ADA).
+- Ceiling if all 114 become consistent: 5,399/5,468 = 98.74%.
+- Implemented (uncommitted): legacy_remap.py + build_legacy_remap.py; refs/legacy_remap.tsv keyed per source change (gene, accession, source c.), 114 entries; 15 genes kept, RFXAP/CD40L/SERPING1 dropped by the evidence check. Hooks: generate_mutalyzer_input_NM.py (MANE only), generate_rescue_input.py.
+- Cached-only sim: protein_good 96.83%, consistency 97.27%, BAD→GOOD 34, 0 regressions, excess 8; exposed a rescue grouping bug (classify_unresolved groups by query c., merge_with_rescued expands with the first row's sysname) → 13 unlinked.
+- User decisions: grouping fix is a separate code commit first (byte-identical on Run 7); queries staged: 56 Track B Mutalyzer in the primary run, then re-forecast rescue (≤16 Mutalyzer, ≤16 VV) for separate approval.
+- ADA −95 comes from hard-coded CODING_OFFSET in generate_mutalyzer_input_NM.py (for the ADA run).
+- Token hygiene: /clear both sessions after each recorded run.
+
 ## Next after Run 7
 1. Run 8 — Legacy c. numbering remap (~70 pairs; RAG1 +112, AICDA +76, CFH +73, TCIRG1 +60, WAS 34–36, LYST 190, RFXAP 116) + ADA over-remap. Needs Utilities/translation_test.py (draft, uncommitted): forecast missing transcripts first (fetch = network step), per-gene shift verified when ≥2 independent changes reconcile (C1QB −2 codons, RFX5 −40 codons are isoform numbering), include small frameshifts/in-frame indels, one shared remap function for c. tracks and rescue. ~25 queries + transcripts. Also yields source_error flags.
 2. Run 9 — MANE normalization of the ~200 records still off exact MANE after Run 7 (Track A on pick_mane fallback transcripts, Track C non-MANE NMs, VariantValidator/rescue). Recompute scope and forecast. First find why pick_mane never matches MANE_SELECT (needs 1 live raw Mutalyzer response; user runs it). Only IGHG2 has no MANE Select (ELA2 = ELANE NM_001972.4). Keep originals in alt_descriptions.

@@ -1,0 +1,34 @@
+gene	mane_nm	cds_source	status	reason	shift	n_support	n_substitution	supports	other_candidates
+ADA	NM_000022.4		excluded	excluded by decision					
+AICDA	NM_020661.4	genbank	kept		-76	3	2	c.252_260delTGCTCTTCC p.L59del [inframe_indel] ; c.410C>T p.R112C [substitution] ; c.528T>C p.F151S [substitution]	
+AIRE	NM_000383.4	genbank	dropped	no shift supported by 2 or more changes					
+C1QB	NM_001378156.1		excluded	excluded by decision					
+C2	NM_000063.6	genbank	kept		-36	4	3	c.1426G>A p.G464R [substitution] ; c.428G>A p.C131Y [substitution] ; c.877_904del p.V281fsX282 [frameshift_start] ; c.990G>C p.E318D [substitution]	
+C3	NM_000064.4	genbank	kept		-60	2	1	c.2857_3010del p.P933fsX939 [frameshift_start] ; c.3303C>G p.Y1081X [substitution]	
+C5	NM_001735.3	genbank	kept		-12	2	2	c.4438C>T p.R1476X [substitution] ; c.67C>T p.Q19X [substitution]	
+C9	NM_001737.5	genbank	kept		-4	5	5	c.1284C>G p.S427X [substitution] ; c.166C>A p.C54X [substitution] ; c.350C>T p.R116X [substitution] ; c.359T>G p.C119G [substitution] ; c.464C>T p.R154X [substitution]	
+CASP10	NM_032977.4	genbank	dropped	no shift supported by 2 or more changes					
+CASP8	NM_001372051.1	fasta+longest_orf	dropped	no shift supported by 2 or more changes					
+CD40L	NM_000074.3	genbank	dropped	tie between -57, -58, -59 not pinned by substitutions					-57(2) -58(2) -59(2)
+CFH	NM_000186.4	genbank	kept		-73	3	3	c.2940C>T p.T956M [substitution] ; c.3299C>G p.Q1076E [substitution] ; c.3429A>G p.D1119G [substitution]	
+CIITA	NM_000246.4	genbank	kept		-138	3	3	c.1279G>T p.E381X [substitution] ; c.1544T>C p.L469P [substitution] ; c.2201G>A p.W688X [substitution]	
+CTSC	NM_001814.6	genbank	dropped	no shift supported by 2 or more changes					
+CYBA	NM_000101.4	genbank	dropped	no shift supported by 2 or more changes					
+CYBB	NM_000397.4		excluded	excluded by decision					
+FASLG	NM_000639.3	fasta+longest_orf	dropped	no shift supported by 2 or more changes					
+IGLL1	NM_020070.4	genbank	kept		-118	2	2	c.182C>T p.Q22X [substitution] ; c.543C>T p.P142L [substitution]	
+IKBKG	NM_001099857.5	genbank	dropped	no shift supported by 2 or more changes					
+IL7R	NM_002185.5	genbank	kept		-22	2	2	c.416C>T p.P132S [substitution] ; c.673G>A p.W217X [substitution]	
+JAK3	NM_000215.4		excluded	excluded by decision					
+LYST	NM_000081.4	genbank	kept		-189	2	2	c.8617G>A p.E2810K [substitution] ; c.8772G>A p.W2861X [substitution]	
+NCF1	NM_000265.7	genbank	dropped	no shift supported by 2 or more changes					
+PTPRC	NM_002838.5	genbank	dropped	no shift supported by 2 or more changes					
+RAG1	NM_000448.3	genbank	kept		-112	21	20	c.1095G>A p.C328Y [substitution] ; c.1173delT p.L354fsX356 [frameshift_start] ; c.1299G>A p.R396H [substitution] ; c.1299G>T p.R396L [substitution] ; c.1313T>C p.S401P [substitution] ; c.1341G>A p.R410Q [substitution] ; c.1398A>G p.D429G [substitution] ; c.1409G>A p.V433M [substitution] ; c.1415A>G p.M435V [substitution] ; c.1443C>T p.A444V [substitution] ; c.1533G>A p.R474H [substitution] ; c.1789G>T p.R559S [substitution] ; c.1793C>T p.R561C [substitution] ; c.1794G>A p.R561H [substitution] ; c.1983G>A p.R624H [substitution] ; c.2276G>A p.E722K [substitution] ; c.2370A>T p.H753L [substitution] ; c.2766T>G p.L885R [substitution] ; c.2812C>A p.C900X [substitution] ; c.2847A>G p.Y912C [substitution] ; c.2988G>A p.W959X [substitution]	
+RAG2	NM_000536.4	genbank	kept		-1201	5	5	c.1316A>G p.R39G [substitution] ; c.1643C>T p.R148X [substitution] ; c.1818T>G p.F206C [substitution] ; c.2122G>A p.W307X [substitution] ; c.2558T>A p.W453R [substitution]	
+RFX5	NM_001025603.2	genbank	kept		-161	3	3	c.1041C>T p.R294X [substitution] ; c.1122C>T p.Q321X [substitution] ; c.607G>A p.R149Q [substitution]	
+RFXAP	NM_000538.4	genbank	dropped	-116 has 2 supports and no substitution					-116(2)
+SERPING1	NM_000062.3	genbank	dropped	tie between -1, +1 not pinned by substitutions					-1(2) +1(2)
+TCIRG1	NM_006019.4	genbank	kept		-60	9	1	c.1030_1031insG p.C324fsX489 [frameshift_start] ; c.1230_1231insA p.Y391fsX489 [frameshift_start] ; c.136_177del p.V26_L40del [inframe_indel] ; c.1498_1499delGC p.A480fsX488 [frameshift_start] ; c.2174_2248del p.A705del [inframe_indel] ; c.2384C>G p.P775R [substitution] ; c.564_574del p.N168fsX182 [frameshift_start] ; c.564_690del p.N168fsX175 [frameshift_start] ; c.982delC p.Q308fsX311 [frameshift_start]	-61(7) -62(6) -63(6) -64(3) -65(3) -66(3)
+UNC13D	NM_199242.3	genbank	dropped	no shift supported by 2 or more changes					
+WAS	NM_000377.3	genbank	kept		-34	5	3	c.1185delC p.P384fsX444 [frameshift_start] ; c.150T>C p.L39P [substitution] ; c.665C>T p.R211X [substitution] ; c.741C>G p.A236G [substitution] ; c.907delC p.Y291fsX291 [frameshift_start]	
+ZAP70	NM_001079.4	genbank	dropped	no shift supported by 2 or more changes					

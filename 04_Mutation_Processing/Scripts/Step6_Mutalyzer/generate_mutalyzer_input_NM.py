@@ -2,12 +2,17 @@ import argparse
 import csv
 import os
 import re
+import sys
 from pathlib import Path
+
+sys.path.insert(0, str(Path(__file__).resolve().parents[1] / "Utilities"))
+from legacy_remap import load_remap, remap
 
 ALL_MUTATIONS_TSV = os.environ["ALL_MUTATIONS_TSV"]
 BED_DIR           = os.environ["BED_DIR"]
 OUT_TSV  = os.environ["OUT_TSV"]
 LOG_TSV  = os.environ["LOG_TSV"]
+LEGACY_REMAP_TSV = os.environ.get("LEGACY_REMAP_TSV", "")
 SOURCE_DIRS = {
     "MANE":     os.environ.get("MANE_NM_DIR", ""),
     "IDRefseq": os.environ.get("IDREFSEQ_NM_DIR", ""),
@@ -128,15 +133,18 @@ def main():
     bed_index = build_bed_index(BED_DIR)
 
     apply_offsets = CODING_OFFSET if args.source == "MANE" else {}
+    legacy = load_remap(LEGACY_REMAP_TSV) if args.source == "MANE" else {}
 
     print(f"Source      : {args.source} -> {fasta_dir}")
     print(f"Scope       : {len(nm_index)} genes with an NM FASTA, minus excluded {sorted(EXCLUDE_GENES)}")
     print(f"NG reference: {len(ng_index)} genes ({ng_dir})")
     print(f"Coding offset corrections applied: {apply_offsets}")
+    print(f"Legacy remap entries: {len(legacy)}")
 
     out_rows     = []
     skipped_rows = []
     n_offset_applied = 0
+    n_legacy = 0
 
     with open(ALL_MUTATIONS_TSV, encoding="utf-8") as f:
         for row in csv.DictReader(f, delimiter="\t"):
@@ -163,6 +171,11 @@ def main():
             if gene in apply_offsets:
                 c_notation = apply_coding_offset(c_notation, apply_offsets[gene])
                 n_offset_applied += 1
+
+            remapped = remap(legacy, gene, accession, notation) if legacy else None
+            if remapped:
+                c_notation = remapped
+                n_legacy += 1
 
             bed_info = bed_index.get(gene, {})
             chrom    = bed_info.get("chrom", "")
@@ -214,6 +227,7 @@ def main():
     print(f"Written : {len(out_rows)} rows  -> {out_tsv}")
     print(f"Skipped : {len(skipped_rows)} rows  -> {log_tsv}")
     print(f"Offset-corrected rows: {n_offset_applied}")
+    print(f"Legacy-remapped rows : {n_legacy}")
     print(f"  reference used: NC_(NM_)={via_nc}  NG_(NM_)={via_ng}  NM_only={via_nm}")
 
 

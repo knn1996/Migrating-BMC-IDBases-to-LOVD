@@ -51,6 +51,7 @@ rule generate_rescue_input:
     input:
         disp=os.path.join(S8, "unresolved_disposition.tsv"),
         lrg=os.path.join(S1B, "LRG_with_NM.csv"),
+        legacy=os.path.join(SCRIPTS, "refs", "legacy_remap.tsv"),
     output:
         tsv=os.path.join(S8, "rescue_mutalyzer_input.tsv"),
         skip=os.path.join(S8, "rescue_mutalyzer_skipped.tsv"),
@@ -61,7 +62,7 @@ rule generate_rescue_input:
     shell:
         f'IN_DISPOSITION="{{input.disp}}" LRG_NM_CSV="{{input.lrg}}" '
         f'MANE_NM_DIR="{{params.mane_nm}}" '
-        f'OUT_TSV="{{output.tsv}}" LOG_TSV="{{output.skip}}" '
+        f'OUT_TSV="{{output.tsv}}" LOG_TSV="{{output.skip}}" LEGACY_REMAP_TSV="{{input.legacy}}" '
         f'python "{script("Step8_Rescue/generate_rescue_input.py")}"'
 
 

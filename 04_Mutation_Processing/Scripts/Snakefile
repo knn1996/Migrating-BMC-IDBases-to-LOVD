@@ -459,6 +459,7 @@ rule mutalyzer_input_NM:
         unpack(lambda wc: {"manifest": MANE_NM_MANIFEST} if config["rerun_downloads"] else {}),
         mut=os.path.join(S1A, "all_mutations.tsv"),
         bed=BED_HG38_IN,
+        legacy=os.path.join(SCRIPTS, "refs", "legacy_remap.tsv"),
     output:
         tsv=os.path.join(S6, "mutalyzer_input_NM_{source}.tsv"),
         skipped=os.path.join(S6, "mutalyzer_input_NM_skipped_{source}.tsv"),
@@ -475,7 +476,7 @@ rule mutalyzer_input_NM:
     shell:
         f'ALL_MUTATIONS_TSV="{{input.mut}}" BED_DIR="{{input.bed}}" '
         f'MANE_NM_DIR="{{params.mane_nm}}" IDREFSEQ_NM_DIR="{{params.idr_nm}}" MANE_NG_DIR="{{params.mane_ng}}" '
-        f'OUT_TSV="{{output.tsv}}" LOG_TSV="{{output.skipped}}" '
+        f'OUT_TSV="{{output.tsv}}" LOG_TSV="{{output.skipped}}" LEGACY_REMAP_TSV="{{input.legacy}}" '
         f'python "{script("Step6_Mutalyzer/generate_mutalyzer_input_NM.py")}" '
         f'--source {{wildcards.source}} > "{{log}}" 2>&1'
 

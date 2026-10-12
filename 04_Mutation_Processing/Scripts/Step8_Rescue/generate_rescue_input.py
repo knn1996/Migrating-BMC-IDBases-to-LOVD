@@ -20,17 +20,24 @@ LRG_NM_CSV       results/LRG_with_NM.csv    (rule add_nm_to_lrg)
 MANE_NM_DIR      dna_seq.mane_nm directory  (GENE_NM_xxx.fasta files)
 OUT_TSV          rescue Mutalyzer input TSV  (fed to run_mutalyzer_NM.py)
 LOG_TSV          tab-separated skip log
+LEGACY_REMAP_TSV legacy c. numbering remap table (optional; applied when the row's c.
+                 is still the literal source c.)
 """
 
 import csv
 import os
+import sys
 from pathlib import Path
+
+sys.path.insert(0, str(Path(__file__).resolve().parents[1] / "Utilities"))
+from legacy_remap import load_remap, remap
 
 IN_DISPOSITION = os.environ["IN_DISPOSITION"]
 LRG_NM_CSV     = os.environ["LRG_NM_CSV"]
 MANE_NM_DIR    = os.environ["MANE_NM_DIR"]
 OUT_TSV        = os.environ["OUT_TSV"]
 LOG_TSV        = os.environ["LOG_TSV"]
+LEGACY_REMAP_TSV = os.environ.get("LEGACY_REMAP_TSV", "")
 
 for _p in (OUT_TSV, LOG_TSV):
     Path(_p).parent.mkdir(parents=True, exist_ok=True)
@@ -84,6 +91,8 @@ def extract_c_notation(hgvs_input):
 def main():
     mane_index = build_mane_nm_index(MANE_NM_DIR)
     lrg_index  = build_lrg_nm_index(LRG_NM_CSV)
+    legacy     = load_remap(LEGACY_REMAP_TSV)
+    n_legacy   = 0
 
     print(f"MANE NM index : {len(mane_index)} genes from {MANE_NM_DIR}")
     print(f"LRG NM index  : {len(lrg_index)} genes from {LRG_NM_CSV}")
@@ -124,6 +133,12 @@ def main():
             })
             continue
 
+        sysname = row.get("sysname", "").strip()
+        remapped = remap(legacy, gene, row.get("accession", ""), sysname) if legacy and c_notation == sysname else None
+        if remapped:
+            c_notation = remapped
+            n_legacy += 1
+
         chrom  = (row.get("chrom") or "").strip()
         nc_acc = CHR_TO_NC.get(chrom, "")
 
@@ -158,6 +173,7 @@ def main():
 
     print(f"Rescue input written : {len(out_rows)} rows  -> {OUT_TSV}")
     print(f"Skipped              : {len(skip_rows)} rows  -> {LOG_TSV}")
+    print(f"Legacy-remapped rows : {n_legacy}")
     if out_rows:
         print("Sample new hgvs_input constructions:")
         for r in out_rows[:5]:
