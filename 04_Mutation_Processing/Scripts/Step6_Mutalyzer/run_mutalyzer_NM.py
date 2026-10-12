@@ -91,9 +91,15 @@ def coherent_coding(entry, alt_p):
     return normalized, f"{c} [{p.split(':', 1)[1] if ':' in p else p}]" if p else c
 
 
+def is_mane_select(entry):
+    tag = entry.get("tag") or {}
+    tags = tag if isinstance(tag, list) else [tag]
+    return any(isinstance(x, dict) and x.get("details") == "MANE Select" for x in tags)
+
+
 def pick_mane(entries):
     for entry in entries:
-        if "MANE_SELECT" in entry.get("selector", {}).get("tags", []):
+        if is_mane_select(entry):
             return entry.get("description", "")
     return entries[0].get("description", "") if entries else ""
 
@@ -239,7 +245,7 @@ def main():
     result_fields = ["reference_coding", "status", "normalized", "nc_hgvs", "c_hgvs",
                      "g_hgvs", "r_hgvs", "p_hgvs", "protein_pos_first",
                      "mane_select", "mutalyzer_gene", "errors", "infos", "alt_c_hgvs"]
-    fieldnames = list(rows[0].keys()) + result_fields
+    fieldnames = (list(rows[0].keys()) if rows else ["gene", "accession", "allele_num", "sysname", "hgvs_input"]) + result_fields
 
     with open(out_tsv, "w", newline="", encoding="utf-8") as f:
         writer = csv.DictWriter(f, fieldnames=fieldnames, delimiter="\t", extrasaction="ignore")

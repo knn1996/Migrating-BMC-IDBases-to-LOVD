@@ -175,8 +175,8 @@ rule resolve_tracks:
         audit=os.path.join(SCRIPTS, "Step10_Audit", "audit_against_source.py"),
         pub=ancient(PUB_DIR),
     output:
-        dedup=os.path.join(S8, "dedup_merged_variants.resolved.tsv"),
-        pairs=os.path.join(S8, "resolution_pairs.tsv"),
+        dedup=os.path.join(S8, "dedup_merged_variants.tracks.tsv"),
+        pairs=os.path.join(S8, "resolution_pairs.tracks.tsv"),
         log=os.path.join(S8, "resolution_log.tsv"),
         stats=os.path.join(S8, "resolution_stats.txt"),
     conda:
@@ -187,6 +187,68 @@ rule resolve_tracks:
         f'OUT_DEDUP="{{output.dedup}}" OUT_PAIRS="{{output.pairs}}" '
         f'OUT_LOG="{{output.log}}" OUT_STATS="{{output.stats}}" '
         f'python "{script("Step8_Rescue/resolve_tracks.py")}"'
+
+
+MANE_GFF = os.path.join(THESIS, "01_Reference_Genomes", "GRCh38_MANE", "MANE.GRCh38.v1.5.ensembl_genomic.gff.gz")
+
+
+rule mane_norm_input:
+    input:
+        dedup=os.path.join(S8, "dedup_merged_variants.tracks.tsv"),
+        gff=ancient(MANE_GFF),
+    output:
+        os.path.join(S8, "mane_norm_input.tsv"),
+    params:
+        mane_nm=DNA_SEQ["mane_nm"],
+        idr_nm=DNA_SEQ["idrefseq_nm"],
+    conda:
+        "envs/python.yaml"
+    shell:
+        f'IN_DEDUP="{{input.dedup}}" MANE_GFF="{{input.gff}}" OUT_INPUT="{{output}}" '
+        f'MANE_NM_DIR="{{params.mane_nm}}" IDREFSEQ_NM_DIR="{{params.idr_nm}}" '
+        f'python "{script("Step8_Rescue/normalize_mane.py")}" --stage input'
+
+
+rule mutalyzer_mane_norm:
+    input:
+        os.path.join(S8, "mane_norm_input.tsv"),
+    output:
+        os.path.join(S8, "mane_norm_results.tsv"),
+    params:
+        cache=config["mutalyzer"]["cache_dir"],
+        logs=LOGS,
+        mane_nm=DNA_SEQ["mane_nm"],
+        idr_nm=DNA_SEQ["idrefseq_nm"],
+    conda:
+        "envs/http.yaml"
+    shell:
+        f'INPUT_TSV="{{input}}" OUT_TSV="{{output}}" '
+        f'CACHE_JSONL="{{params.cache}}/mane_norm.jsonl" '
+        f'LOG_PATH="{{params.logs}}/mutalyzer_mane_norm.log" '
+        f'MANE_NM_DIR="{{params.mane_nm}}" IDREFSEQ_NM_DIR="{{params.idr_nm}}" '
+        f'python "{script("Step6_Mutalyzer/run_mutalyzer_NM.py")}" --source MANE'
+
+
+rule normalize_mane:
+    input:
+        dedup=os.path.join(S8, "dedup_merged_variants.tracks.tsv"),
+        pairs=os.path.join(S8, "resolution_pairs.tracks.tsv"),
+        results=os.path.join(S8, "mane_norm_results.tsv"),
+        gff=ancient(MANE_GFF),
+    output:
+        dedup=os.path.join(S8, "dedup_merged_variants.resolved.tsv"),
+        pairs=os.path.join(S8, "resolution_pairs.tsv"),
+        log=os.path.join(S8, "mane_norm_log.tsv"),
+    params:
+        mane_nm=DNA_SEQ["mane_nm"],
+        idr_nm=DNA_SEQ["idrefseq_nm"],
+    conda:
+        "envs/python.yaml"
+    shell:
+        f'IN_DEDUP="{{input.dedup}}" IN_PAIRS="{{input.pairs}}" IN_RESULTS="{{input.results}}" MANE_GFF="{{input.gff}}" '
+        f'OUT_DEDUP="{{output.dedup}}" OUT_PAIRS="{{output.pairs}}" OUT_LOG="{{output.log}}" '
+        f'MANE_NM_DIR="{{params.mane_nm}}" IDREFSEQ_NM_DIR="{{params.idr_nm}}" '
+        f'python "{script("Step8_Rescue/normalize_mane.py")}" --stage apply'
 
 
 rule build_final_lovd:

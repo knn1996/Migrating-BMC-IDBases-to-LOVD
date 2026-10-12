@@ -54,8 +54,9 @@ def pick_mane(entries):
     """Return MANE Select description from equivalent_descriptions list.
     Falls back to first entry if no MANE Select present."""
     for entry in entries:
-        tags = entry.get("selector", {}).get("tags", [])
-        if "MANE_SELECT" in tags:
+        tag = entry.get("tag") or {}
+        tags = tag if isinstance(tag, list) else [tag]
+        if any(isinstance(x, dict) and x.get("details") == "MANE Select" for x in tags):
             return entry.get("description", "")
     if entries:
         return entries[0].get("description", "")
