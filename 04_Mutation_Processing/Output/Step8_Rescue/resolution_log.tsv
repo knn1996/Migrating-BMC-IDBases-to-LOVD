@@ -1,70 +1,8 @@
 source_change_id	individual_id	kept	dropped	deciding_signal	tier	group_kind	labels	tracks
-AIRE|A0009|2|g.9882_9894del|c.1094_1106del	AIRE_A0009	c.967_979del	c.1094_1106del	protein	A	different_position	c.1094_1106del:NM_MANE:inconsistent | c.967_979del:NM_MANE:consistent	NM_MANE
-AIRE|A0011|1|g.9884_9885insCCTG|c.1096_1097insCCTG	AIRE_A0011	c.966_969dup	c.1096_1097insCCTG	protein	A	different_position	c.1096_1097insCCTG:NM_MANE:inconsistent | c.966_969dup:NG_IDRefseq:consistent	NG_IDRefseq | NM_MANE
-AIRE|A0015|1|g.9882_9894del|c.1094_1106del	AIRE_A0015	c.967_979del	c.1094_1106del	protein	A	different_position	c.1094_1106del:NM_MANE:inconsistent | c.967_979del:NM_MANE:consistent	NM_MANE
-AIRE|A0017|2|g.9882_9894del|c.1094_1106del	AIRE_A0017	c.967_979del	c.1094_1106del	protein	A	different_position	c.1094_1106del:NM_MANE:inconsistent | c.967_979del:NM_MANE:consistent	NM_MANE
-AIRE|A0018|1|g.9882_9894del|c.1094_1106del	AIRE_A0018	c.967_979del	c.1094_1106del	protein	A	different_position	c.1094_1106del:NM_MANE:inconsistent | c.967_979del:NM_MANE:consistent	NM_MANE
-AIRE|A0019|1|g.9882_9894del|c.1094_1106del	AIRE_A0019	c.967_979del	c.1094_1106del	protein	A	different_position	c.1094_1106del:NM_MANE:inconsistent | c.967_979del:NM_MANE:consistent	NM_MANE
-AIRE|A0020|2|g.9882_9894del|c.1094_1106del	AIRE_A0020	c.967_979del	c.1094_1106del	protein	A	different_position	c.1094_1106del:NM_MANE:inconsistent | c.967_979del:NM_MANE:consistent	NM_MANE
-AIRE|A0021|2|g.9882_9894del|c.1094_1106del	AIRE_A0021	c.967_979del	c.1094_1106del	protein	A	different_position	c.1094_1106del:NM_MANE:inconsistent | c.967_979del:NM_MANE:consistent	NM_MANE
-AIRE|A0029|1|g.9882_9894del|c.1094_1106del	AIRE_A0029	c.967_979del	c.1094_1106del	protein	A	different_position	c.1094_1106del:NM_MANE:inconsistent | c.967_979del:NM_MANE:consistent	NM_MANE
-AIRE|A0036|1|g.9882_9894del|c.1094_1106del	AIRE_A0036	c.967_979del	c.1094_1106del	protein	A	different_position	c.1094_1106del:NM_MANE:inconsistent | c.967_979del:NM_MANE:consistent	NM_MANE
-AIRE|A0037|1|g.11861delC|c.1391delC	AIRE_A0037	c.1265del	c.1393del	protein	A	different_position	c.1393del:NM_MANE:inconsistent | c.1265del:NG_IDRefseq:consistent	NG_IDRefseq | NM_MANE
-AIRE|A0037|2|g.9882_9894del|c.1094_1106del	AIRE_A0037	c.967_979del	c.1094_1106del	protein	A	different_position	c.1094_1106del:NM_MANE:inconsistent | c.967_979del:NM_MANE:consistent	NM_MANE
-AIRE|A0038|1|g.11861delC|c.1391delC	AIRE_A0038	c.1265del	c.1393del	protein	A	different_position	c.1393del:NM_MANE:inconsistent | c.1265del:NG_IDRefseq:consistent	NG_IDRefseq | NM_MANE
-AIRE|A0038|2|g.9882_9894del|c.1094_1106del	AIRE_A0038	c.967_979del	c.1094_1106del	protein	A	different_position	c.1094_1106del:NM_MANE:inconsistent | c.967_979del:NM_MANE:consistent	NM_MANE
-AIRE|A0039|1|g.9882_9894del|c.1094_1106del	AIRE_A0039	c.967_979del	c.1094_1106del	protein	A	different_position	c.1094_1106del:NM_MANE:inconsistent | c.967_979del:NM_MANE:consistent	NM_MANE
-AIRE|A0040|1|g.9882_9894del|c.1094_1106del	AIRE_A0040	c.967_979del	c.1094_1106del	protein	A	different_position	c.1094_1106del:NM_MANE:inconsistent | c.967_979del:NM_MANE:consistent	NM_MANE
-AIRE|A0041|1|g.9882_9894del|c.1094_1106del	AIRE_A0041	c.967_979del	c.1094_1106del	protein	A	different_position	c.1094_1106del:NM_MANE:inconsistent | c.967_979del:NM_MANE:consistent	NM_MANE
-AIRE|A0042|1|g.4750G>T|c.171G>T	AIRE_A0042	c.44G>T	c.171G>T	protein	A	different_position	c.171G>T:NM_MANE:inconsistent | c.44G>T:NG_IDRefseq:consistent	NG_IDRefseq | NM_MANE
-AIRE|A0042|2|g.9882_9894del|c.1094_1106del	AIRE_A0042	c.967_979del	c.1094_1106del	protein	A	different_position	c.1094_1106del:NM_MANE:inconsistent | c.967_979del:NM_MANE:consistent	NM_MANE
-AIRE|A0045|1|g.9882_9894del|c.1094_1106del	AIRE_A0045	c.967_979del	c.1094_1106del	protein	A	different_position	c.1094_1106del:NM_MANE:inconsistent | c.967_979del:NM_MANE:consistent	NM_MANE
-AIRE|A0046|2|g.11846delC|c.1376delC	AIRE_A0046	c.1249del	c.1376del	protein	A	different_position	c.1249del:NG_IDRefseq:consistent | c.1376del:variantvalidator:inconsistent	NG_IDRefseq | variantvalidator
-AIRE|A0047|1|g.9882_9894del|c.1094_1106del	AIRE_A0047	c.967_979del	c.1094_1106del	protein	A	different_position	c.1094_1106del:NM_MANE:inconsistent | c.967_979del:NM_MANE:consistent	NM_MANE
-AIRE|A0048|1|g.9882_9894del|c.1094_1106del	AIRE_A0048	c.967_979del	c.1094_1106del	protein	A	different_position	c.1094_1106del:NM_MANE:inconsistent | c.967_979del:NM_MANE:consistent	NM_MANE
-AIRE|A0049|1|g.9882_9894del|c.1094_1106del	AIRE_A0049	c.967_979del	c.1094_1106del	protein	A	different_position	c.1094_1106del:NM_MANE:inconsistent | c.967_979del:NM_MANE:consistent	NM_MANE
-AIRE|A0050|1|g.9882_9894del|c.1094_1106del	AIRE_A0050	c.967_979del	c.1094_1106del	protein	A	different_position	c.1094_1106del:NM_MANE:inconsistent | c.967_979del:NM_MANE:consistent	NM_MANE
-AIRE|A0051|1|g.9882_9894del|c.1094_1106del	AIRE_A0051	c.967_979del	c.1094_1106del	protein	A	different_position	c.1094_1106del:NM_MANE:inconsistent | c.967_979del:NM_MANE:consistent	NM_MANE
-AIRE|A0052|1|g.9882_9894del|c.1094_1106del	AIRE_A0052	c.967_979del	c.1094_1106del	protein	A	different_position	c.1094_1106del:NM_MANE:inconsistent | c.967_979del:NM_MANE:consistent	NM_MANE
-AIRE|A0053|1|g.9882_9894del|c.1094_1106del	AIRE_A0053	c.967_979del	c.1094_1106del	protein	A	different_position	c.1094_1106del:NM_MANE:inconsistent | c.967_979del:NM_MANE:consistent	NM_MANE
-AIRE|A0054|1|g.9882_9894del|c.1094_1106del	AIRE_A0054	c.967_979del	c.1094_1106del	protein	A	different_position	c.1094_1106del:NM_MANE:inconsistent | c.967_979del:NM_MANE:consistent	NM_MANE
-AIRE|A0055|1|g.9882_9894del|c.1094_1106del	AIRE_A0055	c.967_979del	c.1094_1106del	protein	A	different_position	c.1094_1106del:NM_MANE:inconsistent | c.967_979del:NM_MANE:consistent	NM_MANE
-AIRE|A0056|1|g.9882_9894del|c.1094_1106del	AIRE_A0056	c.967_979del	c.1094_1106del	protein	A	different_position	c.1094_1106del:NM_MANE:inconsistent | c.967_979del:NM_MANE:consistent	NM_MANE
-AIRE|A0057|1|g.9882_9894del|c.1094_1106del	AIRE_A0057	c.967_979del	c.1094_1106del	protein	A	different_position	c.1094_1106del:NM_MANE:inconsistent | c.967_979del:NM_MANE:consistent	NM_MANE
-AIRE|A0058|1|g.9882_9894del|c.1094_1106del	AIRE_A0058	c.967_979del	c.1094_1106del	protein	A	different_position	c.1094_1106del:NM_MANE:inconsistent | c.967_979del:NM_MANE:consistent	NM_MANE
-AIRE|A0059|1|g.9882_9894del|c.1094_1106del	AIRE_A0059	c.967_979del	c.1094_1106del	protein	A	different_position	c.1094_1106del:NM_MANE:inconsistent | c.967_979del:NM_MANE:consistent	NM_MANE
-AIRE|A0060|1|g.9882_9894del|c.1094_1106del	AIRE_A0060	c.967_979del	c.1094_1106del	protein	A	different_position	c.1094_1106del:NM_MANE:inconsistent | c.967_979del:NM_MANE:consistent	NM_MANE
-AIRE|A0061|1|g.9882_9894del|c.1094_1106del	AIRE_A0061	c.967_979del	c.1094_1106del	protein	A	different_position	c.1094_1106del:NM_MANE:inconsistent | c.967_979del:NM_MANE:consistent	NM_MANE
-AIRE|A0062|1|g.9882_9894del|c.1094_1106del	AIRE_A0062	c.967_979del	c.1094_1106del	protein	A	different_position	c.1094_1106del:NM_MANE:inconsistent | c.967_979del:NM_MANE:consistent	NM_MANE
-AIRE|A0065|2|g.9882_9894del|c.1094_1106del	AIRE_A0065	c.967_979del	c.1094_1106del	protein	A	different_position	c.1094_1106del:NM_MANE:inconsistent | c.967_979del:NM_MANE:consistent	NM_MANE
-AIRE|A0066|2|g.9882_9894del|c.1094_1106del	AIRE_A0066	c.967_979del	c.1094_1106del	protein	A	different_position	c.1094_1106del:NM_MANE:inconsistent | c.967_979del:NM_MANE:consistent	NM_MANE
-AIRE|A0068|1|g.12504_12505insAC|c.1421_1422insAC	AIRE_A0068	c.1294_1295insAC	c.1421_1422insAC	protein	A	different_position	c.1421_1422insAC:NM_MANE:inconsistent | c.1294_1295insAC:NG_IDRefseq:consistent	NG_IDRefseq | NM_MANE
-AIRE|A0072|1|g.11839_11840insA|c.1369_1370insA	AIRE_A0072	c.1242_1243insA	c.1369_1370insA	protein	A	different_position	c.1369_1370insA:NM_MANE:inconsistent | c.1242_1243insA:NM_MANE:consistent	NM_MANE
-AIRE|A0073|1|g.11839_11840insA|c.1369_1370insA	AIRE_A0073	c.1242_1243insA	c.1369_1370insA	protein	A	different_position	c.1369_1370insA:NM_MANE:inconsistent | c.1242_1243insA:NM_MANE:consistent	NM_MANE
-AIRE|A0074|1|g.11839_11840insA|c.1369_1370insA	AIRE_A0074	c.1242_1243insA	c.1369_1370insA	protein	A	different_position	c.1369_1370insA:NM_MANE:inconsistent | c.1242_1243insA:NM_MANE:consistent	NM_MANE
-AIRE|A0075|1|g.9882_9894del|c.1094_1106del	AIRE_A0075	c.967_979del	c.1094_1106del	protein	A	different_position	c.1094_1106del:NM_MANE:inconsistent | c.967_979del:NM_MANE:consistent	NM_MANE
-AIRE|A0076|1|g.9882_9894del|c.1094_1106del	AIRE_A0076	c.967_979del	c.1094_1106del	protein	A	different_position	c.1094_1106del:NM_MANE:inconsistent | c.967_979del:NM_MANE:consistent	NM_MANE
-AIRE|A0077|1|g.9882_9894del|c.1094_1106del	AIRE_A0077	c.967_979del	c.1094_1106del	protein	A	different_position	c.1094_1106del:NM_MANE:inconsistent | c.967_979del:NM_MANE:consistent	NM_MANE
-AIRE|A0078|1|g.9882_9894del|c.1094_1106del	AIRE_A0078	c.967_979del	c.1094_1106del	protein	A	different_position	c.1094_1106del:NM_MANE:inconsistent | c.967_979del:NM_MANE:consistent	NM_MANE
-AIRE|A0079|1|g.9882_9894del|c.1094_1106del	AIRE_A0079	c.967_979del	c.1094_1106del	protein	A	different_position	c.1094_1106del:NM_MANE:inconsistent | c.967_979del:NM_MANE:consistent	NM_MANE
-AIRE|A0080|1|g.9882_9894del|c.1094_1106del	AIRE_A0080	c.967_979del	c.1094_1106del	protein	A	different_position	c.1094_1106del:NM_MANE:inconsistent | c.967_979del:NM_MANE:consistent	NM_MANE
-AIRE|A0081|1|g.9882_9894del|c.1094_1106del	AIRE_A0081	c.967_979del	c.1094_1106del	protein	A	different_position	c.1094_1106del:NM_MANE:inconsistent | c.967_979del:NM_MANE:consistent	NM_MANE
-AIRE|A0082|1|g.9882_9894del|c.1094_1106del	AIRE_A0082	c.967_979del	c.1094_1106del	protein	A	different_position	c.1094_1106del:NM_MANE:inconsistent | c.967_979del:NM_MANE:consistent	NM_MANE
-AIRE|A0082|2|g.5315_5350del|c.318_353del	AIRE_A0082	c.191_226del	c.319_354del	gene_prior	Review	different_position	c.319_354del:NM_MANE:inconsistent | c.191_226del:NG_IDRefseq:inconsistent	NG_IDRefseq | NM_MANE
-AIRE|A0083|2|g.9882_9894del|c.1094_1106del	AIRE_A0083	c.967_979del	c.1094_1106del	protein	A	different_position	c.1094_1106del:NM_MANE:inconsistent | c.967_979del:NM_MANE:consistent	NM_MANE
-AIRE|A0084|1|g.9882_9894del|c.1094_1106del	AIRE_A0084	c.967_979del	c.1094_1106del	protein	A	different_position	c.1094_1106del:NM_MANE:inconsistent | c.967_979del:NM_MANE:consistent	NM_MANE
-AIRE|A0086|1|g.11861delC|c.1391delC	AIRE_A0086	c.1265del	c.1393del	protein	A	different_position	c.1393del:NM_MANE:inconsistent | c.1265del:NG_IDRefseq:consistent	NG_IDRefseq | NM_MANE
-AIRE|A0089|1|g.5332_5333insCAGG|c.335_336insCAGG	AIRE_A0089	c.205_208dup	c.335_336insCAGG	protein	A	different_position	c.335_336insCAGG:NM_MANE:inconsistent | c.205_208dup:NM_MANE:consistent	NM_MANE
-AIRE|A0090|1|g.9882_9894del|c.1094_1106del	AIRE_A0090	c.967_979del	c.1094_1106del	protein	A	different_position	c.1094_1106del:NM_MANE:inconsistent | c.967_979del:NM_MANE:consistent	NM_MANE
-AIRE|A0091|1|g.9882_9894del|c.1094_1106del	AIRE_A0091	c.967_979del	c.1094_1106del	protein	A	different_position	c.1094_1106del:NM_MANE:inconsistent | c.967_979del:NM_MANE:consistent	NM_MANE
-AIRE|A0092|1|g.9882_9894del|c.1094_1106del	AIRE_A0092	c.967_979del	c.1094_1106del	protein	A	different_position	c.1094_1106del:NM_MANE:inconsistent | c.967_979del:NM_MANE:consistent	NM_MANE
+AIRE|A0093|1|g.15091delG|c.1640delG	AIRE_A0093	c.1512del	c.1513del	gene_prior	B	different_position	c.1513del:NM_MANE:consistent | c.1512del:NG_IDRefseq:consistent	NG_IDRefseq | NM_MANE
 AIRE|A0093|2|g.11700_11701insC|c.1230_1231insC	AIRE_A0093	c.1103dup	c.1230dup	protein	A	different_position	c.1230dup:NM_MANE:inconsistent | c.1103dup:NG_IDRefseq:consistent	NG_IDRefseq | NM_MANE
+AIRE|A0094|1|g.15091delG|c.1640delG	AIRE_A0094	c.1512del	c.1513del	gene_prior	B	different_position	c.1513del:NM_MANE:consistent | c.1512del:NG_IDRefseq:consistent	NG_IDRefseq | NM_MANE
 AIRE|A0094|2|g.11700_11701insC|c.1230_1231insC	AIRE_A0094	c.1103dup	c.1230dup	protein	A	different_position	c.1230dup:NM_MANE:inconsistent | c.1103dup:NG_IDRefseq:consistent	NG_IDRefseq | NM_MANE
-AIRE|A0102|2|g.9882_9894del|c.1094_1106del	AIRE_A0102	c.967_979del	c.1094_1106del	protein	A	different_position	c.1094_1106del:NM_MANE:inconsistent | c.967_979del:NM_MANE:consistent	NM_MANE
-AIRE|A0105|1|g.9882_9894del|c.1094_1106del	AIRE_A0105	c.967_979del	c.1094_1106del	protein	A	different_position	c.1094_1106del:NM_MANE:inconsistent | c.967_979del:NM_MANE:consistent	NM_MANE
-AIRE|A0122|2|g.4753C>T|c.174C>T	AIRE_A0122	c.47C>T	c.174C>T	protein	A	different_position	c.174C>T:NM_MANE:inconsistent | c.47C>T:NM_MANE:consistent	NM_MANE
-AIRE|A0124|1|g.9882_9894del|c.1094_1106del	AIRE_A0124	c.967_979del	c.1094_1106del	protein	A	different_position	c.1094_1106del:NM_MANE:inconsistent | c.967_979del:NM_MANE:consistent	NM_MANE
-AIRE|A0131|1|g.9882_9894del|c.1094_1106del	AIRE_A0131	c.967_979del	c.1094_1106del	protein	A	different_position	c.1094_1106del:NM_MANE:inconsistent | c.967_979del:NM_MANE:consistent	NM_MANE
 AIRE|A0150|1|g.16404C>T|c.1616C>T	AIRE_A0150	c.1616C>T	c.1615C>T	protein	A	different_position	c.1616C>T:NM_MANE:consistent | c.1615C>T:NG_IDRefseq:inconsistent	NG_IDRefseq | NM_MANE
 AP3B1|A0001|1|g.120045_120107del|c.1166_1228del	AP3B1_A0001	c.1167+3_1230+2del	c.1020+1_1020+63del	mane_select	Review	different_position	c.1167+3_1230+2del:NM_MANE:uncheckable | c.1020+1_1020+63del:NG_IDRefseq:uncheckable	NG_IDRefseq | NM_MANE
 AP3B1|A0001|2|g.166453T>G|c.1739T>G	AP3B1_A0001	c.1739T>G	c.1592T>G	protein	A	same_genomic_change	c.1739T>G:NM_MANE:consistent | c.1592T>G:NG_IDRefseq:inconsistent	NG_IDRefseq | NM_MANE
@@ -88,16 +26,12 @@ C1QC|C0002|1|g.4626delC|c.213delC	C1QC_C0002	c.213del	g.22643416del	protein	A	di
 C1QC|C0003|1|g.4618C>T|c.205C>T	C1QC_C0003	c.205C>T	g.22643408C>T	protein	A	different_position	c.205C>T:NM_MANE:consistent | g.22643408C>T:NG_IDRefseq:uncheckable	NG_IDRefseq | NM_MANE
 C1QC|C0004|1|g.4618C>T|c.205C>T	C1QC_C0004	c.205C>T	g.22643408C>T	protein	A	different_position	c.205C>T:NM_MANE:consistent | g.22643408C>T:NG_IDRefseq:uncheckable	NG_IDRefseq | NM_MANE
 C1QC|C0005|1|g.4639G>A|c.226G>A	C1QC_C0005	c.226G>A	g.22643429G>A	protein	A	different_position	c.226G>A:NM_MANE:consistent | g.22643429G>A:NG_IDRefseq:uncheckable	NG_IDRefseq | NM_MANE
-C1S|C0001|1|g.7961_7964delTTTG|c.1334_1337delTTTG	C1S_C0001	c.1132_1135del	c.1334_1337del	protein	A	different_position	c.1132_1135del:NG_IDRefseq:consistent | c.1334_1337del:variantvalidator:inconsistent	NG_IDRefseq | variantvalidator
-C1S|C0002|1|g.7961_7964delTTTG|c.1334_1337delTTTG	C1S_C0002	c.1132_1135del	c.1334_1337del	protein	A	different_position	c.1132_1135del:NG_IDRefseq:consistent | c.1334_1337del:variantvalidator:inconsistent	NG_IDRefseq | variantvalidator
-C1S|C0003|1|g.10404C>T|c.1769C>T	C1S_C0003	c.1567C>T	c.1769C>T	protein	A	different_position	c.1769C>T:NM_MANE:inconsistent | c.1567C>T:NG_IDRefseq:consistent	NG_IDRefseq | NM_MANE
 C2|C0001|1|g.2151G>A|c.428G>A	C2_C0001	c.392G>A	c.-63-8962G>A	protein	A	different_position	c.392G>A:NM_MANE:consistent | c.-63-8962G>A:NG_IDRefseq:inconsistent	NG_IDRefseq | NM_MANE
 C2|C0001|2|g.9059G>C|c.990G>C	C2_C0001	c.954G>C	c.-63-2054G>C	protein	A	different_position	c.954G>C:NM_MANE:consistent | c.-63-2054G>C:NG_IDRefseq:inconsistent	NG_IDRefseq | NM_MANE
 C2|C0002|1|g.7326_7353del|c.877_904del	C2_C0002	c.841_868del	c.-63-3787_-63-3760del	protein	A	different_position	c.841_868del:NM_MANE:consistent | c.-63-3787_-63-3760del:NG_IDRefseq:inconsistent	NG_IDRefseq | NM_MANE
 C2|C0002|2|g.16300G>A|c.1426G>A	C2_C0002	c.1390G>A	c.392-434G>A	protein	A	different_position	c.1390G>A:NM_MANE:consistent | c.392-434G>A:NG_IDRefseq:inconsistent	NG_IDRefseq | NM_MANE
 C2|C0003|1|g.7326_7353del|c.877_904del	C2_C0003	c.841_868del	c.-63-3787_-63-3760del	protein	A	different_position	c.841_868del:NM_MANE:consistent | c.-63-3787_-63-3760del:NG_IDRefseq:inconsistent	NG_IDRefseq | NM_MANE
 C2|C0003|2|g.16300G>A|c.1426G>A	C2_C0003	c.1390G>A	c.392-434G>A	protein	A	different_position	c.1390G>A:NM_MANE:consistent | c.392-434G>A:NG_IDRefseq:inconsistent	NG_IDRefseq | NM_MANE
-C3|C0003|1|g.19119_19179del|c.2354_2414del	C3_C0003	c.2354+2_2416del	c.2296_2354+2del	gene_prior	Review	different_position	c.2354+2_2416del:NM_MANE:uncheckable | c.2296_2354+2del:NG_IDRefseq:uncheckable	NG_IDRefseq | NM_MANE
 C3|C0011|1|g.27182_27183insT|c.3116_3117insT	C3_C0011	c.3116dup	c.3117_3118insT	protein	A	different_position	c.3116dup:NM_MANE:consistent | c.3117_3118insT:NG_IDRefseq:inconsistent	NG_IDRefseq | NM_MANE
 C3|C0012|1|g.28185_28186insT|c.3176_3177insT	C3_C0012	c.3176dup	c.3177_3178insT	protein	A	different_position	c.3176dup:NM_MANE:consistent | c.3177_3178insT:NG_IDRefseq:inconsistent	NG_IDRefseq | NM_MANE
 C5|C0001|1|g.1067C>T|c.67C>T	C5_C0001	c.55C>T	c.84-6457C>T	protein	A	different_position	c.55C>T:NM_MANE:consistent | c.84-6457C>T:NG_IDRefseq:inconsistent	NG_IDRefseq | NM_MANE
@@ -219,58 +153,15 @@ CD3D|C0004|1|g.3149C>A|c.279C>A	CD3D_C0004	c.279C>A	c.55+7G>T	protein	A	differen
 CD3D|C0007|1|g.2604C>T|c.202C>T	CD3D_C0007	c.202C>T	c.55+552G>A	protein	A	different_position	c.202C>T:NM_MANE:consistent | c.55+552G>A:NG_IDRefseq:inconsistent	NG_IDRefseq | NM_MANE
 CD3E|A0002|1|g.8906_8907delCC|c.128_129delCC	CD3E_A0002	c.128_129del	c.85+82_85+83del	protein	A	different_position	c.128_129del:NM_MANE:consistent | c.85+82_85+83del:NG_IDRefseq:uncheckable	NG_IDRefseq | NM_MANE
 CD3G|A0004|1|g.6483A>T|c.205A>T	CD3G_A0004	c.205A>T	c.55+1351A>T	protein	A	different_position	c.205A>T:NM_MANE:consistent | c.55+1351A>T:NG_IDRefseq:inconsistent	NG_IDRefseq | NM_MANE
-CD40L|C0002|0|g.3126_3127insT|c.266_267insT	CD40L_C0002	c.210_211insT	c.266_267insT	gene_prior	Review	different_position	c.266_267insT:NM_MANE:inconsistent | c.210_211insT:NG_IDRefseq:inconsistent	NG_IDRefseq | NM_MANE
-CD40L|C0008|0|g.3158_3159insT|c.298_299insT	CD40L_C0008	c.242dup	c.299dup	protein	A	different_position	c.299dup:NM_MANE:inconsistent | c.242dup:NM_MANE:consistent	NM_MANE
-CD40L|C0009|0|g.3158_3159insT|c.298_299insT	CD40L_C0009	c.242dup	c.299dup	protein	A	different_position	c.299dup:NM_MANE:inconsistent | c.242dup:NM_MANE:consistent	NM_MANE
 CD40L|C0010|0|g.7185delA|c.350delA	CD40L_C0010	c.295del	c.350del	protein	A	different_position	c.350del:NM_MANE:inconsistent | c.295del:NG_IDRefseq:consistent	NG_IDRefseq | NM_MANE
-CD40L|C0011|0|g.7210_7216delAAAGAAA|c.375_381delAAAGAAA	CD40L_C0011	c.320_326del	c.375_381del	protein	A	different_position	c.320_326del:NG_IDRefseq:consistent | c.375_381del:variantvalidator:inconsistent	NG_IDRefseq | variantvalidator
-CD40L|C0013|0|g.12206G>A|c.826G>A	CD40L_C0013	c.770G>A	c.*40G>A	protein	A	different_position	c.*40G>A:NM_MANE:inconsistent | c.770G>A:NG_IDRefseq:consistent	NG_IDRefseq | NM_MANE
-CD40L|C0018|0|g.9192_9193insA|c.432_433insA	CD40L_C0018	c.376_377insA	c.432dup	protein	A	different_position	c.432dup:NM_MANE:inconsistent | c.376_377insA:NG_IDRefseq:consistent	NG_IDRefseq | NM_MANE
-CD40L|C0020|0|g.12087_12088insT|c.707_708insT	CD40L_C0020	c.652dup	c.707_708insT	protein	A	different_position	c.707_708insT:NM_MANE:inconsistent | c.652dup:NG_IDRefseq:consistent	NG_IDRefseq | NM_MANE
-CD40L|C0025|0|g.11931delA|c.551delA	CD40L_C0025	c.495del	c.551del	protein	A	different_position	c.495del:NG_IDRefseq:consistent | c.551del:variantvalidator:inconsistent	NG_IDRefseq | variantvalidator
-CD40L|C0026|0|g.11931delA|c.551delA	CD40L_C0026	c.495del	c.551del	protein	A	different_position	c.495del:NG_IDRefseq:consistent | c.551del:variantvalidator:inconsistent	NG_IDRefseq | variantvalidator
-CD40L|C0027|0|g.12145_12146insC|c.765_766insC	CD40L_C0027	c.709_710insC	c.765dup	protein	A	different_position	c.765dup:NM_MANE:inconsistent | c.709_710insC:NG_IDRefseq:consistent	NG_IDRefseq | NM_MANE
-CD40L|C0029|0|g.11880_11884delGAGCA|c.500_504delGAGCA	CD40L_C0029	c.444_448del	c.500_504del	protein	A	different_position	c.444_448del:NG_IDRefseq:consistent | c.500_504del:variantvalidator:inconsistent	NG_IDRefseq | variantvalidator
-CD40L|C0030|0|g.12205G>A|c.825G>A	CD40L_C0030	c.769G>A	c.*39G>A	protein	A	different_position	c.*39G>A:NM_MANE:inconsistent | c.769G>A:NG_IDRefseq:consistent	NG_IDRefseq | NM_MANE
-CD40L|C0032|0|g.11867G>A|c.487G>A	CD40L_C0032	c.431G>A	c.487G>A	protein	A	different_position	c.487G>A:NM_MANE:inconsistent | c.431G>A:NM_MANE:consistent	NM_MANE
-CD40L|C0034|0|g.11963C>T|c.583C>T	CD40L_C0034	c.527C>T	c.583C>T	protein	A	different_position	c.583C>T:NM_MANE:inconsistent | c.527C>T:NG_IDRefseq:consistent	NG_IDRefseq | NM_MANE
 CD40L|C0036|0|g.12119_12120insATT|c.739_740insATT	CD40L_C0036	c.684_686dup	c.739_740insATT	gene_prior	Review	different_position	c.739_740insATT:NM_MANE:inconsistent | c.684_686dup:NG_IDRefseq:inconsistent	NG_IDRefseq | NM_MANE
-CD40L|C0039|0|g.12020T>C|c.640T>C	CD40L_C0039	c.584T>C	c.640T>C	protein	A	different_position	c.640T>C:NM_MANE:inconsistent | c.584T>C:NG_IDRefseq:consistent	NG_IDRefseq | NM_MANE
-CD40L|C0047|0|g.9225_9234delGTGTTACAGT|c.465_474delGTGTTACAGT	CD40L_C0047	c.409_409+9del	c.465_474del	protein	A	different_position	c.409_409+9del:NG_IDRefseq:uncheckable | c.465_474del:variantvalidator:inconsistent	NG_IDRefseq | variantvalidator
-CD40L|C0050|0|g.1211G>A|c.212G>A	CD40L_C0050	c.156G>A	c.212G>A	protein	A	different_position	c.212G>A:NM_MANE:inconsistent | c.156G>A:NG_IDRefseq:consistent	NG_IDRefseq | NM_MANE
-CD40L|C0051|0|g.12212delT|c.832delT	CD40L_C0051	c.776del	c.*46del	protein	A	different_position	c.*46del:NM_MANE:uncheckable | c.776del:NG_IDRefseq:consistent	NG_IDRefseq | NM_MANE
 CD40L|C0053|0|g.11908delG|c.528delG	CD40L_C0053	c.474del	c.528del	protein	A	different_position	c.474del:NG_IDRefseq:consistent | c.528del:variantvalidator:inconsistent	NG_IDRefseq | variantvalidator
-CD40L|C0054|0|g.12097C>T|c.717C>T	CD40L_C0054	c.661C>T	c.717C>T	protein	A	different_position	c.717C>T:NM_MANE:inconsistent | c.661C>T:NG_IDRefseq:consistent	NG_IDRefseq | NM_MANE
 CD40L|C0055|0|g.12040_12041insA|c.660_661insA	CD40L_C0055	c.605dup	c.660dup	protein	A	different_position	c.660dup:NM_MANE:inconsistent | c.605dup:NG_IDRefseq:consistent	NG_IDRefseq | NM_MANE
 CD40L|C0056|0|g.12040_12041insA|c.660_661insA	CD40L_C0056	c.605dup	c.660dup	protein	A	different_position	c.660dup:NM_MANE:inconsistent | c.605dup:NG_IDRefseq:consistent	NG_IDRefseq | NM_MANE
-CD40L|C0059|0|g.11982_11983insATA|c.602_603insATA	CD40L_C0059	c.546_547insATA	c.602_603insATA	protein	A	different_position	c.602_603insATA:NM_MANE:inconsistent | c.546_547insATA:NG_IDRefseq:consistent	NG_IDRefseq | NM_MANE
-CD40L|C0062|0|g.9193T>C|c.433T>C	CD40L_C0062	c.377T>C	c.433T>C	protein	A	different_position	c.433T>C:NM_MANE:inconsistent | c.377T>C:NG_IDRefseq:consistent	NG_IDRefseq | NM_MANE
-CD40L|C0063|0|g.9197_9198insA|c.437_438insA	CD40L_C0063	c.382dup	c.437dup	protein	A	different_position	c.437dup:NM_MANE:inconsistent | c.382dup:NG_IDRefseq:consistent	NG_IDRefseq | NM_MANE
 CD40L|C0064|0|g.9225del|c.465del	CD40L_C0064	c.409+1del	c.466del	protein	A	different_position	c.466del:NM_MANE:inconsistent | c.409+1del:NG_IDRefseq:uncheckable	NG_IDRefseq | NM_MANE
 CD40L|C0065|0|g.9225del|c.465del	CD40L_C0065	c.409+1del	c.466del	protein	A	different_position	c.466del:NM_MANE:inconsistent | c.409+1del:NG_IDRefseq:uncheckable	NG_IDRefseq | NM_MANE
 CD40L|C0066|0|g.9225del|c.465del	CD40L_C0066	c.409+1del	c.466del	protein	A	different_position	c.466del:NM_MANE:inconsistent | c.409+1del:NG_IDRefseq:uncheckable	NG_IDRefseq | NM_MANE
-CD40L|C0067|0|g.12013_12014insCT|c.633_634insCT	CD40L_C0067	c.577_578insCT	c.634_635insTC	protein	A	different_position	c.634_635insTC:NM_MANE:inconsistent | c.577_578insCT:NG_IDRefseq:consistent	NG_IDRefseq | NM_MANE
-CD40L|C0069|0|g.9183delG|c.423delG	CD40L_C0069	c.367del	c.423del	protein	A	different_position	c.367del:NG_IDRefseq:consistent | c.423del:variantvalidator:inconsistent	NG_IDRefseq | variantvalidator
-CD40L|C0072|0|g.11947_11949delATC|c.567_569delATC	CD40L_C0072	c.511_513del	c.567_569del	protein	A	different_position	c.511_513del:NG_IDRefseq:consistent | c.567_569del:variantvalidator:inconsistent	NG_IDRefseq | variantvalidator
-CD40L|C0074|0|g.11876C>A|c.496C>A	CD40L_C0074	c.440C>A	c.496C>A	protein	A	different_position	c.496C>A:NM_MANE:inconsistent | c.440C>A:NG_IDRefseq:consistent	NG_IDRefseq | NM_MANE
-CD40L|C0081|0|g.11992C>T|c.612C>T	CD40L_C0081	c.556C>T	c.612C>T	protein	A	different_position	c.612C>T:NM_MANE:inconsistent | c.556C>T:NM_MANE:consistent	NM_MANE
-CD40L|C0082|0|g.12097C>T|c.717C>T	CD40L_C0082	c.661C>T	c.717C>T	protein	A	different_position	c.717C>T:NM_MANE:inconsistent | c.661C>T:NG_IDRefseq:consistent	NG_IDRefseq | NM_MANE
-CD40L|C0087|0|g.12209T>C|c.829T>C	CD40L_C0087	c.773T>C	c.*43T>C	protein	A	different_position	c.*43T>C:NM_MANE:inconsistent | c.773T>C:NG_IDRefseq:consistent	NG_IDRefseq | NM_MANE
-CD40L|C0088|0|g.12209T>C|c.829T>C	CD40L_C0088	c.773T>C	c.*43T>C	protein	A	different_position	c.*43T>C:NM_MANE:inconsistent | c.773T>C:NG_IDRefseq:consistent	NG_IDRefseq | NM_MANE
-CD40L|C0089|0|g.12209T>C|c.829T>C	CD40L_C0089	c.773T>C	c.*43T>C	protein	A	different_position	c.*43T>C:NM_MANE:inconsistent | c.773T>C:NG_IDRefseq:consistent	NG_IDRefseq | NM_MANE
-CD40L|C0090|0|g.12209T>C|c.829T>C	CD40L_C0090	c.773T>C	c.*43T>C	protein	A	different_position	c.*43T>C:NM_MANE:inconsistent | c.773T>C:NG_IDRefseq:consistent	NG_IDRefseq | NM_MANE
-CD40L|C0091|0|g.12209T>C|c.829T>C	CD40L_C0091	c.773T>C	c.*43T>C	protein	A	different_position	c.*43T>C:NM_MANE:inconsistent | c.773T>C:NG_IDRefseq:consistent	NG_IDRefseq | NM_MANE
-CD40L|C0099|0|g.12146T>A|c.766T>A	CD40L_C0099	c.710T>A	c.766T>A	protein	A	different_position	c.766T>A:NM_MANE:inconsistent | c.710T>A:NG_IDRefseq:consistent	NG_IDRefseq | NM_MANE
-CD40L|C0104|0|g.12130C>T|c.750C>T	CD40L_C0104	c.694C>T	c.750C>T	protein	A	different_position	c.750C>T:NM_MANE:inconsistent | c.694C>T:NM_MANE:consistent	NM_MANE
-CD40L|C0105|0|g.12130C>T|c.750C>T	CD40L_C0105	c.694C>T	c.750C>T	protein	A	different_position	c.750C>T:NM_MANE:inconsistent | c.694C>T:NM_MANE:consistent	NM_MANE
 CD40L|C0111|0|g.9196_9197insAA|c.436_437insAA	CD40L_C0111	c.381_382A[4]	c.437A[3]	gene_prior	Review	different_position	c.437A[3]:NM_MANE:inconsistent | c.381_382A[4]:NG_IDRefseq:inconsistent	NG_IDRefseq | NM_MANE
-CD40L|C0113|0|g.12115_12117delGGA|c.735_737delGGA	CD40L_C0113	c.680_682del	c.735_737del	protein	A	different_position	c.680_682del:NG_IDRefseq:consistent | c.735_737del:variantvalidator:inconsistent	NG_IDRefseq | variantvalidator
-CD40L|C0114|0|g.9197_9198insG|c.437_438insG	CD40L_C0114	c.381_382insG	c.437_438insG	protein	A	different_position	c.437_438insG:NM_MANE:inconsistent | c.381_382insG:NG_IDRefseq:consistent	NG_IDRefseq | NM_MANE
-CD40L|C0118|0|g.9197_9198insG|c.437_438insG	CD40L_C0118	c.381_382insG	c.437_438insG	protein	A	different_position	c.437_438insG:NM_MANE:inconsistent | c.381_382insG:NG_IDRefseq:consistent	NG_IDRefseq | NM_MANE
-CD40L|C0119|0|g.9197_9198insG|c.437_438insG	CD40L_C0119	c.381_382insG	c.437_438insG	protein	A	different_position	c.437_438insG:NM_MANE:inconsistent | c.381_382insG:NG_IDRefseq:consistent	NG_IDRefseq | NM_MANE
-CD40L|C0120|0|g.11865_11866insA|c.485_486insA	CD40L_C0120	c.429dup	c.485_486insA	protein	A	different_position	c.485_486insA:NM_MANE:inconsistent | c.429dup:NG_IDRefseq:consistent	NG_IDRefseq | NM_MANE
-CD40L|C0121|0|g.12013_12014insCAGCC|c.633_634insCAGCC	CD40L_C0121	c.573_577dup	c.635_636insGCCCA	protein	A	different_position	c.635_636insGCCCA:NM_MANE:inconsistent | c.573_577dup:NG_IDRefseq:consistent	NG_IDRefseq | NM_MANE
-CD40L|C0122|0|g.12013_12014insCAGCC|c.633_634insCAGCC	CD40L_C0122	c.573_577dup	c.635_636insGCCCA	protein	A	different_position	c.635_636insGCCCA:NM_MANE:inconsistent | c.573_577dup:NG_IDRefseq:consistent	NG_IDRefseq | NM_MANE
 CD55|D0001|1|g.6250C>T|c.596C>T	CD55_D0001	c.596C>T	c.287-897C>T	protein	A	different_position	c.596C>T:NM_MANE:consistent | c.287-897C>T:NG_IDRefseq:inconsistent	NG_IDRefseq | NM_MANE
 CD55|D0002|1|g.6250C>T|c.596C>T	CD55_D0002	c.596C>T	c.287-897C>T	protein	A	different_position	c.596C>T:NM_MANE:consistent | c.287-897C>T:NG_IDRefseq:inconsistent	NG_IDRefseq | NM_MANE
 CD55|D0003|1|g.6250C>T|c.596C>T	CD55_D0003	c.596C>T	c.287-897C>T	protein	A	different_position	c.596C>T:NM_MANE:consistent | c.287-897C>T:NG_IDRefseq:inconsistent	NG_IDRefseq | NM_MANE
@@ -293,35 +184,14 @@ CFI|I0006|1|g.56497_56498dup|c.1176_1177dup	CFI_I0006	c.1176_1177dup	c.1155_1156
 CFI|I0014|1|g.53448T>C|c.1019T>C	CFI_I0014	c.1019T>C	c.998T>C	protein	A	same_genomic_change	c.1019T>C:NM_MANE:consistent | c.998T>C:NG_IDRefseq:inconsistent	NG_IDRefseq | NM_MANE
 CFI|I0016|1|g.50480A>G|c.916A>G	CFI_I0016	c.916A>G	c.895A>G	protein	A	same_genomic_change	c.916A>G:NM_MANE:consistent | c.895A>G:NG_IDRefseq:inconsistent	NG_IDRefseq | NM_MANE
 CFI|I0018|1|g.53712A>C|c.1106A>C	CFI_I0018	c.1106A>C	c.1085A>C	protein	A	same_genomic_change	c.1106A>C:NM_MANE:consistent | c.1085A>C:NG_IDRefseq:inconsistent	NG_IDRefseq | NM_MANE
-CFP|P0003|0|g.3781C>T|c.477C>T	CFP_P0003	c.235C>T	c.477C>T	protein	A	different_position	c.477C>T:NM_MANE:inconsistent | c.235C>T:NG_IDRefseq:consistent	NG_IDRefseq | NM_MANE
-CFP|P0004|0|g.3781C>T|c.477C>T	CFP_P0004	c.235C>T	c.477C>T	protein	A	different_position	c.477C>T:NM_MANE:inconsistent | c.235C>T:NG_IDRefseq:consistent	NG_IDRefseq | NM_MANE
-CFP|P0005|0|g.3781C>T|c.477C>T	CFP_P0005	c.235C>T	c.477C>T	protein	A	different_position	c.477C>T:NM_MANE:inconsistent | c.235C>T:NG_IDRefseq:consistent	NG_IDRefseq | NM_MANE
-CFP|P0006|0|g.3781C>T|c.477C>T	CFP_P0006	c.235C>T	c.477C>T	protein	A	different_position	c.477C>T:NM_MANE:inconsistent | c.235C>T:NG_IDRefseq:consistent	NG_IDRefseq | NM_MANE
-CFP|P0009|0|g.5552T>G|c.1203T>G	CFP_P0009	c.961T>G	c.1203T>G	protein	A	different_position	c.1203T>G:NM_MANE:inconsistent | c.961T>G:NG_IDRefseq:consistent	NG_IDRefseq | NM_MANE
-CFP|P0012|0|g.3781C>T|c.477C>T	CFP_P0012	c.235C>T	c.477C>T	protein	A	different_position	c.477C>T:NM_MANE:inconsistent | c.235C>T:NG_IDRefseq:consistent	NG_IDRefseq | NM_MANE
-CFP|P0013|0|g.4761C>G|c.859C>G	CFP_P0013	c.617C>G	c.859C>G	protein	A	different_position	c.859C>G:NM_MANE:inconsistent | c.617C>G:NG_IDRefseq:consistent	NG_IDRefseq | NM_MANE
-CFP|P0014|0|g.4761C>G|c.859C>G	CFP_P0014	c.617C>G	c.859C>G	protein	A	different_position	c.859C>G:NM_MANE:inconsistent | c.617C>G:NG_IDRefseq:consistent	NG_IDRefseq | NM_MANE
 CFP|P0015|0|g.5121_5128delGCCTTGGG|c.1025_1032delGCCTTGGG	CFP_P0015	c.786_793del	c.1025_1032del	protein	A	different_position	c.786_793del:NG_IDRefseq:consistent | c.1025_1032del:variantvalidator:inconsistent	NG_IDRefseq | variantvalidator
 CFP|P0016|0|g.5121_5128delGCCTTGGG|c.1025_1032delGCCTTGGG	CFP_P0016	c.786_793del	c.1025_1032del	protein	A	different_position	c.786_793del:NG_IDRefseq:consistent | c.1025_1032del:variantvalidator:inconsistent	NG_IDRefseq | variantvalidator
 CFP|P0017|0|g.5121_5128delGCCTTGGG|c.1025_1032delGCCTTGGG	CFP_P0017	c.786_793del	c.1025_1032del	protein	A	different_position	c.786_793del:NG_IDRefseq:consistent | c.1025_1032del:variantvalidator:inconsistent	NG_IDRefseq | variantvalidator
 CFP|P0018|0|g.5121_5128delGCCTTGGG|c.1025_1032delGCCTTGGG	CFP_P0018	c.786_793del	c.1025_1032del	protein	A	different_position	c.786_793del:NG_IDRefseq:consistent | c.1025_1032del:variantvalidator:inconsistent	NG_IDRefseq | variantvalidator
 CFP|P0019|0|g.5121_5128delGCCTTGGG|c.1025_1032delGCCTTGGG	CFP_P0019	c.786_793del	c.1025_1032del	protein	A	different_position	c.786_793del:NG_IDRefseq:consistent | c.1025_1032del:variantvalidator:inconsistent	NG_IDRefseq | variantvalidator
 CFP|P0020|0|g.5121_5128delGCCTTGGG|c.1025_1032delGCCTTGGG	CFP_P0020	c.786_793del	c.1025_1032del	protein	A	different_position	c.786_793del:NG_IDRefseq:consistent | c.1025_1032del:variantvalidator:inconsistent	NG_IDRefseq | variantvalidator
-CFP|P0021|0|g.5553G>C|c.1204G>C	CFP_P0021	c.962G>C	c.1204G>C	protein	A	different_position	c.1204G>C:NM_MANE:inconsistent | c.962G>C:NG_IDRefseq:consistent	NG_IDRefseq | NM_MANE
-CFP|P0022|0|g.5553G>C|c.1204G>C	CFP_P0022	c.962G>C	c.1204G>C	protein	A	different_position	c.1204G>C:NM_MANE:inconsistent | c.962G>C:NG_IDRefseq:consistent	NG_IDRefseq | NM_MANE
-CFP|P0023|0|g.5553G>C|c.1204G>C	CFP_P0023	c.962G>C	c.1204G>C	protein	A	different_position	c.1204G>C:NM_MANE:inconsistent | c.962G>C:NG_IDRefseq:consistent	NG_IDRefseq | NM_MANE
-CFP|P0024|0|g.5553G>C|c.1204G>C	CFP_P0024	c.962G>C	c.1204G>C	protein	A	different_position	c.1204G>C:NM_MANE:inconsistent | c.962G>C:NG_IDRefseq:consistent	NG_IDRefseq | NM_MANE
-CFP|P0025|0|g.5553G>C|c.1204G>C	CFP_P0025	c.962G>C	c.1204G>C	protein	A	different_position	c.1204G>C:NM_MANE:inconsistent | c.962G>C:NG_IDRefseq:consistent	NG_IDRefseq | NM_MANE
-CFP|P0028|0|g.5552T>G|c.1203T>G	CFP_P0028	c.961T>G	c.1203T>G	protein	A	different_position	c.1203T>G:NM_MANE:inconsistent | c.961T>G:NG_IDRefseq:consistent	NG_IDRefseq | NM_MANE
-CFP|P0029|0|g.5552T>G|c.1203T>G	CFP_P0029	c.961T>G	c.1203T>G	protein	A	different_position	c.1203T>G:NM_MANE:inconsistent | c.961T>G:NG_IDRefseq:consistent	NG_IDRefseq | NM_MANE
-CFP|P0030|0|g.5552T>G|c.1203T>G	CFP_P0030	c.961T>G	c.1203T>G	protein	A	different_position	c.1203T>G:NM_MANE:inconsistent | c.961T>G:NG_IDRefseq:consistent	NG_IDRefseq | NM_MANE
-CFP|P0031|0|g.5552T>G|c.1203T>G	CFP_P0031	c.961T>G	c.1203T>G	protein	A	different_position	c.1203T>G:NM_MANE:inconsistent | c.961T>G:NG_IDRefseq:consistent	NG_IDRefseq | NM_MANE
-CFP|P0032|0|g.5552T>G|c.1203T>G	CFP_P0032	c.961T>G	c.1203T>G	protein	A	different_position	c.1203T>G:NM_MANE:inconsistent | c.961T>G:NG_IDRefseq:consistent	NG_IDRefseq | NM_MANE
-CFP|P0033|0|g.5552T>G|c.1203T>G	CFP_P0033	c.961T>G	c.1203T>G	protein	A	different_position	c.1203T>G:NM_MANE:inconsistent | c.961T>G:NG_IDRefseq:consistent	NG_IDRefseq | NM_MANE
-CFP|P0034|0|g.5552T>G|c.1203T>G	CFP_P0034	c.961T>G	c.1203T>G	protein	A	different_position	c.1203T>G:NM_MANE:inconsistent | c.961T>G:NG_IDRefseq:consistent	NG_IDRefseq | NM_MANE
-CFP|P0036|0|g.4565C>T|c.801C>T	CFP_P0036	c.559C>T	c.801C>T	protein	A	different_position	c.801C>T:NM_MANE:inconsistent | c.559C>T:NG_IDRefseq:consistent	NG_IDRefseq | NM_MANE
 CIITA|M0001|1|g.31469G>T|c.1279G>T	CIITA_M0001	c.1141G>T	c.1234+413G>T	protein	A	different_position	c.1141G>T:NM_MANE:consistent | c.1234+413G>T:NG_IDRefseq:inconsistent	NG_IDRefseq | NM_MANE
-CIITA|M0002|1|g.47109_47120del|c.3367_3378del	CIITA_M0002	c.3446+1422_3446+1433del	c.3367_3378del	protein	A	different_position	c.3367_3378del:NM_MANE:inconsistent | c.3446+1422_3446+1433del:NG_IDRefseq:uncheckable	NG_IDRefseq | NM_MANE
+CIITA|M0002|1|g.47109_47120del|c.3367_3378del	CIITA_M0002	c.3229_3240del	c.3446+1422_3446+1433del	protein	A	different_position	c.3229_3240del:NM_MANE:consistent | c.3446+1422_3446+1433del:NG_IDRefseq:uncheckable	NG_IDRefseq | NM_MANE
 CIITA|M0003|1|g.31734T>C|c.1544T>C	CIITA_M0003	c.1406T>C	c.1235-171T>C	protein	A	different_position	c.1406T>C:NM_MANE:consistent | c.1235-171T>C:NG_IDRefseq:inconsistent	NG_IDRefseq | NM_MANE
 CIITA|M0004|1|g.31734T>C|c.1544T>C	CIITA_M0004	c.1406T>C	c.1235-171T>C	protein	A	different_position	c.1406T>C:NM_MANE:consistent | c.1235-171T>C:NG_IDRefseq:inconsistent	NG_IDRefseq | NM_MANE
 CIITA|M0005|1|g.31734T>C|c.1544T>C	CIITA_M0005	c.1406T>C	c.1235-171T>C	protein	A	different_position	c.1406T>C:NM_MANE:consistent | c.1235-171T>C:NG_IDRefseq:inconsistent	NG_IDRefseq | NM_MANE
@@ -427,24 +297,10 @@ JAK3|J0007|1|g.IVS10-2A>G|c.1442_1446delAAAAG	JAK3_J0007	c.1442_1446del	c.1442-2
 JAK3|J0015|1|g.IVS17+2T>C|c.2200_2350del	JAK3_J0015	c.2200_2350del	c.2350+2T>C	c_region	Review	different_position	c.2200_2350del:NM_MANE:uncheckable | c.2350+2T>C:NG_IDRefseq:uncheckable	NG_IDRefseq | NM_MANE
 LIG1|L0001|1|g.38293G>A|c.1696G>A	LIG1_L0001	c.1696G>A	c.1238+1G>A	protein	A	different_position	c.1696G>A:NM_MANE:consistent | c.1238+1G>A:NG_IDRefseq:uncheckable	NG_IDRefseq | NM_MANE
 LIG1|L0001|2|g.50060C>T|c.2311C>T	LIG1_L0001	c.2311C>T	c.1912-1922C>T	protein	A	different_position	c.2311C>T:NM_MANE:consistent | c.1912-1922C>T:NG_IDRefseq:inconsistent	NG_IDRefseq | NM_MANE
-LYST|C0001|1|g.37626_37627insG|c.307_308insG	LYST_C0001	c.118dup	c.307dup	protein	A	different_position	c.307dup:NM_MANE:inconsistent | c.118dup:NG_IDRefseq:consistent	NG_IDRefseq | NM_MANE
-LYST|C0002|1|g.61863_61864delAA|c.3262_3263delAA	LYST_C0002	c.3073_3074del	c.3262_3263del	protein	A	different_position	c.3073_3074del:NG_IDRefseq:consistent | c.3262_3263del:variantvalidator:inconsistent	NG_IDRefseq | variantvalidator
-LYST|C0005|1|g.59010_59011insA|c.2091_2092insA	LYST_C0005	c.1902dup	c.2093dup	protein	A	different_position	c.2093dup:NM_MANE:inconsistent | c.1902dup:NG_IDRefseq:consistent	NG_IDRefseq | NM_MANE
-LYST|C0006|1|g.151177delA|c.9779delA	LYST_C0006	c.9590del	c.9779del	protein	A	different_position	c.9779del:NM_MANE:inconsistent | c.9590del:NM_MANE:consistent	NM_MANE
-LYST|C0007|1|g.58575delG|c.1656delG	LYST_C0007	c.1467del	c.1656del	protein	A	different_position	c.1656del:NM_MANE:inconsistent | c.1467del:NG_IDRefseq:consistent	NG_IDRefseq | NM_MANE
-LYST|C0009|1|g.37626_37627insG|c.307_308insG	LYST_C0009	c.118dup	c.307dup	protein	A	different_position	c.307dup:NM_MANE:inconsistent | c.118dup:NG_IDRefseq:consistent	NG_IDRefseq | NM_MANE
 LYST|C0010|1|g.61410delT|c.2809delT	LYST_C0010	c.2623del	c.2810del	protein	A	different_position	c.2810del:NM_MANE:inconsistent | c.2623del:NG_IDRefseq:consistent	NG_IDRefseq | NM_MANE
-LYST|C0012|1|g.115849delT|c.7744delT	LYST_C0012	c.7555del	c.7744del	protein	A	different_position	c.7555del:NG_IDRefseq:consistent | c.7744del:variantvalidator:inconsistent	NG_IDRefseq | variantvalidator
-LYST|C0013|1|g.112279_112285delCTATTAG|c.7249_7255delCTATTAG	LYST_C0013	c.7060_7066del	c.7249_7255del	protein	A	different_position	c.7060_7066del:NG_IDRefseq:uncheckable | c.7249_7255del:variantvalidator:inconsistent	NG_IDRefseq | variantvalidator
-LYST|C0014|1|g.138330_138384del|c.9295_9349del	LYST_C0014	c.9268_9268+54del	c.9295_9349del	protein	A	different_position	c.9295_9349del:NM_MANE:inconsistent | c.9268_9268+54del:NG_IDRefseq:uncheckable	NG_IDRefseq | NM_MANE
-LYST|C0015|1|g.151177delA|c.9779delA	LYST_C0015	c.9590del	c.9779del	protein	A	different_position	c.9779del:NM_MANE:inconsistent | c.9590del:NM_MANE:consistent	NM_MANE
+LYST|C0014|1|g.138330_138384del|c.9295_9349del	LYST_C0014	c.9106_9160del	c.9268_9268+54del	protein	A	different_position	c.9106_9160del:NM_MANE:consistent | c.9268_9268+54del:NG_IDRefseq:uncheckable	NG_IDRefseq | NM_MANE
 LYST|C0016|1|g.61410delT|c.2809delT	LYST_C0016	c.2623del	c.2810del	protein	A	different_position	c.2810del:NM_MANE:inconsistent | c.2623del:NG_IDRefseq:consistent	NG_IDRefseq | NM_MANE
 LYST|C0017|1|g.170674delA|c.10584delA	LYST_C0017	c.10557del	c.10584del	gene_prior	Review	different_position	c.10557del:NG_IDRefseq:inconsistent | c.10584del:variantvalidator:inconsistent	NG_IDRefseq | variantvalidator
-LYST|C0019|1|g.63300_63301insA|c.3622_3623insA	LYST_C0019	c.3434dup	c.3623dup	protein	A	different_position	c.3623dup:NM_MANE:inconsistent | c.3434dup:NG_IDRefseq:consistent	NG_IDRefseq | NM_MANE
-LYST|C0023|1|g.75958delT|c.4463delT	LYST_C0023	c.4274del	c.4463del	protein	A	different_position	c.4274del:NG_IDRefseq:consistent | c.4463del:variantvalidator:inconsistent	NG_IDRefseq | variantvalidator
-LYST|C0024|1|g.86908T>A|c.5250T>A	LYST_C0024	c.5061T>A	c.5250T>A	protein	A	different_position	c.5250T>A:NM_MANE:inconsistent | c.5061T>A:NG_IDRefseq:consistent	NG_IDRefseq | NM_MANE
-LYST|C0029|1|g.90720delA|c.5506delA	LYST_C0029	c.5317del	c.5506del	protein	A	different_position	c.5317del:NG_IDRefseq:consistent | c.5506del:variantvalidator:inconsistent	NG_IDRefseq | variantvalidator
-LYST|C0030|1|g.90720delA|c.5506delA	LYST_C0030	c.5317del	c.5506del	protein	A	different_position	c.5317del:NG_IDRefseq:consistent | c.5506del:variantvalidator:inconsistent	NG_IDRefseq | variantvalidator
 MAPBPIP|M0001|1|g.4581C>A|c.401C>A	MAPBPIP_M0001	c.*23C>A	g.156054309C>A	mane_select	Review	different_position	c.*23C>A:NM_MANE:uncheckable | g.156054309C>A:NG_IDRefseq:uncheckable	NG_IDRefseq | NM_MANE
 MAPBPIP|M0002|1|g.4581C>A|c.401C>A	MAPBPIP_M0002	c.*23C>A	g.156054309C>A	mane_select	Review	different_position	c.*23C>A:NM_MANE:uncheckable | g.156054309C>A:NG_IDRefseq:uncheckable	NG_IDRefseq | NM_MANE
 MAPBPIP|M0003|1|g.4581C>A|c.401C>A	MAPBPIP_M0003	c.*23C>A	g.156054309C>A	mane_select	Review	different_position	c.*23C>A:NM_MANE:uncheckable | g.156054309C>A:NG_IDRefseq:uncheckable	NG_IDRefseq | NM_MANE
@@ -502,41 +358,12 @@ ORAI1|T0001|1|g.1143C>T|c.271C>T	ORAI1_T0001	c.271C>T	g.121622735C>T	protein	A	d
 ORAI1|T0002|1|g.1143C>T|c.271C>T	ORAI1_T0002	c.271C>T	g.121622735C>T	protein	A	different_position	c.271C>T:NM_MANE:consistent | g.121622735C>T:NG_IDRefseq:uncheckable	NG_IDRefseq | NM_MANE
 ORAI1|T0003|1|g.1133_1134insA|c.261_262insA	ORAI1_T0003	c.261dup	g.121622725_121622726insA	protein	A	different_position	c.261dup:NM_MANE:consistent | g.121622725_121622726insA:NG_IDRefseq:uncheckable	NG_IDRefseq | NM_MANE
 ORAI1|T0004|1|g.15176C>A|c.308C>A	ORAI1_T0004	c.308C>A	c.307-4274C>A	protein	A	different_position	c.308C>A:NM_MANE:consistent | c.307-4274C>A:NG_IDRefseq:inconsistent	NG_IDRefseq | NM_MANE
-PRF1|P0001|1|g.3323delT|c.151delT	PRF1_P0001	c.50del	c.151del	protein	A	different_position	c.50del:NM_MANE:consistent | c.151del:variantvalidator:inconsistent	NM_MANE | variantvalidator
-PRF1|P0002|1|g.5577G>A|c.1223G>A	PRF1_P0002	c.1122G>A	c.1223G>A	protein	A	different_position	c.1223G>A:NM_MANE:inconsistent | c.1122G>A:NM_MANE:consistent	NM_MANE
-PRF1|P0003|1|g.3463C>T|c.291C>T	PRF1_P0003	c.190C>T	c.291C>T	protein	A	different_position	c.291C>T:NM_MANE:inconsistent | c.190C>T:NG_IDRefseq:consistent	NG_IDRefseq | NM_MANE
-PRF1|P0004|1|g.5577G>A|c.1223G>A	PRF1_P0004	c.1122G>A	c.1223G>A	protein	A	different_position	c.1223G>A:NM_MANE:inconsistent | c.1122G>A:NM_MANE:consistent	NM_MANE
-PRF1|P0005|2|g.5741G>A|c.1387G>A	PRF1_P0005	c.1286G>A	c.1387G>A	protein	A	different_position	c.1387G>A:NM_MANE:inconsistent | c.1286G>A:NG_IDRefseq:consistent	NG_IDRefseq | NM_MANE
-PRF1|P0006|1|g.5489C>T|c.1135C>T	PRF1_P0006	c.1034C>T	c.1135C>T	protein	A	different_position	c.1135C>T:NM_MANE:inconsistent | c.1034C>T:NG_IDRefseq:consistent	NG_IDRefseq | NM_MANE
-PRF1|P0007|1|g.5003T>G|c.649T>G	PRF1_P0007	c.548T>G	c.649T>G	protein	A	different_position	c.649T>G:NM_MANE:inconsistent | c.548T>G:NG_IDRefseq:consistent	NG_IDRefseq | NM_MANE
-PRF1|P0007|2|g.5291G>A|c.937G>A	PRF1_P0007	c.836G>A	c.937G>A	protein	A	different_position	c.937G>A:NM_MANE:inconsistent | c.836G>A:NG_IDRefseq:consistent	NG_IDRefseq | NM_MANE
-PRF1|P0009|1|g.5577G>A|c.1223G>A	PRF1_P0009	c.1122G>A	c.1223G>A	protein	A	different_position	c.1223G>A:NM_MANE:inconsistent | c.1122G>A:NM_MANE:consistent	NM_MANE
-PRF1|P0010|1|g.5577G>A|c.1223G>A	PRF1_P0010	c.1122G>A	c.1223G>A	protein	A	different_position	c.1223G>A:NM_MANE:inconsistent | c.1122G>A:NM_MANE:consistent	NM_MANE
-PRF1|P0011|1|g.5577G>A|c.1223G>A	PRF1_P0011	c.1122G>A	c.1223G>A	protein	A	different_position	c.1223G>A:NM_MANE:inconsistent | c.1122G>A:NM_MANE:consistent	NM_MANE
-PRF1|P0012|1|g.5577G>A|c.1223G>A	PRF1_P0012	c.1122G>A	c.1223G>A	protein	A	different_position	c.1223G>A:NM_MANE:inconsistent | c.1122G>A:NM_MANE:consistent	NM_MANE
-PRF1|P0015|1|g.5308_5310delAAG|c.954_956delAAG	PRF1_P0015	c.853_855del	c.954_956del	protein	A	different_position	c.853_855del:NM_MANE:consistent | c.954_956del:variantvalidator:inconsistent	NM_MANE | variantvalidator
-PRF1|P0016|1|g.3323delT|c.151delT	PRF1_P0016	c.50del	c.151del	protein	A	different_position	c.50del:NM_MANE:consistent | c.151del:variantvalidator:inconsistent	NM_MANE | variantvalidator
-PRF1|P0019|1|g.5113G>A|c.759G>A	PRF1_P0019	c.658G>A	c.759G>A	protein	A	different_position	c.759G>A:NM_MANE:inconsistent | c.658G>A:NM_MANE:consistent	NM_MANE
-PRF1|P0021|1|g.5149C>T|c.795C>T	PRF1_P0021	c.694C>T	c.795C>T	protein	A	different_position	c.795C>T:NM_MANE:inconsistent | c.694C>T:NM_MANE:consistent	NM_MANE
-PRF1|P0021|2|g.5636_5637insT|c.1282_1283insT	PRF1_P0021	c.1181_1182insT	c.1282dup	protein	A	different_position	c.1282dup:NM_MANE:inconsistent | c.1181_1182insT:NG_IDRefseq:consistent	NG_IDRefseq | NM_MANE
-PRF1|P0022|1|g.5577G>A|c.1223G>A	PRF1_P0022	c.1122G>A	c.1223G>A	protein	A	different_position	c.1223G>A:NM_MANE:inconsistent | c.1122G>A:NM_MANE:consistent	NM_MANE
-PRF1|P0023|1|g.5577G>A|c.1223G>A	PRF1_P0023	c.1122G>A	c.1223G>A	protein	A	different_position	c.1223G>A:NM_MANE:inconsistent | c.1122G>A:NM_MANE:consistent	NM_MANE
-PRF1|P0024|1|g.5577G>A|c.1223G>A	PRF1_P0024	c.1122G>A	c.1223G>A	protein	A	different_position	c.1223G>A:NM_MANE:inconsistent | c.1122G>A:NM_MANE:consistent	NM_MANE
-PRF1|P0025|1|g.5577G>A|c.1223G>A	PRF1_P0025	c.1122G>A	c.1223G>A	protein	A	different_position	c.1223G>A:NM_MANE:inconsistent | c.1122G>A:NM_MANE:consistent	NM_MANE
 PRF1|P0026|1|g.5538delG|c.1184delG	PRF1_P0026	c.1083del	c.1184del	protein	A	different_position	c.1184del:NM_MANE:inconsistent | c.1083del:NG_IDRefseq:consistent	NG_IDRefseq | NM_MANE
 PRF1|P0027|1|g.5538delG|c.1184delG	PRF1_P0027	c.1083del	c.1184del	protein	A	different_position	c.1184del:NM_MANE:inconsistent | c.1083del:NG_IDRefseq:consistent	NG_IDRefseq | NM_MANE
 PRF1|P0028|1|g.5538delG|c.1184delG	PRF1_P0028	c.1083del	c.1184del	protein	A	different_position	c.1184del:NM_MANE:inconsistent | c.1083del:NG_IDRefseq:consistent	NG_IDRefseq | NM_MANE
 PRF1|P0029|1|g.3480delC|c.308delC	PRF1_P0029	c.207del	c.308del	protein	A	different_position	c.207del:NM_MANE:consistent | c.308del:variantvalidator:inconsistent	NM_MANE | variantvalidator
-PRF1|P0029|2|g.5577G>A|c.1223G>A	PRF1_P0029	c.1122G>A	c.1223G>A	protein	A	different_position	c.1223G>A:NM_MANE:inconsistent | c.1122G>A:NM_MANE:consistent	NM_MANE
-PRF1|P0030|1|g.5545_5546delCT|c.1191_1192delCT	PRF1_P0030	c.1090_1091del	c.1191_1192del	protein	A	different_position	c.1090_1091del:NM_MANE:consistent | c.1191_1192del:variantvalidator:inconsistent	NM_MANE | variantvalidator
-PRF1|P0031|1|g.5545_5546delCT|c.1191_1192delCT	PRF1_P0031	c.1090_1091del	c.1191_1192del	protein	A	different_position	c.1090_1091del:NM_MANE:consistent | c.1191_1192del:variantvalidator:inconsistent	NM_MANE | variantvalidator
-PRF1|P0032|2|g.5404G>A|c.1050G>A	PRF1_P0032	c.949G>A	c.1050G>A	protein	A	different_position	c.1050G>A:NM_MANE:inconsistent | c.949G>A:NM_MANE:consistent	NM_MANE
 PRF1|P0033|1|g.3480delC|c.308delC	PRF1_P0033	c.207del	c.308del	protein	A	different_position	c.207del:NM_MANE:consistent | c.308del:variantvalidator:inconsistent	NM_MANE | variantvalidator
-PRF1|P0033|2|g.5545_5546delCT|c.1191_1192delCT	PRF1_P0033	c.1090_1091del	c.1191_1192del	protein	A	different_position	c.1090_1091del:NM_MANE:consistent | c.1191_1192del:variantvalidator:inconsistent	NM_MANE | variantvalidator
-PRF1|P0034|1|g.5545_5546delCT|c.1191_1192delCT	PRF1_P0034	c.1090_1091del	c.1191_1192del	protein	A	different_position	c.1090_1091del:NM_MANE:consistent | c.1191_1192del:variantvalidator:inconsistent	NM_MANE | variantvalidator
 PRF1|P0035|1|g.3480delC|c.308delC	PRF1_P0035	c.207del	c.308del	protein	A	different_position	c.207del:NM_MANE:consistent | c.308del:variantvalidator:inconsistent	NM_MANE | variantvalidator
-PRF1|P0035|2|g.5545_5546delCT|c.1191_1192delCT	PRF1_P0035	c.1090_1091del	c.1191_1192del	protein	A	different_position	c.1090_1091del:NM_MANE:consistent | c.1191_1192del:variantvalidator:inconsistent	NM_MANE | variantvalidator
-PRF1|P0036|1|g.5545_5546delCT|c.1191_1192delCT	PRF1_P0036	c.1090_1091del	c.1191_1192del	protein	A	different_position	c.1090_1091del:NM_MANE:consistent | c.1191_1192del:variantvalidator:inconsistent	NM_MANE | variantvalidator
 PRKDC|P0001|1|g.102327_102329delGAG|c.6338_6340delGAG	PRKDC_P0001	c.6338_6340del	c.5751-171_5751-169del	protein	A	different_position	c.6338_6340del:NM_MANE:consistent | c.5751-171_5751-169del:NG_IDRefseq:inconsistent	NG_IDRefseq | NM_MANE
 PTPRC|P0002|1|g.71646_71651delATGAGT|c.1082_1087delATGAGT	PTPRC_P0002	c.1090_1095del	c.1082_1087del	track_priority	B	different_position	c.1090_1095del:NG_IDRefseq:consistent | c.1082_1087del:variantvalidator:consistent	NG_IDRefseq | variantvalidator
 RAB27A|R0013|1|g.41119_41308del|c.154_343del	RAB27A_R0013	c.156_343+2del	c.154_239+104del	mane_select	Review	different_position	c.156_343+2del:NM_MANE:uncheckable | c.154_239+104del:NG_IDRefseq:uncheckable	NG_IDRefseq | NM_MANE
@@ -548,22 +375,29 @@ RAD50|R0001|2|g.86427A>T|c.3939A>T	RAD50_R0001	c.3939A>T	c.3618+188A>T	c_region	
 RAG1|R0001|1|g.2276G>A|c.2276G>A	RAG1_R0001	c.2164G>A	c.-14-4003G>A	protein	A	different_position	c.2164G>A:NM_MANE:consistent | c.-14-4003G>A:NG_IDRefseq:inconsistent	NG_IDRefseq | NM_MANE
 RAG1|R0005|2|g.2847A>G|c.2847A>G	RAG1_R0005	c.2735A>G	c.-14-3432A>G	protein	A	different_position	c.2735A>G:NM_MANE:consistent | c.-14-3432A>G:NG_IDRefseq:inconsistent	NG_IDRefseq | NM_MANE
 RAG1|R0006|2|g.1723_1735delTATTGATGGGCTG|c.1723_1735delTATTGATGGGCTG	RAG1_R0006	c.1723_1735del	c.-14-4556_-14-4544del	c_region	Review	different_position	c.-14-4556_-14-4544del:NG_IDRefseq:inconsistent | c.1723_1735del:variantvalidator:inconsistent	NG_IDRefseq | variantvalidator
+RAG1|R0007|1|g.368_369delAA|c.368_369delAA	RAG1_R0007	c.256_257del	c.-14-5911_-14-5910del	protein	A	different_position	c.256_257del:NM_MANE:consistent | c.-14-5911_-14-5910del:NG_IDRefseq:inconsistent	NG_IDRefseq | NM_MANE
 RAG1|R0007|2|g.1398A>G|c.1398A>G	RAG1_R0007	c.1286A>G	c.-14-4881A>G	protein	A	different_position	c.1286A>G:NM_MANE:consistent | c.-14-4881A>G:NG_IDRefseq:inconsistent	NG_IDRefseq | NM_MANE
 RAG1|R0009|1|g.1793C>T|c.1793C>T	RAG1_R0009	c.1681C>T	c.-14-4486C>T	protein	A	different_position	c.1681C>T:NM_MANE:consistent | c.-14-4486C>T:NG_IDRefseq:inconsistent	NG_IDRefseq | NM_MANE
-RAG1|R0011|2|g.2038_2039insCAGCTCTCAGAATGTGAAA|c.2038_2039insCAGCTCTCAGAATGTGAAA	RAG1_R0011	c.-14-4241_-14-4240insCAGCTCTCAGAATGTGAAA	c.2039_2040insAGCTCTCAGAATGTGAAAC	protein	A	different_position	c.2039_2040insAGCTCTCAGAATGTGAAAC:NM_MANE:inconsistent | c.-14-4241_-14-4240insCAGCTCTCAGAATGTGAAA:NG_IDRefseq:uncheckable	NG_IDRefseq | NM_MANE
+RAG1|R0011|1|g.368_369delAA|c.368_369delAA	RAG1_R0011	c.256_257del	c.-14-5911_-14-5910del	protein	A	different_position	c.256_257del:NM_MANE:consistent | c.-14-5911_-14-5910del:NG_IDRefseq:uncheckable	NG_IDRefseq | NM_MANE
+RAG1|R0011|2|g.2038_2039insCAGCTCTCAGAATGTGAAA|c.2038_2039insCAGCTCTCAGAATGTGAAA	RAG1_R0011	c.1908_1926dup	c.-14-4241_-14-4240insCAGCTCTCAGAATGTGAAA	protein	A	different_position	c.1908_1926dup:NM_MANE:consistent | c.-14-4241_-14-4240insCAGCTCTCAGAATGTGAAA:NG_IDRefseq:uncheckable	NG_IDRefseq | NM_MANE
 RAG1|R0012|1|g.1258delA|c.1258delA	RAG1_R0012	c.-14-5021del	c.1258del	protein	A	different_position	c.-14-5021del:NG_IDRefseq:uncheckable | c.1258del:variantvalidator:inconsistent	NG_IDRefseq | variantvalidator
 RAG1|R0018|2|g.2276G>A|c.2276G>A	RAG1_R0018	c.2164G>A	c.-14-4003G>A	protein	A	different_position	c.2164G>A:NM_MANE:consistent | c.-14-4003G>A:NG_IDRefseq:inconsistent	NG_IDRefseq | NM_MANE
+RAG1|R0019|1|g.368_369delAA|c.368_369delAA	RAG1_R0019	c.256_257del	c.-14-5911_-14-5910del	protein	A	different_position	c.256_257del:NM_MANE:consistent | c.-14-5911_-14-5910del:NG_IDRefseq:uncheckable	NG_IDRefseq | NM_MANE
+RAG1|R0021|1|g.368_369delAA|c.368_369delAA	RAG1_R0021	c.256_257del	c.-14-5911_-14-5910del	protein	A	different_position	c.256_257del:NM_MANE:consistent | c.-14-5911_-14-5910del:NG_IDRefseq:uncheckable	NG_IDRefseq | NM_MANE
 RAG1|R0021|2|g.2599_2600delGAinsTT|c.2599_2600delGAinsTT	RAG1_R0021	c.-14-3680_-14-3679del	c.2599_2600delinsTT	protein	A	different_position	c.2599_2600delinsTT:NM_MANE:inconsistent | c.-14-3680_-14-3679del:NG_IDRefseq:uncheckable	NG_IDRefseq | NM_MANE
+RAG1|R0022|1|g.368_369delAA|c.368_369delAA	RAG1_R0022	c.256_257del	c.-14-5911_-14-5910del	protein	A	different_position	c.256_257del:NM_MANE:consistent | c.-14-5911_-14-5910del:NG_IDRefseq:inconsistent	NG_IDRefseq | NM_MANE
 RAG1|R0022|2|g.2276G>A|c.2276G>A	RAG1_R0022	c.2164G>A	c.-14-4003G>A	protein	A	different_position	c.2164G>A:NM_MANE:consistent | c.-14-4003G>A:NG_IDRefseq:inconsistent	NG_IDRefseq | NM_MANE
 RAG1|R0024|2|g.1793C>T|c.1793C>T	RAG1_R0024	c.1681C>T	c.-14-4486C>T	protein	A	different_position	c.1681C>T:NM_MANE:consistent | c.-14-4486C>T:NG_IDRefseq:inconsistent	NG_IDRefseq | NM_MANE
 RAG1|R0027|1|g.1173delT|c.1173delT	RAG1_R0027	c.1061del	c.-14-5106del	protein	A	different_position	c.1061del:NM_MANE:consistent | c.-14-5106del:NG_IDRefseq:inconsistent	NG_IDRefseq | NM_MANE
-RAG1|R0028|1|g.1521_1522delGC|c.1521_1522delGC	RAG1_R0028	c.-14-4758_-14-4757del	c.1521_1522del	protein	A	different_position	c.-14-4758_-14-4757del:NG_IDRefseq:uncheckable | c.1521_1522del:variantvalidator:inconsistent	NG_IDRefseq | variantvalidator
+RAG1|R0028|1|g.1521_1522delGC|c.1521_1522delGC	RAG1_R0028	c.1409_1410del	c.-14-4758_-14-4757del	protein	A	different_position	c.1409_1410del:NM_MANE:consistent | c.-14-4758_-14-4757del:NG_IDRefseq:uncheckable	NG_IDRefseq | NM_MANE
 RAG1|R0033|2|g.2812C>A|c.2812C>A	RAG1_R0033	c.2700C>A	c.-14-3467C>A	protein	A	different_position	c.2700C>A:NM_MANE:consistent | c.-14-3467C>A:NG_IDRefseq:inconsistent	NG_IDRefseq | NM_MANE
+RAG1|R0036|1|g.368_369delAA|c.368_369delAA	RAG1_R0036	c.256_257del	c.-14-5911_-14-5910del	protein	A	different_position	c.256_257del:NM_MANE:consistent | c.-14-5911_-14-5910del:NG_IDRefseq:inconsistent	NG_IDRefseq | NM_MANE
 RAG1|R0037|1|g.1415A>G|c.1415A>G	RAG1_R0037	c.1303A>G	c.-14-4864A>G	protein	A	different_position	c.1303A>G:NM_MANE:consistent | c.-14-4864A>G:NG_IDRefseq:inconsistent	NG_IDRefseq | NM_MANE
 RAG1|R0038|2|g.2766T>G|c.2766T>G	RAG1_R0038	c.2654T>G	c.-14-3513T>G	protein	A	different_position	c.2654T>G:NM_MANE:consistent | c.-14-3513T>G:NG_IDRefseq:inconsistent	NG_IDRefseq | NM_MANE
 RAG1|R0039|2|g.2766T>G|c.2766T>G	RAG1_R0039	c.2654T>G	c.-14-3513T>G	protein	A	different_position	c.2654T>G:NM_MANE:consistent | c.-14-3513T>G:NG_IDRefseq:inconsistent	NG_IDRefseq | NM_MANE
 RAG1|R0040|1|g.631delT|c.631delT	RAG1_R0040	c.-14-5648del	c.631del	protein	A	different_position	c.631del:NM_MANE:inconsistent | c.-14-5648del:NG_IDRefseq:uncheckable	NG_IDRefseq | NM_MANE
-RAG1|R0041|1|g.887delA|c.887delA	RAG1_R0041	c.-14-5391del	c.887del	protein	A	different_position	c.-14-5391del:NG_IDRefseq:uncheckable | c.887del:variantvalidator:inconsistent	NG_IDRefseq | variantvalidator
+RAG1|R0041|1|g.887delA|c.887delA	RAG1_R0041	c.775del	c.-14-5391del	protein	A	different_position	c.775del:NM_MANE:consistent | c.-14-5391del:NG_IDRefseq:uncheckable	NG_IDRefseq | NM_MANE
+RAG2|S0005|1|g.2018_2020delATT|c.2018_2020delATT	RAG2_S0005	c.817_819del	c.-1028+883_-1028+885del	protein	A	different_position	c.817_819del:NM_MANE:consistent | c.-1028+883_-1028+885del:NG_IDRefseq:uncheckable	NG_IDRefseq | NM_MANE
 RAG2|S0010|1|g.2122G>A|c.2122G>A	RAG2_S0010	c.921G>A	c.-1028+987G>A	protein	A	different_position	c.921G>A:NM_MANE:consistent | c.-1028+987G>A:NG_IDRefseq:inconsistent	NG_IDRefseq | NM_MANE
 RAG2|S0011|1|g.1664_1665insTGTTC|c.1664_1665insTGTTC	RAG2_S0011	c.*80_*81insTGTTC	c.-1028+530_-1028+531insGTTCT	mane_select	Review	different_position	c.*80_*81insTGTTC:NM_MANE:uncheckable | c.-1028+530_-1028+531insGTTCT:NG_IDRefseq:uncheckable	NG_IDRefseq | NM_MANE
 RAG2|S0013|1|g.1643C>T|c.1643C>T	RAG2_S0013	c.442C>T	c.-1028+508C>T	protein	A	different_position	c.442C>T:NM_MANE:consistent | c.-1028+508C>T:NG_IDRefseq:inconsistent	NG_IDRefseq | NM_MANE
@@ -571,7 +405,6 @@ RFX5|R0001|1|g.33455C>T|c.1041C>T	RFX5_R0001	c.880C>T	c.760C>T	protein	A	same_ge
 RFX5|R0005|1|g.33536C>T|c.1122C>T	RFX5_R0005	c.961C>T	c.841C>T	protein	A	same_genomic_change	c.961C>T:NM_MANE:consistent | c.841C>T:NG_IDRefseq:inconsistent	NG_IDRefseq | NM_MANE
 RFX5|R0007|1|g.32168G>A|c.607G>A	RFX5_R0007	c.446G>A	c.326G>A	protein	A	same_genomic_change	c.446G>A:NM_MANE:consistent | c.326G>A:NG_IDRefseq:inconsistent	NG_IDRefseq | NM_MANE
 RFX5|R0008|1|g.32168G>A|c.607G>A	RFX5_R0008	c.446G>A	c.326G>A	protein	A	same_genomic_change	c.446G>A:NM_MANE:consistent | c.326G>A:NG_IDRefseq:inconsistent	NG_IDRefseq | NM_MANE
-RFXANK|R0001|1|g.5932G>T|c.721G>T	RFXANK_R0001	c.304G>T	c.721G>T	protein	A	different_position	c.721G>T:NM_MANE:inconsistent | c.304G>T:NM_MANE:consistent	NM_MANE
 RNF168|R0001|1|g.17152_17153insG|c.397_398insG	RNF168_R0001	c.397dup	c.302-2698_302-2697insG	protein	A	different_position	c.397dup:NM_MANE:consistent | c.302-2698_302-2697insG:NG_IDRefseq:uncheckable	NG_IDRefseq | NM_MANE
 RNF168|R0001|2|g.32500_32503delACAA|c.1323_1326delACAA	RNF168_R0001	c.1323_1326del	c.681-720_681-717del	protein	A	different_position	c.1323_1326del:NM_MANE:consistent | c.681-720_681-717del:NG_IDRefseq:uncheckable	NG_IDRefseq | NM_MANE
 SLC35C1|A0001|1|g.1434C>T|c.439C>T	SLC35C1_A0001	c.439C>T	c.-31-161C>T	protein	A	different_position	c.439C>T:NM_MANE:consistent | c.-31-161C>T:NG_IDRefseq:inconsistent	NG_IDRefseq | NM_MANE

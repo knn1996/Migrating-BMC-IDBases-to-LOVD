@@ -1,8 +1,8 @@
 merge_with_rescued summary
 ==========================
-  merged_variants rows (pre-rescue)    : 9100
-  resolved distinct variants           : 565
-  expanded patient-variant rows added  : 1202
-  total rows in augmented output       : 10302
+  merged_variants rows (pre-rescue)    : 9355
+  resolved distinct variants           : 580
+  expanded patient-variant rows added  : 1246
+  total rows in augmented output       : 10601
   rows without a source_change_id      : 0
   output                               : /mnt/d/Assignment/Thesis/04_Mutation_Processing/Output/Step8_Rescue/augmented_merged_variants.tsv
