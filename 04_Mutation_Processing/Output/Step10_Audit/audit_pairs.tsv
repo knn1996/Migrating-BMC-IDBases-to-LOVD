@@ -4865,8 +4865,8 @@ RFXAP_R0002	c.163C>T	mane_remap	consistent		RFXAP|R0002|1|g.52638C>T|c.279C>T	co
 RFXAP_R0003	c.368del	mane_remap	consistent		RFXAP|R0003|1|g.52843delG|c.484delG	coherent
 RFXAP_R0004	c.368del	mane_remap	consistent		RFXAP|R0004|1|g.52843delG|c.484delG	coherent
 RFXAP_R0005	c.163C>T	mane_remap	consistent		RFXAP|R0005|1|g.52638C>T|c.279C>T	coherent
-RFXAP_R0006	c.150_151insGCGGGGC	NM_IDRefseq	inconsistent:FS_START_DIFF		RFXAP|R0006|1|g.52509_52510insGCGGGGC|c.150_151insGCGGGGC	coherent
-RFXAP_R0007	c.150_151insGCGGGGC	NM_IDRefseq	inconsistent:FS_START_DIFF		RFXAP|R0007|1|g.52509_52510insGCGGGGC|c.150_151insGCGGGGC	coherent
+RFXAP_R0006	c.28_34dup	mane_remap	consistent		RFXAP|R0006|1|g.52509_52510insGCGGGGC|c.150_151insGCGGGGC	coherent
+RFXAP_R0007	c.28_34dup	mane_remap	consistent		RFXAP|R0007|1|g.52509_52510insGCGGGGC|c.150_151insGCGGGGC	coherent
 RNF168_R0001	c.1323_1326del	NM_MANE	consistent		RNF168|R0001|2|g.32500_32503delACAA|c.1323_1326delACAA	coherent
 RNF168_R0001	c.397dup	NM_MANE	consistent		RNF168|R0001|1|g.17152_17153insG|c.397_398insG	coherent
 SBDS_S0001	c.101dup	NM_MANE	consistent		SBDS|S0001|1|g.1284dupA|c.100dupA	coherent

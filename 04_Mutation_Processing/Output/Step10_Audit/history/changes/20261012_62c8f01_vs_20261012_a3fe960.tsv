@@ -1,0 +1,5 @@
+gene	accession	allele	change	fate_prev	fate_now	fate_detail_prev	fate_detail_now	protein_check_prev	protein_check_now	individual_id	variant_key	track_prev	track_now	pair_label_prev	pair_label_now
+RFXAP	R0006	1+2	gain;protein_check_change	NOT_REGISTERED	IN_FINAL	mutalyzer_ok_but_absent_from_final	traced_through_pipeline		MATCH_FS						
+RFXAP	R0007	1+2	gain;protein_check_change	NOT_REGISTERED	IN_FINAL	mutalyzer_ok_but_absent_from_final	traced_through_pipeline		MATCH_FS						
+RFXAP	R0006		pair_inconsistent_removed							RFXAP_R0006	c.150_151insGCGGGGC	NM_IDRefseq		inconsistent:FS_START_DIFF	absent
+RFXAP	R0007		pair_inconsistent_removed							RFXAP_R0007	c.150_151insGCGGGGC	NM_IDRefseq		inconsistent:FS_START_DIFF	absent
