@@ -176,6 +176,15 @@ Remaining runs: audit option A (DONE: e921821 code+refs, e078d72 history; all pr
 - Review-tier records go out as an xlsx review workbook, like the thesis-era lovd_review(_final).xlsx.
 - IGHG2: the heavy-chain reference Mauno brought over from the BTKbase migration; he said dropping it is OK. User confirms IGHG2 and SH2 with Mauno this week.
 
+## Mauno feedback 1 (2026-10-13): NMD rule
+- Rule: if the PTC lies more than 50 nt before the end of the penultimate CODING exon → annotate predicted missing RNA and protein (r.0?, p.0?). Use protein-coding exons only (ignore 3′UTR-only last exons). Mutalyzer/VV frameshift p. is wrong for these.
+- Before: Step9 measured from the transcript's last exon (7 MANE transcripts end in a 3′UTR-only exon: CD3G, CIITA, CD19, IL12B, NRAS, PTPN11, RAC2); the export kept the Mutalyzer fs p.; the suspect list ignored NMD (7 NMD-predicted rows: JAK3 J0029, SERPING1 S0066–68, CTSC C0127, NCF1 N0002, TCIRG1 T0004/1, UNC13D U0046).
+- User approved unfreezing Step9 for this rule. Plan: Step9 last-coding-exon boundary → export r.0?/p.0? (Mutalyzer p. to alt_descriptions) → suspect list drops NMD rows → nmd_review_for_mauno.csv (all PTC variants, per distinct variant). The audit keeps comparing the Mutalyzer protein (it tests the c. mapping).
+- Open question for Mauno: NMD-escaping PTCs keep the Mutalyzer fs/nonsense p.?
+- Done: Step9 rule df09bd4 (changes no call in current data; only 7 distances in CD19/CD3G/CIITA/IL12B). NMD CSV 5e81713: Output/Step11_Export/nmd_review_for_mauno.csv, 1,091 distinct PTC variants (predicted 872, escape last coding exon 186, escape within 50 nt 33; borderline 2; start-proximal 91), built from scratch Step9; tier/review columns being added. Pending: user's `-R annotate_nmd` run, then export r.0?/p.0? + workbook without the NMD suspect rows.
+
+- NMD done (2026-10-13): Step9 outputs 6111487 (real run = scratch, 0 fetches); full CSV unchanged (f0cc89e); stratified sample 16f5f30 (nmd_sample_for_mauno.csv, 20 variants, seed 20261013; JAK3 example, borderline TNFRSF13B 52 nt / ITGB2 48 nt, CXCR4, IFNGR1); export 83e85f4: 2,378 NMD_predicted pairs → r.0?/p.0?, Mutalyzer r./p. in alt_descriptions, nmd_rule_applied column (45 columns); workbook suspect list 27 → 21. Reply draft: docs/agents/mauno_reply_nmd_draft.md. User view: all PTC → p.0? was considered; kept Mauno's rule as stated, pending his answer on escapes.
+
 ## Note for a future pipeline optimization (user, 2026-10-12)
 - The lovd_* builders (Step7 build_lovd_flat.py, build_lovd_review_xlsx.py; Step8 build_final_lovd.py) sit mid-pipeline only because the LOVD table was the end of the thesis pipeline; post-thesis steps (VariO, patient metadata, NMD, audit) were added after it. If the pipeline is ever reworked: make the audited final variant table the end of the core pipeline and keep every export (LOVD tables, review workbooks, the canonical export) at the end, in Step11_Export. Consider reusing build_lovd_review_xlsx.py's writer there.
 - Step11_Export stays as is (user decision); README 9d3a90e stands.
