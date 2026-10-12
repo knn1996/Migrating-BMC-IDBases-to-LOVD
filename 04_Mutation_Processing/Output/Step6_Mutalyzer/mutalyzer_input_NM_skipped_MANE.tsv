@@ -3,6 +3,13 @@ ADA	A0039	c.EX5del	unparseable c. notation
 ADA	A0056	c.EX5del	unparseable c. notation
 ADA	A0047	c.EX5del	unparseable c. notation
 ADA	A0020	c.EX4del	unparseable c. notation
+ADA	A0050	c.95+1G>A	legacy remap: excluded
+ADA	A0050	c.781-3_781delinsTGGAAGAGCAGATCTGG	legacy remap: excluded
+ADA	A0051	c.95+1G>A	legacy remap: excluded
+ADA	A0051	c.781-3_781delinsTGGAAGAGCAGATCTGG	legacy remap: excluded
+ADA	A0066	c.1112-15T>A	legacy remap: excluded
+ADA	A0066	c.1112-15T>A	legacy remap: excluded
+ADA	A0067	c.1112-15T>A	legacy remap: excluded
 ADA	A0067	c.1112-15TGAACCAACGAG>A	unparseable c. notation
 AICDA	A0068	c.G>T	unparseable c. notation
 AICDA	A0068	c.G>T	unparseable c. notation
