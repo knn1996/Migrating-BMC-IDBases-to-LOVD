@@ -217,7 +217,7 @@ The pipeline was frozen after Run 13. Run 13 changes no record content. It moves
 ![Three-panel pipeline diagram. Steps 1 to 5, Reference Harmonisation: extract legacy variants from 136 IDbases (~8,790 variants), confirm reference sequences by resolving IDRefSeq clones within LRG/NG sequences using the offset algorithm, and convert coordinates via BLAST alignment, BED mapping and LiftOver to GRCh38, outputting variants on GRCh38 with strand information. Step 6, HGVS Normalisation with Mutalyzer: three complementary annotation strategies run in parallel — Track A normalises at genomic level using NG_ references (position validated on GRCh38, independent of transcript version), Track B at coding level using MANE Select transcripts (current clinical standard), Track C at coding level using legacy NM_ transcripts (backward compatibility and traceability to original records); Mutalyzer 3 validates and returns HGVS at g., c., r. and p. levels. Step 7, Priority Merge and LOVD 3.0 Import: representative records are chosen in priority order MANE (Track B), Genomic (Track A), Legacy (Track C), and all variants are imported into LOVD 3.0 as HGVS-compliant entries.](docs/figures/pipeline_overview.png)
 
 *Steps 1–5 harmonise references and coordinates, Step 6 runs the three annotation tracks
-through Mutalyzer 3, Step 7 merges and deduplicates into the LOVD 3.0 import table, and
+through Mutalyzer 3, Step 7 merges and deduplicates into the variant table, and
 `rescue.smk` (Step 8) recovers a further tranche of failures. Outcome: 136 IDbases
 processed, 2,240 distinct variants migrated across **5,773 patient–variant pairs** in
 **2,729 patients**.*
@@ -248,7 +248,7 @@ Row counts overstate biological content, so deduplication runs in two stages:
 ├── 03_BED_Files/               # gene locus BED files (hg16–hg18, hg38)
 ├── 04_Mutation_Processing/     # core pipeline
 │   ├── Scripts/
-│   │   ├── Snakefile           # primary workflow — reproduces published results
+│   │   ├── Snakefile           # primary workflow (Steps 1–7)
 │   │   ├── rescue.smk          # rescue workflow — reads primary outputs as fixed inputs
 │   │   ├── config/             # config.example.yaml (template) + config.yaml (gitignored)
 │   │   ├── envs/               # per-rule conda environments
@@ -265,12 +265,14 @@ Row counts overstate biological content, so deduplication runs in two stages:
 └── 05_Testing/                 # validation and test scripts
 ```
 
-The two workflows are deliberately separate. `Snakefile` reproduces the results exactly as
-defended and published. `rescue.smk` declares the primary outputs as **external inputs with
-no producing rules**, so it can never regenerate or overwrite them —
-`Output/Step7_Merging/dedup_merged_variants.tsv` is guaranteed untouched. Rescue results
-are written to `Output/Step8_Rescue/` and recover a further **11 net-new distinct variants**
-(2,240 → 2,251) and 21 patient–variant pairs, lifting resolution from 76.2% to **76.6%**.
+The two workflows are deliberately separate. `Snakefile` runs Steps 1–7. `rescue.smk` declares
+the primary outputs as **external inputs with no producing rules**, so it never regenerates or
+overwrites them, and writes its results from `Output/Step8_Rescue/` onwards.
+
+The as-defended thesis results (see [Results (as defended)](#results-as-defended)) are
+reproducible from tag [`v1.1.1`](https://github.com/knn1996/Migrating-BMC-IDBases-to-LOVD/tree/v1.1.1),
+which predates the rescue workflow. From v2.0.0 on, the outputs reflect the
+[post-thesis correctness work](#post-thesis-correctness-work-2026).
 
 ---
 
@@ -293,7 +295,7 @@ cp config/config.example.yaml config/config.yaml
 # 2. Dry run — resolves the DAG without executing anything
 snakemake --use-conda --cores 8 -n
 
-# 3. Primary workflow — as-published results
+# 3. Primary workflow
 snakemake --use-conda --cores 8
 
 # 4. Rescue workflow — reads primary outputs, writes to Output/Step8_Rescue/,
@@ -301,8 +303,9 @@ snakemake --use-conda --cores 8
 snakemake -s rescue.smk --use-conda --cores 8
 ```
 
-**Outputs.** The final deliverable is **`results/lovd_review.xlsx`**, the LOVD 3.0 review
-workbook. Intermediates land under `results/`: `results/seq` (downloaded sequences),
+**Outputs.** The final deliverable is the canonical export
+(`Step11_Export/canonical_export.tsv` under the output root); the primary workflow's LOVD 3.0
+review workbook is `lovd_review.xlsx`. Intermediates land under `results/`: `results/seq` (downloaded sequences),
 `results/blast` (BLAST DBs and hits), `results/bed` (`raw` → `filtered` → `hg38`),
 `results/cache` (Mutalyzer response cache) and `results/logs`.
 
@@ -336,6 +339,7 @@ them and point the matching config key at their location:
 | IDbases source directories (per-gene MUTbase records) | [BMC IDbases](http://structure.bmc.lu.se/idbase/) | `idbase_subdir` |
 | hg16 / hg17 / hg18 chromosome FASTA (`chr*.fa`) | [UCSC Genome Browser](https://hgdownload.soe.ucsc.edu/downloads.html) | `genome_dir` + `build_dirs` |
 | MANE RNA FASTA (`MANE.GRCh38.*.refseq_rna.fna`) | [NCBI MANE](https://www.ncbi.nlm.nih.gov/refseq/MANE/) | `inputs.mane_rna_fasta` |
+| MANE GFF (`MANE.GRCh38.v1.5.ensembl_genomic.gff.gz`), read by the rescue workflow | [NCBI MANE](https://www.ncbi.nlm.nih.gov/refseq/MANE/) | `thesis_dir`/`01_Reference_Genomes/GRCh38_MANE/` |
 | `LRG_RefSeqGene.txt` | [NCBI RefSeqGene / LRG](https://ftp.ncbi.nlm.nih.gov/refseq/H_sapiens/RefSeqGene/) | `inputs.lrg_refseqgene_txt` |
 | Gene alias table (`alias.csv`) | Project-provided | `inputs.alias_csv` |
 | Curated IDRefSeq sequences (NG / NM / processed FASTA) | Zenodo / project deposit | `ref_seq.*`, `dna_seq.*` |
@@ -350,7 +354,7 @@ them and point the matching config key at their location:
 | `Output/Step2_RefCheck/lrg_offset_results.csv` | Per-gene IDRefSeq → LRG / `NG_` offset, alignment span, anchor match rate |
 | `Output/Step2_RefCheck/gene_confidence_NG_IDRefseq.csv` | Per-gene anchor statistics, Wilson CI, acceptance status (optional rule) |
 | `Output/Step7_Merging/merged_variants.tsv` | Three-track merged, resolved records (row-level) |
-| `Output/Step7_Merging/dedup_merged_variants.tsv` | **Canonical deduplicated variant set — the LOVD import table** |
+| `Output/Step7_Merging/dedup_merged_variants.tsv` | Primary deduplicated variant set (fixed input to the rescue workflow) |
 | `Output/Step7_Merging/lovd_review.xlsx` | LOVD 3.0 review workbook |
 | `Output/Step8_Rescue/unresolved_disposition.tsv` | Failures with error code, subcategory and rescuability class |
 | `Output/Step8_Rescue/lovd_flat_final.tsv` | Rescue-inclusive LOVD flat table |
