@@ -1,7 +1,7 @@
 # Draft: README section "Post-thesis correctness work"
 
 Status: living draft. The planner extends it after every recorded run; it is merged into the root README.md once the user judges the work at a satisfactory stopping point.
-Figures come from Output/Step10_Audit/history/audit_history.tsv (currently Runs 0–11). Recompute them from the history after each run; never hard-code.
+Figures come from Output/Step10_Audit/history/audit_history.tsv (currently Runs 0–12). Recompute them from the history after each run; never hard-code.
 
 ---
 
@@ -44,7 +44,7 @@ A shift is only accepted when at least two independent changes reconcile with th
 
 Extending the remap to every verified gene (Run 10) recovered exactly the 110 source units the scan had predicted, with no regressions and no new inconsistent pairs. Seventeen existing pairs moved from wrong keys to the correct coding change; for example, 7 RAG1 pairs had been keyed on an intronic position and are now keyed on c.256_257del. Three RFXAP pairs that VariantValidator had placed at the legacy position went from a mismatching protein to a match.
 
-The remaining mismatches are increasingly errors in the source rather than in the pipeline. For example, AIRE A0082 reports p.S64del for a 36-nt deletion, and CD40L C0047 gives a c. range that crosses an exon–intron boundary. The audit now flags 24 suspected source errors (29 pairs, pending review by the original curator) in separate columns, without changing any existing measure. Excluding them, pair consistency in Run 11 is 99.37%.
+The remaining mismatches are increasingly errors in the source rather than in the pipeline. For example, AIRE A0082 reports p.S64del for a 36-nt deletion, and CD40L C0047 gives a c. range that crosses an exon–intron boundary. The audit now flags 24 suspected source errors (29 pairs, pending review by the original curator) in separate columns, without changing any existing measure. Excluding them, pair consistency in Run 12 is 99.39%.
 
 ### Fixes, measured on both right and wrong records
 
@@ -64,12 +64,14 @@ Each fix is checked against units that were already correct (regressions, GOOD�
 | 9 | ADA per-change remap | 90.14% | 98.33% | 98.80% | 8 | 100% |
 | 10 | Legacy remap extended to the full numbering scan | 91.71% | 98.42% | 98.88% | 8 | 100% |
 | 11 | Old-numbering records of remapped changes not eligible | 91.74% | 98.42% | 98.91% | 8 | 100% |
+| 12 | MANE Select normalization; transcript-picker fix | 91.74% | 98.43% | 98.93% | 8 | 100% |
 
-From Run 0 to Run 11:
+From Run 0 to Run 12:
 - Recovery rose from 5,849 to 6,439 source units (83.33% → 91.74%).
-- Inconsistent pairs fell from 745 to 61.
+- Inconsistent pairs fell from 745 to 60.
+- 6,518 of 6,562 final pairs (99.3%) are on the exact MANE Select transcript; the rest are flagged records or have no MANE Select (IGHG2).
 - Excess pairs fell from 653 to 8.
-- Protein BAD→GOOD totalled 459 units, with all GOOD→BAD (18) in Run 1.
+- Protein BAD→GOOD totalled 460 units, with all GOOD→BAD (18) in Run 1.
 - c./p. coherence rose from 75.34% to 100% of checkable pairs.
 
 ### Traceability and resolution policy

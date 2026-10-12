@@ -34,6 +34,7 @@ Otherwise keep going: send the next task, review, continue.
 Brief, logic-focused, no code comments in any code you propose, gaming/RPG analogies welcome where they fit. Ask when direction is genuinely unclear.
 
 ## Review patterns that worked
+- Before handing the user any Snakemake command: the executor dry-runs exactly that command on the REAL config just before, and the job list must match the plan (new or renamed rules need -R <first changed rule>). If primary outputs changed, give the rescue command only after the primary commit is confirmed.
 - Expect before you run; compare after. State "in_final must stay X, 0 regressions" etc.
 - Scratch simulation before every real run; real outputs must match the simulation byte for byte.
 - Ruler changes (audit) are separate from pipeline fixes, followed by --rescore-all where every pre-existing column must reproduce.
