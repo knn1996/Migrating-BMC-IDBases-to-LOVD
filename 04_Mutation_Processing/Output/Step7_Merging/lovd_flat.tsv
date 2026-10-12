@@ -1974,7 +1974,6 @@ Individual/Gender	Individual/Origin/Geographic	Individual/Age	Individual/Remarks
 							19	NC_000019.10:g.19197566del						NM_003721.4	c.383del	r.(383del)	p.(Leu128ProfsTer76)	RFXANK	c.383del	1	R0024	MANE Select	NM_MANE	ok	deletion
 							19	NC_000019.10:g.19199156C>T						NM_003721.4	c.634C>T	r.(634c>u)	p.(Arg212Ter)	RFXANK	c.634C>T	1	R0029	MANE Select	NM_MANE	ok	substitution
 							19	NC_000019.10:g.19197545A>T						NM_003721.4	c.362A>T	r.(362a>u)	p.(Asp121Val)	RFXANK	c.362A>T	1	R0030	MANE Select	NM_MANE	ok	substitution
-														NM_000538.3	c.150_151insGCGGGGC	r.(150_151insgcggggc)	p.(Pro51AlafsTer24)	RFXAP	c.150_151insGCGGGGC	2	R0006;R0007		NM_IDRefseq	ok	insertion
 							3	NC_000003.12:g.196472211_196472214del						NM_152617.4	c.1323_1326del	r.(1323_1326del)	p.(Gln442LysfsTer45)	RNF168	c.1323_1326del	1	R0001	MANE Select	NM_MANE	ok	deletion
 							3	NC_000003.12:g.196487562dup						NM_152617.4	c.397dup	r.(397dup)	p.(Ala133GlyfsTer11)	RNF168	c.397dup	1	R0001	MANE Select	NM_MANE	ok	duplication
 							3	NC_000003.12:g.196491380_196491381insC						NM_152617.4	c.302-2698_302-2697insG	r.(=)	p.(=)	RNF168	c.302-2698_302-2697insG	1	R0001	MANE Select	NG_IDRefseq	ok	insertion
