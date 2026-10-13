@@ -31,19 +31,14 @@ Supervisor: Prof. Mauno Vihinen. Examiner: Ghjuvan Micaelu Grimaud.
 
 ## Why this was hard: the nested-reference problem
 
-IDbases variant coordinates are anchored to **IDRefSeq** sequences — partial ENA clone
-fragments chosen as local references in the late 1990s and early 2000s, before
-genome-assembly-anchored annotation became standard. These fragments are not independent
-references: each is **nested inside** the modern full-length LRG / `NG_` RefSeqGene record
-for the same gene, at a gene-specific and previously undocumented offset.
-
-Naïvely treating an IDRefSeq coordinate as an `NG_` coordinate therefore fails **silently
-and systematically** — the position is wrong by a constant that differs per gene.
-
-The **empirical offset algorithm** recovers that constant by BLAST-aligning each IDRefSeq
-fragment to its LRG / `NG_` parent, then confirming the recovered offset against
-substitution variants: a substitution asserts a reference base at a position, so a correct
-offset reproduces that base and an incorrect one does not.
+IDbases variant coordinates are anchored to **IDRefSeq** sequences — partial ENA clone fragments
+chosen as local references in the late 1990s and early 2000s. Each fragment is **nested inside** the
+modern LRG / `NG_` RefSeqGene record for the same gene, at a gene-specific and previously undocumented
+offset, so treating an IDRefSeq coordinate as an `NG_` coordinate fails **silently and
+systematically**. The **empirical offset algorithm** recovers that constant by BLAST-aligning each
+fragment to its `NG_` parent and confirming it against substitutions, whose stated reference base is
+only reproduced by the correct offset. Length-changing variants inherit the gene's confirmed offset
+(their position, not their inserted sequence, is validated this way).
 
 ![Dot plot of anchor REF-base match rate for eight representative genes with 95% Wilson confidence intervals. AIRE, CTSC, PRF1, ITGB2, CYBB and CD40L all sit at or near 100% and are accepted into Track A; RAG1 (89%) and RAG2 (79%) fall below the 90% threshold and are rejected to Track B, each with a significant binomial p-value.](docs/figures/fig01_anchor_match_rates_slide.png)
 
@@ -51,13 +46,6 @@ offset reproduces that base and an incorrect one does not.
 match rate, with **99.29% aggregate anchor concordance** (3,799 / 3,826 anchors). Only
 `RAG1` and `RAG2` fail, and they fall through to the transcript-based track rather than
 being silently mis-placed.*
-
-**Anchor-transferred validation.** This confirmation is only directly available for
-substitutions. Insertions and duplications carry no REF-base assertion and pass HGVS
-validation *silently* even under a coordinate frame mismatch. Because all variant classes
-within a gene share one offset, substitution-anchored confirmation transfers to the
-length-changing classes. This validates the **positional placement** of insertions and
-duplications — it does **not** independently validate inserted sequence content.
 
 ---
 
@@ -96,131 +84,42 @@ and deduplicated:
 | **B** | MANE Select `NM_` | 94.1% (4,496 / 4,775) | 1,187 variants |
 | **C** | Legacy `NM_` (IDRefSeq-era transcript) | 59.5% (2,862 / 4,811) | 102 variants |
 
-![Stacked bar chart of the 2,240 distinct variants by representative resolution track and variant class. Track A contributes 951 variants (579 substitutions, 268 deletions, 61 duplications, 43 insertions), Track B contributes 1,187 (845 substitutions, 236 deletions, 58 duplications, 48 insertions) and Track C contributes 102 (75 substitutions plus a small deletion remainder).](docs/figures/fig03_class_by_track.png)
-
-The tracks are **complementary, not nested**: 863 variants (38.5%) were independently
-resolved by exactly two of the three, and 1,377 by a single track. Track A carries
-proportionally more of the rarer, length-changing and legacy-annotated variants that the
-MANE route cannot resolve natively.
-
-### Unresolved variants
-
-698 distinct variants (23.8%) did not resolve automatically.
-
-![Horizontal bar chart of the 698 unresolved distinct variants by Mutalyzer error code, coloured by disposition. ENOSELECTORFOUND dominates with 512 variants and is automatically rescuable; ESEQUENCEMISMATCH accounts for 171 and is classified as an unrescuable data error; EINTRONIC (12), ESYNTAXUEOF, ERANGEREVERSED and EINSERTIONRANGE (1 each) make up the remainder.](docs/figures/fig08_failure_taxonomy.png)
-
-The dominant failure mode is `ENOSELECTORFOUND` (512 variants, **73.4%** of failures),
-caused by RefSeqGene `NG_` records pinning transcript versions incompatible with current
-MANE releases. That is a mechanical, recoverable failure rather than a data-quality one —
-**75.8%** of unresolved variants are classified rescuable (525 automated, 4 manual),
+The tracks are **complementary, not nested**: 863 variants (38.5%) were independently resolved by
+exactly two of the three, and 1,377 by a single track. 698 distinct variants (23.8%) did not resolve
+automatically; 73.4% of these failed with `ENOSELECTORFOUND`, a mechanical and recoverable failure,
 which is why the addressable ceiling sits near 94%.
 
 ---
 
 ## Post-thesis correctness work (2026)
 
-The thesis results above are reported as defended. After the defence, the work moved from *how much* of IDbases can be migrated to *whether what is migrated is right*. A LOVD submission is only useful if every record is correct, so precision now takes priority over recovery.
+After the defence the work moved from *how much* of IDbases can be migrated to *whether what is
+migrated is right*. An independent audit re-parses the published IDbases pages and traces every
+source unit (gene, accession, allele) to the final table; the fixes are recorded as a baseline
+(Run 0) and 13 fix runs.
 
-**Counting definitions.** The thesis figures above count *distinct variants* (and patient–variant pairs). The audit below counts *source units*: one (gene, accession, allele) entry of the published IDbases pages. The two are not interchangeable.
-
-### An independent audit, not the pipeline's own validation
-
-Mutalyzer and VariantValidator check that an HGVS description is valid on its reference. They cannot tell whether it describes the variant the original authors reported. To answer that, a separate audit (`Step10_Audit/audit_against_source.py`) re-parses the published IDbases pages (`pub.html`). It shares no code with the extraction step, and it traces every source unit to its fate in the final table.
-
-- **Fixed ruler.** The key is (gene, accession, allele) from the source, never the remapped HGVS, which can change between runs. The audit covers 7,047 source units, 7,019 of them in scope.
-- **Three axes, always reported together:**
-  - Recovery: share of source units present in the final table.
-  - Best-record accuracy: the protein consequence matches the source p. description.
-  - Precision: each patient–variant pair is consistent with its own source change, and no individual has excess pairs.
-- **c./p. coherence.** The p. description must be the product of the transcript used for the c. description.
-- **Run ledger** (`Step10_Audit/audit_ledger.py`). Each fix is recorded as one run against committed outputs. A run lists gains, regressions, GOOD→BAD and BAD→GOOD transitions, and pair transitions against the previous run. When the audit itself changes, the whole history is re-scored (`--rescore-all`), and every existing column must reproduce exactly.
-
-### Coverage gains watched against consistency
-
-A higher mapping rate is only accepted if consistency holds. The first fix shows why this matters:
-
-| Run | Fix | In final | Protein good | Pair consistency | Excess pairs |
-|---|---|---|---|---|---|
-| 0 | Pre-fix baseline | 83.33% | 90.79% | 87.04% | 653 |
-| 1 | Extraction fix | 89.84% | 92.74% | 85.50% | 1,067 |
-
-In Run 1, recovery rose by 6.5 points, but pair consistency fell and excess pairs grew from 653 to 1,067. There were 10 regressions and 18 GOOD→BAD transitions. Looking at recovery alone would have hidden this. Most of the later fixes went into precision.
-
-### Biological inconsistencies between source and output protein
-
-For each unit, the audit compares the protein consequence in the final record with the source p. description. It classifies every mismatch: different change, shifted position, frameshift start or stop differences, or type difference at the same position. Tracing these mismatches back to their cause found most of the bugs listed below.
-
-### Mixed historical conventions for c. positions
-
-IDbases stores c. positions as published. Many pre-HGVS papers counted from the first base of their own cDNA record instead of the A of the start codon. The coding sequence is the same; only the origin differs, by the length of that record's 5′ UTR. A full scan of 7,920 source changes in 133 genes found 28 genes with a verified constant shift, such as RAG1 −112, AICDA −76 or AIRE −127. Eighteen of these genes mix both conventions in one database. The style of the p. description usually tells them apart: one-letter (old) versus three-letter (HGVS).
-
-A shift is only accepted when at least two independent changes reconcile with the MANE Select sequence. The remap is applied per source change from a committed table (`refs/legacy_remap.tsv`), so a change that already follows HGVS numbering is never shifted. The thesis-era global ADA offset of −95 was replaced in this way, because it also shifted ADA changes that were already correct.
-
-Extending the remap to every verified gene (Run 10) recovered exactly the 110 source units the scan had predicted, with no regressions and no new inconsistent pairs. Seventeen existing pairs moved from wrong keys to the correct coding change; for example, 7 RAG1 pairs had been keyed on an intronic position and are now keyed on c.256_257del. Three RFXAP pairs that VariantValidator had placed at the legacy position went from a mismatching protein to a match.
-
-The remaining mismatches are increasingly errors in the source rather than in the pipeline. For example, AIRE A0082 reports p.S64del for a 36-nt deletion, and CD40L C0047 gives a c. range that crosses an exon–intron boundary. The audit now flags 24 suspected source errors (29 pairs, pending review by the original curator) in separate columns, without changing any existing measure. Excluding them, pair consistency in Run 13 is 99.39%.
-
-### Fixes, measured on both right and wrong records
-
-Each fix is checked against units that were already correct (regressions, GOOD→BAD) and against those it was meant to repair (gains, BAD→GOOD). Before any live run, it is simulated offline against cached results, and the real outputs must then match the simulation byte for byte.
-
-| Run | Fix | In final | Protein good | Pair consistency | Excess | c./p. coherence |
-|---|---|---|---|---|---|---|
-| 0 | Pre-fix baseline | 83.33% | 90.79% | 87.04% | 653 | 75.34% |
-| 1 | Extraction: compound heterozygous alleles, glued records, brackets | 89.84% | 92.74% | 85.50% | 1,067 | 74.55% |
-| 2 | Dedup: position-only XM/NM merge; `individual_id = GENE_accession` | 90.03% | 93.06% | 86.51% | 987 | 74.14% |
-| 3 | BED → Mutalyzer: delins, dup, minus strand | 89.98% | 93.11% | 89.93% | 733 | 73.18% |
-| 4 | IVS positions inherited from neighbours | 89.98% | 93.11% | 89.93% | 731 | 73.17% |
-| 5 | Track resolution: one primary record per source change | 89.98% | 96.20% | 96.41% | 23 | 73.69% |
-| 6 | Dedup transcript split, stage-2 links, accession fix | 89.98% | 96.20% | 96.65% | 8 | 73.69% |
-| 7 | Track B c. taken from the same MANE transcript as p. | 89.98% | 96.20% | 96.65% | 8 | 100% |
-| 8 | Legacy c. numbering remap | 89.98% | 98.19% | 98.66% | 8 | 100% |
-| 9 | ADA per-change remap | 90.14% | 98.33% | 98.80% | 8 | 100% |
-| 10 | Legacy remap extended to the full numbering scan | 91.71% | 98.42% | 98.88% | 8 | 100% |
-| 11 | Old-numbering records of remapped changes not eligible | 91.74% | 98.42% | 98.91% | 8 | 100% |
-| 12 | MANE Select normalization; transcript-picker fix | 91.74% | 98.43% | 98.93% | 8 | 100% |
-| 13 | Known-wrong and unverifiable records demoted to Review | 91.74% | 98.43% | 98.93% | 8 | 100% |
-
-From Run 0 to Run 13:
-- Recovery rose from 5,849 to 6,439 source units (83.33% → 91.74%).
-- Inconsistent pairs fell from 745 to 60.
-- 6,518 of 6,562 final pairs (99.3%) are on the exact MANE Select transcript; the rest are flagged records or have no MANE Select (IGHG2).
-- Excess pairs fell from 653 to 8.
-- Protein BAD→GOOD totalled 460 units, with all GOOD→BAD (18) in Run 1.
-- c./p. coherence rose from 75.34% to 100% of checkable pairs.
+- **Recovery:** 5,849 → 6,439 of 7,019 in-scope source units in the final table (83.33% → 91.74%).
+- **Precision:** pair consistency 87.04% → 98.93%; inconsistent pairs 745 → 60; excess pairs 653 → 8.
+- **c./p. coherence:** 75.34% → 100% of checkable pairs; 6,518 of 6,562 final pairs are on the exact
+  MANE Select transcript.
+- **Legacy c. numbering** is remapped per source change from a committed, evidence-backed table
+  (`refs/legacy_remap.tsv`), replacing the thesis-era global `ADA` offset.
+- **Open cases go to the curator, not the code:** 76 pairs are in tier Review with a stated reason,
+  and 24 candidate source changes (29 pairs) are pending curator review.
+- **Canonical export:** 6,558 patient–variant pairs with allele, phase, provenance and tier; the
+  curator's NMD rule annotates 2,378 predicted-NMD pairs as `r.0?` / `p.0?`.
 
 ![Heatmap of each fix run's share of the total Run 0 to Run 13 improvement, for five measures (rows) and Runs 1 to 13 (columns). Gains are blue and losses orange. Each measure improves in a few runs: recovery mostly in Run 1 (77%) and Run 10 (19%); protein matches in Runs 1, 5 and 8 (26%, 40%, 26%); pair consistency in Runs 3, 5 and 8 (29%, 54%, 17%) after a loss in Run 1 (−13%); excess pairs in Run 5 (110%) after Run 1 added excess (−64%); c./p. coherence in Run 7 (107%). Runs 11 to 13 are outlined as a plateau where every share is below 1%.](docs/figures/fig09_gain_heatmap.png)
 
 *Where each measure's improvement came from: every measure has its own decisive runs, and from Run 11
 on none moves.*
 
-### Knowing when to stop
+The pipeline is frozen after Run 13: a run must fix a whole class of at least 0.5% of in-scope source
+units (35) or remove known-wrong records; smaller cases go to the curator's Review workbook.
 
-Each run fixed less than the one before (each measure reached its plateau at a different run — coherence at Run 7, consistency after the legacy remap in Run 8, recovery after Run 10 — and from Run 11 on no measure moved by more than 0.03 points), and later candidates increasingly needed rules tailored to single records. To avoid fitting the pipeline to its own audit, a stopping rule was set:
-- A run must fix a whole class of records, covering at least 0.5% of in-scope source units (35), or remove records known to be wrong.
-- Smaller or one-off cases go to a Review workbook for the curator instead of into the code.
-
-The pipeline was frozen after Run 13. Run 13 changes no record content. It moves records the audit cannot vouch for to the Review tier, with a stated reason: genomic positions that land deep in an intron or outside the gene while the source describes an exonic change (41 pairs), records still in legacy numbering (6), and source entries that describe no change (4). The pipeline stays frozen: a new fix run is made only if a major problem is found that meets the stopping rule, for example from the curator's review. Curator-given annotation rules, such as the NMD rule below, are applied outside the audit runs.
-
-**NMD rule applied after the freeze.** The curator's rule marks a premature stop more than 50 nt
-before the junction of the last protein-coding exon as predicted nonsense-mediated decay. Only
-protein-coding exons count, so a last exon that is entirely 3′ UTR is ignored. In the canonical
-export the 2,378 pairs with a predicted-NMD record are annotated `r.0?` / `p.0?`, and the Mutalyzer
-r. and p. descriptions are kept in `alt_descriptions`. The audit still compares the Mutalyzer
-protein with the source, so it keeps testing the c. mapping itself.
-
-### Traceability and resolution policy
-
-- `source_change_id` links every record to the source change it came from.
-- `individual_id = GENE_accession`, because accessions are only unique within one gene database.
-- When the tracks disagree, one primary record is kept per source change. Other descriptions of the same genomic change go to `alt_descriptions`, and every final record carries a `confidence_tier` (A, B or Review).
-- In-cis alleles (`c.[A;B]`) legitimately give several records per source unit and are never collapsed.
-
-### Reproducibility discipline
-
-- Mutalyzer, VariantValidator and GenBank responses are cached append-only.
-- Before each live run, the uncached queries are forecast and reviewed.
-- Each fix is committed as code, then primary outputs, then rescue outputs, then the ledger entry, so any recorded run can be re-scored from git.
+Details: [post_thesis_validation.md](docs/post_thesis_validation.md) (runs, fixes, stopping rule, NMD
+rule) and [audit_methodology.md](docs/audit_methodology.md) (audit design, measures, source-error
+criteria).
 
 ---
 
@@ -254,7 +153,7 @@ Row counts overstate biological content, so deduplication runs in two stages:
 ├── README.md
 ├── CITATION.cff
 ├── LICENSE
-├── docs/figures/               # README figures
+├── docs/                       # audit_methodology.md, post_thesis_validation.md, figures/
 ├── 01_Reference_Genomes/
 ├── 02_Source_Database/         # IDbases gene / UniProt summary spreadsheets
 ├── 03_BED_Files/               # gene locus BED files (hg16–hg18, hg38)
@@ -265,7 +164,7 @@ Row counts overstate biological content, so deduplication runs in two stages:
 │   │   ├── config/             # config.example.yaml (template) + config.yaml (gitignored)
 │   │   ├── envs/               # per-rule conda environments
 │   │   ├── R for figures/      # ggplot2 scripts for every figure
-│   │   ├── refs/               # VariO ontology, legacy_remap.tsv, legacy_shift_evidence.tsv, source_errors.tsv
+│   │   ├── refs/               # VariO ontology, legacy_remap.tsv, legacy_shift_evidence.tsv
 │   │   ├── Step1a_Extraction/  Step1b_RSG_Mapping/  Step1c_SeqDownload/
 │   │   ├── Step2_RefCheck/     Step3_BLAST/  Step4_BED/  Step5_LiftOver/
 │   │   ├── Step6_Mutalyzer/    Step7_Merging/  Step8_Rescue/
@@ -378,8 +277,9 @@ them and point the matching config key at their location:
 | `Output/Step10_Audit/history/` | Audit ledger: one row per recorded run (`audit_history.tsv`), per-run snapshots and change lists |
 | `Output/Step11_Export/canonical_export.tsv` | Canonical export: one row per patient–variant pair with allele, phase, provenance, confidence tier and metadata |
 | `Output/Step11_Export/review_workbook_for_mauno.xlsx` | Curator review workbook: Review-tier pairs and suspected source errors (regenerable, untracked) |
+| `Output/Step11_Export/nmd_review_for_mauno.csv` | Premature-stop variants with the curator's NMD rule applied, one row per distinct variant |
 | `Scripts/refs/legacy_remap.tsv` | Per-source-change legacy c. numbering remap, with its evidence in `legacy_shift_evidence.tsv` |
-| `Scripts/refs/source_errors.tsv` | Suspected IDbases source errors (candidates pending curator review) |
+| Suspected source errors | 24 candidate source changes (29 pairs) whose own c./p. or g./c. contradict each other: notation 19, c./p. mismatch 2, g./c. mismatch 2, exon boundary 1 (16 high, 8 low severity). Kept privately pending curator review; criteria in [audit_methodology.md](docs/audit_methodology.md#suspected-source-errors) |
 
 ## Limitations
 
@@ -396,7 +296,10 @@ them and point the matching config key at their location:
   left out); the old global `ADA` offset of −95 was removed.
 - Phenotype and disease free-text fields are sparsely and inconsistently populated in the
   source (20–58% coverage, versus 87–99% for variant-level fields) and are migrated as-is.
-- 286 remaining genuine errors still need characterisation by error code and gene.
+- After Run 13, 580 of the 7,019 in-scope source units (7,019 − 6,439) are not in the final table:
+  555 are not registered (257 accessions with no final record, 153 incomplete and 71 missing DNA
+  notations in the source, 58 alleles absent while the accession is present, 16 resolved but absent),
+  and 25 remain unresolved (11 sequence mismatches, 11 rescuable failures not recovered, 3 others).
 
 ## Data sources
 

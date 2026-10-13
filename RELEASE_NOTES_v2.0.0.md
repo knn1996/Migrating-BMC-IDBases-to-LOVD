@@ -6,8 +6,8 @@ post-thesis correctness work (2026).
 
 v1.1.1 measured *how much* of IDbases the pipeline migrates. v2.0.0 asks *whether what is
 migrated is right*: an independent audit traces every published IDbases source unit
-(gene, accession, allele) to its fate in the final table, and every fix since is recorded as
-one audited run (Runs 0–13). The pipeline is frozen after Run 13; the remaining open cases
+(gene, accession, allele) to its fate in the final table, and the work is recorded as a baseline
+(Run 0) and 13 fix runs. The pipeline is frozen after Run 13; the remaining open cases
 go to a curator review workbook instead of into the code.
 
 ## Highlights
@@ -42,9 +42,10 @@ go to a curator review workbook instead of into the code.
   `review_reason`: genomic positions outside the gene or deep intronic while the source
   change is exonic, records kept in legacy numbering, and source entries describing no
   change. No record content changes.
-- **Suspected source errors** (`refs/source_errors.tsv`, `Utilities/build_source_errors.py`):
-  published notations that contradict themselves, listed as candidates for the original
-  curator and reported in separate ledger columns without changing any existing measure.
+- **Suspected source errors** (`Utilities/build_source_errors.py`): published notations that
+  contradict themselves, listed as candidates for the original curator and reported in separate
+  ledger columns without changing any existing measure. The record-level candidates are kept
+  privately (`private/`, git-ignored) pending curator review.
 - **Canonical export and review workbook** (`Step11_Export/`, standalone offline script):
   `Output/Step11_Export/canonical_export.tsv`, one row per patient–variant pair with allele,
   zygosity, phase, provenance, tier and metadata; and `review_workbook_for_mauno.xlsx`
@@ -81,8 +82,9 @@ run's committed final table.
   v1.1.1 wherever records were remapped or normalized; earlier descriptions are kept in
   `alt_descriptions`. Identity is `individual_id = GENE_accession`.
 - **New required reference tables** under `Scripts/refs/`: `legacy_remap.tsv`,
-  `legacy_shift_evidence.tsv` (and the builder input `legacy_remap_manual.tsv`),
-  `source_errors.tsv`. The rescue workflow also reads the MANE v1.5 GFF
+  `legacy_shift_evidence.tsv` (and the builder input `legacy_remap_manual.tsv`). The
+  source-error candidates are kept privately pending curator review; without them the ledger's
+  source-error columns stay empty. The rescue workflow also reads the MANE v1.5 GFF
   (`MANE.GRCh38.v1.5.ensembl_genomic.gff.gz`).
 - **Changed counts.** All headline counts change (table above). The thesis figures count
   distinct variants; the audit counts source units (gene, accession, allele). They are not
