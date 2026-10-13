@@ -2,6 +2,15 @@
 
 This file is the single source of truth. The planner (`thesis-plan`) updates it after each recorded run. The older copy in the claude.ai project (claude/handoff_2026-10-11.md) is frozen and may be stale.
 
+
+## CURRENT STATE (2026-10-13, read this first)
+- Pipeline frozen after Run 13 (a baseline Run 0 and 13 fix runs). Step9 NMD rule changed after the freeze (curator rule, df09bd4); it does not feed the audit.
+- Released: v2.0.0 tag at 972d29c (pushed). main pushed to 825e698 (NMD work, heatmap README, cleanup) = future v2.1.0.
+- Public repo carries NO record-level source-error candidates: they live in the git-ignored private/ folder (source_errors.tsv, source_errors_for_mauno.csv, Mauno email drafts). audit_ledger reads private/source_errors.tsv; without it the 11 source_error columns stay empty. Export source_error columns are filled only for status "confirmed" (none yet). Put records back in public only after Mauno reviews them.
+- README slimmed (340 lines); detail in docs/post_thesis_validation.md and docs/audit_methodology.md.
+- Sent to / pending with Mauno: review_workbook_for_mauno.xlsx (76 Review pairs, 21 source-error candidates), nmd_sample_for_mauno.csv (20 variants; full list nmd_review_for_mauno.csv). Open questions: NMD escapes keep the truncated p. or p.0?; LOVD submission format; IGHG2 drop / SH2; Screening, Genetic origin, Effect defaults.
+- Next when Mauno replies: read Mauno_decision columns back; set status confirmed/rejected in private/source_errors.tsv; apply escape decision in Step11 export (one-line change); map canonical_export.tsv to the LOVD format; release v2.1.0.
+
 ## Context
 MSc thesis (Lund, supervisor Mauno Vihinen) is DONE. Goal: finish migrating IDbases from MUTbase to LOVD 3.0 (GRCh38, MANE Select, HGVS) so the data can be submitted. Priority: correctness of what goes into LOVD (precision) over recovery. Repo: D:\Assignment\Thesis = /mnt/d/Assignment/Thesis in WSL2 Ubuntu.
 
